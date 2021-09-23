@@ -18,5 +18,5 @@
 [Enter the garden >>][1]
 
 
-[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/at_the_gate.md
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/welcome.md
 
