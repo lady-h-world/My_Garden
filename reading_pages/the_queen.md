@@ -5,7 +5,7 @@
 #
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/the_queen.png" width="310" height="441" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/the_queen.png" width="310" height="410" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
