@@ -8,3 +8,5 @@ Each collection in this garden exhibits applied data science qualities, so does 
 
 
 
+## <font color='green'> Safeguard the World </font> 
+Lady H.'s properties all have their intelligence and destructive superpower, being stolen and spread in an illegal way, there will be unpredictable consequences on the outside world. If you came across any illegal spreading of our assets, please contact us at <font color='red'>ladyheartsworld@gmail.com</font>. Together, let's keep the world safe.
