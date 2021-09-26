@@ -18,6 +18,7 @@ As Lady H. later recalled, “I saw her petals started to open in the snow, the 
 The queen is also known as "The Power of Dawn" because of her inspiring spirit. Everyone was surprised to see a blooming lotus in winter.
 </p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 ## The Outlier
