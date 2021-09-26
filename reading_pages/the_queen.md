@@ -46,7 +46,17 @@ From figure 1.1, the differences are obvious to see.
 <h6>To learn how to plot figure 1.1, visit https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/lotus_queen.ipynb</h6>
 
 </p>
+<p>&nbsp;</p>
 
+<p align="left">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="180" height="75" />
+</p>
+
+[Why the queen blooms in winter? >>][1]
+
+
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_1.md
 
 
 
