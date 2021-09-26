@@ -27,3 +27,10 @@ Wait!? A blooming lotus in winter?
 
 Correct! The Queen is a typical outlier.
 
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/outlier.png" width="766" height="79" />
+</p>
+
+
+
+
