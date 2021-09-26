@@ -19,11 +19,13 @@ Lady H.'s properties all have their intelligence and destructive superpower, bei
 ## Friends Around
 Walking around the garden, you will be accompanied by new firends!
 
-The <i>chansey butterflies</i> will bring you with tips and general notes related to the asset.
+The chansey butterflies will bring you with tips, general notes and guide you to the right way, <i>just follow them!</i>
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/follow_us_note.png" width="431" height="97" />
 </p>
+
+🌻 The sunflower opens the gate to disclose all the secrets behind, <i>just click them!</i>
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/the_queen.md
