@@ -6,7 +6,7 @@
 
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/the_queen.png" width="300" height="410" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p>&nbsp;</p>
 
 She’s the queen of this garden, the very first collected asset.
   
@@ -17,8 +17,7 @@ As Lady H. later recalled, “I saw her petals started to open in the snow, the 
   
 The queen is also known as "The Power of Dawn" because of her inspiring spirit. Everyone was surprised to see a blooming lotus in winter.
 </p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p>&nbsp;</p>
 
 
 ## The Outlier
