@@ -43,7 +43,7 @@ From figure 1.1, the differences are obvious to see.
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-<h6>To learn how to plot figure 1.1, visit https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/lotus_queen.ipynb</h6>
+🌻 [Click to learn how to plot figure 1.1 >>][2]
 
 </p>
 <p>&nbsp;</p>
@@ -58,6 +58,7 @@ From figure 1.1, the differences are obvious to see.
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_1.md
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/lotus_queen.ipynb
 
 
 
