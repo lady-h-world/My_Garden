@@ -48,6 +48,7 @@ From figure 1.1, the differences are obvious to see.
 </p>
 <p>&nbsp;</p>
 
+#
 <p align="left">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="180" height="75" />
