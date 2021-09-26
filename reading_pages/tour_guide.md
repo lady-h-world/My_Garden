@@ -6,8 +6,15 @@
 
 Each collection in this garden exhibits applied data science qualities, so does the seed. Traveling around this garden, you will witness a wide variety of seeds. No matter you are a beginner or a senior in data science, there is something fun awaits you to explore and to collect!
 
+* [The Queen - The Power of Dawn][1]
+  * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning
+
+<p>&nbsp;</p>
+
 ## Safeguard the World 
 Lady H.'s properties all have their intelligence and destructive superpower, being stolen and spread in an illegal way, there will be unpredictable consequences on the outside world. If you came across any illegal spreading of our assets, please contact us at <b>ladyheartsworld@gmail.com</b>. Together, let's keep the world safe.
+
+<p>&nbsp;</p>
 
 ## Friends Around
 Walking around the garden, you will be accompanied by new firends!
@@ -19,3 +26,4 @@ The <i>chansey butterflies</i> will bring you with tips and general notes relate
 </p>
 
 
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/the_queen.md
