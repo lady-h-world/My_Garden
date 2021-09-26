@@ -34,6 +34,7 @@ Correct! The Queen is a typical outlier.
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/outlier_plot.png" width="502" height="359" />
 <p>&nbsp;</p>
+
 Normal lotus live between June and August, with their petals open every morning. One the opposite, the queen opens her buds at every winter night.
 
 From figure 1.1, the differences are obvious to see.
@@ -41,7 +42,7 @@ From figure 1.1, the differences are obvious to see.
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
+
 <h6>To learn how to plot figure 1.1, visit https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/lotus_queen.ipynb</h6>
 
 </p>
