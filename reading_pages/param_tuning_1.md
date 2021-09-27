@@ -30,7 +30,7 @@ While working on some garden business, Lady H. has experimented with these power
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/market_crystal.png" width="766" height="79" />
 </p>
 
-In the classification problem, Lady H. was using [balanced accuracy][3] to measure the percentage of correctly predicted specimens in the testing data, with its value closer to 1, the better model performance we get. In the regression problem, [R2 (r-square)][4] was used to measure how close the forecasted sales to the real sales, with its value closer to 1, the better model performance we get.
+In the classification problem, Lady H. was using [balanced accuracy][3] to measure the percentage of correctly predicted specimens in the testing data, with its value closer to 1, the better model performance we get. In the regression problem, [R2 (r-square)][4] was used to measure how close the forecasted sales to the real sales, with its value closer to 1, the better model performance we get. Meanwhile, the computational efficiency is an important metrics too.
 
 We have summarized Lady H.'s notes in Table 1.1, by comparing the baseline model vs FLAML vs Optuna, we can see FLAML has an overall better performance in both classification and regression. Now let’s look into details.
 
@@ -46,18 +46,30 @@ Another benefit of choosing LGBM is the saved efforts in data preprocessing:
 * LGBM offers good accuracy with integer-coded categorical features. It is safe to label encoding categorical features without worrying about the order in the data as numerical features. Users only need to convert the integer-coded categorical features as “category” data type in python pandas.
 * LGBM is a non-parametric method which doesn’t make assumptions on the data, so preprocessing methods such as data normalization or reducing data correlation are not required either.
 
+The baseline performance is the average balanced accuracy of cross validation (CV) results. By using cross validation, we can observe the performance of each fold as well as the performance variance among folds. Because of the variance, we average all folds' results as the final performance, in order to show a less biased view.
+
+Leaves30 has small amount of data, so using 5-fold CV here:
+
+<p align="center">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/baesline_classification.png" width="1000" height="800" />
+</p>
+
+Sales data is large enough to use 10-fold CV:
+
+<p align="center">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/baseline_regression.png" width="1000" height="800" />
+</p>
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-[Next page >>][1]
-
-
-[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_2.md
+[Next page >>][5]
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_leaf.ipynb
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_sales.ipynb
 [3]:https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html
 [4]:https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html#sklearn.metrics.r2_score
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_2.md
