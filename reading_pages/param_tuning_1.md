@@ -65,7 +65,7 @@ Sales data is large enough to use 10-fold CV:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-[Next page >>][5]
+[Keep going >>][5]
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_leaf.ipynb
