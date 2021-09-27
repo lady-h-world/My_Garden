@@ -54,7 +54,7 @@ Another benefit of choosing LGBM is the saved efforts in data preprocessing:
 [Next page >>][1]
 
 
-[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_1.md
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_2.md
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_leaf.ipynb
