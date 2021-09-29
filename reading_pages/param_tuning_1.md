@@ -11,9 +11,9 @@ The seeds in this stop has the power of appliying the latest HPO technology in c
 
 ## FLAML vs Optuna - HPO for Classical Machine learning
 
-Optuna is a hyperparameter optimization framework published in 2019, it was designed for improving cost effectiveness of HPO with efficient parameter searching strategy and pruning algorithm. Till 2021, it has become a mature tool that supports different frameworks of machine learning and deep learning.
+[Optuna][7] is a hyperparameter optimization framework published in 2019, it was designed for improving cost effectiveness of HPO with efficient parameter searching strategy and pruning algorithm. Till 2021, it has become a mature tool that supports different frameworks of machine learning and deep learning.
 
-FLAML is an automated HPO library published in 2021, powered by self-invented parameter searching algorithms, it aims at freeing users from selecting learners and hyperparameters while delivering fast and economical HPO results.
+[FLAML][6] is an automated HPO library published in 2021, powered by self-invented parameter searching algorithms, it aims at freeing users from selecting learners and hyperparameters while delivering fast and economical HPO results.
 
 While working on some garden business, Lady H. has experimented with these powerful seeds. Let's look at a comparison between FLAML and Optuna through her experiments:
 
@@ -73,3 +73,5 @@ Sales data is large enough to use 10-fold CV:
 [3]:https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html
 [4]:https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html#sklearn.metrics.r2_score
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_2.md
+[6]:https://github.com/microsoft/FLAML
+[7]:https://optuna.org/
