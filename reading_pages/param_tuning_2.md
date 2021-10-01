@@ -30,7 +30,7 @@ Now let's look into each step:
 
 Step 1 ~ 3 are repeated by iterations until running out of the time budget.
 
-🌻 [Learn more about FLAML][1]
+🌻 [Learn more about FLAML >>][1]
 
 
 ### Design Overview - Optuna
