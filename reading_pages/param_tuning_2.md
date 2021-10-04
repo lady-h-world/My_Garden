@@ -41,6 +41,11 @@ The overall design of Optuna is shown in Figure 1.3:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_design.png" width="678" height="424" />
 </p>
 
+Optuna introduced define-by-run framework into HPO in 2019. The main idea behind define-by-run is, a user only needs to suggest the value range of each hyperparameter and optuna will decide the hyperparamster's value in each trial based on historical evaluated trials' results. Because of this framework design, optuna is able to provide highly modular programming that a user-defined objective function receives a living trial as input and evaluates the trial result. This also enables the parallel computation of multiple trials.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/trial_and_study.png" width="766" height="79" />
+</p>
 
 
 [1]:https://www.microsoft.com/en-us/research/publication/flaml-a-fast-and-lightweight-automl-library/
