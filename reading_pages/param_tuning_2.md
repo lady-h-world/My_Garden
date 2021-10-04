@@ -1,4 +1,4 @@
-The performance of FLAML and Optuna in Table 1.1 came from their best experiment results. In order to give you a better view of the power of our seeds, we'd like to take you around to see the internal mechanism, as well as each experiment's details.
+The performance of FLAML and Optuna in Table 1.1 came from their best experiment results. In order to give you a better view of the power of our sprouts, we'd like to take you around to see the internal mechanism, as well as each experiment's details.
 
 ### Design Overview - FLAML
 
