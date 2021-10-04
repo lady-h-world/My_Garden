@@ -4,9 +4,9 @@
 
 #
 <p align="center">
-  🍀 Lady H. has collected a great amount of treasure during her 10+ years data mining trip. These mysterious assets are living things like plants, they can be nurtured with your hard working, they will grow up and bloom beautifully, and, they also produce seeds which can grow everywhere.  
+  🍀 Lady H. has collected a great amount of treasure during her 10+ years data mining trip. These mysterious assets are living things like plants, they can be nurtured with your hard working, they will grow up and bloom beautifully, and, they also produce sprouts which can grow everywhere.  
 
-  So, Lady H. built this garden for her collections, waiting for new friends coming to help spread the seeds all over the world! 💖
+  So, Lady H. built this garden for her collections, waiting for new friends coming to help spread the sprouts all over the world! 💖
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="180" height="75" />
 </p>
 
-[Tour Guide for seeds collection! >>][1]
+[Tour Guide for sprouts collection! >>][1]
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md
