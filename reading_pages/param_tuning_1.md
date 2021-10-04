@@ -4,9 +4,9 @@ In order to be able to bloom in winter, the Queen had optimized her genes in the
 
 Similar to the Queen, in Applied Data Science, we can adjust the hyperparameters of a model in order to get an optimal output, this process is known as “Hyperparameter Optimization” (HPO).
 
-<p align="center">🌱 <b>Seeds Collection Time!</b> 🌱</p>
+<p align="center">🌱 <b>Sprouts Collection Time!</b> 🌱</p>
 
-The seeds in this stop has the power of appliying the latest HPO technology in classical classification & regression as well as deep learning problems, using FLAML, Optuna and Keras Tuner.
+The sprouts in this stop has the power of appliying the latest HPO technology in classical classification & regression as well as deep learning problems, using FLAML, Optuna and Keras Tuner.
 <p>&nbsp;</p>
 
 ## FLAML vs Optuna - HPO for Classical Machine learning
@@ -15,7 +15,7 @@ The seeds in this stop has the power of appliying the latest HPO technology in c
 
 [FLAML][6] is an automated HPO library published in 2021, powered by self-invented parameter searching algorithms, it aims at freeing users from selecting learners and hyperparameters while delivering fast and economical HPO results.
 
-While working on some garden business, Lady H. has experimented with these powerful seeds. Let's look at a comparison between FLAML and Optuna through her experiments:
+While working on some garden business, Lady H. has experimented with these powerful sprouts. Let's look at a comparison between FLAML and Optuna through her experiments:
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flaml_vs_optuna.png" width="922" height="409" />
