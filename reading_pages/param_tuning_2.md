@@ -10,7 +10,7 @@ The overall design of FLAML is shown in Figure 1.2:
 
 It has 2 major components:
 * ML Layer contains the candidate learners.
-* AutoML Layer includes a Resampling Strategy Proposer, a Learner Proposer, a Hyperparam & Sample Size Proposer and a Controller. This component controls the core logic of search strategy, with the goal of minimizing the total cost before finding a model with the lowest test error.
+* AutoML Layer includes a Resampling Strategy Proposer, a Learner Proposer, a Hyperparam & Sample Size Proposer and a Controller. This component controls the core logic of the search strategy, with the goal of minimizing the total cost before finding a model with the optimal test error.
   * "Total Cost" means the total GPU time of training and validation using cross validation or holdout. This cost is also expected to increase as the test error decreases.
 
 <p align="left">
@@ -30,7 +30,7 @@ Now let's look into each step:
 
 Step 1 ~ 3 are repeated by iterations until running out of the time budget.
 
-🌻 [Learn more about FLAML >>][1]
+🌻 [Learn more about FLAML paper >>][1]
 
 
 ### Design Overview - Optuna
@@ -47,9 +47,11 @@ Optuna introduced define-by-run framework into HPO in 2019. The main idea behind
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/trial_and_study.png" width="766" height="79" />
 </p>
 
-Optuna's sampling methods work as its search strategy, which support both independent sampling (such as TPE) and relational sampling (such as CMA-ES). Independent sampling samples hyperparameters independently while relational sampling exploits the correlations between hyperparaemters. To achieve cost-effectiveness, optuna also provides pruning algorithm to terminate unpromising trials based on periodically monitored intermediate objective values.
+Optuna's sampling algorithm works as its search strategy, supporting both independent sampling (such as TPE) and relational sampling (such as CMA-ES). Independent sampling samples hyperparameters independently while relational sampling exploits the correlations between hyperparaemters. To achieve cost-effectiveness, optuna also provides pruning algorithm to terminate unpromising trials based on periodically monitored intermediate objective values.
 
 As we can see in Figure 1.3, each optuna worker executes an instance of the objective function as well as sampling algorithm and pruning algorithm of a study. This type of design is suitable for distributed environment where workers are running in parallel. However, workers are sharing the progress of current study via the storage. An objective function can also access the storage to get the information of past studies.
+
+🌻 [Learn more about Optuna paper >>][4]
 
 ### Design Overview - Summary
 
@@ -86,3 +88,4 @@ Now time to show you Lady H.'s experiments with the power from both FLAML and Op
 [1]:https://www.microsoft.com/en-us/research/publication/flaml-a-fast-and-lightweight-automl-library/
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_3.md
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_1.md
+[4]:https://arxiv.org/abs/1907.10902
