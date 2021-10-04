@@ -4,7 +4,7 @@
 
 #
 
-Each collection in this garden exhibits applied data science qualities, so does the seed. Traveling around this garden, you will witness a wide variety of seeds. No matter you are a beginner or a senior in data science, there is something fun awaits you to explore and to collect!
+Each collection in this garden exhibits some applied data science qualities, so do their sprouts. Traveling around this garden, you will witness a wide variety of them. No matter you are a beginner or a senior in data science, there is something fun awaits you to explore and to collect!
 
 ## Main Station 🍀
 
