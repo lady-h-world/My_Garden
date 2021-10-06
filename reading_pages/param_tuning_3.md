@@ -35,6 +35,13 @@ Given the same 300 seconds time budget, Optuna got a little bit better testing p
 * 🌻 [To look into FLAML experiment details >>][1]
 * 🌻 [To look into Optuna experiment details >>][2]
 
+It is a good practice to train the optimized model on the whole training dataset before evaluating on the testing data, in case the optimized model wasn't trained on all the cases in the training data and might show bias on testing data evaluation. Comparing the code, you may notice this step appeared in Optuna but not in FLAML, this is because FLAML will automate this step at the end of its optimization.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/flaml_train_all.png" width="766" height="79" />
+</p>
+
+
 #### Multi-Learners for Leaves100
 
 Before making further improvement on Leaves30 classification, Lady H. decided to experiment on a larger dataset and try out different search strategies first. Her motivation was mainly to gain a more complete observation. The dataset, Leaves100 has 100 classes of leaves, each class has 16 records and each record has 192 features. So this is a high dimensional multi-class dataset.
@@ -83,7 +90,7 @@ The performance difference in Leaves100 dataset is more obvious. While achieving
 * 🌻 [To look into FLAML experiment details >>][1]
 * 🌻 [To look into Optuna experiment details >>][2]
 
-Besides the difference in overall performance (testing performance and time cost), we can also see FLAML saves much more coding efforts when we just want to experiment with default settings, thanks to the more automated design in FLAML. The way Optuna works gives you the flexibility to add multiple learners regardless of their implementation differences, however, FLAML also alows you to add customized learners, and we will show you that in a later experiment.
+Besides the difference in overall performance (testing performance and time cost), we can also see FLAML saves much more coding efforts when we just want to experiment with default settings, thanks to the automation design in FLAML. The way Optuna works gives you the flexibility to add multiple learners regardless of their implementation differences, however, FLAML also alows you to add customized learners, and we will show you that in a later experiment.
 
 #
 <p align="left">
