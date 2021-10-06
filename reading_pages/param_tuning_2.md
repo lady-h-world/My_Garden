@@ -49,7 +49,7 @@ Optuna introduced define-by-run framework into HPO in 2019. The main idea behind
 
 Optuna's sampling algorithm works as its search strategy, supporting both independent sampling (such as TPE) and relational sampling (such as CMA-ES). Independent sampling samples hyperparameters independently while relational sampling exploits the correlations between hyperparaemters. To achieve cost-effectiveness, optuna also provides pruning algorithm to terminate unpromising trials based on periodically monitored intermediate objective values.
 
-As we can see in Figure 1.3, each optuna worker executes an instance of the objective function as well as sampling algorithm and pruning algorithm of a study. This type of design is suitable for distributed environment where workers are running in parallel. However, workers are sharing the progress of current study via the storage. An objective function can also access the storage to get the information of past studies.
+As we can see in Figure 1.3, each Optuna worker executes an instance of the objective function as well as sampling algorithm and pruning algorithm of a study. This type of design is suitable for distributed environment where workers are running in parallel. However, workers are sharing the progress of current study via the storage. An objective function can also access the storage to get the information of past studies.
 
 🌻 [Learn more about Optuna paper >>][4]
 
