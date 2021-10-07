@@ -37,7 +37,7 @@ In Optuna, to specify a search space, users need to create an objective function
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_optuna_search_space_no_pruner.png" width="824" height="685" />
 </p>
 
-The Optuna experiment took much longer running time than FLAML, therefore, Lady H. was wondering whether she should add pruning to skip those unpromising trials in order to save time, it might also reduce the overfitting. What's more, because the testing performance from above Optuna experiment didn't look well, Lady H. added more trials to see whether there can be some performance improvement. TPE was still used as the search strategy in Optuna experiments. In order to achieve a better performance result, [hyperband is a suggested pruner to be used together with TPE][3].
+The Optuna experiment took much longer running time than FLAML, therefore, Lady H. was wondering whether she should add pruning to skip those unpromising trials in order to save time, it might also reduce the overfitting. TPE was still used as the search strategy in Optuna experiments. In order to achieve a better performance result, [hyperband is a suggested pruner to be used together with TPE][3]. What's more, because the testing performance from above Optuna experiment didn't look well, Lady H. added more trials to see whether there can be some performance improvement.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_optuna_search_sapce_has_prunder.png" width="824" height="685" />
@@ -50,6 +50,8 @@ In these experiments, FLAML and Optuna share the same specified search space. Ho
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flaml_optuna_search_space.png" width="655" height="306" />
 </p>
+
+<i>NOTE: the time cost of Optuna experiments were using 10 trials' time.</i>
 
 Looking into Optuna's experiment code, you may have noticed that the time cost increased 9 times when the number of trials increased 9 times. However, this won't happen in FLAML, because FLAML's time complexity is affected by the number of hyperparameters rather than the number of trials.
 

@@ -8,12 +8,14 @@ Each collection in this garden exhibits some applied data science qualities, so 
 
 ## Main Station 🍀
 
+Here's an overview of all the stops!
+
 * [The Queen - The Power of Dawn][1]
   * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning
 
 <p>&nbsp;</p>
 
-## Safeguard the World 
+## Safeguard the World ©
 Lady H.'s properties all have their intelligence and destructive superpower, being stolen and spread in an illegal way, there will be unpredictable consequences on the outside world. If you came across any illegal spreading of our assets, please contact us at <b>ladyheartsworld@gmail.com</b>. Together, let's keep the world safe.
 
 <p>&nbsp;</p>
