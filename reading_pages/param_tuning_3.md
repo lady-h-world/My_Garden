@@ -32,8 +32,8 @@ Given the same 300 seconds time budget, Optuna got a little bit better testing p
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/default_leaves30.png" width="658" height="223" />
 </p>
 
-* 🌻 [To look into FLAML experiment details >>][1]
-* 🌻 [To look into Optuna experiment details >>][2]
+* 🌻 [Look into FLAML experiment details >>][1]
+* 🌻 [Look into Optuna experiment details >>][2]
 
 It is a good practice to train the optimized model on the whole training dataset before evaluating on the testing data, in case the optimized model wasn't trained on all the cases in the training data and might show bias on testing data evaluation. Comparing the code, you may notice this step appeared in Optuna but not in FLAML, this is because FLAML will automate this step at the end of its optimization.
 
@@ -65,7 +65,7 @@ TPE applies bayesian theorem `P(y|x) = P(x|y) * P(y) / P(x)`.
 * `P(x|y)` means, given the objective function's score, what's the probability of the hyperparameters. When there are multiple hyperparameters, bayesian formula assumes they are independent from each other, and this is also why TPE is an independent method in Optuna.
 * `P(x|y) = l(x)` if there is an improvement in the objective function, otherwise `P(x|y) = g(x)`
   * On each trial, for each parameter, TPE fits one Gaussian Mixture Model (GMM) `l(x)` to the set of parameter values associated with the best objective values, and another GMM `g(x)` to the remaining parameter values. It chooses the parameter value `x` that maximizes the ratio `l(x)/g(x)`.
-* 🌻 [To learn more about TPE >>][5]
+* 🌻 [Learn more about TPE >>][5]
 
 Random search is a common search algorithm implemented in many HPO tools, it selects hyperparameter sets randomly in order to find the optimal solution, and has been proved to be efficient. Since TPE and random search are the most recommended methods in Optuna, Lady H. experimented with these 2 methods. In Optuna, the search strategy is called as "sampler".
 
@@ -87,8 +87,8 @@ The performance difference in Leaves100 dataset is more obvious. While achieving
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/default_leaves100.png" width="790" height="349" />
 </p>
 
-* 🌻 [To look into FLAML experiment details >>][1]
-* 🌻 [To look into Optuna experiment details >>][2]
+* 🌻 [Look into FLAML experiment details >>][1]
+* 🌻 [Look into Optuna experiment details >>][2]
 
 Besides the difference in overall performance (testing performance and time cost), we can also see FLAML saves much more coding efforts when we just want to experiment with default settings, thanks to the automation design in FLAML. The way Optuna works gives you the flexibility to add multiple learners regardless of their implementation differences, however, FLAML also alows you to add customized learners, and we will show you that in a later experiment.
 
