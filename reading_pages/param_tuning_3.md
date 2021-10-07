@@ -72,7 +72,7 @@ Random search is a common search algorithm implemented in many HPO tools, it sel
 To use Optuna, even with default model settings, we need to create the objective function first, and for multi-learners scenario, we need to write the code for each learner as shown below. Because in FLAML experiments, Lady H. observed that LGBM and XGBoost appeared to be most outstanding models (set `verbose` > 0), so in Optuna, she only chose LGBM and XGBoost in the learner list.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_optuna_%20default_objective.png" width="1066" height="732" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_optuna_default_objective.png" width="1066" height="732" />
 </p>
 
 Then to select TPE or Random Search, we can specify the the sampler as shown in Figure 1.5. TPE is the default sampler, so we don't have to specify for it.
