@@ -8,6 +8,8 @@ Each collection in this garden exhibits some applied data science qualities, so 
 
 ## Main Station 🍀
 
+Here's an overview of all the stops!
+
 * [The Queen - The Power of Dawn][1]
   * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning
 
