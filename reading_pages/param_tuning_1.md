@@ -54,11 +54,15 @@ Leaves30 has small amount of data, so using 5-fold CV here:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/baesline_classification.png" width="1000" height="800" />
 </p>
 
+🌻 [Look into Leaves30 Baseline details >>][9]
+
 Sales data is large enough to use 10-fold CV:
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/baseline_regression.png" width="1000" height="800" />
 </p>
+
+🌻 [Look into Sales Baseline details >>][10]
 
 #
 <p align="left">
@@ -84,3 +88,5 @@ Sales data is large enough to use 10-fold CV:
 [6]:https://github.com/microsoft/FLAML
 [7]:https://optuna.org/
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/the_queen.md
+[9]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/lgbm_baseline.ipynb
+[10]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/lgbm_regression_baseline.ipynb
