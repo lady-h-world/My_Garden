@@ -16,20 +16,20 @@ Here's an overview of all the stops!
 <p>&nbsp;</p>
 
 ## Safeguard the World ©
-Lady H.'s properties all have their intelligence and destructive superpower, being stolen and spread in an illegal way, there will be unpredictable consequences on the outside world. If you came across any illegal spreading of our assets, please contact us at <b>ladyheartsworld@gmail.com</b>. Together, let's keep the world safe.
+Lady H.'s properties all have their intelligence and destructive superpower, being stolen and spread in an illegal way, will cause unpredictable consequences on the outside world. If you came across any illegal spreading of our assets, please contact us at <b>ladyheartsworld@gmail.com</b>. Together, let's keep the world safe. 
 
 <p>&nbsp;</p>
 
 ## Friends Around
-Walking around the garden, you will be accompanied by new firends!
+Walking around the garden, new firends will accompany with you!
 
-Our warmhearted Chansey butterflies will bring you with tips, general notes and guide you to the right way, <i>just follow them!</i>
+Our warmhearted Chansey Butterflies will bring you with tips, general notes and guide you to the right way, <i>just follow them!</i>
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/follow_us_note.png" width="431" height="97" />
 </p>
 
-🌻 The most welcoming Baby Sunflowers bloom everywhere and will open gate of secrets for you, <i>just click them!</i>
+🌻 The most welcoming Baby Sunflowers bloom everywhere and will open the gate of secrets for you, <i>just click them!</i>
 
 
 And our lovely Miss Mooncake can't wait to see you and share all of her stories!
