@@ -29,10 +29,12 @@ Our warmhearted Chansey butterflies will bring you with tips, general notes and 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/follow_us_note.png" width="431" height="97" />
 </p>
 
-🌻 Welcoming Sunflowers bloom everywhere and open the gate for you to disclose all the secrets behind, <i>just click them!</i>
+🌻 The most welcoming Baby Sunflowers bloom everywhere and will open gate of secrets for you, <i>just click them!</i>
 
-Lovely Miss Mooncake can't wait to see you and share all the stories, anecdotes she knows.
-<img aligh=right src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="155" height="200" />
+
+And our lovely Miss Mooncake can't wait to see you and share all of her stories!
+<img aligh="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="155" height="200" />
+
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/the_queen.md
