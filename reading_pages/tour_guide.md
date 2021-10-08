@@ -35,6 +35,10 @@ Our warmhearted Chansey Butterflies will bring you with tips, general notes and 
 And our lovely Miss Mooncake can't wait to see you and share all of her stories!
 <img aligh="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="155" height="200" />
 
+<p>&nbsp;</p>
 
+## Keep in Touch
+After visiting our garden, if you have any question or suggestion, feel free to drop messages in [our discussion forum][2]!
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/the_queen.md
+[2]:https://github.com/lady-h-world/My_Garden/discussions
