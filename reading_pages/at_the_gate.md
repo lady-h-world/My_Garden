@@ -3,7 +3,7 @@
 </p>
 
 #
-<p align="center">
+<p align="left">
   🍀 Lady H. has collected a great amount of treasure during her 10+ years data mining trip. These mysterious assets are living things like plants, they can be nurtured with your hard working, they will grow up and bloom beautifully, and, they also produce sprouts which can grow everywhere.  
 
   So, Lady H. built this garden for her collections, waiting for new friends coming to help spread the sprouts all over the world! 💖
