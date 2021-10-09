@@ -85,7 +85,7 @@ Can't say the performance is ideal, but it's just a quick check to know how to u
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-[Keep going >>][11]
+[Gift for you >>][11]
 
 <p align="right">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
