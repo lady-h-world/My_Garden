@@ -1,8 +1,8 @@
-### Experiment 4 - HPO in Deep Learning
+## Optuna vs Keras Tuner - HPO for Deep Learning
 
 When Lady H. planned to end her HPO experiments, a type of new sprout discovered in the garden 🌱. The gardeners said this sprout contains the power called, "Keras Tuner", which can be used in HPO of deep learning. "Ah! Deep Learning HPO, I haven't tried that out. Let me take a quick look", Lady H. thought.
 
-#### A Glance of Graden Flowers
+### A Glance of Graden Flowers
 
 Every year, gardeners will bring in new flower species to decorate the garden. These flowers don't have any superpower as Lady H.'s treasures but their beauty 
 is making the garden a real wonderland throughout 4 seasons. As a flower expert, Lady H. doesn't really need any tool to classify these beauties, but she loves to pick whatever handsome items as her dataset. So she turned on her crystal ball to collect a sample of garden flowers.
@@ -21,7 +21,7 @@ There are 102 flower species, 7169 flower observations in the training data and 
 
 🌻 [To get flowers data >>][1]
 
-#### Optuna HPO in Deep Learning
+### Optuna HPO in Deep Learning
 
 FLAML doesn't outperform Optuna all the time. When it comes to deep learning where tunable hyperparameters don't gather in one place, the documentation of [FLAML deep learning][2] poses the biggest challenge that, it's hard for users to find where to tune which hyperparameters. Its modularization design and pytorch specific tutorials also limit its user acceptability.
 
@@ -41,7 +41,7 @@ Even with very low expectation, the output still disappointed Lady H., since the
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/NN_val_loss_accuracy.png" width="766" height="79" />
 </p>
 
-#### Keras Tuner HPO in Deep Learning
+### Keras Tuner HPO in Deep Learning
 
 But without setting off against Optuna, how can we realize Keras Tuner is a nice tool?!
 
