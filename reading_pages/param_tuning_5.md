@@ -31,7 +31,7 @@ She did some basic data exploration, such as checking the distributions of the f
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/sales_distribution.png" width="911" height="324" />
 </p>
 
-The 2 datasets have almost the same distributions, and the distribution looks like the combination of 2 [poisson distributions][3]. In LGBM's built-in objective funtions, there is a "poisson loss" which assumes the forecast target follows poisson distribution, when the likelihood of the assumption is larger, the forecast performance can be better.
+The 2 datasets have almost the same distributions, and the shape looks like the combination of 2 [poisson distributions][3]. In LGBM's built-in objective funtions, there is a "poisson loss" which assumes the forecast target follows poisson distribution, when the likelihood of the assumption is larger, the forecast performance can be better.
 
 Therefore, Lady H. started with LGBM's built-in poisson loss. Because the customized learner inherited from `LGBMEstimator`, users can simply specify the `objective` as "poisson":
 
@@ -39,7 +39,7 @@ Therefore, Lady H. started with LGBM's built-in poisson loss. Because the custom
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_flaml_customized_poisson_loss.png" width="1064" height="809" />
 </p>
 
-Lady H. got 0.982 R2 testing score within 300 seconds with these settings, so there is an improvement from the baseline result.
+Lady H. got 0.982 R2 testing score in 300 seconds with these settings, so there is an improvement from the baseline result.
 
 After that, she wanted to try out her self-written objective function. But the challenge is, LGBM's customized objective function needs users to specify `grad` and `hess` 🤔
 
@@ -52,7 +52,7 @@ Lady H. had graduated from high school for a while and forgot how to do the calc
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flaml_custimized_fair_loss.png" width="900" height="700" />
 </p>
 
-Not to her surprise, the final performance in testing data wasn't better than using poisson loss. 0.964 R2 testing score in 30 seconds, even worse than the baseline output.
+Not to her surprise, the final performance in testing data wasn't better than using poisson loss. 0.964 R2 testing score in 300 seconds, even worse than the baseline output.
 
 🌻 [Look into FLAML experiment details >>][5]
 
@@ -66,7 +66,7 @@ Because the learner is LGBM too and the way to customize the objective function 
 
 🌻 [Look into Optuna experiment details >>][6]
 
-Without applying cross validation, the overall time cost is definitely reduced, but the testing performance is still worse than the baseline result.
+Without applying cross validation, the overall time cost is definitely reduced, and the output is showing prunning was taking effect, but the testing performance is still worse than the baseline result.
 
 Table 1.6 summarized the performance in this experiment:
 
@@ -76,7 +76,7 @@ Table 1.6 summarized the performance in this experiment:
 
 Looking at all these experiments, FLAML appears to be better overall. However, it doesn't mean Optuna is worse in every aspect.
 
-In the code of Optuna experiment, you may have noticed that Lady H. generated some visualization, which provides more Optuna hyperparameter tuning insights. For example,
+In the code of Optuna experiment, you may have noticed that Lady H. generated some visualization, which provides more insights of Optuna hyperparameter tuning. For example,
 
 * Parameter importance plot shows an overall view of the parameters' impact on model's validation performance.
 
@@ -125,5 +125,5 @@ Comparing with FLAML, Optuna has a better user experience in deep learning, and 
 [4]:https://github.com/lady-h-world/My_Garden/discussions
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/flaml_experiments/flaml_customized_learner.ipynb
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/optuna_experiments/optuna_customized.ipynb
-[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_4.md
-[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_6.md
+[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_6.md
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_4.md
