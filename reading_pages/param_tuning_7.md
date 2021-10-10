@@ -1,4 +1,4 @@
-# 💝 Gift for You 💝
+# 💝 Gifts for You 💝
 
 We think a summarized note will upgrade your visiting experience :)
 
