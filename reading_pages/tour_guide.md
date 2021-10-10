@@ -16,7 +16,7 @@ Here's an overview of all the stops!
 <p>&nbsp;</p>
 
 ## Safeguard the World ©
-Lady H.'s properties all have their intelligence and destructive superpower, being stolen and spread in an illegal way, will cause unpredictable consequences on the outside world. If you came across any illegal spreading of our assets, please contact us at [the reporting forum][3] with screenshorts and locations. Together, let's keep the world safe. 
+Lady H.'s properties all have their intelligence and destructive superpower, being stolen and spread in an illegal way, will cause unpredictable consequences on the outside world. If you came across any illegal spreading of our assets, please contact us in [the reporting forum][3] with screenshorts and locations. Together, let's keep the world safe. 
 
 <p>&nbsp;</p>
 
