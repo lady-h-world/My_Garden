@@ -44,7 +44,7 @@ Lady H. got 0.982 R2 testing score in 300 seconds with these settings, so there 
 After that, she wanted to try out her self-written objective function. But the challenge is, LGBM's customized objective function needs users to specify `grad` and `hess` 🤔
 
 * `grad` is the value of the first order derivative (gradient) of the loss with respect to the elements of `y_pred` for each sample point.
-* `hess` is the value of the first order derivative (gradient) of the loss with respect to the elements of `y_pred` for each sample point.
+* `hess` is the value of the second order derivative (gradient) of the loss with respect to the elements of `y_pred` for each sample point.
 
 Lady H. had graduated from high school for a while and forgot how to do the calculation. If you have any good suggestion, welcome to leave comments in [the discussion forum][4], Lady H. will be more than happy to know that. But anyway, she found the formulas for some loss functions, such as "fair loss" as the code shown below. LGBM does have its built-in fair loss too, but here Lady H. changed the constant value used in the formula.
 
