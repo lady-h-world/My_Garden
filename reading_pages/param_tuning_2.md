@@ -64,7 +64,7 @@ Table 1.2 has compared and summarized the design of FLAML and Optuna:
 While sharing several common strengths, FLAML is designed to be more automated in optimization. The main difference in their core algorithms is FLAML makes decisions based on the estimated evaluation while Optuna is based on the historical evaluation.
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/design_diff_flaml_vs_optuna.png" width="904" height="651" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flaml_vs_optuna_design_diff.png" width="901" height="663" />
 </p>
 
 Now time to show you Lady H.'s experiments with the power from both FLAML and Optuna!
