@@ -28,13 +28,13 @@ To use Optuna's default settings with cross validation, users need to use its in
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_optuna_default_df100.png" width="1067" height="407" />
 </p>
 
+🌻 [Look into Optuna experiment details >>][2]
+
 Given the same 300 seconds time budget, Optuna got a little bit better testing performance, but none of their results is ideal.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/default_leaves30.png" width="658" height="223" />
 </p>
-
-🌻 [Look into Optuna experiment details >>][2]
 
 It is a good practice to train the optimized model on the whole training dataset before evaluating on the testing data, in case the optimized model wasn't trained on all the cases in the training data and might show bias on testing data evaluation. Comparing the code, you may notice this step appeared in Optuna but not in FLAML, this is because FLAML will automate this step at the end of its optimization.
 
