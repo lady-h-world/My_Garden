@@ -31,7 +31,7 @@ In the code, you will also see, Lady H. had tried CFO and Blend Search again wit
 
 #### Optuna Specified Search Space
 
-In Optuna, to specify a search space, users need to create an objective function. Meanwhile, in order to apply cross validation as the above FLAML experiment, `LightGBMTunerCV()` was used here:
+Same as Experiment 1, in Optuna, to specify a search space, users also need to create an objective function. Meanwhile, in order to apply cross validation as the above FLAML experiment, `LightGBMTunerCV()` was used here:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_optuna_search_space_no_pruner.png" width="824" height="685" />
@@ -45,13 +45,13 @@ The Optuna experiment took much longer running time than FLAML, therefore, Lady 
 
 🌻 [Look into Optuna experiments details >>][4]
 
-In these experiments, FLAML and Optuna share the same specified search space. However, comparing with their default settings, FLAML made 11.87% improvement in testing performance without increasing the time cost, while Optuna made 8% decrease in the testing performance and had its time cost increased 3 times.
+In these experiments, FLAML and Optuna share the same specified search space. However, comparing with their default settings, FLAML made 11.87% improvement in testing performance without increasing the time cost, while Optuna had 8% decrease in the testing performance and increased its time cost by 3 times.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flaml_optuna_search_space.png" width="655" height="306" />
 </p>
 
-<i>NOTE: the time cost of Optuna experiments were using 10 trials' time.</i>
+<i>NOTE: the time cost of Optuna experiments were using 10 trials' time in Table1.5.</i>
 
 Looking into Optuna's experiment code, you may have noticed that the time cost increased 9 times when the number of trials increased 9 times. However, this won't happen in FLAML, because FLAML's time complexity is affected by the number of hyperparameters rather than the number of trials.
 
