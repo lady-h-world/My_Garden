@@ -11,7 +11,7 @@ With HPO tools at hand, this is how Lady H. decided to add this regression probl
 
 #### Baseline Forecast
 
-Remember the Sales baseline model output [shown before][1]?
+Remember the Sales baseline model output shown before?
 
 Before using the HPO power, Lady H. used default LGBM to do a baseline forecast and got 0.975 R2 score within 40.2 seconds. That's a nice result, as mentioned before, the closer R2 gets towards 1 in testing data, the better.
 
@@ -39,14 +39,14 @@ Therefore, Lady H. started with LGBM's built-in poisson loss. Because the custom
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_flaml_customized_poisson_loss.png" width="1064" height="809" />
 </p>
 
-Lady H. got 0.982 R2 testing score in 300 seconds with these settings, so there is an improvement from the baseline result.
+Lady H. got 0.982 R2 testing score in 300 seconds with these settings, so there is an improvement in comparison with the baseline result.
 
 After that, she wanted to try out her self-written objective function. But the challenge is, LGBM's customized objective function needs users to specify `grad` and `hess` 🤔
 
 * `grad` is the value of the first order derivative (gradient) of the loss with respect to the elements of `y_pred` for each sample point.
 * `hess` is the value of the first order derivative (gradient) of the loss with respect to the elements of `y_pred` for each sample point.
 
-Lady H. had graduated from high school for a while and forgot how to do the calculation. If you have any good suggestion, welcome to leave comments in [the discussion forum][4] , Lady H. will be more than happy to know that. But anyway, she found the formulas for some loss functions, such as "fair loss" as the code shown below. LGBM does have its built-in fair loss too, but here Lady H. changed the constant value used in the formula.
+Lady H. had graduated from high school for a while and forgot how to do the calculation. If you have any good suggestion, welcome to leave comments in [the discussion forum][4], Lady H. will be more than happy to know that. But anyway, she found the formulas for some loss functions, such as "fair loss" as the code shown below. LGBM does have its built-in fair loss too, but here Lady H. changed the constant value used in the formula.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flaml_custimized_fair_loss.png" width="900" height="700" />
@@ -76,7 +76,7 @@ Table 1.6 summarized the performance in this experiment:
 
 Looking at all these experiments, FLAML appears to be better overall. However, it doesn't mean Optuna is worse in every aspect.
 
-In the code of Optuna experiment, you may have noticed that Lady H. generated some visualization, which provides more insights of Optuna hyperparameter tuning. For example,
+In the code of Optuna experiment, you may have noticed that Lady H. generated some visualization, which provides more insights of Optuna's hyperparameter tuning. For example,
 
 * Parameter importance plot shows an overall view of the parameters' impact on model's validation performance.
 
