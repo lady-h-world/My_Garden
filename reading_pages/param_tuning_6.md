@@ -75,7 +75,7 @@ As you might have noticed in the code above, function `get_optimized_model()` re
 With the same simple CNN settings, in this quick experiment, Keras Tuner's bayesian tuner works in a more efficient way, comparing with Optuna and other tuners. And it seems that hyperband tuner didn't speed up as it's designed to be:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_vs_keras_tuner.png" width="876" height="389" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_vs_keras_tuner.png" width="874" height="389" />
 </p>
 
 Can't say the performance is ideal, but it's just a quick check to know how to use Keras Tuner. After this experiment, Lady H. decided to end her HPO experiments and move on to other work. Before visiting other stops, we have a gifts for you!
