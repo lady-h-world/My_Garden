@@ -4,8 +4,8 @@ When Lady H. planned to end her HPO experiments, a type of new sprout discovered
 
 ### A Glance of Graden Flowers
 
-Every year, gardeners will bring in new flower species to decorate the garden. These flowers don't have any superpower as Lady H.'s treasures but their beauty 
-is making the garden a real wonderland throughout 4 seasons. As a flower expert, Lady H. doesn't really need any tool to classify these beauties, but she loves to pick whatever handsome items as her dataset. So she turned on her crystal ball to collect a sample of garden flowers.
+Every year, gardeners will bring in new flower species to decorate the garden. These flowers don't have any superpower as Lady H.'s treasure but their beauty 
+is making the garden a real wonderland throughout 4 seasons. As a flower expert, Lady H. doesn't really need any tool to classify these beauties, but she loves to pick anything handsome as her dataset. So she turned on her crystal ball to collect a sample of garden flowers.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/crystal_ball_later.png" width="766" height="79" />
@@ -19,13 +19,13 @@ Wanna take a peek at some of our flowers?
 
 There are 102 flower species, 7169 flower observations in the training data and 1020 observations in the testing data. Each observation had been shapped into the same 300x300 resolution.
 
-🌻 [To get flowers data >>][1]
+🌻 [To get Flowers data >>][1]
 
 ### Optuna HPO in Deep Learning
 
 FLAML doesn't outperform Optuna all the time. When it comes to deep learning where tunable hyperparameters don't gather in one place, the documentation of [FLAML deep learning][2] poses the biggest challenge that, it's hard for users to find where to tune which hyperparameters. Its modularization design and pytorch specific tutorials also limit its user acceptability.
 
-By comparison, Optuna is easier to learn and user. The way to tune deep learning models is almost the same as its classical machine learning HPO where users build the model and calculate evaluation metric in an objective function and a study will be created to execute the optimization. At the same time, as we can see from the code below, it's flexible to tune hyperparameters in different places.
+By comparison, Optuna is easier to learn and use. The way to tune deep learning models is almost the same as its classical machine learning HPO where users build the model and calculate evaluation metric in an objective function and a study will be created to execute the optimization. At the same time, as we can see from the code below, it's flexible to tune hyperparameters in different places.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_optuna_cnn.png" width="1067" height="723" />
@@ -45,7 +45,7 @@ Even with very low expectation, the output still disappointed Lady H., since the
 
 But without setting off against Optuna, how can we realize Keras Tuner is a nice tool?!
 
-Similar to Optuna, Keras Tuner allows users to define the model and tune hyperparameters in different places. The interesting difference is, while Optuna needs users to do model building the evaluation within 1 function, Keras Tuner requires an independent function to define the model only:
+Similar to Optuna, Keras Tuner allows users to define the model and tune hyperparameters in different places. The interesting difference is, while Optuna needs users to do model building and the evaluation within 1 function, Keras Tuner requires an independent function to define the model only:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_keras_tuner_build_model.png" width="1000" height="406" />
@@ -57,7 +57,7 @@ The defined model will be the input of a tuner, such as the bayesian tuner (`Bay
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_keras_tuner_bayesian_tuner.png" width="1068" height="408" />
 </p>
 
-The tuners are working as the hyperparameters search strategy, to find an optimal set of parameters that lead to better model performance. In Keras Tuner, there are 4 major tuners:
+The tuners are working as the hyperparameters search strategy, to find an optimal set of parameters that lead to a better model performance. In Keras Tuner, there are 4 major tuners:
 
 * [Random Tuner][5] applies random search, similar to the random search in classical machine learning HPO.
 * [Hyperband Tuner][6] is a search algorithm designed to speed up random search through adaptive resource allocation and early-stopping.
@@ -75,7 +75,7 @@ As you might have noticed in the code above, function `get_optimized_model()` re
 With the same simple CNN settings, in this quick experiment, Keras Tuner's bayesian tuner works in a more efficient way, comparing with Optuna and other tuners. And it seems that hyperband tuner didn't speed up as it's designed to be:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_keras_tuner.png" width="876" height="389" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_vs_keras_tuner.png" width="876" height="389" />
 </p>
 
 Can't say the performance is ideal, but it's just a quick check to know how to use Keras Tuner. After this experiment, Lady H. decided to end her HPO experiments and move on to other work. Before visiting other stops, we have a gifts for you!
