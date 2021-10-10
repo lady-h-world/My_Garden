@@ -1,6 +1,6 @@
 ### Experiment 1 - Optimization with Default Settings
 
-In Lady H.'s past journey, a real world project often starts from building the prototype, and the prototype often starts with a baseline result which will be compared with the future improvement solutions. To quickly generate the baseline result, an efficient way is to choose 1 or more models and experiment with their default settings.
+In Lady H.'s past journey, a real world project often starts from building the prototype, and the prototype often starts with a baseline result which will be compared with the future enhanced solutions. To quickly generate the baseline result, an efficient way is to choose 1 or more models and experiment with their default settings.
 
 Therefore, Lady H. wanted to test the power of FLAML and Optuna under default settings.
 
@@ -8,17 +8,19 @@ Therefore, Lady H. wanted to test the power of FLAML and Optuna under default se
 
 She started with a simple case, using LGBM with default settings to classify the 30-class leaves. 
 
-In FLAML, to use defulat settings only need to create an `AutoML` instance with a few mandatory settings such as time budget, validation metric, estimator(s) and log location. By settings `n_splits` and `split_type`, in this case it's telling FLAML to run 5-fold cross validation with stratified split. As mentioned before, FLAML provides automated decision making between cross validation and holdout, but once the user has made the decision in the AutoML instance, FLAML will obey user's settings.
+In FLAML, to use defulat settings only need to create an `AutoML` instance with a few mandatory settings such as time budget, validation metric, estimator(s) and log location. By settings `n_splits` and `split_type`, in this case it's telling FLAML to run 5-fold cross validation with stratified split. As mentioned before, FLAML provides automated decision making between cross validation and holdout, but once the user has made the decision in the AutoML instance, FLAML will obey user's settings. In this example, FLAML has to run 5-fold stratified cross validation.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_flaml_default_df30.png" width="1067" height="290" />
 </p>
 
-The log file records information in each trial, therefore at the end of FLAML optimization, we can plot its learning curve as below. As we can see, it takes less time to make an improvement in the early stage but in the later stage, it takes longer time to make further performance increase.
+The log file records information in each trial, therefore at the end of the optimization, we can plot its learning curve as below. As we can see, it takes less time to make an improvement in the early stage but in the later stage, it takes longer time to further enhance the performance.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/learning_curve_default_leaves30.png" width="390" height="273" />
 </p>
+
+🌻 [Look into FLAML experiment details >>][1]
 
 To use Optuna's default settings with cross validation, users need to use its integrated CV functions, such as `LightGBMTunerCV()` function. However, not every supported model has integrated CV methods.
 
@@ -32,8 +34,7 @@ Given the same 300 seconds time budget, Optuna got a little bit better testing p
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/default_leaves30.png" width="658" height="223" />
 </p>
 
-* 🌻 [Look into FLAML experiment details >>][1]
-* 🌻 [Look into Optuna experiment details >>][2]
+🌻 [Look into Optuna experiment details >>][2]
 
 It is a good practice to train the optimized model on the whole training dataset before evaluating on the testing data, in case the optimized model wasn't trained on all the cases in the training data and might show bias on testing data evaluation. Comparing the code, you may notice this step appeared in Optuna but not in FLAML, this is because FLAML will automate this step at the end of its optimization.
 
@@ -46,6 +47,8 @@ It is a good practice to train the optimized model on the whole training dataset
 
 Before making further improvement on Leaves30 classification, Lady H. decided to experiment on a larger dataset and try out different search strategies first. Her motivation was mainly to gain a more complete observation. The dataset, Leaves100 has 100 classes of leaves, each class has 16 records and each record has 192 features. So this is a high dimensional multi-class dataset.
 
+🌻 [To get Leaves100 data >>][8]
+
 FLAML has 2 main suggested search strategies, CFO and Blend Search.
 
 * [CFO][3] is a search algorithm designed to address the large training cost variation caused by the hyperparameters. It starts from a low-cost initial point and gradually moves towards low-cost region with self-adjustable step size. At the same time, it attempts to avoid high-cost and high-loss hyperparameters. Meanwhile, the randomized restarting logic is trying to reduce the chance of getting trapped in a local optimum.
@@ -57,6 +60,8 @@ To use CFO or Blend Search in FLAML, users only need to specify the `hpo_method`
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_cfo_vs_bs.png" width="900" height="700" />
 </p>
+
+🌻 [Look into FLAML experiment details >>][1]
 
 FLAML uses CFO by default. Optuna uses TPE (Tree-structured Parzen Estimator) as its default search strategy.
 
@@ -81,16 +86,15 @@ Then to select TPE or Random Search, we can specify the the sampler as shown in 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_tpe_vs_rs.png" width="800" height="800" />
 </p>
 
+🌻 [Look into Optuna experiment details >>][2]
+
 The performance difference in Leaves100 dataset is more obvious. While achieving similar balanced accuracy in the testing data, the FLAML methods only took 10 minutes while Optuna methods took more than 1 hour, even though FLAML had more learners to try. At the same time, we can see FLAML CFO gets better testing performance than Blend Search, and this is expected since we are using default settings in this experiment, the search space is not very large. According to FLAML researchers, CFO is selected as the default search strategy is also because it works better than Blend Search in many practical cases.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/default_leaves100.png" width="790" height="349" />
 </p>
 
-* 🌻 [Look into FLAML experiment details >>][1]
-* 🌻 [Look into Optuna experiment details >>][2]
-
-Besides the difference in overall performance (testing performance and time cost), we can also see FLAML saves much more coding efforts when we just want to experiment with default settings, thanks to the automation design in FLAML. The way Optuna works gives you the flexibility to add multiple learners regardless of their implementation differences, however, FLAML also alows you to add customized learners, and we will show you that in a later experiment.
+Besides the difference in the overall performance, we can also see FLAML saves much more coding efforts when we just want to experiment with default settings, thanks to the automation design in FLAML. The way Optuna works gives you the flexibility to add multiple learners regardless of their implementation differences, however, FLAML also alows you to add customized learners, and we will show you that in a later experiment.
 
 #
 <p align="left">
@@ -115,3 +119,4 @@ Besides the difference in overall performance (testing performance and time cost
 [5]:https://towardsdatascience.com/a-conceptual-explanation-of-bayesian-model-based-hyperparameter-optimization-for-machine-learning-b8172278050f
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_4.md
 [7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_2.md
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_100leaves.ipynb
