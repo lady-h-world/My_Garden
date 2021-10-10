@@ -18,9 +18,9 @@ We think a summarized note will upgrade your visiting experience :)
 ### FLAML
 
 #### Pros
-* Descent choice for fast prototyping
+* Automation intelligence, nice choice for fast prototyping
 * Simple but intelligent search strategy
-* Efficient time complexity
+* Efficient time complexity, not affected by the number of trials
 * [FLAML research team responses to users' questions fast][2]
 
 
