@@ -14,6 +14,8 @@ Here's an overview of all the stops!
   * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning
 * [Garden Symbol - Samsara][5]
 * [Garden Market][4]
+* [Garden Museum][6]
+  * Collected memories from this garden
 
 <p>&nbsp;</p>
 
@@ -47,3 +49,4 @@ After visiting our garden, if you have any question or suggestion, feel free to 
 [3]:https://github.com/lady-h-world/My_Garden/discussions/categories/illegal-spreading-found
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/garden_market.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/garden_symbol.md
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/garden_museum.md
