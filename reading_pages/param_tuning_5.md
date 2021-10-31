@@ -13,7 +13,7 @@ With HPO tools at hand, this is how Lady H. decided to add this regression probl
 
 Remember the Sales baseline model output shown before?
 
-Before using the HPO power, Lady H. used default LGBM to do a baseline forecast and got 0.975 R2 score within 40.2 seconds. That's a nice result, as mentioned before, the closer R2 gets towards 1 in testing data, the better.
+Before using the HPO power, Lady H. used default LGBM to do a baseline forecast and got 0.884 R2 score in 34.3 seconds. That's a decent result, as mentioned before, the closer R2 gets towards 1 in testing data, the better.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/r2_note.png" width="766" height="79" />
