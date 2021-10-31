@@ -18,7 +18,7 @@ The sprouts in this stop has the power of appliying the latest HPO technology in
 While working on some garden business, Lady H. has experimented with these powerful sprouts. Let's look at a comparison between FLAML and Optuna through her experiments:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/table_flaml_vs_optuna_performance.png" width="919" height="407" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/table1.1.png" width="917" height="404" />
 </p>
 
 * Leaves30 has 14 features and 340 records in total, with 30 different specimens to classify, it is a typical multi-class classification dataset. 
@@ -59,7 +59,7 @@ Leaves30 has small amount of data, so using 5-fold CV here:
 Sales data is large enough to use 10-fold CV:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/baseline_regression.png" width="1000" height="800" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/reg_sales_baseline_code.png" width="1077" height="782" />
 </p>
 
 🌻 [Look into Sales Baseline details >>][10]

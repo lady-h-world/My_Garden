@@ -6,7 +6,7 @@ We think a summarized note will upgrade your visiting experience :)
 
 #### Pros
 * Flexible modularized design
-* Supports both classicial machine learning and deep learning, easy to learn
+* Support both classicial machine learning and deep learning, easy to learn
 * Support [multi-objective optimization][1]
 * Visualization of optimization insights
 

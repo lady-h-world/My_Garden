@@ -71,7 +71,7 @@ Without applying cross validation, the overall time cost is definitely reduced, 
 Table 1.6 summarized the performance in this experiment:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flaml_vs_optuna_customized.png" width="654" height="304" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/table1.6.png" width="653" height="306" />
 </p>
 
 Looking at all these experiments, FLAML appears to be better overall. However, it doesn't mean Optuna is worse in every aspect.
