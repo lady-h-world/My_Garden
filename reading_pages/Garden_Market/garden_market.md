@@ -17,8 +17,8 @@ In order to fulfil the growing demand, our garden market developed 2 manufacturi
 </p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-&nbsp;
 
+## Garden Market's Pipelines
 ### Personalized Perfume Pipeline
 
 This pipeline only produces customized perfume for a few clients every year. Interested clients will be asked to share a real life story, if Lady H. loves the story, the client will get the personal design. After delierving the perfume, we will give the client a bank account number to let them decide how much money to pay. An upper class may never get this perfume even if a big fortune is willing to be paid, a lower class may get the perfume even if only a few cents are available. The client selection all depends on Lady H.'s preference.
