@@ -17,14 +17,15 @@ In order to fulfil the growing demand, our garden market developed 2 manufacturi
 </p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+&nbsp;
 
-## Personalized Perfume Pipeline
+### Personalized Perfume Pipeline
 
 This pipeline only produces customized perfume for a few clients every year. Interested clients will be asked to share a real life story, if Lady H. loves the story, the client will get the personal design. After delierving the perfume, we will give the client a bank account number to let them decide how much money to pay. An upper class may never get this perfume even if a big fortune is willing to be paid, a lower class may get the perfume even if only a few cents are available. The client selection all depends on Lady H.'s preference.
 
 In order to make a personalized perfume, we will send a specialist to collect the requirements, personality, life style, background and more life stories of the client, then design the tailored product that fits.
 
-## Mass Production Pipeline
+### Mass Production Pipeline
 
 The garden market is making enough income, mainly depends on this pipeline. We make a wide variety of perfumes, catering for different tastes of the population. With this pipeline, each type of perfume can be produced in batches and sold to large number of clients. The manufacturing process is automated, from flowers and fruits harvesting, to ingredients preprocessing and selection, to perfume making, and till products' quality check, all rely on robots. 
 
