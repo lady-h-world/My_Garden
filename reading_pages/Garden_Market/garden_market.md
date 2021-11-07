@@ -18,9 +18,6 @@ In order to fulfil the growing demand, our garden market developed 2 manufacturi
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 
 ### Personalized Perfume Pipeline
 
