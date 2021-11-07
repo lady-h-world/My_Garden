@@ -1,0 +1,64 @@
+raw_data_dir: '../../crystal_ball/data_collector/'
+raw_store_file: 'store.csv'
+raw_sales_file: 'store_sales.csv'
+output_dir: 'output/'
+
+run_model_pipeline: True
+monitor_data_drift: True
+
+# Data Collection Task
+collected_data_file: 'collected_data.pkl'
+store_dtype:
+  'CompetitionOpenSinceMonth': 'category'
+  'CompetitionOpenSinceYear': 'category'
+  'Promo2SinceWeek': 'str'
+  'Promo2SinceYear': 'str'
+  'Store': 'category'
+  'Promo2': 'category'
+sales_dtype:
+  'StateHoliday': 'category'
+  'DayOfWeek': 'category'
+  'Store': 'category'
+  'Open': 'category'
+  'Promo': 'category'
+  'SchoolHoliday': 'category'
+date_col: 'Date'
+impute_cols: ['Promo2SinceWeek', 'Promo2SinceYear', 'PromoInterval']
+merge_key: 'Store'
+
+# Feature Engineering Task
+feature_engineered_data_file: 'feature_engineered_data.pkl'
+feature_adding_dct:
+  'add_date_features':
+    'date_col': 'Date'
+  'add_threshold_grouping_features':
+    'original_feature': 'Customers'
+    'threshold': 3000
+added_columns: 4
+
+# Data Preprocessing Task
+preprocessed_data_file: 'preprocessed_data.pkl'
+le_cols: ['StoreType', 'Assortment', 'Quarter', 'StateHoliday', 'PromoInterval']
+int_cat_cols: ['Promo2SinceWeek', 'Promo2SinceYear', 'PromoInterval', 'Year', 'Month']
+
+# Model Selection Task
+mode: 'Compete'
+eval_metric: 'r2'
+results_path: 'mljar_regression_sales'
+explain_level: 2
+random_state: 10
+total_time_limit: 3600
+validation_strategy:
+  'validation_type': 'kfold'
+  'k_folds': 10
+  'shuffle': True
+  'stratify': True
+  'random_seed': 10
+
+# Model Evaluation Task
+model_evaluation_output: 'model_evaluation_output.json'
+
+# Data Drift Monitoring
+drift_file_path: '../../crystal_ball/data_collector/structured_data/drifted_sales.pkl'
+drift_monitor_dir: 'drift_results/'
+report_file: 'data_drift_report.json'
