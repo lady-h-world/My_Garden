@@ -14,6 +14,7 @@ Here's an overview of all the stops!
   * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning
 * [Garden Symbol - Samsara][5]
 * [Garden Market][4]
+  * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MlJar, Luigi and Airflow 
 * [Garden Museum][6]
   * Collected memories from this garden
 
