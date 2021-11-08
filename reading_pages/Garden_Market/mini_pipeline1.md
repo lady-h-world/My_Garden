@@ -13,11 +13,22 @@ Similar to the 2 types of perfume pipelines in the garden market, the sprouts al
 ## Mini Pipelines
 * [TPOT][1] is an AutoML pipeline that uses genetic aalgorithm to select the best pipeline for the data.
 * [AutoKeras][2] selects the best neural network model for the data input, it does parameter tuning and model selection using Keras Tuner.
-* [MLJar][3] selects the best model from classical machine learning models and neural network, it also generates detailed report and visualization for each model.
+* [MLJar][3] selects the best model from classical machine learning models and neural network models, besides, it also generates detailed reports and visualization for each model.
 
-Figure 4.1 shows a brief comparison when applied them to regression data and classification data.
+Lady H. tested the power of these sprouts using the same data sets she used in [hyperparameter optimization (HPO) experiments][6]. The test results are summarized in Table 4.1, not only there is a comparison between TPOT, AutoKeras and MLJar, but also a comparison with the best HPO performance.
 
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/hpo_comparison.png" width="766" height="79" />
+</p>
 
+<p align="center">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/tb4.1.png" width="929" height="403" />
+</p>
+
+* 🌻 [To get Leaves30 data >>][7]
+* 🌻 [To get Sales data >>][8]
+
+When using these mini pipelines, it is expected to take longer execution time than HPO, since there are more models and parameters to be selected. Then based on the results in Table 4.1, MLJar appears to be a better model selection tool. To dive into more details, let's follow the Chansey Butterflies!
 
 #
 <p align="left">
@@ -39,3 +50,6 @@ Figure 4.1 shows a brief comparison when applied them to regression data and cla
 [3]:https://github.com/mljar/mljar-supervised
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/mini_pipeline2.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/garden_market.md
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_1.md#flaml-vs-optuna---hpo-for-classical-machine-learning
+[7]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_leaf.ipynb
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_sales.ipynb
