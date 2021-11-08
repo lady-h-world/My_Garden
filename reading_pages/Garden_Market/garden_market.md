@@ -29,8 +29,6 @@ In order to make a personalized perfume, we will send a specialist to collect th
 
 The garden market is making enough income, mainly depends on this pipeline. We make a wide variety of perfumes, catering for different tastes of the population. With this pipeline, each type of perfume can be produced in batches and sold to large number of clients. The manufacturing process is automated, from flowers and fruits harvesting, to ingredients preprocessing, to perfume making, and till products' quality check, all rely on robots. 
 
-<p align="center">🌱 <b>Sprouts Collection Time!</b> 🌱</p>
-
 Do you know our garden market also has data science sprouts to collect?
 
 #
