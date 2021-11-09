@@ -13,7 +13,7 @@ Let's see how to use TPOT in a regression problem.
 * `generations` is the number of iterations to run the pipeline selection
 * `population_size` specifies the number of pipelines to retrain in each generation
 
-Both `generations` and `population_size` are used in the genetic algorithm, the larger they are, the longer time to run the whole TPOT pipeline, and it's not guaranteed to get better results wither larger generations or population.
+Both `generations` and `population_size` are used in the genetic algorithm, the larger they are, the longer time to run the whole TPOT pipeline, and it doesn't mean you can get better results with larger generations or population.
 
 * `config_dict` allows you to choose [different configurations][3]. In the code below, Lady H. chose "TPOT light" so that only simpler and fast-running operators will be used in the pipeline, otherwise it takes even longer time to run TPOT. You can try other configurations, such as "Default TPOT" which will select a broad range of operators into the pipeline; "TPOT NN" adds more neural network estimators upon all the choices of "Default TPOT"; "TPOT cuML" supports the search using GPU, and there are other choices too.
 
@@ -35,8 +35,34 @@ One of the benefits of using TPOT is the saved .py file which contains the code 
 
 #### Classification with TPOT
 
+The classification data is much smaller and it only took 61 seconds to finish the TPOT pipeline, with a decent testing performance.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/tpot_cla.png" width="1068" height="608" />
+</p>
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/tpot_cla_out.png" width="810" height="694" />
+</p>
+
+#
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
+
+[Keep going >>][5]
+
+<p align="right">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [<< Looking back][6]
+ 
+
 
 [1]:https://towardsdatascience.com/introduction-to-genetic-algorithms-including-example-code-e396e98d8bf3
 [2]:https://academic.oup.com/bioinformatics/article/36/1/250/5511404
 [3]:http://epistasislab.github.io/tpot/using/#built-in-tpot-configurations
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/mini_pipelines/tpot.ipynb
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/mini_pipeline3.md
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/mini_pipeline1.md
