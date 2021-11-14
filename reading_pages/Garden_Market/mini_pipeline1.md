@@ -4,18 +4,18 @@ In recent years, industries and research groups are developing machine learning 
 
 <p align="center">🌱 <b>Sprouts Collection Time!</b> 🌱</p>
 
-Similar to the 2 types of perfume pipelines in the garden market, the sprouts also has the power of producing 2 types of machine learning pipeline:
+Similar to the 2 types of perfume pipelines in the garden market, the sprouts also have the power of producing 2 types of machine learning pipeline:
 * Mini Pipeline - It takes a specific data input each time, and mainly hadles model selection, which is to select the best model for the data. Some of such pipelines also inlcude data preprocessing, feature engineering and hyperparameter optimization.
   * The sprouts will show you how to use <b>TPOT, AutoKeras and MLJar</b>.
 * Customized Pipeline - This type of pipeline can be constructed to handle more clients' data and add more complex functionalities.
-  * The sprouts will show you how to build a <b>luigi pipeline</b> that includes data collection, data preprocessing, feature engineering, model selection, model evaluation and data drifting monitoing. You will also see a super mini pipeline of how to use <b>airflow</b>.
+  * The sprouts will show you how to build a <b>luigi pipeline</b> that includes data collection, data preprocessing, feature engineering, model selection, model evaluation and data drifting monitoing. You will also see a super mini pipeline built using <b>Airflow</b> and <b>ZenML</b>.
 
 ## Mini Pipelines
-* [TPOT][1] is an AutoML pipeline that uses genetic aalgorithm to select the best pipeline for the data.
+* [TPOT][1] is an AutoML pipeline that uses genetic algorithm to select the best pipeline for the data.
 * [AutoKeras][2] selects the best neural network model for the data input, it does parameter tuning and model selection using Keras Tuner.
 * [MLJar][3] selects the best model from classical machine learning models and neural network models, besides, it also generates detailed reports and visualization for each model.
 
-Lady H. tested the power of these sprouts using the same data sets she used in [hyperparameter optimization (HPO) experiments][6]. The test results are summarized in Table 4.1, not only there is a comparison between TPOT, AutoKeras and MLJar, but also a comparison with the best HPO performance.
+Lady H. tested the power of these sprouts using the same data sets she used in [hyperparameter optimization (HPO) experiments][6]. The test results are summarized in Table 4.1, as we can see, not only there is a comparison between TPOT, AutoKeras and MLJar, but also a comparison with the best HPO performance.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/hpo_comparison.png" width="766" height="79" />
