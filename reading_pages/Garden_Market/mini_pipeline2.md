@@ -1,6 +1,6 @@
 ### TPOT
 
-The goal of TPOT is to find the best pipeline that can optimize the model performance. Different pipelines are constructed with different data preporocessors, feature constructors, feature selectors, models and hyperparameters. It is built upon sklearn, therefore, lots of these operators are using sklearn built-in functions. Meanwhile, [genetic algorithm][1] is used in pipeline selection, which guaranteets the computational cost of TPOT can't be small😓, even though TPOT added [Feature Set Selector (FSS) and Template][2] to improve the scalability.
+The goal of TPOT is to find the best pipeline that can optimize the model performance. Different pipelines are constructed with different data preporocessors, feature constructors, feature selectors, models and hyperparameters. It is built upon sklearn, therefore, lots of these operators are using sklearn built-in functions. Meanwhile, [genetic algorithm][1] is used in pipeline selection, which guaranteets the computational cost of TPOT can't be small 😓, even though TPOT added [Feature Set Selector (FSS) and Template][2] to improve the scalability.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/top_architecture.png" width="820" height="406" />
