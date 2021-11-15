@@ -1,3 +1,8 @@
+"""
+Licensed under the MIT License.
+
+Copyright (c) 2021-2031. All rights reserved.
+"""
 import pandas as pd
 import numpy as np
 import os
