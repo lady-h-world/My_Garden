@@ -25,7 +25,7 @@ By default, K-fold cross validation is used in TPOT, and at the end of the pipel
 
 In the code above, we can see, even though Lady H. was using light weighted settings, the pipeline still took 4 hours and the final performance is no better than what FLAML achieved in 5 minutes.
 
-🌻[Look into TPOT regression experiment details >>][4]
+🌻 [Look into TPOT regression experiment details >>][4]
 
 One of the benefits of using TPOT is the saved `.py` file which contains the code of running the selected pipeline, so that in the future you can just run this python file to reproduce the optimized results.
 
@@ -44,6 +44,8 @@ The classification data is much smaller and it only took 61 seconds to finish th
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/tpot_cla_out.png" width="810" height="694" />
 </p>
+
+🌻 [Look into TPOT classification experiment details >>][4]
 
 #
 <p align="left">
