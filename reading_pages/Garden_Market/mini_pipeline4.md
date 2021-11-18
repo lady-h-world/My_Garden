@@ -8,12 +8,6 @@ Similar to other AutoML pipelines, MLJar also includes data preprocessing, hypte
 
 #### MLJar Visualization Output
 
-MLJar does some basic EDA (Exploratory Data Analysis) by showing the distribution of features and the target. But it is not recommended to use count in the distribution, since sometimes you need to compare the same feature from different data samples, the count may not be able to tell the real difference in percentages.
-
-<p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_eda.png" width="800" height="246" />
-</p>
-
 Leaderboard summarizes the training time and performance of each model.
 
 <p align="left">
@@ -27,6 +21,19 @@ Leaderboard summarizes the training time and performance of each model.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/stack_ensemble.png" width="766" height="79" />
+</p>
+
+MLJar generates SHAP dependent plot for each feature. The example below came from "4_Default_LightGBM_Stacked", where predicted results from formerly trained models became the features, this is why you are seeing features like "Ensemble_prediction", "Decision_Tree_prediction", etc.
+
+The way SHAP dependent plot works is:
+
+* Red color means higher (or more positive) prediction value
+* Blue color means lower (or more negative) prediction value
+
+When a feature is showing positve correlation with its SHAP value, this feature tend to be more important, such as feature Ensemble_prediction and feature 4_Default_LightGBM_prediction shown below.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_shap_dependent.png" width="1000" height="500" />
 </p>
 
 
