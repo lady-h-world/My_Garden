@@ -36,7 +36,9 @@ When a feature is showing positve correlation with its SHAP value, this feature 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_shap_dependent.png" width="1000" height="500" />
 </p>
 
-Besides dependent plots, MLJar also generates <b>SHAP summary plot</b>, which plots the importance of all the features together. The way [SHAP value][1] works is, * Higher positive SHAP value indicates a feature tends to drag the forecast value higher (positive impact)
+Besides dependent plots, MLJar also generates <b>SHAP summary plot</b>, which plots the importance of all the features together. The way [SHAP value][1] works is,
+
+* Higher positive SHAP value indicates a feature tends to drag the forecast value higher (positive impact)
 * Lower negative SHAP value indicates a feature tends to drag the forecast value lower (negative impact)
 * No matter it's positive or negative SHAP, bigger absolute SHAP value indicates the feature has bigger impact on the forecast value. Therefore, as we can see, summary plot uses the average absolute SHAP value to measure the feature importance.
 
@@ -50,9 +52,40 @@ The left plot is the overall SHAP feature importance, while the right plot is th
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/shap_importance.png" width="766" height="79" />
 </p>
 
+#### Regression with MLJar
+
+Same as what happened in AutoKeras, Lady H. only chose the 3 numerical features as the training data input.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/ak_reg_data.png" width="991" height="461" />
+</p>
+
+The setup of MLJar is straightfood,
+
+* "Compete" mode is the most complete mode for model selection, aiming at achieving ultimate model performance. There are [other modes][2] can be chosen for faster prototyping.
+* Same as many other AutoML tools, you are allowed to specify the evaluation metrics, validation strategy, random state and explain level. The results path saves all the output.
+* When choosing `explain_level=2`, you will get the brief information of each step for the whole model selection process. [Check more description of MLJAR steps here][3].
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_reg.png" width="1101" height="823" />
+</p>
+
+To reuse the selected model, you can load from the saved results. However, it takes MLJar much longer time to load saved model than other AutoML tools. 
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_reg_load_model.png" width="454" height="118" />
+</p>
+
+0.938 testing R2 score with only 3 input features is an amazing performance. As we saw in [Table 4.1][4], it's much better than AutoKeras which got negative R2 score, it's also better than the performance from TPOT which used all the features as input and took 4 hours execution time. The best HPO performance was 0.982, generated in 5 minutes, but it was using all the feature input while MLJar only had 3 features.
+
+One of the success factors of such exciting model selection ability is, Ensemble Stacked model, which combined the power of stacking and weighted ensembling together, and this model often appears to be the best model in MLJar model selection results.
+
+#### Classification with MLJar
+
 
 
 
 [1]:https://github.com/slundberg/shap
-
-
+[2]:https://supervised.mljar.com/features/modes/
+[3]:https://supervised.mljar.com/features/automl/
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/mini_pipeline1.md#mini-pipelines
