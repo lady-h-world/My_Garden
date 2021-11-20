@@ -77,7 +77,7 @@ To reuse the selected model, you can load the saved results, but there is no sav
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_reg_load_model.png" width="454" height="118" />
 </p>
 
-0.938 testing R2 score with only 3 input features is an amazing performance. As we saw in [Table 4.1][4], it's much better than AutoKeras which got negative R2 score, it's also better than the performance from TPOT which used all the features as input and took 4 hours execution time. The best HPO performance was 0.982, but it was using all the feature input while MLJar only had 3 features.
+0.938 testing R2 score with only 3 input features is an amazing performance. As we saw in [Table 4.1][4], it's much better than AutoKeras which got negative R2 score, it's also better than the performance from TPOT which used all the features as input and took 4 hours execution time. The best HPO performance was 0.982, but it was using all the 18 features while MLJar only had 3 features.
 
 One of the success factors of such exciting model selection ability is, Ensemble Stacked model, which combines the power of stacking and weighted ensembling together, and this model often appears to be the best model in MLJar model selection results.
 
