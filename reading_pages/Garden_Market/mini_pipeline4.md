@@ -97,6 +97,8 @@ We can set the time budget through `total_time_limit`. Here we set 6 minutes to 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_cla_6m.png" width="970" height="907" />
 </p>
 
+🌻 [Look into MLJar classification experiment details >>][5]
+
 
 #
 <p align="left">
