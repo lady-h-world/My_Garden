@@ -71,7 +71,7 @@ The setup of MLJar is straightfood,
 
 🌻 [Look into MLJar regression experiment details >>][5]
 
-To reuse the selected model, you can load from the saved results. However, it takes MLJar very long time to load the saved model. 
+To reuse the selected model, you can load the saved results, but there is no saved model artifacts. MLJar has its own mechanism to load the selected model, maybe this is also why it takes MLJar very long time to predict on the testing data. 
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_reg_load_model.png" width="454" height="118" />
