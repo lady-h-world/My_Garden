@@ -15,7 +15,7 @@ Similar to other AutoML pipelines, MLJar also includes data preprocessing, hypte
 </p>
 
 * MLJar "Ensemble" uses greedy approach to create weighted ensemble from already trained ML models.
-* MLJar "Stacked" uses stacking. In stacking, there are multiple stages of base model forecasting, in each stage, there is k-fold cross validation, the predicted values from each fold will be appended together as a new feature for the next stage. When there are m base models in a stage, there will be m new features generated for the next stage.
+* MLJar "Stacked" uses stacking. In stacking, there are multiple stages of base models' forecasting. In each stage, there is k-fold cross validation, the predicted values from each fold will be appended together as a new feature for the next stage. When there are `m` base models in a stage, there will be `m` new features generated for the next stage.
   * In this example, the base model is default LightGBM.
 * MLJar "Ensemble_Stacked" will ensemble all the previous stacked and unstacked models.
 
@@ -23,14 +23,13 @@ Similar to other AutoML pipelines, MLJar also includes data preprocessing, hypte
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/stack_ensemble.png" width="766" height="79" />
 </p>
 
-MLJar generates <b>SHAP dependent plot</b> for each feature. The example below came from "4_Default_LightGBM_Stacked", where predicted results from formerly trained models became the features, this is why you are seeing features like "Ensemble_prediction", "Decision_Tree_prediction", etc.
+MLJar generates <b>SHAP dependent plot</b> for each feature. The example below came from "4_Default_LightGBM_Stacked" algorithm, where predicted results from formerly trained models became the features of models in the next stage, this is why you are seeing features like "Ensemble_prediction", "Decision_Tree_prediction", etc.
 
 The way SHAP dependent plot works is:
 
 * Red color means higher (or more positive) prediction value
 * Blue color means lower (or more negative) prediction value
-
-When a feature is showing positve correlation with its SHAP value, this feature tend to be more important, such as feature Ensemble_prediction and feature 4_Default_LightGBM_prediction shown below.
+* When a feature is showing positve correlation with its SHAP value, this feature tend to be more important, such as feature Ensemble_prediction and feature 4_Default_LightGBM_prediction shown below.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_shap_dependent.png" width="1000" height="500" />
@@ -46,7 +45,7 @@ Besides dependent plots, MLJar also generates <b>SHAP summary plot</b>, which pl
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_shap_summary.png" width="1415" height="450" />
 </p>
 
-The left plot is the overall SHAP feature importance, while the right plot is the SHAP feature importance in each folder of k-fold cross validation.
+The left plot is the overall SHAP feature importance, while the right plot is the SHAP feature importance in each fold of k-fold cross validation.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/shap_importance.png" width="766" height="79" />
@@ -72,15 +71,15 @@ The setup of MLJar is straightfood,
 
 🌻 [Look into MLJar regression experiment details >>][5]
 
-To reuse the selected model, you can load from the saved results. However, it takes MLJar much longer time to load saved model than other AutoML tools. 
+To reuse the selected model, you can load from the saved results. However, it takes MLJar very long time to load the saved model. 
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_reg_load_model.png" width="454" height="118" />
 </p>
 
-0.938 testing R2 score with only 3 input features is an amazing performance. As we saw in [Table 4.1][4], it's much better than AutoKeras which got negative R2 score, it's also better than the performance from TPOT which used all the features as input and took 4 hours execution time. The best HPO performance was 0.982, generated in 5 minutes, but it was using all the feature input while MLJar only had 3 features.
+0.938 testing R2 score with only 3 input features is an amazing performance. As we saw in [Table 4.1][4], it's much better than AutoKeras which got negative R2 score, it's also better than the performance from TPOT which used all the features as input and took 4 hours execution time. The best HPO performance was 0.982, but it was using all the feature input while MLJar only had 3 features.
 
-One of the success factors of such exciting model selection ability is, Ensemble Stacked model, which combined the power of stacking and weighted ensembling together, and this model often appears to be the best model in MLJar model selection results.
+One of the success factors of such exciting model selection ability is, Ensemble Stacked model, which combines the power of stacking and weighted ensembling together, and this model often appears to be the best model in MLJar model selection results.
 
 #### Classification with MLJar
 
@@ -92,7 +91,7 @@ The AutoML setup for classification is similar to regression. By default, MLJar 
 
 🌻 [Look into MLJar classification experiment details >>][5]
 
-We can set the time budget through `total_time_limit`. Here we set 6 minutes to see whether we can achieve similar results as the the best HPO method achieved in 5 minutes, but 0.66 balanced accuracy is far lower than 0.839 achieved in HPO. Meanwhile, with less time budget, some steps will be skipped as what's shown below, and might cause error. The good news is, even if there is error during the execution process, MLJar can still manage the whole pipeline running.
+We can set the time budget through `total_time_limit`. Here we set 6 minutes to see whether we can achieve similar results as the the best HPO method achieved in 5 minutes, but 0.66 balanced accuracy is far lower than 0.839 achieved in HPO. Meanwhile, with less time budget, some steps will be skipped as what's shown below, and might cause error. The good news is, even if there are errors during the execution process, MLJar can still manage to finish the whole pipeline running.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_cla_6m.png" width="970" height="907" />
