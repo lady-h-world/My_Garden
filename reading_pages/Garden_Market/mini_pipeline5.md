@@ -37,7 +37,7 @@ Time to look into details!
 [1]:https://github.com/spotify/luigi
 [2]:https://github.com/apache/airflow
 [3]:https://github.com/zenml-io/zenml
-[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/mini_pipeline6.md
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/customized_pipeline1.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/mini_pipeline4.md
 
 
