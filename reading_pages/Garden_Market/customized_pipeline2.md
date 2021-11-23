@@ -12,7 +12,7 @@ Univariate analysis is to look at the statistics of each single data column, suc
 
 
 
-🌻 [Check Data Exploration details >>][1]
+🌻 [Check data exploration details >>][1]
 
 
 
