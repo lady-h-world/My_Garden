@@ -50,8 +50,7 @@ We can also look at sales distributions for categorical features, such as the sa
 </p>
 
 
-
-🌻 [Check data exploration details >>][1]
+🌻 [For more insights, check the full data exploration details >>][1]
 
 
 
