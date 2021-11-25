@@ -30,6 +30,26 @@ The distributions of numerical features often look like skewed normal distributi
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/uni_ana_num_dist.png" width="1084" height="267" />
 </p>
 
+🌻 [Check data exploration details >>][1]
+
+
+##### Data Exploration - Bivariate Analysis
+
+Bivariate analysis often look into the relationship between 2 variables, such as the relationship between 2 features or the relationship between a feature and the target. During the feature enginerring stage, Lady H. often checks feature vs target distribution first. Because if a feature's values can better differentiate different values of the target, then this feature tend to improve the forecast.
+
+For example, from the univariate analysis, we are seeing the distribution of "Customers" is showing a large bump before 3000 and a long tail after 3000, then what does the sales distributions look like for "Customers < 3000" and "Customers >= 3000"? The answer is shown below, and there is an obvious sales difference between these 2 groups. When the number of customers are larger than 3000, there is higher sales. Therefore, we can create a new feature that simply divides feature "Customers" into 2 bins, "Customers < 3000" and "Customers >= 3000".
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/bin_ana_cat_dist.png" width="1084" height="254" />
+</p>
+
+We can also look at sales distributions for categorical features, such as the sales of StoreType 1 appears to be more different from other store types, so that we can create a new feature to indicate whether the StoreType is 1 or not; the sales distributions in each year look quite similar, indicating feature "Year" may not be an important feature.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/bin_ana_num_dist.png" width="982" height="594" />
+</p>
+
+
 
 🌻 [Check data exploration details >>][1]
 
