@@ -23,6 +23,8 @@ The command center is `run.py`, once Lady H. decides to run either forecasting o
 
 This is `run.py`, where users define which task or pipeline to run. In order to make the config parameters accessible to all the luigi tasks, you need to load the config file here and pass it as the parameter of the task instance. At the same time, the task here just need to be the last task of the pipeline, such as `ModelEvaluationTask` in this case, because luigi defines the dependencies between tasks, which allows it to trace back to previous tasks.
 
+🌻 [Check run.py config >>][5]
+
 🌻 [Check run.py code >>][1]
 
 <p align="left">
@@ -49,8 +51,9 @@ This is the first task of the forecasting pipeline, the purpose is to merge all 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/code_luigi_data_collection.png" width="827" height="518" />
 </p>
 
-🌻 [Check data_collection.py code >>][2]
+🌻 [Check data_collection config >>][5]
 
+🌻 [Check data_collection.py code >>][2]
 
 #
 <p align="left">
@@ -70,3 +73,5 @@ This is the first task of the forecasting pipeline, the purpose is to merge all 
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/data_collection.py
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/customized_pipeline2.md
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/mini_pipeline5.md
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/config.yaml#L9
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/config.yaml#L6-L7
