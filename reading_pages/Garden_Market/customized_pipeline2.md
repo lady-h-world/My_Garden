@@ -71,6 +71,14 @@ In this example, Lady H. was adding 2 functions:
 
 🌻 [Check feature engineering helpers >>][4]
 
+
+You might have noticed this `requires()` function in feature engineering task. It builds the dependency between tasks. Because feature engineering can only be executed after finishing data collection task, and `requires()` function indicates this relationship, so that luigi will know the order of tasks.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/feature_engineering_dependent.png" width="301" height="62" />
+</p>
+
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />

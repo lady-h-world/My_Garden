@@ -19,7 +19,6 @@ class PreprocessingDataTask(luigi.Task):
     Preprocessing collected data:
 
     * Categorical features --> "category"
-    * Re-order columns
     """
     config = luigi.DictParameter()
 
