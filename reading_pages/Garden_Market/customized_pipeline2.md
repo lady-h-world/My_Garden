@@ -54,11 +54,11 @@ We can also look at sales distributions for categorical features, such as the sa
 
 ##### Feature Engineering Code
 
-In the pipeline, we first specify functions that can create new features through `feature_adding_dct` in the config file. Then in the feature engineering task, it will call every specified function from the helper file.
+In the pipeline, we start with specifying functions that can create new features through `feature_adding_dct` in the config file. Then in the feature engineering task, it will call every specified function from the helpers file.
 
-In this example, Lady H. was adding 2 function:
+In this example, Lady H. was adding 2 functions:
 
-* `add_date_feature()` is to add Year, Month, Quarter as new features, they were all generated from the date column. Although "Year" may not be a good feature as we saw in above bivariate analysis, it is common to generate these time elements as new features when we have a date column.
+* `add_date_feature()` is to add Year, Month, Quarter as new features, they were all generated from the "date" column. Although "Year" may not be a good feature as we saw in above bivariate analysis, it is common to generate these time elements as new features when we have a date column.
 * `add_threshold_grouping_features()` is to generate a binary feature based on specified thereshold. In this case, "Customers" has been used to generate feature "Customers_larger_then_3000" to indicate whether the customers amount is larger than 3000.
 
 <p align="left">
