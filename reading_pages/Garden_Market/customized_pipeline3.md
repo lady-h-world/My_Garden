@@ -2,9 +2,9 @@
 
 This is the step where you can do whatever data operation in order to make sure the data set can be directly used for later model training. 
 
-In Lady H.'s use case, she just wanted to convert some features into "category" type. Because for models such as LGBM (LightGBM), categorical features can be handled automatically if they are specified as "category" type. 
+In Lady H.'s use case, she just wanted to convert some features into "category" type. Because for models like LGBM (LightGBM), categorical features can be handled automatically if they are specified as "category" type. 
 
-* `le_col` represents a feature that originally has a mix of numerical and string values, models won't be able to undrstand the data type and will report errors. So Lady H. converted them into integer format with label encoding first, then convert to "category" type.
+* `le_col` represents a feature that originally has a combo of numerical and string values, models won't be able to undrstand the data type and will report errors. So Lady H. converted them into integer format with label encoding first, then convert to "category" type.
 * `int_cat_col` represents a categorical feature that originally appears to be integer format, they can be converted to "category" directly.
 
 <p align="left">
@@ -36,7 +36,7 @@ Time to fit the model with our preprocessed data. In an automated machine learni
 
 After fitting the selected model with the training data, time to evaluate the model performance on the testing data.
 
-In this model evaluation task, R2 score is expected to be used for this regression problem. At the same time, Lady H. has generated the lower bound and the upper bound of model confidence interval. But what is model confidence interval?
+In this model evaluation task, R2 score is expected to be used for this regression problem. At the same time, Lady H. has generated the lower bound and the upper bound of model confidence interval. But what is "model confidence interval"?
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/model_evaluation_code.png" width="764" height="255" />
@@ -44,13 +44,13 @@ In this model evaluation task, R2 score is expected to be used for this regressi
 
 The confidence interval (CI) of a model indicates our confidence on the testing performance score, about whether it is the true model performance.
 
-For example, Lady H. applied model CI on a regression problem and got the value range between `[0.9365995068246098, 0.9388730216990719]`, the sepcified confidence level is 95%, indicating that, if the testing modle performance is within this value range, then there is 95% likelihood that the model performance is true.
+For example, Lady H. applied model CI on a regression problem and got the value range between `[0.9365995068246098, 0.9388730216990719]`, the sepcified confidence level is 95%, indicating that, if the testing modle performance (R2 score in this case) is within this value range, then there is 95% likelihood that the model performance is true.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/regression_CI.png" width="994" height="107" />
 </p>
 
-Similarly, in the classification example, if the testing model performance is within `[0.768882850241546, 0.8991]`, then there is 95% likelihood that the performance is true.
+Similarly, in the classification example, if the testing model performance (balanced accuracy in this case) is within `[0.768882850241546, 0.8991]`, then there is 95% likelihood that the performance is true.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/classification_CI.png" width="993" height="119" />
@@ -58,16 +58,15 @@ Similarly, in the classification example, if the testing model performance is wi
 
 🌻 [Check model confidence details >>][9]
 
-The core logic of calculating the model confidence interval can be summarized as 2 steps:
+The core logic of calculating the model confidence interval can be summarized into 2 steps:
 
-1. Bootstrap samples from the testing data and get the model performance, collecting them into a list.
+1. Bootstrap samples from the testing data and get the model performance of each sample, collecting them into a list.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/bootstrap.png" width="766" height="79" />
 </p>
 
-2. With user specified confidence level and the performance list got from step 1, the confidence interval is calculated.
-
+2. With user specified confidence level and the performance list got from step 1, the confidence interval is calculated as below:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/model_ci_code.png" width="1019" height="530" />
