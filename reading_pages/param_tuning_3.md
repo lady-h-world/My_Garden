@@ -67,7 +67,7 @@ FLAML uses CFO by default. Optuna uses TPE (Tree-structured Parzen Estimator) as
 
 TPE applies bayesian theorem `P(y|x) = P(x|y) * P(y) / P(x)`.
 
-* `P(x|y)` means, given the objective function's score, what's the probability of the hyperparameters. When there are multiple hyperparameters, bayesian formula assumes they are independent from each other, and this is also why TPE is an independent method in Optuna.
+* `P(x|y)` means, given the objective function's score y, what's the probability of this set of hyperparameters x. When there are multiple hyperparameters in a set, bayesian formula assumes they are independent from each other, and this is also why TPE is an independent method in Optuna.
 * `P(x|y) = l(x)` if there is an improvement in the objective function, otherwise `P(x|y) = g(x)`
   * On each trial, for each parameter, TPE fits one Gaussian Mixture Model (GMM) `l(x)` to the set of parameter values associated with the best objective values, and another GMM `g(x)` to the remaining parameter values. It chooses the parameter value `x` that maximizes the ratio `l(x)/g(x)`.
 * 🌻 [Learn more about TPE >>][5]
