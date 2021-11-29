@@ -59,6 +59,49 @@ Then she applied it to another pair from targets where one of the data set drift
 
 In Lady H.'s experiments, she only did the concept drift detection for regression problems. For classification targets, she often compares the distributions first, since many problems are binary classification and the distribution comparison is straightforward. For multi-class classification, PSI also works because it's built upon binning idea, [so you can apply PSI formula without binning the data][5].
 
+##### Machine Learning to Detect Covariate Drift
+
+Drifting in features can bring up more complex math behind, and each statistical method can only be used in a limited scope. Lady H. has found a straightforward and effective method to detect covariate drift, that is to mix the old and the new data sets together, labeling them as the "old" or the "new" data, then use a machine learning model to do the forecast. If the forecasting result is showing high accuracy, then it means there is covariate drift since the dataset can tell obvious differences between the old and the new data, and to figure out whihc features might caused the drift, we can check the feature importance.
+
+The code is as simple as using a LGBM model to train the data with cross validation, and check the average forecasting performance:
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/covariate_drift_detection_code.png" width="919" height="323" />
+</p>
+
+When applying this method on the dataset without covariate drift, the forecasting is showing accuracy near 0.5, similar to random guess results. This means the model can't tell any difference between the new and the old data.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/covariate_drift_normal.png" width="882" height="417" />
+</p>
+
+And if we look at the forecasting results in a dataset with feature "Store" changed sifnificantly, the high forecasting accuracy sends a warning sign of the feature differences between the new and the old data.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/covariate_drift_drift.png" width="888" height="418" />
+</p>
+
+Then we can look into the feature importance from this trained model, it points to feature "Store", indicating that this feature plays an important role in differentiating the old and the new data. So we can assume this feature caused the covariate drift.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/drifted_feature.png" width="794" height="362" />
+</p>
+
+🌻 [Check covariate drift detection experiments >>][4]
+
+#
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
+
+[Keep going >>][6]
+
+<p align="right">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<< Looking back][7]
+ 
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/data_drift_detection.ipynb
@@ -66,3 +109,5 @@ In Lady H.'s experiments, she only did the concept drift detection for regressio
 [3]:https://github.com/mwburke/population-stability-index
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/data_drift_detection.ipynb
 [5]:https://github.com/mwburke/population-stability-index/blob/master/psi.py#L50-L67
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/customized_pipeline5.md
+[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/customized_pipeline3.md
