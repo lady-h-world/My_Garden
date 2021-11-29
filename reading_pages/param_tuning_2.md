@@ -11,7 +11,7 @@ The overall design of FLAML is shown in Figure 1.2:
 It has 2 major components:
 * ML Layer contains the candidate learners.
 * AutoML Layer includes a Resampling Strategy Proposer, a Learner Proposer, a Hyperparam & Sample Size Proposer and a Controller. This component controls the core logic of the search strategy, with the goal of minimizing the total cost before finding a model with the optimal test error.
-  * "Total Cost" means the total GPU time of training and validation using cross validation or holdout. This cost is also expected to increase as the test error decreases.
+  * "Total Cost" means the total CPU time of training and validation using cross validation or holdout. This cost is also expected to increase as the test error decreases.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/search_strategy.png" width="866" height="89" />
@@ -26,7 +26,7 @@ Now let's look into each step:
 
 <b>Step 2 - Hyperparam & Sample Size Proposer</b>: In this step, each learner chooses between increasing the sample size or trying out a new parameter set in order to make the improvement. By default, each new parameter set is searched by a randomized direct search strategy, CFO. We will show you more about it soon.
 
-<b>Step 3 - Controller</b>: The controller will invoke the trial using the selected learner and observe both validation error as well as GPU time cost of the trial.
+<b>Step 3 - Controller</b>: The controller will invoke the trial using the selected learner and observe both validation error as well as CPU time cost of the trial.
 
 Step 1 ~ 3 are repeated by iterations until running out of the time budget.
 
