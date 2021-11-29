@@ -33,7 +33,7 @@ Let's look into the details.
 
 When applying PSI, you need 2 sets of target data, "actual" can be the latest target data, "expected" can be the old target data that didn't have data drifting. PSI will binning the numerical target values, and the "percentage" in the formula indicates how much percent each bin occupies. The general purpose of PSI is to find the overall percentage change, when comparing the 2 sets of data.
 
-🌻 [Check PSI python implementation >>][2] [Reference][3]
+🌻 [Check PSI python implementation >>][2] ([Reference][3])
 
 * `PSI < 0.1`: no significant population change
 * `0.1 <= PSI < 0.2`: moderate population change
