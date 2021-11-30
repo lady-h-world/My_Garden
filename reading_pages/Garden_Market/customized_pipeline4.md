@@ -3,35 +3,35 @@
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="200" height="250" /></p>
 
-Lady H.'s first full time data scientist job was in a financial fraud detection company. One of her clients was a giant bank. Every 2 months, that client would send her new data for fraud analysis. It was 5pm in a December when the office was almost empty, most of her colleagues were on vacation or returned back home earlier. Lady H. was planning to quickly finish the client's fraud report using her trained model, then go home.
+Lady H.'s first full time data scientist job was in a financial fraud detection company. One of her clients was a giant bank. Every 2 months, that client would send her new data for fraud analysis. It was 5pm in a December when the office was almost empty, most of her colleagues were on vacation or left earlier. Lady H. was planning to quickly finish the client's fraud report using her trained model, then go home.
 
-But the new data gave her a very different fraud detection rate, a rate much lower than usual. "Why this happened? It looks so strange and the client will definitely ask why. I have to invetigate", Lady H. thought. Later, she figured it out, the client sent her the wrong data and caused the problem. 
+But the new data gave her a very different fraud detection rate, a rate much lower than usual. "Why this happened? It looks so strange and the client will definitely ask why. I have to investigate", Lady H. thought. Later, she figured it out, the client sent her the wrong data and caused the problem. 
 
 This is a typical story of data drifting.
 
 ##### About Data Drifting
 
-Data drifting is not always caused by mistakes, there can be other causes too. But regardless of the causes, the changes in the data can lower the forecasting power of the trained model. When this happened, data scientists need to investigate the causes and sometimes even need to retrain the model.
+Data drifting is not always caused by mistakes, there can be other reasons too. But regardless of the causes, the changes in the data can lower the forecasting power of the trained model. When this happened, data scientists need to investigate the causes and sometimes even need to retrain the model.
 
 There are 2 main types of data drifting:
 
-* Concept Drift: the statistical properties of the forecasting target have changed.
-* Covariate Drift: the statistical properties of the input features have changed.
+* Concept Drift means, the statistical properties of the forecasting target have changed.
+* Covariate Drift means, the statistical properties of the input features have changed.
 
 ##### Suggested Data Drifting Detection Methods
 
-There are many statistical methods to detect data drifting, some need to satisfy certain assumptions and weren't effective, some python built-in libraries set constraints on the data input. After trying out different methods, Lady H. suggested 2 methods she often uses:
+There are many statistical methods to detect data drifting, some need to satisfy certain assumptions, some aren't as effective as expected, some python built-in libraries set constraints on the data input. After trying out different methods, Lady H. suggested 2 methods she often uses:
 
-* To detect concept drift: use PSI (Population Stability Index)
-* To detect covariate drift: use a machine learning model and feature importance
+* To detect concept drift: use PSI (Population Stability Index).
+* To detect covariate drift: use a machine learning model and feature importance.
 
 Let's look into the details.
 
 ##### PSI to Detect Concept Drift
 
-`PSI = sum((actual_percentage - expected_percentage) * ln(actual_percentage / expected_percentage))`
+`PSI = sum((actual_percentage_i - expected_percentage_i) * ln(actual_percentage_i / expected_percentage_i))`
 
-When applying PSI, you need 2 sets of target data, "actual" can be the latest target data, "expected" can be the old target data that didn't have data drifting. PSI will binning the numerical target values, and the "percentage" in the formula indicates how much percent each bin occupies. The general purpose of PSI is to find the overall percentage change, when comparing the 2 sets of data.
+When applying PSI, you need 2 sets of target data, "actual" can be the latest target data, "expected" can be the older target data that didn't have data drifting. PSI will binning the numerical target values and "_i" means the ith bin, the "percentage" in the formula indicates how many percent each bin occupies in the population. The general purpose of PSI is to get the overall percentage change, when comparing 2 sets of data.
 
 🌻 [Check PSI python implementation >>][2] ([Reference][3])
 
@@ -39,13 +39,13 @@ When applying PSI, you need 2 sets of target data, "actual" can be the latest ta
 * `0.1 <= PSI < 0.2`: moderate population change
 * `PSI >= 0.2`: significant population change
 
-With PSI, Lady H. applied it to 2 sets of taregts that didn't have concept drift, and we can see PSI lower than 0.1 and the distributions between the 2 target sets are similar to each other.
+With PSI, Lady H. applied it to 2 sets of taregts that didn't have concept drift, we can see PSI is lower than 0.1 and the distributions of the 2 target sets are similar to each other.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/psi_normal.png" width="911" height="333" />
 </p>
 
-Then she applied it to another pair from targets where one of the data set drifted from the other, and we can see the difference in the distributions and the PSI value indicates a significant change.
+Then she applied it to another pair from targets where one of the data set drifted from the other, we can see the difference in the distributions and the PSI value all indicate a significant change.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/psi_drift.png" width="912" height="336" />
@@ -61,7 +61,7 @@ In Lady H.'s experiments, she only did the concept drift detection for regressio
 
 ##### Machine Learning to Detect Covariate Drift
 
-Drifting in features can bring up more complex math behind, and each statistical method can only be used in a limited scope. Lady H. has found a straightforward and effective method to detect covariate drift, that is to mix the old and the new data sets together, labeling them as the "old" or the "new" data, then use a machine learning model to do the forecast. If the forecasting result is showing high accuracy, then it means there is covariate drift since the dataset can tell obvious differences between the old and the new data, and to figure out whihc features might caused the drift, we can check the feature importance.
+Drifting in features can bring up more complex math discussions, and many statistical methods can only be used in a limited scope. Lady H. has found a straightforward and effective method to detect covariate drift, that is to mix the old and the new data sets together, labeling them as the "old" or the "new" data, then use a machine learning model to do the forecast. If the forecasting result is showing high accuracy, then it means there is covariate drift since the dataset can tell obvious differences between the old and the new data. To figure out which features might caused the drift, we can check the feature importance.
 
 The code is as simple as using a LGBM model to train the data with cross validation, and check the average forecasting performance:
 
@@ -69,19 +69,19 @@ The code is as simple as using a LGBM model to train the data with cross validat
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/covariate_drift_detection_code.png" width="919" height="323" />
 </p>
 
-When applying this method on the dataset without covariate drift, the forecasting is showing accuracy near 0.5, similar to random guess results. This means the model can't tell any difference between the new and the old data.
+When applying this method on the dataset without covariate drift, the forecasting is showing accuracy near 0.5, similar to random guessing. This means the model can't tell any difference between the new and the old data.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/covariate_drift_normal.png" width="882" height="417" />
 </p>
 
-And if we look at the forecasting results in a dataset with feature "Store" changed sifnificantly, the high forecasting accuracy sends a warning sign of the feature differences between the new and the old data.
+And if we look at the forecasting results in a dataset with feature "Store" changed significantly, the high forecasting accuracy sends a warning sign of the feature differences between the new and the old data.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/covariate_drift_drift.png" width="888" height="418" />
 </p>
 
-Then we can look into the feature importance from this trained model, it points to feature "Store", indicating that this feature plays an important role in differentiating the old and the new data. So we can assume this feature caused the covariate drift.
+And if we look at the feature importance from this trained model, it points to feature "Store", indicating that this feature plays an important role in differentiating the old and the new data. So we can assume this feature contributes to the covariate drift.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/drifted_feature.png" width="794" height="362" />
