@@ -52,7 +52,7 @@ We can also look at sales distributions for categorical features, such as the sa
 🌻 [For more insights, check the full data exploration details >>][1]
 
 
-##### Feature Engineering Code
+##### Feature Engineering Pipeline Code
 
 In the pipeline, we start with specifying functions that can create new features through `feature_adding_dct` in the config file. Then in the feature engineering task, it will call every specified function from the helpers file.
 
