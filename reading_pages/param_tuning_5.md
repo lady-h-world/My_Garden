@@ -41,7 +41,7 @@ Therefore, Lady H. started with LGBM's built-in poisson loss. Because the custom
 
 Lady H. got 0.982 R2 testing score in 300 seconds with these settings, so there is an improvement in comparison with the baseline result.
 
-After that, she wanted to try out her self-written objective function. But the challenge is, LGBM's customized objective function needs users to specify `grad` and `hess` 🤔
+After that, she wanted to try out her self-written objective function. But the challenge is, FLAML is using estimators' built-in config, and LGBM's customized objective function needs users to specify `grad` and `hess` 🤔
 
 * `grad` is the value of the first order derivative (gradient) of the loss with respect to the elements of `y_pred` for each sample point.
 * `hess` is the value of the second order derivative (gradient) of the loss with respect to the elements of `y_pred` for each sample point.
