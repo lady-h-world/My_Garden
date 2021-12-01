@@ -89,6 +89,26 @@ And if we look at the feature importance from this trained model, it points to f
 
 🌻 [Check covariate drift detection experiments >>][4]
 
+##### Data Drift Monitoring Pipeline Code
+
+As we saw in `run.py`, Task Data Drift Moniroting is independent from the model pipeline, it can be executed at any time. In the industry, you can also schdule a periodically running data monitoring job and display the output on a dashboard, or send alerts whenever something unexpected happened.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/run_monitoring.png" width="453" height="440" />
+</p>
+
+The pipeline code has helpers functions to calculate PSI for concept drifting and use LGBM for covariate drifting. Then in the task class, just need to call these helpers functions.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/task_drift_monitoring_code.png" width="1000" height="804" />
+</p>
+
+🌻 [Check data drift monitoring config >>][8]
+
+🌻 [Check data drift monitoring task >>][9]
+
+🌻 [Check data drift monitoring helpers >>][10]
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
@@ -111,3 +131,6 @@ And if we look at the feature importance from this trained model, it points to f
 [5]:https://github.com/mwburke/population-stability-index/blob/master/psi.py#L50-L67
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/customized_pipeline5.md
 [7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/customized_pipeline3.md
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/config.yaml#L61
+[9]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/data_drift_monitoring.py
+[10]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/helpers/data_drift_monitoring_helpers.py
