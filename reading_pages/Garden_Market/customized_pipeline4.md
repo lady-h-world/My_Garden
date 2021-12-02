@@ -109,6 +109,17 @@ The pipeline code has helpers functions to calculate PSI for concept drifting an
 
 🌻 [Check data drift monitoring helpers >>][10]
 
+
+#### Tests
+
+It is a better practice to have unit tests and integration tests in the pipeline, so that after each code change, you can test whether anywhere has been broken by the change. In some companies, the input data for the tests might be mockup data, but Lady H. strongly recommends to use client's real data for the pipeline's tests, if possible. Because this helps debugging for the real client use cases earlier, and it provides more flexibility of choosing the data size.
+
+🌻 [Check unit tests >>][12]
+
+🌻 [Check integration tests >>][11]
+
+Unit tests are used to test single functions, while each integration test can be used to test each luigi task in this pipeline.
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
@@ -134,3 +145,5 @@ The pipeline code has helpers functions to calculate PSI for concept drifting an
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/config.yaml#L61
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/data_drift_monitoring.py
 [10]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/helpers/data_drift_monitoring_helpers.py
+[11]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/tests/integration_test.py
+[12]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/tests/unit_tests.py
