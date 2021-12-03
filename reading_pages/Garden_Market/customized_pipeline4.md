@@ -112,7 +112,8 @@ The pipeline code has helpers functions to calculate PSI for concept drifting an
 
 #### Tests
 
-It is a better practice to have unit tests and integration tests in the pipeline, so that after each code change, you can test whether anywhere has been broken by the change. In some companies, the input data for the tests might be mockup data, but Lady H. strongly recommends to use client's real data for the pipeline's tests, if possible. Because this helps debugging for the real client use cases earlier, and it provides more flexibility of choosing the data size.
+It is a better practice to have unit tests and integration tests in the pipeline, so that after each code change, you can test whether anywhere has been broken by the change. In some companies, the input data for the tests can be mockup data, but Lady H. strongly recommends to use client's real data for the pipeline's tests, if possible. Because this helps debugging for the real client use cases earlier, and it provides more flexibility of choosing the data size. If you want to cover all the edge cases in the data, then simulating a larger set of mockup data to be used throughout the pipeline is also a good practice.
+
 
 🌻 [Check unit tests >>][12]
 
