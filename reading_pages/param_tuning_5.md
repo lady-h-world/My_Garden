@@ -46,7 +46,7 @@ After that, she wanted to try out her self-written objective function. But the c
 * `grad` is the value of the first order derivative (gradient) of the loss with respect to the elements of `y_pred` for each sample point.
 * `hess` is the value of the second order derivative (gradient) of the loss with respect to the elements of `y_pred` for each sample point.
 
-Lady H. had graduated from high school for a while and forgot how to do the calculation. If you have any good suggestion, welcome to leave comments in [the discussion forum][4], Lady H. will be more than happy to know that. But anyway, she found the formulas for some loss functions, such as "fair loss" as the code shown below. LGBM does have its built-in fair loss too, but here Lady H. changed the constant value used in the formula.
+If you have any tips on how to calculate grad and hess well, welcome to [show and tell us][4], Lady H. will be more than happy to know that. But anyway, she found the formulas for some loss functions, such as "fair loss" as the code shown below. LGBM does have its built-in fair loss too, but here Lady H. changed the constant value used in the formula.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flaml_custimized_fair_loss.png" width="900" height="700" />
@@ -122,7 +122,7 @@ Comparing with FLAML, Optuna has a better user experience in deep learning, and 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_1.md#the-baseline-model
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/lgbm_regression_baseline.ipynb
 [3]:https://en.wikipedia.org/wiki/Poisson_distribution
-[4]:https://github.com/lady-h-world/My_Garden/discussions
+[4]:https://github.com/lady-h-world/My_Garden/discussions/categories/show-and-tell
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/flaml_experiments/flaml_customized_learner.ipynb
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/optuna_experiments/optuna_customized.ipynb
 [7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_6.md

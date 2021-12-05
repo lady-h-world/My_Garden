@@ -21,7 +21,7 @@ Here's an overview of all the stops!
 <p>&nbsp;</p>
 
 ## Safeguard the World ©
-Lady H.'s properties all have their intelligence and destructive superpower, being stolen and spread in an illegal way, will cause unpredictable consequences to the outside world. If you came across any illegal spreading of our assets, please contact us in [the reporting forum][3] with screenshorts and locations. Together, let's keep the world safe.
+Lady H.'s properties all have their intelligence and destructive superpower, being stolen and spread in an illegal way, will cause unpredictable consequences to the outside world. If you came across any illegal spreading of our assets, please contact us in [the illegal spreading forum][3] with screenshorts and locations. Together, let's keep the world safe.
 
 <p>&nbsp;</p>
 
@@ -43,7 +43,7 @@ And our lovely Miss Mooncake can't wait to see you and share all of her stories!
 <p>&nbsp;</p>
 
 ## Keep in Touch
-After visiting our garden, if you have any question or suggestion, feel free to drop messages in [our discussion forum][2]!
+After visiting our garden, if you have any questions, new ideas or suggestions, feel free to drop messages in [our discussion forum][2]!
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/the_queen.md
 [2]:https://github.com/lady-h-world/My_Garden/discussions
