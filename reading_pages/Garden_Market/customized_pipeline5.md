@@ -1,6 +1,6 @@
 ### Customized Airflow Pipeline
 
-Airflow appeared 2 years after Luigi, but it is more popular now because of its scalability, visualization and flexibility in building the workflow.
+Airflow came out 2 years later than Luigi, but it is more popular now because of its scalability, visualization and flexibility in building the workflow.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/airflow_dag.png" width="766" height="79" />
@@ -9,27 +9,27 @@ Airflow appeared 2 years after Luigi, but it is more popular now because of its 
 
 #### Airflow Setup (Local Mac)
 
-In order to use the Airflow ecosystem, it takes more effort than Luigi setup. Let's share Lady H.'s notes. She has tried both docker setup and local setup on windows and Mac, but found the easiest way was to setup on Mac or Linux locally. Here's how did she run Airflow on her local Mac:
+In order to use the Airflow ecosystem, it takes more effort than Luigi setup. Let's share Lady H.'s notes. She has tried both docker setup and local setup on Windows and Mac, but found the easiest way was to setup on Mac or Linux locally. Here's how did she got Airflow run on Mac:
 
-* To install airflow, just need to follow the steps [here][1]
+* To install Airflow, just need to follow the steps [here][1]
   * Better to take a note of which python version used by your Airflow, so that you can find its site packages later 
 * After the installation succeeded, each time
-  * Just need to type `airflow standalone` thorugh your terminal, to start Airflow
+  * Just type `airflow standalone` through your terminal, to start Airflow
   * Then you can get access to http://localhost:8080/home, which is the interface of all the DAGs (workflows)
   * To create your own DAG
-    * Make sure you have defined AIRFLOW_HOME path during the installation stage, like this `export AIRFLOW_HOME=~/airflow`
-    * Find file `airflow.cfg` in your AIRFLOW_HOME folder, in this file, make sure to specify DAGs location like this `dags_folder = ~/airflow/dags`, this is where you will add new DAGs as .py files
+    * Make sure you have defined AIRFLOW_HOME during the installation stage, like this `export AIRFLOW_HOME=~/airflow`
+    * Find file `airflow.cfg` in your AIRFLOW_HOME folder, in this file, make sure to specify DAGs folder like this `dags_folder = ~/airflow/dags`, this is where you will add new DAGs as .py files
     * When creating your DAG in the .py file, make sure to define the `dag_id`, this will be the file name shown in the DAG list
-    * To check whether your DAG has been added to the DAG list, type `airflow dags list` through a terminal and you will see all the DAGs, to find DAGs through keywords, you can type `airflow dags list | grep [key_word]`
+    * To check whether your DAG has been added to the DAG list, type `airflow dags list` through a terminal and you will see all the DAGs. If you want to find DAGs through keywords, you can type `airflow dags list | grep [key_word]`
 
-For example, here're the listed searched DAGs:
+For example, Lady H. was trying to search for DAGs with "super" in their names:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/dag_list.png" width="1149" height="48" />
 </p>
 
   * If your DAG isn't shown in the list
-    * Check whether all the imported packages were installed in the site packages of the python used by your airflow 
+    * Check whether all the imported packages were installed in the site packages of the python used by your Airflow 
     * Check whether there is any error shown at the top of http://localhost:8080/home, if so, fix it
 
 Once your DAG appeared in the list, you can run it through the localhost interface:
@@ -46,9 +46,9 @@ If you know how to setup Airflow in other ways, such as using docker or on Windo
 
 #### Super Mini Airflow Pipeline
 
-The learning curve of Airflow is steeper than Luigi, Lady H. decided to use a small amount of super power from the sprouts, to exhibit a super mini Airflow pipeline that convers the key learning points from Airflow.
+The learning curve of Airflow is steeper than Luigi, Lady H. decided to use a small amount of sprouts' power, to exhibit a super mini Airflow pipeline that covers the key learning points.
 
-This super mini pipeline only has 2 steps, data spliting and baseline model training. This whole workflow is a DAG and can be defined within a .py file.
+This super mini pipeline only has 2 tasks, data spliting task followed by model training task. This whole workflow is a DAG and can be defined within a .py file.
 
 🌻 [Check Airflow super_mini_pipeline.py DAG >>][3]
 
@@ -68,13 +68,13 @@ Then you need to specifiy the parameters of this DAG. Make sure `dag_id` and `ta
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_code2.png" width="566" height="49" />
 </p>
 
-Now it's the core part where you need to define each step. As we can see, the logic of data spliting and model training is defined in functions, and each step is defined as a `PythonOperator`, whose id is specified in its `task_id` and its `python_callable` matches to the function name of this step, `op_kwargs` stores the (key, value) pairs of the function parameters. 
+Now it's the core part where you need to define each task. As we can see, the logic of data spliting and model training is defined in functions, and each task is defined as a `PythonOperator`, whose id is specified in its `task_id` and its `python_callable` matches to the function name of this task, `op_kwargs` stores the (key, value) pairs of the function parameters. 
 
-For example, `split_data_task` has its logic defined in function `split_data()`, therefore, its `python_callable` is "split_data". Meanwhile, function `split_data()` has used confgured parameter `label`, in this case the value of `label` is "species", so `'label':'species'` appears in the `op_kwargs` of this task.
+For example, `split_data_task` has its logic defined in function `split_data()`, therefore, its `python_callable` is "split_data". Meanwhile, function `split_data()` has user configurable parameter `label`, in this case the value of `label` is "species", so `'label':'species'` appears in the `op_kwargs` of this task.
 
-You must also have noticed the `xcom_push()` and `xcom_pull()` used in the code. In this dag, they are used to transfer the data between tasks:
+You must also have noticed the `xcom_push()` and `xcom_pull()` used in the code. In this DAG, they are used to transfer the data between tasks:
 
-1. The split data was saved through `split_data()` function, `xcom.push()` is used to push the absolute path of the saved data. <b>Remember, Airflow only accepts the absolute path</b>.
+1. In `split_data()` function, `xcom.push()` is used to push the absolute path of the data output. <b>Remember, Airflow only accepts the absolute path</b>.
 2. In order to load the split data, `train_model()` function uses `xcom_pull()` to locate the pushed data through `task_ids` and the `key` specified in `xcom_push()`. In this example, `task_ids` points to the `task_id` of `split_data_task`.
 
 <p align="left">
@@ -87,19 +87,19 @@ You might be wondering why not transfer the data directly between Airflow tasks.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/airflow_xcom.png" width="766" height="79" />
 </p>
 
-After seeing your DAG appeared in the DAG list, you can run it, and may get error in a certain task, like this:
+After seeing your DAG appeared in the DAG list, you can run it, and may get errors in a certain task. For example, as shown below, split_data_task succeeded so it's marked as green and train_model_task failed so it's marked in red:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_error_flow.png" width="333" height="86" />
 </p>
 
-To check the error log, you can click the log of the error task, it will locate the lines of code from where the errors happened.
+To check the error log, you can click the failed task and find the log, it will indicate which lines of code caused the errors.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_error_log.png" width="1000" height="430" />
 </p>
 
-After trials and errors, finally you will get green lights on every task of the DAG 🥳, and through the Tree view, you can see an overview of all the historical attempts.
+After trials and errors, finally you will get green lights on every task of the DAG 🥳, and from the Tree view, you can see an overview of all the historical attempts.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_flow.png" width="510" height="126" />
