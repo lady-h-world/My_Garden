@@ -99,7 +99,7 @@ To check the error log, you can click the log of the error task, it will locate 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_error_log.png" width="1000" height="430" />
 </p>
 
-After trials and errors, finally you will get green lights on every task of the DAG 🎉, and through the Tree view, you can see an overview of all the historical attempts.
+After trials and errors, finally you will get green lights on every task of the DAG 🥳, and through the Tree view, you can see an overview of all the historical attempts.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_flow.png" width="510" height="126" />
