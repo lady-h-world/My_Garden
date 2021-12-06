@@ -4,7 +4,7 @@ Airflow was designed for workflow instead of data flow, therefore it doesn't sup
 
 #### ZenML Setup
 
-Open your terminal, and follow these steps to setup ZenML:
+Open your terminal, and follow these steps for the FIRST TIME setup:
 
 1. `pip install zenml`
 2. `pip install google-cloud-bigquery-storage`
@@ -14,6 +14,13 @@ Open your terminal, and follow these steps to setup ZenML:
   4.2. `git init`
   4.3. `zenml init`
 5. [Follow all the steps here to setup the environment for your Airflow DAG][2]
+
+Later to reuse the same environment, just need to run
+
+* `zenml orchestrator up` to start Airflow
+  * If there is an error showing PID file already exists, remove that file before executing this command
+* `python [my_DAG.py]` ro execute the DAG file
+* `zenml orchestrator down` to shut down Airflow
 
 
 #### Super Mini ZenML Pipeline
