@@ -29,7 +29,7 @@ In order to make a personalized perfume, we will send a specialist to collect th
 
 While the personalized perfume pipeline only serves a small group of clients, our mass prodution pipeline is for the general population. It makes a wide variety of perfumes, catering for a broad range of public tastes. With this pipeline, each type of perfume can be produced in batches and sold to large number of clients. The manufacturing process is an end-to-end automation, from flowers and fruits harvesting, to ingredients preprocessing, to perfume making, and till products' quality check, all rely on robots. 
 
-Now, are you curious what kind of super power does Garden Market's sprouts have?
+Now, are you curious what kind of super power does Garden Market's sprout have?
 
 #
 <p align="left">
