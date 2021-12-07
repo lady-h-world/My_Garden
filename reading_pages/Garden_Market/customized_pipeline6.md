@@ -69,7 +69,7 @@ The Airflow UI of ZenML pipeline looks the same as Airflow pipeline:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-[Keep going >>][4]
+[Get your gifts >>][4]
 
 <p align="right">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
