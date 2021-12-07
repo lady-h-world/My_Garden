@@ -1,6 +1,8 @@
 ### TPOT
 
-The goal of TPOT is to find the best pipeline that can optimize the model performance. Different pipelines are constructed with different data preporocessors, feature constructors, feature selectors, models and hyperparameters. It is built upon sklearn, therefore, lots of these operators are using sklearn built-in functions. Meanwhile, [genetic algorithm][1] is used in pipeline selection, which guaranteets the computational cost of TPOT can't be small 😓, even though TPOT added [Feature Set Selector (FSS) and Template][2] to improve the scalability.
+TPOT builds different pipelines with different data preporocessors, feature constructors, feature selectors, models and hyperparameters. All these pipelines form a population from where TPOT will choose the best pipeline that can optimize the model performance. 
+
+It is built upon sklearn, therefore, lots of these operators are using sklearn built-in functions. Meanwhile, [genetic algorithm][1] is used in pipeline selection, which guaranteets the computational cost of TPOT can't be small 😓, even though TPOT added [Feature Set Selector (FSS) and Template][2] to improve the scalability.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/top_architecture.png" width="820" height="406" />
@@ -15,7 +17,11 @@ Let's see how to use TPOT in a regression problem.
 
 Both `generations` and `population_size` are used in the genetic algorithm, the larger they are, the longer time to run the whole TPOT pipeline, and it doesn't mean you can get better results with larger generations or population.
 
-* `config_dict` allows you to choose TPOT [different configurations][3]. In the code below, Lady H. chose "TPOT light" so that only simpler and fast-running operators will be used in the pipeline, otherwise it takes even longer time to run TPOT. You can try other configurations, such as "Default TPOT" which will select a broad range of operators into the pipeline; "TPOT NN" adds more neural network estimators upon all the choices of "Default TPOT"; "TPOT cuML" supports the search using GPU, and there are other choices too.
+* `config_dict` allows you to choose different [TPOT configurations][3]. In the code below, Lady H. chose "TPOT light" so that only simpler and fast-running operators will be used in the pipeline, otherwise it takes even longer time to run TPOT. You can try other configurations, such as 
+  * "Default TPOT" will select a broad range of operators into the pipeline
+  * "TPOT NN" adds more neural network estimators upon all the choices of "Default TPOT"
+  * "TPOT cuML" supports the search using GPU
+  * And other choices
 
 By default, K-fold cross validation is used in TPOT, and at the end of the pipeline selection, the best pipeline is trained on the entire training data, which is a good practice.
 
