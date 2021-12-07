@@ -75,5 +75,5 @@ def super_mini_pipeline(
 
 # run the pipeline
 pipeline = super_mini_pipeline(data_spliter=split_data(),
-                                    train_evaltor=train_evaltor())
-pipeline.run()
+                                train_evaltor=train_evaltor())
+DAG = pipeline.run()
