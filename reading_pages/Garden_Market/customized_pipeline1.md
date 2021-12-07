@@ -1,17 +1,15 @@
 ### Customized Luigi Pipeline
 
-In order to make more profits for the garden, Lady H. often needs an estimation of the perfume sales periodically, in order to make better decisions for the garden market. No matter the decision is about how much flowers to harvest, or what marketing campaign to do, or innovations in perfume design, or many other things, having a good sales estimation on time is the key. This is how did this luigi pipeline was born.
+In order to make a better decision on the garden market's business, Lady H. often needs a periodical estimation of the perfumes' sales. No matter the decision is about the amount of harvested flowers, or marketing campaign, or innovations in perfume design, or many other things, having a good sales estimation is the key. This is how did this luigi pipeline was born.
 
-Since every time the sales forecasting follows the same process, building this process into an automated pipeline is more efficient.
-
-* To forecast future sales, the process often go through `Data Collection --> Feature Engineering --> Data Preprocessing --> Model Selection --> Model Evaluation`, each step is called as a luigi "task".
-* Data Drift Monitoring is to keep an eye on abnormal behaviors in the features or in the forecast target of the data. The cause of the data drifting varis, but all tend to downgrade the forecasting power. Whenever the data drifitng is detected, it is worthy to investigate further to find out reasons.
+* To forecast future sales, the process often go through `Data Collection -> Feature Engineering -> Data Preprocessing -> Model Selection -> Model Evaluation`, each step is called as a luigi "task".
+* Data Drift Monitoring is to keep an eye on abnormal behaviors in the data. The cause of the data drifting varies, but all tend to downgrade the forecasting power. Whenever the data drifitng is detected, it is worthy to investigate further to find out reasons.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/luigi_pipeline.png" width="520" height="430" />
 </p>
 
-In this Luigi pipeline, 
+In this luigi pipeline, 
 
 * The configurable parameters used in each task is specified in the `config` file. Users can change the values of these parameters to adjust the pipeline.
 * Each `helpers` function can be called by multiple luigi tasks.
@@ -21,9 +19,9 @@ The command center is `run.py`, once Lady H. decides to run either forecasting o
 
 #### Run Luigi Pipeline
 
-This is `run.py`, where users define which task or pipeline to run. In order to make the config parameters accessible to all the luigi tasks, you need to load the config file here and pass it as the parameter of the task instance. At the same time, the task here just need to be the last task of the pipeline, such as `ModelEvaluationTask` in this case, because luigi defines the dependencies between tasks, which allows it to trace back to previous tasks.
+Let's look at the code of `run.py` first. Here, users define which task or pipeline to run. In order to make the config parameters accessible to all the luigi tasks, you need to load the config file and pass it as task's parameter, such as `config` in the code. At the same time, the task here just needs to be the last task of the pipeline, such as `ModelEvaluationTask` in this case. Because luigi defines the dependencies between tasks, it can trace back to previous tasks from the later ones.
 
-🌻 [Check run.py config >>][5]
+🌻 [Check run.py config >>][7]
 
 🌻 [Check run.py code >>][1]
 
@@ -44,7 +42,7 @@ This is the first task of the forecasting pipeline, the purpose is to merge all 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/luigi_skip_output.png" width="766" height="79" />
 </p>
 
-4. The core logic of a task is defined in its `run()` function.
+4. Each task has a `run()` function to define the core logic.
 5. Since the `output()` function doesn't automatically save the output, users need to save the output through `run()` function.
 
 <p align="left">
@@ -75,3 +73,4 @@ This is the first task of the forecasting pipeline, the purpose is to merge all 
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/mini_pipeline5.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/config.yaml#L9
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/config.yaml#L6-L7
+[7]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/luigi_pipeline/config.yaml

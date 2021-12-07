@@ -1,6 +1,6 @@
 #### Task - Feature Engineering
 
-Feature Engineering is a creative step. Besides using the existing data columns as features, users can add new features that might improve the model forecasting. The process of creating new features is called "feature engineering".
+Feature Engineering is a creative step. Besides using the existing data columns as features, users can add new features that might improve the forecasting performance. The process of creating new features is called "feature engineering".
 
 In order to create new features effectively, it's often worthy to explore the data for more insights first. Let's look at some basic methods that Lady H. often uses in her data exploration.
 
@@ -14,13 +14,13 @@ We can check the distribution of the forecasting target. From the sales plot we 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/uni_ana_target.png" width="500" height="226" />
 </p>
 
-The distributions of categorical feature can be plotted as bar charts, so that we can see the comparison between all the values of a feature. Such as StoreType 1 occupies a much smaller population than other store types; there is less records between August and December, comparing with other months.
+The distributions of categorical feature can be plotted as bar charts, so that we can see the comparison between all the values of a feature. Such as in feature "StoreType", type 1 occupies a much smaller population than other store types; in feature "Month", there is less records between August and December, comparing with other months.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/uni_ana_cat_dist.png" width="1090" height="318" />
 </p>
 
-The distributions of numerical features often look like skewed normal distribution such as "Customers" distribution below, or look like skewed normal distribution with bumps such as "CompetitionDistance" distribution below. It is also common to see a very long tail in these distributions, and we can try out binning the feature values, so that a numerical feature will be converted to a categorical feature.
+It's common to see the distributions of numerical features look like skewed normal distribution such as "Customers" distribution below, or look like skewed normal distribution with bumps such as "CompetitionDistance" distribution below. It is also common to see a very long tail in these distributions, and we can try out binning the feature values, so that a numerical feature will be converted to a categorical feature.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/binning.png" width="766" height="79" />
@@ -54,12 +54,12 @@ We can also look at sales distributions for categorical features, such as the sa
 
 ##### Feature Engineering Pipeline Code
 
-In the pipeline, we start with specifying functions that can create new features through `feature_adding_dct` in the config file. Then in the feature engineering task, it will call every specified function from the helpers file.
+In the pipeline, we decide which new features to add through `feature_adding_dct` in the config file. Then feature engineering task will call respective functions from the helpers file.
 
 In this example, Lady H. was adding 2 functions:
 
 * `add_date_feature()` is to add Year, Month, Quarter as new features, they were all generated from the "date" column. Although "Year" may not be a good feature as we saw in above bivariate analysis, it is common to generate these time elements as new features when we have a date column.
-* `add_threshold_grouping_features()` is to generate a binary feature based on specified thereshold. In this case, "Customers" has been used to generate feature "Customers_larger_then_3000" to indicate whether the customers amount is larger than 3000.
+* `add_threshold_grouping_features()` is to generate a binary feature based on specified thereshold. In this case, feature "Customers" was used to generate feature "Customers_larger_then_3000", which indicates whether the customers amount is larger than 3000.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/feature_engineering_code.png" width="1233" height="859" />
@@ -72,7 +72,7 @@ In this example, Lady H. was adding 2 functions:
 🌻 [Check feature engineering helpers >>][4]
 
 
-You might have noticed this `requires()` function in feature engineering task. It builds the dependency between tasks. Because feature engineering can only be executed after finishing data collection task, and `requires()` function indicates this relationship, so that luigi will know the order of tasks.
+You might have noticed function `requires()` in feature engineering task. It builds the dependency between tasks. Because feature engineering can only be executed after finishing data collection task, by indicating this relationship through `requires()`, luigi will know the order of the tasks' execution.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/feature_engineering_dependent.png" width="301" height="62" />
