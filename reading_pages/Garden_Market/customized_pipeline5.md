@@ -89,7 +89,7 @@ You might be wondering why not transfer the data directly between Airflow tasks.
 
 After seeing your DAG appeared in the DAG list, you can run it, and may get errors in a certain task. For example, as shown below, split_data_task succeeded so it's marked as green and train_model_task failed so it's marked in red:
 
-<p align="left">
+<p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_error_flow.png" width="333" height="86" />
 </p>
 
@@ -101,7 +101,7 @@ To check the error log, you can click the failed task and find the log, it will 
 
 After trials and errors, finally you will get green lights on every task of the DAG 🥳, and from the Tree view, you can see an overview of all the historical attempts.
 
-<p align="left">
+<p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_flow.png" width="510" height="126" />
 </p>
 
