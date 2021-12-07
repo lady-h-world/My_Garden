@@ -43,7 +43,7 @@ We think a summarized note will upgrade your visiting experience :)
 
 <p>&nbsp</p>
 
-### An anecdote!
+### A Surprise!
 
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="155" height="200" /></p>
