@@ -31,7 +31,7 @@ Lady H. tested the power of these sprouts with the same data sets used in [hyper
 * 🌻 [To get Leaves30 data >>][7]
 * 🌻 [To get Sales data >>][8]
 
-When using these mini pipelines, it is expected to take longer execution time than HPO, since there are more models and parameters to be selected. Then based on the results in Table 4.1, MLJar appears to be a better model selection tool. To dive into more details, let's follow the Chansey Butterflies!
+When using these mini pipelines, it is expected to take longer execution time than HPO, since there are more models and parameters to be selected. Then based on the results in Table 4.1, MLJar appears to be a better model selection tool. To dive into more details, let's follow our Chansey Butterflies!
 
 #
 <p align="left">
