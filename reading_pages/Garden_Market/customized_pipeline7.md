@@ -18,11 +18,11 @@ You also have seen the customized pipeline Lady H. built with the power from Lui
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="155" height="200" /></p>
 
-While Lady H. was exploring the power of sprouts, she had some great discussions on StackOverflow! Let's hear the story!
+During Lady H.'s exploration stage, she had some great discussions on StackOverflow! Let's hear the story!
 
-She started with asking for help about Airflow data transfer issue, not only she got the solution from Talgat but also got a suggestion from Hamza for trying out ZenML. Although, as ZenML's Co-Founder, it's natural for Hamza to recommend their products, Lady H. was looking for better tools than Luigi and Airflow at that time, Hamza's suggestion still provided her a hope.
+She started with asking for help about airflow data transfer issue, not only she got the solution from user Talgat but also got a suggestion from user Hamza for trying out ZenML. Although, as ZenML's Co-Founder, it's natural for Hamza to recommend their products, since Lady H. was looking for better tools than Luigi and Airflow at that time, Hamza's suggestion still provided her a hope.
 
-Later it turned out this extra exploration is a good one! ZenML was showing a smooth Airflow setup to Lady H., and it not only solved Airflow data transfer issue but also provides a more flexible solution. Having gained so much excitment, the only challenge left for Lady H. was to show the DAG on Airflow UI. She asked Hamza again and got fast response, it was thrilling to hear that he's going to create a ticket for the problem solving. Finally, the problem solved! Such a great learning experience!
+Later it turned out this extra exploration was a good one! ZenML was showing a smooth airflow setup experience, and it not only solved airflow data transfer issue but also provides a more flexible solution. Having gained so much excitment, the only challenge left for Lady H. was to show the DAG on the airflow UI. She asked Hamza again and got fast response, it was thrilling to hear that he was about to create a ticket for the problem solving. Finally, the problem was solved and it posed such a great learning experience to Lady H.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/great_discussion.png" width="1000" height="700" />
