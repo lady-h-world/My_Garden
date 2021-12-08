@@ -1,6 +1,6 @@
 ### Customized Airflow Pipeline
 
-Airflow came out 2 years later than Luigi, but it is more popular now because of its scalability, visualization and flexibility in building the workflow.
+Airflow came out 2 years later than Luigi, but it is more popular now because of its scalability, visualization and flexibility in building the workflows.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/airflow_dag.png" width="766" height="79" />
@@ -9,7 +9,7 @@ Airflow came out 2 years later than Luigi, but it is more popular now because of
 
 #### Airflow Setup (Local Mac)
 
-In order to use the Airflow ecosystem, it takes more effort than Luigi setup. Let's share Lady H.'s notes. She has tried both docker setup and local setup on Windows and Mac, but found the easiest way was to setup on Mac or Linux locally. Here's how did she got Airflow run on Mac:
+In order to use the Airflow ecosystem, it takes more effort than Luigi setup. Let's share Lady H.'s notes. She has tried both docker setup and local setup on Windows and Mac, but found the easiest way was to setup on Mac or Linux locally. Here's how did she get Airflow run on Mac:
 
 * To install Airflow, just need to follow the steps [here][1]
   * Better to take a note of which python version used by your Airflow, so that you can find its site packages later 
@@ -46,7 +46,7 @@ If you know how to setup Airflow in other ways, such as using docker or on Windo
 
 #### Super Mini Airflow Pipeline
 
-The learning curve of Airflow is steeper than Luigi, Lady H. decided to use a small amount of sprouts' power, to exhibit a super mini Airflow pipeline that covers the key learning points.
+The learning curve of Airflow is steeper than Luigi, to help your learning, Lady H. decided to exhibit a super mini Airflow pipeline that covers the key learning points.
 
 This super mini pipeline only has 2 tasks, data spliting task followed by model training task. This whole workflow is a DAG and can be defined within a .py file.
 
@@ -56,7 +56,7 @@ This super mini pipeline only has 2 tasks, data spliting task followed by model 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/correct_airflow_flow.png" width="326" height="82" />
 </p>
 
-At the very beginning of this DAG, you will import different python packages, besides built-in python and Airflow packages, other packages (such as `lightgbm`, `sklearn`) need to be installed in the site packages of the python used by Airflow, otherwise your DAG won't appear in the Airflow DAG list.
+At the very beginning of this DAG, you will import different python packages, besides built-in python and airflow packages, other packages (such as `lightgbm`, `sklearn`) need to be installed in the site packages of the python used by airflow, otherwise your DAG won't appear in the DAG list.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_code1.png" width="448" height="245" />
@@ -74,20 +74,18 @@ For example, `split_data_task` has its logic defined in function `split_data()`,
 
 You must also have noticed the `xcom_push()` and `xcom_pull()` used in the code. In this DAG, they are used to transfer the data between tasks:
 
-1. In `split_data()` function, `xcom.push()` is used to push the absolute path of the data output. <b>Remember, Airflow only accepts the absolute path</b>.
+1. In `split_data()` function, `xcom.push()` is used to push the absolute path of the data output. <b>Remember, airflow only accepts the absolute path</b>.
 2. In order to load the split data, `train_model()` function uses `xcom_pull()` to locate the pushed data through `task_ids` and the `key` specified in `xcom_push()`. In this example, `task_ids` points to the `task_id` of `split_data_task`.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_code3.png" width="1000" height="600" />
 </p>
 
-You might be wondering why not transfer the data directly between Airflow tasks. In this case, it is impossible, because the data output & input is pandas dataframe, Airflow only allows JSON string for data transfer.
-
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/airflow_xcom.png" width="766" height="79" />
 </p>
 
-After seeing your DAG appeared in the DAG list, you can run it, and may get errors in a certain task. For example, as shown below, split_data_task succeeded so it's marked as green and train_model_task failed so it's marked in red:
+After seeing your DAG appeared in the DAG list, you can run it, and may get errors in a certain task. For example, as shown below,  data spliting task succeeded so it's marked as green and model training task failed so it's marked in red:
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_error_flow.png" width="333" height="86" />
