@@ -3,7 +3,7 @@
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="200" height="250" /></p>
 
-Lady H.'s first full time data scientist job was in a financial fraud detection company. One of her clients was a giant bank. Every 2 months, that client would send her new data for fraud analysis. It was 5pm in a December when the office was almost empty, most of her colleagues were on vacation or left earlier. Lady H. was planning to quickly finish the client's fraud report using her trained model, then go home.
+Lady H.'s first full time data scientist job was in a financial fraud detection company. One of her clients was a giant bank. Every 2 months, that client would send her new data for fraud analysis. It was a December afternoon when the office was almost empty at 5 pm, most of her colleagues were on vacation or left earlier. Lady H. was planning to quickly finish the client's fraud report using her trained model, then go home.
 
 But the new data gave her a very different fraud detection rate, a rate much lower than usual. "Why this happened? It looks so strange and the client will definitely ask why. I have to investigate", Lady H. thought. Later, she figured it out, the client sent her the wrong data and caused the problem. 
 
@@ -31,7 +31,7 @@ Let's look into the details.
 
 `PSI = sum((actual_percentage_i - expected_percentage_i) * ln(actual_percentage_i / expected_percentage_i))`
 
-When applying PSI, you need 2 sets of target data, "actual" can be the latest target data, "expected" can be the older target data that didn't have data drifting. PSI will binning the numerical target values and "_i" means the ith bin, the "percentage" in the formula indicates how many percent each bin occupies in the population. The general purpose of PSI is to get the overall percentage change, when comparing 2 sets of data.
+When applying PSI to detect concept drift, you need 2 sets of target data, "actual" can be the latest target data, "expected" can be the older target data that didn't have data drifting. PSI will binning the numerical target values and "_i" means the ith bin, the "percentage" in the formula indicates how many percent each bin occupies in the population. The general purpose of PSI is to get the overall percentage change, when comparing 2 sets of data.
 
 🌻 [Check PSI python implementation >>][2] ([Reference][3])
 
@@ -45,7 +45,7 @@ With PSI, Lady H. applied it to 2 sets of taregts that didn't have concept drift
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/psi_normal.png" width="911" height="333" />
 </p>
 
-Then she applied it to another pair from targets where one of the data set drifted from the other, we can see the difference in the distributions and the PSI value all indicate a significant change.
+Then she applied it to another pair of targets, that one of the data set drifted from the other, and we can see the difference in the distributions and the PSI value all indicate a significant change.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/psi_drift.png" width="912" height="336" />
@@ -61,7 +61,7 @@ In Lady H.'s experiments, she only did the concept drift detection for regressio
 
 ##### Machine Learning to Detect Covariate Drift
 
-Drifting in features can bring up more complex math discussions, and many statistical methods can only be used in a limited scope. Lady H. has found a straightforward and effective method to detect covariate drift, that is to mix the old and the new data sets together, labeling them as the "old" or the "new" data, then use a machine learning model to do the forecast. If the forecasting result is showing high accuracy, then it means there is covariate drift since the dataset can tell obvious differences between the old and the new data. To figure out which features might caused the drift, we can check the feature importance.
+Drifting in features can bring up more complex math discussions, and many statistical methods can only be used in a limited scope. Lady H. has found a simple and effective method to detect covariate drift, that is to mix the old and the new data sets together, labeling them as the "old" or the "new" data, then use a machine learning model to do the forecast. If the forecasting result is showing high accuracy, then it means there is covariate drift since the dataset can tell obvious differences between the old and the new data. To figure out which features might caused the drift, we can check the feature importance.
 
 The code is as simple as using a LGBM model to train the data with cross validation, and check the average forecasting performance:
 
@@ -91,7 +91,7 @@ And if we look at the feature importance from this trained model, it points to f
 
 ##### Data Drift Monitoring Pipeline Code
 
-As we saw in `run.py`, Task Data Drift Moniroting is independent from the model pipeline, it can be executed at any time. In the industry, you can also schdule a periodically running data monitoring job and display the output on a dashboard, or send alerts whenever something unexpected happened.
+As we saw in `run.py`, Task Data Drift Moniroting is independent from the model pipeline, it can be executed at any time. In the industry, you can also schdule a periodical data monitoring job and display the output on a dashboard, or send alerts whenever something unexpected happened.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/run_monitoring.png" width="453" height="440" />
@@ -112,8 +112,11 @@ The pipeline code has helpers functions to calculate PSI for concept drifting an
 
 #### Tests
 
-It is a better practice to have unit tests and integration tests in the pipeline, so that after each code change, you can test whether anywhere has been broken by the change. In some companies, the input data for the tests can be mockup data, but Lady H. strongly recommends to use client's real data for the pipeline's tests, if possible. Because this helps debugging for the real client use cases earlier, and it provides more flexibility of choosing the data size. If you want to cover all the edge cases in the data, then simulating a larger set of mockup data to be used throughout the pipeline is also a good practice.
+It is a better practice to have unit tests and integration tests in the pipeline, so that after each code change, you can test whether any where has been broken by the changes. In some companies, the input data for the tests can be mockup data, but Lady H. strongly recommends to use client's real data for the pipeline's tests, if possible. Because this helps debugging for the real clients' use cases earlier, and it's more flexible for scalability tests. If you want to cover all the edge cases in the data, then simulating a larger set of mockup data to be used throughout the pipeline is also a good practice.
 
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/scalability_test.png" width="766" height="79" />
+</p>
 
 🌻 [Check unit tests >>][12]
 
