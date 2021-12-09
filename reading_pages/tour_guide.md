@@ -45,9 +45,12 @@ And our lovely Miss Mooncake can't wait to see you and share all of her stories!
 ## Keep in Touch
 After visiting our garden, if you have any questions, new ideas or suggestions, feel free to drop messages in [our discussion forum][2]!
 
+To ask for future collaboration opportunities, drop messages [here][7]!
+
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/the_queen.md
 [2]:https://github.com/lady-h-world/My_Garden/discussions
 [3]:https://github.com/lady-h-world/My_Garden/discussions/categories/illegal-spreading-found
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/garden_market.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/garden_symbol.md
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/garden_museum.md
+[7]:https://github.com/lady-h-world/My_Garden/discussions/categories/let-s-collaborate
