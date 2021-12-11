@@ -13,7 +13,7 @@
 
 You must have noticed some colorful stones lying in the grass, as well as their above rainbow light?! These stones are covered with rainbow moss, a kind of plant nourished by magical power. After Lady H. brought in more and more treasures to the garden, these tiny flowers were attracted by the super power here.
 
-These rainbow-like flowers will breath out glowing bubbles, which often fly up 7 ~ 10 centermeters higher and form a rainbow. If the rainbow has brighter color, it means the moss flowers are happier, also means they are fed with stronger power. 
+These tiny flowers will breath out glowing bubbles, which often fly up 7 ~ 10 centermeters higher and form a rainbow. If the rainbow has brighter color, it means the moss flowers are happier, also means they are fed with stronger power. 
 
 </p>
 <p>&nbsp;</p>
@@ -22,7 +22,7 @@ These rainbow-like flowers will breath out glowing bubbles, which often fly up 7
 <p>&nbsp;</p>
 
 
-Even though each flower is too tiny to be seen through naked eyes, they still produce sprouts for you to collect! And in fact, the sprouts here are simple and useful!
+Even though each flower is too tiny to be seen through naked eyes, they still produce sprouts for you to collect! And in fact, these sprouts are simple and useful!
 
 #
 <p align="left">
