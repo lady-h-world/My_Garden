@@ -1,6 +1,6 @@
 ## Python Virtual Environment
 
-As python is the most popular data science language, most data science projects are writting in python nowadays. It is a better practice to create a virtual environment for each new python project. 
+As python is the most popular data science language, most data science projects are written in python nowadays. It is a better practice to create a virtual environment for each new python project. 
 
 ### The Pain of Python Open Sources
 
@@ -14,12 +14,12 @@ It is painful to break the dependencies of packages whenever you need to install
 
 ### How to Create Python Virtual Environments
 
-By collecting this sprout, you can create python virtual environments regardless of your operating systems.
+This method helps create python virtual environments regardless of your operating systems (OS).
 
 1. Download and install Anaconda for your OS: https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html
 2. Download and install PyCharm for your OS: https://www.jetbrains.com/pycharm/download/
   * Choose the "Community" version if you want the free one
-3. Open PyCharm, find `Python Interpreter` under `Preferences` or `Settings` --> `Project`, click the little downward triangle, and click `Show All...`
+3. Open PyCharm, go to `Preferences` or `Settings` --> `Project` --> `Python Interpreter`, find the little downward triangle on the right, and click `Show All...`
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm1.png" width="973" height="255" />
@@ -37,10 +37,16 @@ By collecting this sprout, you can create python virtual environments regardless
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm3.png" width="822" height="232" />
 </p>
 
-6. After the virtual environment successfully created, at the bottom right corner of your PyCharm, you will see its name, like this:
+6. Go to `Preferences` or `Settings` --> `Tools` --> `Terminal`, fill in `Shell path` with `powershell.exe -ExecutionPolicy ByPass -NoExit -Command "& '[Your Anaconda Location]\anaconda3\shell\condabin\conda-hook.ps1'`, remember to change the anaconda path here. This settings will make sure your PyCharm terminal shares the same virtual environment as your project.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm4.png" width="189" height="48" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm5.0.png" width="975" height="393" />
+</p>
+
+7. Restart PyCharm, in PyCharm's terminal as well as the bottom right corner, you will see the virtial environment name. If you check the python version, it should show the right version chosen for the virtual environment:
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm4.1.png" width="936" height="161" />
 </p>
 
 To list all the virtual environments you have created, type `conda env list` through PyCharm Terminal.
@@ -57,7 +63,7 @@ To list all the virtual environments you have created, type `conda env list` thr
 [Back to Rainbow Moss Home >>][1]
 
  
-[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/rainbow_moss.md
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/rainbow_moss.md#data-science-environments
 
 
 
