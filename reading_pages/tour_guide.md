@@ -13,7 +13,7 @@ Here's an overview of all the stops!
 * [The Queen - The Power of Dawn][1]
   * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning
 * [Rainbow Moss][8]
-  * Simple but useful data science routine 
+  * Simple but useful data science routines 
 * [Garden Symbol - Samsara][5]
 * [Garden Market][4]
   * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MlJar, Luigi, Airflow and ZenML
