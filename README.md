@@ -17,6 +17,8 @@
 
 [Enter the garden >>][1]
 
+[Jump to Tour Guide >>][2]
+
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/welcome.md
-
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md
