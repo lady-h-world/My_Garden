@@ -1,20 +1,20 @@
 ## Docker Environment
 
-Docker environment is a virtual environment too, while python virtual environment is often used locally, a docker environment makes your project portable to be used in other platforms. Therefore, it's becoming a trend now to use docker for production deployment.
+Docker environment is a virtual environment too, while python virtual environment is often used locally, a docker environment makes your project portable to be used in other platforms. Therefore, it's trending now to use docker for production deployment.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/notes/production_deployment.png" width="766" height="79" />
 </p>
 
 
-## An Example Project
+### An Example Project
 
 This is a simple example to show the basic strusture of a python project that can be deployed to docker environment.
 
-The core logic is stored in folder "core". In this example, it's just loading the data stored in folder "src", and print out the shape of the data.
+The core logic is stored in folder "core". In this example, it's just loading the data stored in folder "core", and print out the shape of the data.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/docker/core.png" width="667" height="337" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/docker/core_logic.png" width="628" height="317" />
 </p>
 
 The key element is the dockerfile! The dockerfile contains all the instructions to build the docker image.
@@ -27,12 +27,52 @@ In this dockerfile:
 
 1. You need to specify the python version needed for your project, in this case, python3.9 was used.
 2. `WORKDIR` indicates the project folder in the docker container, "/usr/src/" is often the root path, and "moss_example" will be the folder of this project in docker.
-3. Then all the code in folder "core" will be copied to docker under path "/usr/src/moss_example/src"
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/docker/dockerfile.png" width="576" height="536" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/notes/docker_container.png" width="766" height="79" />
 </p>
 
+3. Then all the code in folder "core" will be copied to docker, under path "/usr/src/moss_example/core/". Suggest to have the source and destination folders share the same name in this copy command, so that your code can run both locally and run in docker.
 
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/docker/docker-file.png" width="474" height="427" />
+</p>
+
+🌻 [Check the whole example project >>][1]
+
+### How to Setup Docker
+
+1. Download and install docker desktop
+* To install docker on Windows: https://hub.docker.com/editions/community/docker-ce-desktop-windows
+* To install docker on Mac: https://hub.docker.com/editions/community/docker-ce-desktop-mac
+2. Open a terminal, `cd` to your project folder where dockerfile locates
+3. Build the docker image by running `docker build -t [image_name] .`, in this example, let's call our docker image as "moss_image"
+4. To run the docker image, type `docker run -d -p 8000:8000 [moss_image]`
+
+The execution process looks as below, but you can't tell whether the core logic had been successfully executed.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/docker/docker_commands.png" width="1000" height="400" />
+</p>
+
+To check the output, you can open the Docker Desktop, click on the container that contains your image and check its log. If the execution failed, you can also find errors in this log.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/docker/docker1.png" width="1000" height="300" />
+</p>
+
+Let's see some other commonly used commands:
+
+* The container names are randomly generated each time, you can type `docker ps -a` to list all the contianers.
+* `docker stop [container_name]` can stop a running container.
+* `docker system prune` can remove all the stopped containers and dangling images. Sometimes your docker environment will show weird errors, such as a certain dependency is not available even though everything is correct. Then this command can be useful to give your docker environment a fresh start by cleaning up those misleading items.
+
+#
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
+
+[Back to Rainbow Moss Home >>][2]
 
 [1]:https://github.com/lady-h-world/My_Garden/tree/main/code/rainbow_moss/docker_example/moss_example
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/rainbow_moss.md#data-science-environments
