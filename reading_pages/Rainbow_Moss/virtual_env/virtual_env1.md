@@ -49,11 +49,23 @@ This method helps create python virtual environments regardless of your operatin
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm4.0.png" width="936" height="161" />
 </p>
 
-To list all the virtual environments you have created, type `conda env list` through PyCharm Terminal.
-
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/notes/other_venv_install.png" width="866" height="99" />
 </p>
+
+A few more tips:
+
+* To list all the virtual environments you have created, type `conda env list` through PyCharm Terminal.
+* If you want to use the virtual environment in jupyter notebook:
+  * Type `jupyter lab` or `jupyter notebook` in PyCharm's terminal
+  * Then just choose the python kernel for your notebook, it will use the virtual environment automatically
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm-jupyter.png" width="1000" height="200" />
+</p>
+
+There are many online tutorials about creating virtual environments in jupyter, but it's easy to end up mixing all the environments, using PyCharm is safer.
+
 
 #
 <p align="left">
