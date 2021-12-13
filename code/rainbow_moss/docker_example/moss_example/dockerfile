@@ -12,8 +12,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy files from the root directory to the working directory
-COPY core/ /src/
-RUN ls -la /src/*
+COPY core/ /core/
+RUN ls -la /core/*
 
 # Running Python Application
-CMD ["python3", "/src/load_data.py"]
+CMD ["python3", "/core/load_data.py"]
