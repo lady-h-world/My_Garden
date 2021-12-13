@@ -46,7 +46,7 @@ This method helps create python virtual environments regardless of your operatin
 7. Restart PyCharm, in PyCharm's terminal as well as the bottom right corner, you will see the virtial environment name. If you check the python version, it should show the right version chosen for the virtual environment:
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm4.1.png" width="936" height="161" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm4.0.png" width="936" height="161" />
 </p>
 
 To list all the virtual environments you have created, type `conda env list` through PyCharm Terminal.
