@@ -53,19 +53,40 @@ This method helps create python virtual environments regardless of your operatin
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/notes/other_venv_install.png" width="866" height="99" />
 </p>
 
-A few more tips:
+To list all the virtual environments you have created, type `conda env list` through PyCharm terminal.
 
-* To list all the virtual environments you have created, type `conda env list` through PyCharm Terminal.
-* If you want to use the virtual environment in jupyter notebook:
-  * Type `jupyter lab` or `jupyter notebook` in PyCharm's terminal
-  * Then just choose the python kernel for your notebook, it will use the virtual environment automatically
+### How to use Created Virtual Environments on Jupyter
+
+You might also want to use the created virtual environment in your Jupyter Lab or Jupyter Notebook. Here's how:
+
+1. In the PyCharm terminal, under your virtual environment, type `pip install ipykernel`. This step is only needed once for each virtual environment.
+2. Type `python -m ipykernel install --user --name [your virtual env name] --display-name "[your virtual env name]"` to add the virtual environment's kernel into Jupyter, (update `[your virtual env name]` with the kernel name you want) like this:
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm-jupyter.png" width="1000" height="200" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_jupyter2.png" width="1087" height="26" />
 </p>
 
-There are many online tutorials about creating virtual environments in jupyter, but it's easy to end up mixing all the environments, using PyCharm is safer.
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/notes/jupyter_kernel.png" width="866" height="99" />
+</p>
 
+3. If you type `jupyter kernelspec list`, it will show all the available kernels for Jupyter:
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_jupyter.png" width="696" height="112" />
+</p>
+
+4. Now go to your Jupyer Lab or Jupyter Notebook, and you can choose the kernel to launch a new notebook:
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_jupyter3.png" width="962" height="468" />
+</p>
+
+If you want to change the kernel of an existing noteook, click the top right kernel name of the notebook, and update the kernel option:
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_jupyter4.png" width="300" height="312" />
+</p>
 
 #
 <p align="left">
