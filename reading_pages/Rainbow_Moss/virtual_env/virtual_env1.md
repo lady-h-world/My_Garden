@@ -76,6 +76,8 @@ You might also want to use the created virtual environment in your Jupyter Lab o
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_jupyter.png" width="696" height="112" />
 </p>
 
+To remove a certain kernel, you can type `jupyter kernelspec uninstall [kernel_name]` (update `[kernel_name]` with the kernel name you want to remove).
+
 4. Now go to your Jupyer Lab or Jupyter Notebook, and you can choose the kernel to launch a new notebook:
 
 <p align="left">
