@@ -67,7 +67,7 @@ You might also want to use the created virtual environment in your Jupyter Lab o
 </p>
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/notes/jupyter_kernel.png" width="866" height="99" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/notes/jupyter_kernels.png" width="866" height="99" />
 </p>
 
 3. If you type `jupyter kernelspec list`, it will show all the available kernels for Jupyter:
