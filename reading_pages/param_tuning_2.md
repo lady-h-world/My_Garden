@@ -41,7 +41,7 @@ The overall design of Optuna is shown as Figure 1.3:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_design.png" width="678" height="424" />
 </p>
 
-Optuna introduced define-by-run framework into HPO in 2019. The main idea behind define-by-run is, a user only needs to suggest the value range of each hyperparameter and optuna will decide the hyperparamster's value in each trial. There are different ways to make this decision, Optuna's is based on historical evaluated trials' results. Because of this framework design, optuna is able to provide highly modularized programming that a user-defined objective function receives a living trial as input and evaluates the trial result, which also enables the parallel computation of multiple trials.
+Optuna introduced define-by-run framework into HPO in 2019. The main idea behind define-by-run is, a user can rely on optuna to decide the hyperparamster values in each trial dynamically (when the program is running), without explicitly define everything in advance. There are different ways to dynamically construct the parameter search space, Optuna's is based on historical evaluated trials' results. Meanwhile, optuna provides highly modularized programming that a user-defined objective function receives a living trial as input and evaluates the trial result, which also enables the parallel computation of multiple trials.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/trial_and_study.png" width="766" height="79" />
