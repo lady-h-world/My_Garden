@@ -15,6 +15,7 @@ Here's an overview of all the stops!
 * [Rainbow Moss][8]
   * Simple but useful data science routines 
 * [Garden Symbol - Samsara][5]
+  * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite and Prophet
 * [Garden Market][4]
   * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MlJar, Luigi, Airflow and ZenML
 * [Garden Museum][6]
