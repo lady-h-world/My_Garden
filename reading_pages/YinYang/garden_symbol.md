@@ -9,14 +9,13 @@
 
 What is evolution?
 
-When Lady H. was on her journey of plants hunting, she observed a common pattern. That is, no matter how special a plant is, it repeats a life cycle of birth, growth, bloom, mundanity and death. In each cycle, when life reaches to the blooming point, that's also the start of languishing; however when it reaches to the bottom point (death), that's also the beginning of rebirth.
+No matter how special a plant is in this garden, it repeats a life cycle of birth, growth, bloom, mundanity and death. In each cycle, when life reaches to the blooming point, that's also the start of languishing; however when it reaches to the bottom point (death), that's also the beginning of rebirth. As you can see, our genden symbol, the lotus-skeleton is a representation of this cycle, and you can see it everywhere in the garden.
 
-Antient Chinese had summarized this repeated cycle as <b>Yin (陰) Yang (陽)</b>. It's been considered as a universal law carried out by everything. 
+Antient Chinese summarized this repeated cycle as <b>Yin (陰) Yang (陽)</b>, "Yin" means the down point of the cycle while "Yang" means the up point. It's been considered as a universal law carried out by everything. 
 
-A common observation of this law is, life is filled with ups and downs. The down moments in life keep pushing us to do self-reflection and to learn from the failures, the up moments pay off our past efforts but also reminds us of the new challenges. By going through this cycle again and again, human beings are becoming better and better. This is the process of evolution. Meanwhile, because we can never reach to a perfect status, this cycle will keep repeating.
+A popular example is, life is filled with ups and downs. The down moments keep pushing us to self-reflect and to learn from the nonfulfillment, while the up moments award our hard working. By going through this up and down cycle again and again, human beings are becoming better and better. This is the process of evolution. Meanwhile, because we can never reach to a perfect status, this cycle will keep repeating.
 
-Same idea applies to the plants in this graden. Because each of these species had gone through tons of such evolution cycles, they became unique and fabulous, and they are still improving along the time.
-
+Same to our garden plants. Their uniqueness and magic power is a result of evolution, and they are always undergoing the new advancement.
 
 </p>
 <p>&nbsp;</p>
