@@ -18,10 +18,28 @@ A popular example is, life is filled with ups and downs. The down moments keep p
 Same to our garden plants. Their uniqueness and magic power is a result of evolution, and they are always undergoing the new advancement.
 
 </p>
-<p>&nbsp;</p>
 
 
 ## Data Science in Time Series
+
+In data science, we also study a type of "cycle", by discovering the repeated patterns in time, we're aiming at gaining more data insights and achieving better forecast results. The analysis on a sequence of data indexed by time, is called "Time Series".
+
+<p align="center">🌱 <b>Sprouts Collection Time!</b> 🌱</p>
+
+The sprouts in this stop is special. Instead of coming from a single plant, we have collected the super power from all the garden plants to form this single sprout. The reason behind was simple, all the living things in this garden share the cycle of Yin Yang.
+
+Now are you excited to see what's the super power of this compounded sprout? Let's go!
+
+#
+<p align="left">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
+
+[Time to collect sprouts! >>][1]
+
+
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts1.md
 
 
 
