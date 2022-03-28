@@ -5,7 +5,7 @@
 #
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Symbol_images/graden_symbol.png" width="290" height="450" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Symbol_images/graden_symbol.png" width="290" height="400" />
 
 What is evolution?
 
@@ -19,5 +19,9 @@ Same to our garden plants. Their uniqueness and magic power is a result of evolu
 
 </p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
+
+
+## Data Science in Time Series
+
+
 
