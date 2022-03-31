@@ -5,7 +5,7 @@
 #
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/graden_totem.png" width="290" height="400" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/garden_totem.png" width="290" height="400" />
 
 What is evolution?
 
