@@ -14,7 +14,7 @@ Here's an overview of all the stops!
   * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning
 * [Rainbow Moss][8]
   * Simple but useful data science routines 
-* [Garden Symbol - Yin Yang][5]
+* [Garden Totem - Yin Yang][5]
   * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s home made methods
 * [Garden Market][4]
   * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MLJar, Luigi, Airflow and ZenML
