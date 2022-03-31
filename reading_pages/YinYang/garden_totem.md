@@ -1,11 +1,11 @@
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Symbol_images/title_yinyang.png" width="569" height="195" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/title_totem.png" width="531" height="194" />
 </p>
 
 #
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Symbol_images/graden_symbol.png" width="290" height="400" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/graden_totem.png" width="290" height="400" />
 
 What is evolution?
 
