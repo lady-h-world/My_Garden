@@ -15,9 +15,9 @@ Here's an overview of all the stops!
 * [Rainbow Moss][8]
   * Simple but useful data science routines 
 * [Garden Symbol - Yin Yang][5]
-  * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite and Prophet
+  * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s home made methods
 * [Garden Market][4]
-  * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MlJar, Luigi, Airflow and ZenML
+  * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MLJar, Luigi, Airflow and ZenML
 * [Garden Museum][6]
   * Collected memories from this garden
 
