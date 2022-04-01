@@ -15,7 +15,7 @@ Antient Chinese brought in the concept of <b>Yin (陰) Yang (陽)</b> to represe
 
 A popular example is, life is filled with ups and downs. The down moments keep pushing us to self-reflect and to learn from the nonfulfillment, while the up moments award our hard working. By going through this up and down cycle again and again, human beings are becoming better and better. This is the process of evolution.
 
-Same to our garden plants. Their uniqueness and magic power is a result of evolution, and they are still undergoing the new advancement.
+Same to our garden plants. Their uniqueness and magic power is a result of evolution, and they are still undergoing new advancements.
 
 </p>
 
