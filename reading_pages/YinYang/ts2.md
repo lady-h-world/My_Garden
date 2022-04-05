@@ -1,11 +1,15 @@
 ### Stationary Analysis
 
-When we say a time series is "stationary", it means the time series has constant mean, variation throughout the time. This also means stationary time series is time independent. There are many statistical methods applied to time series assume the data is stationary, therefore we often convert the data to stationary before applying these statistical methods.
+When we say a time series is "stationary", it means the time series has constant mean, variation throughout the time. This also means stationary time series is time independent. There are many statistical methods applied to time series assume the data is stationary, therefore we often convert the data to stationary before applying these statistical methods (such as ARIMA).
 
 To check whether a time series sequence is stationary, Lady H. often applies 3 methods together:
 * <b>Plot the rolling mean and rolling standard deviation of the time series input</b>. Ideally, if the rolling mean and rolling standard deviation appear to be constant, it means the data has constant mean and variation along the time, and highly likely to be stationary. But our judgement on being "constant" through visualization can be biased, we need to look into more details.
-* <b>Augmented Dickey-Fuller (ADF) Test</b> checks differencing stationary. The idea is, the time series will be transformed to stationary through differencing. This method only checks whether the rolling mean changes in the time series.
-* <b>KPSS Test</b> checks trending stationary. The idea is, by removing the trend, the time series will become stationary.
+* <b>Augmented Dickey-Fuller (ADF) Test</b> checks differencing stationary. 
+* <b>KPSS Test</b> checks trending stationary. 
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/notes/stationary_2.png" width="1000" height="110" />
+</p>
 
 Here's the code to do these tests:
 <p align="left">
@@ -46,7 +50,7 @@ Let's look at the stationary analysis on the additive decomposition residuals fi
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/add_res_stationary_test.png" width="1000" height="800" />
 </p>
 
-As mentioned before, our sales data is better for multiplicative decomposition. Now let's do stationary analysis on the multiplicative decomposition residuals, and it appears to be both differencing stationary and trending stationary.
+Now let's do stationary analysis on the multiplicative decomposition residuals, it appears to be both differencing stationary and trending stationary. This has further proved what mentioned before, this time series is better to use multiplicative decomposition. This insight is helpful in deciding the model type should be "additive" or "multiplicative" in forecasting tools such as Prophet. You will see more details in "Time Series Forecasting" section.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/mul_res_stationary_tests.png" width="1000" height="800" />
