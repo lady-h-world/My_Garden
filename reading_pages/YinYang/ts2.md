@@ -1,10 +1,10 @@
 ### Stationary Analysis
 
-When we say a time series is "stationary", it means the time series has constant mean, variation throughout the time. This is also means stationary time series is time independent. There are many statistical methods applied on time series assume the data is stationary, therefore we often have to convert the data to stationary before applying these statistical methods.
+When we say a time series is "stationary", it means the time series has constant mean, variation throughout the time. This also means stationary time series is time independent. There are many statistical methods applied to time series assume the data is stationary, therefore we often convert the data to stationary before applying these statistical methods.
 
-To check whether a sequence data is stationary, Lady H. often applies 3 methods at the same time:
-* <b>Plot the rolling mean and rolling standard deviation of the time series input</b>. Ideally, if the rolling mean and rolling standard deviation appear to be constant, it means the data has constant mean and variation along the time, and highly likely to be stationary. But the visualization only provides an idea, we need to look into more details.
-* <b>Augmented Dickey-Fuller (ADF) Test</b> checks differencing stationary. The idea is, the time series will be transformed to stationary through differencing. This method only checks whether the rolling mean changes.
+To check whether a time series sequence is stationary, Lady H. often applies 3 methods together:
+* <b>Plot the rolling mean and rolling standard deviation of the time series input</b>. Ideally, if the rolling mean and rolling standard deviation appear to be constant, it means the data has constant mean and variation along the time, and highly likely to be stationary. But our judgement on being "constant" through visualization can be biased, we need to look into more details.
+* <b>Augmented Dickey-Fuller (ADF) Test</b> checks differencing stationary. The idea is, the time series will be transformed to stationary through differencing. This method only checks whether the rolling mean changes in the time series.
 * <b>KPSS Test</b> checks trending stationary. The idea is, by removing the trend, the time series will become stationary.
 
 Here's the code to do these tests:
@@ -13,8 +13,8 @@ Here's the code to do these tests:
 </p>
 
 We often start to check the stationary of the original time series. Let's take a look at the stationary analysis on our sales data.
-* Looking at the rolling mean and rolling standard deviation, we can't say they are constant, this is why the visualization only provides an idea and we need to look into more statistical details.
-* Looking at ADF test's output, we often compare the "Test Statistic" value with the critical values. When the absolutive test statistic value is larger the data is more likely to be stationary. In this case, we can see, the absolute test statistics is 4.387308 and it's larger than the absolute critical value 1%, so this time series has 99% confidence to be differencing stationary.
+* Looking at the rolling mean and rolling standard deviation, some people might think it looks constant while other won't, this is why the visualization only provides an idea and we need to look into more statistical details.
+* Looking at ADF test's output, we often compare the "Test Statistic" value with the critical values. When the absolutive test statistic value is larger, the data is more likely to be stationary. In this case, we can see, the absolute test statistics is 4.387308 and it's larger than the absolute critical value 1%, so this time series has 99% confidence to be differencing stationary.
 * Same idea apply to KPSS test's output. The absolute test statistic value is 0.380510, it's larger than the absolute critical value 10% but smaller than the absolute critical value 5%, so this time series has 90% confidence to be trending stationary.
 
 <p align="left">
@@ -23,7 +23,7 @@ We often start to check the stationary of the original time series. Let's take a
 
 🌻 [Check all the code and details here >>][1]
 
-Our sales data is stationary, we don't need to do more work to make it stationary. However, there are many real world time series data needs some extra work. If you will see the time series is not differencing stationary (failed ADF test), then you can try 1st order differencing and even 2nd order differencing on the time series data.
+The above results indicate that our sales data is already stationary, so we don't need to do more work to make it stationary. However, there are many real world time series data needs some extra work. If you will see the time series is not differencing stationary (failed ADF test), then you can try 1st order differencing and even 2nd order differencing on the time series data.
 
 * `1st order differencing = y_i - y_i-1`, and the code can be written as:
 
@@ -37,14 +37,16 @@ Our sales data is stationary, we don't need to do more work to make it stationar
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/ts_2nd_order_diff.png" width="881" height="72" />
 </p>
 
-Often times, do the differencing till 2nd or 3rd is enough, if you still can't get a stationary output, then it means differencing is not a preferred method. Then what to do? Here comes another method, which is to check residuals' stationary, since it has removed trend and saesoanlity and it's supposed to be time independent. If the residuals is stationary, in some applications, we can simply use residuals as the input of those statistical models.
+Often times, do the differencing till 2nd or 3rd order is enough, if you still can't get a stationary output, then it means differencing is not a preferred method. 
 
-Let's look at the stationary analysis on the residuals came from the additive decomposition, it's differencing stationary but not trending stationary. 
+Then what to do? Here comes another method, which is to check residuals' stationary, since it has removed trend and seasoanlity and it's supposed to be time independent. If the residuals is stationary, in some applications, we can simply use residuals as the input of those statistical models.
+
+Let's look at the stationary analysis on the additive decomposition residuals first. it appears to be differencing stationary but not trending stationary. 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/add_res_stationary_test.png" width="1000" height="800" />
 </p>
 
-As mentioned before, our sales data is better for multiplicative decomposition. If we do tationary analysis on the multiplicative decomposition residuals, we will see it's both differencing stationary and trending stationary.
+As mentioned before, our sales data is better for multiplicative decomposition. Now let's do stationary analysis on the multiplicative decomposition residuals, and it appears to be both differencing stationary and trending stationary.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/mul_res_stationary_tests.png" width="1000" height="800" />
@@ -52,4 +54,19 @@ As mentioned before, our sales data is better for multiplicative decomposition. 
 
 🌻 [Check all the code and details here >>][1]
 
+#
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
+
+[Keep going >>][2]
+
+<p align="right">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<< Looking back][3]
+
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/yinyang/past_ts_exploration.ipynb
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts3.md
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts1.md
