@@ -52,7 +52,7 @@ And this is the multiplicative decomposition, looks almost the same as additive 
 
 <b>Obseravtions</b>:
 * The seasoanlity repeats almost every 7.5 days, that's around 1 week.
-* Since the seasonality is not constant, this time series might be better to use multiplication decomposing.
+* Since the seasonality is not constant along the time, this time series might be better to use multiplication decomposition.
 * The residuals tend to have larger fluctuations between April and July, or at the beginning of a new year or at the beginning of October.
 
 #
