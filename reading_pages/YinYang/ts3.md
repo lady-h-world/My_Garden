@@ -12,9 +12,12 @@ Lady H. summarized a few more tips to make the data stationary 😉:
 
 ### Forecastability Analysis
 
-The bassic idea of "forecastability" is, if a time series is more complex, then it's more unpredictable.
+The basic idea of "forecastability" is, when a time series has higher chance of having repetitive patterns, then it's more predictable. We use Approximate Entropy or Sample Entropy to measure this forecastability.
 
-Now the question is, how do we define "complex"?
+* [Approximate Entropy][3] reflects the likelihood that, similar patterns of observations will not be followed by additional similar observations. Therefore when Approximate Entropy is lower, this likelihood is lower and the time series tend to have more repetitive patterns and be more predictable.
+* [Sample Entropy][4] is a modification of Approximate Entropy, it is data length independence and easier to implement. Meanwhile, Approximate Entropy tends to overestimate the regularity of a time series because of "self-matches", Sample Entropy doesn't have self-matches.
   
 [1]:https://github.com/PacktPublishing/Practical-Time-Series-Analysis/blob/master/Chapter02/Chapter_2_Seasonal_Differencing.ipynb
 [2]:https://github.com/PacktPublishing/Practical-Time-Series-Analysis/blob/master/Chapter02/Chapter_2_Moving_Averages.ipynb
+[3]:https://en.wikipedia.org/wiki/Approximate_entropy
+[4]:https://en.wikipedia.org/wiki/Sample_entropy
