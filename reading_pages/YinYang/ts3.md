@@ -16,8 +16,37 @@ The basic idea of "forecastability" is, when a time series has higher chance of 
 
 * [Approximate Entropy][3] reflects the likelihood that, similar patterns of observations will not be followed by additional similar observations. Therefore when Approximate Entropy is lower, this likelihood is lower and the time series tend to have more repetitive patterns and be more predictable.
 * [Sample Entropy][4] is a modification of Approximate Entropy, it is data length independence and easier to implement. Meanwhile, Approximate Entropy tends to overestimate the regularity of a time series because of "self-matches", Sample Entropy doesn't have self-matches.
+
+From previous stationary analysis, we have seen that the original sales data and its multiplicative residuals are both stationary, and in the comparison below, the original time series has lower entropy values and therefore appear to be more forecastable. Does this mean, when a time series and its residuals are both stationary, the original time series should be more predictable because it didn't remove those repetitive patterns, such as seasonality? You are very welcome to discuss your opinions [here][5]
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/forecastability_output.png" width="1000" height="250" />
+</p>
+
+🌻 [Check detailed code in forecastability analysis][6]
+
+
+#
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
+
+[Keep going >>][7]
+
+<p align="right">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<< Looking back][8]
+
+
+
   
 [1]:https://github.com/PacktPublishing/Practical-Time-Series-Analysis/blob/master/Chapter02/Chapter_2_Seasonal_Differencing.ipynb
 [2]:https://github.com/PacktPublishing/Practical-Time-Series-Analysis/blob/master/Chapter02/Chapter_2_Moving_Averages.ipynb
 [3]:https://en.wikipedia.org/wiki/Approximate_entropy
 [4]:https://en.wikipedia.org/wiki/Sample_entropy
+[5]:https://github.com/lady-h-world/My_Garden/discussions/categories/ideas
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/code/yinyang/past_ts_exploration.ipynb
+[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts4.md
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts2.md
