@@ -48,7 +48,7 @@ And this is the multiplicative decomposition, looks almost the same as additive 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/multiplicative_decomp.png" width="1116" height="500" />
 </p>
 
-🌻 [Check detailed code in decomposition >>][2]
+🌻 [Check detailed code in Time Series Decomposition >>][2]
 
 <b>Obseravtions</b>:
 * The seasoanlity repeats almost every 7.5 days, that's around 1 week.
