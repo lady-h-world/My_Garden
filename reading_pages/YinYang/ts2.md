@@ -26,7 +26,7 @@ We often start to check the stationary of the original time series. Let's take a
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/original_ts_stationary_tests.png" width="1000" height="800" />
 </p>
 
-🌻 [Check detailed code in stationary analysis >>][1]
+🌻 [Check all the code and details here >>][1]
 
 The above results indicate that our sales data is already stationary, so we don't need to do any extra work. However, there are many real world time series data needs more effort. If you will see the time series is not differencing stationary (failed ADF test), then you can try 1st order differencing and 2nd order differencing on the time series data.
 
