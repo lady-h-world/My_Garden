@@ -27,7 +27,7 @@ Does this mean, when a time series and its residuals are both stationary, the or
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/forecastability_output.png" width="1000" height="250" />
 </p>
 
-🌻 [Check detailed code in forecastability analysis][6]
+🌻 [Check detailed code in Forecastability Analysis][6]
 
 
 #
