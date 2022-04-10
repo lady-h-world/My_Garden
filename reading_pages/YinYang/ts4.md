@@ -46,7 +46,7 @@ To make the 2 variables to be differencing stationary, we often start with 1st o
 
 🌻 [Check detailed code in Stationary Analysis on Multivariate Time Series >>][2]
 
-Comparing with univariate time series, there is more fun we can explore in multivariate time series, that is the relationships between its variables. Keep following Chansey Butterflies to see how can we disclose these relationships 😉
+Comparing with univariate time series, there is more fun we can explore in multivariate time series, that is the relationships between its variables. Keep following Chansey Butterflies to see how can we disclose these relationships! 😉
 
 
 #
