@@ -4,9 +4,9 @@ Comparing with univariate time series, multivariate time series has more than 1 
 
 ### About the Data
 
-Have you ever wonder where do we store so many sprouts for garden visitors? We have a giant green warehouse, which contains thousands of rooms to grow sprouts! In order to maintain a healthy growing environment, every room of the green warehouse is monitored all the time. One of the monitoring metric is "occupancy", by checking the temperature, humidity, light, CO2 and humidity ratio, we can forecast whether a room has enough occupacy for new sprouts.
+Have you ever wonder where do we store so many sprouts for garden visitors? We have a giant green warehouse, which contains thousands of green rooms to grow sprouts! In order to maintain a healthy growing environment, every green room is monitored all the time. One of the monitoring metric is "occupancy", by checking the temperature, humidity, light, CO2 and humidity ratio, we can forecast whether a room has enough occupacy for new sprouts.
 
-Here's the data sample of 1 room's data:
+Here's the data sample of 1 green room's data:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/multi_ts_sample.png" width="590" height="163" />
@@ -18,7 +18,7 @@ The 5 variables are recorded almost every 1 minute. If we take a look at each va
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/multi_ts_plot1.png" width="1062" height="921" />
 </p>
 
-Occupancy is not the variable we will dive into, but let's still plot its overall appearance:
+Occupancy is not the variable we will dive into, but let's still take a peek at its overall appearance:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/mul_ts_plot2.png" width="1069" height="621" />
@@ -32,7 +32,7 @@ Occupancy is not the variable we will dive into, but let's still plot its overal
 
 Some statistical models require each variable in a multivariate time series to be stationary.
 
-If we do a stationary analysis on our green room's data, we can see both humidity and humidity ratio are not differencing sattionary.
+If we do a stationary analysis on our green room's data, we can see both humidity and humidity ratio are not differencing stationary.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/mul_ts_stationary_before.png" width="517" height="239" />
