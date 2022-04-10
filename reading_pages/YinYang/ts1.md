@@ -6,7 +6,7 @@ Comparing with traditional datasets, time series data has hidden time patterns, 
 
 ### About the Data
 
-Our Garden Market's perfume sales data has seasonality patterns, which is a typical timeseries data. See the example below, it's also a univariate time series data, meaning there is only 1 time sequence column ("Daily_Sales" in this example) to explore. Its index is in time order.
+Our Garden Market's perfume sales data has seasonality patterns, which is a typical timeseries data. See the example below, it's also a univariate time series data, meaning there is only 1 time dependent variable ("Daily_Sales" in this example) to explore. Its index is in time order.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/ts_sales_exp.png" width="170" height="184" />
