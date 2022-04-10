@@ -12,6 +12,13 @@ Our Garden Market's perfume sales data has seasonality patterns, which is a typi
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/ts_sales_exp.png" width="170" height="184" />
 </p>
 
+Here's the sales plot throughout the time:
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/daily_sales_plot.png" width="1092" height="293" />
+</p>
+
+
 🌻 [To get sales time series data >>][1]
 
 
