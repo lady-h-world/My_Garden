@@ -12,13 +12,13 @@ When you have two or more time series, and there exists a linear combination of 
 
 We often use Johansen test as cointegration test. It's based on the estimation of expected maximization through maximum likelihood, under various assumptions about the trend and intercepting parameters of the data. Python `statsmodels` provides built-in `coint_johansen` to make your life easier. 
 
-The input data here is already converted to stationary from previous stationary analysis step!
+<i>Note: The input data here is already converted to stationary from previous stationary analysis step!</i>
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/cointegration_test.png" width="829" height="718" />
 </p>
 
-The conintegration test output indicates that temperature, humidity, light and CO2 are cointegrated, and it's highly likely that we can throw away "humidity ratio" because of its high correlation with humidity.
+The conintegration test output indicates that temperature, humidity, light and CO2 are cointegrated, that is to say, we can use these variables together in a model like VAR (more details coming in multivariate time series outlier detection). It is also safe to throw away "humidity ratio" because of it's high correlation with variable "humidity".
 
 #
 <p align="left">
