@@ -1,4 +1,4 @@
-### Stationary Analysis
+### Stationary Analysis on Univariate Time Series
 
 When we say a time series is "stationary", it means the time series has constant mean, variation throughout the time. This also means stationary time series is time independent. There are many statistical methods (such as ARIMA) assume the data is stationary, and we often need to convert the data to stationary before applying these statistical methods on the data.
 
