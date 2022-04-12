@@ -12,7 +12,7 @@ Our Garden Market's perfume sales data has seasonality patterns, which is a typi
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/ts_sales_exp.png" width="170" height="184" />
 </p>
 
-Here's the sales plot throughout the time. As we can see, there is an obvious repeative up and down pattern in the data:
+Here's the sales plot throughout the time. As we can see, there is an obvious repeated up and down pattern in the data:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/daily_sales_plot.png" width="1092" height="293" />
@@ -26,8 +26,8 @@ Here's the sales plot throughout the time. As we can see, there is an obvious re
 
 A time series sequence has multiple components:
 * <b>Trend</b>: It indicates the overall direction of the time series sequence, such as upward, downward or no trend.
-* <b>Seasonality</b>: It refers to the tendency of going up and down in a consistent frequency. It's repeative and calendar related.
-* <b>Cycle</b>: Similar to seasonality, it's also repeative but with inconsistent frequencies. It's less frequent than seasonality fluctuations, and the time span of a cyclical change can be longer than a seasonal change.
+* <b>Seasonality</b>: It refers to the tendency of going up and down in a consistent frequency. It's repeatedly and calendar related.
+* <b>Cycle</b>: Similar to seasonality, it's also recurring but with inconsistent frequencies. It's less frequent than seasonality fluctuations, and the time span of a cyclical change can be longer than a seasonal change.
   * We don't try to remove cycle in time series' stationary analysis, since when we check stationary, exogenous variables are not considered, but cycle is not time dependent and can only be explained by exogenous variables. For "stationary", you will see more details soon!
 * <b>Residuals</b>: It's the irreducible error component, random and doesn't systematicly depend on the time. It's caused by the lack of info, or caused by random noise.
 
