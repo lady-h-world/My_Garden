@@ -1,6 +1,6 @@
 ### Cointegration Test
 
-As we have already known, a multivariate time series has multiple time dependent variables, each variable is a time series. Cointegration test checks the significant connections between 2 or more time series. When 2 or more time series are cointegrated, it means they have a long term, statistically significant relationship. Because cointegration is the premise of some models, such as Vector Autoregression (VAR), we need to do cointegration test before applying these models.
+As we have already known, a multivariate time series has more than one time dependent variables, each variable is a time series. Cointegration test checks the significant connections between 2 or more time series. When multiple time series are cointegrated, it means they have a long term, statistically significant relationship. Because cointegration is the premise of some models, such as Vector Autoregression (VAR), we need to do cointegration test before applying these models.
 
 Then what does "cointegration" mean, statistically? We need to understand what is the "order of integration (d)" first.
 
@@ -10,7 +10,7 @@ Then what does "cointegration" mean, statistically? We need to understand what i
 
 When you have two or more time series, and there exists a linear combination of them that has an order of integration (d) lower than that of each individual series, then the collection of these series is said to be cointegrated.
 
-We often use Johansen test as cointegration test. It's based on the estimation of expected maximization through maximum likelihood, under various assumptions about the trend and intercepting parameters of the data. Python `statsmodels` provides built-in `coint_johansen` to make your life easier. 
+We often use Johansen test as cointegration test. It's based on the estimation of expected maximization through maximum likelihood, under various assumptions about the trend and intercepting parameters of the data. Python `statsmodels` provides built-in `coint_johansen`. 
 
 <i>Note: The input data here is already converted to stationary from previous stationary analysis step!</i>
 
