@@ -15,7 +15,7 @@ Lady H. summarized a few more tips to make the data stationary 😉:
 The basic idea of "forecastability" is, when a time series has higher chance of having repetitive patterns, then it's more predictable. We use Approximate Entropy or Sample Entropy to measure this forecastability.
 
 * [Approximate Entropy][3] reflects the likelihood that, similar patterns of observations will not be followed by additional similar observations. Therefore when Approximate Entropy is lower, this likelihood is lower, indicating the time series tends to have more repetitive patterns and be more predictable.
-* [Sample Entropy][4] is a modification of Approximate Entropy, it is data length independence and easier to implement. Meanwhile, Approximate Entropy tends to overestimate the regularity of a time series because of "self-matches", Sample Entropy doesn't have self-matches.
+* [Sample Entropy][4] is a modification of Approximate Entropy, it is data length independent and easier to implement. Meanwhile, Approximate Entropy tends to overestimate the regularity of a time series because of "self-matches", Sample Entropy doesn't have self-matches.
 
 We often use sample entropy rather than approximate entropy in the work.
 

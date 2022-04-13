@@ -12,7 +12,7 @@ Our Garden Market's perfume sales data has seasonality patterns, which is a typi
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/ts_sales_exp.png" width="170" height="184" />
 </p>
 
-Here's the sales plot throughout the time. As we can see, there is an obvious repeative up and down patterns in the data:
+Here's the sales plot throughout the time. As we can see, there is an obvious repeated up and down pattern in the data:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/daily_sales_plot.png" width="1092" height="293" />
@@ -25,13 +25,13 @@ Here's the sales plot throughout the time. As we can see, there is an obvious re
 ### Time Series Components
 
 A time series sequence has multiple components:
-* Trend: It indicates the overall direction of the time series sequence, such as upward, downward or no trend.
-* Seasonality: It refers to the tendency of going up and down in a consistent frequency. It's repeative and is calendar related.
-* Cycle: Similar to seasonlity, it's also repeative but with inconsistent frequencies. It's less frequent than seasonality fluctuations, and the timespan of a cyclical change can be longer than a seasonal change.
-  * We don't try to remove cycle in time series stationary work, since when we check stationary, exogenous variables are not considered, but cycle is not time dependent and can only be explained by exogenous variables. For "stationary", you will see more details soon!
-* Residuals: It's the irreducible error component, random and doesn't systematicly dependent on the time. It's caused by the lack of info, or caused by random noise.
+* <b>Trend</b>: It indicates the overall direction of the time series sequence, such as upward, downward or no trend.
+* <b>Seasonality</b>: It refers to the tendency of going up and down in a consistent frequency. It's repeatedly and calendar related.
+* <b>Cycle</b>: Similar to seasonality, it's also recurring but with inconsistent frequencies. It's less frequent than seasonality fluctuations, and the time span of a cyclical change can be longer than a seasonal change.
+  * We don't try to remove cycle in time series' stationary analysis, since when we check stationary, exogenous variables are not considered, but cycle is not time dependent and can only be explained by exogenous variables. For "stationary", you will see more details soon!
+* <b>Residuals</b>: It's the irreducible error component, random and doesn't systematicly depend on the time. It's caused by the lack of info, or caused by random noise.
 
-To explore a time series sequence, we often start with <b>decomposition</b>, which is a process to decompose the sequence to trend, seasonlity and residuals. There are 2 categories of decomposition:
+To explore a time series sequence, we often start with <b>decomposition</b>, which is a process of decomposing the sequence to trend, seasonlity and residuals. There are 2 categories of decomposition:
 
 * Additive Method `Y[t] = T[t] + S[t] + E[t]`
   * It assumes the time series value at time `t` is the sum of trend (`T`), seasonality (`S`) and residuals (`E`) at time `t`
@@ -49,7 +49,7 @@ Let's look at the decomposition of our sales data. This is the additive decompos
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/additive_dep.png" width="1116" height="500" />
 </p>
 
-And this is the multiplicative decomposition, looks almost the same as additive method's output, right? But as marked below, the data scale in seasonality and residuals is different:
+And this is the multiplicative decomposition, looks almost the same as additive method's output, right? But as marked below, the data scale in seasonality and residuals are different:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/multiplicative_decomp.png" width="1116" height="500" />
@@ -57,10 +57,10 @@ And this is the multiplicative decomposition, looks almost the same as additive 
 
 🌻 [Check detailed code in Time Series Decomposition >>][2]
 
-<b>Obseravtions</b>:
+<b>Observations</b>:
 * The seasoanlity repeats almost every 7.5 days, that's around 1 week.
 * Since the seasonality is not constant along the time, this time series might be better to use multiplication decomposition.
-* The residuals tend to have larger fluctuations between April and July, or at the beginning of a new year or at the beginning of October.
+* The residuals tend to have larger fluctuations between April and July, or at the beginning of a new year or at the beginning of October, this insight might be useful in later feature enggineering for forecasting.
 
 #
 <p align="left">
