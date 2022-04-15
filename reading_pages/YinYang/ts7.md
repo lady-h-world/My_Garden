@@ -5,19 +5,19 @@
 
 After data exploration, often times we want to dive deeper into the hidden patterns in time series, such as trend, seasonality, changepoints, outliers, etc. Some of these insights not only helps understand the time series better, but can help later model forecasting too.
 
-To do these detection, Lady H. has experimented with 2 latest time series toolkits, Kats and Greykite. 
+To do these detections, Lady H. has experimented with 2 latest popular time series toolkits, Kats and Greykite. 
 
-* [Kats][1] is a time series toolkit developped by Facebook Research.
+* [Kats][1] is an open source time series toolkit developped by Facebook Research.
 * [Greykite][2] provides a framework for time series forecasting with its flagship algorithm Silverkite, it also provides exploratory analysis on time series.
 
-Which is a better choice? Or when to use what? <b>Kats vs Greykite!</b> The competition time begins!
+Which is a better choice? Or when to use what? <b>Kats vs Greykite!</b> The competition begins!
 
 
 ## Installation
 
 ### Install Kats
 
-Kats didn't have frequent update. Lady H. was super busy with her work and life at the time, and only had no more than 1 hour each day to take care of the garden. So it took her 3 months to finish testing the superpower of the sprout in this stop. During this period, Kats stayed in v0.1, never changed. Such low updating frequency is rare among open source libraries from a giant company.
+Kats doesn't have frequent update as many other popular open source libraries. Lady H. was super busy with her work and life at the time, and only had no more than 1 hour each day to take care of the garden. So it took her 3 months to finish testing the superpower of the sprout in this stop. During this period, Kats stayed in version 0.1.0, never changed. Such low updating frequency is rare among open source libraries from giant companies.
 
 The installation of Kats was tricky, and the problems often happened in Prophet related features.
 
@@ -25,9 +25,45 @@ The installation of Kats was tricky, and the problems often happened in Prophet 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/notes/prophet_note.png" width="766" height="79" />
 </p>
 
-To be able to use Prophet in Kats, you need to install and build it. Using conda-fordge (`conda install -c conda-forge prophet`) is a faster and safer way. However, [Kats requires installed Prophet to be a specific version][3] while conda-forge installed version can be higher. This can cause error when you try to import certain Kats functions. To resolve this issue, you would need to git clone Kats to your local environment and change its `requirements.txt` to make Prophet align with the version you have installed and built.
+A better way to install Kats is to git clone its repo to your local environment and manually install it, here's how:
+1. Open your local environment terminal and go to the directionary where you want to install Kats
+2. Type `git clone https://github.com/facebookresearch/Kats.git` to download Kats library to your local environment
+3. Enter into `Kats` fodler and type `python setup.py install` to manually install Kats
+* If you are using python virtual environment, then find its python path to replace "python" in this command, for example, Lady H. was using conda virtual env called "yinyang", so her command was `C:\ladyh\anaconda3\envs\yinyang\python setup.py install`
+
+Wondering why better to manually install this library? Lady H. does gathered multiple reasons after trails and errors! 🧐
+
+First of all, conflicting library versions can cause problems. For example, as we can see [Kats requires the installed Prophet to be a specific version][3], but in order to use Prophet, you need to successfully build it first. What happened to Lady H. was, the Prophet version she could built had to be higher than the version required by Kats. So, in order to install Kats, she had to change Kats' `requirements.txt` to make Prophet's version align with her built version. However, this risk of doing this is, you might face problems when calling certain Kats' functions...
+
+Another benefit of installing Kats manually is, you might need to fix some bugs in Kats yourself in order to keep using a function... [See what happened to Lady H.][4]
+
+Moreover, here're a few more installation you might need in order to use Kats:
+* `pip install attr`, adding "attr" in Kats' requirememts.txt may not work...
+* `pip install deprecated`
+* `pip install ax-platform`
+* Make sure `statsmodels==0.12.2`, higher version will get errors about when using Kats' VAR
+
+### Install Greykite
+
+Make sure pandas version is not higher than "1.3.0", then just type `pip install greykite`
+
+#
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
+
+[Keep going >>][5]
+
+<p align="right">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<< Looking back][6]
 
 
 [1]:https://github.com/facebookresearch/Kats
 [2]:https://github.com/linkedin/greykite
 [3]:https://github.com/facebookresearch/Kats/blob/main/requirements.txt#L9
+[4]:https://github.com/facebookresearch/Kats/issues/194
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts8.md
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts6.md
