@@ -51,6 +51,22 @@ After experienced all these troubles, Lady H. figured out that, the suggested in
 
 Make sure pandas version is not higher than "1.3.0", then just type `pip install greykite`
 
+## Data Input
+
+When you are using Kats, the time series data input has to be converted to `TimeSeriesData`, a Kats built-in class. Meanwhile, as shown below, the time index has to be a column called "time". After the conversion, at least with Kats v0.1.0, there's no easy way to print out the data sample.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/kats_input.png" width="692" height="397" />
+</p>
+
+By comparison, Greykite is more flexible. You can keep the data input as pandas and only need to tell Greykite which column is the time index and which column is the time series column, this also allows you to look into each variable of a multivariate time series data. As shown below, you can also print out the data sample easily.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/greykite_input.png" width="806" height="364" />
+</p>
+
+The difference between Kats and Greykite here is also showing software design differences in data science projects. When building a data science library, code owners might think using OO (Object Oriented) design is the best choice but they might be lack of mature OO design skills to provide flexible user experience, therefore as you can see, we even can't print out the data sample after converting data to `TimeSeriesData` in Kats. By comparison, Greykite is doing a better job here. It keeps the solution simple by keep pandas input as it is.
+
 Does this mean Greykite is better than Kats on everything? Let's see! 😉
 
 #
