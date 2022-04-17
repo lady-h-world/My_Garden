@@ -22,6 +22,7 @@ Here's the increasing trend points detection. As we found in previous data explo
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/up_mk.png" width="1084" height="530" />
 </p>
+
 At the same time, you might have noticed the warning saying "No trend detected!"...😓 This is just an annoying bug in Kats' output... it happens in almost every detection output, so just ignore it.
 
 Similarly, here's the plot of decreasing trend detection:
@@ -52,6 +53,8 @@ Seasonal M-K test is often considered as a robust and powerful trend detection m
 </p>
 
 🌻 [Check detailed code in Kats Trend Detection >>][1]
+
+Besides getting these detection output, we can also add this piece of info in feature engineering step, especially when we are using classical machine learning models. For example, we can create a new feature called "is_up_trend" and mark detected increasing trend time point as 1 while having other records as 0. The added feature provides more info to the model and might improve model forecasting accuracy.
 
 #
 <p align="left">
