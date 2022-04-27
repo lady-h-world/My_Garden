@@ -66,6 +66,27 @@ Similarly, here're the detected decreasing changepoints:
 
 🌻 [Check detailed code in Kats Changepoint Detection >>][3]
 
+
+### RobustStat Detector
+
+If to detect multiple changepoints with CUSUM Detector needs self-implemented rolling window function, then RobustStat Detector can do this for you in one run. Similar to CUSUM Detector, it detects changepoints by checking mean shifts. It will smooth out the time series using moving average, then compare the difference between a window of data points with its previous window (window size is fixed, called as `comparison_window`). Finally it calculates the z-score, p-values of thoses differences, and mark those points with p-value smaller than the threshold as changepoints.
+
+To detect single changepoint, it looks like this:
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/robuststat_single.png" width="1085" height="876" />
+</p>
+
+However, as we can see, we can't specify the changepoint to be the "increasing" or the "decreasing" one. [Kats documentation][4] is too poor, you simply don't know which parameters can be used in the function... And here's how to generate multiple changepoints detection, it seems that the trick is to use smaller comparison window.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/robuststat_mul.png" width="617" height="781" />
+</p>
+
+You might have noticed the small size of the visualization, in fact, Lady H. can't find a way to adjust the plot size... Either because Kats is an incomplete library or because of its poor OO design...
+
+🌻 [Check detailed code in Kats Changepoint Detection >>][3]
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
@@ -83,3 +104,4 @@ Similarly, here're the detected decreasing changepoints:
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts10.md
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts8.md
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/code/yinyang/kats_experiments/kats_detect_changepoints.ipynb
+[4]:https://facebookresearch.github.io/Kats/api/kats.detectors.robust_stat_detection.html
