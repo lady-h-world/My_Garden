@@ -1,10 +1,10 @@
 ### Stationary Analysis on Univariate Time Series
 
-When we say a time series is "stationary", it means the time series has constant mean, variation throughout the time. This also means stationary time series is time independent. There are many statistical methods (such as ARIMA) assume the data is stationary, and we often need to convert the data to stationary before applying these statistical methods on the data.
+When we say a time series is "stationary", it means the time series has constant mean, variation throughout the time. This also means stationary time series is time independent. There are many statistical methods (such as ARIMA) assume the data is stationary, therefore we often need to convert the data to stationary before applying these statistical methods on the data.
 
 To check whether a time series sequence is stationary, Lady H. often applies 3 methods together:
 * <b>Plot the rolling mean and rolling standard deviation of the time series</b>. Ideally, if the rolling mean and rolling standard deviation appear to be constant, it means the data has constant mean and variation along the time, and highly likely to be stationary. But our judgement on being "constant" through visualization can be biased, we need to look into more details.
-  * To get a "rolling" value, we often calculate the value within a smaller time window, then move this window along the time series so that we will get a list of values, such as the rolling mean. This smaller window is known as the "rolling window". 
+  * To get a "rolling" value, we often calculate the value within a smaller time window, then move this window along the time series so that we will get a list of values. This smaller window is known as the "rolling window". 
 * <b>Augmented Dickey-Fuller (ADF) Test</b> checks differencing stationary. 
 * <b>KPSS Test</b> checks trending stationary. 
 
@@ -18,8 +18,8 @@ Here's the code to do these tests:
 </p>
 
 We often start to check the stationary of the original time series. Let's take a look at the stationary analysis on our sales data.
-* Looking at the rolling mean and rolling standard deviation, some people might think it looks constant while other won't, this is why the visualization only provides an idea and we need to look into more statistical details.
-* Looking at ADF test's output, we often compare the "test statistic" value with the critical values. When the absolutive "test statistic" value is larger, the data is more likely to be stationary. In this case, we can see, the absolute "test statistic" is 4.387308 and it's larger than the absolute "critical value 1%", so this time series has 99% confidence to be differencing stationary.
+* Looking at the rolling mean and rolling standard deviation, some people might think it looks constant while others won't, this is why the visualization only provides an idea and we need to look into more statistical details.
+* Looking at ADF test's output, we often compare the "test statistic" value with the critical values. When the absolutive "test statistic" value is larger, the data is more likely to be stationary. In this case, we can see, the absolute "test statistic" is 4.387308 and it's larger than 3.438893, the absolute "critical value 1%", so this time series has 99% confidence to be differencing stationary.
 * Same idea applies to KPSS test's output. The absolute "test statistic" value is 0.380510, it's larger than the absolute "critical value 10%" but smaller than the "absolute critical value 5%", so this time series has 90% confidence to be trending stationary.
 
 <p align="left">
