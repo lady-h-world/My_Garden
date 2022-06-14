@@ -4,9 +4,9 @@ Comparing with univariate time series, multivariate time series has more than 1 
 
 ### About the Data
 
-Have you ever wonder where do we store so many sprouts for garden visitors? We have a giant green warehouse, which contains thousands of green rooms to grow sprouts! In order to maintain a healthy growing environment, every green room is monitored all the time. One of the monitoring metric is "occupancy", by checking the temperature, humidity, light, CO2 and humidity ratio, we can forecast whether a room has enough space for new sprouts.
+Have you ever wonder where do we store so many sprouts for garden visitors? We have a giant green warehouse, which contains hundreds of green houses to grow sprouts! In order to maintain a healthy growing environment, every green house is monitored all the time. One of the monitoring metrics is "occupancy", by checking the temperature, humidity, light, CO2 and humidity ratio, we can forecast whether a green house has enough space for new sprouts.
 
-Here's the data sample of 1 green room's data:
+Here's the data sample of 1 green house's data:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/multi_ts_sample.png" width="590" height="163" />
@@ -36,7 +36,7 @@ We won't dive into the forecasting target "Occupancy", but let's still take a pe
 
 Some statistical models require each variable in a multivariate time series to be stationary.
 
-If we do a stationary analysis on our green room's data, we can see both humidity and humidity ratio are not differencing stationary.
+If we do a stationary analysis on our green houses' data, we can see both humidity and humidity ratio are not differencing stationary.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/mul_ts_stationary_before.png" width="517" height="239" />
@@ -50,7 +50,7 @@ To make the 2 variables to be differencing stationary, we often start with 1st o
 
 🌻 [Check detailed code in Stationary Analysis on Multivariate Time Series >>][2]
 
-Comparing with univariate time series, there is more fun we can explore in multivariate time series, that is the relationships between its variables. Keep following Chansey Butterflies to see how can we disclose these relationships! 😉
+Comparing with univariate time series, there is more fun we can explore in multivariate time series, such as exploring the relationships between its variables. Keep following Chansey Butterflies to see how can we disclose these relationships! 😉
 
 
 #
