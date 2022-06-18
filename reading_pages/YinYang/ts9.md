@@ -1,6 +1,6 @@
 ## Changepoint Detection
 
-As we saw in trend detection, the detected output are time points where the trend changes. Changepoint detection is also a method to detect time points where the probability distribution of a time series changes. In some libraries such as Greykite, trend detection is included in its changepoint detection. In Kats, they are seperated. Let's take a look at Kats changepoint detection first.
+As we saw in trend detection, the detected output are time points where the trend changes. Changepoint detection is also a method to detect time points, but the point indicate where the probability distribution of a time series changes. In some libraries such as Greykite, trend detection is included in its changepoint detection. In Kats, they are seperated. Let's take a look at Kats changepoint detection first.
 
 ### Kats Changepoint Detection
 
@@ -24,7 +24,7 @@ The null hypothesis is `H0: There is no change in the mean`. We can decide to de
 
 ##### Single Changepoint Detection
 
-To use CUSUM Detector in Kats, we need to initialize the detector with a time series input as shown in Step 1, then we can write a function in Step 2 to load detector's parameters and plot the changepoint, finally Step 3 shows the output of increasing changepoint detection for both humidity and temperature data. The parameter `threshold` is the significance level for null hypothesis. As we can see, in temperature data, there is no significant change detected given 0.05 significance level.
+To use CUSUM Detector in Kats, we need to initialize the detector with a time series input as shown in Step 1, then we can write a function in Step 2 to load detector's parameters and plot the changepoint, finally Step 3 shows the output of increasing changepoint detection for both humidity and temperature data. The parameter `threshold` is the significance level for null hypothesis. As we can see, in temperature data, there is no significant increasing changepoint detected, given 0.05 significance level.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/cusum_single_code.png" width="998" height="740" />
@@ -69,21 +69,21 @@ Similarly, here're the detected decreasing changepoints:
 
 ### RobustStat Detector
 
-If to detect multiple changepoints with CUSUM Detector needs self-implemented rolling window function, then RobustStat Detector can do this for you in one run. Similar to CUSUM Detector, it detects changepoints by checking mean shifts. It will smooth out the time series using moving average, then compare the difference between a window of data points with its previous window (window size is fixed, called as `comparison_window`). Finally it calculates the z-score, p-values of thoses differences, and mark those points with p-value smaller than the threshold as changepoints.
+If to detect multiple changepoints with CUSUM Detector needs self-implemented rolling window function, then RobustStat Detector can do this for you in one run. Similar to CUSUM Detector, it detects changepoints by checking mean shifts. It will start with smoothing out the time series using moving average, then compare the differences between a window of data points with its previous windows (window size is fixed, called as `comparison_window`). Finally it calculates the z-score, p-values of thoses differences, and mark those points with p-value smaller than the threshold as changepoints.
 
-To detect single changepoint, it looks like this:
+To detect a single changepoint, it looks like this:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/robuststat_single.png" width="1085" height="876" />
 </p>
 
-However, as we can see, we can't specify the changepoint to be the "increasing" or the "decreasing" one. [Kats documentation][4] is too poor, you simply don't know which parameters can be used in the function... And here's how to generate multiple changepoints detection, it seems that the trick is to use smaller comparison window.
+However, as we can see, we can't specify the changepoint to be the "increasing" or the "decreasing" one. [Kats documentation][4] is too poor, you simply don't know how to properly set parameter values in the function... And here's how to generate multiple changepoints detection, it seems that the trick is to use a smaller comparison window.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/robuststat_mul.png" width="617" height="781" />
 </p>
 
-You might have noticed the small size of the visualization, in fact, Lady H. can't find a way to adjust the plot size... Either because Kats is an incomplete library or because of its poor OO design...
+You might have noticed the small size of the visualization, in fact, Lady H. can't find a way to adjust the plot size... Either because Kats is an incomplete library or because of its embarassing OO design...
 
 🌻 [Check detailed code in Kats Changepoint Detection >>][3]
 
