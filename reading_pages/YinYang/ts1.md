@@ -6,7 +6,7 @@ Comparing with traditional datasets, time series data has hidden time patterns, 
 
 ### About the Data
 
-Our Garden Market's perfume sales data has seasonality patterns, which is a typical timeseries data. See the example below, it's also a univariate time series data, meaning there is only 1 time dependent variable ("Daily_Sales" in this example) to explore. Its index is in time order.
+Our perfume sales data is a typical time series data, as tts index is in time order. It's also a univariate time series data, meaning there is only 1 time dependent variable ("Daily_Sales" in this example) to explore. See the example below:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/ts_sales_exp.png" width="170" height="184" />
@@ -26,10 +26,10 @@ Here's the sales plot throughout the time. As we can see, there is an obvious re
 
 A time series sequence has multiple components:
 * <b>Trend</b>: It indicates the overall direction of the time series sequence, such as upward, downward or no trend.
-* <b>Seasonality</b>: It refers to the tendency of going up and down in a consistent frequency. It's repeatedly and calendar related.
+* <b>Seasonality</b>: It refers to the tendency of going up and down in a consistent frequency. It's repetitive and calendar related.
 * <b>Cycle</b>: Similar to seasonality, it's also recurring but with inconsistent frequencies. It's less frequent than seasonality fluctuations, and the time span of a cyclical change can be longer than a seasonal change.
-  * We don't try to remove cycle in time series' stationary analysis, since when we check stationary, exogenous variables are not considered, but cycle is not time dependent and can only be explained by exogenous variables. For "stationary", you will see more details soon!
-* <b>Residuals</b>: It's the irreducible error component, random and doesn't systematicly depend on the time. It's caused by the lack of info, or caused by random noise.
+  * Cycle is not time dependent and can only be explained by exogenous variables.
+* <b>Residuals</b>: It's irreducible error component, random and doesn't systematicly depend on the time. It's caused by the lack of info, or caused by random noise, and it's inrreducible.
 
 To explore a time series sequence, we often start with <b>decomposition</b>, which is a process of decomposing the sequence to trend, seasonlity and residuals. There are 2 categories of decomposition:
 
@@ -59,8 +59,8 @@ And this is the multiplicative decomposition, looks almost the same as additive 
 
 <b>Observations</b>:
 * The seasoanlity repeats almost every 7.5 days, that's around 1 week.
-* Since the seasonality is not constant along the time, this time series might be better to use multiplication decomposition.
-* The residuals tend to have larger fluctuations between April and July, or at the beginning of a new year or at the beginning of October, this insight might be useful in later feature enggineering for forecasting.
+* Since the seasonality is not constant along the time, this time series might be more suitable to use multiplication decomposition.
+* The residuals tend to have larger fluctuations between April and July, or at the beginning of a new year or at the beginning of October, this insight might be useful in later feature enggineering for model forecasting.
 
 #
 <p align="left">

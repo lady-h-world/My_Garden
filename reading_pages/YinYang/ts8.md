@@ -17,13 +17,13 @@ With the code below, we can do M-K test and plot all the detected trend points.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/mk_trend_detection.png" width="905" height="145" />
 </p>
 
-Here's the increasing trend points detection. As we found in previous data exploration stage, the seasoanlity has 7.5 days frequency, therefore Lady H. set `freq=weekly` here, and all the detected points are marked with a read line in the plot below.
+Here's the increasing trend points detection. As we found in previous data exploration stage, the seasoanlity has 7.5 days frequency, therefore Lady H. set `freq=weekly` here, and all the detected points are marked with a red line in the plot below.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/up_mk.png" width="1084" height="530" />
 </p>
 
-At the same time, you might have noticed the warning saying "No trend detected!"...😓 This is just an annoying bug in Kats' output... it happens in almost every detection output, so just ignore it.
+At the same time, you might have noticed the warning saying "No trend detected!"...😓 This is just an annoying bug in Kats' output... it happens in almost every output, so just ignore it.
 
 Similarly, here's the plot of decreasing trend detection:
 
@@ -34,7 +34,7 @@ Similarly, here's the plot of decreasing trend detection:
 Do you feel the above plots are too intense? If you want to get less points detected, there're a few ways to try:
 * Reduce `threshold` value to reduce the detection intensity
 * Increase the `window_size`
-* Keep `freq=None` as shown below, so that there is no rolling average smoothing and the detected trend points can be lower
+* Keep `freq=None` as shown below, so that there is no rolling average smoothing and the detected trend points might become lower, since small fluctuations had been smoothed out
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/mk_no_freq.png" width="1084" height="522" />

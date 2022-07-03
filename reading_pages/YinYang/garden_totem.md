@@ -26,13 +26,13 @@ In data science, we also study a type of "cycle", by discovering the repeated pa
 
 <p align="center">🌱 <b>Sprouts Collection Time!</b> 🌱</p>
 
-Our garden totem is not a plant and can't produce sprouts itself. However, Lady H. still wants to prepare a gift at this stop, so she invented this artificial sprout, which grows like other garden sprouts and as magical as them! Its superpower includes:
+The sprout's superpower at this stop includes:
 
 * Data Exploration in Time Series
-* Time Series Detection of Trend, Seasonality, Changepoints and Outliers
+* Time Series Detection of Trend, Changepoints, Outliers and Seasonality
 * Time Series Forecasting
 
-Now are you excited to witness its superpower? Let's go!
+Now are you excited to see its superpower? Let's go!
 
 #
 <p align="left">

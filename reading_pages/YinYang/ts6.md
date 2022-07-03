@@ -31,7 +31,7 @@ When we are using `grangercausalitytests(df[[col1, col2]])`, the null hypothesis
 
 Therefore when we have found col2 granger causes col1 but col1 doesn't granger cause col2, then we assume col2 causes col1, and vice versa.
 
-The assumed causality of our green room's data is shown below, seems also aligns with common sense 😉
+The assumed causality of our green houses' data is shown below. It aligns with common sense, also discloses why the icreasing of CO2 creates a vicious circle of worsening the global environment. 😰
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/assumed_causality_output.png" width="810" height="351" />
