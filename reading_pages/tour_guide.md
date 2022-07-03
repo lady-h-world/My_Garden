@@ -31,17 +31,21 @@ Lady H.'s properties all have their intelligence and destructive superpower, bei
 ## Friends Around
 Walking around the garden, new firends will accompany with you!
 
-Our warmhearted Chansey Butterflies will bring you with tips, general notes and guide you to the right way, <i>just follow them!</i>
+Our warmhearted <b>Chansey Butterflies</b> will bring you with tips, general notes and guide you to the right way, <i>just follow them!</i>
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/follow_us_note.png" width="431" height="97" />
 </p>
 
-🌻 The most welcoming Baby Sunflowers bloom everywhere and will open the gate of secrets for you, <i>just click them!</i>
+🌻 The most welcoming <b>Baby Sunflowers</b> bloom everywhere and will open the gate of secrets for you, <i>just click them!</i>
 
 
-And our lovely Miss Mooncake can't wait to see you and share all of her stories!
+Our lovely <b>Miss Mooncake</b> can't wait to see you and share stories she heard from this garden!
 <img aligh="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="155" height="200" />
+
+<img aligh="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/crayon%20heart.png" width="200" height="200" />
+And last but not the least, <b>Lady H.</b> will share realities of the outside world, in manga format!
+
 
 <p>&nbsp;</p>
 
