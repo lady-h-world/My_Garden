@@ -19,7 +19,7 @@ Which is a better choice? Or when to use what? <b>Kats vs Greykite!</b> The comp
 
 Kats doesn't update as frequent as many other popular open source libraries. 
 
-According to Lady H.'s observations, Kats stayed at version 0.1.0 for months without any update. Such low code updating frequency is rare among active open source libraries, especially it's a library from a giant company.
+According to Lady H.'s observations, Kats stayed at version 0.1.0 for months without any update. Such a low updating frequency is rare among active open source libraries, especially it's a library from a giant company.
 
 The installation of Kats was tricky, and the problems often happened in Prophet related features.
 
@@ -33,7 +33,7 @@ A better way to install Kats is to git clone its repo to your local environment 
 3. Enter into `Kats` folder and type `python setup.py install` to manually install Kats
 * If you are using python virtual environment, then find its python path to replace "python" in this command. For example, Lady H. was using conda virtual env called "yinyang", so her command was `C:\ladyh\anaconda3\envs\yinyang\python setup.py install`
 
-Wondering why better to manually install this library? Lady H. does gathered multiple reasons after trails and errors! 🧐
+Wondering why better to manually install this library? Lady H. has multiple reasons after trails and errors! 🧐
 
 First of all, conflicting library versions can cause problems. For example, as we can see [Kats requires the installed Prophet to be a specific version][3], but in order to use Prophet, you need to successfully build it first. What happened to Lady H. was, the Prophet version she could built had to be higher than the version required by Kats. So, in order to install Kats, she had to change Kats' `requirements.txt` to make Prophet's version align with her built version. However, the risk of doing this is, you might face problems when calling certain Kats' functions later...
 
@@ -45,11 +45,11 @@ Moreover, here're a few more installation you might need in order to use Kats:
 * `pip install ax-platform`
 * Make sure `statsmodels==0.12.2`, higher version will get errors when using Kats' VAR model
 
-After experienced all these troubles, Lady H. figured out that, the suggested installation process above gave her more flexibility.
+After experienced all these troubles, Lady H. figured out that, manually install Kats provides more flexibility.
 
 ### Install Greykite
 
-Make sure pandas version is no more than "1.3.0", then just type `pip install greykite`
+Make sure pandas version is no more than "1.3.0", then just type `pip install greykite`.
 
 ## Data Input
 
@@ -65,7 +65,7 @@ By comparison, Greykite is more flexible. You can keep the data input as pandas 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/greykite_input.png" width="806" height="364" />
 </p>
 
-The difference between Kats and Greykite here is also showing software design differences in data science projects. When building a data science library, code owners might think using OO (Object Oriented) design is the best choice but they might be lack of mature OO design skills to provide flexible user experience, therefore as you can see, we even can't print out the data sample after converting data to `TimeSeriesData` in Kats. By comparison, Greykite is doing a better job here. It keeps the solution simple by keep pandas input as it is.
+Greykite has obviously better user experience, the problem in Kats is caused by product design or software design? Lady H. thinks it's both. Lots of giant companies don't have a good lead in product or software design, but because these companies still make lots of money, user experience problems stay there for a longer time. Sign... 😔
 
 Does this mean Greykite is better than Kats on everything? Let's see! 😉
 
