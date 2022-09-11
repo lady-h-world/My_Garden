@@ -9,13 +9,13 @@
 
 What is evolution?
 
-No matter how special a garden plant is, it repeats a life cycle of birth, growth, bloom, mundanity and death. In each cycle, when life reaches to the blooming point, that's also the start of languishing; however when it reaches to the bottom point (death), that's also the beginning of rebirth. 
+No matter how magical a garden plant is, it repeats a life cycle of birth, growth, bloom, mundanity and death. In each cycle, when life reaches to the blooming point, that's also the start of languishing; however when it reaches to the bottom point (death), that's also the beginning of rebirth. 
 
 Antient Chinese brought in the concept of <b>Yin (陰) Yang (陽)</b> to demonstrate this cycle. "Yin" means the down point of the cycle while "Yang" means the up point. It's been considered as a universal law carried out by everything. Our garden totem, the lotus-skeleton is a representation of this cycle too!
 
 Life is full of ups and downs. The down moments keep pushing us to self-reflect and to learn from the nonfulfillment, while the up moments award our hard working. By going through this up and down cycle again and again, human beings are becoming better and better. This is the process of evolution.
 
-Same to our garden plants. Their uniqueness and magic power is a result of evolution, and they are still undergoing new advancements.
+Same to our garden plants. Their uniqueness and magical power is a result of evolution, and they are still developing new advancements.
 
 </p>
 
@@ -32,7 +32,7 @@ The sprout's superpower at this stop includes:
 * Time Series Detection of Trend, Changepoints, Outliers and Seasonality
 * Time Series Forecasting
 
-Now are you excited to see its superpower? Let's go!
+Now are you excited to collect the magical sprouts? Let's go!
 
 #
 <p align="left">
