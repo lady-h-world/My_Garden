@@ -1,6 +1,6 @@
 ## Changepoint Detection
 
-As we saw in trend detection, the detected output are time points where the trend changes. Changepoint detection is also a method to detect time points, but the point indicate where the probability distribution of a time series changes. In some libraries such as Greykite, trend detection is included in its changepoint detection. In Kats, they are seperated. Let's take a look at Kats changepoint detection first.
+As we saw in trend detection, the detected output are time points where the trend changes. Changepoint detection is also a method to detect time points, but the point indicates where the probability distribution of a time series changes. In some libraries such as Greykite, trend detection is included in its changepoint detection. In Kats, they are seperated. Let's take a look at Kats changepoint detection first.
 
 ### Kats Changepoint Detection
 
@@ -69,7 +69,7 @@ Similarly, here're the detected decreasing changepoints:
 
 ### RobustStat Detector
 
-If to detect multiple changepoints with CUSUM Detector needs self-implemented rolling window function, then RobustStat Detector can do this for you in one run. Similar to CUSUM Detector, it detects changepoints by checking mean shifts. It will start with smoothing out the time series using moving average, then compare the differences between a window of data points with its previous windows (window size is fixed, called as `comparison_window`). Finally it calculates the z-score, p-values of thoses differences, and mark those points with p-value smaller than the threshold as changepoints.
+If to detect multiple changepoints with CUSUM Detector needs self-implemented rolling window function, then RobustStat Detector can do this for you in one run. Similar to CUSUM Detector, it detects changepoints by checking mean shifts. It will start with smoothing out the time series using moving average, then compare the differences between a window of data points with its previous windows (window size is fixed, called as `comparison_window`). Finally it calculates the z-score, p-values of those differences, and mark those points with p-value smaller than the threshold as changepoints.
 
 To detect a single changepoint, it looks like this:
 
@@ -83,7 +83,7 @@ However, as we can see, we can't specify the changepoint to be the "increasing" 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/robuststat_mul.png" width="617" height="781" />
 </p>
 
-You might have noticed the small size of the visualization, in fact, Lady H. can't find a way to adjust the plot size... Either because Kats is an incomplete library or because of its embarassing OO design...
+You might have noticed the small size of the visualization, in fact, Lady H. can't find a way to adjust the plot size... Either because Kats is an incomplete library or because of its embarassing software design...
 
 🌻 [Check detailed code in Kats Changepoint Detection >>][3]
 
