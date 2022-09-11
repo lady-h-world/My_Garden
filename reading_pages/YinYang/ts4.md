@@ -4,7 +4,11 @@ Comparing with univariate time series, multivariate time series has more than 1 
 
 ### About the Data
 
+<p>
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/grow_sprouts.png" width="204" height="329" />
+
 Have you ever wonder where do we store so many sprouts for garden visitors? We have a giant green warehouse, which contains hundreds of green houses to grow sprouts! In order to maintain a healthy growing environment, every green house is monitored all the time. One of the monitoring metrics is "occupancy", by checking the temperature, humidity, light, CO2 and humidity ratio, we can forecast whether a green house has enough space for new sprouts.
+</p>
 
 Here's the data sample of 1 green house's data:
 
@@ -12,7 +16,7 @@ Here's the data sample of 1 green house's data:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/multi_ts_sample.png" width="590" height="163" />
 </p>
 
-The 5 variables are recorded almost every 1 minute. If we take a look at each variable throughout the time, different variables present different trend and seasonality patterns, while humidity and humidity ratio are having almost the same curve shapes.
+The 5 variables are recorded almost every 1 minute. If we take a look at each variable throughout the time, different variables present different trend and seasonality patterns, except humidity and humidity ratio are having almost the same curve shapes.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/multi_ts_plot1.png" width="1062" height="921" />
