@@ -61,7 +61,7 @@ Not to her surprise, the final performance in testing data wasn't better than us
 Because the learner is LGBM too and the way to customize the objective function will be the same, Lady H. didn't plan to add customized objective function in this experiment. Instead, she wanted to address the question left from the previous Optuna experiment, about whether Optuna pruner works better without using cross validation. As the code shown below, users need to call `LightGBMPruningCallback()` to create the pruning callback used in LGBM:
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_customized.png" width="1066" height="635" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_customized_code.png" width="765" height="634" />
 </p>
 
 🌻 [Look into Optuna experiment details >>][6]
@@ -71,7 +71,7 @@ Without applying cross validation, the overall time cost is definitely reduced, 
 Table 1.6 summarized the performance in this experiment:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/table1.6.png" width="653" height="306" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/Table1.6.png" width="654" height="303" />
 </p>
 
 Looking at all these experiments, FLAML appears to be better overall. However, it doesn't mean Optuna is worse in every aspect.
@@ -81,25 +81,25 @@ In the code of Optuna experiment, you may have noticed that Lady H. generated so
 * Parameter importance plot shows an overall view of the parameters' impact on model's validation performance.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_param_importance.PNG" width="900" height="435" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/param_importance_optuna.png" width="1651" height="379" />
 </p>
 
 * Slice plot shows the relationship between each hyperparameter, objective value and the number of trials.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_slice.PNG" width="1484" height="382" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/slice_plot_optuna.png" width="1702" height="377" />
 </p>
 
 * Contour plot looks into each hyperparameter pairs.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_contour.PNG" width="1476" height="378" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/contour_optuna.png" width="1727" height="369" />
 </p>
 
 * Intermediate plot can interactively show you the intermediate value of each trial.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_intermediate.PNG" width="1478" height="373" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/intermediate_optuna.png" width="1664" height="368" />
 </p>
 
 Comparing with FLAML, Optuna has a better user experience in deep learning, and in the next experiment, we will bring you to the experiment of deep learning HPO!
