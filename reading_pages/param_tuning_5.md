@@ -58,7 +58,7 @@ Not to her surprise, the final performance in testing data wasn't better than us
 
 #### Optuna Customized
 
-Because the learner is LGBM too and the way to customize the objective function will be the same, Lady H. didn't plan to add customized objective function in this experiment. Instead, she wanted to address the question left from the previous Optuna experiment, about whether Optuna pruner works better without using cross validation. As the code shown below, users need to call `LightGBMPruningCallback()` to create the pruning callback used in LGBM:
+Same as FLAML, here we use LGBM as the learner, therefore the way to customize the objective function will be the same, Lady H. didn't plan to add customized objective function in this experiment. Instead, she wanted to address the question left from the previous Optuna experiment, about whether Optuna pruner works better without using cross validation. As the code shown below, users need to call `LightGBMPruningCallback()` to create the pruning callback used in LGBM:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_customized_code.png" width="765" height="634" />
@@ -76,7 +76,7 @@ Table 1.6 summarized the performance in this experiment:
 
 Looking at all these experiments, FLAML appears to be better overall. However, it doesn't mean Optuna is worse in every aspect.
 
-In the code of Optuna experiment, you may have noticed that Lady H. generated some visualization, which provides more insights of Optuna's hyperparameter tuning. For example,
+In the code, you may have noticed that Lady H. generated some visualization, which provides more insights of Optuna's hyperparameter tuning. For example,
 
 * Parameter importance plot shows an overall view of the parameters' impact on model's validation performance.
 
