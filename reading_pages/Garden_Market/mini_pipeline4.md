@@ -32,7 +32,7 @@ MLJar generates <b>SHAP summary plot</b>, which plots the importance of all the 
 * Lower negative SHAP value indicates a feature tends to drag the forecast value lower (negative impact)
 * No matter it's positive or negative SHAP, bigger absolute SHAP value indicates the feature has bigger impact on the forecast value. Therefore, as we can see, summary plot uses the average absolute SHAP value to measure the feature importance.
 
-The left plot is the overall SHAP feature importance, while the right plot is SHAP feature importance in each fold of k-fold cross validation.
+The left plot is the overall SHAP feature importance, while the right plot is SHAP feature importance in each fold of k-fold cross validation. `*_prediction` features are using model predicted values as features for new rounds of model forecasting.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_shap_summary.png" width="1415" height="450" />
