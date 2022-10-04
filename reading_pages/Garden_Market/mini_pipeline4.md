@@ -16,8 +16,9 @@ Let's look at some visualized examples first!
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_leaderboard.png" width="700" height="400" />
 </p>
 
+* The number prefix of each model indicates the model index in a model selection step. For example, "3_DecisionTree" indicates it's the 3rd model in the simple algorithm model selection step. There can be multiple steps of model selection in MLJar.
 * MLJar "Ensemble" uses greedy approach to create weighted ensemble from already trained ML models.
-* MLJar "Stacked" uses stacking. In stacking, there are multiple stages of base models' forecasting. In each stage, there is k-fold cross validation, the predicted values from each fold will be appended together as a new feature for the next stage. When there are `m` base models in a stage, there will be `m` new features generated for the next stage.
+* MLJar "Stacked" uses stacking. In stacking, there are multiple stages of base models' forecasting. In each stage, there is k-fold cross validation, the predicted values from each fold will be appended together as a new feature for the next stage.So when there are `x` base models in a stage, there will be `x` new features generated for the next stage.
   * In this example, the base model is default LightGBM.
 * MLJar "Ensemble_Stacked" will ensemble all the previous stacked and unstacked models.
 
