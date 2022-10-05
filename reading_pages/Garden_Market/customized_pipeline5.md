@@ -38,10 +38,6 @@ Once your DAG appeared in the list, you can run it through the localhost interfa
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/trigger_airflow_dag.png" width="1000" height="155" />
 </p>
 
-<p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/windows_local_airflow.png" width="766" height="79" />
-</p>
-
 If you know how to setup Airflow in other ways, such as using docker or on Windows system, feel free to [show and tell us  details][2]! 💝
 
 #### Super Mini Airflow Pipeline
@@ -56,13 +52,7 @@ This super mini pipeline only has 2 tasks, data spliting task followed by model 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/correct_airflow_flow.png" width="326" height="82" />
 </p>
 
-At the very beginning of this DAG, you will import different python packages, besides built-in python and airflow packages, other packages (such as `lightgbm`, `sklearn`) need to be installed in the site packages of the python used by airflow, otherwise your DAG won't appear in the DAG list.
-
-<p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_code1.png" width="448" height="245" />
-</p>
-
-Then you need to specifiy the parameters of this DAG. Make sure `dag_id` and `tags` are unique for each DAG.
+At the very beginning of this DAG, you will import different python packages, besides built-in python and airflow packages, other packages (such as `lightgbm`, `sklearn`) need to be installed in the site packages of the python used by airflow, otherwise your DAG won't appear in the DAG list. Then you need to specifiy the parameters of this DAG. Make sure `dag_id` and `tags` are unique for each DAG.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_code2.png" width="566" height="49" />
