@@ -15,8 +15,8 @@ Data drifting is not always caused by mistakes, there can be other reasons too. 
 
 There are 2 main types of data drifting:
 
-* Concept Drift means, the statistical properties of the forecasting target have changed.
-* Covariate Drift means, the statistical properties of the input features have changed.
+* `Concept Drift` means, the statistical properties of the <b>forecasting target</b> have changed.
+* `Covariate Drift` means, the statistical properties of the <b>input features</b> have changed.
 
 ##### Suggested Data Drifting Detection Methods
 
