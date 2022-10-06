@@ -53,6 +53,8 @@ The classification data is much smaller and it only took 61 seconds to finish th
 
 🌻 [Look into TPOT classification experiment details >>][4]
 
+Although TPOT finished classification in a short time with good performance, we should keep in mind that most real world datasets are much larger than the classification data used here (14 features, 340 records, 30 classes), even much larger than the regression data here (18 features, 693,861 records). In those cases, TPOT's speed will be concerning.
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
