@@ -20,6 +20,8 @@ We often use Johansen test as cointegration test. It's based on the estimation o
 
 The conintegration test output indicates that temperature, humidity, light and CO2 are cointegrated, that is to say, we can use these variables together in a model like VAR (more details coming in multivariate time series outlier detection). It is also safe to throw away "humidity ratio" because of its high correlation with variable "humidity".
 
+🌻 [Check detailed code for Integration Test >>][3]
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
@@ -36,7 +38,7 @@ The conintegration test output indicates that temperature, humidity, light and C
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts6.md
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts4.md
- 
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/code/yinyang/past_ts_exploration.ipynb
 
 
 
