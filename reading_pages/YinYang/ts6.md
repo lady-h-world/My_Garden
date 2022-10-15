@@ -39,6 +39,8 @@ The assumed causality of our green houses' data is shown below. It aligns with c
 
 Besides exploring assumed causality, we can also use the output to understand the interchangable influence between variables in a multivariate time series. If we found such influence exists, then models like VAR can be a good choice to be applied to the data for forecasting, outlier detection, etc.
 
+🌻 [Check detailed code for Granger Causality][3]
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
@@ -54,3 +56,4 @@ Besides exploring assumed causality, we can also use the output to understand th
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts7.md
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts5.md
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/code/yinyang/past_ts_exploration.ipynb
