@@ -5,9 +5,9 @@
 <p>&nbsp;</p>
 The magical power from this garden's flowers is not limited to what you have seen during this visit! 😉 As the flowers are envolving at a shocking speed, there's always new magical power appear! It often excites Lady H. to try out new experiments, and of course, she won't forget about you!
 
-This is our billboard, you can see it even after leaving the garden. Whenever Lady H. has seen any promising power that worked well in practice, she can't wait to share it here with you!
+This is our billboard, you can see it even after leaving the garden. Whenever Lady H. has seen any promising power that worked well in practice, she will share it here with you!
 
-Here you go!
+You're very welcome to share your experiments and learnings with us [here][7]! We can't wait to see!
 
 </p>
 <p>&nbsp;</p>
@@ -41,3 +41,4 @@ Here you go!
 [4]:https://docs.ray.io/en/master/tune/examples/lightgbm_example.html
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md#main-station-
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_7.md
+[7]:https://github.com/lady-h-world/My_Garden/discussions/categories/show-and-tell
