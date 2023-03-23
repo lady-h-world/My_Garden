@@ -11,15 +11,15 @@ Each collection in this garden exhibits some applied data science qualities, so 
 Here's an overview of all the stops!
 
 * [The Queen - The Power of Dawn][1]
-  * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning
+  * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning.
 * [Rainbow Moss][8]
-  * Simple but useful data science routines 
-* [Garden Totem - Yin Yang][5]
-  * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s home made methods
+  * Simple but useful data science routines.
 * [Garden Market][4]
-  * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MLJar, Luigi, Airflow and ZenML
+  * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MLJar, Luigi, Airflow and ZenML.
+* [Garden Totem - Yin Yang][5]
+  * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s home made methods.
 * [Garden Museum][6]
-  * Collected memories from this garden
+  * Collected memories from this garden.
 
 <p>&nbsp;</p>
 
