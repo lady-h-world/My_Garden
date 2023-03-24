@@ -10,12 +10,14 @@ Each collection in this garden exhibits some applied data science qualities, so 
 
 Here's an overview of all the stops!
 
-* [The Queen - The Power of Dawn][1]
+* [The Queen][1]
   * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning.
 * [Rainbow Moss][8]
   * Simple but useful data science routines.
 * [Garden Market][4]
   * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MLJar, Luigi, Airflow and ZenML.
+* [Replendent Tree][9]
+  * <b>Correlation</b> and <b>Semi Supervised Learning</b>.
 * [Garden Totem - Yin Yang][5]
   * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s home made methods.
 * [Garden Museum][6]
@@ -62,3 +64,4 @@ To ask for future collaboration opportunities, drop messages [here][7]!
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/garden_museum.md
 [7]:https://github.com/lady-h-world/My_Garden/discussions/categories/let-s-collaborate
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/rainbow_moss.md
+[9]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
