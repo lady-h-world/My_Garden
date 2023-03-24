@@ -13,7 +13,7 @@ Here's an overview of all the stops!
 * [The Queen][1]
   * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning.
 * [Rainbow Moss][8]
-  * Simple but useful data science routines.
+  * Flexible data science <b>environments setup</b>.
 * [Garden Market][4]
   * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MLJar, Luigi, Airflow and ZenML.
 * [Replendent Tree][9]
