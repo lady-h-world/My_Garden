@@ -24,13 +24,13 @@ Lady H. told us, in the outside world, human beings have different skin colors, 
 
 ## Correlation & Clustering
 
-So what kind of power does a Resplendent Tree's sprout have?
+So what's the sprout power you can collect here?
 
 <p align="center">🌱 <b>Sprouts Collection Time!</b> 🌱</p>
 
-🌱 The connection between flowers on Resplendent Tree shows the power of [correlation][1].
+🌱 The connections between flowers on Resplendent Tree shows the power of [correlation][1].
 
-🌱 The behaviour of same flower breed gathering closer is the power of clustering. But Lady H. thinks our visitors must be very familiar with "clustering", and it will be more fun to show the power of [semi-supervised learning][2].
+🌱 The behaviour of same breed gathering closer is the power of clustering. But Lady H. thinks our visitors must be very familiar with "clustering", and it will be more satisfying to show the power of [semi-supervised learning][2].
 
 Let's go and collect the sprouts now!
 
