@@ -2,7 +2,7 @@
 ## About the Data
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/garden_bank.png" width="253" height="222" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/garden_bank.png" width="253" height="235" />
 
 We have a bank in the garden. For us garden residents, we make lots of money but don't spend a lot, saving it in our bank is a good choice since it often teaches us how to spend money and live a happy life. For example, we get monthly newsletter of tourism spots in the universe, where we can spend a great vacation and experience different culture; sometimes we get donation opportunities to help people in need from the outside world, because each time there're only 2 ~ 5 randomly selected people can donate, we all actively participate and feeling lucky if we got selected to donate 😄!
   
