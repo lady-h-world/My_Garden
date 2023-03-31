@@ -26,7 +26,13 @@ You must had been reminded many times that "correlation is not causation". Peopl
 Correlation is not limited within numerical variables, it can happen between categorical variables as well, and in fact it can happen between numerical and categorical variables too. Now you will see how to check correlation in each category.
 
 ### Correlation between Numerical Variables
+#### Correlation between 2 Variables
+We have 3 common methods to check the correlation between each pair of variables:
+* `Pearson` is a measure of the strength and the direction of a <b>linear relationship</b> between two variables.
+* `Spearman` is equal to the Pearson correlation between the rank values of those two variables, it assesses a <b>monotonic relationship</b>.
+* `Kendall` is similar to Spearman which measures monotonic relationship using rank values of the 2 variables, but it's <b>more robust</b> than Spearman.
 
+Both Speaman and Kendall uses rank values, which means they can be applied to both continuous and ordinal variables. They are both non-parametric method and therefore data doesn't need to be in a bell curve as whta Pearson assumes.
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_campaign.ipynb
