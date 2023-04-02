@@ -19,7 +19,7 @@
 </p>
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
-The power of our sprouts is not limited to what you're seeing during the visit. These plants keep evolving and showing new powers, Lady H. collected them in [her weaponry][7] for future research. Would you like to explore more? 😉
+The power of our sprouts is not limited to what you're seeing during the visit. These plants keep evolving and showing new power, Lady H. keeps collecting  the new ones in [her weaponry][7] for future research. Would you like to explore more? 😉
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
