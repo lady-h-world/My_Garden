@@ -2,7 +2,7 @@
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/title.png" width="482" height="75" />
 </p>
 
-## Gallery
+# Gallery
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/gallery_logo.png" width="249" height="250" />
 </p>
@@ -12,8 +12,18 @@
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
+# Weaponry
 
-## Wall of Memories
+<p>
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/sword.png" width="249" height="250" />
+</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+The power of our sprouts is not limited to what you're seeing during the visit. These plants keep evolving and showing new powers, Lady H. collected them in [her weaponry][7] for future research. Would you like to explore more? 😉
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+# Wall of Memories
 
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/wall_of_memory.png" width="180" height="175" />
@@ -32,4 +42,4 @@
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/carefree_sunflower.md
 [5]:https://docs.google.com/presentation/d/1ngPFtnlMaHY95xmlSgL277IaxvZ_IrPuC9ViqBdXnl8/edit?usp=sharing
 [6]:https://docs.google.com/presentation/d/1QwcKAKeHVTInO9mhZeLtvy2bj9INJKP6kkK8XDoLzZ4/edit?usp=sharing
-
+[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md
