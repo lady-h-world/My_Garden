@@ -1,6 +1,5 @@
-# Gallery 
+## Carefree Sunflower
 
-### Carefree Sunflower
 
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/carefree_sunflower.png" width="300" height="410" />
