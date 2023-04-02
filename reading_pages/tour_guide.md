@@ -61,7 +61,7 @@ To ask for future collaboration opportunities, drop messages [here][7]!
 [3]:https://github.com/lady-h-world/My_Garden/discussions/categories/illegal-spreading-found
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/garden_market.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/garden_totem.md
-[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/garden_museum.md
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/garden_museum.md
 [7]:https://github.com/lady-h-world/My_Garden/discussions/categories/let-s-collaborate
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/rainbow_moss.md
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
