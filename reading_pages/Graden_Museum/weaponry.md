@@ -1,11 +1,12 @@
 ## Weaponry
 
 ### Time Series
-* [AutoTS]
+* [AutoTS][1]
   * AutoML for Time Series 
-* [Darts]
+* [Darts][2]
+  * Time Series Forecasting and Anomaly Detection
 
 
-[4]:https://github.com/winedarksea/AutoTS
-[5]:https://github.com/unit8co/darts
+[1]:https://github.com/winedarksea/AutoTS
+[2]:https://github.com/unit8co/darts
 
