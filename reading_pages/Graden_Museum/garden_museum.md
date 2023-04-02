@@ -2,7 +2,7 @@
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/title.png" width="482" height="75" />
 </p>
 
-## [Gallery][3]
+## Gallery
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/gallery_logo.png" width="249" height="250" />
 </p>
@@ -29,7 +29,7 @@
 [1]:https://docs.google.com/presentation/d/16QCJ2eOONwY1fxFDHwFenr4truFf1pd3KOMh4V6BVgM/edit?usp=sharing
 [2]:https://docs.google.com/presentation/d/120kZHkOeNkXATT9mM6804ZZU4ndu8wA9taZJUi7kKVM/edit?usp=sharing
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/gallery.md
-[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/gallery.md#carefree-sunflower
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/carefree_sunflower.md
 [5]:https://docs.google.com/presentation/d/1ngPFtnlMaHY95xmlSgL277IaxvZ_IrPuC9ViqBdXnl8/edit?usp=sharing
 [6]:https://docs.google.com/presentation/d/1QwcKAKeHVTInO9mhZeLtvy2bj9INJKP6kkK8XDoLzZ4/edit?usp=sharing
 
