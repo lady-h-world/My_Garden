@@ -21,18 +21,53 @@ And this piece of data will be used to show the power of sprouts here as well ðŸ
 
 ## Correlation
 
-You must had been reminded many times that "correlation is not causation". People still check correlation very often, sometimes it's because a certain algorithm has made an assumption that there should be no or little correlation in the data, such as linear regression; sometimes it helps remove unnecessary features in algorithms that are robust to correlation, such as tree models; sometimes people just want to observe the relationship between variables.
+You must had been reminded many times that "correlation is not causation". People still check correlation very often, sometimes it's because a certain algorithm has made an assumption that there should be no or little correlation in the data, such as linear regression; sometimes it helps remove unnecessary features in algorithms that are robust to correlation, such as tree models; sometimes people just want to understand better the relationship between variables.
 
-Correlation is not limited within numerical variables, it can happen between categorical variables as well, and in fact it can happen between numerical and categorical variables too. Now you will see how to check correlation in each category.
+Correlation is not limited to numerical variables, it can happen between categorical variables as well, and in fact it can happen between numerical and categorical variables too. Now let's see how to check correlation in different data types.
 
 ### Correlation between Numerical Variables
 #### Correlation between 2 Variables
 We have 3 common methods to check the correlation between each pair of variables:
 * `Pearson` is a measure of the strength and the direction of a <b>linear relationship</b> between two variables.
-* `Spearman` is equal to the Pearson correlation between the rank values of those two variables, it assesses a <b>monotonic relationship</b>.
-* `Kendall` is similar to Spearman which measures monotonic relationship using rank values of the 2 variables, but it's <b>more robust</b> than Spearman.
+* `Spearman` equals to Pearson correlation between the rank values of those two variables, it assesses a <b>monotonic relationship</b>.
+* `Kendall` is similar to Spearman which measures monotonic relationship using rank values of the 2 variables, but it's more robust (smaller gross error sensitivity) and more efficient (smaller asymptotic variance) than Spearman.
 
-Both Speaman and Kendall uses rank values, which means they can be applied to both continuous and ordinal variables. They are both non-parametric method and therefore data doesn't need to be in a bell curve as whta Pearson assumes.
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/ges_av.png" width="766" height="79" />
+</p>
+
+Both Speaman and Kendall uses rank values, therefore they can be applied to both continuous and ordinal variables. They are both non-parametric method and therefore the input data is not required to be in a bell curve as what Pearson assumes.
+
+Using all the numerical variables in the data, let's look at their the correlation triangle first. In this code, you can choose one of the correlation method, also decide whether you want to show absolute correlation values or not.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/corr_visual.png" width="823" height="260" />
+</p>
+
+The correlation triangle is in a heatmap format, so that you can find highly correlated pairs quickly based on the color. In this example, we can see, `previous` (number of contacts performed before this campaign and for this client) and `pdays` (number of days that passed by after the client was last contacted from a previous campaign) have a high spearman correlation.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/corr_visual_out.png" width="806" height="485" />
+</p>
+
+The code below uses this correlation triangle to list out all the correlated pairs with their correlation higher than the specified threshold.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/corr_drop.png" width="1012" height="372" />
+</p>
+
+And the output does align with the above visualization. Using the output drop list, we can remove unnecessary features from the data directly.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/corr_drop_out.png" width="843" height="178" />
+</p>
+
+ðŸŒ» [Look into code details here >>][2] 
+
+
+#### Multicollineary
+
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_campaign.ipynb
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/correlation/correlations.ipynb
