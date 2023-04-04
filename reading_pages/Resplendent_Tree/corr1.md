@@ -10,7 +10,7 @@ People from the outside of the world also save their money in our bank because o
   
 </p>
 
-The data example looks as below:
+The campaign data example looks as below:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/campaign_data.png" width="972" height="170" />
 
@@ -38,13 +38,13 @@ We have 3 common methods to check the correlation between each pair of variables
 
 Both Speaman and Kendall uses rank values, therefore they can be applied to both continuous and ordinal variables. They are both non-parametric method and therefore the input data is not required to be in a bell curve as what Pearson assumes.
 
-Using all the numerical variables in the data, let's look at their the correlation triangle first. In this code, you can choose one of the correlation method, also decide whether you want to show absolute correlation values or not.
+Using all the numerical variables in our campaign data, let's look at the correlation triangle first. In the code below, you can choose one of the correlation methods, also decide whether you want to show absolute correlation values or not.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/corr_visual.png" width="823" height="260" />
 </p>
 
-The correlation triangle is in a heatmap format, so that you can find highly correlated pairs quickly based on the color. In this example, we can see, `previous` (number of contacts performed before this campaign and for this client) and `pdays` (number of days that passed by after the client was last contacted from a previous campaign) have a high spearman correlation.
+The correlation triangle is in a heatmap format, so that you can find highly correlated pairs quickly based on the color. In this example, we can see, `previous` (number of contacts performed for this client before this campaign) and `pdays` (number of days that passed after the client was contacted last time) have a high spearman correlation.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/corr_visual_out.png" width="806" height="485" />
