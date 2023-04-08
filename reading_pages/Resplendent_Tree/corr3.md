@@ -31,5 +31,5 @@ Using our campaign data, the output looks like:
 
 [1]:http://www.sefidian.com/2022/08/02/measure-the-correlation-between-numerical-and-categorical-variables-and-the-correlation-between-two-categorical-variables-in-python-chi-square-and-anova/
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/correlation/correlations.ipynb
-[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md#correlation--clustering
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr2.md
