@@ -6,7 +6,7 @@ To measure the correlation between categorical variables, there're 2 popular cho
 
 You can consider they are the same method 😊. 
 
-But in python implementation, there're some differences. The code below allows to choose either Chi2 or Cramer's V. The output of Chi2 is mainly using p value to decide the correlation. It needs a threshold (namely, significance level, often choose 0.05) and when p value is lower than this thereshold, we can consider there's correlation. 
+But in python implementation, there're some differences. The code below allows to choose either Chi2 or Cramer's V. The output of Chi2 is mainly using p value to decide the correlation. It needs a threshold (namely, significant level, often choose 0.05) and when p value is lower than this thereshold, we can consider there's correlation. 
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/chi2_cramer_code.png" width="827" height="410" />
 
