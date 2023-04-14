@@ -20,6 +20,8 @@ Here's an overview of all the stops!
   * <b>Correlation</b> and <b>Semi Supervised Learning</b>.
 * [Garden Totem - Yin Yang][5]
   * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s home made methods.
+* [Crystal Ball][10]
+  * <b>Data Collection</b>, <b>Dimensional Reduction</b>.
 * [Garden Museum][6]
   * Collected memories from this garden.
 
@@ -65,3 +67,4 @@ To ask for future collaboration opportunities, drop messages [here][7]!
 [7]:https://github.com/lady-h-world/My_Garden/discussions/categories/let-s-collaborate
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/rainbow_moss.md
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
+[10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/about_crystal_ball.md
