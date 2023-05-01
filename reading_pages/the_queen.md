@@ -5,7 +5,7 @@
 #
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/the_queen.png" width="300" height="410" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/the_queen.png" width="320" height="450" />
 
 Lady H. travels a lot around the universe. She has her own spaceship and had been traveling to many galaxies. Wherever she goes, she will explore something unique in the local. Even though there could be hardship during her trips, most of the time, there're surprising gifts awaiting for her.
 
@@ -16,7 +16,6 @@ However, after Lady H.'s spaceship got here, lots of her friends got fever for d
 Lady H. was born with a Chinese name, meaning "waterlily in winter". So she felt a close connection when she saw this flower, had to bring some back! This is the first flower collected in this garden, and we call it "Queen Lotus".
 
 </p>
-<p>&nbsp;</p>
 <p>&nbsp;</p>
 
 
