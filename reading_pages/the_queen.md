@@ -1,21 +1,20 @@
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_title.png" width="376" height="152" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/title_queen.png" width="320" height="70" />
 </p>
 
 #
 
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/the_queen.png" width="300" height="410" />
-<p>&nbsp;</p>
 
-She’s the queen of this garden, the very first collected asset.
+Lady H. travels a lot around the universe. She has her own spaceship and had been traveling to many galaxies. Wherever she goes, she will explore something unique in the local. Even though there could be hardship during her trips, most of the time, there're surprising gifts awaiting for her.
+
+10 years ago, her spaceship stopped at Christmas Planet, a planet has 95% surface covered by snow all the time. She came here to try local fruits. The fruits harvesed here all have crystal color, such as crystal grapes, crystal mangos, crystal cherries, etc. The coffee and chocolate here are also in crystal color as they are made by crystall coffee beans and crystal cocoa beans. They all taste great by the way!
+
+However, after Lady H.'s spaceship got here, lots of her friends got fever for days, and the medicine they brought didn't work at all. So Lady H. started to look for some medicine locally. The local people guided her to visit Lake Crystal, a lack covered by snow and ice (of course 🤣). In the lake, there're some blooming lotus, collecting the water around those flowers will cure the disease. Lady H. did so and her friends recovered soon.
   
-  
-Lady H. witnessed her birth at a freezing cold winter night. That was a stressful time in Lady H.’s life too, when she just moved to a new city to study, without family or friends around, heavy workload from school, pressures from internship hunting, illness, a painful relationship, homesick and financial stress were attacking her all at once. 
-  
-As Lady H. later recalled, “I saw her petals started to open in the snow, the wind was strong but nothing could stop her from blooming. I was shocked by this magical plant, shocked by her existence and her vitality. At that moment, all of the anxieties in my mind had gone and a gush of hope flowing into my body. If she can stay strong in this harsh world, so do I.”
-  
-The queen is also known as "The Power of Dawn" because of her inspiring spirit. Everyone was surprised to see a blooming lotus in winter.
+Lady H. was born with a Chinese name, meaning "waterlily in winter". So she felt a close connection when she saw this flower, had to bring some back! This is the first flower collected in this garden, and we call it "Queen Lotus".
+
 </p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
