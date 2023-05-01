@@ -13,11 +13,11 @@ Lady H. travels a lot around the universe. She has her own spaceship and had bee
 
 However, after Lady H.'s spaceship got here, lots of her friends got fever for days, and the medicine they brought didn't work at all. So Lady H. started to look for some medicine locally. The local people guided her to visit Lake Crystal, a lack covered by snow and ice (of course 🤣). In the lake, there're some blooming lotus, collecting the water around those flowers will cure the disease. Lady H. did so and her friends recovered soon.
   
-Lady H. was born with a Chinese name, meaning "waterlily in winter". So she felt a close connection when she saw this flower, had to bring some back! This is the first flower collected in this garden, and we call it "Queen Lotus".
+Lady H. was born with a Chinese name, meaning "waterlily in winter". So she felt a close connection with this flower, had to bring some back! This is the first flower collected in this garden, and we call it "Queen Lotus".
 
 </p>
 <p>&nbsp;</p>
-
+<p>&nbsp;</p>
 
 ## The Outlier
 
