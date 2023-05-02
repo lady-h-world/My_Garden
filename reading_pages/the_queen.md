@@ -7,13 +7,13 @@
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/the_queen.png" width="320" height="450" />
 
-Lady H. travels a lot around the universe. She has her own spaceship and had been traveling to many galaxies. Wherever she goes, she will explore something unique in the local. Even though there could be hardship during her trips, most of the time, there're surprising gifts awaiting for her.
+Lady H. travels a lot around the universe. She has her own spaceship and had been traveling to many galaxies. Wherever she goes, she will explore something unique in the local. There will be hardship in a trip, but also have surprising gifts awaiting for her.
 
-10 years ago, her spaceship stopped at Christmas Planet, a planet has 95% surface covered by snow all the time. She came here to try local fruits. The fruits harvesed here all have crystal color, such as crystal grapes, crystal mangos, crystal cherries, etc. The coffee and chocolate here are also in crystal color as they are made by crystall coffee beans and crystal cocoa beans. They all taste great by the way!
+10 years ago, her spaceship stopped at Christmas Planet, a planet has 95% surface covered by snow all the time. She came here to try local fruits. The fruits harvesed here all have crystal color, such as crystal grapes, crystal mangos, crystal cherries, etc. The coffee and chocolate here are in crystal color too as they are made by crystall coffee beans and crystal cocoa beans. All taste great by the way!
 
-However, after Lady H.'s spaceship got here, lots of her friends got fever for days, and the medicine they brought didn't work at all. So Lady H. started to look for some medicine locally. The local people guided her to visit Lake Crystal, a lack covered by snow and ice (of course 🤣). In the lake, there're some blooming lotus, collecting the water around those flowers will cure the disease. Lady H. did so and her friends recovered soon.
+However, after Lady H.'s spaceship got here, lots of her friends had fever for days, and the medicine they brought didn't work at all. So Lady H. started to look for some medicine locally. The local people guided her to visit Lake Crystal, a lack covered by snow and ice (of course 🤣). In the lake, there're some blooming lotus, collecting the water around those flowers will cure the disease. Lady H. did so and her friends recovered soon.
   
-Lady H. was born with a Chinese name, meaning "waterlily in winter". So she felt a close connection with this flower, had to bring some back! This is the first flower collected in this garden, and we call it "Queen Lotus".
+Lady H. felt there's a strong connetion between her and the flower, because the meaning of her Chinese name is "waterlily in winter", had to take some flowers home! Then, the lotus has become the very first collection of this garden, and we call it "Queen Lotus".
 
 </p>
 <p>&nbsp;</p>
