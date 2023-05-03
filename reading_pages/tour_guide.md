@@ -21,7 +21,7 @@ Here's an overview of all the stops!
 * [Garden Totem - Yin Yang][5]
   * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s home made methods.
 * [Crystal Ball][10]
-  * <b>Data Collection</b>, <b>Dimensional Reduction</b>.
+  * <b>Data Collection</b>, <b>Data Simulation</b>, <b>Dimensional Reduction</b>.
 * [Garden Museum][6]
   * Collected memories from this garden.
 
