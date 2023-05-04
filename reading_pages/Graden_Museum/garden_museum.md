@@ -6,7 +6,6 @@
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/gallery_logo.png" width="249" height="250" />
 </p>
-<p>&nbsp;</p>
 
 * [Carefree Sunflower][4]
 
@@ -17,9 +16,13 @@
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/sword.png" width="249" height="250" />
 </p>
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
-The power of our sprouts is not limited to what you're seeing during the visit. These plants keep evolving and showing new power, Lady H. keeps collecting  the new ones in [her weaponry][7] for future research. Would you like to explore more? 😉
+The power of our sprouts is not limited to what you're seeing during the visit. These plants keep evolving and showing new power, Lady H. keeps collecting  the new ones in her weaponry for future research. Would you like to explore more? 😉
+
+* [Time Series][7]
+* [Hyperparameter Tuning (HPO)][8]
+* [Model Monitoring][9]
+
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
@@ -42,4 +45,6 @@ The power of our sprouts is not limited to what you're seeing during the visit. 
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/carefree_sunflower.md
 [5]:https://docs.google.com/presentation/d/1ngPFtnlMaHY95xmlSgL277IaxvZ_IrPuC9ViqBdXnl8/edit?usp=sharing
 [6]:https://docs.google.com/presentation/d/1QwcKAKeHVTInO9mhZeLtvy2bj9INJKP6kkK8XDoLzZ4/edit?usp=sharing
-[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md
+[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#time-series
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#hyperparameter-tuning-hpo
+[9]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#model-monitoring
