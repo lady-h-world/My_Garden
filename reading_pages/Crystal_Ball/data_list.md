@@ -5,7 +5,7 @@ The crystal ball can reach out to every corner of the universe to collect inform
 
 * [30 categories of leaves][1]
 * [100 categories of leaves][2]
-* [marketing campaign data][3]
+* [banking campaign data][3]
 * [102 categories of flower images][4]
 * [room occupancy, multivariate time series][5]
 * [sales data][6]
