@@ -7,6 +7,9 @@ To plot the data into axes space is a straightforward way to understand the data
 ### About the Data
 
 The data input used here is our Garden Bank's campaign data, [described here][2].
+Then we need to some data preprocessing:
+
+🌻[Check data preprocessing code here >>][1]
 
 
 ### PCA 
