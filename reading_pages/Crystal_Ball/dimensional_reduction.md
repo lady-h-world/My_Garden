@@ -4,12 +4,20 @@ When we try to visualize the data, each column is considered as a dimension. For
 
 To plot the data into axes space is a straightforward way to understand the data. However, for data with more than 3 dimensions, such plot is challenging. With crystal ball's power, Lady H. can project higher dimensional data into lower dimensions while keeping the original information as much as possible. This power is called as "Dimensional Reduction".
 
+
 ### About the Data
 
 The data input used here is our Garden Bank's campaign data, [described here][2].
-Then we need to some data preprocessing:
+Before dimensional reduction, we need to do some data preprocessing first:
+1. Categorical features need to be coverted into numerical values, so that dimensional reduction algorithms can consume them. A common practice is through "encoding", such as one-hot encoding. Lady H. often uses [Target Encoding][3], this method sometimes helps improve model performance, because when converting the categorical values into numerical, it considers both prior knowledge of the target over all the training data and the posterior knowledge of the target given each categorical value. See this encoding results below:
 
-🌻[Check data preprocessing code here >>][1]
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/cat2num.png" width="859" height="440" />
+</p>
+
+2. Next is to standardize all the numerical features into the same scale, so that features with wider ranges won't dominate the distance metric. This step is necessary before using most of the dimensional reduction algorithms, because they measure euclidean distances.
+
+🌻 [Check data preprocessing code here >>][1]
 
 
 ### PCA 
@@ -30,3 +38,4 @@ Dimensional reduction is not only used to project data into lower dimensional pl
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/magic_dimensional_reduction.ipynb
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr1.md#about-the-data
+[3]:https://contrib.scikit-learn.org/category_encoders/targetencoder.html
