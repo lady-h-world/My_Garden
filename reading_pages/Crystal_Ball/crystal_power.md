@@ -17,7 +17,7 @@ The crystal ball can create data from nowhere too!
 * [clusters simulation][7]
 
 
-### Other Magic
+## Crystal Magic
 Besides getting the data, Lady H. has found some other power this crystal ball has. Please read each story below to see more details!
 
 * [Dimension Reduction][8]
