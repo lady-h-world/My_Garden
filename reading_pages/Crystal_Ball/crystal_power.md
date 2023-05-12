@@ -31,4 +31,4 @@ Besides getting the data, Lady H. has found some other power this crystal ball h
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_multivariate_ts.ipynb
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_sales.ipynb
 [7]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/simulate_clusters.ipynb
-[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/dimensional_reduction.md
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/dimensional_reduction1.md
