@@ -46,7 +46,13 @@ Then if you choose `x` for `n_components` within its limit (16 in this case), PC
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/pca3.png" width="546" height="396" />
 
+If we plot the top 3 principle components in 3D space, and color the 2 classes in label "deposit", it looks as below:
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/data_pca.png" width="643" height="368" />
+
 🌻 [Check PCA code here >>][1]
+
+Can we find a dimensional reduction method that can differentiate the 2 classes better in 3D space? Or the data can't be differentiate well in a 3D space? Let's explore more!
 
 #
 <p align="left">
