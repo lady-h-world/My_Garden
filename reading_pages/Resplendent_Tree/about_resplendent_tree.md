@@ -19,7 +19,6 @@ Lady H. told us, in the outside world, human beings have different skin colors, 
 
 </p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 
 
 ## Correlation & Clustering
