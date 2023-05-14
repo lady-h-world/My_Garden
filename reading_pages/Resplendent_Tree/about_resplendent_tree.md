@@ -5,7 +5,7 @@
 #
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/resplendent_tree.png" width="330" height="470" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/resp_tree.png" width="330" height="470" />
 
 Have you ever seen a tree has different colored flowers bloom at the same time? 
 
