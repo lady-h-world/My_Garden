@@ -18,4 +18,20 @@ The data plot looks like:
 🌻 [Check t-SNE code here >>][1]
 
 
+### LLE
+
+LLE (Locally Linear Embedding) also projects the data into a lower dimensional space while preserving the local neighborhoods' information. 
+
+The way it works is similar to Isomap:
+1. It applies KNN to find the k nearest neighbors for every data point.
+2. It builds a cost function to minimize the total absolute differences between each data point and their weighted neighbors. The sum of neighbors' weights is 1 for each data point, and a weight matrix will be constructed where each data point's weights are determined by minimizing the cost function.
+3. When looking for a lower dimensional space, it will try to build a similar cost functions where the data points are replaced by their lower dimensional representations. The weights kept the same as step 2, and LLE will find a lower dimension that can minimize the new cost function.
+
+To understand more details of LLE, check [here][2].
+
+
+
+
+
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/magic_dimensional_reduction.ipynb
+[2]:https://towardsdatascience.com/lle-locally-linear-embedding-a-nifty-way-to-reduce-dimensionality-in-python-ab5c38336107
