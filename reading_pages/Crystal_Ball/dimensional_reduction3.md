@@ -24,14 +24,42 @@ LLE (Locally Linear Embedding) also projects the data into a lower dimensional s
 
 The way it works is similar to Isomap:
 1. It applies KNN to find the k nearest neighbors for every data point.
-2. It builds a cost function to minimize the total absolute differences between each data point and their weighted neighbors. The sum of neighbors' weights is 1 for each data point, and a weight matrix will be constructed where each data point's weights are determined by minimizing the cost function.
+2. Then it builds a cost function to minimize the total absolute differences between each data point and their weighted neighbors. The sum of neighbors' weights is 1 for each data point, and a weight matrix will be constructed where each data point's weights are determined by minimizing the cost function.
 3. When looking for a lower dimensional space, it will try to build a similar cost functions where the data points are replaced by their lower dimensional representations. The weights kept the same as step 2, and LLE will find a lower dimension that can minimize the new cost function.
 
 To understand more details of LLE, check [here][2].
 
+The code of LLE is as simple as other dimension reduction methods. One note on parameter `method`:
+* By default, the value is "standard", which is using the algorithm described above
+* Value "modified", "hessian" and "lsta" are modified versions of the algorithm, aiming at improving the regularization of LLE. [Check wiki to learn more about them][3]. Most of the time, "modified" is a recommended choice.
 
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/code_lle.png" width="404" height="196" />
+
+But look at the data plot after LLE dimensional reduction, too simple to be true, right? 😅
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/data_lle.png" width="447" height="285" />
+
+🌻 [Check LLE code here >>][1]
+
+As we can see, Isomap, MDS, t-SNE and LLE are all focusing on maintaining the local structure while doing the dimensional reduction, then what about the global structure? Is there any method takes care of both local and global data structure?
+
+#
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
+
+[Keep going >>][4]
+
+<p align="right">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<< Looking back][5]
 
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/magic_dimensional_reduction.ipynb
 [2]:https://towardsdatascience.com/lle-locally-linear-embedding-a-nifty-way-to-reduce-dimensionality-in-python-ab5c38336107
+[3]:https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/dimensional_reduction4.md
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/dimensional_reduction2.md
