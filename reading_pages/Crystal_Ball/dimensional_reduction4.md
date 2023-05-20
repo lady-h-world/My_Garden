@@ -16,6 +16,8 @@ For supervised output, let's look at the projections from both training data and
 
 🌻 [Check UMAP code here >>][2]
 
+After seeing all these methods, how do you plan to do dimensional reduction in the future? You're more than welcome to share you ideas [here][5]!
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
@@ -35,3 +37,4 @@ For supervised output, let's look at the projections from both training data and
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/magic_dimensional_reduction.ipynb
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/dimensional_reduction3.md
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/crystal_power.md
+[5]:https://github.com/lady-h-world/My_Garden/discussions
