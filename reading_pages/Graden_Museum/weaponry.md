@@ -2,7 +2,7 @@
 
 ### Explore More Data Insights
 * [Predictive Power Score][5] 
-  * Besides the [Granger Causality you have seen here], later Lady H. learned [PPS (Predictive Power Score)][7], a method detects asymmetric correlation might also be helpful in telling "assumed causality". It helps finding which variable helps predict another dependent/independent variable better.
+  * Besides the [Granger Causality you have seen here][6], later Lady H. learned [PPS (Predictive Power Score)][7], a method detects asymmetric correlation might also be helpful in telling "assumed causality". It helps finding which variable helps predict another dependent/independent variable better.
 
 ### Time Series
 * [AutoTS][1]
