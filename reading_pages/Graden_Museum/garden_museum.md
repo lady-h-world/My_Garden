@@ -49,4 +49,4 @@ The power of our sprouts is not limited to what you're seeing during the visit. 
 [7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#time-series
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#hyperparameter-tuning-hpo
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#model-monitoring
-[10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#more-data-insights
+[10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#explore-more-data-insights
