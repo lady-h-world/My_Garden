@@ -19,6 +19,7 @@
 
 The power of our sprouts is not limited to what you're seeing during the visit. These plants keep evolving and showing new power, Lady H. keeps collecting  the new ones in her weaponry for future research. Would you like to explore more? 😉
 
+* [Explore More Data Insights][10]
 * [Time Series][7]
 * [Hyperparameter Tuning (HPO)][8]
 * [Model Monitoring][9]
@@ -48,3 +49,4 @@ The power of our sprouts is not limited to what you're seeing during the visit. 
 [7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#time-series
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#hyperparameter-tuning-hpo
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#model-monitoring
+[10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#more-data-insights
