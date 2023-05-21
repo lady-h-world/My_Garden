@@ -117,6 +117,6 @@ Besides the difference in the overall performance, we can also see FLAML saves m
 [3]:https://github.com/microsoft/FLAML/tree/main/flaml/tune#cfo-frugal-optimization-for-cost-related-hyperparameters
 [4]:https://github.com/microsoft/FLAML/tree/main/flaml/tune#blendsearch-economical-hyperparameter-optimization-with-blended-search-strategy
 [5]:https://towardsdatascience.com/a-conceptual-explanation-of-bayesian-model-based-hyperparameter-optimization-for-machine-learning-b8172278050f
-[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_4.md
-[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_2.md
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_4.md
+[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_2.md
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_100leaves.ipynb
