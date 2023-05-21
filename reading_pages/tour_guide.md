@@ -58,7 +58,7 @@ After visiting our garden, if you have any questions, new ideas or suggestions, 
 
 To ask for future collaboration opportunities, drop messages [here][7]!
 
-[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/the_queen.md
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/the_queen.md
 [2]:https://github.com/lady-h-world/My_Garden/discussions
 [3]:https://github.com/lady-h-world/My_Garden/discussions/categories/illegal-spreading-found
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/garden_market.md
