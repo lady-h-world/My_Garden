@@ -82,5 +82,5 @@ The output of Optuna experiments didn't show prunning had happened at all. This 
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/flaml_experiments/flaml_specified_search_space.ipynb
 [3]:https://optuna.readthedocs.io/en/stable/tutorial/10_key_features/003_efficient_optimization_algorithms.html#which-sampler-and-pruner-should-be-used
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/optuna_experiments/optuna_specified_search_space_integratedCV.ipynb
-[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_5.md
-[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_3.md
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_5.md
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_3.md
