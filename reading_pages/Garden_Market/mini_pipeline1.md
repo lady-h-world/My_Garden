@@ -53,6 +53,6 @@ When using these mini pipelines, it is expected to take longer execution time th
 [3]:https://github.com/mljar/mljar-supervised
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/mini_pipeline2.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/garden_market.md
-[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_1.md#flaml-vs-optuna---hpo-for-classical-machine-learning
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_1.md#flaml-vs-optuna---hpo-for-classical-machine-learning
 [7]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_leaf.ipynb
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_sales.ipynb
