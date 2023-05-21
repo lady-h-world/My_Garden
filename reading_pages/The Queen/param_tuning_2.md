@@ -86,6 +86,6 @@ Now time to show you Lady H.'s experiments with the power from both FLAML and Op
 
 
 [1]:https://www.microsoft.com/en-us/research/publication/flaml-a-fast-and-lightweight-automl-library/
-[2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_3.md
-[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_1.md
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_3.md
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_1.md
 [4]:https://arxiv.org/abs/1907.10902

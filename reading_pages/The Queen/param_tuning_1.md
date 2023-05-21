@@ -84,9 +84,9 @@ Sales data is large enough to use 10-fold CV:
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_sales.ipynb
 [3]:https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html
 [4]:https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html#sklearn.metrics.r2_score
-[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_2.md
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_2.md
 [6]:https://github.com/microsoft/FLAML
 [7]:https://optuna.org/
-[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/the_queen.md
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/the_queen.md
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/lgbm_baseline.ipynb
 [10]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/lgbm_regression_baseline.ipynb

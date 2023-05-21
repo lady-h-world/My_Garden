@@ -1,7 +1,7 @@
 ### Experiment 3 - Customized Optimization for A Regression Problem
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="255" height="320" /></p>
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/miss_mooncake.png" width="255" height="320" /></p>
 
 Hey, it's Miss Mooncake's story time!
 
@@ -125,5 +125,5 @@ Comparing with FLAML, Optuna has a better user experience in deep learning, and 
 [4]:https://github.com/lady-h-world/My_Garden/discussions/categories/show-and-tell
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/flaml_experiments/flaml_customized_learner.ipynb
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/optuna_experiments/optuna_customized.ipynb
-[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_6.md
-[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_4.md
+[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_6.md
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_4.md

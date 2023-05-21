@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/at_gate_title.png" width="332" height="69" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/at_gate_title.png" width="332" height="69" />
 </p>
 
 #
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-<kbd><img src="https://github.com/lady-h-world/My_Garden/blob/main/images/at_the_gate.png" width="880" height="599" /></kbd>
+<kbd><img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/at_the_gate.png" width="880" height="599" /></kbd>
 </p>
 
 # 

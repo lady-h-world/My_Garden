@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/tour_guide_title.png" width="336" height="69" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/tour_guide_title.png" width="336" height="69" />
 </p>
 
 #
@@ -45,7 +45,7 @@ Our warmhearted <b>Chansey Butterflies</b> will bring you with tips, general not
 
 
 Our lovely <b>Miss Mooncake</b> can't wait to see you and share stories she heard from this garden!
-<img aligh="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="155" height="200" />
+<img aligh="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/miss_mooncake.png" width="155" height="200" />
 
 <img aligh="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/crayon%20heart.png" width="200" height="200" />
 And last but not the least, <b>Lady H.</b> will share realities of the outside world, in manga format!
@@ -58,7 +58,7 @@ After visiting our garden, if you have any questions, new ideas or suggestions, 
 
 To ask for future collaboration opportunities, drop messages [here][7]!
 
-[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/the_queen.md
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/the_queen.md
 [2]:https://github.com/lady-h-world/My_Garden/discussions
 [3]:https://github.com/lady-h-world/My_Garden/discussions/categories/illegal-spreading-found
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/garden_market.md
