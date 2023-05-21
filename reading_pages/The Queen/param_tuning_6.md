@@ -14,7 +14,7 @@ is making the garden a real wonderland throughout 4 seasons. As a flower expert,
 Wanna take a peek at some of our flowers?
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/flowers_sample.png" width="515" height="523" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flowers_sample.png" width="515" height="523" />
 </p>
 
 There are 102 flower species, 7169 flower observations in the training data and 1020 observations in the testing data. Each observation had been shapped into the same 300x300 resolution.
@@ -104,5 +104,5 @@ Can't say the performance is ideal, but it's just a quick check to know how to u
 [7]:https://keras.io/api/keras_tuner/tuners/bayesian/
 [8]:https://keras.io/api/keras_tuner/tuners/sklearn/
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/keras_tuner_experiments/keras_tuner_cnn.ipynb
-[10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_5.md
-[11]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_7.md
+[10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_5.md
+[11]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_7.md
