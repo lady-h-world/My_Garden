@@ -27,10 +27,6 @@ Here's an overview of all the stops!
 
 <p>&nbsp;</p>
 
-## Safeguard the World ©
-Lady H.'s properties all have their intelligence and destructive superpower, being stolen and spread in an illegal way, will cause unpredictable consequences to the outside world. If you came across any illegal spreading of our assets, please contact us in [the illegal spreading forum][3] with screenshorts and locations. Together, let's keep the world safe.
-
-<p>&nbsp;</p>
 
 ## Friends Around
 Walking around the garden, new firends will accompany with you!
@@ -43,20 +39,25 @@ Our warmhearted <b>Chansey Butterflies</b> will bring you with tips, general not
 
 🌻 The most welcoming <b>Baby Sunflowers</b> bloom everywhere and will open the gate of secrets for you, <i>just click them!</i>
 
-
 Our lovely <b>Miss Mooncake</b> can't wait to see you and share stories she heard from this garden!
 <img aligh="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/miss_mooncake.png" width="155" height="200" />
 
 <img aligh="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/crayon%20heart.png" width="200" height="200" />
 And last but not the least, <b>Lady H.</b> will share realities of the outside world, in manga format!
 
-
 <p>&nbsp;</p>
+
 
 ## Keep in Touch
 After visiting our garden, if you have any questions, new ideas or suggestions, feel free to drop messages in [our discussion forum][2]!
 
 To ask for future collaboration opportunities, drop messages [here][7]!
+
+<p>&nbsp;</p>
+
+
+## Safeguard the World ©
+Lady H.'s properties all have their intelligence and destructive superpower, being stolen and spread in an illegal way, will cause unpredictable consequences to the outside world. If you came across any illegal spreading of our assets, please contact us in [the illegal spreading forum][3] with screenshorts and locations. Together, let's keep the world safe.
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/the_queen.md
 [2]:https://github.com/lady-h-world/My_Garden/discussions
