@@ -16,7 +16,7 @@ You also have seen the customized pipeline Lady H. built with the power from Lui
 ### Great Discussion!
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="155" height="200" /></p>
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/miss_mooncake.png" width="155" height="200" /></p>
 
 During Lady H.'s exploration stage, she had some great discussions on StackOverflow! Let's hear the story!
 
