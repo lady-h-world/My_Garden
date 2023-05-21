@@ -8,8 +8,8 @@
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="180" height="75" />
 </p>
 
-[Come to the gate >>][1]
+[Want to know why you're here? >>][1]
 
 
-[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/at_the_gate.md
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/cover/why_you_are_here.md
 
