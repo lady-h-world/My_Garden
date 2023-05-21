@@ -45,7 +45,7 @@ Our warmhearted <b>Chansey Butterflies</b> will bring you with tips, general not
 
 
 Our lovely <b>Miss Mooncake</b> can't wait to see you and share stories she heard from this garden!
-<img aligh="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="155" height="200" />
+<img aligh="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/miss_mooncake.png" width="155" height="200" />
 
 <img aligh="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/crayon%20heart.png" width="200" height="200" />
 And last but not the least, <b>Lady H.</b> will share realities of the outside world, in manga format!
