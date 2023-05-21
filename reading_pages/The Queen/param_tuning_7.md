@@ -46,7 +46,7 @@ We think a summarized note will upgrade your visiting experience :)
 ### A Surprise!
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/miss_mooncake.png" width="155" height="200" /></p>
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/miss_mooncake.png" width="155" height="200" /></p>
 
 Lady H. was very happy to get a notice when FLAML published their latest release, they listed her as one of the contributors just because she was asking questions which pushed the team to make further improvements :)
 
@@ -72,5 +72,5 @@ Lady H. was very happy to get a notice when FLAML published their latest release
 
 [1]:https://optuna.readthedocs.io/en/v2.7.0/tutorial/20_recipes/002_multi_objective.html
 [2]:https://github.com/microsoft/FLAML/discussions
-[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_6.md
-[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_8.md
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_6.md
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_8.md
