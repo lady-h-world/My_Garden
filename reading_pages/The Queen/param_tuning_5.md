@@ -1,11 +1,11 @@
 ### Experiment 3 - Customized Optimization for A Regression Problem
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/miss_mooncake.png" width="255" height="320" /></p>
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/perfume.png" width="355" height="307" /></p>
 
 Hey, it's Miss Mooncake's story time!
 
-That was a Sunday in an early Autumn, the air was filled with mixed fragant scents. Lady H. had been sitting in her lab more than 1 week in order to find all the missing labels for 30-ish types of leaves... Her assistants came one after another to report garden business, and each one brought in an aromatic air to the room. Lady H. didn't notice anything unusual until the 5th girl Diana came in. "Diana! You're wearing perfume today!? I thought your nose was too sensitive to the scent!?". "I thought so too!", Diana replied with a big smile and shinning eyes, "But Garden Market gave us 99% discounts to buy the latest summer design, I have never seen such low price, so decided to give it a try and I love it!". "Oh, I'm glad to hear that! ... Wait a min, Garden Market is giving out perfume almost for free!? Why?". "Remeber we had harvested 3 times more summer flowers this year? Garden Market made much more perfume than they can sell and had to do a clearance sale". "I see. Hmm... we should do some sales forecasting before manufacturing".
+That was a Sunday in an early Autumn, the air was filled with mixed fragrant scents. Lady H. was having the afternoon tea at her balcony. Her assistants came one after another to report garden business, and each girl brought in an aromatic air. Lady H. didn't notice anything unusual until Diana came in. "Diana! You're wearing perfume today!? I thought you would never do that!". Diana's nose is too sensitive and she rarely uses any perfume. Diana replied with a big smile and shinning eyes, "The Garden Market gave us 99% discounts to buy the latest summer design, I have never seen such low price, so decided to give it a try and I love it!". "Oh, I'm glad to hear that! ... Wait a min, Garden Market is giving out perfume almost for free!? Why?". "Remeber we had harvested 3 times more summer flowers this year? Garden Market made much more perfume than they can sell and had to do a clearance sale". "I see. Hmm... we should do some sales forecasting before manufacturing".
 
 With HPO tools at hand, this is how Lady H. decided to add this regression problem into her experiments, to forecast Garden Market's sales.
 
