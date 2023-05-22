@@ -1,7 +1,7 @@
 #### Task Data Drift Monitoring
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/miss_mooncake.png" width="200" height="250" /></p>
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/work_late.png" width="243" height="246" /></p>
 
 Lady H.'s first full time data scientist job was in a financial fraud detection company. One of her clients was a giant bank. Every 2 months, that client would send her new data for fraud analysis. It was a December afternoon when the office was almost empty at 5 pm, most of her colleagues were on vacation or left earlier. Lady H. was planning to quickly finish the client's fraud report using her trained model, then go home.
 
