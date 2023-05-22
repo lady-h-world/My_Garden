@@ -39,14 +39,17 @@ Our warmhearted <b>Chansey Butterflies</b> will bring you with tips, general not
 
 🌻 The most welcoming <b>Baby Sunflowers</b> bloom everywhere and will open the gate of secrets for you, <i>just click them!</i>
 
-Our lovely <b>Miss Mooncake</b> can't wait to see you and share stories she heard from this garden!
-<img aligh="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/miss_mooncake.png" width="155" height="200" />
-
-<img aligh="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/crayon%20heart.png" width="200" height="200" />
-And last but not the least, <b>Lady H.</b> will share realities of the outside world, in manga format!
-
+<p>
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/crayon%20heart.png" width="200" height="200" />
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 
+And fun stories shared by <b>Lady H.</b>!
+</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Keep in Touch
 After visiting our garden, if you have any questions, new ideas or suggestions, feel free to drop messages in [our discussion forum][2]!
