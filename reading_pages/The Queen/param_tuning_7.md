@@ -46,7 +46,7 @@ We think a summarized note will upgrade your visiting experience :)
 ### A Surprise!
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/miss_mooncake.png" width="155" height="200" /></p>
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/surprise.png" width="265" height="248" /></p>
 
 Lady H. was very happy to get a notice when FLAML published their latest release, they listed her as one of the contributors just because she was asking questions which pushed the team to make further improvements :)
 
