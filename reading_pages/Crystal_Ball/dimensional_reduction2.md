@@ -4,12 +4,12 @@ LDA (Linear Discriminant Analysis) has a clear goal, that is to maximize the sep
 
 To better understand how does LDA work, we can compare with PCA:
 * PCA is unsupervised learning while LDA is supervised, you need to provide data labels to LDA.
-* PCA looks for a new dimension that can maximize the data spread on this new dimension. LDA looks for a new dimension with the goal to maximize the distances between classes and to minimize the variance within each class.
+* PCA looks for a new dimension that can maximize the data spread on this new dimension. LDA looks for a new dimension that can maximize the distances between classes and to minimize the variance within each class.
   * For 2 classes, the distance means the differences between the mean of the 2 classes.
   * For 3 or more classes, LDA find a central point of all the data, then measures the distance between each class' mean and the central point.
   * LDA can lose more data variance than PCA.
 
-The dimensions of LDA's output is the minimum of "the number of features of data input" and "the number of classes - 1". Therefore, our banking campaign data will be reduced to 1 dimension after applying LDA. Let's look at how did LDA separate the 2 classes:
+The dimensions of LDA's output is `min(the number of features of data input, the number of classes - 1)`. Therefore, our banking campaign data will be reduced to 1 dimension after applying LDA. Let's look at how did LDA separate the 2 classes:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/data_lda.png" width="859" height="454" />
 
@@ -22,7 +22,7 @@ Both PCA and LDA are linear methods, meaning they look for a hyperplane (line or
 
 Let's dive deeper to understand how does Isomap work:
 1. It applies KNN to find k nearest neighbors for every data point.
-2. Then it builds a neighborhood graph to remain the connections between neighbours. Non neighbours are not connected.
+2. Then it builds a neighborhood graph to maintain the connections between neighbours. Non neighbours are not connected.
 3. Applies MDS (multidimensional scaling) to compute each data pair's shortest distance on the graph, and project to a lower dimension while maintaining the between-point distances.
 
 As we can see, Isomap is a non-linear dimensional reduction method aiming at preserve the local structure.
@@ -44,7 +44,7 @@ and the data plot looks like:
 
 MDS (Multidimensional Scaling) is used in Isomap, it can be independently used as a dimensional reduction method too.
 
-As described in Isomap, MDS will project the data into a lower dimensional space and try to maintain the shortest distance between each point-pair. It applies optimization algorithms to minimize the total differences between the original dimension's distance and the lower dimension's distance, [you can check more details here][2].
+As described in Isomap, MDS will project the data into a lower dimensional space and try to maintain the shortest distance between each data-pair. It applies optimization algorithms to minimize the total differences between the original dimension's distance and the lower dimension's distance, [you can check more details here][2].
 
 To reduce our campaign data into 3 dimensions using MDS, the code looks like:
 
