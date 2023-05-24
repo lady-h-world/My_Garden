@@ -29,7 +29,9 @@ So what's the sprout power you can collect here?
 
 🌱 The connections between flowers on Resplendent Tree shows the power of [correlation][1].
 
-🌱 The behaviour of same breed gathering closer is the power of clustering. But Lady H. thinks our visitors must be very familiar with "clustering", and it will be more satisfying to show the power of [semi-supervised learning][2].
+🌱 The behaviour of same breed gathering closer is the power of clustering. [How do you often find the optimal number of clusters?][4]
+
+🌱 Besides clustering, want to see more power of [semi-supervised learning?][2]
 
 Let's go and collect the sprouts now!
 
@@ -53,4 +55,4 @@ Let's go and collect the sprouts now!
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr1.md
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/semi_sup1.md
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md#main-station-
-
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/sup1.md
