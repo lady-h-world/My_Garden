@@ -3,7 +3,7 @@
 Similar to Isomap, t-SNE (t-Distributed Stochastic Neighbor Embedding) also has the goal to project the data into a lower dimensional space while preserving the local neighborhoods' information. But the way they achieve this goal is different, let's look deeper into t-SNE's approach:
 1. It measures the similarity of data points by placing all the points on a Normal distribution curve, and calculates the distances between the point of interest and other points. This is done for every data point, and output a matrix to record the similarity score of each data pair.
 2. Then t-SNE randomly maps the data into a lower dimensional space, and calculates the simiarity using t-distribution. The reason it uses t-distribution in this step rather than Normal distribution, is because t-distribution has flatter shape with higher tails, which can help spread the data out. This step will output a similarity matrix too.
-3. Finally t-SNE will apply gradient descent to minimize KL divergence (Kullback–Leibler divergence). Speaking in human understandable language is to make the 2nd similarity matrix close to the 1st one through an iterative approach until reaching to the max number of iterations. In each iteration, data points will move toward their closest neighbors and away from the distant ones recorded in step 1.
+3. Finally t-SNE will apply gradient descent to minimize KL divergence (Kullback–Leibler divergence). Speaking in human language is to make the 2nd similarity matrix close to the 1st one through an iterative approach until reaching to the max number of iterations. In each iteration, data points will move toward their closest neighbors and away from the distant ones recorded in step 1.
 
 To reduce our campaign data into 3 dimensions using t-SNE, the code looks like:
 
@@ -29,8 +29,8 @@ The way it works is similar to Isomap:
 
 To understand more details of LLE, check [here][2].
 
-The code of LLE is as simple as other dimension reduction methods. One note on parameter `method`:
-* By default, the value is "standard", which is using the algorithm described above
+The code of LLE is as simple as other dimensional reduction methods. One note for parameter `method`:
+* By default, the value is "standard", which is using the algorithm described above.
 * Value "modified", "hessian" and "lsta" are modified versions of the algorithm, aiming at improving the regularization of LLE. [Check wiki to learn more about them][3]. Most of the time, "modified" is a recommended choice.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/code_lle.png" width="404" height="196" />
