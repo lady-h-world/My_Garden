@@ -1,4 +1,11 @@
-## About the Data
+## Correlation
+
+You must had been reminded many times that "correlation is not causation". People still check correlation very often, sometimes it's because a certain algorithm has made an assumption that there should be no or little correlation in the data, such as linear regression; sometimes it helps remove unnecessary features in algorithms that are robust to correlation, such as tree models; sometimes people just want to understand better the relationship between variables.
+
+Correlation is not limited to numerical variables, it can happen between categorical variables as well, and in fact it can happen between numerical and categorical variables too. Now let's see how to check correlation in different data types.
+
+
+### About the Data
 
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/garden_bank.png" width="253" height="240" />
@@ -15,14 +22,6 @@ The campaign data example looks as below:
 
 🌻 [To get campaign data >>][1] 
 
-And this piece of data will be used to show the power of sprouts here as well 😉!
-
-
-## Correlation
-
-You must had been reminded many times that "correlation is not causation". People still check correlation very often, sometimes it's because a certain algorithm has made an assumption that there should be no or little correlation in the data, such as linear regression; sometimes it helps remove unnecessary features in algorithms that are robust to correlation, such as tree models; sometimes people just want to understand better the relationship between variables.
-
-Correlation is not limited to numerical variables, it can happen between categorical variables as well, and in fact it can happen between numerical and categorical variables too. Now let's see how to check correlation in different data types.
 
 ### Correlation between Numerical Variables
 #### Correlation between 2 Variables
