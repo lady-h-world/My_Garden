@@ -41,5 +41,5 @@ With these purposefully simulated clusters, let's explore more on finding the op
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/about_crystal_ball.md
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/simulate_clusters.ipynb
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/unsupervised/estimate_clusters_count.ipynb
-[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/sup2.md
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/unsup2.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
