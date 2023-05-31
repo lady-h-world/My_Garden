@@ -10,8 +10,12 @@ Before looking at Lady H.'s experiments, let's understand how does each k-findin
 
 Elbow method checks WCSS (Within-Cluster Sum of Square), the sum of the squared distance between data points in a cluster and the cluster centroid. We often choose the k at the elbow of its plot, meaning WCSS dropped most significantly at that point. We don't choose larger k with even smaller WCSS value is because that will create more clusters, which may not be necessary. 
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/plot_elbow.png" width="691" height="358" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/plot_has_elbow.png" width="683" height="458" />
 
-As we can see, elbow method doesn't measure cross-cluster performance. Meanwhile, sometimes it can be challenging to find the right k through the plot.
+As we can see, elbow method doesn't measure cross-cluster performance. Meanwhile, sometimes it can be challenging to find the right k on the plot.
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/plot_no_elbow.png" width="682" height="460" />
+
+
 
 [1]:https://towardsdatascience.com/are-you-still-using-the-elbow-method-5d271b3063bd
