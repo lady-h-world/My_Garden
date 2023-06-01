@@ -13,7 +13,7 @@ Python sklearn provides built-in methods to simulate different types of clusters
 
 🌻 [Check clusters simulation code here >>][2]
 
-Now let's see different clusters Lady H. simulated. The main differences are in created blobs. In the 3rd, 4th, 6th plots, clusters share similar standard deviation and they are more separated from each other, but in the 5th plot, clusters are more mixed together. The circles and the moons are non-convexed clusters, even though from the plot, we can see the separation of clusters clearly, they are challenging for some popular clustering algorithms to differentiate, such as distance based algorithms like k-means.
+Now let's see different clusters Lady H. simulated. The main differences are in created blobs. In the 3rd, 4th, 6th plots, clusters share similar standard deviation and they are more separated from each other, but in the 5th plot, clusters are more mixed together. The circles and the moons are in special shapes, even though from the plot, we can see the separation of clusters clearly, they are challenging for some popular clustering algorithms to differentiate, such as distance based algorithms like k-means.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_clusters.png" width="1260" height="853" />
 
