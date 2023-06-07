@@ -23,8 +23,10 @@ Calinski Harabasz Index is also known as Variance Ratio Criterion. `Calinski Har
 Calinski Harabasz Index is fast to compute. It tends to have better k estimation on convexed, dense and well separated clusters. 
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/ges_av.png" width="766" height="79" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/convex_cluster.png" width="766" height="79" />
 </p>
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/convex_example.png" width="494" height="239" />
 
 
 [1]:https://towardsdatascience.com/are-you-still-using-the-elbow-method-5d271b3063bd
