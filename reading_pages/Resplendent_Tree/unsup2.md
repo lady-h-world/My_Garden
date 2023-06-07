@@ -18,7 +18,7 @@ As we can see, elbow method doesn't measure between-cluster performance. Meanwhi
 
 #### Calinski Harabasz Index
 
-Calinski Harabasz Index is also known as Variance Ratio Criterion. `Calinski Harabasz Index = sum(between-cluster dispersion) / sum(within-cluster dispersion)`, dispersion is the sum of squared distances. Higher value indicates better clustering, since that requires larger between-cluster variance and smaller within-cluster variance.
+Calinski Harabasz Index is also known as Variance Ratio Criterion. `Calinski Harabasz Index = sum(between_cluster dispersion) / sum(within_cluster dispersion)`, dispersion is the sum of squared distances. Higher value indicates better clustering, since that requires larger between-cluster variance and smaller within-cluster variance.
 
 Calinski Harabasz Index is fast to compute. It tends to have better k estimation on convexed, dense and well separated clusters. 
 
