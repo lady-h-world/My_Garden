@@ -38,4 +38,12 @@ DBI (Davies-Bouldin Index) measures the average similarity between each cluster 
 
 DBI is easy to calculate and interpret. However, it only considers the pairwise distances between cluster centroids and cluster members, the score can be sensitive to outliers, and ignored the data distribution or structure (such as clusters within a cluster, or non-linear relationship, etc.). It also makes false assumption that clusters share the same density and size, which is not true in many real world scenarios.
 
+
+#### Silhouette Coefficient
+
+Silhouette Coefficient is a measure of how similar an object is to its own cluster compared to other clusters. `Silhouette Coefficient = (b-a)/max(a,b)`, `a` is the average distance between each point within a cluster, `b` is the average distance between clusters. Its value is between 1 and -1, higher the better, 0 means overlapping clusters.
+
+[Some online tutorial][2] discussed about the drawbacks of DBI, then said Silhouette Coefficient can be an alternative solution. However, if we just look at the definition of DBI, Silhouette Coefficient and Calinski Harabasz Index, they share the same drawbacks for being better in convex clusters, being sensitive to outliers and ignoring the data distribution or structure.
+
 [1]:https://towardsdatascience.com/are-you-still-using-the-elbow-method-5d271b3063bd
+[2]:https://www.linkedin.com/advice/0/what-some-challenges-limitations-cluster-analysis
