@@ -43,7 +43,12 @@ DBI is easy to calculate and interpret. However, it only considers the pairwise 
 
 Silhouette Coefficient is a measure of how similar an object is to its own cluster compared to other clusters. `Silhouette Coefficient = (b-a)/max(a,b)`, `a` is the average distance between each point within a cluster, `b` is the average distance between clusters. Its value is between 1 and -1, higher the better, 0 means overlapping clusters.
 
-[Some online tutorial][2] discussed about the drawbacks of DBI, then said Silhouette Coefficient can be an alternative solution. However, if we just look at the definition of DBI, Silhouette Coefficient and Calinski Harabasz Index, they share the same drawbacks for being better in convex clusters, being sensitive to outliers and ignoring the data distribution or structure.
+[Some online tutorial][2] shared about the drawbacks of DBI, then said Silhouette Coefficient can be an alternative solution. However, if we just look at the definition of DBI, Silhouette Coefficient and Calinski Harabasz Index, they share the same drawbacks for being better in convex clusters, being sensitive to outliers and ignoring the data distribution or structure.
+
+
+#### BIC
+
+BIC (Bayesian Information Criterion) is often used in model selection, based on the maximum likelihood of model against parameters. In the case of clustering, BIC is trying to balance the maximum likelihood of model against `k`. At the same time, BIC adds penality to relief overfitting. Lower BIC score is better. 
 
 [1]:https://towardsdatascience.com/are-you-still-using-the-elbow-method-5d271b3063bd
 [2]:https://www.linkedin.com/advice/0/what-some-challenges-limitations-cluster-analysis
