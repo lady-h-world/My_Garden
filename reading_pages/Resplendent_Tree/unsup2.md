@@ -76,4 +76,4 @@ So what should you do in the future when estimating k for clustering problem? La
 [1]:https://towardsdatascience.com/are-you-still-using-the-elbow-method-5d271b3063bd
 [2]:https://www.linkedin.com/advice/0/what-some-challenges-limitations-cluster-analysis
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/unsupervised/estimate_clusters_count.ipynb
-[4]https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Outliers_and_Clustering/finding_optimal_k.R#L91-L92
+[4]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Outliers_and_Clustering/finding_optimal_k.R#L91-L92
