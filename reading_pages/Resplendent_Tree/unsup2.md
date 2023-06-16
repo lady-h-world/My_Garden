@@ -53,7 +53,7 @@ BIC (Bayesian Information Criterion) is often used in model selection, based on 
 
 #### Estimated K Comparison
 
-Now let's apply all the k-estimation algorithms mentioned above to our clusters.
+Now let's apply these k-estimation algorithms to our clusters.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/6_clusters.png" width="904" height="502" />
 
@@ -63,16 +63,19 @@ Here's the comparison code:
 
 🌻 [Check detailed implementation of each k-estimation algorithm here >>][3]
 
-Let's take a look at the k-estimation results. Is elbow method really the worst like some online tutorial said? Obviously not! The line closer to the grey diagonal has k-estimator closer to the ground truth. Elbow method has obvious better performance than other algorithms.
+Let's take a look at the k-estimation results. Is elbow method really the worst? Obviously not! The line closer to the grey diagonal has k-estimator closer to the ground truth. Elbow method has obvious better performance than other algorithms.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/k_estimate_comparison.png" width="760" height="660" />
 
-If we review this tutorial ["Are You Still Using the Elbow Method?"][1], all of its data have well separated blobs and each blob is a convex cluster. Such cases are ideal for other algorithms work well, but in reality, it's hard to find such pleasant datasets. In more complex situations, such as the circles, moons datasets, other algorithms worked much worse than elbow method.
+If we review this tutorial ["Are You Still Using the Elbow Method?"][1], all of its data have well separated blobs and each blob is a convex cluster, but such pleasant datasets are hard to find the real world.
+
+🌻 [Check all the code here >>][3]
 
 So what should you do in the future when estimating k for clustering problem? Lady H. suggests:
-  * Elbow method is still a safe choice to start with. 
-  * If you're coding with Language R, Lady H. has experimented with 4 methods, one of them applied 30 k-estimation algorithms and returned the most voted k.  
+  * Elbow method is still a simple choice to start with. 
+  * If you can code with Language R, Lady H. has experimented with 4 methods, one of them applies 30 k-estimation algorithms and returns the most voted k.  
     * 🌻 [See code here >>][4]
+    * Similarly, in python, you can apply multiple k-estimation algorithms and use the most voted k.
   * You can also consider other clustering algorithms, cuz the problem might be on k-means.
 
 
