@@ -57,7 +57,8 @@ Now let's apply all the k-estimation algorithms mentioned above to our clusters.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/6clusters.png" width="911" height="514" />
 
 Here's the comparison code:
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/estimate_k_code.png" width="895" height="759" />
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_estimate_k.png" width="891" height="748" />
 
 🌻 [Check detailed implementation of each k-estimation algorithm here >>][3]
 
