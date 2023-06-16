@@ -54,7 +54,8 @@ BIC (Bayesian Information Criterion) is often used in model selection, based on 
 #### Estimated K Comparison
 
 Now let's apply all the k-estimation algorithms mentioned above to our clusters.
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/6clusters.png" width="911" height="514" />
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/6_clusters.png" width="904" height="502" />
 
 Here's the comparison code:
 
@@ -63,6 +64,7 @@ Here's the comparison code:
 🌻 [Check detailed implementation of each k-estimation algorithm here >>][3]
 
 Let's take a look at the k-estimation results. Is elbow method really the worst like some online tutorial said? Obviously not! The line closer to the grey diagonal has k-estimator closer to the ground truth. Elbow method has obvious better performance than other algorithms.
+
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/k_estimate_comparison.png" width="760" height="660" />
 
 If we review this tutorial ["Are You Still Using the Elbow Method?"][1], all of its data have well separated blobs and each blob is a convex cluster. Such cases are ideal for other algorithms work well, but in reality, it's hard to find such pleasant datasets. In more complex situations, such as the circles, moons datasets, other algorithms worked much worse than elbow method.
