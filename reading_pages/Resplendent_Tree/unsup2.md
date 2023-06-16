@@ -1,10 +1,10 @@
 ### Finding Optimal K
 
-There are many online data science tutorials in your world, how do you use them in your work? These tutorials do create lots of inspirations but Lady H. never fully trust them, so when she found something interesting, she will dive deeper into the theories behind and do experiment using different datasets. 
+There are many online data science tutorials in your world, how do you often use them? These tutorials do create lots of inspirations but Lady H. never fully trust them, so when she found something interesting, she will dive deeper into the theories behind and validate with more experiments. 
 
-The idea of this experiment started from an article called ["Are You Still Using the Elbow Method?"][1]. In this article, the author compared several k-finding methods with 5 datasets containing clusters ranging from 2 to 25. The visualization is very persuasive, and he concluded that elbow method, a popular k-finding method performed worst. The datasets in this article are all well separated blobs, therefore Lady H. thought, what if the datasets are more complicated to find clusters, how would these methods perform?
+The idea of this experiment started from an article called ["Are You Still Using the Elbow Method?"][1]. In this article, the author compared several k-estimation algorithms with 5 datasets containing clusters ranging from 2 to 25. The visualization is very persuasive, and he concluded that elbow method, a popular k-estimation algorithm performed the worst. The datasets in this article are all well separated blobs, therefore Lady H. thought, what if the datasets are more complicated, how would these algorithms perform?
 
-Before looking at Lady H.'s experiments, let's understand how does each k-finding method work. To find the optimal k, the ideal result is, generated clusters have larger between-cluster variance and smaller within-cluster variance.
+Before looking at Lady H.'s experiments, let's understand how does each k-estimation algorithm work. To find the optimal k, the ideal result is, the generated clusters have larger between-cluster variance and smaller within-cluster variance.
 
 
 #### Elbow Method
@@ -13,7 +13,7 @@ Elbow method checks WCSS (Within-Cluster Sum of Square), the sum of the squared 
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/plot_has_elbow.png" width="683" height="458" />
 
-As we can see, elbow method doesn't measure between-cluster performance. Meanwhile, sometimes it can be challenging to find the right k on the plot.
+As we can see, elbow method doesn't measure between-cluster performance. Meanwhile, sometimes it can be challenging to find the right k on the plot, like the example below.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/plot_no_elbow.png" width="682" height="460" />
 
@@ -34,16 +34,16 @@ Do you know what does "convex" mean to clusters?
 
 #### Davies-Bouldin Index
 
-DBI (Davies-Bouldin Index) measures the average similarity between each cluster and its most similar cluster. Calculating the similarity is to use the ratio of the within-cluster distance and the between-cluster distance. Therefore, when there's within-cluster distance and larger between-cluster distance, DBI is lower, indicating the better clustering result.
+DBI (Davies-Bouldin Index) measures the average similarity between each cluster and its most similar cluster. Calculating the similarity uses the ratio of the within-cluster distance and the between-cluster distance. Therefore, when there's smaller within-cluster distance and larger between-cluster distance, DBI is lower, indicating a better clustering result.
 
 DBI is easy to calculate and interpret. However, it only considers the pairwise distances between cluster centroids and cluster members, the score can be sensitive to outliers, and ignored the data distribution or structure (such as clusters within a cluster, or non-linear relationship, etc.). It also makes false assumption that clusters share the same density and size, which is not true in many real world scenarios.
 
 
 #### Silhouette Coefficient
 
-Silhouette Coefficient is a measure of how similar an object is to its own cluster compared to other clusters. `Silhouette Coefficient = (b-a)/max(a,b)`, `a` is the average distance between each point within a cluster, `b` is the average distance between clusters. Its value is between 1 and -1, higher the better, 0 means overlapping clusters.
+Silhouette Coefficient is a measure of how similar an object is to its own cluster comparing to other clusters. `Silhouette Coefficient = (b-a)/max(a,b)`, `a` is the average distance between each point within a cluster, `b` is the average distance between clusters. Its value is between 1 and -1, higher the better, 0 means overlapping clusters.
 
-[Some online tutorial][2] shared about the drawbacks of DBI, then said Silhouette Coefficient can be an alternative solution. However, if we just look at the definition of DBI, Silhouette Coefficient and Calinski Harabasz Index, they share the same drawbacks for being better in convex clusters, being sensitive to outliers and ignoring the data distribution or structure.
+[Some online tutorial][2] shared about the drawbacks of DBI, then said Silhouette Coefficient can be an alternative solution. However, if we just look at the definition of DBI, Silhouette Coefficient and Calinski Harabasz Index, they share the same drawbacks for being better in convex clusters, being sensitive to outliers and ignoring the data distribution or data structure.
 
 
 #### BIC
@@ -73,7 +73,23 @@ So what should you do in the future when estimating k for clustering problem? La
   * You can also consider other clustering algorithms, cuz the problem might be on k-means.
 
 
+#
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
+
+[Back to Resplendent Tree Home >>][6]
+
+<p align="right">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<< Looking back][5]
+
+
 [1]:https://towardsdatascience.com/are-you-still-using-the-elbow-method-5d271b3063bd
 [2]:https://www.linkedin.com/advice/0/what-some-challenges-limitations-cluster-analysis
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/unsupervised/estimate_clusters_count.ipynb
 [4]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Outliers_and_Clustering/finding_optimal_k.R#L91-L92
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/unsup1.md
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md#correlation--clustering
