@@ -17,6 +17,6 @@ So, we will create both types of data masking. Our data has 2 classes.
 
 In the first type of masking, we mask some data in both classes as unlabeled, and allow flexible settings on unlabeled data percentage.
 
-
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_type1_mask.png" width="765" height="111" />
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr1.md#about-the-data
