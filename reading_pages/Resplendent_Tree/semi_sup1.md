@@ -41,6 +41,14 @@ Can't find any pattern to differentiate classes well, right? Cool! With this typ
 
 In the second type of masking, we will mask most the data and only keep the labels of a portion of positive data. This type of problem is called "PU Learning" (Positive-Unlabeled Learning).
 
+The code to mask the data with any masking rate is here:
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_pu_mask.png" width="817" height="132" />
+
+For example, if we mask 95% of the data, 
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_pu_mask_exp.png" width="894" height="252" />
+
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr1.md#about-the-data
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/mask_labels.ipynb
