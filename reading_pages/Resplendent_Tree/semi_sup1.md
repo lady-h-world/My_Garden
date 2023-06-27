@@ -55,6 +55,7 @@ When setting `mask_rate=0.3`, it meant to have 70% positive class remain labeled
 
 🌻 [Check type 2 mask code here >>][2]
 
+After masking the data, let's see how does the forecasting perform.
 
 #
 <p align="left">
