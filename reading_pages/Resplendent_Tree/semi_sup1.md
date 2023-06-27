@@ -45,17 +45,13 @@ The code to mask the data with any masking rate is here:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_mask_pu.png" width="891" height="268" />
 
-To mask data for PU learning we need to take care of the situation when remained labeled data percentage can be set higher than the real positive class percentage, in this case, we will just mask all the negative class. The code below masks the data for PU learning and allows `mask_rate` to be set between `[0, 1]`.
-
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_pu_mask_exp.png" width="894" height="252" />
-
 When setting `mask_rate=0.95`, it means we will mask 95% data and the rest 5% data will be positive class. Therefore in the output below, you can see there's 95% "-1" and 5% "1". Among all the masked data, there are 55.4% negative class and 44.6% positive class.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_pu_high_rate.png" width="897" height="219" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_high_rate_pu.png" width="901" height="216" />
 
 When setting `mask_rate=0.3`, it meant to have 70% positive class remain labeled, but because all the positive data only occupies 47.4% population, in this case, we will only get 47.4% labeled data, and all the negative data will be unlabeled.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_pu_low_rate.png" width="892" height="218" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_low_rate_pu.png" width="896" height="217" />
 
 * 🌻 [Check type 2 mask code here >>][2]
 
