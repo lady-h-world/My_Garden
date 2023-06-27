@@ -53,7 +53,7 @@ When setting `mask_rate=0.3`, it meant to have 70% positive class remain labeled
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_low_rate_pu.png" width="896" height="217" />
 
-* 🌻 [Check type 2 mask code here >>][2]
+🌻 [Check type 2 mask code here >>][2]
 
 
 #
