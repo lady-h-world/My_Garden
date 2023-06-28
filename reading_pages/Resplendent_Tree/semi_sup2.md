@@ -15,3 +15,20 @@ Label Propagation will propagate labels to unlabeled data by assuming closer dat
 2. On the graph, the edge between more similar nodes gets higher weight while the edge between less similar nodes gets lower weights. A larger weight allows the label to travel through easier so that the probability of propagating the label is higher.
 3. From each unlabeled node, performing random walk to find the probability distribution of reaching labeled nodes in order to decide which label has the highest probability. The random walk won't stop until reaching the convergence, such as all paths had been explored, or the probabilities of each possible label no longer change.
 
+Let's apply label propagation on our 90% masked data! Sklearn's label propagation supports 2 kernels, `knn` and `rbf`. The kernel is to measure the similarity between data points. KNN measures the similarity based on the number of neighbours while RBF measures the similarity based on distances.
+
+Here's how to apply label propagation with KNN kernel:
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/lp_knn.png" width="581" height="611" />
+
+And here's the code of label propagation with RBF kernel:
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/lp_rbf.png" width="809" height="651" />
+
+Looking at the overall performance, RBF kernel works slightly better than KNN kernel in this case.
+🌻 [Check label propagation code here >>][1]
+
+#### Label Spreading
+
+
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/try_diff_algs.ipynb
