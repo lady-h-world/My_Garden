@@ -26,7 +26,9 @@ And here's the code of label propagation with RBF kernel:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/lp_rbf.png" width="809" height="651" />
 
 Looking at the overall performance, RBF kernel works slightly better than KNN kernel in this case.
+
 🌻 [Check label propagation code here >>][1]
+
 
 #### Label Spreading
 
