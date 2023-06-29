@@ -32,5 +32,7 @@ Looking at the overall performance, RBF kernel works slightly better than KNN ke
 
 #### Label Spreading
 
+Label spreading is similar to label propagation. The main difference is, label propagation uses hard clamping, meaning, a labeled data point never changes its label. However, label spreading adopts soft clamping, it has a parameter `alpha` to decide how much information to obtain from a data point's neighbours vs its initial information. When `alpha=0`, it keeps the all original information, but when `alpha=1`, it replaces all the initial information.
+
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/try_diff_algs.ipynb
