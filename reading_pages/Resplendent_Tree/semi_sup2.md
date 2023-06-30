@@ -42,6 +42,7 @@ The parameter values used in RBF's label spreading is a bit different, not just 
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_spreading_rbf.png" width="608" height="638" />
 
+🌻 [Check label spreading code here >>][1]
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/try_diff_algs.ipynb
