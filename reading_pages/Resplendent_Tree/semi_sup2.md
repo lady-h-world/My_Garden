@@ -36,6 +36,11 @@ Label spreading is similar to label propagation. The main difference is, label p
 
 The supported kernels in label spreading are "knn" and "rbf" too. Let's apply label spreading with KNN on our 90% masked data first:
 
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_lspeading_knn.png" width="646" height="704" />
+
+The parameter values used in RBF's label spreading is a bit different, not just adding `gamma` required by RBF, but also adjusted `alpha=0.5` to default value `alpha=0.2` and increased `n_neighbors=7` to `n_neighbors=20`.
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_spreading_rbf.png" width="608" height="638" />
 
 
 
