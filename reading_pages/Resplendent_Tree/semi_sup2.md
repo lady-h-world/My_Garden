@@ -67,6 +67,8 @@ As we can see below, when there is more data got labeled (lower mask rate), the 
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/ls_diff_mask.png" width="1187" height="922" />
 
+🌻 [Check detailed code here >>][5]
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
@@ -85,3 +87,4 @@ As we can see below, when there is more data got labeled (lower mask rate), the 
 [2]:https://towardsdatascience.com/how-to-benefit-from-the-semi-supervised-learning-with-label-spreading-algorithm-2f373ae5de96
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/semi_sup1.md
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/semi_sup3.md
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/diff_mask_perct.ipynb
