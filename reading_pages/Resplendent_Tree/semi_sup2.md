@@ -48,7 +48,18 @@ The parameter values used in RBF's label spreading is a bit different, not just 
 
 #### Self Training
 
-Self Training allows you to select an estimator supported by sklearn, such as XGBoost, LightGBM to train on the labeled data and predict on unlabeled data. Then use predictions above a threshold as pseudo labels, adding them to existing labels and do another round of train & predict. Repeat till all the data got the label or reached to the max iteration.
+Self training allows you to select an estimator supported by sklearn, such as XGBoost, LightGBM to train on the labeled data and predict on unlabeled data. Then use predictions above a threshold as pseudo labels, adding them to existing labels and do another round of train & predict. Repeat till all the data got the label or reached to the max iteration.
+
+Sklearn provides built-in `SelfTrainingClassifier`, and it can be used in this way:
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_self_training.png" width="735" height="755" />
+
+🌻 [Check self training code here >>][1]
+
+Self training took much longer time to run, comparing with label spreading and label propagation, and unfortunately, it got the worst performance.
+
+
+#### Summary
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/try_diff_algs.ipynb
