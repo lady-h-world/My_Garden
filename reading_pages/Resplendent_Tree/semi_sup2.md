@@ -8,6 +8,7 @@ The data used in this experiment has 90% records masked, so only 10% records kep
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_90mask.png" width="899" height="251" />
 
+
 #### Label Propagation
 
 Label Propagation will propagate labels to unlabeled data by assuming closer data points have similar labels. The way it assigns labels to unlabeled data follows these steps:
@@ -43,6 +44,11 @@ The parameter values used in RBF's label spreading is a bit different, not just 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_spreading_rbf.png" width="608" height="638" />
 
 🌻 [Check label spreading code here >>][1]
+
+
+#### Self Training
+
+Self Training allows you to select an estimator supported by sklearn, such as XGBoost, LightGBM to train on the labeled data and predict on unlabeled data. Then use predictions above a threshold as pseudo labels, adding them to existing labels and do another round of train & predict. Repeat till all the data got the label or reached to the max iteration.
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/try_diff_algs.ipynb
