@@ -7,6 +7,7 @@
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/gallery_logo.png" width="249" height="250" />
 </p>
 
+* [Suppression][12]
 * [Carefree Sunflower][4]
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
@@ -52,3 +53,4 @@ The power of our sprouts is not limited to what you're seeing during the visit. 
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#model-monitoring
 [10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#explore-more-data-insights
 [11]:https://docs.google.com/presentation/d/1TIS7Lssy3nR-btYzSdKKuVhv9KgGIOy94S16obAbJQI/edit?usp=sharing
+[12]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/suppression.md
