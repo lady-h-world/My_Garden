@@ -5,11 +5,15 @@
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/suppression.png" width="300" height="410" />
 <p>&nbsp;</p>
 
-Sunflowers always give so much love to this world. When they were young, they gave all the love to the sun, following it everywhere with their smiling faces. After they have grown up, they always facing east to provide so much warmth to the bees. Then they provide lots of seeds to nurture the world.
+This is a collection from a planet called Power.
 
-However, this sunflower is different. She wants to be a leader rather than a follower and never follows the sun. Insects' visit only annoies her so she had frozen her heart, using the coldness to keep them away. She also thinks producing seeds will increase her weight and ruin her beauty, so she's seedless. Without showing care and love, she can do whatever she wants, living in her own rhythm, feeling happy.
+The ground of this planet is covered by flowers, and each flower is able to fly. The destionation of these flying flowers is the cloud in the sky. But there are limited number of clouds, much less than the number of flowers. Some flowers spent their whole life and couldn't find a cloud, some flowers found the cloud and then escalated to a higher cloud, some flowers fell from the cloud and died ugly, some flowers created new clouds......
 
-Whereever she goes, she still looks like a beautiful and friendly sunflower. But the older she grows, the harder her frozen heart is. Sometimes she feels lonely but no longer knows how to show her love... 
+This collection was a flower found its cloud. After getting this position, he got the power to control some flying flowers' flying path. He thinks himself is the sun, all these flying flowers should agree with him in the open air. He will lift the flower who always agrees with him, and will blow down the flower who disagreed with him in the open air. The nutrition to keep him healthy on this cloud is true words, real opinion in the open air. However, these flying flowers all learned to keep quiet in case to be blown down to a cave called, "Poverty". 
+
+So gradually, he started to get stinking, spreading the terrible smell like rotting flesh, dropping toxic droplet to the ground and flowers touched by the droplit will get rotten too.
+
+What's the name of this flower? "Suppression".
 
 </p>
 <p>&nbsp;</p>
