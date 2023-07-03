@@ -69,9 +69,9 @@ As we can see below, when there is more data got labeled (lower mask rate), the 
 
 🌻 [Check detailed code here >>][5]
 
-The best performance we have above is 0.74 AUC and 0.65 Recall. If all the data is labeled, we can get 0.84 AUC and 0.85 Recall. In order to get closer to all-labeled-data performance, we can optimize model parameters or try more advanced algorithms. ð Would you like to share your ideas and experiments [here][7]? 
+The best performance we have above is 0.74 AUC and 0.65 Recall. If all the data is labeled, we can get 0.84 AUC and 0.85 Recall. In order to get closer to all-labeled-data performance, we can optimize model parameters or try more advanced algorithms. ð Would you like to share your ideas and experiments [here][7]? 😉
 
-🌻 [Check all-labeled-data forecast here >>][5]
+🌻 [Check all-labeled-data forecast >>][5]
 
 
 #
