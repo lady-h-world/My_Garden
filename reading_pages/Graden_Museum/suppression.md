@@ -10,9 +10,9 @@ The ground of this planet is covered by flowers, and each flower is able to fly.
 
 This collection was a flower found its cloud. After getting this position, he got the power to control some flying flowers' flying path. He thinks himself is the sun, all these flying flowers should agree with him in the open air. He will lift the flower who always agrees with him, and will blow down the flower who disagreed with him in the open air. The nutrition to keep him healthy on this cloud is true words, real opinion in the open air. However, these flying flowers all learned to keep quiet in case to be blown down to a cave called, "Poverty". 
 
-So gradually, he started to get stinking, spreading the terrible smell like rotting flesh, dropping toxic droplet to the ground and flowers touched by the droplit will get rotten too.
+So gradually, he started to get stinking, spreading the terrible smell like rotting flesh, dropping toxic droplet to the ground and flowers touched by the droplet will get rotten too.
 
-What's the name of this flower? "Suppression".
+The name of this flower, is "Suppression".
 
 </p>
 <p>&nbsp;</p>
