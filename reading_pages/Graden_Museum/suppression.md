@@ -2,7 +2,7 @@
 
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/suppression.png" width="300" height="410" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/suppression.png" width="300" height="430" />
 
 This is a collection from a planet called Power.
 
