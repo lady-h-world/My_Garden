@@ -69,6 +69,11 @@ As we can see below, when there is more data got labeled (lower mask rate), the 
 
 🌻 [Check detailed code here >>][5]
 
+The best performance we have above is 0.74 AUC and 0.65 Recall. If all the data is labeled, we can get 0.84 AUC and 0.85 Recall. In order to get closer to all-labeled-data performance, we can optimize model parameters or try more advanced algorithms. ð Would you like to share your ideas and experiments [here][7]? 
+
+🌻 [Check all-labeled-data forecast here >>][5]
+
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
@@ -88,3 +93,5 @@ As we can see below, when there is more data got labeled (lower mask rate), the 
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/semi_sup1.md
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/semi_sup3.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/diff_mask_perct.ipynb
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/all_real_forecast.ipynb
+[7]:https://github.com/lady-h-world/My_Garden/discussions
