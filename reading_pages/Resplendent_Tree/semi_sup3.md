@@ -15,5 +15,5 @@ To main idea is to get `P(positive_label=1 | data)`, given all the data, what's 
 
 Seems that this method applies to both binary-class and multi-class problems.
 
-
 #### DIY PU Learning Solution
+

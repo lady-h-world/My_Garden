@@ -45,7 +45,7 @@ The code to mask the data with any masking rate is here:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_mask_pu.png" width="891" height="268" />
 
-When setting `mask_rate=0.95`, it means we will mask 95% data and the rest 5% data will be positive class. Therefore in the output below, you can see there's 95% "-1" and 5% "1". Among all the masked data, there are 55.4% negative class and 44.6% positive class.
+When setting `mask_rate=0.95`, it means we will mask 95% data and the rest 5% data will be positive class. Therefore, in the output below, you can see there's 95% "-1" and 5% "1". Among all the masked data, there are 55.4% negative class and 44.6% positive class.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_high_rate_pu.png" width="901" height="216" />
 
