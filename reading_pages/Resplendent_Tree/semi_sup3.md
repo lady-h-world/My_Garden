@@ -2,6 +2,10 @@
 
 Let's solve PU Learning (Positive-Unlabeled Learning), it's a problem only has a portion of positive labels and have the rest of positive class or other classes unlabeled. We will show you a DIY PU learning solution and then compare with sklearn built-in PU learning solution. Let's understand how does the solution work!
 
+The data used in this experiment has 90% records masked, so only 10% records kept the original positive labels. Among all the masked data, there are 58.50% negative and 41.50% positive records.
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_90mask_pu.png" width="902" height="232" />
+
 
 #### How to Solve PU Learning Problem
 
@@ -14,6 +18,7 @@ To main idea is to get `P(positive_label=1 | data)`, given all the data, what's 
 5. `P(positive_label=1 | data) = P(has_label=1 | data) / P(has_label=1 | positive_label=1)` gets the final output, the probability of being positive for each record.
 
 Seems that this method applies to both binary-class and multi-class problems.
+
 
 #### DIY PU Learning Solution
 
