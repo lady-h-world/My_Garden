@@ -28,7 +28,11 @@ The DIY solution follows exactly the same steps mentioned above. It outputs the 
 
 🌻 [Check DIY PU Learning solution here >>][1]
 
-The interesting part is, how are we going to evaluate the results? 
+The interesting part is, how are we going to evaluate the results? 🤔
+
+In the perfect situation, you know the labels of all the data, and can apply normal machine learning evaluation metrics, such as AUC, Average Precision, etc. In our example, if we compare predicted probability of positive class with the real labels, we can get 0.71 AUC, as shown in the notebook.
+
+However, in reality, most of the time, you really don't know all the data labels except a small portion of positive labels 🥲. To evaluate the performance, let's do the following steps.
 
 
 
