@@ -22,7 +22,14 @@ Seems that this method applies to both binary-class and multi-class problems.
 
 #### DIY PU Learning Solution
 
-The DIY solution follows exactly the same steps mentioned above.
+The DIY solution follows exactly the same steps mentioned above. It outputs the probability of positive class for each data record.
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/pu_diy_output.png" width="562" height="124" />
+
+🌻 [Check DIY PU Learning solution here >>][1]
+
+The interesting part is, how are we going to evaluate the results? 
+
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/try_diy_pu_learning.ipynb
