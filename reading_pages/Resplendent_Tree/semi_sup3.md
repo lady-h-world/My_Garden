@@ -22,6 +22,7 @@ Seems that this method applies to both binary-class and multi-class problems.
 
 #### DIY PU Learning Solution
 
+The DIY solution follows exactly the same steps mentioned above.
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/try_diy_pu_learning.ipynb
