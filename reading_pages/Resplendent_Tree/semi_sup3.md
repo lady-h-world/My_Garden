@@ -32,7 +32,23 @@ The interesting part is, how are we going to evaluate the results? 🤔
 
 In the perfect situation, you know the labels of all the data, and can apply normal machine learning evaluation metrics, such as AUC, Average Precision, etc. In our example, if we compare predicted probability of positive class with the real labels, we can get 0.71 AUC, as shown in the notebook.
 
-However, in reality, most of the time, you really don't know all the data labels except a small portion of positive labels 🥲. To evaluate the performance, let's do the following steps.
+However, in reality, most of the time, you really don't know all the data labels except a small portion of positive labels 🥲. To evaluate the performance, let's get following metrics:
+* `real_pos_perct`: real positive class percentage in the data. Normally this can be business estimated percentage, if you don't know the ground truth.
+* `pred_pos_perct`: predicted positive class percentage. It's the percentage of records with `predicted probability >= threshold`.
+* `known_recall`: the recall among known positive labels. If `predicted probability >= threshold` gets predicted positive class and `predicted probability < threshold` gets predicted negative class, comparing them with the known positive labels, we can get the recall.
+
+Here's the code of `pred_pos_perct` and `known_recall`:
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/pu_eval_code.png" width="786" height="196" />
+
+We can plot the performance with different thresholds to decide the optimal threshold. The ideal threshold has a decent `known_recall` and `pred_pos_perct` is closer to `real_pos_perct`. In this example, we can choose a threshold between 0.7 ~ 0.75. 
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/pu_eval_exp.png" width="912" height="455" />
+
+🌻 [Check DIY PU Learning evaluation code >>][1]
+
+
+#### Sklearn Built-in PU Learning Solution
 
 
 
