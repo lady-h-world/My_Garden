@@ -17,7 +17,7 @@ To main idea is to get `P(positive_label=1 | data)`, given all the data, what's 
 4. `P(has_label=1 | positive_label=1 | sample)` is the probability of "has label" given each the positive label in the training data. Averaging these values, we can get `P(has_label=1 | positive_label=1)`.
 5. `P(positive_label=1 | data) = P(has_label=1 | data) / P(has_label=1 | positive_label=1)` gets the final output, the probability of being positive for each record.
 
-Seems that this method applies to both binary-class and multi-class problems.
+This method is called as E&N ([Elkan & Noto][2]) method, and it seems that it can be applied to both binary-class and multi-class problems.
 
 
 #### DIY PU Learning Solution
@@ -50,6 +50,13 @@ We can plot the performance with different thresholds to decide the optimal thre
 
 #### Sklearn Built-in PU Learning Solution
 
+Sklean built-in PU learning supports 3 classifiers:
+* `ElkanotoPuClassifier`: is E&N method, same as above DIY solution.
+* `WeightedElkanotoPuClassifier`: also came from E&N paper, it adds weights to unlabeled data.
+* `BaggingPuClassifier`: applies a bagging SVM on positive and unlabeled data.
+
+Let's look at their usage and performance!
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/try_diy_pu_learning.ipynb
+[2]:https://cseweb.ucsd.edu/~elkan/posonly.pdf
