@@ -55,10 +55,27 @@ PULEARN is Sklean built-in PU learning library, it supports 3 classifiers:
 * `WeightedElkanotoPuClassifier`: also came from E&N paper, it adds weights to unlabeled data.
 * `BaggingPuClassifier`: applies a bagging SVM on positive and unlabeled data.
 
-Let's look at their usage and performance!
+Let's check performance by applying them on our 90% masked data!
 
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/pulearn_classifier1.png" width="977" height="624" />
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/pulearn_classifier2.png" width="1029" height="623" />
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/pulearn_classifier3.png" width="1046" height="632" />
+
+🌻 [Check Built-in PU Learning code >>][3]
+
+`ElkanotoPuClassifier` gets the best performance. If we compare its performance with above DIY solution's performance, sklearn's built-in `ElkanotoPuClassifier` has slightly better performance as it has overall higher `pred_pos_perct` and `known_recall`.
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/diy_pu_eval.png" width="907" height="458" />
+
+
+#### Performance with Different Mask Rate
+
+All the experiments above were using 90% masked data. What does the performance look like with different mask rates?
 
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/try_diy_pu_learning.ipynb
 [2]:https://cseweb.ucsd.edu/~elkan/posonly.pdf
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/try_pulearn.ipynb
