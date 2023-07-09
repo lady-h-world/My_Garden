@@ -50,12 +50,14 @@ We can plot the performance with different thresholds to decide the optimal thre
 
 #### Sklearn Built-in PU Learning Solution
 
-Sklean built-in PU learning supports 3 classifiers:
+PULEARN is Sklean built-in PU learning library, it supports 3 classifiers:
 * `ElkanotoPuClassifier`: is E&N method, same as above DIY solution.
 * `WeightedElkanotoPuClassifier`: also came from E&N paper, it adds weights to unlabeled data.
 * `BaggingPuClassifier`: applies a bagging SVM on positive and unlabeled data.
 
 Let's look at their usage and performance!
+
+
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/try_diy_pu_learning.ipynb
