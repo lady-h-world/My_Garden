@@ -65,10 +65,11 @@ Let's check performance by applying them on our 90% masked data!
 
 🌻 [Check Built-in PU Learning code >>][3]
 
-Obviously, `ElkanotoPuClassifier` gets the best performance. If we compare its performance with above DIY solution's performance, sklearn's built-in `ElkanotoPuClassifier` has slightly better performance as it has overall higher `pred_pos_perct` and `known_recall`.
+Obviously, `ElkanotoPuClassifier` gets the best performance. But the DIY solution has slightly better performance, because at the best threshold, both solutions have `pred_pos_perct` close to `real_pos_perct`, but DIY solution has higher `known_recall.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/diy_pu_eval.png" width="907" height="458" />
 
+All the experiments above were using 90% masked data. What does the performance look like with different mask rates?
 
 #
 <p align="left">
