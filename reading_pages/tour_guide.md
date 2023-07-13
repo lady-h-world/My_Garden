@@ -17,7 +17,7 @@ Here's an overview of all the stops!
 * [Garden Market][4]
   * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MLJar, Luigi, Airflow and ZenML.
 * [Replendent Tree][9]
-  * <b>Correlation</b> and <b>Semi Supervised Learning</b>.
+  * <b>Correlation</b>, <b>Unsupervised Learning</b> and <b>Semi Supervised Learning</b>.
 * [Garden Totem - Yin Yang][5]
   * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s home made methods.
 * [Crystal Ball][10]
