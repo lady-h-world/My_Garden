@@ -1,15 +1,15 @@
-### Forecast When Each Class Has Unlabeled Data
+### Forecast on Type 1 Data Mask
 
-We will start with classifying the data when each class has unlabeled data. There are multiple approaches to address this. We will:
-* compare 3 approaches under the same mask rate, and choose the best approach
-* check forecasting performance under different mask rates, using the best approach selected above
+We will start with classifying the data when unlabeled data appeared in each class. 
 
-The data used in this experiment has 90% records masked, so only 10% records kept the original labels. Among this 10%, there are 5.37% negative and 4.63% positive records. Meanwhile, in all the masked data, there are 52.50% negative and 47.50% positive records.
+We will experiment with 3 approaches on a 90% masked data. In this data, only 10% records kept the original labels, 5.37% negative and 4.63% positive. Among all the masked data, there's 52.50% negative and 47.50% positive records.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_90mask.png" width="899" height="251" />
 
+After the comparison of 3 approaches, we will choose the best approach to experiment on datasets with different mask rate.
 
-#### Label Propagation
+
+#### Approach 1: Label Propagation
 
 Label Propagation will propagate labels to unlabeled data by assuming closer data points have similar labels. The way it assigns labels to unlabeled data follows these steps:
 1. It creates a connected graph by drawing edges between data nodes. `n_neighbors` can limit the number of nodes you want to connect and therefore reduce the demanding resources from your machine, and of course, to build a fully connected graph, it will cost lots of computer resources.
@@ -31,7 +31,7 @@ Looking at the overall performance, RBF kernel works slightly better than KNN ke
 🌻 [Check label propagation code here >>][1]
 
 
-#### Label Spreading
+#### Approach 2: Label Spreading
 
 Label spreading is similar to label propagation. The main difference is, label propagation uses hard clamping, meaning, a labeled data point never changes its label. However, label spreading adopts soft clamping, it has a parameter `alpha` to control the proportion of information received from neighbors vs. the initial label. When `alpha=0`, it keeps the all original information, but when `alpha=1`, it replaces all the initial information. To learn more details, [check this article][2].
 
@@ -46,7 +46,7 @@ The parameter values used in RBF's label spreading is a bit different, not just 
 🌻 [Check label spreading code here >>][1]
 
 
-#### Self Training
+#### Approach 3: Self Training
 
 Self training allows you to select an estimator supported by sklearn, such as XGBoost, LightGBM to train on the labeled data and predict on unlabeled data. Then use predictions above a threshold as pseudo labels, adding them to existing labels and do another round of train & predict. Repeat till all the data got the label or reached to the max iteration.
 
@@ -59,7 +59,7 @@ Sklearn provides built-in `SelfTrainingClassifier`, and it can be used in this w
 Self training took much longer time to run, comparing with label spreading and label propagation, and unfortunately, it got the worst performance.
  
 
-#### Performance with Different Mask Rate
+#### Performance with Different Mask Rates
 
 Overall, label spreading with RBF kernel got better performance for this 90% masked data. So, let's apply label spreading with RBF on data with different mask rate and look at the performance.
 

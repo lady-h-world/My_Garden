@@ -38,7 +38,7 @@ Can't find any pattern to differentiate classes well, right? 😄 Cool! With thi
 * 🌻 [Learn more about UMAP dimensional reduction here >>][3]
 
 
-#### Type 2 Mask
+#### Type 2 Data Mask
 
 In the second type of masking, we will mask most the data and only keep a portion of positive data labeled. This type of problem is called "PU Learning" (Positive-Unlabeled Learning).
 
