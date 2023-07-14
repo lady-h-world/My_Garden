@@ -1,6 +1,6 @@
-### Forecast on PU Learning
+### Forecast on Type 2 Data Mask
 
-Let's solve PU Learning (Positive-Unlabeled Learning), it's a problem only has a portion of positive labels and have the rest of positive class or other classes unlabeled. We will show you a DIY PU learning solution and then compare with sklearn built-in PU learning solution. Let's understand how does the solution work!
+Now let's solve PU Learning (Positive-Unlabeled Learning) problem, it only has a portion of positive labels and the rest of data is unlabeled. We will show you a DIY PU learning solution and then compare with sklearn built-in PU learning solution.
 
 The data used in this experiment has 90% records masked, so only 10% records kept the original positive labels. Among all the masked data, there are 58.50% negative and 41.50% positive records.
 
