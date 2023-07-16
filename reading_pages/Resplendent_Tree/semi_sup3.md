@@ -64,7 +64,7 @@ Let's check performance by applying them on our 90% masked data!
 
 🌻 [Check Built-in PU Learning code >>][3]
 
-Obviously, `ElkanotoPuClassifier` gets the best performance. But the DIY solution has slightly better performance, because at the best threshold, where`pred_pos_perct` intersects with `real_pos_perct`, DIY solution has higher `known_recall.
+Obviously, `ElkanotoPuClassifier` gets the best performance. But the DIY solution has slightly better performance, because at the best threshold where`pred_pos_perct` intersects with `real_pos_perct`, DIY solution has higher `known_recall`.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/diy_pu_eval_0.9.png" width="906" height="459" />
 
