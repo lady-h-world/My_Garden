@@ -2,7 +2,7 @@
 
 ANOVA (Analysis of Variance) analyzes the difference among means. Its null hypothesis is, there is no difference among means.
 
-When checking the correlation between a numerical variable and a categorical variable, ANOVA calculates the numerical variable's mean of each categorical value, then apply `f_oneway` test on the equality of these means. If the output p value is lower than the threshold (namely, significant level, often choose 0.05), then null hypothesis got rejected, so there's a difference among means, which means the categorical variable has correlation with the numerical variable. [Check how to perform ANOVA by hand][1].
+When checking the correlation between a numerical variable and a categorical variable, ANOVA calculates the numerical variable's average for each categorical value, then apply `f_oneway` test on the equality of these averages. If the output p value is lower than the threshold (namely, significant level, often choose 0.05), then null hypothesis got rejected, so there's a difference among the averages, which means the categorical variable has correlation with the numerical variable. [Check how to perform ANOVA by hand][1].
 
 The code below shows how to apply ANOVA to assess the correlation between a categorical variable and a numerical variable.
 
