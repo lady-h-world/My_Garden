@@ -1,6 +1,6 @@
 ### Finding Optimal K
 
-There are many online data science tutorials in your world, how do you often use them? These tutorials do create lots of inspirations but Lady H. never fully trust them, so when she found something interesting, she will dive deeper into the theories behind and validate with more experiments. 
+There are many online data science tutorials in your world, how do you often use them? These tutorials do create lots of inspirations but Lady H. never fully trust them, so when she found something interesting, she will dive deeper into the theories and validate with more experiments. 
 
 The idea of this experiment started from an article called ["Are You Still Using the Elbow Method?"][1]. In this article, the author compared several k-estimation algorithms with 5 datasets containing clusters ranging from 2 to 25. The visualization is very persuasive, and he concluded that elbow method, a popular k-estimation algorithm performed the worst. The datasets in this article are all well separated blobs, therefore Lady H. thought, what if the datasets are more complicated, how would these algorithms perform?
 
@@ -9,7 +9,7 @@ Before looking at Lady H.'s experiments, let's understand how does each k-estima
 
 #### Elbow Method
 
-Elbow method checks WCSS (Within-Cluster Sum of Square), the sum of the squared distance between data points in a cluster and the cluster centroid. We often choose the k at the elbow of its plot, meaning WCSS dropped most significantly at that point. We don't choose larger k with even smaller WCSS value is because that will create more clusters, which may not be necessary. 
+Elbow method checks WCSS (Within-Cluster Sum of Square), the sum of the squared distance between data points in a cluster and the cluster centroid. So smaller WCSS indicates the data points in clusters are closer together. We often choose the k at the elbow of its plot, meaning WCSS dropped most significantly at that point. We don't choose larger k with even smaller WCSS value is because that will create more clusters, which may not be necessary. 
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/plot_has_elbow.png" width="683" height="458" />
 
@@ -20,9 +20,9 @@ As we can see, elbow method doesn't measure between-cluster performance. Meanwhi
 
 #### Calinski Harabasz Index
 
-Calinski Harabasz Index is also known as Variance Ratio Criterion. `Calinski Harabasz Index = sum(between_cluster dispersion) / sum(within_cluster dispersion)`, dispersion is the sum of squared distances. Higher value indicates better clustering, since that requires larger between-cluster variance and smaller within-cluster variance.
+Calinski Harabasz Index is also known as Variance Ratio Criterion. `Calinski Harabasz Index = sum(between_cluster dispersion) / sum(within_cluster dispersion)`, dispersion is the sum of squared distances. Higher Calinski Harabasz Index indicates better clustering, since that requires larger between-cluster variance and smaller within-cluster variance.
 
-Calinski Harabasz Index is fast to compute. It tends to have better k estimation on convexed, dense and well separated clusters. 
+This index is fast to compute. It tends to have better k estimation on convexed, dense and well separated clusters. 
 
 Do you know what does "convex" mean to clusters?
 <p align="left">
@@ -34,7 +34,7 @@ Do you know what does "convex" mean to clusters?
 
 #### Davies-Bouldin Index
 
-DBI (Davies-Bouldin Index) measures the average similarity between each cluster and its most similar cluster. Calculating the similarity uses the ratio of the within-cluster distance and the between-cluster distance. Therefore, when there's smaller within-cluster distance and larger between-cluster distance, DBI is lower, indicating a better clustering result.
+DBI (Davies-Bouldin Index) measures the average similarity between each cluster and its most similar cluster. Calculating the similarity uses the ratio of the within-cluster distance and the between-cluster distance. When there's smaller within-cluster distance and larger between-cluster distance, DBI is lower, indicating a better clustering result.
 
 DBI is easy to calculate and interpret. However, it only considers the pairwise distances between cluster centroids and cluster members, the score can be sensitive to outliers, and ignored the data distribution or structure (such as clusters within a cluster, or non-linear relationship, etc.). It also makes false assumption that clusters share the same density and size, which is not true in many real world scenarios.
 
@@ -48,7 +48,7 @@ Silhouette Coefficient is a measure of how similar an object is to its own clust
 
 #### BIC
 
-BIC (Bayesian Information Criterion) is often used in model selection, based on the maximum likelihood of model against parameters. In the case of clustering, BIC is trying to balance the maximum likelihood of model against `k`. At the same time, BIC adds penality to relief overfitting. Lower BIC score is better. 
+BIC (Bayesian Information Criterion) is often used in model selection, based on the maximum likelihood of model against parameters. In the case of clustering, BIC is trying to balance the maximum likelihood of model against `k`. At the same time, BIC adds penality to reduce overfitting. Lower BIC score is better. 
 
 
 #### Estimated K Comparison
@@ -63,20 +63,20 @@ Here's the comparison code:
 
 🌻 [Check detailed implementation of each k-estimation algorithm here >>][3]
 
-Let's take a look at the k-estimation results. Is elbow method really the worst? Obviously not! The line closer to the grey diagonal has k-estimator closer to the ground truth. Elbow method has obvious better performance than other algorithms.
+Let's take a look at the k-estimation results. Is elbow method really the worst? Obviously not! In the plot below, the line closer to the grey diagonal has k-estimator closer to the ground truth. So, elbow method has obviously better performance than other algorithms.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/k_estimate_comparison.png" width="760" height="660" />
 
 🌻 [Check all the code here >>][3]
 
-If we review this tutorial ["Are You Still Using the Elbow Method?"][1], all of its data have well separated blobs and each blob is a convex cluster, but such pleasant datasets are hard to find the real world.
+If we review this tutorial ["Are You Still Using the Elbow Method?"][1], all of its data have well separated blobs and each blob is a convex cluster, but such pleasant datasets are hard to find in the real world.
 
 So what should you do in the future when estimating k for clustering problem? Lady H. suggests:
   * Elbow method is still a simple choice to start with. 
   * If you can code with Language R, Lady H. has experimented with 4 methods, one of them applies 30 k-estimation algorithms and returns the most voted k.  
     * 🌻 [See R code here >>][4]
     * Similarly, in python, you can apply multiple k-estimation algorithms and use the most voted k.
-  * You can also consider other clustering algorithms, cuz the problem might be on k-means.
+  * You can also consider other clustering algorithms rather than k-means.
 
 
 #

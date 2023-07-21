@@ -5,7 +5,7 @@ As most of you know, clustering is an unsupervised machine learning technique, i
 
 ### About the Data
 
-So far, all the data you have seen were delivered by [Crystal Ball][1] through searching in the universe 😉. It can also generate data from its own to mimic real world scenarios, and we call this process as "data simulation". With data simulation, we can create data scenarios we want. The clustering data here is simulated data.
+So far, all the data you have seen were delivered by [Crystal Ball][1] by searching through the universe 😉. It can also generate data on its own, to mimic real world scenarios, and we call this process as "data simulation". The clustering data here is simulated data.
 
 See the code below, we can create clusters in the shape of circles, moons and blobs.
 
@@ -13,7 +13,7 @@ See the code below, we can create clusters in the shape of circles, moons and bl
 
 🌻 [Check clusters simulation code here >>][2]
 
-Now let's see different clusters Lady H. simulated. In the 3rd, 4th, 6th plots, clusters share similar standard deviation and they are more separated from each other, these are easier clustering problems. Adding more challenges, clusters in 5th plot are more mixed together. The most tricky clusters are in 1st and 2nd plots, the circles and the moons, even though from the plot, we can see clear separation between clusters, they are more complex for clustering algorithms to handle.
+Now let's see different clusters Lady H. simulated. In the 3rd, 4th, 6th plots, clusters share similar standard deviation (`cluster_std`), so they are more separated from each other, therefore these are easier clustering problems. To add more challenges, clusters in 5th plot are more mixed together. The most tricky clusters are in 1st and 2nd plots, the circles and the moons, even though from the plot, we can see clear separation between clusters, they are more complex for clustering algorithms to handle.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_clusters.png" width="1260" height="853" />
 
