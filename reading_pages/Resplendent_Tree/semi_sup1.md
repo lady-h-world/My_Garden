@@ -18,7 +18,7 @@ To mimic these 2 scenarios in real world, we can mask the data.
 
 #### Type 1 Data Mask
 
-In the first type of masking, we mask some data in both classes as unlabeled, and allow flexible settings on `mask_rate`.
+In the first type of masking, we mask some data in both classes as unlabeled, and allow flexible setting on `mask_rate`.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_type1_mask.png" width="765" height="111" />
 
@@ -26,7 +26,7 @@ The original labeled data still keep their 0 or 1 labels, and the unlabeled data
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_splittraintest_mask1.png" width="820" height="512" />
 
-Before any forecasting work, we can plot the data into 2D or 3D space to see how does the data distribute, in order to get a sense of how challenging the problem is. To do this, we can apply UMAP dimensional reduction to project the dataset into 2-dimensional space, coloring the data point based on their masks and real labels ("0False" means masked negative class, "0True" means original negative class, "1False" means masked positive class, "1True" means original positive class), let's look at the plot of training data:
+Before any forecasting work, we can plot the data into 2D or 3D space to see how does the data distribute, in order to get a sense of how challenging the problem is. To do this, we can apply UMAP dimensional reduction to project the dataset into a 2-dimensional space, coloring the data point based on their masks and real labels ("0False" means masked negative class, "0True" means original negative class, "1False" means masked positive class, "1True" means original positive class), let's look at the plot of training data:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/train_umap.png" width="1377" height="313" />
 
