@@ -7,24 +7,26 @@ Semi-supervised learning is! It's trying to solve problems with a combination of
 
 ### About the Data
 
-The raw data is the same as the [source data we used in correlation][1]. In real world, 2 types of scenario often appear:
+The raw data is the same as the [source data we used in correlation][1]. It has 2 classes and all the records are labeled.
+
+In real world, 2 types of scenario could happen:
 1. Each class has labeled and unlabeled data.
 2. Only 1 class is partially labeled and all the other data is unlabeled.
 
-To mimic the partially labeled data in real world, we need to mask the data, and our original data has 2 classes.
+To mimic these 2 scenarios in real world, we can mask the data.
 
 
 #### Type 1 Data Mask
 
-In the first type of masking, we mask some data in both classes as unlabeled, and allow flexible settings on mask rate.
+In the first type of masking, we mask some data in both classes as unlabeled, and allow flexible settings on `mask_rate`.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_type1_mask.png" width="765" height="111" />
 
-The original labeled data still keep their 0 or 1 labels, and the unlabeled data will be marked as -1. If we apply stratified split to get train & test data, the percentage of each data label in training data stays the same in testing data. In the example below, we have masked 95% data:
+The original labeled data still keep their 0 or 1 labels, and the unlabeled data will be marked as -1. We apply stratified split to get train & test data, so that the percentage of each data label in training data stays the same in testing data. In the example below, we have masked 95% data:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_splittraintest_mask1.png" width="820" height="512" />
 
-If we apply UMAP dimensional reduction to project the dataset into 2 dimensions, coloring the data point based on their masks and real labels ("0False" means masked negative class, "0True" means original negative class, "1False" means masked positive class, "1True" means original positive class), let's look at the plot of training data:
+Before any forecasting work, we can plot the data into 2D or 3D space to see how does the data distribute, in order to get a sense of how challenging the problem is. To do this, we can apply UMAP dimensional reduction to project the dataset into 2-dimensional space, coloring the data point based on their masks and real labels ("0False" means masked negative class, "0True" means original negative class, "1False" means masked positive class, "1True" means original positive class), let's look at the plot of training data:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/train_umap.png" width="1377" height="313" />
 
@@ -32,7 +34,7 @@ and the plot of testing data:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/test_umap.png" width="1380" height="309" />
 
-Can't find any pattern to differentiate classes well, right? 😄 Cool! With this type of data, we will try to classify all the masked data.
+Ha, can't find any pattern to differentiate classes well, right? 😅 Cool! With this data, we will try to classify all the masked data!
 
 * 🌻 [Check type 1 data mask code here >>][2]
 * 🌻 [Learn more about UMAP dimensional reduction here >>][3]
@@ -40,7 +42,7 @@ Can't find any pattern to differentiate classes well, right? 😄 Cool! With thi
 
 #### Type 2 Data Mask
 
-In the second type of masking, we will mask most the data and only keep a portion of positive data labeled. This type of problem is called "PU Learning" (Positive-Unlabeled Learning).
+In the second type of masking, we will mask most of the data and only keep a portion of positive data labeled. This type of problem is called "PU Learning" (Positive-Unlabeled Learning).
 
 The code to mask the data with configurable masking rate is here:
 
@@ -50,13 +52,13 @@ When setting `mask_rate=0.95`, it means we will mask 95% data and the rest 5% da
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_high_rate_pu.png" width="901" height="216" />
 
-When setting `mask_rate=0.3`, it meant to have 70% positive class remain labeled, but because all the positive data only occupies 47.4% population, in this case, we will only get 47.4% labeled data, and all the negative data will be unlabeled.
+When setting `mask_rate=0.3`, it meant to have 70% positive class remain labeled as positive, but because all the positive data only occupies 47.4% population, in this case, we will only get 47.4% labeled data, and all the negative data will be unlabeled.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_low_rate_pu.png" width="896" height="217" />
 
 🌻 [Check type 2 mask code here >>][2]
 
-After masking the data, let's forecast the unlabeled data!
+Now let's see how to forecast these unlabeled data!
 
 #
 <p align="left">
