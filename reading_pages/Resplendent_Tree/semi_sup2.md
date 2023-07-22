@@ -1,6 +1,6 @@
 ### Forecast on Type 1 Data Mask
 
-We will start with classifying the data when unlabeled data appeared in each class. 
+We will start with classifying the data when unlabeled data appears in each class. 
 
 We will experiment with 3 approaches on a 90% masked data. In this data, only 10% records kept the original labels, 5.37% negative and 4.63% positive. Among all the masked data, there're 52.50% negative and 47.50% positive records.
 
@@ -33,13 +33,13 @@ The performance above is quite similar, if we consider AUC as the main metric, R
 
 #### Approach 2: Label Spreading
 
-Label spreading is similar to label propagation. The main difference is, label propagation uses hard clamping, meaning, a labeled data point never changes its label. However, label spreading adopts soft clamping, it has a parameter `alpha` to control the proportion of information received from neighbors vs. the initial label. When `alpha=0`, it keeps all the original information, but when `alpha=1`, it replaces all the initial information. To learn more details, [check this article][2].
+Label spreading is similar to label propagation. The main difference is, label propagation uses hard clamping, meaning, a labeled data point never changes its label. However, label spreading adopts soft clamping, it has a parameter `alpha` to control the proportion of information received from neighbors vs. from the initial label. When `alpha=0`, it keeps all the original information, but when `alpha=1`, it replaces all the initial information. To learn more details, [check this article][2].
 
 The supported kernels in label spreading are "knn" and "rbf" too. Let's apply label spreading with KNN on our 90% masked data first:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_lspeading_knn.png" width="646" height="704" />
 
-The parameter values used in RBF's label spreading is a bit different, not just adding `gamma` required by RBF, but also adjusted `alpha=0.5` to default value `alpha=0.2` and increased `n_neighbors=7` to `n_neighbors=20`, so that we can improve the performance a bit.
+The parameter values used in RBF's label spreading is a bit different, not just adding `gamma` required by RBF, but also adjusted `alpha=0.5` to default value `alpha=0.2` and increased `n_neighbors=7` to `n_neighbors=20`, so that the performance won't look too bad.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_spreading_rbf.png" width="608" height="638" />
 
@@ -50,7 +50,7 @@ Still got similar performance, and RBF kernel has slightly better AUC.
 
 #### Approach 3: Self Training
 
-Self training allows you to select an estimator supported by sklearn, such as XGBoost, LightGBM to train on the labeled data and predict on unlabeled data. Then use predictions above a threshold as pseudo labels, adding them to existing labels and do another round of train & predict. Repeat till all the data got the label or reached to the max iteration.
+Self training allows you to select an estimator supported by sklearn, such as XGBoost, LightGBM to train on the labeled data and predict on unlabeled data. Then use predictions as pseudo labels, adding them to existing labels and do another round of train & predict. Repeat till all the data got the label or reached to the max iteration.
 
 Sklearn provides built-in `SelfTrainingClassifier`, and it can be used in this way:
 
@@ -63,9 +63,9 @@ Comparing with label spreading and label propagation, self training took much lo
 
 #### Performance with Different Mask Rates
 
-Overall, label spreading with RBF kernel got better performance on this 90% masked data. Now, let's apply it on data with different mask rates.
+Overall, label spreading with RBF kernel got a bit better performance on our 90% masked data. Now, let's apply it on data with different mask rates.
 
-As we can see below, when there is more data got labeled (lower mask rate), the performance will get better, and when labeled data occupies more than 50%, 50% labeled data and 80% labeled data have much less performance difference.
+As we can see below, when there is more data got labeled (lower mask rate), the performance will get better. When labeled data occupies more than 50%, the performance difference becomes smaller when labeling percentage increases, for example, 50% labeled data and 80% labeled data have much less performance difference.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/ls_diff_mask.png" width="1187" height="922" />
 
