@@ -2,7 +2,7 @@
 
 
 <p>
-<img align="center" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/the_poem.png" width="477" height="632" />
+<img align="middle" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/the_poem.png" width="400" height="600" />
 </p>
 
 
