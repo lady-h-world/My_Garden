@@ -1,8 +1,8 @@
 ## The Poem
 
 
-<p>
-<img align="center" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/the_poem.png" width="477" height="588" />
+<p align="center">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/the_poem.png" width="466" height="588" />
 </p>
 
 You must have seen the Chinese poem [at the beginning of this tour][1]! "朝露珠纱润花枝， 月华蝶舞耀星辰。" Lady H. wrote it to depict the daily views in the garden. Born as a Chinese, it is natural for her to illustrate the beautiful scenery with beautiful Chinese characters.
