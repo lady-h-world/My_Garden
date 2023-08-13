@@ -3,7 +3,7 @@
 
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/empty_diary_34.png" width="300" height="430" />
-&nbsp;&nbsp;
+&nbsp;
 
 This diary used to sit in the rose garden, whenever something gave Lady H. a headache, she wrote it down here to find peace. This is a book recorded stories made her angry, regret or sad. But started from page 34, it's all blank.
 
