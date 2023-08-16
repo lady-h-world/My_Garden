@@ -51,8 +51,9 @@ And fun stories shared by <b>Lady H.</b>!
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
+
 ## Keep in Touch
-After visiting our garden, if you have any questions, new ideas or suggestions, feel free to drop messages in [our discussion forum][2]!
+After the visit, [our weaponry] opens to you all the time so that you can keep up with new superpower all the time! And if you have any questions, new ideas or suggestions, feel free to drop messages in [our discussion forum][2]!
 
 To ask for future collaboration opportunities, drop messages [here][7]!
 
@@ -72,3 +73,4 @@ Lady H.'s properties all have their intelligence and destructive superpower, bei
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/rainbow_moss.md
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
 [10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/about_crystal_ball.md
+[11]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/garden_museum.md#weaponry
