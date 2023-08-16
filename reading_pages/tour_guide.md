@@ -53,7 +53,7 @@ And fun stories shared by <b>Lady H.</b>!
 
 
 ## Keep in Touch
-After the visit, [our weaponry] opens to you all the time so that you can keep up with new superpower all the time! And if you have any questions, new ideas or suggestions, feel free to drop messages in [our discussion forum][2]!
+After the visit, [our weaponry][11] opens to you all the time so that you can keep up with new superpower all the time! And if you have any questions, new ideas or suggestions, feel free to drop messages in [our discussion forum][2]!
 
 To ask for future collaboration opportunities, drop messages [here][7]!
 
