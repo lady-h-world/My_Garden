@@ -13,6 +13,7 @@
 ### Hyperparameter Tuning (HPO)
 * [Ray Tune][4]
   * An HPO tool built upon Ray project to speed up HPO work, and has integrated many popular libraries, such as Optuna, FLAML, Keras, Scikit-learn, XgBoost, etc.
+  * Ray is famous for its ability of scaling up AI applications, however when using Ray-Tune, it takes long time to load its final output, and if you run it on Windows, might get [this type of error][8].
 
 ### Model Monitoring
 * [Predict MAE or MSE of Regression Model][3]
@@ -25,3 +26,4 @@
 [5]:https://github.com/8080labs/ppscore
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts6.md
 [7]:https://github.com/8080labs/ppscore
+[8]:https://stackoverflow.com/questions/77101618/ray-tune-fit-function-file-not-found-on-windows
