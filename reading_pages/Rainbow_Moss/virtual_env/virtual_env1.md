@@ -37,7 +37,7 @@ This method helps create python virtual environments regardless of your operatin
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm3.png" width="822" height="232" />
 </p>
 
-6. Go to `Preferences` or `Settings` --> `Tools` --> `Terminal`, fill in `Shell path` with `powershell.exe -ExecutionPolicy ByPass -NoExit -Command "& '[Your Anaconda Location]\anaconda3\shell\condabin\conda-hook.ps1'`, remember to change the anaconda path here. This settings will make sure your PyCharm terminal shares the same virtual environment as your project. If you will set up multiple conda virtual environments, this settings is only needed once ☝️.
+6. Go to `Preferences` or `Settings` --> `Tools` --> `Terminal`, fill in `Shell path` with `powershell.exe -ExecutionPolicy ByPass -NoExit -Command "& '[Your Anaconda Location]\anaconda3\shell\condabin\conda-hook.ps1'`, remember to change the anaconda path here. This settings will make sure your PyCharm terminal shares the same virtual environment as your project. If you will set up multiple conda virtual environments, this settings is <b>only needed once</b> ☝️.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm5.0.png" width="975" height="393" />
