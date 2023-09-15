@@ -55,6 +55,9 @@ This method helps create python virtual environments regardless of your operatin
 
 To list all the virtual environments you have created, type `conda env list` through PyCharm terminal.
 
+The created virtual environment might have some python libraries installed by default. Sometimes you want to remove all these exisiting libraries, to do this run `pip freeze >> requirements.txt` to dump these library names in "requirements.txt" file, then run `pip uninstall -r requirements.txt -y` to remove them all.
+
+
 ### How to use Created Virtual Environments on Jupyter
 
 You might also want to use the created virtual environment in your Jupyter Lab or Jupyter Notebook. Here's how:
