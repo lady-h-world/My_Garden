@@ -93,6 +93,10 @@ If you want to change the kernel of an existing noteook, click the top right ker
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_jupyter4.png" width="300" height="312" />
 </p>
 
+
+### How to Delete Python Virtual Environments
+* 
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
