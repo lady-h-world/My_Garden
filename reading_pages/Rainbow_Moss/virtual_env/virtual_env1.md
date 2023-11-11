@@ -79,8 +79,6 @@ You might also want to use the created virtual environment in your Jupyter Lab o
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_jupyter.png" width="696" height="112" />
 </p>
 
-To remove a certain kernel, you can type `jupyter kernelspec uninstall [kernel_name]` (update `[kernel_name]` with the kernel name you want to remove).
-
 4. Now go to your Jupyer Lab or Jupyter Notebook, and you can choose the kernel to launch a new notebook:
 
 <p align="left">
@@ -95,7 +93,15 @@ If you want to change the kernel of an existing noteook, click the top right ker
 
 
 ### How to Delete Python Virtual Environments
-* 
+1. Open PyCharm, go to `Preferences` or `Settings` --> `Project` --> `Python Interpreter`, find the little downward triangle on the right, and click `Show All...`
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm1.png" width="973" height="255" />
+</p>
+
+2. Select the virtual environment you want to remove and click `-` button. This will remove the interpreter shown in PyCharm.
+3. Type `conda env list` to find path of all the virtual environments, then type `rm -r {env_path}` (change `env_path` for your use case). This will remove the virtual environment installed.
+4. If you had added ipython kernel for this virtual environment, in order to remove it, you can type `jupyter kernelspec uninstall [kernel_name]` (change `[kernel_name]` with the kernel name you want to remove).
 
 #
 <p align="left">
