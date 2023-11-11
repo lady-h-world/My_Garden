@@ -62,6 +62,7 @@ The created virtual environment might have some python libraries installed by de
 
 You might also want to use the created virtual environment in your Jupyter Lab or Jupyter Notebook. Here's how:
 
+0. If you don't have jupyter lab, install it by typing `pip install jupyterlab`.
 1. In the PyCharm terminal, under your virtual environment, type `pip install ipykernel`. This step is only needed once for each virtual environment.
 2. Type `python -m ipykernel install --user --name [your virtual env name] --display-name "[your virtual env name]"` to add the virtual environment's kernel into Jupyter, (update `[your virtual env name]` with the kernel name you want) like this:
 
