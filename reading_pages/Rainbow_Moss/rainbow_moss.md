@@ -21,11 +21,13 @@ Even though each flower is too tiny to be seen through naked eyes, they still pr
 <p>&nbsp;</p>
 
 
-## Data Science Environments
+## Sprouts Collection Time!
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
 
 Every data science environment is like a rainbow moss flower, smaller size but independent and complete. 
-
-<p align="center">🌱 <b>Sprouts Collection Time!</b> 🌱</p>
 
 🌱 [Python Virtual Environment Setup >>][2]
 
