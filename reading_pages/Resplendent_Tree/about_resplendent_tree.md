@@ -21,29 +21,24 @@ Lady H. told us, in the outside world, human beings have different skin colors, 
 <p>&nbsp;</p>
 
 
-## Correlation & Clustering
+## Sprouts Collection Time!
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
 
 So what's the sprout power you can collect here?
 
-<p align="center">🌱 <b>Sprouts Collection Time!</b> 🌱</p>
+🌱 The connections between flowers on Resplendent Tree shows the power of [correlation >>][1].
 
-🌱 The connections between flowers on Resplendent Tree shows the power of [correlation][1].
+🌱 The behaviour of same breed gathering closer is the power of clustering. [How do you often find the optimal number of clusters? >>][4]
 
-🌱 The behaviour of same breed gathering closer is the power of clustering. [How do you often find the optimal number of clusters?][4]
-
-🌱 Besides clustering, want to see more power of [semi-supervised learning?][2]
+🌱 Besides clustering, want to see more power of [semi-supervised learning? >>][2]
 
 Let's go and collect the sprouts now!
 
 
 #
-
-<p align="left">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
-</p>
-
-[Time to collect sprouts! >>][1]
 
 <p align="right">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
