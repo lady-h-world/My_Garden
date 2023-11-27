@@ -41,7 +41,8 @@ The power of our sprouts is not limited to what you're seeing during the visit. 
 * [Lady H.'s another presentation of HPO][2] (2022 Jan.)
 * [Lady H.'s presentation about AutoML][5] (2022 Oct.)
 * [Lady H.'s presentation about Time Series][6] (2022 Nov.)
-* [Lady H.'s presentation on Optimization & Marriage ;)][11] (2023 Jul.)
+* [Lady H.'s presentation on Optimization & Marriage 😉][11] (2023 Jul.)
+* [Lady H.'s presentation on Generating Synthetic Data with Tablet GANs][15] (2023 Dec.)
 
 
 [1]:https://docs.google.com/presentation/d/16QCJ2eOONwY1fxFDHwFenr4truFf1pd3KOMh4V6BVgM/edit?usp=sharing
@@ -58,3 +59,4 @@ The power of our sprouts is not limited to what you're seeing during the visit. 
 [12]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/suppression.md
 [13]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/the_poem.md
 [14]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/empty_diary_34.md
+[15]:https://docs.google.com/presentation/d/1c8DyIW3z53EMpZBNPc7cuGkk97HICOgmDp6P5_RVRJw/edit?usp=sharing
