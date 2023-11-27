@@ -5,7 +5,7 @@
 #
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/my_secret_guest.png" width="320" height="450" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/my_secret_guest.png" width="350" height="500" />
 
 Lady H. travels a lot around the universe. She has her own spaceship and had been traveling to many galaxies. Wherever she goes, she will explore something unique in the local. There will be hardship in a trip, but also surprising gifts awaiting for her.
 
