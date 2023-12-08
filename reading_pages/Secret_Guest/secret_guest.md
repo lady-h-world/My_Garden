@@ -7,10 +7,13 @@
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/my_secret_guest.png" width="350" height="500" />
 
-On the 10th night of every month, he comes to the garden, that magnetic presence is always accompanied by soft fluttering of delicate wings. Butterflies, dancing around him in a graceful choreography. Their wings sparkled with golden colors, adding a layer of enchantment to the scene. Each step he takes stirs the air, releasing the sweet fragrance of the blooming flowers that responded to his presence.
+Nearly every night, he comes to the garden, his magnetic presence always accompanied by the soft fluttering of delicate wings. Butterflies dance around him in a graceful choreography, their wings sparkling with golden hues, adding an extra layer of enchantment to the scene. Each step he takes stirs the air, releasing the sweet fragrance of the blooming flowers that responded to his presence. We never glimpsed his true appearance as he constantly alters his looks. All we know is that his name is Hanashiro, the proprietor of a planet, and he happens to be Lady H.'s closest companion.
 
-He's Lady H.'s best friend, we only know his name is Hanashiro and never saw his real look since he often changes appearance.
+4 years ago, this handsome planet owner fell victim to a mysterious disease that none of the doctors of that planet could cure. Desperate for a solution, they sought help from Lady H., having heard that the blue flowers on our [Resplendent Tree][1] had the power to cure all kinds of diseases. Lady H. brought the medicine there and cured him in 10 days. After awakening, numerous stories unfolded, solidifying their bond into a profound friendship. When Lady H. embarks on new adventures, Hanashiro often accompanies her, protecting and sharing all the ups and downs of her journey.
 
 </p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
+
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
