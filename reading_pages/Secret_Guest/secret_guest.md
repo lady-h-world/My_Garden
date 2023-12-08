@@ -5,7 +5,7 @@
 #
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/my_secret_guest.png" width="350" height="560" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/my_secret_guest.png" width="350" height="520" />
 
 Nearly every night, he comes to the garden, his magnetic presence always accompanied by the soft fluttering of delicate wings. Butterflies, dancing around him in a graceful choreography, their wings sparkling with golden hues, adding an extra layer of enchantment to the scene. Each step he takes stirs the air, releasing the sweet fragrance of the blooming flowers that responded to his presence. We never glimpsed his true appearance as he constantly alters his looks. All we know is that his name is Hanashiro, the proprietor of a planet, and he happens to be Lady H.'s closest companion.
 
