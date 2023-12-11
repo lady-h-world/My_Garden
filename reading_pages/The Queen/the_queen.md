@@ -9,7 +9,7 @@
 
 Lady H. travels a lot around the universe. She has her own spaceship and had been traveling to many galaxies. Wherever she goes, she will explore something unique in the local. There will be hardship in a trip, but also surprising gifts awaiting for her.
 
-10 years ago, her spaceship stopped at Christmas Planet, a planet has 95% surface covered by snow all the time. She came here to try local fruits. The fruits harvesed here all have crystal color, such as crystal grapes, crystal mangos, crystal cherries, etc. The coffee and chocolate are in crystal color too as they are made by crystall coffee beans and crystal cocoa beans. All taste great by the way!
+10 years ago, her spaceship stopped at Planet Sapphire, a planet has 95% surface covered by snow all the time. She came here to try local fruits. The fruits harvesed here all have crystal color, such as crystal grapes, crystal mangos, crystal cherries, etc. The coffee and chocolate are in crystal color too as they are made by crystall coffee beans and crystal cocoa beans. All taste great by the way!
 
 However, after Lady H.'s spaceship got here, lots of her friends had fever for days, and the medicine they brought didn't work at all. So Lady H. started to look for some help locally. The local people guided her to visit Lake Crystal, a lake covered by snow and ice (of course 🤣). In the lake, there're some blooming lotus, collecting the water around those flowers will cure the disease. Lady H. did so and her friends recovered soon.
   
