@@ -18,6 +18,8 @@ Here's an overview of all the stops!
   * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MLJar, Luigi, Airflow and ZenML.
 * [Replendent Tree][9]
   * <b>Correlation</b>, <b>Unsupervised Learning</b> and <b>Semi Supervised Learning</b>.
+* [Secret Guest][12]
+  * Have fun with <b>Math & Statistics</b>, <b>Tabular GANs</b> (Generative Adversarial Networks) and <b>Web Mining</b>. 
 * [Garden Totem - Yin Yang][5]
   * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s home made methods.
 * [Crystal Ball][10]
@@ -74,3 +76,4 @@ Lady H.'s properties all have their intelligence and destructive superpower, bei
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
 [10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/about_crystal_ball.md
 [11]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/garden_museum.md#weaponry
+[12]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/secret_guest.md
