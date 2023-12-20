@@ -15,8 +15,9 @@ It was discovered by a mathematician in 1989, and later more mathematicians foun
 
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/polar_butterfly_storm.png" width="512" height="417" />
-<p> </p>
-<p> </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 And guess what's more fun! If we just change butterfly curve function from cartesian coordinate system to polar coordinate system, now you're seeing the shape same as Hanashiro's golden butterfly storm!
 
