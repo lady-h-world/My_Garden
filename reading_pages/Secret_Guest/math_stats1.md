@@ -13,4 +13,13 @@ It was discovered by a mathematician in 1989, and later more mathematicians foun
 
 </p>
 
-And guess what's more fun! Changing to its polar equation, now you're seeing the shape same as Hanashiro's golden butterfly storm!
+<p>
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/butterfly_storm_polar.png" width="456" height="426" />
+
+And guess what's more fun! If we just change butterfly curve function from cartesian coordinate system to polar coordinate system, now you're seeing the shape same as Hanashiro's golden butterfly storm!
+
+Cartesian coordinate uses (x, y) coordinate system to specify points in a plane. Polar coordinate uses distance `r` and angle `θ` to specify points. A general form of polar equation is `r = f(θ)`, which determines how does distance r depend on the angle θ. Butterfly curve's polar equation looks like:
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/butterfly_curve_formula_polar.png" width="286" height="42" />
+
+</p>
