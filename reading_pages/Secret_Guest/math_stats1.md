@@ -26,7 +26,8 @@ Cartesian coordinate uses (x, y) coordinate system to specify points in a plane.
 </p>
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/lambert_butterfly_storm.png" width="331" height="275" />
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/lambert_butterfly_storm.png" width="431" height="375" />
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
