@@ -24,3 +24,18 @@ Cartesian coordinate uses (x, y) coordinate system to specify points in a plane.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/butterfly_curve_formula_polar.png" width="286" height="42" />
 
 </p>
+
+<p>
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/lambert_butterfly_storm.png" width="531" height="475" />
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+In python code, polar coordinate is considered as a type of projection called `polar` projection. We can change to `lambert` projection to view butterfly curve from another perspective. Isn't it beautiful?
+
+🌻 [check all the code here >>][1] 
+
+</p>
+
+
+
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/math_stats/golden_butterfly.ipynb
