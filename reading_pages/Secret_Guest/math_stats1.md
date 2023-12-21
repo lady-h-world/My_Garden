@@ -1,9 +1,11 @@
 ## Have Fun with Math & Statistics
 
+### Butterfly Curve
+
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/single_butterfly.png" width="441" height="320" />
 
-Have you ever seen this side of the mathematics world where numbers don't just add up, they dance, they twirl and they even flutter! This is a butterfly brought to life by formulas, and it has a beautiful name, "butterfly curve".
+Have you ever seen this part of the mathematics world where numbers don't just add up, they dance, they twirl and they even flutter! This is a butterfly brought to life by formulas, and it has a beautiful name, "butterfly curve".
 
 The function is simple:
 
@@ -19,7 +21,7 @@ It was discovered by a mathematician in 1989, and later more mathematicians foun
 
 And guess what's more fun! If we just change butterfly curve function from cartesian coordinate system to polar coordinate system, now you're seeing the shape same as Hanashiro's golden butterfly storm!
 
-Cartesian coordinate uses (x, y) coordinate system to specify points in a plane. Polar coordinate uses distance `r` and angle `θ` to specify points. A general form of polar equation is `r = f(θ)`, which determines how does distance r depend on the angle θ. Butterfly curve's polar equation looks like:
+Cartesian coordinate uses (x, y) coordinate system to specify points in a plane, while polar coordinate uses distance `r` and angle `θ` to specify points. A general form of polar equation is `r = f(θ)`, which determines how does distance r depend on the angle θ. Butterfly curve's polar equation looks like:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/butterfly_curve_formula_polar.png" width="286" height="42" />
 
@@ -37,6 +39,9 @@ In python code, polar coordinate is considered as a type of projection called `p
 🌻 [check all the code here >>][1] 
 
 </p>
+
+
+### Butterfly Dances
 
 
 
