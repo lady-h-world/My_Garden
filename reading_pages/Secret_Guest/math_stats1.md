@@ -39,9 +39,18 @@ In python code, polar coordinate is considered as a type of projection called `p
 🌻 [check all the code here >>][1] 
 
 </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 
 ### Butterfly Dances
+
+Now let's borrow some magic from distributions, to make the butterflies dance! Look!
+
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/butterfly_dances.png" width="894" height="647" />
+
+
 
 
 
