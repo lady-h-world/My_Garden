@@ -48,7 +48,7 @@ In python code, polar coordinate is considered as a type of projection called `p
 
 Now let's borrow some magic from distributions, to make the butterflies dance! Look!
 
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/butterfly_dances.png" width="894" height="647" />
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/butterfly_dance.png" width="1026" height="714" />
 
 
 
