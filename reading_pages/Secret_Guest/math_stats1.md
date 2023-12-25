@@ -57,6 +57,7 @@ To make butterfly dances come true, let's understand the differences between pdf
 The butterfly dances are plotted with cdf, intervalled cdf. The curves below plots the pdf and cdf for beta distribution and logistic distribution. The left side smooth curves are pdfs with different parameter settings and intervalled cdfs are the right side plots formed by blue stars.
 
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/draft_dances.png" width="1242" height="376" />
+<p>&nbsp;</p>
 
 With these intervalled cdf, you just need to replace the blue stars with butterflies. You can choose not to connect butterflies together, Lady H. chose to link them together so that you can see the shape of the dances clearly.
 
