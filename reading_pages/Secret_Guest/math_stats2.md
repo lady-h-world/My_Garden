@@ -1,7 +1,7 @@
 ### Umbrella White Rose
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/umbrella_white_rose.png" width="458" height="379" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/umbrella_white_rose.png" width="458" height="450" />
 
 Sometimes Lady H. landed on a planet where cameras can't be used at all, in order to visually record the amazing scenes she saw, she applies math & distributions too!
 
