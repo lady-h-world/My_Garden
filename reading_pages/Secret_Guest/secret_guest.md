@@ -34,7 +34,6 @@ Let's see, what kind of power you can gain here!
 
 Let's go and collect the sprouts now!
 
-
 #
 
 <p align="right">

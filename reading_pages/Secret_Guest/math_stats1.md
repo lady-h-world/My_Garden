@@ -21,7 +21,7 @@ It was discovered by a mathematician in 1989, and later more mathematicians foun
 
 And guess what's more fun! If we just change butterfly curve function from cartesian coordinate system to polar coordinate system, now you're seeing the shape same as Hanashiro's golden butterfly storm!
 
-Cartesian coordinate uses (x, y) coordinate system to specify points in a plane, while polar coordinate uses distance `r` and angle `θ` to specify points. A general form of polar equation is `r = f(θ)`, which determines how does distance r depend on the angle θ. Butterfly curve's polar equation looks like:
+Cartesian coordinate uses (x, y) coordinate system to specify points in a plane, while polar coordinate uses distance `r` and angle `θ` to specify points. A general form of polar equation is `r = f(θ)`, which determines how does distance r depend on the angle θ. Butterfly curve's polar equation looks as below:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/butterfly_curve_formula_polar.png" width="286" height="42" />
 
@@ -34,9 +34,9 @@ Cartesian coordinate uses (x, y) coordinate system to specify points in a plane,
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-In python code, polar coordinate is considered as a type of projection called `polar` projection. We can change to `lambert` projection to view butterfly curve from another perspective. Isn't it beautiful?
+In python code, polar coordinate is considered as a type of projection called `polar` projection. We can also change to `lambert` projection to view butterfly curve from another perspective. Isn't it beautiful?
 
-🌻 [check all the code here >>][1] 
+🌻 [Check all the code here >>][1] 
 
 </p>
 <p>&nbsp;</p>
@@ -46,7 +46,7 @@ In python code, polar coordinate is considered as a type of projection called `p
 
 ### Butterfly Dances
 
-Now let's borrow some magic from distributions, to make the butterflies dance! Look!
+Now let's make butterflies dance with the magic from distributions! Look!
 
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/butterfly_dance.png" width="1026" height="714" />
 
@@ -61,7 +61,7 @@ The butterfly dances are plotted with cdf. The curves below plots the pdf and cd
 
 With these intervalled cdf, you just need to replace the blue stars with butterflies. You can choose not to connect butterflies together, but Lady H. chose to link them together so that you can see the shape of the dances clearly.
 
-🌻 [check all the code here >>][1] 
+🌻 [Check all the code here >>][1] 
 
 
 #
