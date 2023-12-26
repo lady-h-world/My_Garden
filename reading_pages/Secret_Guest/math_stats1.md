@@ -52,14 +52,14 @@ Now let's borrow some magic from distributions, to make the butterflies dance! L
 
 The shape of "beta dance" was using beta distribution, and the shape of "logistic dance" was using logistic distribution.
 
-To make butterfly dances come true, let's understand the differences between pdf and cdf. The cdf (cumulative distribution function) is the probability that random variable values less than or equal to `x` whereas the pdf (probability density function) is a probability that a random variable will take a value exactly equal to `x`. Often times, when we plot the distribution curve, we use pdf.
+To make butterfly dances come true, let's understand the differences between pdf and cdf first. The cdf (cumulative distribution function) is the probability that random variable values less than or equal to `x` whereas the pdf (probability density function) is a probability that a random variable will take a value exactly equal to `x`. Often times, when we plot the distribution curve, we use pdf.
 
-The butterfly dances are plotted with cdf, intervalled cdf. The curves below plots the pdf and cdf for beta distribution and logistic distribution. The left side smooth curves are pdfs with different parameter settings and intervalled cdfs are the right side plots formed by blue stars.
+The butterfly dances are plotted with cdf. The curves below plots the pdf and cdf for beta distribution and logistic distribution. The left side smooth curves are pdfs with different parameter settings, and the right side blue stars form cdf curves with intervals.
 
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/draft_dances.png" width="1242" height="376" />
 <p>&nbsp;</p>
 
-With these intervalled cdf, you just need to replace the blue stars with butterflies. You can choose not to connect butterflies together, Lady H. chose to link them together so that you can see the shape of the dances clearly.
+With these intervalled cdf, you just need to replace the blue stars with butterflies. You can choose not to connect butterflies together, but Lady H. chose to link them together so that you can see the shape of the dances clearly.
 
 🌻 [check all the code here >>][1] 
 
