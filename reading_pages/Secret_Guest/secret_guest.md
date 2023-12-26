@@ -26,7 +26,7 @@ Hanashiro's golden butterflies are nurtured in our garden, the vibrant blooms an
 
 Let's see, what kind of power you can gain here!
 
-🌱 You can draw butterfly and butterfly storms with the power of [mathematics and statistic >>][2]
+🌱 You can draw butterfly and butterfly storms with the power of [mathematics and statistic >>][2].
 
 🌱 Hanashiro can change his appearance, and you can create synthetic data with the power of GANs (general adversarial networks).
 

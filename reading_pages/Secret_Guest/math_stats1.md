@@ -61,8 +61,7 @@ The butterfly dances are plotted with cdf. The curves below plots the pdf and cd
 
 With these intervalled cdf, you just need to replace the blue stars with butterflies. You can choose not to connect butterflies together, but Lady H. chose to link them together so that you can see the shape of the dances clearly.
 
-🌻 [Check all the code here >>][1] 
-
+🌻 [Check all the code here >>][1]
 
 #
 <p align="left">

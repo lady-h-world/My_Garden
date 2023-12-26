@@ -33,7 +33,7 @@ So what's the sprout power you can collect here?
 
 🌱 The behaviour of same breed gathering closer is the power of clustering. [How do you often find the optimal number of clusters? >>][4]
 
-🌱 Besides clustering, want to see more power of [semi-supervised learning? >>][2]
+🌱 Besides clustering, want to see more power of [semi-supervised learning >>][2]?
 
 Let's go and collect the sprouts now!
 
