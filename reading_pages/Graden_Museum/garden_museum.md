@@ -9,7 +9,6 @@
 
 * [The Poem][13]
 * [Suppression][12]
-* [Blank From Page 34][14]
 * [Carefree Sunflower][4]
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
@@ -58,5 +57,4 @@ The power of our sprouts is not limited to what you're seeing during the visit. 
 [11]:https://docs.google.com/presentation/d/1TIS7Lssy3nR-btYzSdKKuVhv9KgGIOy94S16obAbJQI/edit?usp=sharing
 [12]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/suppression.md
 [13]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/the_poem.md
-[14]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/empty_diary_34.md
 [15]:https://docs.google.com/presentation/d/1c8DyIW3z53EMpZBNPc7cuGkk97HICOgmDp6P5_RVRJw/edit?usp=sharing

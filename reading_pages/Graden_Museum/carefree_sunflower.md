@@ -9,7 +9,7 @@ Sunflowers always give so much love to this world. When they were young, they ga
 
 However, this sunflower is different. She wants to be a leader rather than a follower and never follows the sun. Insects' visit only annoies her so she had frozen her heart, using the coldness to keep them away. She also thinks producing seeds will increase her weight and ruin her beauty, so she's seedless. Without showing care and love, she can do whatever she wants, living in her own rhythm, feeling happy.
 
-Whereever she goes, she still looks like a beautiful and friendly sunflower. But the older she grows, the harder her frozen heart is. Sometimes she feels lonely but no longer knows how to show her love... 
+Wherever she goes, she still looks like a beautiful and friendly sunflower. But the older she grows, the harder her frozen heart is. Sometimes she feels lonely but no longer knows how to show her love... 
 
 </p>
 <p>&nbsp;</p>

@@ -3,7 +3,6 @@
 </p>
 
 
-
 ## 🚍 Main Station 🚍
 
 Starting from the main station, you have the flexibility to explore any garden stop to gather sprouts 🌱!
