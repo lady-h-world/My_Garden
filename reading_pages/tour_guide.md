@@ -52,7 +52,7 @@ And <b>Lady H.'s shikigami</b> will share fun stories along the way!
 
 
 ## Protect the Property Right ©
-It took Lady H. great efforts to build this garden, and hard work deserves respect. There are individuals who engage in unethical practices, such as stealing others' work to gain fame and money, without any sense of shame. If you found stolen properties outside of this garden, please contact us in [stolen copy right forum][3]. Together, let's protect creators' right.
+It took Lady H. great efforts to build this garden, and hard work deserves respect. There are individuals who engage in unethical practices, such as stealing others' work to gain fame and money, without any sense of shame. If you found stolen properties outside of this garden, please contact us in [stolen copy right forum][3]. Meanwhile, for any property Lady H. borrowed, she has recorded the [origins][14]. Together, let's protect creators' right!
 
 
 ## Keep in Touch
@@ -81,3 +81,4 @@ Let's keep in touch after your visit!
 [11]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/garden_museum.md#weaponry
 [12]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/secret_guest.md
 [13]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/cover/opportunities.md
+[14]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/cover/references.md
