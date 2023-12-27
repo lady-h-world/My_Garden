@@ -2,11 +2,11 @@
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/tour_guide_title.png" width="336" height="69" />
 </p>
 
-#
 
-## Main Station 🚌🚍🚊
 
-Starting from the main station, you can visit any stop in the garden to collect sprouts 🌱!
+## 🚍 Main Station 🚍
+
+Starting from the main station, you have the flexibility to explore any garden stop to gather sprouts 🌱!
 
 * [The Queen][1]
   * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning.
@@ -28,8 +28,8 @@ Starting from the main station, you can visit any stop in the garden to collect 
 <p>&nbsp;</p>
 
 
-## Friends Around
-Walking around the garden, new firends will accompany with you!
+## Your Garden Companions
+Walking around the garden, you will be accompanied by:
 
 Our warmhearted <b>Chansey Butterflies</b> will bring you with tips, general notes and guide you to the right way, <i>just follow them!</i>
 
@@ -37,14 +37,14 @@ Our warmhearted <b>Chansey Butterflies</b> will bring you with tips, general not
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/follow_us_note.png" width="431" height="97" />
 </p>
 
-🌻 The most welcoming <b>Baby Sunflowers</b> bloom everywhere and will open the gate of secrets for you, <i>just click them!</i>
+🌻 The most welcoming <b>Baby Sunflowers</b> open the gate of details, <i>just click them!</i>
 
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/crayon%20heart.png" width="200" height="200" />
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-And fun stories shared by <b>Lady H.</b>!
+And <b>Lady H.'s shikigami</b> will share fun stories along the way!
 </p>
 
 <p>&nbsp;</p>
@@ -52,24 +52,29 @@ And fun stories shared by <b>Lady H.</b>!
 <p>&nbsp;</p>
 
 
-## Keep in Touch
-After the visit, [our weaponry][11] opens to you all the time so that you can keep up with new superpower all the time! And if you have any questions, new ideas or suggestions, feel free to drop messages in [our discussion forum][2]!
+## Protect the Property Right ©
+It took Lady H. great efforts to build this garden, and hard work deserves respect. There are individuals who engage in unethical practices, such as stealing others' work to gain fame and money, without any sense of shame. If you found stolen properties outside of this garden, please contact us in [stolen copy right forum][3]. Together, let's protect creators' right.
 
-To ask for future collaboration opportunities, drop messages [here][7]!
+
+## Keep in Touch
+
+Let's keep in touch after your visit!
+
+* [Our weaponry][11] shares new technologies you didn't see in the tour, feel free to check it out!
+* [Our discussion forum][2] allows you to share ideas, ask for help and share your own work!
+
 
 <p>&nbsp;</p>
 
 
-## Safeguard the World ©
-Lady H.'s properties all have their intelligence and destructive superpower, being stolen and spread in an illegal way, will cause unpredictable consequences to the outside world. If you came across any illegal spreading of our assets, please contact us in [the illegal spreading forum][3] with screenshorts and locations. Together, let's keep the world safe.
+
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/the_queen.md
 [2]:https://github.com/lady-h-world/My_Garden/discussions
-[3]:https://github.com/lady-h-world/My_Garden/discussions/categories/illegal-spreading-found
+[3]:https://github.com/lady-h-world/My_Garden/discussions/categories/stolen-copy-right
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/garden_market.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/garden_totem.md
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/garden_museum.md
-[7]:https://github.com/lady-h-world/My_Garden/discussions/categories/let-s-collaborate
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/rainbow_moss.md
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
 [10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/about_crystal_ball.md
