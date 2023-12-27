@@ -4,11 +4,9 @@
 
 #
 
-Each collection in this garden exhibits some applied data science qualities, so do their sprouts. Traveling around this garden, you will witness a wide variety of them. No matter you are a beginner or a senior in data science, there is something fun awaits you to explore and to collect!
+## Main Station 🚌🚍🚊
 
-## Main Station 🍀
-
-Here's an overview of all the stops!
+Starting from the main station, you can visit any stop in the garden to collect sprouts 🌱!
 
 * [The Queen][1]
   * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning.
