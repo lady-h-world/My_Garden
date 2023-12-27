@@ -6,9 +6,11 @@
 <p align="left">
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/at_the_gate.png" width="580" height="366" />
 
-Lady H. loves taking adventures throughout the universe, gathering exotic creatures along her journey. Each collected creature possesses unique magical abilities that are unparalleled on Earth. All these extraordinary beings are nurtured in this garden. By exploring this enchanting sanctuary, visitors can collect sprouts imbued with magical powers derived from these creatures. Each magical power corresponds to an applied data science skill, enabling individuals to cultivate these sprouts on Earth and propagate the influence of data science.
+Lady H. loves taking adventures throughout the universe, gathering exotic creatures along her journey. Each collected creature possesses unique magical abilities that are unparalleled on Earth. All these extraordinary beings are nurtured in this garden. 
 
-Kindly bear in mind that the primary goal of this tour is to cultivate practical problem-solving skills in aspiring data scientists, fostering discussions, igniting a passion for exploration, curiosity, and dedication to the field of data science. The intention is to empower visitors to stay abreast of the latest technologies, even after the power displayed in this tour may become outdated in the future.
+By exploring this enchanting sanctuary, visitors can collect sprouts imbued with magical powers derived from these creatures. Each magical power corresponds to an applied data science skill, enabling individuals to cultivate these sprouts on Earth and propagate the influence of data science.
+
+Kindly bear in mind, the main aim of this tour is to develop practical skills, inspire curiosity, and foster a dedication to data science. The goal is to enhance problem-solving abilities, ensuring visitors stay updated with the latest technology even as displayed technologies may evolve.
 
 </p>
 
