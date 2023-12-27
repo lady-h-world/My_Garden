@@ -61,6 +61,7 @@ Let's keep in touch after your visit!
 
 * [Our weaponry][11] shares new technologies you didn't see in the tour, feel free to check it out!
 * [Our discussion forum][2] allows you to share ideas, ask for help and share your own work!
+* To find volunteering or collaboration opportunities, feel free to check [opportunities][13]!
 
 
 <p>&nbsp;</p>
@@ -79,3 +80,4 @@ Let's keep in touch after your visit!
 [10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/about_crystal_ball.md
 [11]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/garden_museum.md#weaponry
 [12]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/secret_guest.md
+[13]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/cover/opportunities.md
