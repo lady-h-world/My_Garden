@@ -14,8 +14,10 @@ To draw this scene, the method is similar to golden butterflies. You can draw a 
 </p>
 <p>&nbsp;</p>
 
-What's worth mentioning is, you might be seeing rose curve everyday when you're drinking coffee 😉. Have you ever see this in your cup before?
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/rose_curve_in_cup.png" width="484" height="256" />
+What's worth mentioning is, you might be seeing rose curve everyday when you're drinking coffee 😉, like this:
+<p>
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/rose_curve_in_cup.png" width="484" height="356" />
+</p>
 <p>&nbsp;</p>
 
 This is a special shape of rose curve called "cardioid". Besides, by changing the parameter settings, we can get different shapes of roses, for example:
