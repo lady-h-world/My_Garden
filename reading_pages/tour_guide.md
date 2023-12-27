@@ -5,10 +5,10 @@
 
 ## 🚍 Main Station 🚍
 
-Starting from the main station, you have the flexibility to explore any garden stop to gather sprouts 🌱!
+Starting from the main station, you have the flexibility to explore any stop to gather sprouts 🌱!
 
 * [The Queen][1]
-  * Latest <b>Hyperparameter Optimization</b> methods applied in classical classification & regression, as well as in deep learning.
+  * <b>Hyperparameter Optimization</b> methods applied in classical classification, regression, and deep learning.
 * [Rainbow Moss][8]
   * Flexible data science <b>environments setup</b>.
 * [Garden Market][4]
@@ -18,11 +18,11 @@ Starting from the main station, you have the flexibility to explore any garden s
 * [Secret Guest][12]
   * Have fun with <b>Math & Statistics</b>, <b>Tabular GANs</b> (Generative Adversarial Networks) and <b>Web Mining</b>. 
 * [Garden Totem - Yin Yang][5]
-  * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s home made methods.
+  * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s homemade methods.
 * [Crystal Ball][10]
   * <b>Data Collection</b>, <b>Data Simulation</b>, <b>Dimensional Reduction</b>.
 * [Garden Museum][6]
-  * Collected memories from this garden.
+  * Collected <b>memories</b> from this garden.
 
 <p>&nbsp;</p>
 
@@ -52,8 +52,9 @@ And <b>Lady H.'s shikigami</b> will share fun stories along the way!
 
 
 ## Protect the Property Right ©
-It took Lady H. great efforts to build this garden, and hard work deserves respect. There are individuals who engage in unethical practices, such as stealing others' work to gain fame and money, without any sense of shame. If you found stolen properties outside of this garden, please contact us in [stolen copy right forum][3]. Meanwhile, for any property Lady H. borrowed, she has recorded the [origins][14]. Together, let's protect creators' right!
+It took Lady H. great efforts to build this garden, and hard work deserves respect. There are individuals who engage in unethical practices, such as stealing others' work to gain fame and money, without any sense of shame. If you found stolen properties outside this garden, please contact us in [stolen copy right forum][3]. Meanwhile, for any property Lady H. borrowed, she has noted down the [origins][14]. Together, let's protect creators' right!
 
+<p>&nbsp;</p>
 
 ## Keep in Touch
 
@@ -62,9 +63,6 @@ Let's keep in touch after your visit!
 * [Our weaponry][11] shares new technologies you didn't see in the tour, feel free to check it out!
 * [Our discussion forum][2] allows you to share ideas, ask for help and share your own work!
 * To find volunteering or collaboration opportunities, feel free to check [opportunities][13]!
-
-
-<p>&nbsp;</p>
 
 
 
