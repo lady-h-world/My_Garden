@@ -26,7 +26,7 @@ PCA (Principal Component Analysis) is a popular dimensional reduction method. It
 
 Consider each principal component as a line in the cartesian coordinate system. The objective is to minimize the distances from the data points to their projections on this line, so that the spread of data projections on this line is maximized, leading to the maximization of data variance in this dimension. PC1 captures the highest proportion of data variance, followed by PC2, which captures the highest proportion of the remaining variance. This pattern continues with all subsequent principal components (PCx). This allows PCA to capture the maximum amount of variance in each dimension, sequentially reducing overall information loss.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/about_pca.png" width="1202" height="519" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/about_pca.png" width="1000" height="500" />
 
 Dimensional reduction is not only used to project data into lower dimensional plots, but also can be used to reduce the number of features used in other machine learning models, especially in cases when models suffer from the curse of dimensionality. Therefore, dimensional reduction sometimes can improve model performance.
 
