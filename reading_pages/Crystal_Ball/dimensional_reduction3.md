@@ -5,13 +5,13 @@ Similar to Isomap, t-SNE (t-Distributed Stochastic Neighbor Embedding) also has 
 2. Then t-SNE randomly maps the data into a lower dimensional space, and calculates the similarity using <b>t-distribution</b>. The reason it uses t-distribution in this step rather than Normal distribution, is because t-distribution has flatter shape with higher tails, which can help spread the data out. This step will output a similarity matrix too.
 3. Finally t-SNE will apply gradient descent to minimize KL divergence (Kullback–Leibler divergence) to make the 2nd similarity matrix close to the 1st one through an iterative approach until reaching to the max number of iterations. In each iteration, data points will move toward their closest neighbors and away from the distant ones recorded in step 1.
 
-[You can check more details here][6]
+To understand more details of t-SNE, check [here][6].
 
 To reduce our campaign data into 3 dimensions using t-SNE, the code looks like:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/code_tsne.png" width="757" height="316" />
 
-An important parameter in the above code is `perplexity`, it specifies the density of neighborhoods. Smaller value leads to more small groups and larger value leads to fewer but tightly packed groups. Normally, you can start with values between 5 and 50.
+An important parameter in the above code is `perplexity`, it specifies the density of neighborhoods. Smaller value leads to larger number of small groups and larger value leads to fewer but tightly packed groups. Normally, you can start with values between 5 and 50.
 
 The data plot looks like: 
 
@@ -24,8 +24,7 @@ The data plot looks like:
 
 LLE (Locally Linear Embedding) also projects the data into a lower dimensional space while preserving the local neighborhoods' information. 
 
-The way it works is similar to Isomap:
-1. It applies KNN to find the k nearest neighbors for every data point.
+1. Similar to Isomap, it applies KNN to find the k nearest neighbors for every data point.
 2. Then it builds a cost function to minimize the total absolute differences between each data point and their weighted neighbors. The sum of neighbors' weights is 1 for each data point, and a weight matrix will be constructed where each data point's weights are determined by minimizing the cost function.
 3. When looking for a lower dimensional space, it will try to build a similar cost functions where the data points are replaced by their lower dimensional representations. The weights kept the same as step 2, and LLE will find a lower dimension that can minimize the new cost function.
 
