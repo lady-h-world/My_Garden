@@ -23,7 +23,7 @@ Both PCA and LDA are linear methods, meaning they look for a hyperplane (line or
 Let's dive deeper to understand how does Isomap work:
 1. It applies KNN to find k nearest neighbors for every data point.
 2. Then it builds a neighborhood graph to maintain the connections between neighbours. Non neighbours are not connected.
-3. Apply mMDS (metric multidimensional scaling) to compute each data pair's shortest geodesic distance on the graph, and project to a lower dimension while maintaining the between-point distances.
+3. Apply MDS (multidimensional scaling) to compute each data pair's shortest geodesic distance on the graph, and project to a lower dimension while maintaining the between-point distances.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/about_isomap.png" width="1000" height="379" />
 
