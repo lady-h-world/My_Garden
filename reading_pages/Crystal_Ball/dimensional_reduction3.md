@@ -1,9 +1,11 @@
 ### t-SNE
 
-Similar to Isomap, t-SNE (t-Distributed Stochastic Neighbor Embedding) also has the goal to project the data into a lower dimensional space while preserving the local neighborhoods' information. But the way they achieve this goal is different, let's look deeper into t-SNE's approach:
-1. It measures the similarity of data points by placing all the points on a Normal distribution curve, and calculates the distances between the point of interest and other points. This is done for every data point, and output a matrix to record the similarity score of each data pair.
-2. Then t-SNE randomly maps the data into a lower dimensional space, and calculates the simiarity using t-distribution. The reason it uses t-distribution in this step rather than Normal distribution, is because t-distribution has flatter shape with higher tails, which can help spread the data out. This step will output a similarity matrix too.
-3. Finally t-SNE will apply gradient descent to minimize KL divergence (Kullback–Leibler divergence). Speaking in human language is to make the 2nd similarity matrix close to the 1st one through an iterative approach until reaching to the max number of iterations. In each iteration, data points will move toward their closest neighbors and away from the distant ones recorded in step 1.
+Similar to Isomap, t-SNE (t-Distributed Stochastic Neighbor Embedding) also has the goal to project the data into a lower dimensional space while preserving the local neighborhoods' information. But the way it achieves this goal is different, let's look deeper into t-SNE's approach:
+1. It measures the similarity of data points by placing all the points on a <b>Normal distribution</b> curve, and calculates the distances between the point of interest and other points. This is done for every data point, and output a <b>matrix</b> to record the similarity score of each data pair.
+2. Then t-SNE randomly maps the data into a lower dimensional space, and calculates the similarity using <b>t-distribution</b>. The reason it uses t-distribution in this step rather than Normal distribution, is because t-distribution has flatter shape with higher tails, which can help spread the data out. This step will output a similarity matrix too.
+3. Finally t-SNE will apply gradient descent to minimize KL divergence (Kullback–Leibler divergence) to make the 2nd similarity matrix close to the 1st one through an iterative approach until reaching to the max number of iterations. In each iteration, data points will move toward their closest neighbors and away from the distant ones recorded in step 1.
+
+[You can check more details here][6]
 
 To reduce our campaign data into 3 dimensions using t-SNE, the code looks like:
 
@@ -63,3 +65,4 @@ As we can see, Isomap, MDS, t-SNE and LLE are all focusing on maintaining the lo
 [3]:https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/dimensional_reduction4.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/dimensional_reduction2.md
+[6]:https://towardsdatascience.com/t-sne-machine-learning-algorithm-a-great-tool-for-dimensionality-reduction-in-python-ec01552f1a1e
