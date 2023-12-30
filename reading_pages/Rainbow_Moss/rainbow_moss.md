@@ -33,7 +33,7 @@ When engaging in various data science projects, maintaining a separate data scie
 
 🌱 [Docker Environment Setup >>][3]
 
-Also like the strength of the rainbow light, the more efforts you put into a project, the better outcome you will get, and after practicing on more and more projects, your achievements will be as splendid as rainbow. Let's collect more sprouts and prepare for your bright future!
+Similar to the intensity of rainbow light, the more effort you invest in a project, the better the outcome you'll achieve. By practicing on numerous projects, your accomplishments will shine as brilliantly as a rainbow! 😉
 
 #
 <p align="right">
