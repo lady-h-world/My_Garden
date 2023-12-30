@@ -24,15 +24,16 @@ The perfume-making process is automated, and our garden market has even develope
 ## Garden Market's Pipelines
 ### Personalized Perfume Pipeline
 
-This pipeline only produces customized perfumes for a few clients every year. Interested clients will be asked to share a story, it can be either a real story or a fictional one. If Lady H. loves the story, the client will get the personal design. After delierving the perfume, we will give the client a bank account number to let them decide how much money to pay. A billionaire may never get this perfume even if he's willing to pay a big fortune, and people with low income may still get the perfume even if only a few cents are available. The client selection all depends on Lady H.'s preference 😉
+This pipeline exclusively produces customized perfumes for a few selected clients. Interested individuals are invited to share a story, whether real or fictional. If Lady H. likes the story, the client receives a personally designed perfume for free. The selection of clients entirely relies on Lady H.'s preferences 😉. Through this approach, Lady H. can maintain her passion for perfume design without the constraints from money.
 
-In order to make a personalized perfume, we will send a specialist to collect the requirements, personality and life stories of the client, then design the tailored product that fits best to the customer.
+In order to make a personalized perfume, we will send a specialist to gather the client's preferences, personality traits, and life stories. Based on this information, we design a customized product that best suits the customer.
+
 
 ### Mass Production Pipeline
 
-While the personalized perfume pipeline only serves a small group of clients, our mass prodution pipeline is for the general population. It makes a wide variety of perfumes, catering for a broad range of public tastes. With this pipeline, each type of perfume can be produced in batches and sold to large number of clients. The manufacturing process is an end-to-end automation, from flowers and fruits harvesting, to ingredients preprocessing, to perfume making, and till products' quality check, all rely on robots. 
+While the personalized perfume pipeline exclusively caters to a selected group of clients, our mass production pipeline is designed for the general population. It produces a diverse range of perfumes to accommodate a broad spectrum of public preferences. Through this pipeline, each type of perfume can be manufactured in large batches to meet the demands. The manufacturing process is entirely automated, spanning from the harvesting of plants to ingredient preprocessing, perfume production, and concluding with product quality checks, all of which are carried out by robots.
 
-Now, are you curious what kind of super power does Garden Market's sprout have?
+Now, are you curious about the superpower possessed by the sprouts from Garden Market?
 
 #
 <p align="left">
