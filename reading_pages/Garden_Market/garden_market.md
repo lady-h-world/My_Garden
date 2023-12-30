@@ -8,15 +8,16 @@
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/garden_market.png" width="320" height="410" />
 <p>&nbsp;</p>
 
-It is not a small amount of budget to run this garden. The cost of taking care of all the treasures, the spendings on garden decoration and maintenance, the payment of all the employees, and the investment in new technologies, all cost money.
+Running this garden requires a substantial budget. Expenses include caring for the treasures, spending on garden decoration and maintenance, employee salaries, and investments in new technologies, all of which entail significant financial commitments.
 
-In order to stay financially healthy, Lady H. opened this garden market to produce perfumes made from the garden plants, and sell them to the outside world. Because of the unique fragrance, fashional design as well as the outstanding client services, "Lady H." has become a popular perfume brand outside. People from different background all feel proud of having a bottle of Lady H.'s perfume.
+To maintain financial stability, Lady H. established a market within the garden to produce perfumes crafted from our plants and sold them to the broader universe. Due to their unique fragrances, fashionable designs, and exceptional client services, "Lady H." has evolved into a renowned perfume brand. Individuals from diverse backgrounds take pride in owning a bottle of "Lady H." perfume.
 
-The process of perfume making is automated, our garden market even developed 2 manufacturing pipelines to produce products.
+The perfume-making process is automated, and our garden market has even developed two manufacturing pipelines to produce perfumes.
 
 </p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
 
 ## Garden Market's Pipelines
 ### Personalized Perfume Pipeline
