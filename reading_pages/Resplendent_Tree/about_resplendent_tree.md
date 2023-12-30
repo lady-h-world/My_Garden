@@ -7,9 +7,9 @@
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/resp_tree.png" width="330" height="470" />
 
-Have you ever seen a tree with flowers of various colors blooming simultaneously? 
+Have you ever seen a tree with various colored flowers blooming simultaneously? 
 
-Right there, near the waterfall! Do you see that vibrant tree? The surrounding butterflies enhance its radiance. That's our Resplendent Tree!
+Right there, near the waterfall! Do you see that vibrant tree? The surrounding butterflies enhanced its radiance. That's our Resplendent Tree!
 
 Each flower on this tree has precisely five petals. Lady H. used to joke, saying that if you ever find a 6-petal flower on this tree, that day must be your lucky day! The flowers come in five color variations: orange, yellow, pink, purple, and blue. Each color breed exhibits various shades, such as rose pink and light pink, dark blue and light blue, etc. Flowers from the same breed often cluster together. However, if one breed got sick, soon all the other breeds will wither too, they prosper and fade in unison.
 
