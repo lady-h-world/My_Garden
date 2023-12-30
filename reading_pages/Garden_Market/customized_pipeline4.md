@@ -3,11 +3,11 @@
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/work_late.png" width="243" height="246" /></p>
 
-Lady H.'s first full time data scientist job was in a financial fraud detection company. One of her clients was a giant bank. Every 2 months, that client would send her new data for fraud analysis. It was a December afternoon when the office was almost empty at 5 pm, most of her colleagues were on vacation or left earlier. Lady H. was planning to quickly finish the client's fraud report using her trained model, then go home.
+Lady H.'s first full-time job as a data scientist was with a financial fraud detection company where one of her major clients was a giant bank. Every two months, this client would provide her with new data for fraud analysis. One December afternoon, the office was nearly empty by 5 pm as most of her colleagues were either on vacation or had left earlier. Lady H. intended to swiftly complete the client's fraud report using her trained model and then head home.
 
-But the new data gave her a very different fraud detection rate, a rate much lower than usual. "Why this happened? It looks so strange and the client will definitely ask why. I have to investigate", Lady H. thought. Later, she figured it out, the client sent her the wrong data and caused the problem. 
+However, the new data presented a significantly different fraud detection rate, much lower than usual. "Why did this happen? It looks unusual, and the client will certainly inquire about it. I need to investigate," Lady H. thought. Eventually, she discovered that the client had sent her the wrong data, leading to the issue.
 
-This is a typical story of data drifting.
+This is just one of data drifting stories.
 
 ##### About Data Drifting
 
