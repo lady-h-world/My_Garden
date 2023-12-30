@@ -5,7 +5,7 @@
 #
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/garden_totem.png" width="290" height="400" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/garden_totem.png" width="290" height="430" />
 
 What is evolution?
 
@@ -18,6 +18,7 @@ Life is full of ups and downs. The low moments propel us to self-reflect and gle
 Similarly, our garden plants owe their uniqueness and magical powers to the process of evolution, and they continue to undergo further developments and advancements.
 
 </p>
+<p>&nbsp;</p>
 
 
 ## Data Science in Time Series
