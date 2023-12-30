@@ -9,7 +9,6 @@
 
 * [The Poem][13]
 * [Suppression][12]
-* [Carefree Sunflower][4]
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
@@ -19,7 +18,7 @@
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/sword.png" width="249" height="250" />
 </p>
 
-The power of our sprouts is not limited to what you're seeing during the visit. These plants keep evolving and showing new power, Lady H. keeps collecting  the new ones in her weaponry for future research. Would you like to explore more? 😉
+The potentials of our sprouts extends beyond what you witnessed during your visit. These plants continuously evolve, displaying new abilities. Lady H. consistently gathers new promising ones in her arsenal for future research. Would you like to explore more? 😉
 
 * [Explore More Data Insights][10]
 * [Time Series][7]
@@ -47,7 +46,6 @@ The power of our sprouts is not limited to what you're seeing during the visit. 
 [1]:https://docs.google.com/presentation/d/16QCJ2eOONwY1fxFDHwFenr4truFf1pd3KOMh4V6BVgM/edit?usp=sharing
 [2]:https://docs.google.com/presentation/d/120kZHkOeNkXATT9mM6804ZZU4ndu8wA9taZJUi7kKVM/edit?usp=sharing
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/gallery.md
-[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/carefree_sunflower.md
 [5]:https://docs.google.com/presentation/d/1ngPFtnlMaHY95xmlSgL277IaxvZ_IrPuC9ViqBdXnl8/edit?usp=sharing
 [6]:https://docs.google.com/presentation/d/1QwcKAKeHVTInO9mhZeLtvy2bj9INJKP6kkK8XDoLzZ4/edit?usp=sharing
 [7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#time-series
