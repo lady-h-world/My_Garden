@@ -10,7 +10,7 @@ Starting from the main station, you have the flexibility to explore any stop to 
 * [The Queen][1]
   * <b>Hyperparameter Optimization</b> methods applied in classical classification, regression, and deep learning.
 * [Rainbow Moss][8]
-  * Flexible data science <b>environments setup</b>.
+  * Flexible <b>virtual environment setup</b>, <b>docker environment setup</b>.
 * [Garden Market][4]
   * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MLJar, Luigi, Airflow and ZenML.
 * [Replendent Tree][9]
@@ -51,8 +51,8 @@ And <b>Lady H.'s shikigami</b> will share fun stories along the way!
 <p>&nbsp;</p>
 
 
-## Protect the Property Right ©
-It took Lady H. great efforts to build this garden, and hard work deserves respect. There are individuals who engage in unethical practices, such as stealing others' work to gain fame and money, without any sense of shame. If you found stolen properties outside this garden, please contact us in [stolen copy right forum][3]. Meanwhile, for any property Lady H. borrowed, she has noted down the [origins][14]. Together, let's protect creators' right!
+## Protect Creators' Rights ©
+It took Lady H. great efforts to build this garden, and hard work deserves respect. There are individuals who engage in unethical practices, such as stealing others' work to gain fame and money, without any sense of shame. If you found stolen properties outside this garden, please contact us in [stolen copy right forum][3]. Meanwhile, for any property Lady H. borrowed, she has noted down the [origins][14]. Together, let's protect creators' rights!
 
 <p>&nbsp;</p>
 
