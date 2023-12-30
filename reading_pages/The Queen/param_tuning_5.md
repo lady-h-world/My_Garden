@@ -3,15 +3,16 @@
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/perfume.png" width="355" height="307" /></p>
 
-Hey, it's Miss Mooncake's story time!
+It was a Sunday in early autumn, and the air was infused with a blend of fragrant scents. Lady H. was enjoying afternoon tea on her balcony. Her assistants arrived one by one to report on garden business, each bringing with them a delightful aroma. Lady H. didn't notice anything unusual until Diana walked in.
 
-That was a Sunday in an early Autumn, the air was filled with mixed fragrant scents. Lady H. was having the afternoon tea at her balcony. Her assistants came one after another to report garden business, and each girl brought in an aromatic air. Lady H. didn't notice anything unusual until Diana came in. "Diana! You're wearing perfume today!? I thought you would never do that!". Diana's nose is too sensitive and she rarely uses any perfume. Diana replied with a big smile and shinning eyes, "The Garden Market gave us 99% discounts to buy the latest summer design, I have never seen such low price, so decided to give it a try and I love it!". "Oh, I'm glad to hear that! ... Wait a min, Garden Market is giving out perfume almost for free!? Why?". "Remeber we had harvested 3 times more summer flowers this year? Garden Market made much more perfume than they can sell and had to do a clearance sale". "I see. Hmm... we should do some sales forecasting before manufacturing".
+"Diana! You're wearing perfume today!? I thought you would never do that!" Diana, known for her sensitive nose and rare use of perfume, replied with a big smile and shining eyes, "The Garden Market offered us a 99% discount on the latest summer design. I've never seen such a low price, so I decided to give it a try, and I love it!"
 
-With HPO tools at hand, this is how Lady H. decided to add this regression problem into her experiments, to forecast Garden Market's sales.
+"Oh, I'm glad to hear that! ... Wait a minute, Garden Market is giving away perfume? Why?" Diana explained, "Remember, we harvested three times more summer flowers this year? Garden Market produced much more perfume than they could sell and had to have a clearance sale." Lady H. pondered, "I see. Hmm... we should conduct some sales forecasting before manufacturing."
+
+To forecast Garden Market's sales is a regression problem.
+
 
 #### Baseline Forecast
-
-Remember the Sales baseline model output shown before?
 
 Before using the HPO power, Lady H. used default LGBM to do a baseline forecast and got 0.884 R2 score in 34.3 seconds. That's a decent result, as mentioned before, the closer R2 gets towards 1 in testing data, the better.
 
