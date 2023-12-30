@@ -10,9 +10,9 @@
 
 A Chinese poem once wrote, "Moss flowers are small as grains, but they open out as peonies."
 
-Surely, you must have observed the vibrant stones scattered in the grass, complemented by the radiant rainbow above them, right? These stones are adorned with rainbow moss, a magical plant thriving in enchanting energy. As Lady H. continuing bring in more creatures to the garden, these delicate flowers were drawn to the extraordinary power emanated from this garden.
+As you cast your gaze upon the grass, do you notice the vibrant stones scattered among it, accompanied by the radiant rainbow above? These stones are adorned with rainbow moss, a magical plant thriving in enchanting energy. As Lady H. continuing bring in more creatures to the garden, these delicate flowers were drawn to the extraordinary power emanated from this garden.
 
-These petite flowers emit luminous bubbles that often ascend 7 to 10 centimeters higher, creating a rainbow effect. A more vibrant rainbow signifies moss flowers are nourished by stronger magical energy.
+These petite moss flowers emit luminous bubbles that often ascend 7 to 10 centimeters higher, creating a rainbow effect. A more vibrant rainbow signifies the flowers are nourished by stronger magical energy.
 
 While these flowers may be too minuscule to be observed with the naked eye, they still produce sprouts for your collection! Similar to flower, the corresponding data science skills are simple but useful!
 
