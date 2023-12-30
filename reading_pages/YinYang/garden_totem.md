@@ -9,20 +9,20 @@
 
 What is evolution?
 
-No matter how magical a garden plant is, it repeats a life cycle of birth, growth, bloom, mundanity and death. In each cycle, when life reaches to the blooming point, that's also the start of languishing; however when it reaches to the bottom point (death), that's also the beginning of rebirth. 
+No matter how magical a garden plant may be, it follows a life cycle of birth, growth, bloom, decline, and death. In each cycle, when life reaches the blooming point, it also marks the onset of decline. However, when it reaches the lowest point (death), it also signifies the beginning of rebirth.
 
-Antient Chinese brought in the concept of <b>Yin (陰) Yang (陽)</b> to demonstrate this cycle. "Yin" means the down point of the cycle while "Yang" means the up point. It's been considered as a universal law carried out by everything. Our garden totem, the lotus-skeleton is a representation of this cycle too!
+Antient Chinese introduced the concept of <b>Yin (陰) Yang (陽)</b> to illustrate this cycle. "Yin" represents the low point of the cycle, while "Yang" represents the high point. It has been regarded as a universal law governing everything. Our garden totem, the lotus-skeleton, also symbolizes this cycle!
 
-Life is full of ups and downs. The down moments keep pushing us to self-reflect and to learn from the nonfulfillment, while the up moments award our hard working. By going through this up and down cycle again and again, human beings are becoming better and better. This is the process of evolution.
+Life is full of ups and downs. The low moments propel us to self-reflect and glean lessons from the setbacks, while the high moments reward our diligent efforts. Through experiencing this cycle of ups and downs repeatedly, human beings continually improve. This is the process of evolution.
 
-Same to our garden plants. Their uniqueness and magical power is a result of evolution, and they are still developing new advancements.
+Similarly, our garden plants owe their uniqueness and magical powers to the process of evolution, and they continue to undergo further developments and advancements.
 
 </p>
 
 
 ## Data Science in Time Series
 
-In data science, we also study a type of "cycle", by discovering the repeated patterns in time, which can help us gain more data insights and achieve better forecasting results. The analysis on a sequence of data indexed by time, is called "Time Series".
+In data science, we also study a type of "cycle" by identifying recurring patterns over time. This exploration aids in gaining deeper insights into the data and achieving improved forecasting results. The analysis of a sequence of data indexed by time is referred to as 'Time Series'.
 
 <p align="center">🌱 <b>Sprouts Collection Time!</b> 🌱</p>
 
