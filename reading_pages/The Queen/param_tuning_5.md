@@ -3,9 +3,9 @@
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/perfume.png" width="355" height="307" /></p>
 
-It was a Sunday in early autumn, and the air was infused with a blend of fragrant scents. Lady H. was enjoying afternoon tea on her balcony. Her assistants arrived one by one to report on garden business, each bringing with them a delightful aroma. Lady H. didn't notice anything unusual until Diana walked in.
+It was a Sunday in early autumn, the air was infused with a blend of fragrant scents. Lady H. was enjoying afternoon tea on her balcony. Her assistants arrived one after another to report on garden business, each carried a delightful aroma. Lady H. didn't notice anything unusual until Diana walked in.
 
-"Diana! You're wearing perfume today!? I thought you would never do that!" Diana, known for her sensitive nose and rare use of perfume, replied with a big smile and shining eyes, "The Garden Market offered us a 99% discount on the latest summer design. I've never seen such a low price, so I decided to give it a try, and I love it!"
+"Diana! You're wearing perfume today!? I thought you would never do that!" Diana, known for her sensitive nose and rare use of perfume, replied with a big smile and shining eyes, "The Garden Market offered us a 99% discount on the latest summer design. I've never seen such a low price, so I decided to give it a try, and it brings me so much joy!"
 
 "Oh, I'm glad to hear that! ... Wait a minute, Garden Market is giving away perfume? Why?" Diana explained, "Remember, we harvested three times more summer flowers this year? Garden Market produced much more perfume than they could sell and had to have a clearance sale." Lady H. pondered, "I see. Hmm... we should conduct some sales forecasting before manufacturing."
 
