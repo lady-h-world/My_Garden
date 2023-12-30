@@ -7,13 +7,13 @@
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/the_queen.png" width="320" height="450" />
 
-Lady H. travels a lot around the universe. She has her own spaceship and had been traveling to many galaxies. Wherever she goes, she will explore something unique in the local. There will be hardship in a trip, but also surprising gifts awaiting for her.
+Lady H. travels extensively throughout the universe in her own spaceship, exploring numerous galaxies. Wherever she ventures, she discovers unique aspects of each locality. While her journeys pose challenges, they also yield unexpected gifts.
 
-10 years ago, her spaceship stopped at Planet Sapphire, a planet has 95% surface covered by snow all the time. She came here to try local fruits. The fruits harvesed here all have crystal color, such as crystal grapes, crystal mangos, crystal cherries, etc. The coffee and chocolate are in crystal color too as they are made by crystall coffee beans and crystal cocoa beans. All taste great by the way!
+Ten years ago, her spaceship landed on Planet Sapphire, a world where 95% of the surface is perpetually covered in snow. Her visit was motivated by a desire to explore local fruits. The harvested fruits on this planet possess a crystalline appearance, including crystal grapes, crystal mangos, crystal cherries, and more. Even the coffee and chocolate share this crystal hue, crafted from crystallized coffee beans and cocoa beans. Remarkably, all these offerings boast exquisite flavors!
 
-However, after Lady H.'s spaceship got here, lots of her friends had fever for days, and the medicine they brought didn't work at all. So Lady H. started to look for some help locally. The local people guided her to visit Lake Crystal, a lake covered by snow and ice (of course 🤣). In the lake, there're some blooming lotus, collecting the water around those flowers will cure the disease. Lady H. did so and her friends recovered soon.
+However, upon Lady H.'s arrival, many of her friends in the spaceship fell ill with prolonged fevers, and the medicine they brought proved ineffective. Determined to find a solution, Lady H. sought local assistance. The residents guided her to Lake Crystal, a frozen lake (of course 😊) adorned with blooming lotus. Collecting the water around these flowers and having her friends drink it resulted in their swift recovery.
   
-Because the meaning of Lady H.'s Chinese name is "waterlily in winter", feeling a strong connetion with the flower, she decided to take some home! Then, the lotus has become the very first collection of this garden, and we call it "Queen Lotus".
+Given that Lady H.'s Chinese name translates to "waterlily in winter," reflecting a deep connection with the flower, she decided to bring some home. This marked the inception of the garden's first collection, now known as the "Queen Lotus".
 
 </p>
 <p>&nbsp;</p>
