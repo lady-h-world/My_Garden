@@ -14,7 +14,7 @@ As you cast your gaze upon the grass, do you notice the vibrant stones scattered
 
 These petite moss flowers emit luminous bubbles that often ascend 7 to 10 centimeters higher, creating a rainbow effect. A more vibrant rainbow signifies the flowers are nourished by stronger magical energy.
 
-While these flowers may be too minuscule to be observed with the naked eye, they still produce sprouts for your collection! Similar to flower, the corresponding data science skills are simple but useful!
+While these flowers may be too minuscule to be observed with the naked eye, they still produce sprouts for your collection!
 
 </p>
 <p>&nbsp;</p>
@@ -27,7 +27,7 @@ While these flowers may be too minuscule to be observed with the naked eye, they
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-Every data science environment is like a rainbow moss flower, smaller size but independent and complete. 
+When engaging in various data science projects, maintaining a separate data science environment for each is often essential to prevent conflicts between Python libraries. Each data science environment is akin to a rainbow moss flower, compact in size yet independent and fully functional.
 
 🌱 [Python Virtual Environment Setup >>][2]
 
