@@ -5,9 +5,9 @@
 
 Lady H.'s first full-time job as a data scientist was with a financial fraud detection company where one of her major clients was a giant bank. Every two months, this client would provide her with new data for fraud analysis. One December afternoon, the office was nearly empty by 5 pm as most of her colleagues were either on vacation or had left earlier. Lady H. intended to swiftly complete the client's fraud report using her trained model and then head home.
 
-However, the new data presented a significantly different fraud detection rate, much lower than usual. "Why did this happen? It looks unusual, and the client will certainly inquire about it. I need to investigate," Lady H. thought. Eventually, she discovered that the client had sent her the wrong data, leading to the issue.
+However, the new data presented a significantly different fraud detection rate, much lower than usual. "Why did this happen? It looks unusual, I have to investigate," Lady H. thought. Eventually, she discovered that the client had sent her the wrong data, leading to the issue.
 
-This is just one of data drifting stories.
+This is just one of the data drifting stories.
 
 ##### About Data Drifting
 
