@@ -1,7 +1,7 @@
 ### Experiment 3 - Customized Optimization for A Regression Problem
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/perfume.png" width="355" height="307" /></p>
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/perfume.png" width="355" height="315" /></p>
 
 It was a Sunday in early autumn, the air was infused with a blend of fragrant scents. Lady H. was having afternoon tea on her balcony. Her assistants arrived one after another to discuss garden business, each carried a delightful aroma. Lady H. didn't notice anything unusual until Diana walked in.
 
