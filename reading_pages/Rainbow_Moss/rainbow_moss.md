@@ -8,13 +8,13 @@
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/rainbow_moss.png" width="300" height="410" />
 <p>&nbsp;</p>
 
-"Moss flowers are small as grains, but they open out as peonies."
+A Chinese poem once wrote, "Moss flowers are small as grains, but they open out as peonies."
 
-You must have noticed some colorful stones lying in the grass, as well as their above rainbow light?! These stones are covered with rainbow moss, a kind of plant nourished by magical power. After Lady H. brought in more and more treasures to the garden, these tiny flowers were attracted by the super power here.
+Surely, you must have observed the vibrant stones scattered in the grass, complemented by the radiant rainbow above them, right? These stones are adorned with rainbow moss, a magical plant thriving in enchanting energy. As Lady H. continuing bring in more creatures to the garden, these delicate flowers were drawn to the extraordinary power emanated from this garden.
 
-These tiny flowers will breath out glowing bubbles, which often fly up 7 ~ 10 centermeters higher and form a rainbow. If the rainbow has brighter color, it means the moss flowers are happier, also means they are fed with stronger power. 
+These petite flowers emit luminous bubbles that often ascend 7 to 10 centimeters higher, creating a rainbow effect. A more vibrant rainbow signifies moss flowers are nourished by stronger magical energy.
 
-Even though each flower is too tiny to be seen through naked eyes, they still produce sprouts for your collection! And in fact, these sprouts are simple and useful!
+While these flowers may be too minuscule to be observed with the naked eye, they still produce sprouts for your collection! Similar to flower, the corresponding data science skills are simple but useful!
 
 </p>
 <p>&nbsp;</p>
