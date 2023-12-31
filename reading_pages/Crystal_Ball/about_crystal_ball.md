@@ -7,6 +7,7 @@
 
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/crystal_ball.png" width="330" height="470" />
+<p>&nbsp;</p>
 
 Now let's enter the cave to see Lady H.'s crystal ball. Could you imagine a cave could have such tranquil scenery inside? I mean, witnessing flowers, a lake, and a gazebo bathed in moonlight, all within a cave?! Lady H. made this arrangement because the crystal ball is constantly too bright, and yes, the crystal ball is that "moon". 
   
@@ -15,6 +16,8 @@ Lady H. obtained it on a space trip from a witch who used it for decades. Initia
 A pretty good deal right, Lady H. got it for free, and it's still powerful. Although Lady H. can't use it like a witch, the default function of this crystal ball is to gather information from anywhere in the universe. Over the years, Lady H. also discovered a few more magic it possesses, and we will show you soon!
 
 </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 #
 
