@@ -42,3 +42,6 @@ Unlike standard backpropagation, where gradients should update the discriminator
 </p>
 <p>&nbsp;</p>
 
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/gradients.png" width="766" height="79" />
+</p>
