@@ -2,7 +2,7 @@
 
 ### Collected Data
 
-The crystal ball has the ability to reach every corner of the universe and collect data, making it the primary data source for Lady H.'s experiments. However, she hasn't extensively explored distant locations. Some of the data is conveniently collected from our garden, while some is sourced from a planet known as Kaggle. On that planet, numerous individuals dedicate sleepless nights to competitive pursuits, a phenomenon Lady H. finds difficult to comprehend, why so many people take such competitions seriously and work so diligently is a mystery to her 🤔.
+The crystal ball has the ability to reach every corner of the universe and collect data, making it the primary data source for Lady H.'s experiments. However, she hasn't extensively explored distant locations. Some of the data is conveniently collected from our garden, while some is sourced from a planet called "Kaggle". On that planet, numerous individuals dedicate sleepless nights to competitive pursuits, a phenomenon Lady H. finds difficult to comprehend, why so many people take such competitions seriously and work so diligently is a mystery to her 🤔.
 
 * [30 categories of leaves][1]
 * [100 categories of leaves][2]
