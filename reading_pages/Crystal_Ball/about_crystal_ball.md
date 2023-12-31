@@ -11,7 +11,7 @@
 
 Now let's enter the cave to see Lady H.'s crystal ball. Could you imagine a cave could have such tranquil scenery inside? I mean, witnessing flowers, a lake, and a gazebo bathed in moonlight, all within a cave?! Lady H. made this arrangement because the crystal ball is constantly too bright, and yes, the crystal ball is that "moon". 
   
-Lady H. obtained it on a space trip from a witch who used it for decades. Initially, it would glow and dim, but one day it stayed bright and couldn't be turned off. The witch got a new one, bringing the old crystal ball to a flea market to give away. Lady H. went to the same flea market to choose a light to decorate this cave. Walking around the whole market, Lady H. wasn't able to find a suitable one until she saw the ball carried by the witch.
+Lady H. obtained it from a witch who used this crystal ball for decades. Initially, it would glow and dim, but one day it stayed bright and couldn't be turned off. The witch got a new one, bringing the old crystal ball to a flea market to give away. Lady H. went to the same flea market to choose a light to decorate this cave. Walking around the whole market, Lady H. wasn't able to find a suitable one until she saw the ball carried by the witch.
 
 A pretty good deal right, Lady H. got it for free, and it's still powerful. Although Lady H. can't use it like a witch, the default function of this crystal ball is to gather information from anywhere in the universe. Over the years, Lady H. also discovered a few more magic it possesses, and we will show you soon!
 
