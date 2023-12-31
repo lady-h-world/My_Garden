@@ -24,9 +24,23 @@ To understand GANs, we can start from DCGAN (Deep Convolutional GAN), as it's li
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/dcgan_step1.png" width="623" height="310" />
 <p>&nbsp;</p>
 
-Step 1: <b>train the discriminator</b>.
+<b>Step 1: train the discriminator</b>.
 
 In this step, the generator gets noise data as input and output a set of fake data labeled as "0". Meanwhile, there is a set of real data labeled as "1". Both real data and fake data are the input of discriminator. The discriminator will update its parameters after the training and output predicted probabilities (probabilities of being real class) that later sent to loss function to evaluate.
 
 </p>
+<p>&nbsp;</p>
+
+<p>
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/dcgan_step2.png" width="623" height="310" />
+<p>&nbsp;</p>
+
+<b>Step 2: adversarial training, train the generator</b>.
+
+Similar to backpropagation that the gradient of loss with respect to discriminator's parameter will be passed back to the discriminator, what's different from backpropagation is, the gradients won't be used to update discriminator's parameters, rather the discriminator's parameters will be frozen and the gradients will be passed to the generator to help its learning.
+
+The trained generator generates a new set of fake data, this fake dataset will be labeled as "1" and then being sent to the discriminator for real class prediction.
+
+</p>
+<p>&nbsp;</p>
 

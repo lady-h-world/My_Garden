@@ -10,7 +10,7 @@ Lady H. loves taking adventures throughout the universe, gathering exotic creatu
 
 By exploring this enchanting sanctuary, visitors can collect sprouts imbued with magical powers. Each magical power corresponds to an applied data science skill, enabling individuals to cultivate these sprouts on Earth and propagate the influence of data science.
 
-Kindly bear in mind that the primary objective of this tour is to share the experimental and problem-solving processes employed in real-world practices. Aiming at inspiring curiosity and passion in data science, empowering visitors with the capabilities to address future challenges.
+Kindly bear in mind that the primary objective of this tour is to share the experimental and problem-solving processes employed in real-world practices. Aiming at inspiring curiosity, discussions and passion in data science, empowering visitors with the capabilities to address future challenges.
 
 </p>
 
