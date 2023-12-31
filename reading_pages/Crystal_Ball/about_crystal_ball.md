@@ -8,19 +8,13 @@
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/crystal_ball.png" width="330" height="470" />
 
-Many of you have asked where to see the crystal ball 😄. Let's enter the cave first.
+Now let's enter the cave to see Lady H.'s crystal ball. Could you imagine a cave could have such tranquil scenery inside? I mean, witnessing flowers, a lake, and a gazebo bathed in moonlight, all within a cave?! Lady H. made this arrangement because the crystal ball is constantly too bright, and yes, the crystal ball is that "moon". 
   
-Here we are! Could you imagine a cave could have such tranquil scenery inside? I mean, seeing flowers, lake and gazebo under the moonlight, in a cave?! Lady H. had to make such arrangement as the crystal ball is too bright all the time, and yes, it is that "moon". 
-  
-Lady H. got it during one of her space trips, from a witch. The witch had been using this crystal ball for decades, the ball would glow up when it started to work and dim down after the use. However, starting from one day, the ball kept staying bright and could never be turned off. So the witch decided to get a new ball from a flea market. She also carried this crystal ball to the market, planning to give it away. Lady H. went to the same flea market to choose a light to decorate her spaceship. Walking around the whole market, Lady H. wasn't able to find a good one until she saw the ball carried by the witch.
+Lady H. obtained it on a space trip from a witch who used it for decades. Initially, it would glow and dim, but one day it stayed bright and couldn't be turned off. The witch got a new one, bringing the old crystal ball to a flea market to give away. Lady H. went to the same flea market to choose a light to decorate this cave. Walking around the whole market, Lady H. wasn't able to find a suitable one until she saw the ball carried by the witch.
 
-Sounds like a pretty good deal, isn't it? The witch found the person who needs the ball. Lady H. got a light for free, and it will stay bright without costing any extra money as crystal ball's power came from the mysterious universal power. Althoug Lady H. can't use it like a witch, it's still a powerful crystal ball which can collect and store any data from anywhere in the universe. Over the years, Lady H. also has found a few more magic it can create, and we will show you soon!
+A pretty good deal right, Lady H. got it for free, and it's still powerful. Although Lady H. can't use it like a witch, the default function of this crystal ball is to gather information from anywhere in the universe. Over the years, Lady H. also discovered a few more magic it possesses, and we will show you soon!
 
 </p>
-
-Does Lady H. plan to bring this crystal ball alongside in the next space trip? Only herself knows the answer 😄.
-
-Now let's see what did this crystal ball had brought to us!
 
 #
 
