@@ -21,7 +21,7 @@ Their roles are like a criminal and a police. The criminal (generator) creates f
 To understand GANs, we can start from DCGAN (Deep Convolutional GAN), as it's like the vanilla version of GANs. DCGAN kept executing 2 trainings steps iteratively:
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/dcgan_step1.png" width="923" height="410" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/dcgan_step1.png" width="623" height="310" />
 <p>&nbsp;</p>
 
 Step 1: train the discriminator.
