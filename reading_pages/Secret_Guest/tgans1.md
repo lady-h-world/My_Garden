@@ -32,13 +32,11 @@ In this step, the generator gets noise data as input and output a set of fake da
 <p>&nbsp;</p>
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/dcgan_step2.png" width="623" height="410" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/dcgan_step2.png" width="623" height="360" />
 
 <b>Step 2: adversarial training, train the generator</b>.
 
-Similar to backpropagation that the gradient of loss with respect to discriminator's parameter will be passed back to the discriminator, what's different from backpropagation is, the gradients won't be used to update discriminator's parameters, rather the discriminator's parameters will be frozen and the gradients will be passed to the generator to help its learning.
-
-The trained generator generates a new set of fake data, this fake dataset will be labeled as "1" and then being sent to the discriminator for real class prediction.
+Unlike standard backpropagation, where gradients should update the discriminator's parameters, in this case, the discriminator's parameters stay frozen. The gradients are directed to the generator to enhance its learning process. The trained generator produces a new set of fake data, labeling this artificial dataset as "1," and subsequently submits it to the discriminator for real class prediction.
 
 </p>
 <p>&nbsp;</p>
