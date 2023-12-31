@@ -24,9 +24,9 @@ To understand GANs, we can start from DCGAN (Deep Convolutional GAN), as it's li
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/dcgan_step1.png" width="623" height="310" />
 <p>&nbsp;</p>
 
-Step 1: train the discriminator.
+Step 1: <b>train the discriminator</b>.
 
-In this step, the generator gets noise data as input and output a set of fake data labeled as "0". Meanwhile, there is a set of real data labeled as "1". Both real data and fake data are the input of discriminator for training. The discriminator will update its parameters after the training and output predicted probabilities that later sent to loss function to evaluate.
+In this step, the generator gets noise data as input and output a set of fake data labeled as "0". Meanwhile, there is a set of real data labeled as "1". Both real data and fake data are the input of discriminator. The discriminator will update its parameters after the training and output predicted probabilities (probabilities of being real class) that later sent to loss function to evaluate.
 
 </p>
 
