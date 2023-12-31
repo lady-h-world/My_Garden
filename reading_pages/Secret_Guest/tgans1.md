@@ -32,8 +32,7 @@ In this step, the generator gets noise data as input and output a set of fake da
 <p>&nbsp;</p>
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/dcgan_step2.png" width="623" height="310" />
-<p>&nbsp;</p>
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/dcgan_step2.png" width="623" height="410" />
 
 <b>Step 2: adversarial training, train the generator</b>.
 
