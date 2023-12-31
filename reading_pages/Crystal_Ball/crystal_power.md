@@ -1,7 +1,8 @@
 ## Data List
 
 ### Collected Data
-The crystal ball can reach out to every corner of the universe to collect information. So Lady H. often use this power to collect data for her experiments. But she didn't search many far away places. Some of these data collected at hand in our garden 😉, some collected from a planet called Kaggle, where many people spend sleepless nights to compete (Lady H. could never understand why so many people are working that hard 🤔 and taking a competition that serious 🤔).
+
+The crystal ball has the ability to reach every corner of the universe and collect data, making it the primary data source for Lady H.'s experiments. However, she hasn't extensively explored distant locations. Some of the data is conveniently collected from our garden, while some is sourced from a planet known as Kaggle. On that planet, numerous individuals dedicate sleepless nights to competitive pursuits, a phenomenon Lady H. finds difficult to comprehend, why so many people take such competitions seriously and work so diligently is a mystery to her 🤔.
 
 * [30 categories of leaves][1]
 * [100 categories of leaves][2]
@@ -12,13 +13,13 @@ The crystal ball can reach out to every corner of the universe to collect inform
  
  
 ### Simulated Data
-The crystal ball can create data from nowhere too!
+The crystal ball has the ability to generate data seemingly out of thin air too!
 
 * [clusters simulation][7]
 
 
 ## Crystal Magic
-Besides getting the data, Lady H. has found some other power this crystal ball has. Please read each story below to see more details!
+Besides getting the data, Lady H. has found a few more power this crystal ball carries. Check each story below to see more details!
 
 * [Dimension Reduction][8]
 
