@@ -4,7 +4,7 @@
 
 Generative Adversarial Network, commonly known as "GAN", is gaining increasing popularity on the Earth. They have been applied across a wide range of fields, including music generation, style transfer in paintings, the creation of realistic gaming environments, virtual try-ons in the fashion industry, deepfakes, poem writing, and more.
 
-While GANs have found extensive use in manipulating image and text data, a question arises: can they be effectively applied to tabular data? In the stop, we will explore the generation of synthetic tabular data through TGANs (Tabular GANs). Before delving into this, let's gain a brief understanding of how GANs operate.
+While GANs have found extensive use in manipulating image and text data, a question arises: can they be effectively applied to tabular data? In this stop, we will explore the generation of synthetic tabular data through TGANs (Tabular GANs). Before delving into this, let's gain a brief understanding of how GANs work.
 
 
 ### Generator vs Discriminator
@@ -18,7 +18,7 @@ Their roles are like a criminal and a police. The criminal (generator) creates f
 
 ### DCGAN 
 
-To understand GANs, we can start from DCGAN (Deep Convolutional GAN), as it's like the vanilla version of GANs. DCGAN kept executing 2 trainings steps iteratively:
+To understand GANs, we can start from DCGAN (Deep Convolutional GAN), as it's like the vanilla version of GANs. DCGAN kept executing 2 training steps iteratively:
 
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/dcgan_step1.png" width="623" height="310" />
@@ -37,7 +37,7 @@ In this step, the generator gets noise data as input and output a set of fake da
 
 <b>Step 2: adversarial training, train the generator</b>.
 
-Unlike standard backpropagation, where gradients should update the discriminator's parameters, in this case, the discriminator's parameters stay frozen. The gradients are directed to the generator to enhance its learning process. The trained generator produces a new set of fake data, labeling this artificial dataset as "1," and subsequently submits it to the discriminator for real class prediction.
+Unlike standard backpropagation, where gradients should update the discriminator's parameters, in this case, the discriminator's parameters stay frozen. The gradients are directed to the generator to enhance its learning process. The trained generator produces a new set of fake data, labeling it as "1," and send to the discriminator for real class prediction.
 
 </p>
 <p>&nbsp;</p>
@@ -46,4 +46,20 @@ Unlike standard backpropagation, where gradients should update the discriminator
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/gradients.png" width="880" height="90" />
 </p>
 
-DCGAN will iteratively execute these 2 steps until the discriminator can hardly distinguish the real data and the synthetic.
+These 2 steps are executed iteratively until the discriminator can hardly distinguish the real data and the synthetic.
+
+#
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
+
+[Keep going >>][1]
+
+<p align="right">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<< Looking back][2]
+
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans2.md
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/secret_guest.md
