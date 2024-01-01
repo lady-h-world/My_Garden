@@ -7,7 +7,7 @@ Generative Adversarial Network, commonly known as "GAN", is gaining increasing p
 While GANs have found extensive use in manipulating image and text data, a question arises: can they be effectively applied to tabular data? In this stop, we will explore the generation of synthetic tabular data through TGANs (Tabular GANs). Before delving into this, let's gain a brief understanding of how GANs work.
 
 
-### Generator vs Discriminator
+#### Generator vs Discriminator
 
 All the GANs contain 2 key components: generator and discriminator. 
 
@@ -16,7 +16,7 @@ Their roles are like a criminal and a police. The criminal (generator) creates f
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/manga_dcgan.png" width="744" height="359" />
 
 
-### DCGAN 
+#### DCGAN 
 
 To understand GANs, we can start from DCGAN (Deep Convolutional GAN), as it's like the vanilla version of GANs. DCGAN kept executing 2 training steps iteratively:
 
