@@ -10,5 +10,9 @@ Training GANs is notoriously challenging due to the delicate balance they strive
 * <b>Mode Collapse</b> occurs when the generator consistently produces identical or a limited variety of outputs, failing to sufficiently capture the full diversity of the target data.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/exp_mode_collapse.png" width="560" height="280" />
 
-GANs such as WGAN (Wasserstein GAN), LSGAN (Least Squares GAN) were designed to address such challenges by employing new loss functions, in contrast to CDGAN.
+WGAN (Wasserstein GAN), LSGAN (Least Squares GAN) were designed to address such challenges by employing new loss functions, in contrast to CDGAN.
 
+LSGAN also helps <b>improve output images' perceptive quality</b>, so does ACGAN (Auxiliary Classifier GAN).
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/exp_perceptive.png" width="560" height="180" />
+
+What's worth noting is the architecture of ACGAN, it added a classifier to the discriminator. Instead of just predicting the probability to be real, 
