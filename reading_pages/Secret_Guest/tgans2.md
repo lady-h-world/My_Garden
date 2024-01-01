@@ -15,4 +15,10 @@ WGAN (Wasserstein GAN), LSGAN (Least Squares GAN) were designed to address such 
 LSGAN also helps <b>improve output images' perceptive quality</b>, so does ACGAN (Auxiliary Classifier GAN).
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/exp_perceptive.png" width="560" height="180" />
 
-What's worth noting is the architecture of ACGAN, it added a classifier to the discriminator. Instead of just predicting the probability to be real, the discriminator also needs to classify the classes of the output. The assumption behind is, by adding this extra classification work, it can improve the quality of the output.
+What's worth noting is the architecture of ACGAN, it added a classifier to the discriminator. Instead of just predicting the probability to be real, the discriminator also needs to classify the classes of the output. The assumption behind is, by adding this extra classification work, it can improve the quality of the output. 
+
+Disentangled Representation GANs like InforGAN, StackedGAN allows you to change the output properties, such as shape, rotation, thickness, etc.
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/exp_properties.png" width="560" height="180" />
+
+Cross-Domain GANs like CycleGAN, CyCADA (Cycle-Consistent Adversarial Domain Adaptation) enables the style transfer of the input. Have you ever played with this popular game on the Earth? By providing a photo, you can change it to a painting style you like:
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/exp_style_transfer.png" width="671" height="421" />
