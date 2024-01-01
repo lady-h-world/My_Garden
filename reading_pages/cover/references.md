@@ -13,6 +13,7 @@
 * [Izuminokami][6]
 * [Cartoon police][7]
 * [Cartoon criminal][8]
+* [Style transfer example][9]
 
 
 
@@ -24,3 +25,4 @@
 [6]:https://gbf.wiki/Izuminokami_Kanesada
 [7]:https://www.pinterest.ca/pin/dab--851461873283069265/
 [8]:https://www.flaticon.com/free-icons/criminal
+[9]:https://vciba.springeropen.com/articles/10.1186/s42492-018-0006-1/figures/24
