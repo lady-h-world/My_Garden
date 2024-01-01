@@ -43,7 +43,5 @@ Unlike standard backpropagation, where gradients should update the discriminator
 <p>&nbsp;</p>
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/gradients.png" width="766" height="79" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/gradients.png" width="880" height="90" />
 </p>
-
-DCGAN will iteratively execute these 2 steps until the discriminator can hardly distinguish the real data and the synthetic data.
