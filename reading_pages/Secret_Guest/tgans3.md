@@ -30,7 +30,7 @@ Tabular data is typically a combination of discrete variables and continuous var
 
 Let's look into details of Mode-specific Normalization:
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_imagesmsn.png" width="768" height="262" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/msn.png" width="768" height="262" />
 
 
 [1]:https://github.com/lady-h-world/My_Garden/discussions
