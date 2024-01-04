@@ -16,11 +16,17 @@ Numerous GANs (Generative Adversarial Networks) have been applied to image and t
 
 #### CTGAN
 
-CTGAN (Conditional Tabular GAN) was introduced by [a paper published in 2019][2], and later multiple promising Tabular GANs were built upon it, so we can consider it as the vanilla version of Tabular GANs.
+CTGAN (Conditional Tabular GAN) was [published in 2019][2], and later multiple promising Tabular GANs were built upon it, so we can consider it as the vanilla version of Tabular GANs!
 
 The architecture of CTGAN can be summarized as below:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctgan_architecture.png" width="961" height="330" />
+
+Comparing with the architecture of DCGAN (the vanilla version of GANs), it has 2 major changes: <b>Mode-specific Normalization</b> and <b>Train-by-Sample & Conditional Vector</b>.
+
+Tabular data is typically a combination of discrete variables and continuous variables. GANs can readily manage one-hot encoded vectors, making the representation of discrete variables straightforward. However, the challenge lies in effectively representing the more intricate distributions inherent in continuous variables. Therefore, CTGAN proposes <b>Mode-specific Normalization</b> to address the challenge and the representation of continuous variables is one-hot format too.
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctgan_msn.png" width="961" height="330" />
 
 
 [1]:https://github.com/lady-h-world/My_Garden/discussions
