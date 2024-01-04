@@ -12,5 +12,16 @@ Any other use cases can't be covered by these 3 categories? You're very welcome 
 
 ### Tabular GANs
 
+Numerous GANs (Generative Adversarial Networks) have been applied to image and text data. However, given the significance of tabular data as a crucial data source, can GANs be employed to generate synthetic tabular data? Indeed, there are, and these GANs are called as TGANs (Tabular GANs). 
+
+#### CTGAN
+
+CTGAN (Conditional Tabular GAN) was introduced by [a paper published in 2019][2], and later multiple promising Tabular GANs were built upon it, so we can consider it as the vanilla version of Tabular GANs.
+
+The architecture of CTGAN can be summarized as below:
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctgan_architecture.png" width="961" height="330" />
+
 
 [1]:https://github.com/lady-h-world/My_Garden/discussions
+[2]:https://arxiv.org/pdf/1907.00503.pdf
