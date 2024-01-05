@@ -28,9 +28,15 @@ Tabular data is typically a combination of discrete variables and continuous var
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctgan_msn.png" width="961" height="330" />
 
-Let's look into details of Mode-specific Normalization:
+Let's delve deeper into Mode-specific Normalization by breaking it down into 3 steps:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/msn.png" width="768" height="262" />
+
+1. Apply VGM (variational Gaussian mixture model) to estimate the number of modes (peaks) in a continuous variable's distribution, and fit into a Gaussian mixture, the learned Gaussian mixture forms a normal distribution for each mode. In the example above, the continuous variable distribution represented by a blue dashed curve has 3 modes, so 3 normal distributions got created.
+2. Each value of this continuous variable can be represented as `Ci,j` (ith column, jth row in the Tabular), plot it on the Gaussian mixture and get the probability of each mode (each normal distribution). Choose the normal distribution with the highest probability. In the example above `ρ3` is the highest probability, so the 3rd mode is selected.
+3. Use the selected normal distribution's mean `η` and standard deviation `φ` to calculate a normalized value `αi,j = (Ci,j - η) / (4 * φ)`. Meanwhile, use a binary vector `βi,j` to record which mode was selected. In above example, the 3rd mode was selected so `βi,j = [0, 0, 1]`.
+
+Now the original value `Ci,j` is encoded as `αi,j ⊕ βi,j` where ⊕ is the vector concatenation operator.
 
 
 [1]:https://github.com/lady-h-world/My_Garden/discussions
