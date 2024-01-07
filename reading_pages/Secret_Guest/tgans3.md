@@ -38,7 +38,7 @@ Let's delve deeper into Mode-specific Normalization by breaking it down into 3 s
 
 Now the original value `Ci,j` is encoded as one-hot format through `αi,j ⊕ βi,j` where ⊕ is the vector concatenation operator.
 
-Traditionally, the generator may not be trained well if there are imbalanced discrete variables as their minority categories can't be sampled evenly. <b>Train-by-Sample & Conditional Vector</b> is trying to evenly (but not necessary uniformly) explore all categories in each discrete variable during training process and recover the real data distribution during test. "Conditional vector" means, given a particular categorical value, its rows in the real data have to appear in the data sample. Generator trained by such conditional distributions is called as "conditional generator", which is why CTGAN is named as "conditional".
+Traditionally, the generator may not be trained well if there are imbalanced discrete variables, because their minority categories can't be sampled evenly. <b>Train-by-Sample & Conditional Vector</b> is trying to evenly (but not necessary uniformly) explore all categories in each discrete variable during training process and recover the real data distribution during test. "Conditional vector" means, given a particular categorical value, its rows in the real data have to appear in the data sample. Generator trained by such conditional distributions is called as "conditional generator", which is also why CTGAN is named as "conditional".
 
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctgan_cv.png" width="961" height="330" />
