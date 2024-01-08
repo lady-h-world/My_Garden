@@ -51,7 +51,7 @@ Traditionally, the generator may not be trained well if there are imbalanced dis
 
 #### CTABGAN+
 
-CTABGAN+ was [published in 2022][3]. See its architecture below, looks quite like CTGAN's architectures, right? Comparing with CTGAN, it has made 2 major changes.
+CTABGAN+ was [published in 2022][3]. See its architecture below, looks quite like CTGAN's architectures, right? Comparing with CTGAN, it has made 2 major changes. Let's look into details!
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+.png" width="961" height="330" />
 
