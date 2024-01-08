@@ -35,7 +35,7 @@ Let's delve deeper into Mode-specific Normalization by breaking it down into 3 s
 1. Apply VGM (variational Gaussian mixture model) to estimate the number of modes in a continuous variable's distribution, and fit into a Gaussian mixture, the learned Gaussian mixture forms a normal distribution for each mode. In the example above, the continuous variable distribution represented by a blue dashed curve has 3 estimated modes, so 3 normal distributions got created.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/VGM_mode.png" width="766" height="79" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/VGM_mode.png" width="880" height="90" />
 </p>
 
 2. Each value of this continuous variable can be represented as `Ci,j` (ith column, jth row in the Tabular data), plot it on the Gaussian mixture and get the probability of each mode. Choose the normal distribution with the highest probability. In the example above `ρ3` is the highest probability, so the 3rd mode is selected.
