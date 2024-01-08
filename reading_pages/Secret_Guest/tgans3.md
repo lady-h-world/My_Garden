@@ -38,7 +38,7 @@ Let's delve deeper into Mode-specific Normalization by breaking it down into 3 s
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/VGM_mode.png" width="880" height="90" />
 </p>
 
-2. Each value of this continuous variable can be represented as `Ci,j` (ith column, jth row in the Tabular data), plot it on the Gaussian mixture and get the probability of each mode. Choose the normal distribution with the highest probability. In the example above `ρ3` is the highest probability, so the 3rd mode is selected.
+2. Each value of this continuous variable can be represented as `Ci,j` (ith column, jth row in the Tabular data), plot it on the Gaussian mixture and get the probability of each mode. Choose the mode with the highest probability. In the example above `ρ3` is the highest probability, so the 3rd mode is selected.
 3. Use the selected mode's mean `η` and standard deviation `φ` to calculate a normalized value `αi,j = (Ci,j - η) / (4 * φ)`, representing the original value in the mode. Meanwhile, use a binary vector `βi,j` to record which mode was selected. In above example, the 3rd one was selected so `βi,j = [0, 0, 1]`.
 
 Now the original value `Ci,j` is encoded as a vector through `αi,j ⊕ βi,j` where ⊕ is the vector concatenation operator. 
