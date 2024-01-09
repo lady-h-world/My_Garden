@@ -6,9 +6,11 @@ The second major changes happened in feature encoding:
 
 * <b>Mixed-Type</b> is the same as CTGAN's Mode-specific Normalization, aiming at representing both discrete and continuous variables well.
 * <b>Long-Tail</b> applies log transform to better handle continuous variables with long tails. Because VGM used in Mode-specific Normalization has difficulty to encode values towards the tail, log transform compress and reduces the distances between the tail and the bulk data, allowing VGM to encode all the data easier.
-* <b>General Transform</b> (GT) encodes a variable into (-1, 1) range so that the encoding directly compatible with the output range of the generator using `tanh` activation function. It is selectively applied to single mode continuous variables because VGM can't effectively handle such variables. VGM is applied on multi-mode continuous variables rather than using GT is because, GT loses the mode indicator. GT is also applied on high cardinality discrete variables, because a high cardinality variable has too many unique values and can cause dimensionality explosion after one-hot encoding. However, GT is not recommended for other discrete variables, because integers instead of one-hot vectors can impose artificial distances between the different categories which do not reflect the reality.
+* <b>General Transform</b> (GT) encodes a variable into (-1, 1) range so that the encoding directly compatible with the output range of the generator using `tanh` activation function. It is selectively applied to single mode continuous variables because VGM can't effectively handle such variables. But, VGM is applied to multi-mode continuous variables rather than using GT is because, GT loses the mode indicator. GT is also applied on high cardinality discrete variables, because a high cardinality variable has too many unique values and can cause dimensionality explosion after one-hot encoding. However, GT is not recommended for other discrete variables, because its integer output instead of one-hot vectors can impose artificial distances between the different categories which do not reflect the reality.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+_feature_encoder.png" width="961" height="330" />
 
+
+#### CastGAN
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans2.md
