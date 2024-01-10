@@ -13,9 +13,22 @@ The second major change happened in feature encoding:
 
 #### CasTGAN
 
-CasTGAN (Cascade Tabular GAN) was [published in 2023][2]. At the first glance, its architecture looks "overwhelming":
+CasTGAN (Cascade Tabular GAN) was [published in 2023][2]. At the first glance, its architecture looks overwhelming:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN.png" width="961" height="454" />
+
+Let's break it down!
+
+Firstly, you're seeing CasTGAN has several generators (marked as orange square), they get the same noise input.
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN1.png" width="961" height="454" />
+
+The generators are arranged in a sequence, each generator produces one variable of the tabular data and passes the generated variable to the next generator, this means the last generator will send all the generated variables to the discriminator (marked in blue square).
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN2.png" width="961" height="454" />
+
+Meanwhile, you must have noticed each generator links to the discriminator. If the last generator sends all the output variables to the discriminator, why does CasTGAN have each generator communicates to the discriminator?
+
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans2.md
