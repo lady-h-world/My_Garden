@@ -15,7 +15,7 @@ The second major change happened in feature encoding:
 
 CasTGAN (Cascade Tabular GAN) was [published in 2023][2]. At the first glance, its architecture looks "overwhelming":
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN.png" width="961" height="354" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN.png" width="961" height="454" />
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans2.md
