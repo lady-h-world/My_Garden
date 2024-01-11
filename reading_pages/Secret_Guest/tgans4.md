@@ -35,7 +35,9 @@ What do you think? Feel free to share your ideas [here][3]!
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/resnet_shortcut.png" width="344" height="329" />
 
+CasTGAN also has multiple auxiliary estimators (marked in purple square), and each auxiliary estimator maps to a generator, and predict the same variable its generator trying to generate. Each auxiliary estimator is a pretrained LightGBM model, it's trained on the rest of variables in order to predict the target variable. The benefit of using LightGBM here is, it can handle categorical variables without using ont-hot encoding. 
 
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN3.png" width="961" height="454" />
 
 
 
