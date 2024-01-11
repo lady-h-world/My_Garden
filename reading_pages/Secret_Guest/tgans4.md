@@ -23,13 +23,19 @@ Firstly, you're seeing CasTGAN has several generators (marked as orange square),
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN1.png" width="961" height="454" />
 
-The generators are arranged in a sequence, each generator produces one variable of the tabular data and passes the generated variable to the next generator, this means the last generator will send all the generated variables to the discriminator (marked in blue square).
+The generators are arranged in a sequence, each generator produces one of the variables in the tabular data and passes the generated variable to the next generator, this means the last generator will send all the generated variables to the discriminator (marked as blue square).
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN2.png" width="961" height="454" />
 
-Meanwhile, you must have noticed each generator links to the discriminator. If the last generator sends all the output variables to the discriminator, why does CasTGAN have each generator communicates to the discriminator?
+Meanwhile, you must have noticed each generator links to the discriminator. If the last generator sends all the output variables to the discriminator, why does CasTGAN have each generator communicates to the discriminator? Lady H. checked throughout the paper and didn't find the reason, but in her opinion, this is to create shortcut connections to relieve gradient vanishing during backpropagation in the hierarchical communication.
 
+Such shortcut connection had been used other neural networks too. The example below came from 2 versions of ResNet, both versions allow the feature map information skip multiple layers and reach to the shallow layer directly.
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/resnet_shortcut.png" width="544" height="529" />
+
+What do you think? Feel free to share your ideas [here][3]!
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans2.md
 [2]:https://arxiv.org/pdf/2307.00384.pdf
+[3]:https://github.com/lady-h-world/My_Garden/discussions
