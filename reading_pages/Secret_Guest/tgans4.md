@@ -31,7 +31,7 @@ Meanwhile, you must have noticed each generator links to the discriminator. If t
 
 Such shortcut connection had been used other neural networks too. The example below came from 2 versions of ResNet, both versions allow the feature map information skip multiple layers and reach to the shallow layer directly.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/resnet_shortcut.png" width="544" height="529" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/resnet_shortcut.png" width="344" height="329" />
 
 What do you think? Feel free to share your ideas [here][3]!
 
