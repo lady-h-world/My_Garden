@@ -13,21 +13,21 @@ The second major change happened in feature encoding:
 
 #### CasTGAN
 
-CasTGAN (Cascade Tabular GAN) was [published in 2023][2]. At the first glance, its architecture looks overwhelming:
+CasTGAN (Cascade Tabular GAN) was [published in 2023][2], it introduced a cascaded architecture:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN.png" width="961" height="454" />
 
-Let's break it down!
+The architecture looks complex, but it's still a combination of generator, discriminator and auxiliary estimator. Let's break it down!
 
-Firstly, you're seeing CasTGAN has several generators (marked as orange square), they get the same noise input.
+Firstly, you're seeing CasTGAN has several generators (marked as orange squares), they get the same noise input.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN1.png" width="961" height="454" />
 
-The generators are arranged in a sequence, each generator produces one of the variables in the tabular data and passes the generated variable to the next generator, this means the last generator will send all the generated variables to the discriminator (marked as blue square).
+The generators are arranged in a sequence, each generator produces one of the variables in the tabular data and passes the generated variable to the next generator. Consequently, the last generator sends all the generated variables to the discriminator (marked as blue square).
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN2.png" width="961" height="454" />
 
-Meanwhile, you must have noticed each generator links to the discriminator. If the last generator sends all the output variables to the discriminator, why does CasTGAN have each generator communicates to the discriminator? Lady H. checked throughout the paper and didn't find the reason, but in her opinion, this is to create shortcut connections to relieve gradient vanishing during backpropagation in the hierarchical communication.
+Meanwhile, you must have noticed each generator connects to the discriminator. If the last generator sends all the output variables to the discriminator, why does CasTGAN have each generator communicates to the discriminator? Lady H. checked throughout the paper and didn't find the reason, but in her opinion, this is to create shortcut connections to relieve gradient vanishing during backpropagation in the hierarchical communication.
 
 Such shortcut connection had been used in other neural networks too. The example below came from 2 versions of ResNet, both versions allow the feature map information skip multiple layers and reach to the shallow layer directly.
 
@@ -35,13 +35,13 @@ What do you think? Feel free to share your ideas [here][3]!
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/resnet_shortcut.png" width="344" height="329" />
 
-CasTGAN also has multiple auxiliary estimators (marked in purple square). Each generator has a corresponding auxiliary estimator to predict the same the variable that the generator attempts to generate. Each auxiliary estimator is a pretrained LightGBM model, it's trained on the rest of variables in order to predict the target variable. The benefit of using LightGBM here is, it can handle categorical variables without using ont-hot encoding. 
+CasTGAN also has multiple auxiliary estimators (marked as purple squares). Each generator has a corresponding auxiliary estimator to predict the same the variable that the generator attempts to generate. Each auxiliary estimator is a pretrained LightGBM model, it's trained on the rest of variables in order to predict the target variable. The benefit of using LightGBM here is, it can handle categorical variables without using ont-hot encoding. 
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN3.png" width="961" height="454" />
 
-According to CasTGAN's paper, with the cascaded architecture, it's able to capture the correlations and interdependence between variables, and therefore making generated synthetic data more realistic.
+According to CasTGAN's paper, this cascaded architecture is able to capture the correlations and interdependence between variables, and therefore making generated synthetic data more realistic.
 
-Next, you will Lady H.'s experiment results using these 3 Tabular GANs. Guess which TGAN gives better results? 😉
+Next, you will Lady H.'s experiments using these 3 Tabular GANs. Guess which TGAN gives better results? 😉
 
 #
 <p align="left">
