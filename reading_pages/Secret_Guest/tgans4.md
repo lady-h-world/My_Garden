@@ -29,20 +29,37 @@ The generators are arranged in a sequence, each generator produces one of the va
 
 Meanwhile, you must have noticed each generator links to the discriminator. If the last generator sends all the output variables to the discriminator, why does CasTGAN have each generator communicates to the discriminator? Lady H. checked throughout the paper and didn't find the reason, but in her opinion, this is to create shortcut connections to relieve gradient vanishing during backpropagation in the hierarchical communication.
 
-Such shortcut connection had been used other neural networks too. The example below came from 2 versions of ResNet, both versions allow the feature map information skip multiple layers and reach to the shallow layer directly.
+Such shortcut connection had been used in other neural networks too. The example below came from 2 versions of ResNet, both versions allow the feature map information skip multiple layers and reach to the shallow layer directly.
 
 What do you think? Feel free to share your ideas [here][3]!
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/resnet_shortcut.png" width="344" height="329" />
 
-CasTGAN also has multiple auxiliary estimators (marked in purple square), and each auxiliary estimator maps to a generator, and predict the same variable its generator trying to generate. Each auxiliary estimator is a pretrained LightGBM model, it's trained on the rest of variables in order to predict the target variable. The benefit of using LightGBM here is, it can handle categorical variables without using ont-hot encoding. 
+CasTGAN also has multiple auxiliary estimators (marked in purple square). Each generator has a corresponding auxiliary estimator to predict the same the variable that the generator attempts to generate. Each auxiliary estimator is a pretrained LightGBM model, it's trained on the rest of variables in order to predict the target variable. The benefit of using LightGBM here is, it can handle categorical variables without using ont-hot encoding. 
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN3.png" width="961" height="454" />
 
+According to CasTGAN's paper, with the cascaded architecture, it's able to capture the correlations and interdependence between variables, and therefore making generated synthetic data more realistic.
 
+Next, you will Lady H.'s experiment results using these 3 Tabular GANs. Guess which TGAN gives better results? 😉
+
+#
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
+</p>
+
+[Keep going >>][4]
+
+<p align="right">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<< Looking back][5]
 
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans2.md
 [2]:https://arxiv.org/pdf/2307.00384.pdf
 [3]:https://github.com/lady-h-world/My_Garden/discussions
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans5.md
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans3.md
