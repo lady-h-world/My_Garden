@@ -3,7 +3,7 @@
 #### About the Data
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/safe_bank.png" width="256" height="242" />
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/safe_bank.png" width="216" height="202" />
 
 If you have already visited [Resplendent Tree][2], you must be familiar with our Garden Bank and its [deposit campaign data][1].
 
