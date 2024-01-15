@@ -11,14 +11,16 @@ Our Garden Bank is famous for its safety, attracting significant investments and
 Synthetic data generation is one of the solutions to make this strategy come true!
 </p>
 
-The experiments you're going to see are using deposit campaign data again. Let's take look at a snapshot of the real data and the generated synthetic data:
+The experiments you're going to see are using deposit campaign data again. Let's take look at the snapshot of the real data and the generated synthetic data:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/real_vs_syn.png" width="1031" height="413" />
 
+🌻 [To get campaign data >>][3] 
 
 
-
+#### Experiments with CTGAN
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr1.md#about-the-data
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
+[3]:[1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_campaign.ipynb
