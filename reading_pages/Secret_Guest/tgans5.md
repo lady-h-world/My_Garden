@@ -13,7 +13,7 @@ Synthetic data generation is one of the solutions to make this strategy come tru
 
 The experiments you're going to see are using deposit campaign data again. Let's take look at the snapshot of the real data and the generated synthetic data:
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/real_vs_syn.png" width="1031" height="413" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/real_vs_syn.png" width="931" height="441" />
 
 🌻 [To get campaign data >>][3] 
 
