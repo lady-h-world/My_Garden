@@ -18,7 +18,10 @@ The experiments you're going to see are using deposit campaign data again. Let's
 🌻 [To get campaign data >>][3] 
 
 
-#### Experiments with CTGAN
+#### Evaluation Metrics
+
+
+
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr1.md#about-the-data
