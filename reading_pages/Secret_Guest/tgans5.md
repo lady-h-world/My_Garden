@@ -21,6 +21,7 @@ The experiments you're going to see are using deposit campaign data again. Let's
 
 #### Evaluation Metrics
 
+To evaluate the effectiveness of generated synthetic data, Lady H. employed 2 methods.
 
 
 
