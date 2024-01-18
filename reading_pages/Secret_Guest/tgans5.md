@@ -32,7 +32,7 @@ PSI often employees these thresholds:
 
 So, if we can find more variables have PSI score lower than 0.2 or even lower than 0.1, then the generated synthetic data are more similar to the real data.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/continuous_dist_comp.png" width="996" height="425" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/continuous_dist_comp.png" width="996" height="525" />
 
 
 
