@@ -30,10 +30,13 @@ PSI often employees these thresholds:
 * `0.1 <= PSI < 0.2`: moderate distribution change
 * `PSI >= 0.2`: significant distribution change
 
-So, if we can find more variables have PSI score lower than 0.2 or even lower than 0.1, then the generated synthetic data are more similar to the real data.
+So, if we can find more variables have PSI score lower than 0.2 or even lower than 0.1, then the generated synthetic data is more similar to the real data.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/continuous_dist_comp.png" width="996" height="525" />
 
+JS Distance (or JS Divergence) can be used to compare discrete variable's distributions, it's a score between `[0, 1]`, "0" corresponds to identical distributions and "1" to absolutely different. Lady H. was using "0.1" as the threshold, if more variables got JS Distance lower than 0.1, then the generated synthetic data is more similar to the real data.
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/discrete_dist_comp.png" width="908" height="503" />
 
 
 
