@@ -23,7 +23,7 @@ The experiments you're going to see are using deposit campaign data again. Let's
 
 To evaluate the effectiveness of generated synthetic data, Lady H. employed 2 methods.
 
-<b>First</b> evaluation method was to compare variables' distributions between real data and synthetic data. PSI score was used to compare continuous variable's distributions and JS Distance was used to compare discrete variable's distributions.
+<b>The first</b> evaluation method was to compare variables' distributions between real data and synthetic data. PSI score was used to compare continuous variable's distributions and JS Distance was used to compare discrete variable's distributions.
 
 PSI often employees these thresholds:
 * `PSI < 0.1`: no significant distribution change
@@ -38,7 +38,9 @@ JS Distance (or JS Divergence) can be used to compare discrete variable's distri
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/discrete_dist_comp.png" width="908" height="503" />
 
+<b>The second</b> evaluation method was to apply a machine learning model on two training datasets, one came from the real data and the other came from the synthetic data, then compare their performance on the same testing data formed by real data. The smaller performance difference indicates a higher similarity between the real and the synthetic.
 
+#### Experiments
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr1.md#about-the-data
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
