@@ -12,6 +12,13 @@ Our Garden Bank is famous for its safety, attracting significant investments and
 Synthetic data generation is one of the solutions to make this strategy come true!
 </p>
 
+This dataset has:
+* 11,162 records
+* 7 numerical variables
+* 9 categorical variables
+* The target is a binary value, indicating has deposit or not
+* The target has 52.6% negative records and 47.4% positive records
+
 The experiments you're going to see are using deposit campaign data again. Let's take look at the snapshot of the real data and the generated synthetic data:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/real_vs_syn.png" width="931" height="441" />
@@ -40,7 +47,14 @@ JS Distance (or JS Divergence) can be used to compare discrete variable's distri
 
 <b>The second</b> evaluation method was to apply a machine learning model on two training datasets, one came from the real data and the other came from the synthetic data, then compare their performance on the same testing data formed by real data. The smaller performance difference indicates a higher similarity between the real and the synthetic.
 
+🌻 [See example code >>][4] 
+
+Lady H. found the second evaluation method is more effective in comparing the real data and the synthetic data.
+
+
 #### Experiments
+
+
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr1.md#about-the-data
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
