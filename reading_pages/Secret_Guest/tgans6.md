@@ -3,7 +3,7 @@
 * <b>Install & Execute CTGAN</b>
   * `pip install ctgan` or `conda install -c pytorch -c conda-forge ctgan` to install CTGAN.
   * To generate the synthetic data only takes a few lines of code, like below:
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+_syn_gen_code.png" width="903" height="444" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctgan_syn_gen_code.png" width="903" height="444" />
   
 🌻 [Check detailed code >>][5] 
 
