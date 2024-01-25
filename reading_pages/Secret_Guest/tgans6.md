@@ -9,12 +9,17 @@
 
 
 * <b>Install & Execute CTABGAN+</b>
-  * Download the repo through `git clone https://github.com/Team-TUD/CTAB-GAN-Plus.git`
+  * Download CTABGAN+ repo through `git clone https://github.com/Team-TUD/CTAB-GAN-Plus.git`
   * Make sure your input real data is in "CSV" format.
-  * To generate synthetic data, you can adjust [these parameters][4], and the code look as below:
+  * To generate synthetic data, you can adjust [these parameters][4], output has to save in "CSV" file, and the code look as below:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+_syn_gen_code.png" width="903" height="385" />
 
 🌻 [Check detailed code >>][3] 
+
+
+* <b>Install & Execute CasTGAN</b>
+  * Download CasTGAN repo through `git clone https://github.com/abedshantti/CasTGAN.git`
+
 
 #### Experiments
 
@@ -29,4 +34,5 @@ The experiment results are summarized in table 5.1:
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/syn_ctabgan%2B.ipynb
 [4]:https://github.com/Team-TUD/CTAB-GAN-Plus/blob/main/model/ctabgan.py#L17-L25
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/syn_ctgan.ipynb
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/syn_castgan.ipynb
 
