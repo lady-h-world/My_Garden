@@ -1,8 +1,9 @@
 #### Install & Execute TGANs
 
 * <b>Install & Execute CTGAN</b>
-  * `pip install` or `conda install` [like this][1] will install CTGAN easily.
-  * To generate the synthetic data only takes a few lines of code, [like this][2].
+  * `pip install ctgan` or `conda install -c pytorch -c conda-forge ctgan` to install CTGAN.
+  * To generate the synthetic data only takes a few lines of code, like below:
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+_syn_gen_code.png" width="903" height="444" />
   
 🌻 [Check detailed code >>][5] 
 
