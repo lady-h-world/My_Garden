@@ -3,8 +3,17 @@
 * <b>Install & Execute CTGAN</b>
   * `pip install` or `conda install` [like this][1] will install CTGAN easily.
   * To generate the synthetic data only takes a few lines of code, [like this][2].
-* <b>Install & Execute CTABGAN+</b>
+  
+🌻 [Check detailed code >>][5] 
 
+
+* <b>Install & Execute CTABGAN+</b>
+  * Download the repo through `git clone https://github.com/Team-TUD/CTAB-GAN-Plus.git`
+  * Make sure your input real data is in "CSV" format.
+  * To generate synthetic data, you can adjust [these parameters][4], and the code look as below:
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+_syn_gen_code.png" width="903" height="385" />
+
+🌻 [Check detailed code >>][3] 
 
 #### Experiments
 
@@ -17,4 +26,6 @@ The experiment results are summarized in table 5.1:
 [1]:https://github.com/sdv-dev/CTGAN?tab=readme-ov-file#use-the-ctgan-standalone-library
 [2]:https://github.com/sdv-dev/CTGAN?tab=readme-ov-file#usage-example
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/syn_ctabgan%2B.ipynb
+[4]:https://github.com/Team-TUD/CTAB-GAN-Plus/blob/main/model/ctabgan.py#L17-L25
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/syn_ctgan.ipynb
 
