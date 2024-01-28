@@ -33,6 +33,9 @@
   * Run `python -m main --dataset="campaign" --epochs=10`, replace "dataset" with your dataset's name.
   * Besides `epochs` you can specify other parameters in above command, [check CastGAN parameters][10] for more.
 
+🌻 [Check detailed code here >>][13] 
+
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
@@ -59,4 +62,5 @@
 [10]:https://github.com/abedshantti/CasTGAN/blob/main/Model/CasTGAN.py#L380-L413
 [11]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans7.md
 [12]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans5.md
+[13]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/syn_castgan.ipynb
 
