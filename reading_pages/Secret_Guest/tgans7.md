@@ -12,15 +12,15 @@ With each TGAN, Lady H. tried different settings and used the best performed syn
   * CTABGAN+ used 28.8 minutes
   * CasTGAN used 15 minutes
 
-When comparing model LGBM's prediction performance of synthetic data with real data, CasTGAN outperformed. However, both the AUC and AVP values were relatively low, falling below 0.6. Considering CTABGAN+ took longer data generation time and got lowest performance, Lady H. later focused the comparison solely between CTGAN and CasTGAN in subsequent experiments. CasTGAN still outperformed in XGBoost, CatBoost comparisons and maintained a low performance. Lady H. applied Stacking as well, by stacking the optimized LGBM, XGBoost and CatBoost, only got worse performance.
+When comparing datasets' LGBM performance, CasTGAN outperformed. However, both AUC and AVP values were relatively low, falling below 0.6. Considering CTABGAN+ took longer data generation time and got lowest LGBM performance, Lady H. later focused the comparison solely between CTGAN and CasTGAN in subsequent experiments. CasTGAN continued to outperform XGBoost and CatBoost in terms of performance, while the performance consistently to be low. Lady H. applied Stacking as well, by stacking the optimized LGBM, XGBoost and CatBoost, only got worse performance.
 
-🌻 [Check CTGAN data generation & LGBM baseline code >>][1] 
-🌻 [Check CTABGAN+ data generation & LGBM baseline code >>][2] 
-🌻 [Check CasTGAN+ data generation & LGBM baseline code >>][3] 
-🌻 [Check optimizaed LGBM code >>][4] 
-🌻 [Check Stacking code >>][5] 
-🌻 [Check optimized XGBoost code >>][6] 
-🌻 [Check optimized CatBoost code >>][7] 
+* 🌻 [Check CTGAN data generation & LGBM baseline code >>][1] 
+* 🌻 [Check CTABGAN+ data generation & LGBM baseline code >>][2] 
+* 🌻 [Check CasTGAN+ data generation & LGBM baseline code >>][3] 
+* 🌻 [Check optimizaed LGBM code >>][4]
+* 🌻 [Check optimized XGBoost code >>][6] 
+* 🌻 [Check optimized CatBoost code >>][7] 
+* 🌻 [Check Stacking code >>][5] 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/syn_ctgan.ipynb
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/syn_ctabgan%2B.ipynb
