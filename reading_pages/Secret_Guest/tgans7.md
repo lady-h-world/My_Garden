@@ -12,7 +12,7 @@ With each TGAN, Lady H. tried different settings and used the best performed syn
   * CTABGAN+ used 28.8 minutes
   * CasTGAN used 15 minutes
 
-When comparing datasets' LGBM performance, CasTGAN outperformed. However, both AUC and AVP values were relatively low, falling below 0.6. Considering CTABGAN+ took longer data generation time and got lowest LGBM performance, Lady H. later focused the comparison solely between CTGAN and CasTGAN in subsequent experiments. CasTGAN continued to outperform XGBoost and CatBoost in terms of performance, while the performance consistently to be low. Lady H. applied Stacking as well, by stacking the optimized LGBM, XGBoost and CatBoost, only got worse performance.
+When comparing datasets' LGBM performance, CasTGAN outperformed. However, both AUC and AVP (average precision score) values were relatively low, falling below 0.6. Considering CTABGAN+ took longer data generation time and got lowest LGBM performance, Lady H. later focused the comparison solely between CTGAN and CasTGAN in subsequent experiments. CasTGAN continued to outperform XGBoost and CatBoost in terms of performance, while the performance consistently to be low. Lady H. applied Stacking as well, by stacking the optimized LGBM, XGBoost and CatBoost, only got worse performance.
 
 * 🌻 [Check CTGAN data generation & LGBM baseline code >>][1] 
 * 🌻 [Check CTABGAN+ data generation & LGBM baseline code >>][2] 
