@@ -18,6 +18,7 @@ Firstly, she checks the positive difference of `real_data_predicted_probability 
 The comparison between "Large Positive Proba Difference" and "Small Positive Proba Difference" indicates, there are some top features affect the positive prediction differences between real data and synthetic data. When such features have a bigger influence, the differences are larger, and when such features have a smaller influence, the differences are smaller.
 
 Then how about the negative differences of `real_data_predicted_probability - synthetic_data_predicted_probability`. Can we find simiar patterns? Indeed, yes!
+
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/neg_shaps.png" width="967" height="471" />
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/deep_dive.ipynb
