@@ -1,6 +1,6 @@
-Seeing both AUC and AVP kept being low (under 0.6), Lady H. started to wonder whether there are certain features in synthetic data played an important role in low performance? If so, maybe she can improve the prediction performance from those features.
+Lady H. observed that the AUC and AVP of synthetic data were consistently lower than those of real data. This prompted her to investigate whether specific features might be contributing to the differences in predicted probabilities between models trained on real and synthetic data.
 
-To validate her assumption, she aims to investigate whether certain features influence the predicted probability towards higher or lower values. SHAP proves to be a valuable tool for this purpose. A higher positive SHAP value suggests that a feature contributes more efforts to pushing the predicted value higher, whereas a lower negative SHAP value indicates that the feature adds more efforts in pushing the predicted value lower.
+To validate her assumption, she's going to do some SHAP analysis. A higher positive SHAP value suggests that a feature contributes more efforts to pushing the predicted value higher, whereas a lower negative SHAP value indicates that the feature adds more efforts in pushing the predicted value lower.
 
 Firstly, she checks the positive difference of `real_data_predicted_probability - synthetic_data_predicted_probability`:
 * On the left SHAP screenshot, <b>"Large Positive Proba Difference"</b>, she chose records with the largest positive differences.
