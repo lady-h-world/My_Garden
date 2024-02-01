@@ -6,13 +6,11 @@ In the chart below, she compares the positive difference of `real_data_predicted
 * On the left SHAP screenshot, "Large Positive Proba Difference", she chose records with the largest positive differences.
   * The left SHAP decision plot represents feature contributions from the real data. Organized right-leaning lines suggest features collectively contribute to higher probabilities. 
   * The right SHAP decision plot represents feature contributions from the synthetic data. Organized left-leaning lines suggest features collectively contribute to lower probabilities.
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/pos_shaps.png" width="967" height="471" />
+
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/shap_decision_plot.png" width="880" height="90" />
 </p>
-
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/pos_shaps.png" width="967" height="471" />
-
-
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/deep_dive.ipynb
