@@ -23,4 +23,9 @@ Then how about <b>negative class records</b>? Can we find simiar patterns? Indee
 
 🌻 [Check code details here >>][1] 
 
+
+Next, she chose the most "suspicious" features that might caused more incorrect predictions, and checked their distributions.
+
+
+
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/deep_dive.ipynb
