@@ -27,7 +27,10 @@ Then how about <b>negative class records</b>? Can we find simiar patterns? Indee
 Next, she chose the most "suspicious" features from above analysis, to further check their distributions.
 
 This is the distribution comparison between real data and CTGAN generated synthetic data, for <b>all positive records</b>:
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/pos_dist.png" width="901" height="559" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/pos_dist.png" width="1001" height="559" />
+
+And this is the distribution comparison for <b>all negative records</b>:
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/neg_dist.png" width="1001" height="559" />
 
 
 
