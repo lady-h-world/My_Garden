@@ -2,7 +2,7 @@ Lady H. observed that the AUC and AVP of synthetic data were consistently lower 
 
 A higher positive SHAP value suggests that a feature contributes more efforts to pushing the predicted value higher, whereas a lower negative SHAP value indicates that the feature adds more efforts in pushing the predicted value lower.
 
-Firstly, she checks the <b>positive class records</b> where the real data trained model predicted correctly while the synthetic data trained model predicted wrong.
+Firstly, she checked the <b>positive class records</b> where the real data trained model predicted correctly while the synthetic data trained model predicted wrong.
 * In <b>"Large Positive Proba Difference"</b> chart, she chose records with `real_data_predicted_probability - synthetic_data_predicted_probability >= 0.6`.
   * The left SHAP decision plot represents feature contributions from the real data. Organized right-leaning lines suggest features collectively contribute to higher probabilities, the correct class.
   * The right SHAP decision plot represents feature contributions from CTGAN's synthetic data. Organized left-leaning lines suggest features collectively contribute to lower probabilities, the incorrect class.
@@ -17,7 +17,7 @@ Firstly, she checks the <b>positive class records</b> where the real data traine
 
 The comparison between "Large Positive Proba Difference" and "Small Positive Proba Difference" indicates, for positive class records, there are some top features affect the prediction differences between real data trained model and synthetic data trained model. When such features play a bigger influence, the differences are larger, and when such features have a smaller influence, the differences are smaller.
 
-Then how about <b>negative class records</b>? Can we find simiar patterns? Indeed, yes!
+Then how about <b>negative class records</b>? Can we find similar patterns? Indeed, yes!
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/neg_shaps.png" width="967" height="471" />
 
@@ -34,16 +34,16 @@ And this is the distribution comparison for <b>all negative records</b>:
 
 Comparing these 2 screenshots, did you find any interesting clues? 😉
 
-Lady H. noticed for features like duration and age, their CTGAN generated features in negative class have lots of overlap with their positive class values, by contrast real data's values in these features are better at distinguishing the positive and negative classes. This might be part of reasons why real data trained model performed better in classification. Having this thought, she decided to use CTGAN to generate synthetic training data for positive class and negative class separately, hoping this can get more accurate feature distributions in both classes and therefore improve the synthetic data trained model's performance. 
+Lady H. noticed for features like "duration" and "age", their CTGAN generated features in negative class have lots of overlap with their positive class values, by contrast real data's distributions in these features are better at distinguishing the positive and negative classes. This might be part of reasons why real data trained model performed better in classification. Having this thought, she decided to generate synthetic training data for positive class and negative class separately, hoping this can get more accurate feature distributions in both classes and therefore improve the synthetic data trained model's performance. 
 
-This method is called as ASDGP, standing for <b>A</b>djusted <b>S</b>ynthetic <b>D</b>ata <b>G</b>eneration <b>P</b>rocess, a name Lady H. made up 😉!
+She call this method as ASDGP, standing for <b>A</b>djusted <b>S</b>ynthetic <b>D</b>ata <b>G</b>eneration <b>P</b>rocess. Yes, it's a made-up name 😉!
 
-And she made it! The performance finally jumped above 0.6.
+By applying ASDGP on CTGAN generated data, the performance finally jumped above 0.6.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/syn_exp_table.png" width="930" height="441" />
 
 🌻 [Check code details here >>][1] 
 
-Do you have any other ideas to further improve the prediction performance of synthetic trained model? Would you like to try with CastGAN? You're very welcome to share your experiments or ideas [here][2]!
+Do you have any other ideas to further improve the prediction performance of synthetic data trained model? Would you like to try with CasTGAN? You're very welcome to share your experiments or ideas [here][2]!
 
 
 #
