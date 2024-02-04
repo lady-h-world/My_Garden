@@ -62,4 +62,4 @@ Do you have any other ideas to further improve the prediction performance of syn
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/deep_dive.ipynb
 [2]:https://github.com/lady-h-world/My_Garden/discussions
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans7.md
-[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/secret_guest.md
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/secret_guest.md#sprouts-collection-time

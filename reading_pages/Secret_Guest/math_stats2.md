@@ -38,5 +38,5 @@ This is a special shape of rose curve called "cardioid". Besides, by changing th
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/math_stats/umbrella_white_rose.ipynb
-[2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/secret_guest.md
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/secret_guest.md#sprouts-collection-time
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/math_stats1.md
