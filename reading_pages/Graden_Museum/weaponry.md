@@ -18,6 +18,9 @@
 ### Model Monitoring
 * [Predict MAE or MSE of Regression Model][3]
 
+### Synthetic Data Generation
+* [Tabula][9] leverages language model structures to generate tabular synthetic data. Are you able to run its code?
+
 
 [1]:https://github.com/winedarksea/AutoTS
 [2]:https://github.com/unit8co/darts
@@ -27,3 +30,4 @@
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts6.md
 [7]:https://github.com/8080labs/ppscore
 [8]:https://stackoverflow.com/questions/77101618/ray-tune-fit-function-file-not-found-on-windows
+[9]:https://github.com/zhao-zilong/Tabula/tree/main
