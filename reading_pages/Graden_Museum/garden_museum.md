@@ -24,6 +24,7 @@ The potentials of our sprouts extends beyond what you witnessed during your visi
 * [Time Series][7]
 * [Hyperparameter Tuning (HPO)][8]
 * [Model Monitoring][9]
+* [Synthetic Data Generation][16]
 
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
@@ -56,3 +57,4 @@ The potentials of our sprouts extends beyond what you witnessed during your visi
 [12]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/suppression.md
 [13]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/the_poem.md
 [15]:https://docs.google.com/presentation/d/1c8DyIW3z53EMpZBNPc7cuGkk97HICOgmDp6P5_RVRJw/edit?usp=sharing
+[16]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#synthetic-data-generation
