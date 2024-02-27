@@ -5,7 +5,7 @@
 
 ## 🚍 Main Station 🚍
 
-Starting from the main station, you have the flexibility to explore any stop to gather sprouts 🌱!
+Collect the sprouts 🌱 to gain problem solving skills!
 
 * [The Queen][1]
   * <b>Hyperparameter Optimization</b> methods applied in classical classification, regression, and deep learning.
