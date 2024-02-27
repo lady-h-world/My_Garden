@@ -16,7 +16,7 @@ Collect the sprouts 🌱 to gain problem solving skills!
 * [Replendent Tree][9]
   * <b>Correlation</b>, <b>Unsupervised Learning</b> and <b>Semi Supervised Learning</b>.
 * [Secret Guest][12]
-  * Have fun with <b>Math & Statistics</b>, <b>Tabular GANs</b> (Generative Adversarial Networks) and <b>Web Mining</b>. 
+  * Have fun with <b>Math & Statistics</b>, <b>Tabular GANs</b> (Generative Adversarial Networks) and <b>Web Mining with LLM</b>. 
 * [Garden Totem - Yin Yang][5]
   * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s homemade methods.
 * [Crystal Ball][10]
