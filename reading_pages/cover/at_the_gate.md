@@ -4,7 +4,7 @@
 
 #
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/at_gate.png" width="910" height="700" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/at_gate.png" width="810" height="600" />
 </p>
 
 
