@@ -3,8 +3,6 @@
 </p>
 
 #
-
-In the realm of significance, the prowess in problem-solving eclipses the acquisition of novel tools.
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/at_gate.png" width="910" height="700" />
 </p>
