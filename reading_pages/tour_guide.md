@@ -5,7 +5,7 @@
 
 ## 🚍 Main Station 🚍
 
-Collect the sprouts 🌱 to gain problem solving skills!
+Collect the sprouts 🌱 along the way!
 
 * [The Queen][1]
   * <b>Hyperparameter Optimization</b> methods applied in classical classification, regression, and deep learning.
