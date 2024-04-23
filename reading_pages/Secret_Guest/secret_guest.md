@@ -22,7 +22,7 @@ We never glimpsed his true appearance as he constantly alters his looks. Some sp
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-Hanashiro's golden butterflies are nurtured in our garden, the vibrant blooms and delicate foliage create an idyllic haven for these lovely creatures. Infused with a touch of Hanashiro's power, each butterfly carries a trace of his magic. As they're dancing around in this botanical wonderland, some of our sprouts have absorbed a bit of Hanashiro's magic as well.
+Hanashiro's golden butterflies are nurtured in our garden, the vibrant blooms and delicate foliage create an idyllic haven for these lovely creatures. Infused with a touch of Hanashiro's power, each butterfly carries a trace of his magic. As they're dancing around in this botanical wonderland, some of our sprouts have absorbed a bit of Hanashiro's power as well.
 
 Let's see, what kind of power you can gain here!
 
@@ -30,7 +30,7 @@ Let's see, what kind of power you can gain here!
 
 🌱 Much like Hanashiro's power to craft deceptive appearances, data science holds the ability to [generate counterfeits using GANs >>][3].
 
-🌱 To be as knowledgeable as Hanashiro, you can get the latest knowledge from the power of web mining.
+🌱 Like Hanashiro's cosmos of knowledge, you can [build an app empowered by AI][4].
 
 Let's go and collect the sprouts now!
 
@@ -46,3 +46,4 @@ Let's go and collect the sprouts now!
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md#main-station-
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/math_stats1.md
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans1.md
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/deploy_ai_app1.md
