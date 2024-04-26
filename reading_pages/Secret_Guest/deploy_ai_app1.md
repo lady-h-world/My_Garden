@@ -2,11 +2,14 @@
 
 ### Local Stream Demo
 
-Lady H. travels a lot and built this app to get traveling recommendations from AI. This app is called as "Local Stream", [check it out!][1]
+<b>Local Stream</b> is a travel recommendation app powered by AI. Lady H. built it to save some efforts when making traveling plans. [You can play with Local Stream here!][1]
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/local_stream_app_v3.gif" width="800" height="450" />
 </p>
+
+Ready to create your own app? 😉 It's absolutely free to launch and requires zero web development skills! Let's dive in and make it happen!
+
 
 ### How to Build Local Stream
 
