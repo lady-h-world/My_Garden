@@ -3,7 +3,7 @@
 </p>
 
 
-## 🚍 Main Station 🚍
+## Main Station 🚂
 
 Collect the sprouts 🌱 along the way!
 
