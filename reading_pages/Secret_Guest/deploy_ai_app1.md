@@ -12,8 +12,13 @@
 
 Ready to create your own app? 😉 It's absolutely <b>free to launch</b> and requires <b>zero web development</b> skills! Let's make it happen!
 
+<p align="left">
 
-### How to Build Local Stream
-#### Set Up
+Besides, Lady H. only teaches cost-effective solutions!
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/garden_bank.png" width="153" height="111" />
+</p>
+
+
 
 [1]:https://localstream.streamlit.app/
