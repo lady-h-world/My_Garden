@@ -2,7 +2,7 @@
 
 ### Local Stream Demo
 
-<b>Local Stream</b> is a travel recommendation app powered by AI. Lady H. built it to save some efforts when making traveling plans. 
+<b>Local Stream</b> is an AI-powered travel recommendation app. Upon users entering their destination and intended travel month, it displays recommended locations on the map and provides photos of enjoyable activities in those areas for the chosen season. As Lady H. travels a lot, she built this app to save some planning time.
 
 [Check it out here!][1]
 
