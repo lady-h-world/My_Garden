@@ -11,7 +11,7 @@ The function is simple:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/butterfly_curve_formula.png" width="292" height="69" />
 
-It was discovered by a mathematician in 1989, and later more mathematicians found the function's variants where leaves, flowers or other insects became apparent. Wondering why such studies had been done? 😉 For fun, of course! 😄
+It was discovered by a mathematician in 1989, and later more mathematicians found the function's variants where leaves, flowers or other insects became apparent. Wondering why such studies had been done? 😉 Because mathematicians also needs some entertainment, I guess! 😄
 
 </p>
 
@@ -19,7 +19,7 @@ It was discovered by a mathematician in 1989, and later more mathematicians foun
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/polar_butterfly_storm.png" width="512" height="417" />
 <p>&nbsp;</p>
 
-And guess what's more fun! If we just change butterfly curve function from cartesian coordinate system to polar coordinate system, now you're seeing the shape same as Hanashiro's golden butterfly storm!
+And guess what's more fun! If we just change butterfly curve function from cartesian coordinate system to polar coordinate system, on the left chart, now you're seeing the shape same as Hanashiro's golden butterfly storm!
 
 Cartesian coordinate uses (x, y) coordinate system to specify points in a plane, while polar coordinate uses distance `r` and angle `θ` to specify points. A general form of polar equation is `r = f(θ)`, which determines how does distance r depend on the angle θ. Butterfly curve's polar equation looks as below:
 
@@ -46,7 +46,7 @@ In python code, polar coordinate is considered as a type of projection called `p
 
 ### Butterfly Dances
 
-Now let's make butterflies dance with the magic from distributions! Look!
+Now, watch we use the magic of distributions to make butterflies gracefully dance before your eyes!
 
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/butterfly_dance.png" width="1026" height="714" />
 
