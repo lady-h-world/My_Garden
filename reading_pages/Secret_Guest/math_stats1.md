@@ -19,7 +19,7 @@ It was discovered by a mathematician in 1989, and later more mathematicians foun
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/polar_butterfly_storm.png" width="512" height="417" />
 <p>&nbsp;</p>
 
-And guess what's more fun! If we just change butterfly curve function from cartesian coordinate system to polar coordinate system, on the left chart, now you're seeing the shape similar to [Hanashiro's golden butterfly storm][3]!
+And guess what's more fun! If we just change butterfly curve function from cartesian coordinate system to polar coordinate system, look at the left chart, does it feel like golden butterfly storm!? ✨
 
 Cartesian coordinate uses (x, y) coordinate system to specify points in a plane, while polar coordinate uses distance `r` and angle `θ` to specify points. A general form of polar equation is `r = f(θ)`, which determines how does distance r depend on the angle θ. Butterfly curve's polar equation looks as below:
 
