@@ -10,7 +10,7 @@ Every page in Streamlit has 2 components:
 
 The user interface for Local Stream is straightforward. Users need to input their destination country and the month of their intended travel. Additionally, they can further specify the particular region within the country they wish to visit.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_homepage_input.png" width="977" height="217" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_homepage_input.png" width="977" height="417" />
 
 Now let's break down the code of this home page to learn how to use Streamlit.
 
