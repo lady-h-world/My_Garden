@@ -14,6 +14,8 @@ The user interface for Local Stream is straightforward. Users need to input thei
 
 Now let's break down the code of this home page to learn how to use Streamlit.
 
+🌻 [Check home page code here >>][1]
+
 In the code below:
 * Line 4 specifies page title, which will be shown in the tab of user's browser.
 * Line 5 ~ 7 shows how can we add elements in sidebar. The code here is adding the logo image there.
@@ -21,7 +23,9 @@ In the code below:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_home_code1.png" width="993" height="436" />
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_home_code2.png" width="946" height="886" />
+
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_home_code2.png" width="946" height="686" />
 
 
 
