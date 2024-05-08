@@ -23,11 +23,11 @@ In the code below:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_home_code1.png" width="993" height="436" />
 
-Line 19 ~ 72 creates the web elements of this Home page.
-* Line 19 create a form of 2 columns first.
+Line 19 ~ 72 creates the web elements of this home page:
+* Line 19 create a table of 2 columns first.
 * In the first column `col1`:
-  * A `text_input` created to submit "Country" value, once the value is submitted, this text input will become empty. Streamlit provides flexible way to submit the value, users can press "Enter" or "Tab" or move mouse out of the text input.
-  * After the user filled in the country value, a `radio` button will appear, asking the user whether to specify specific region. By default, its value is "No" as line 15 specified.
+  * A `text_input` is created to submit "Country" value, once the value is submitted, this text input will become empty. Streamlit offers multiple ways to submit the value: users can press 'Enter', 'Tab', or simply move the mouse out of the input field.
+  * After the user filled in the country value, a `radio` button will appear, asking the user whether to specify specific region. By default, its value is "No", as specified in line 15.
   * If the user choose "Yes" in the radio button, another `text_input` will appear to let the user fill in the region.
   
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_home_code2.png" width="946" height="686" />
