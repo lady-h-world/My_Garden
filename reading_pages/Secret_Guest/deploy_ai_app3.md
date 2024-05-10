@@ -32,7 +32,9 @@ Line 19 ~ 72 creates the web elements of this home page:
   
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_home_code2.png" width="946" height="686" />
 
+And in the second column `col2`, a `selectbox` is created to allow the user to choose a month.
 
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_home_code3.png" width="938" height="410" />
 
 🌻 [Check home page code here >>][1]
 
