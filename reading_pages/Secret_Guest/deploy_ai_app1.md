@@ -12,7 +12,7 @@
 
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/riding_AI_wave.png" width="192" height="192" />
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/riding_AI_wave.jpg" width="192" height="192" />
 <p>&nbsp;</p>
 
 As everyone's aware, AI is rapidly advancing on Earth! To pave the way as a trailblazer of tomorrow, it's crucial to embrace creativity and leverage AI's potential to its fullest. Creating AI powered apps is a straightforward path to realizing this vision!
