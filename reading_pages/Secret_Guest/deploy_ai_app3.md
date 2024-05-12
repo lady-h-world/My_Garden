@@ -38,7 +38,7 @@ And in the second column `col2`, a `selectbox` is created to allow the user to c
 
 The last component in the home page's code enables input confirmation and input clean up:
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_home_code3.png" width="925" height="650" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_home_code4.png" width="925" height="650" />
 
 🌻 [Check home page code here >>][1]
 
