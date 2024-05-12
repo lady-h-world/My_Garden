@@ -48,7 +48,7 @@ The last component in the home page's code enables input confirmation and input 
 
 After the user confirms, the loaded results page will showcase a map featuring all the suggested spots at the travel destination. This map offers an overall overview. Subsequently, for each suggestion, 1 or 2 photos depicting local activities will be displayed to help the user visualize the suggested experience!
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results.png" width=919" height="642" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results.png" width="919" height="642" />
 
 Now let's see how to implement the results page!
 
