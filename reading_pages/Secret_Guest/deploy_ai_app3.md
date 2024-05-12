@@ -39,15 +39,16 @@ And in the second column `col2`, a `selectbox` is created to allow the user to c
 The last component in the home page's code enables input confirmation and input clean up:
 * Line 76 ~ 88 will showcase the user's input, which can include either the typed country and selected month, or it also includes the specified region.
 * Line 91 ~ 100 cleans up user input. By clicking "Clear Messages" button, the user interface will revert to the original state.
+* After the user has entered all the required information, a "CONFIRM" button will appear. Upon clicking this button, the user interface will switch to the results page.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_homepage_code4.png" width="1000" height="600" />
 
-* After the user has entered all the required information, a "CONFIRM" button will appear. Upon clicking this button, the user interface will switch to the results page.
+🌻 [Check home page code here >>][1]
+
+
 The loaded results page will showcase a map featuring all the suggested spots at the travel destination. This map offers an overall overview. Subsequently, for each suggestion, 1 or 2 photos depicting local activities will be displayed to help the user visualize the suggested experience!
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results.png" width="919" height="642" />
-
-🌻 [Check home page code here >>][1]
 
 Now let's see how to implement the results page!
 
