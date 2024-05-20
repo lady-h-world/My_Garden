@@ -25,6 +25,11 @@ The code below shows the implementation of the 3 functions highlighted above, th
 
 🌻 [Check utils code here >>][2]
 
+After loading the map, if the suggestion is not empty, then it's time to show photos of the suggested local activities. For this app, Lady H. prefers to do up-to-date photo search, so that users can feel better about what's happening in the local recently. That's also why the app is called as "Local Stream". Considering price, image search quality and speed, Lady H. found 2 available solutions:
+* Apify enabled image search
+* Google Custom Search enabled image search
+
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results_code2_v2.png" width="1044" height="777" />
 
 [1]:https://github.com/lady-h-world/My_Garden_LocalStream_App/blob/main/pages/results.py
 [2]:https://github.com/lady-h-world/My_Garden_LocalStream_App/blob/main/utils.py
