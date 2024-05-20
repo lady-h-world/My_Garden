@@ -19,7 +19,7 @@ The code below shows the implementation of the 3 functions highlighted above, th
     * In the code below, Lady H.'s header was saved in Streamlit secrets `st.secrets['PYDECK_UA']` in order to keep it private. You will see details in later deployment section.
   * The geo information can be generated from this type of url `https://nominatim.openstreetmap.org/?addressdetails=1&q={dest}+{region}+{country}&format=json&limit=1`, it only needs to fill in the `dest`, `region` and `country`.
   * Its output is a pandas dataframe that stores each suggested location (`dest`), together with its latitude and longitude.
-* `get_map()` will load the dataframe generated from `get_geo_json()` and generate a map through `pydeck`.
+* `get_map()` loads the output of `get_geo_json()`, with known latitude and longitude of each location, it creates a map using `pydeck`.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results_code2_v2.png" width="1061" height="777" />
 
