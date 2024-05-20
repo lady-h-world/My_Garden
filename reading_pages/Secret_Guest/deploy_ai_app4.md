@@ -14,7 +14,7 @@ The code below shows the implementation of the 3 functions highlighted above, th
   * Model was using GPT-3.5 Turbo, you can choose more advanced models [here][3].
   * `messages` creates the query that searches for best activities to do in user specified region & country & month, as well as listing all those activity locations.
   * It returns suggested location list and detailed suggestions separately.
-* `get_geo_json()` generates geo information using Nominatim service:
+* If suggested location list is not empty, `get_geo_json()` generates geo information using Nominatim service:
   * In order to use Nominatim, you have to specify User-Agent header to identify yourself, this helps the service track usage and enforce usage policies. Since its main purpose is to identify the user, your can use your email address as the value of `User-Agent`.
     * In the code below, Lady H.'s header was saved in Streamlit secrets `st.secrets['PYDECK_UA']` in order to keep it private. You will see details in later deployment section.
   * The geo information can be generated from this type of url `https://nominatim.openstreetmap.org/?addressdetails=1&q={dest}+{region}+{country}&format=json&limit=1`, it only needs to fill in the `dest`, `region` and `country`.
