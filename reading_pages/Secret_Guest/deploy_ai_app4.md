@@ -21,7 +21,7 @@ The code below shows the implementation of the 3 functions highlighted above, th
   * Its output is a pandas dataframe that stores each suggested location (`dest`), together with its latitude and longitude.
 * `get_map()` will load the dataframe generated from `get_geo_json()` and generate a map through `pydeck`.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results_code2_v2.png" width="1061" height="733" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results_code2_v2.png" width="1061" height="777" />
 
 🌻 [Check utils code here >>][2]
 
