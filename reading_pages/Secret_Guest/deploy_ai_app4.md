@@ -29,7 +29,7 @@ After loading the map, if the suggestion is not empty, then it's time to show ph
 * Apify enabled image search
 * Google Custom Search enabled image search
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results_code2_v2.png" width="1044" height="777" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results_code3.png" width="1044" height="777" />
 
 [1]:https://github.com/lady-h-world/My_Garden_LocalStream_App/blob/main/pages/results.py
 [2]:https://github.com/lady-h-world/My_Garden_LocalStream_App/blob/main/utils.py
