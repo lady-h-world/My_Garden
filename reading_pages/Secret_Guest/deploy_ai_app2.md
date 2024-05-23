@@ -26,7 +26,10 @@ Apify's image scraper delivers high quality image search results. This appears n
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify4.png" width="429" height="395" />
 
 * After the actor had been built successfully, you will be directly to the <b>Output</b> page like this:
-* <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify5.png" width="1031" height="209" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify5.png" width="1031" height="209" />
+
+* Now go to <b>Settings</b> to get your API token.
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify6.png" width="927" height="315" />
 
 3. In order to find photos related to ChatGPT's recommendations, [Apify's Google Image Scraper][2] provides the most relevant results. Click <b>Try for free</b> and sign up for a free Apify account. After login, you should be able to see <b>Google Images Scraper</b> in your <b>Actors</b>. Now navigate to <b>Settings</b> and click <b>Integrations</b> to obtain your <b>API Token</b>. Apify is a web scraping platform that offers frameworks for users to utilize or develop web scrapers to extract data from the Internet. Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough, otherwise [you can check Apify pricing choices][8] for your purpose.
 4. (Optional) If you want to save money, after Apify used up monthly $5, you can keep using Google Custom Search, it allows daily 100 free requests! In order to use it, you need to [create a Google Search API key][9] and [create a search engine to get its ID][10].
