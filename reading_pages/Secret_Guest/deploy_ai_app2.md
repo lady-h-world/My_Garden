@@ -35,7 +35,7 @@ Apify's image scraper delivers high quality image search results. This appears n
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify7.png" width="967" height="253" />
 
 * The code template written in different languages will appear, choose <b>Python</b> and copy the code there. To get output from this scraper, you only need to replace "<YOUR_API_TOKEN>" with your own API token.
-* <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify8.png" width="711" height="536" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify8.png" width="711" height="536" />
 
 Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough, otherwise [you can check Apify pricing choices][8] for your purpose. You can also create multiple accounts to use the free service for a longer term 😉.
 
