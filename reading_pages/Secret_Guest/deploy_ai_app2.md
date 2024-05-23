@@ -1,8 +1,18 @@
 ### How to Build Local Stream
 #### Set Up
-1. To develop and deploy the app for free, we can use <b>Streamlit</b>, a platform that enables data scientists to create apps in Python. Installation is straightforward, requiring only `pip install streamlit`.
-2. In order to be able to recommend local traveling activities, ChatGPT provides most intelligent results, particularly when seeking recommendations tailored to the selected season. [Go through these steps][1] to create an OpenAI account and ensure there are funds in your billing account, but don't worry, ChatGPT is cost-effective, it only charges $0.01 USD every 4, 5 queries from Local Stream.
-3. In order to find photos related to ChatGPT's recommendations, [Apify's Google Image Scraper][2] provides the most relevant results. Click <b>Try for free</b> and sign up for an Apify account. After login, you should be able to see <b>Google Images Scraper</b> in your <b>Actors</b>. Now navigate to <b>Settings</b> and click <b>Integrations</b> to obtain your <b>API Token</b>. Apify is a web scraping platform that offers frameworks for users to utilize or develop web scrapers to extract data from the Internet. Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough, otherwise [you can check Apify pricing choices][8] for your purpose.
+##### 1. Install Streamlit
+To develop and deploy the app for free, we can use <b>Streamlit</b>, a platform that enables data scientists to build and publish apps in Python. Installation is straightforward, requiring only `pip install streamlit`.
+
+##### 2. Create and Fund OpenAI Account
+In order to intelligently recommend local traveling activities, ChatGPT is a good choice, particularly when seeking recommendations tailored to the selected season. [Go through these steps][1] to:
+* create an OpenAI account
+* create and save the API key
+* setup billing and fund some money in this OpenAI account
+
+Does word like "billing", "funding" sound scary 💸🤑? Don't worry! ChatGPT is cost-efficient. For the usage in Local Stream, it only charges $0.01 USD every 4, 5 queries.
+
+
+3. In order to find photos related to ChatGPT's recommendations, [Apify's Google Image Scraper][2] provides the most relevant results. Click <b>Try for free</b> and sign up for a free Apify account. After login, you should be able to see <b>Google Images Scraper</b> in your <b>Actors</b>. Now navigate to <b>Settings</b> and click <b>Integrations</b> to obtain your <b>API Token</b>. Apify is a web scraping platform that offers frameworks for users to utilize or develop web scrapers to extract data from the Internet. Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough, otherwise [you can check Apify pricing choices][8] for your purpose.
 4. (Optional) If you want to save money, after Apify used up monthly $5, you can keep using Google Custom Search, it allows daily 100 free requests! In order to use it, you need to [create a Google Search API key][9] and [create a search engine to get its ID][10].
 5. Key packages to install:
 * `pip install pydeck` to enable the display of suggested locations on the map.
