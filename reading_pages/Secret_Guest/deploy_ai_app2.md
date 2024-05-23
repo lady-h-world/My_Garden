@@ -31,7 +31,14 @@ Apify's image scraper delivers high quality image search results. This appears n
 * Now go to <b>Settings</b> to get your API token.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify6.png" width="927" height="315" />
 
-3. In order to find photos related to ChatGPT's recommendations, [Apify's Google Image Scraper][2] provides the most relevant results. Click <b>Try for free</b> and sign up for a free Apify account. After login, you should be able to see <b>Google Images Scraper</b> in your <b>Actors</b>. Now navigate to <b>Settings</b> and click <b>Integrations</b> to obtain your <b>API Token</b>. Apify is a web scraping platform that offers frameworks for users to utilize or develop web scrapers to extract data from the Internet. Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough, otherwise [you can check Apify pricing choices][8] for your purpose.
+* Apify even prepared the while piece of code for you to copy in order to use this scraper. Go back to <b>Google Images Scraper</b> and click <b>API</b> in the top right corner. In the appeared dropdown, click <b>API clients</b>.
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify7.png" width="967" height="153" />
+
+* The code template written in different languages will appear, choose <b>Python</b> and copy the code there. To get output from this scraper, you only need to replace "<YOUR_API_TOKEN>" with your own API token.
+* <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify7.png" width="711" height="536" />
+
+Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough, otherwise [you can check Apify pricing choices][8] for your purpose. You can also create multiple accounts to use the free service for a longer term 😉.
+
 4. (Optional) If you want to save money, after Apify used up monthly $5, you can keep using Google Custom Search, it allows daily 100 free requests! In order to use it, you need to [create a Google Search API key][9] and [create a search engine to get its ID][10].
 5. Key packages to install:
 * `pip install pydeck` to enable the display of suggested locations on the map.
