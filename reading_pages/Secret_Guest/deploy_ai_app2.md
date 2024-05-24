@@ -4,7 +4,7 @@
 To develop and deploy the app for free, we can use <b>Streamlit</b>, a platform that enables data scientists to build and publish apps in Python. Installation is straightforward, requiring only `pip install streamlit`.
 
 ##### 2. Create and Fund OpenAI Account
-In order to intelligently recommend local traveling activities, ChatGPT is a good choice, particularly when seeking recommendations tailored to the selected season. [Go through these steps][1] to:
+In order to intelligently recommend local traveling activities, ChatGPT is a good choice, particularly when seeking recommendations tailored to the selected season. [Follow this tutorial][1] to:
 * create an OpenAI account
 * create and save the API key
 * setup billing and fund your OpenAI account
@@ -25,19 +25,19 @@ Apify's image scraper delivers high quality image search results. This appears n
 * Next, you will see a page where you mainly need to click <b>Save & Start</b> to start the actor. Before clicking this button, you can also specify the image search query and maximum number of returned results. In this example, Lady H. was searching for 2 images of "Canada".
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify4.png" width="429" height="395" />
 
-* After the actor had been built successfully, you will be directly to the <b>Output</b> page like this:
+* After the actor had been built successfully, you will be directed to the <b>Output</b> page, like this:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify5.png" width="1031" height="209" />
 
 * Now go to <b>Settings</b> to get your API token.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify6.png" width="927" height="315" />
 
-* Apify even prepared the while piece of code for you to copy in order to use this scraper. Go back to <b>Google Images Scraper</b> and click <b>API</b> in the top right corner. In the appeared dropdown, click <b>API clients</b>.
+* Apify even prepared the while piece of code for you to copy in order to use this scraper. Go back to <b>Google Images Scraper</b> and click <b>API</b> in the top right corner. Then click <b>API clients</b> from the dropdown menu.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify7.png" width="967" height="253" />
 
-* The code template written in different languages will appear, choose <b>Python</b> and copy the code there. To get output from this scraper, you only need to replace "<YOUR_API_TOKEN>" with your own API token.
+* The code template written in different languages will appear, choose <b>Python</b> and copy the code there. To execute this scraper, you only need to replace "<YOUR_API_TOKEN>" with your own API token.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify8.png" width="711" height="536" />
 
-Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough, otherwise [you can check Apify pricing choices][8] for your purpose. You can also create multiple accounts to use the free service for a longer term 😉.
+Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough as each image search cost $0.003. Otherwise [you can check Apify pricing choices][8] for your purpose. 😉 Tip, you can also create multiple accounts to use the free service for a longer term 😉.
 
 4. (Optional) If you want to save money, after Apify used up monthly $5, you can keep using Google Custom Search, it allows daily 100 free requests! In order to use it, you need to [create a Google Search API key][9] and [create a search engine to get its ID][10].
 5. Key packages to install:
