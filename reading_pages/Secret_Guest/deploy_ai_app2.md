@@ -52,19 +52,6 @@ Besides package "streamit", you also need to install the following packages:
 * `pip install pillow` to enable image display from image URLs.
 
 
-#### Code Structure
-To make Streamlit app work, you need to follow a few rules in the code structure:
-* List all the required python packages in [requirements.txt][4] file, along with the version of each package specified. This file will be used to establish the environment during the app deployment stage.
-  * After installing all the required packages, Lady H. normally run command `pip freeze >> requirements.txt` to generate this file.
-* Create a .py file as the app's home page, such as the "explore.py" shown below.
-* Create a folder named <b>"pages"</b> to store all app pages except the home page, each page is a .py file too. 
-  * The folder name here has to be "pages", otherwise Streamlit can't locate the pages 😉. 
-
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/streamlit_code_structure.png" width="359" height="203" />
-
-🌻 [Check Local Stream's code structure here >>][5]
-
-
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
@@ -81,8 +68,6 @@ To make Streamlit app work, you need to follow a few rules in the code structure
 [1]:https://www.maisieai.com/help/how-to-get-an-openai-api-key-for-chatgpt
 [2]:https://apify.com/hooli/google-images-scraper
 [3]:https://console.apify.com/sign-up
-[4]:https://github.com/lady-h-world/My_Garden_LocalStream_App/blob/main/requirements.txt
-[5]:https://github.com/lady-h-world/My_Garden_LocalStream_App
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/deploy_ai_app3.md
 [7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/deploy_ai_app1.md
 [8]:https://apify.com/pricing?utm_term=apify%20pricing&utm_campaign=TOP-EN+%7C+SEA+%7C+Brand+%7C+Others&utm_source=google&utm_medium=ppc&hsa_acc=9303439903&hsa_cam=21163808628&hsa_grp=161370239672&hsa_ad=696046221522&hsa_src=g&hsa_tgt=kwd-1063512148937&hsa_kw=apify%20pricing&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjw0YGyBhByEiwAQmBEWh58kvXCW-qS61SUQBuTXm5C8fANjsfLp0xNl3F-kPyn-wc3np-SlxoC__4QAvD_BwE
