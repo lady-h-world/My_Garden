@@ -37,10 +37,14 @@ Apify's image scraper delivers high quality image search results. This appears n
 * The code template written in different languages will appear, choose <b>Python</b> and copy the code there. To execute this scraper, you only need to replace "<YOUR_API_TOKEN>" with your own API token.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify8.png" width="711" height="536" />
 
-Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough as each image search cost $0.003. Otherwise [you can check Apify pricing choices][8] for your purpose. 😉 Tip, you can also create multiple accounts to use the free service for a longer term 😉.
+Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough as each image search only costs $0.003. Otherwise [you can check Apify pricing choices][8] for your purpose. 😉 Tip, you can also create multiple accounts to use the free service for a longer term 😉.
 
-4. (Optional) If you want to save money, after Apify used up monthly $5, you can keep using Google Custom Search, it allows daily 100 free requests! In order to use it, you need to [create a Google Search API key][9] and [create a search engine to get its ID][10].
-5. Key packages to install:
+##### 4. (Optional) Enable Google Custom Search
+There is very low chance that Apify doesn't return output, such as having timeout error. Low chance doesn't mean 0 possibility, and when it happened it hurts user experience. To ensure a smooth user experience, we can use an alternative image search solution. Among all the free solutions, Lady H. chose Google Custom Search, because it's fast and allows 100 free queries each day. In order to use it, you need to [create a Google Search API key][9] and [create a search engine to get its ID][10].
+
+
+##### 5. Other Key Packages to Install
+Besides package "streamit", you also need to install the following packages:
 * `pip install pydeck` to enable the display of suggested locations on the map.
 * `pip install openai` to use OpenAI API.
 * `pip install streamlit-extras` to use extra features of Streamlit.
@@ -82,5 +86,5 @@ To make Streamlit app work, you need to follow a few rules in the code structure
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/deploy_ai_app3.md
 [7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/deploy_ai_app1.md
 [8]:https://apify.com/pricing?utm_term=apify%20pricing&utm_campaign=TOP-EN+%7C+SEA+%7C+Brand+%7C+Others&utm_source=google&utm_medium=ppc&hsa_acc=9303439903&hsa_cam=21163808628&hsa_grp=161370239672&hsa_ad=696046221522&hsa_src=g&hsa_tgt=kwd-1063512148937&hsa_kw=apify%20pricing&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjw0YGyBhByEiwAQmBEWh58kvXCW-qS61SUQBuTXm5C8fANjsfLp0xNl3F-kPyn-wc3np-SlxoC__4QAvD_BwE
-[9]:https://console.cloud.google.com/apis/credentials?project=defcon-videolist
+[9]:https://console.cloud.google.com/apis/credentials
 [10]:https://programmablesearchengine.google.com/controlpanel/all
