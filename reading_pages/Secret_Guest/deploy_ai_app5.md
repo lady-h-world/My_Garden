@@ -21,7 +21,7 @@ The code below shows the implementation of the 3 functions highlighted above, th
   * Its output is a pandas dataframe that stores each suggested location (`dest`), together with its latitude and longitude.
 * `get_map()` loads the output of `get_geo_json()`, with known latitude and longitude of each location, it creates a map using `pydeck`.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results_code_2_v3.png" width="1062" height="890" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results_code_2_v3.png" width="1062" height="850" />
 
 🌻 [Check utils code here >>][2]
 
@@ -31,7 +31,7 @@ After loading the map, if the suggestion is not empty, then it's time to show ph
 
 As shown in the code below, the main difference between these 2 approaches is, Apify execute all the image search queries before loading any image while Google Custom Search executes a query and load its images before executing the next query. This is because Apify's image search is slower, executing all the queries ahead of time can cut its total image search and loading time in half.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results_code3_v2.png" width="1040" height="732" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results_code3_v2.png" width="1040" height="782" />
 
 🌻 [Check results page code here >>][1]
 
