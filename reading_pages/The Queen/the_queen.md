@@ -17,7 +17,6 @@ Given that Lady H.'s Chinese name translates to "waterlily in winter," reflectin
 
 </p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 
 
 ## The Outlier
@@ -31,7 +30,7 @@ Correct! The Queen is a typical outlier.
 </p>
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/lotus_plot.png" width="584" height="481" />
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/lotus_plot.png" width="484" height="381" />
 <p>&nbsp;</p>
 
 Normal lotus live between June and August, with their petals open every morning. One the opposite, the queen opens her buds at every winter night.
