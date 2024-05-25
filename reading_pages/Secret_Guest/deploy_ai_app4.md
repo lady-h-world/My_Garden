@@ -41,7 +41,7 @@ The last component in the home page's code enables input confirmation and input 
 * Line 91 ~ 100 cleans up user input. By clicking "Clear Input" button, the user interface will revert to the original state.
 * After the user has entered all the required information, a "CONFIRM" button will appear. Upon clicking this button, the user interface will switch to the results page.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_homepage_code4_v2.png" width="1022" height="757" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_homepage_code4_v2.png" width="1022" height="657" />
 
 🌻 [Check home page code here >>][1]
 
