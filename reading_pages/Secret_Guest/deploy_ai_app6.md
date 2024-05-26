@@ -13,6 +13,8 @@ Time to deploy the app so that it's accessible to the public!
 5. Sometimes, you want to update the settings of your app, such as secrets. To do this, you can click the <b>3 dots</b> of your app, followed by clicking <b>Settings</b>. Sometimes, the changes won't take effect immediately, so you can click <b>Reboot</b> to make sure the changes will take effect right away.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/app_deploy3.png" width="1034" height="410" />
 
+
+
 That's all! That's all the work you need to deploy an AI powered app! And now, it's your turn to build an app! You're very welcome to share your app [in our community][3] and let's cheer up for each other!
 
 

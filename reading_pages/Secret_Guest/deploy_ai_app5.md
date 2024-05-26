@@ -38,12 +38,14 @@ As shown in the code below, the main difference between these 2 approaches is, A
 Meanwhile, as you can see, Google Custom Search solution is only used when the Apify solution is not runnable. Lady H. did this arrangement is because Apify's image search generates much higher quality and more relevant photos, but it only offers $5 free credit per month, sometimes, Lady H. could use up all these credits before its getting renewed. So when Apify is not available, Google Custom Search comes to help, it allows 100 free queries daily and can get results fast. To narrow down google search results, you can apply [the filters here][4] in the query, but it's always challenging to get high quality or relevant image output.
 
 The `search_images()` implemented in `utils.py` is showing all the filters Lady H. used on Google Custom Search.
-
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results_code4.png" width="506" height="451" />
 
 🌻 [Check utils code here >>][2]
 
-That's it! That's all the work you need to do in order to develop such an AI powered app. Time to deploy it to make it available to the public!
+Another benefit of using Apify is its logs on every run, where you can check the execution time, the image search results, etc. This can help you better understand the user experience and make further improvement.
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify_log.png" width="1003" height="722" />
+
+Well done! Time to public the app!
 
 
 #
