@@ -7,7 +7,7 @@
 [Check it out here!][1]
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/local_stream_v3.gif" width="888" height="500" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/local_stream_v3_demo.gif" width="888" height="500" />
 </p>
 
 
