@@ -16,10 +16,8 @@ Apify's image scraper delivers high quality image search results. This appears n
 * Click <b>Try for free</b> in [Apify's Google Image Scraper][2] and sign up for the free account.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify1.png" width="495" height="170" />
 
-
 * After login, you should be able to see <b>Google Images Scraper</b> in your <b>Actors</b>.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify2.png" width="626" height="344" />
-
 
 * Click <b>Google Images Scraper</b>, then click <b>Runs</b>, followed by clicking <b>Start Actor</b>.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify3.png" width="959" height="403" />
