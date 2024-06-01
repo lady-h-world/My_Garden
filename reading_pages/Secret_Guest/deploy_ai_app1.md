@@ -2,9 +2,9 @@
 
 ### Local Stream Demo
 
-<b>Local Stream</b> is an AI-powered travel recommendation app. Upon users entering their destination and intended travel month, it displays recommended locations on the map and provides photos of enjoyable activities in those areas for the chosen season. Lady H. travels frequently, so she created this app to save some time on planning.
+<b>Local Stream</b> is an AI-powered travel recommendation app. Upon users entering their destination and intended travel month, it displays recommended locations on the map and provides photos of fun activities in those areas for the chosen season. Lady H. travels a lot, so she created this app to make better travel plans.
 
-[Check it out here!][1]
+💖 [Check it out here!][1]
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/local_stream_v3_demo.gif" width="888" height="500" />
