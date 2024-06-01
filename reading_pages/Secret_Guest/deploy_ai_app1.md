@@ -17,7 +17,7 @@
 
 As everyone's aware, AI is rapidly advancing on Earth! To pave the way for tomorrow, it's crucial to embrace creativity and leverage AI's potential to its fullest. Creating AI powered apps is a straightforward path to realizing this vision!
 
-Ready to create your own app? 😉 It's <b>free to launch</b>, <b>cost efficient</b> and <b>Python is enough</b>! Let's start now and make it happen!
+Ready to create your own app? 😉 It's <b>free to launch</b>, <b>cost efficient</b> and requires <b>zero web development</b> skill! Let's start now and make it happen!
 
 </p>
 <p>&nbsp;</p>
