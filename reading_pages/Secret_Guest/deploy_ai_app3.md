@@ -34,13 +34,13 @@ Apify's image scraper delivers high quality image search results. This appears n
 * Apify even prepared the while piece of code for you to copy in order to use this scraper. Go back to <b>Google Images Scraper</b> and click <b>API</b> in the top right corner. Then click <b>API clients</b> from the dropdown menu.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify7.png" width="967" height="253" />
 
-* The code template written in different languages will appear, choose <b>Python</b> and copy the code there. To execute this scraper, you only need to replace "<YOUR_API_TOKEN>" with your own API token.
+* The code template is written in different languages, choose <b>Python</b> and copy the code there. To execute this scraper, you only need to replace "<YOUR_API_TOKEN>" with your own API token.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify8.png" width="711" height="536" />
 
-Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough as each image search only costs $0.003. Otherwise [you can check Apify pricing choices][8] for your purpose. 😉 Tip, you can also create multiple accounts to use the free service for a longer term 😉.
+Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough as each image search only costs $0.003. Otherwise [you can check Apify pricing choices][8] for your purpose. 😉 Tip, you can also create multiple Apify accounts to use the free service for a longer term 😉.
 
 ##### 4. (Optional) Enable Google Custom Search
-There is very low chance that Apify doesn't return output, such as having timeout error. Low chance doesn't mean 0 possibility, and when it happened it hurts user experience. To ensure a smooth user experience, we can use an alternative image search solution. Among all the free solutions, Lady H. chose Google Custom Search, because it's fast and allows 100 free queries each day. In order to use it, you need to [create a Google Search API key][9] and [create a search engine to get its ID][10].
+While the chances of Apify failing to return output, such as due to a timeout error, are low, they are not zero. Such occurrences can negatively impact user experience. To ensure smooth performance, consider using an alternative image search solution. Among the free options, Lady H. chose Google Custom Search for its speed and allowance of 100 free queries per day. To use it, you need to [create a Google Search API key][9] and [create a search engine to get its ID][10].
 
 ##### 5. Other Key Packages to Install
 Besides package "streamit", you also need to install the following packages:
