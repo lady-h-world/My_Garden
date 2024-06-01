@@ -1,7 +1,7 @@
 ### How to Build Local Stream
 #### Set Up
 ##### 1. Install Streamlit
-To develop and deploy the app for free, we can use <b>Streamlit</b>, a platform that enables data scientists to build and publish apps in Python. Installation is straightforward, requiring only `pip install streamlit`.
+To develop and deploy the app for free, we can use <b>Streamlit</b>, a platform that enables data scientists to build and publish apps in Python. Installation is straightforward, just run `pip install streamlit`.
 
 ##### 2. Create and Fund OpenAI Account
 In order to intelligently recommend local traveling activities, ChatGPT is a good choice, particularly when seeking recommendations tailored to the selected season. [Follow this tutorial][1] to:
@@ -15,6 +15,7 @@ Does word like "billing", "funding" sound scary 💸🤑? Don't worry! ChatGPT i
 Apify's image scraper delivers high quality image search results. This appears not only in the images' resolution but also their relevance to the search queries. To set up this scraper:
 * Click <b>Try for free</b> in [Apify's Google Image Scraper][2] and sign up for the free account.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify1.png" width="495" height="170" />
+
 
 * After login, you should be able to see <b>Google Images Scraper</b> in your <b>Actors</b>.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify2.png" width="626" height="344" />
