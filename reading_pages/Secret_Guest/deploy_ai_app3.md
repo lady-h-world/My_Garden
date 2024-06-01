@@ -52,11 +52,11 @@ Besides package "streamit", you also need to install the following packages:
 
 #### Code Structure
 To make Streamlit app work, you need to follow a few rules in the code structure:
-* List all the required python packages in [requirements.txt][4] file, along with the version of each package specified. This file will be used to establish the environment during the app deployment stage.
+* Using a [requirements.txt][4] file stores all the Python packages and their versions in your environment. This file is essential for setting up the environment during app deployment.
   * After installing all the required packages, you can run command `pip freeze >> requirements.txt` to generate this file.
 * Create a .py file as the app's home page, such as the "explore.py" shown below.
-* Create a folder named <b>"pages"</b> to store all app pages except the home page, each page here is a .py file too. 
-  * The folder name here has to be "pages", otherwise Streamlit can't locate the pages 😉. 
+* Create a folder named <b>"pages"</b> to store all app pages except the home page, each page in this folder should also be a .py file. 
+  * The folder must be named as "pages", otherwise Streamlit won't be able to locate the pages 😉. 
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/streamlit_code_structure.png" width="359" height="203" />
 
