@@ -29,7 +29,7 @@ Apify's image scraper delivers high quality image search results. This appears n
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify5.png" width="1031" height="209" />
 
 * Now go to <b>Settings</b> to get your API token.
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify6.png" width="927" height="315" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify6.png" width="927" height="415" />
 
 * Apify even prepared the while piece of code for you to copy in order to use this scraper. Go back to <b>Google Images Scraper</b> and click <b>API</b> in the top right corner. Then click <b>API clients</b> from the dropdown menu.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify7.png" width="967" height="253" />
