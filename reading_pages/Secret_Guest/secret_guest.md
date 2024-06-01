@@ -28,9 +28,9 @@ Let's see, what kind of power you can gain here!
 
 🌱 You can draw butterfly and butterfly storms with the power of [mathematics and statistic >>][2].
 
-🌱 Much like Hanashiro's power to craft deceptive appearances, data science holds the ability to [generate counterfeits using GANs >>][3].
+🌱 Hanashiro has deceptive appearances, data science also has the ability to [generate counterfeits using GANs >>][3].
 
-🌱 Admire the access of cosmos of knowledge!? You can [build an AI powered app][4].
+🌱 Admire the ability of utilizing a cosmos of knowledge!? You can [build an AI powered app][4].
 
 Let's go and collect the sprouts now!
 
