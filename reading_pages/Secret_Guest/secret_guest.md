@@ -30,7 +30,7 @@ Let's see, what kind of power you can gain here!
 
 🌱 Much like Hanashiro's power to craft deceptive appearances, data science holds the ability to [generate counterfeits using GANs >>][3].
 
-🌱 Like Hanashiro's cosmos of knowledge, you can [build an AI powered app][4].
+🌱 Admire the access of cosmos of knowledge!? You can [build an AI powered app][4].
 
 Let's go and collect the sprouts now!
 
