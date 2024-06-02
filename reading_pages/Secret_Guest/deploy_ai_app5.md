@@ -45,7 +45,7 @@ The `search_images()` implemented in `utils.py` shows all the filters Lady H. us
 Another benefit of using Apify is its logs of every run, which allow you to check execution times, image search results, and more. This can help you better understand the user experience and make further improvements.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify_log.png" width="1003" height="722" />
 
-Well done! You have finished the app development! 🎉 Time to deploy the app! 
+Well done! You have finished the app development! 🎉 Time to deploy the app! 💃
 
 
 #
