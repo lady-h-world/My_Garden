@@ -1,4 +1,4 @@
-### Overall Workflow of Local Stream
+### The Workflow of Local Stream
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_workflow.png" width="1051" height="750" />
