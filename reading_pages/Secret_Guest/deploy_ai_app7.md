@@ -2,25 +2,24 @@
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/product_design.png" width="276" height="261" /></p>
 
-Local Stream is a simple app, but before achieving this result, Lady H. failed 3 versions because they can't achieve smooth user experience. The key of building a product is not just to check model performance, we have to keep a good balance between smooth user experience and satisfying model performance. Because missing either factor, users won't use your app.
+Local Stream is a simple app, but before achieving this result, Lady H. went through three failed versions due to issues with user experience. The key to building a successful product is not just ensuring model performance but also maintaining a good balance between smooth user experience and satisfying model performance. If either factor is lacking, users won't use your app.
 
-Initially, Lady H. plans to use Instagram to show local activities, because it provides fun photos taken by ordinary people in a wide variety of traveling spots, the photos are up-to-date and it's free. In order to search for most relevant photos from Instagram, Lady H. tried sentiment analysis and different ranking formulas. However, Instagram provides strong security settings that once it detects activities like bots, it requires different kinds of manually authentication, and Lady H. couldn't find a way to automatically bypass the authentication requests. So have to find other solutions for image search.
-
+At first, Lady H. intended to utilize Instagram to showcase local activities due to its collection of fun photos taken by ordinary people in various travel destinations. These photos are up-to-date and available for free. In an effort to search for the most relevant photos on Instagram, Lady H. experimented with sentiment analysis and different ranking formulas. However, Instagram has strong security settings, once it detected bot-like activities, it prompts additional manual authentication steps. Lady H. couldn't find a way to automatically bypass these authentication requests, so she had to explore alternative solutions for image search.
 
 Here are the examples of image search using Instagram:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ins_image_search.png" width="731" height="814" />
 
-It is indeed a pity for not being able to use Instagram photos. However, often times, bad news will become good news! Lady H. later found the image search results provided by Apify Image Scraper or Google Custom Search are both more relevant and more specific than Instagram. Besides, to achieve current user experience, Lady H. went through trial and error to test how to ensure image search quality while shorten image search & loading time.
+It's unfortunate not being able to use Instagram photos. However, every cloud has a silver lining! Lady H. later discovered that the image search results provided by Apify Image Scraper or Google Custom Search are both more relevant and specific compared to Instagram. Additionally, to achieve the desired user experience, Lady H. experimented through trial and error to find ways to ensure image search quality while reducing image search and loading times.
 
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/loggin_off.png" width="252" height="237" /></p>
 
-Even OpenAI wasn't the initial choice to provide travel suggestions. Lady H. tried web scraping to extract recommendations from popular travel websites, also tried famous tools such as [Langchain][1]. But finally considering output quality, user experience and financial cost, Lady H. decided to use OpenAI API.
+Initially, OpenAI wasn't the first choice for providing travel suggestions. Lady H. experimented with web scraping to extract recommendations from popular travel websites and also tried renowned tools like [Langchain][1]. However, after weighing factors such as output quality, user experience, and financial cost, Lady H. ultimately decided to use the OpenAI API.
 
-Building a product provides lots of learnings. Lady H. is wondering whether her personality belongs to minority group that without coming up with a satisfying solution, she can't stop thinking better solutions. How about you? [Share your product development stories here!][4]
+Building a product offers numerous learning opportunities. Lady H. wonders if her personality belongs to a minority group that cannot stop thinking about better solutions until a satisfying one is found. How about you? [Share your product development stories here!][4]
 
-Also keep in mind friends, sometimes, you need to take a good rest first, and after returning back to work, you will have even better ideas!
+Also, keep in mind, friends, that sometimes you need to take a good rest first. After returning to work, you may find that you have even better ideas!
 
 
 #
