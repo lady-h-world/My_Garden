@@ -14,7 +14,7 @@ Time to deploy the app to the public!
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/app_deploy3.png" width="1034" height="410" />
 
    
-That's it! We've completed all the steps to deploy an AI-powered app. Now it's your turn to build your own app! You're very welcome to share your app [in our community][3] and let's support each other!
+That's it! We've completed all the steps to deploy an AI-powered app. Now it's your turn to build your own app! You're very welcome to share your app [in our community][3] and let's support each other! 💖
 
 
 #
