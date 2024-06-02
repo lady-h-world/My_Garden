@@ -42,7 +42,7 @@ Apify provides $5 dollars monthly for you to use, so if your app is not too popu
 While the chances of Apify failing to return output, such as due to a timeout error, are low, they are not zero. Such occurrences can negatively impact user experience. To ensure smooth performance, consider using an alternative image search solution. Among the free options, Lady H. chose Google Custom Search for its speed and allowance of 100 free queries per day. To use it, you need to [create a Google Search API key][9] and [create a search engine to get its ID][10].
 
 #### 5. Other Key Packages to Install
-Besides package "streamit", you also need to install the following packages:
+Besides package `streamit`, you also need to install the following packages:
 * `pip install pydeck` to enable the display of suggested locations on the map.
 * `pip install openai` to use OpenAI API.
 * `pip install streamlit-extras` to use extra features of Streamlit.
@@ -52,7 +52,7 @@ Besides package "streamit", you also need to install the following packages:
 #### Code Structure
 To make Streamlit app work, you need to follow a few rules in the code structure:
 * Using a [requirements.txt][4] file stores all the Python packages and their versions in your environment. This file is essential for setting up the environment during app deployment.
-  * After installing all the required packages, you can run command `pip freeze >> requirements.txt` to generate this file.
+  * To generate this file, just run `pip freeze >> requirements.txt`, it will record all the packages in your environment.
 * Create a .py file as the app's home page, such as the "explore.py" shown below.
 * Create a folder named <b>"pages"</b> to store all app pages except the home page, each page in this folder should also be a .py file. 
   * The folder must be named as "pages", otherwise Streamlit won't be able to locate the pages 😉. 
