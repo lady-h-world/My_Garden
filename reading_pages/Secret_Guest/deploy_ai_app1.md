@@ -1,4 +1,4 @@
-## Build an AI Powered App
+## Build an AI-Powered App
 
 ### Demo - Local Stream
 
