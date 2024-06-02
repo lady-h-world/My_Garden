@@ -1,10 +1,10 @@
 ### Build Home Page
 
 Every page in Streamlit has 2 components:
-* The side bar on the left. 
+* 1st component: The side bar on the left. 
   * Streamlit will automatically detect all of your web pages and list them on the side bar.
   * You can decide which elements to show on the side var, such as the logo, required user input, etc.
-* The main web elements are on the right side.
+* 2nd component: The main web elements are on the right side.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/local_stream_interface1.png" width="997" height="296" />
 
@@ -37,7 +37,7 @@ And in the second column `col2`, a `selectbox` is created to allow the user to c
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_home_code3.png" width="938" height="310" />
 
 The last component of the home page enables input confirmation and input clean up:
-* Line 76 ~ 88 will display the user's input, which can include either the typed country and selected month, or it also includes the specified region.
+* Line 76 ~ 88 will display the user's input, including country, region and selected month.
 * Line 91 ~ 100 cleans up user input. By clicking "Clear Input" button, the user interface will clean up all the user input.
 * After the user has entered all the required information, a "CONFIRM" button will appear. Upon clicking this button, the user interface will switch to the results page.
 
@@ -46,11 +46,11 @@ The last component of the home page enables input confirmation and input clean u
 🌻 [Check home page code here >>][1]
 
 
-The loaded results page will showcase a map featuring all the suggested spots at the travel destination. This map offers an overview. Subsequently, for each suggestion, 1 or 2 photos depicting local activities will help the user visualize the suggested experience!
+The loaded results page will showcase a map featuring all the suggested spots at the travel destination. This map offers an overview. Subsequently, for each suggestion, 1 or 2 photos depicting local activities will visualize the suggested experience to users!
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ls_results.png" width="919" height="642" />
 
-Now let's see how to implement the results page!
+Now let's see how to implement the output page!
 
 
 #
