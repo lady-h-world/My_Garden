@@ -1,9 +1,8 @@
-### How to Build Local Stream
-#### Set Up
-##### 1. Install Streamlit
+### Setup
+#### 1. Install Streamlit
 To develop and deploy the app for free, we can use <b>Streamlit</b>, a platform that enables data scientists to build and publish apps in Python. Installation is straightforward, just run `pip install streamlit`.
 
-##### 2. Create and Fund OpenAI Account
+#### 2. Create and Fund OpenAI Account
 In order to intelligently recommend local traveling activities, ChatGPT is a good choice, particularly when seeking recommendations tailored to the selected season. [Follow this tutorial][1] to:
 * create an OpenAI account
 * create and save the API key
@@ -11,7 +10,7 @@ In order to intelligently recommend local traveling activities, ChatGPT is a goo
 
 Does word like "billing", "funding" sound scary 💸🤑? Don't worry! ChatGPT is cost-efficient. For the usage in Local Stream, it only charges $0.01 USD every 4, 5 queries.
 
-##### 3. Enable Apify Image Scraper 
+#### 3. Enable Apify Image Scraper 
 Apify's image scraper delivers high quality image search results. This appears not only in the images' resolution but also their relevance to the search queries. To set up this scraper:
 * Click <b>Try for free</b> in [Apify's Google Image Scraper][2] and sign up for the free account.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/apify1.png" width="495" height="170" />
@@ -39,10 +38,10 @@ Apify's image scraper delivers high quality image search results. This appears n
 
 Apify provides $5 dollars monthly for you to use, so if your app is not too popular, this free $5 should be enough as each image search only costs $0.003. Otherwise [you can check Apify pricing choices][8] for your purpose. 😉 Tip, you can also create multiple Apify accounts to use the free service for a longer term 😉.
 
-##### 4. (Optional) Enable Google Custom Search
+#### 4. (Optional) Enable Google Custom Search
 While the chances of Apify failing to return output, such as due to a timeout error, are low, they are not zero. Such occurrences can negatively impact user experience. To ensure smooth performance, consider using an alternative image search solution. Among the free options, Lady H. chose Google Custom Search for its speed and allowance of 100 free queries per day. To use it, you need to [create a Google Search API key][9] and [create a search engine to get its ID][10].
 
-##### 5. Other Key Packages to Install
+#### 5. Other Key Packages to Install
 Besides package "streamit", you also need to install the following packages:
 * `pip install pydeck` to enable the display of suggested locations on the map.
 * `pip install openai` to use OpenAI API.
