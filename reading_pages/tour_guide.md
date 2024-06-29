@@ -60,7 +60,8 @@ Let's keep in touch after your visit!
 * To find volunteering or collaboration opportunities, feel free to check [opportunities][13]!
 
 
-
+## References
+* [Image resources][14]
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/the_queen.md
 [2]:https://github.com/lady-h-world/My_Garden/discussions

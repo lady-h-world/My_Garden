@@ -3,7 +3,7 @@
 Time to deploy the app to the public!
 
 1. Make sure your code is saved as a public Github repo [like this][1].
-2. [Create your Streamlit account][2].
+2. [Create a Streamlit account][2] using your Github login. This allows you to link your Github repo to Streamlit directly.
 3. After logging in, click <b>Create app</b> and a form will pop up where you can fill in the Github repo link, homepage file name and customize your app's URL. Click <b>Advanced settings...</b> and then <b>Secrets</b> to save the credentials. To call these credentials in the code, simply `import streamlit as st` and then use `st.secrets['<credential name>']`. After clicking <b>Deploy!</b>, you app will be accessible to the public! 🎉
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/app_deploy1.png" width="1048" height="688" />
 
