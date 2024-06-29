@@ -42,7 +42,7 @@ The potentials of our sprouts extends beyond what you witnessed during your visi
 * [Lady H.'s presentation about Time Series][6] (2022 Nov.)
 * [Lady H.'s presentation on Optimization & Marriage 😉][11] (2023 Jul.)
 * [Lady H.'s presentation on Generating Synthetic Data with Tablet GANs][15] (2023 Dec.)
-* [Lady H.'s presentation on How to Build an AI Powered App][17] (2024 Jun.)
+* [Lady H.'s presentation on How to Build an AI Powered App][17] in [a Toronto AI meetup group][18] (2024 Jun.)
 
 
 [1]:https://docs.google.com/presentation/d/16QCJ2eOONwY1fxFDHwFenr4truFf1pd3KOMh4V6BVgM/edit?usp=sharing
@@ -60,3 +60,4 @@ The potentials of our sprouts extends beyond what you witnessed during your visi
 [15]:https://docs.google.com/presentation/d/1c8DyIW3z53EMpZBNPc7cuGkk97HICOgmDp6P5_RVRJw/edit?usp=sharing
 [16]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#synthetic-data-generation
 [17]:https://docs.google.com/presentation/d/1tf5mHzCdRBkypdulaqxGjutpCt4w5k66mgCHIXdihnE/edit?usp=sharing
+[18]:https://www.meetup.com/toronto-python-for-beginners-your-gateway-to-data-science/events/301419851/
