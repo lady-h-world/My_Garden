@@ -31,7 +31,7 @@ This method helps create python virtual environments regardless of your operatin
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm2.png" width="556" height="137" />
 </p>
 
-5. Click `Conda Environment`, this will create a conda virtual environment for you. Therefore, here you need to choose the `Python version` for the new environment, and update the `Location` to indicate where do you want to store this new virtual environment. Click `OK`.
+5. Click `Conda Environment`, this will create a conda virtual environment for you. Edit `Location` to indicate where to store this new virtual environment and choose the `Python version`, then click `OK`.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm3.png" width="822" height="232" />
