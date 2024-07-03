@@ -9,6 +9,7 @@
 /code/crystal_ball/data_collector/store_sales.csv
 /code/crystal_ball/lotus.png
 /code/crystal_ball/lotus.svg
+/code/crystal_ball/data_collector/bank.csv
 **/backup/
 **/catboost_info/
 **/logs/
