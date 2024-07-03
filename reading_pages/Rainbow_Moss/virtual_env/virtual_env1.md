@@ -31,7 +31,7 @@ This method helps create python virtual environments regardless of your operatin
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm2.png" width="556" height="137" />
 </p>
 
-5. Click `Conda Environment`, this will create a conda virtual environment for you. Therefore, here you need to choose the python version needed for the new environment, and update the "Location" to indicate where do you want to store this new virtual environment.
+5. Click `Conda Environment`, this will create a conda virtual environment for you. Edit `Location` to indicate where to store this new virtual environment and choose the `Python version`, then click `OK`.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm3.png" width="822" height="232" />
@@ -39,7 +39,7 @@ This method helps create python virtual environments regardless of your operatin
 
 6. Type `conda info` in a PyCharm terminal, to find the path of the base folder of Anaconda.
 
-7. Go to `Preferences` or `Settings` --> `Tools` --> `Terminal`, fill in `Shell path` with `powershell.exe -ExecutionPolicy ByPass -NoExit -Command "& '[Your Anaconda base folder]\shell\condabin\conda-hook.ps1'`, remember to change the anaconda path here. This settings will make sure your PyCharm terminal shares the same virtual environment as your project. If you will set up multiple conda virtual environments, this settings is <b>only needed once</b> ☝️.
+7. Go to `Preferences` or `Settings` --> `Tools` --> `Terminal`, fill in `Shell path` with `powershell.exe -ExecutionPolicy ByPass -NoExit -Command "& '[Your Anaconda base environment path]\shell\condabin\conda-hook.ps1'`, remember to change the anaconda path here. This settings will make sure your PyCharm terminal shares the same virtual environment as your project. If you will set up multiple conda virtual environments, this settings is <b>only needed once</b> ☝️.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm5.0.png" width="975" height="393" />
