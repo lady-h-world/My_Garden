@@ -1,6 +1,6 @@
 First of all, CTABGAN+ added an extra estimator to predict each variable of the tabular data. For discrete variable, it predicts the probability of each category, for continuous variable, it predicts the regression value. The assumption behind is the same as [ACGAN mentioned before][1], by introducing this auxiliary estimator, the quality of the output can be enhanced.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+_auxiliary.png" width="961" height="330" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+_auxiliary.png" width="961" height="360" />
 
 The second major change happened in feature encoding:
 
@@ -8,7 +8,7 @@ The second major change happened in feature encoding:
 * <b>Long-Tail</b> applies log transform to better handle continuous variables with long tails. Because VGM used in Mode-specific Normalization has difficulty to encode values towards the tail, but log transform can compress and reduce the distances between the tail and the bulk data, allowing VGM to encode all the data easier.
 * <b>General Transform</b> (GT) encodes a variable into (-1, 1) range so that the encoding directly compatible with the output of `tanh` activation function used by the generator. GT is selectively applied to single mode continuous variables because VGM can't effectively handle such variables. At the same time, because GT doesn't provide the mode indicator, applying VGM to multi-mode continuous variables is more effective than using GT. GT is also applied on high cardinality discrete variables, because a high cardinality variable has too many unique values and can cause dimensionality explosion after one-hot encoding. However, GT is not recommended for other discrete variables, because, comparing with one-hot vectors, its integer output can impose artificial distances between the different categories which do not reflect the reality.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+_feature_encoder.png" width="961" height="330" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+_feature_encoder.png" width="961" height="360" />
 
 
 #### CasTGAN
