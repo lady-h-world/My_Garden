@@ -40,13 +40,15 @@ CasTGAN also has multiple auxiliary estimators (marked as purple squares). Each 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/CasTGAN3.png" width="961" height="454" />
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/my_secret_guest.png" width="350" height="520" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/castgan_al_details.png" width="527" height="813" />
 
 
 </p>
-According to CasTGAN's paper, this cascaded architecture is able to capture the correlations and interdependence between variables, and therefore making generated synthetic data more realistic.
+According to CasTGAN's paper, its cascaded architecture is able to capture the correlations and interdependence between variables, and therefore making generated synthetic data more realistic. 
 
-Next, you will Lady H.'s experiments using these 3 Tabular GANs. Guess which TGAN gives better results? 😉
+This makes sense if we dive into each individual auxiliary estimator. 
+
+Next, you will Lady H.'s experiments using these 3 Tabular GANs. Guess which TGAN got better results? 😉
 
 #
 <p align="left">
