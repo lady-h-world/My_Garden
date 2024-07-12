@@ -9,9 +9,10 @@
 
 
 * <b>Install & Execute CTABGAN+</b>
-  * Download CTABGAN+ repo by typing `git clone https://github.com/Team-TUD/CTAB-GAN-Plus.git` in your terminal.
+  * Download CTABGAN+ repo by typing `git clone https://github.com/Team-TUD/CTAB-GAN-Plus.git` through your terminal.
   * Make sure your input real data is in "CSV" format.
-  * To generate synthetic data, you can adjust [these parameters][4], output has to save in "CSV" file, and the code looks as below:
+  * To generate synthetic data, you can adjust [these parameters][4], output has to save as a "CSV" file, and the code 
+    looks as below:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+_syn_gen_code.png" width="903" height="385" />
 
 🌻 [Check detailed code here >>][3] 
