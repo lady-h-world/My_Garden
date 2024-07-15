@@ -1,4 +1,4 @@
-## Python Virtual Environment
+pip## Python Virtual Environment
 
 As python is the most popular data science language, most data science projects are written in python nowadays. It is a better practice to create a virtual environment for each new python project. 
 
@@ -57,7 +57,9 @@ This method helps create python virtual environments regardless of your operatin
 
 To list all the virtual environments you have created, type `conda env list` through PyCharm terminal.
 
-The created virtual environment might have some python libraries installed by default. Sometimes you want to remove all these exisiting libraries, to do this run `pip freeze >> requirements.txt` to dump these library names in "requirements.txt" file, then run `pip uninstall -r requirements.txt -y` to remove them all.
+The created virtual environment might have some python libraries installed by default. Sometimes you want to remove all these exisiting libraries, to do this run `pip list --format=freeze >> requirements.txt` to dump these library names in "requirements.txt" file, then run `pip uninstall -r requirements.txt -y` to remove them all.
+
+<b>Note:</b> The benefit of using pip list --format=freeze is that it records each package's version. In contrast, simply using pip freeze may show some packages' file paths on your own machine, which cannot be reinstalled on another machine.
 
 
 ### How to use Created Virtual Environments on Jupyter
