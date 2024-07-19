@@ -8,7 +8,7 @@ One of python's strengths is the popularity of open sources. They are free, easy
 
 However, such flexibility and freedom brings in headaches too. Every new package might depend on some existing packages. Meanwhile, having so many open source developers, every package might get updated quickly. Then when you are installing a new python package, its dependencies might have conflicting versions with the packages you have already installed.
 
-For example, Lady H. had Tensorflow 2.4 installed, but when she was installeing the latest Keras Tuner, it required Tensorflow 2.6. She could not simply upgrade to Tensorflow 2.6 because there are other packages depending on version 2.4 at the time.
+For example, Lady H. had Tensorflow 2.4 installed, but when she was installing the latest Keras Tuner, it required Tensorflow 2.6. She could not simply upgrade to Tensorflow 2.6 because there are other packages depending on version 2.4 at the time.
 
 It is painful to break the dependencies of packages whenever you need to install something new for a new project. Creating a separate virtual environment will solve the problem!
 
