@@ -14,38 +14,47 @@ It is painful to break the dependencies of packages whenever you need to install
 
 ### How to Create Python Virtual Environments
 
-This method helps create python virtual environments regardless of your operating systems (OS).
+This method helps create python virtual environments regardless of your operating systems (OS). First of all, make 
+sure you have:
 
-1. Download and install Anaconda for your OS: https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html
-2. Download and install PyCharm for your OS: https://www.jetbrains.com/pycharm/download/
+* Downloaded and installed Anaconda for your OS: https://docs.conda.
+io/projects/conda/en/latest/user-guide/install/download.html
+* Downloaded and installed PyCharm for your OS: https://www.jetbrains.com/pycharm/download/
   * Choose the "Community" version if you want the free one
-3. Open PyCharm, go to `Preferences` or `Settings` --> `Project` --> `Python Interpreter`, find the little downward triangle on the right, and click `Show All...`
+
+Now the steps below can be repeatable each time when you create a virtual environment: 
+
+1. Open PyCharm, go to `Preferences` or `Settings` --> `Project` --> `Python Interpreter`, find the little downward 
+   triangle on the right, and click `Show All...`
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm1.png" width="973" height="255" />
 </p>
 
-4. Click the `+` button
+2. Click the `+` button
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm2.png" width="556" height="137" />
 </p>
 
-5. Click `Conda Environment`, this will create a conda virtual environment for you. Edit `Location` to indicate where to store this new virtual environment and choose the `Python version`, then click `OK`.
+3. Click `Conda Environment`, this will create a conda virtual environment for you. Edit `Location` to indicate 
+   where to store this new virtual environment and choose the `Python version`, then click `OK`.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm3.png" width="822" height="232" />
 </p>
 
-6. Type `conda info` in a PyCharm terminal, to find the path of the base folder of Anaconda.
+4. Type `conda info` in a PyCharm terminal, to find the path of the base folder of Anaconda.
 
-7. Go to `Preferences` or `Settings` --> `Tools` --> `Terminal`, fill in `Shell path` with `powershell.exe -ExecutionPolicy ByPass -NoExit -Command "& '[Your Anaconda base environment path]\shell\condabin\conda-hook.ps1'`, remember to change the anaconda path here. This settings will make sure your PyCharm terminal shares the same virtual environment as your project. If you will set up multiple conda virtual environments, this settings is <b>only needed once</b> ☝️.
+5. Go to `Preferences` or `Settings` --> `Tools` --> `Terminal`, fill in `Shell path` with `powershell.exe 
+   -ExecutionPolicy ByPass -NoExit -Command "& '[Your Anaconda base environment path]\shell\condabin\conda-hook.ps1'`, remember to change the anaconda path here. This settings will make sure your PyCharm terminal shares the same virtual environment as your project. If you will set up multiple conda virtual environments, this settings is <b>only needed once</b> ☝️.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm5.0.png" width="975" height="393" />
 </p>
 
-8. Click `+` to start a new terminal, and you will see the created virtual environment name in both terminal and bottom right corner. If you check the python version, it should show the right version chosen for the virtual environment:
+6. Click `+` to start a new terminal, and you will see the created virtual environment name in both terminal and 
+   bottom right corner. If you check the python version, it should show the right version chosen for the virtual environment:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm4.1.png" width="941" height="163" />
@@ -66,9 +75,12 @@ The created virtual environment might have some python libraries installed by de
 
 You might also want to use the created virtual environment in your Jupyter Lab or Jupyter Notebook. Here's how:
 
-0. Make sure you have jupyter lab or jupyter notebook, as well as ipywidgets installed. You can run `pip install jupyterlab`, `pip install ipywidgets --user`.
-1. In the PyCharm terminal, under your virtual environment, type `pip install ipykernel`. This step is only needed once for each virtual environment.
-2. Type `python -m ipykernel install --user --name [your virtual env name] --display-name "[your virtual env name]"` to add the virtual environment's kernel into Jupyter, (update `[your virtual env name]` with the kernel name you want) like this:
+1. Make sure you have jupyter lab or jupyter notebook, as well as ipywidgets installed. You can run `pip install 
+   jupyterlab`, `pip install ipywidgets --user`.
+2. In the PyCharm terminal, under your virtual environment, type `pip install ipykernel`. This step is only needed 
+   once for each virtual environment.
+3. Type `python -m ipykernel install --user --name [your virtual env name] --display-name "[your virtual env name]"` 
+   to add the virtual environment's kernel into Jupyter, (update `[your virtual env name]` with the kernel name you want) like this:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_jupyter2.png" width="1087" height="26" />
@@ -78,13 +90,13 @@ You might also want to use the created virtual environment in your Jupyter Lab o
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/notes/jupyter_kernels.png" width="866" height="99" />
 </p>
 
-3. If you type `jupyter kernelspec list`, it will show all the available kernels for Jupyter:
+4. If you type `jupyter kernelspec list`, it will show all the available kernels for Jupyter:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_jupyter.png" width="696" height="112" />
 </p>
 
-4. Now go to your Jupyer Lab or Jupyter Notebook, and you can choose the kernel to launch a new notebook:
+5. Now go to your Jupyer Lab or Jupyter Notebook, and you can choose the kernel to launch a new notebook:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_jupyter3.png" width="962" height="468" />
