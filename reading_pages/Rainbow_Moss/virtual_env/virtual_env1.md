@@ -44,16 +44,18 @@ Now the steps below can be repeatable each time when you create a virtual enviro
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm3.png" width="822" height="232" />
 </p>
 
-4. Type `conda info` in a PyCharm terminal, to find the path of the base folder of Anaconda.
-
-5. Go to `Preferences` or `Settings` --> `Tools` --> `Terminal`, fill in `Shell path` with `powershell.exe 
-   -ExecutionPolicy ByPass -NoExit -Command "& '[Your Anaconda base environment path]\shell\condabin\conda-hook.ps1'`, remember to change the anaconda path here. This settings will make sure your PyCharm terminal shares the same virtual environment as your project. If you will set up multiple conda virtual environments, this settings is <b>only needed once</b> ☝️.
+4. (ONLY NEEDED ONCE) Type `conda info` in a PyCharm terminal, to find the path of the <b>base environment</b> of 
+   Anaconda. Then go to `Preferences` or `Settings` --> `Tools` --> `Terminal`, fill in `Shell path` with 
+   `powershell.exe -ExecutionPolicy ByPass -NoExit -Command "& '[Your Anaconda base environment path]
+   \shell\condabin\conda-hook.ps1'`, remember to change the anaconda path here. This settings will make sure your 
+   PyCharm terminal shares the same virtual environment as your project. Later, if you will set up multiple conda 
+   virtual environments, this setting is <b>only needed once</b> ☝️.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm5.0.png" width="975" height="393" />
 </p>
 
-6. Click `+` to start a new terminal, and you will see the created virtual environment name in both terminal and 
+5. Click `+` to start a new terminal, and you will see the created virtual environment name in both terminal and 
    bottom right corner. If you check the python version, it should show the right version chosen for the virtual environment:
 
 <p align="left">
