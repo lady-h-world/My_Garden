@@ -2,6 +2,7 @@
 
 As python is the most popular data science language, most data science projects are written in python nowadays. It is a better practice to create a virtual environment for each new python project. 
 
+
 ### The Pain of Python Open Sources
 
 One of python's strengths is the popularity of open sources. They are free, easy to use, and most are implemented with efficient computing complexity, which is also why we often look for existing python packages before building by ourselves.
@@ -12,13 +13,13 @@ For example, Lady H. had Tensorflow 2.4 installed, but when she was installing t
 
 It is painful to break the dependencies of packages whenever you need to install something new for a new project. Creating a separate virtual environment will solve the problem!
 
+
 ### How to Create Python Virtual Environments
 
 This method helps create python virtual environments regardless of your operating systems (OS). First of all, make 
 sure you have:
 
-* Downloaded and installed Anaconda for your OS: https://docs.conda.
-io/projects/conda/en/latest/user-guide/install/download.html
+* Downloaded and installed Anaconda for your OS: https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html
 * Downloaded and installed PyCharm for your OS: https://www.jetbrains.com/pycharm/download/
   * Choose the "Community" version if you want to use it for free 😉
 
@@ -37,26 +38,21 @@ Now the steps below can be repeatable each time when you create a virtual enviro
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm2.png" width="556" height="137" />
 </p>
 
-3. Click `Conda Environment`, this will create a conda virtual environment for you. Edit `Location` to indicate 
-   where to store this new virtual environment and choose the `Python version`, then click `OK`.
+3. Click `Conda Environment`, this will create a conda virtual environment for you. Edit `Location` to indicate where to store this new virtual environment and choose the `Python version`, then click `OK`.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm3.png" width="822" height="232" />
 </p>
 
-4. (ONLY NEEDED ONCE) Type `conda info` in a PyCharm terminal, to find the path of the <b>base environment</b> of 
-   Anaconda. Then go to `Preferences` or `Settings` --> `Tools` --> `Terminal`, fill in `Shell path` with 
-   `powershell.exe -ExecutionPolicy ByPass -NoExit -Command "& '[Your Anaconda base environment path]
-   \shell\condabin\conda-hook.ps1'`, remember to change the anaconda path here. This settings will make sure your 
-   PyCharm terminal shares the same virtual environment as your project. Later, if you will set up multiple conda 
-   virtual environments, this setting is <b>only needed once</b> ☝️.
+4. (ONLY NEED ONCE) Type `conda info` in a PyCharm terminal, to find the path of the <b>base environment</b> of 
+   Anaconda. Then go to `Preferences` or `Settings` --> `Tools` --> `Terminal`, fill in `Shell path` with `powershell.exe -ExecutionPolicy ByPass -NoExit -Command "& '[Your Anaconda base environment path]\shell\condabin\conda-hook.ps1'`, remember to change the anaconda path here. This setting will make sure your PyCharm terminal shares the same virtual environment as your project. Later, if you will set up multiple conda 
+   virtual environments, <b>only need to do this setup once</b> ☝️.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm5.0.png" width="975" height="393" />
 </p>
 
-5. Click `+` to start a new terminal, and you will see the created virtual environment name in both terminal and 
-   bottom right corner. If you check the python version, it should show the right version chosen for the virtual environment:
+5. Click `+` to start a new terminal, and you will see the created virtual environment name in both terminal and bottom right corner. If you check the python version, it should show the right version chosen for the virtual environment:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm4.1.png" width="941" height="163" />
@@ -68,7 +64,7 @@ Now the steps below can be repeatable each time when you create a virtual enviro
 
 To list all the virtual environments you have created, type `conda env list` through PyCharm terminal.
 
-The created virtual environment might have some python libraries installed by default. Sometimes you want to remove all these exisiting libraries, to do this run `pip list --format=freeze >> requirements.txt` to dump these library names in "requirements.txt" file, then run `pip uninstall -r requirements.txt -y` to remove them all.
+The created virtual environment might have some python libraries installed by default. Sometimes you want to remove all these existing libraries, to do this run `pip list --format=freeze >> requirements.txt` to dump these library names in "requirements.txt" file, then run `pip uninstall -r requirements.txt -y` to remove them all.
 
 <b>Note:</b> The benefit of using pip list --format=freeze is that it records each package's version. In contrast, simply using pip freeze may show some packages' file paths on your own machine, which cannot be reinstalled on another machine.
 
@@ -79,8 +75,7 @@ You might also want to use the created virtual environment in your Jupyter Lab o
 
 1. Make sure you have jupyter lab or jupyter notebook, as well as ipywidgets installed. You can run `pip install 
    jupyterlab`, `pip install ipywidgets --user`.
-2. In the PyCharm terminal, under your virtual environment, type `pip install ipykernel`. This step is only needed 
-   once for each virtual environment.
+2. In the PyCharm terminal, under your virtual environment, type `pip install ipykernel`. This step is only needed once for each virtual environment.
 3. Type `python -m ipykernel install --user --name [your virtual env name] --display-name "[your virtual env name]"` 
    to add the virtual environment's kernel into Jupyter, (update `[your virtual env name]` with the kernel name you want) like this:
 
@@ -104,7 +99,7 @@ You might also want to use the created virtual environment in your Jupyter Lab o
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_jupyter3.png" width="962" height="468" />
 </p>
 
-If you want to change the kernel of an existing noteook, click the top right kernel name of the notebook, and update the kernel option:
+If you want to change the kernel of an existing notebook, click the top right kernel name of the notebook, and update the kernel option:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_jupyter4.png" width="300" height="312" />
@@ -121,6 +116,7 @@ If you want to change the kernel of an existing noteook, click the top right ker
 2. Select the virtual environment you want to remove and click `-` button. This will remove the interpreter shown in PyCharm.
 3. Type `conda env list` to find path of all the virtual environments, then type `rm -r {env_path}` (change `env_path` for your use case). This will remove the virtual environment installed.
 4. If you had added ipython kernel for this virtual environment, in order to remove it, you can type `jupyter kernelspec uninstall [kernel_name]` (change `[kernel_name]` with the kernel name you want to remove).
+
 
 #
 <p align="left">
