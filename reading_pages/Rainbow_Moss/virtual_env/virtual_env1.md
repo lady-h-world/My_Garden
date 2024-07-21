@@ -1,4 +1,4 @@
-pip## Python Virtual Environment
+## Python Virtual Environment
 
 As python is the most popular data science language, most data science projects are written in python nowadays. It is a better practice to create a virtual environment for each new python project. 
 
