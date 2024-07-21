@@ -20,7 +20,7 @@ sure you have:
 * Downloaded and installed Anaconda for your OS: https://docs.conda.
 io/projects/conda/en/latest/user-guide/install/download.html
 * Downloaded and installed PyCharm for your OS: https://www.jetbrains.com/pycharm/download/
-  * Choose the "Community" version if you want the free one
+  * Choose the "Community" version if you want to use it for free 😉
 
 Now the steps below can be repeatable each time when you create a virtual environment: 
 
