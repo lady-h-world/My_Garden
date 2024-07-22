@@ -9,9 +9,10 @@
 
 
 * <b>Install & Execute CTABGAN+</b>
-  * Download CTABGAN+ repo by typing `git clone https://github.com/Team-TUD/CTAB-GAN-Plus.git` in your terminal.
+  * Download CTABGAN+ repo by typing `git clone https://github.com/Team-TUD/CTAB-GAN-Plus.git` through your terminal.
   * Make sure your input real data is in "CSV" format.
-  * To generate synthetic data, you can adjust [these parameters][4], output has to save in "CSV" file, and the code looks as below:
+  * To generate synthetic data, you can adjust [these parameters][4], output has to save as a "CSV" file, and the code 
+    looks as below:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+_syn_gen_code.png" width="903" height="385" />
 
 🌻 [Check detailed code here >>][3] 
@@ -19,17 +20,16 @@
 
 * <b>Install & Execute CasTGAN</b>
   * Download CasTGAN repo by typing `git clone https://github.com/abedshantti/CasTGAN.git` in your terminal.
-  * Make sure you have installed [required libraries][7].
   * Edit the code in CasTGAN repo by adding your dataset name in [this list][8]. Lady H. added "campaign" in this list.
   * [Edit this code file to update seeds for your dataset][9]. Lady H. updated seeds for dataset "campaign".
   * Generate the data input as below:
     * Split the real data into training and testing data.
-    * Save the real training data in `Data/` folder, naming it as "{your_dataset_name}_train.csv".
-    * Save the real testing data in `Test_Data/` folder, naming it as "{your_dataset_name}_test.csv".
+    * Save the real training data in CasTGAN's `Data/` folder, naming it as "{your_dataset_name}_train.csv".
+    * Save the real testing data in CasTGAN's `Test_Data/` folder, naming it as "{your_dataset_name}_test.csv".
     * Save features' data type in `Data/` folder, making sure categorical features are using `str` as data type.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/castgan_data_input.png" width="528" height="277" />
   
-  * Through your terminal, `cd` to the cloned `CasTGAN/` folder.
+  * Through your terminal, locate `CasTGAN/` folder.
   * Run `python -m main --dataset="campaign" --epochs=10`, replace "dataset" with your dataset's name.
   * Besides `epochs` you can specify other parameters in above command, [check CastGAN parameters][10] for more.
 

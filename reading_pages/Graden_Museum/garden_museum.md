@@ -44,6 +44,7 @@ The potentials of our sprouts extends beyond what you witnessed during your visi
 * [Lady H.'s presentation on Generating Synthetic Data with Tabular GANs][15] (2023 Dec.)
 * [Lady H.'s presentation on How to Build an AI Powered App][17] in a [Toronto AI meetup group][18] (2024 Jun.)
 * [Lady H.'s presentation on Generating Synthetic Data with Tabular GANs][19] in a [Ai+ Webinar][20] (2024 Jul.)
+* [Lady H.'s presentation on Tabular GANs][22] in a [AICamp][21] (2024 Jul.)
 
 [1]:https://docs.google.com/presentation/d/16QCJ2eOONwY1fxFDHwFenr4truFf1pd3KOMh4V6BVgM/edit?usp=sharing
 [2]:https://docs.google.com/presentation/d/120kZHkOeNkXATT9mM6804ZZU4ndu8wA9taZJUi7kKVM/edit?usp=sharing
@@ -63,3 +64,5 @@ The potentials of our sprouts extends beyond what you witnessed during your visi
 [18]:https://www.meetup.com/toronto-python-for-beginners-your-gateway-to-data-science/events/301419851/
 [19]:https://docs.google.com/presentation/d/1kXAuThN_jhXYoGq1L2_Mzl66qxR2t3lYy7E_-DDzaJw/edit?usp=sharing
 [20]:https://app.aiplus.training/courses/Generate-Synthetic-Tabular-Data-with-GANs
+[21]:https://www.aicamp.ai/event/eventdetails/W2024071714
+[22]:https://docs.google.com/presentation/d/1bpTk0n_HkyJVezuCBRnVTjPyYmKgGXfP0rSt6Za_Y2s/edit?usp=sharing

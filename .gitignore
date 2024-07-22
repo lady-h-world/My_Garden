@@ -20,3 +20,5 @@
 **/kt_rs/
 **/output
 /code/secret_guest/syn_data_exps/*.csv
+/code/secret_guest/syn_data_exps/CTAB-GAN-Plus/
+/code/secret_guest/syn_data_exps/CasTGAN/
