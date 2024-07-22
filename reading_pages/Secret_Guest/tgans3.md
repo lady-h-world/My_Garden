@@ -1,18 +1,20 @@
-### Why Synthetic Data?
+### Why Synthetic Tabular Data?
 
-Before we dive into how to generate synthetic data, have you ever thought about, why do we need synthetic data?
+There are several benefits of using synthetic tabular data across different industries. For example:
+* <b>Enabling data privacy and ethical AI</b>
+  * Health researchers use synthetic tabular data to protect real patients' data while conducting their research.
+  * Banks build machine learning models on synthetic tabular data to protect customer data privacy.
+* <b>data simulation</b> is often used when existing real data has limited scenarios
+  * Banks simulate synthetic data to create more real-world scenarios, such as customer behavior data to improve personalized banking services and customer interactions to enhance relationships.
+  * Supply chain systems simulate synthetic data to mimic the supply chain process, optimizing logistics, production schedules, and inventory management.
 
-Lady H. summarized a few situations based on her experience:
-* Data Sharing: Synthetic data can be shared with other teams when they require realistic data to perform their tasks but data privacy is a concern.
-* Testing: To assess the quality or efficiency of a product, real data might have incomplete test cases or limited data size. By using synthetic data you can generate additional test cases to ensure the product quality, you can also create datasets of various sizes to conduct load tests on the product.
-* Data Augmentation: Computer vision often employees this method, by using synthetic data it increases the diversity of training data, with the aim to enhance model performance.
-
-Are there any other use cases? You're very welcome to share your ideas [here][1]!
+Have you ever used synthetic tabular data? Welcome to share your experience or ideas [here][1]!
 
 
 ### Tabular GANs
 
 Numerous GANs (Generative Adversarial Networks) have been applied to image and text data. However, given the significance role that tabular data plays in data science, can GANs be employed to generate synthetic tabular data? Indeed, there are, and these GANs are called as TGANs (Tabular GANs). 
+
 
 #### CTGAN
 
