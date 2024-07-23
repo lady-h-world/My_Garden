@@ -4,7 +4,7 @@ There are several benefits of using synthetic tabular data across different indu
 * <b>Enabling data privacy and ethical AI</b>
   * Health researchers use synthetic tabular data to protect real patients' data while conducting their research.
   * Banks build machine learning models on synthetic tabular data to protect customer data privacy.
-* <b>data simulation</b> is often used when existing real data has limited scenarios
+* <b>Data simulation</b> is often used when existing real data has limited scenarios
   * Banks simulate synthetic data to create more real-world scenarios, such as customer behavior data to improve personalized banking services and customer interactions to enhance relationships.
   * Supply chain systems simulate synthetic data to mimic the supply chain process, optimizing logistics, production schedules, and inventory management.
 

@@ -66,10 +66,25 @@ To list all the virtual environments you have created, type `conda env list` thr
 
 The created virtual environment might have some python libraries installed by default. Sometimes you want to remove all these existing libraries, to do this run `pip list --format=freeze >> requirements.txt` to dump these library names in "requirements.txt" file, then run `pip uninstall -r requirements.txt -y` to remove them all.
 
-<b>Note:</b> The benefit of using pip list --format=freeze is that it records each package's version. In contrast, simply using pip freeze may show some packages' file paths on your own machine, which cannot be reinstalled on another machine.
+<b>Note:</b> The benefit of using `pip list --format=freeze` is that it records each package's version. In contrast, simply using `pip freeze` may show some packages' file paths on your own machine, which cannot be reinstalled on another machine.
 
 
-### How to use Created Virtual Environments on Jupyter
+### How to Install Requirements
+
+`requirements.txt` is a file that lists all the necessary Python packages for your environment. Often, each package has a specified version to ensure you can recreate the same environment in the future, even if some packages' latest versions have changed. [See example requirements.txt here >>][2]
+
+To install all the libraries in requirements file, we can run command `pip install -r requirements.txt`. Besides, often times, there might be other commands to run in order to set up the environment, and we can put all the commands in the same bash file. The bash file is often named as `setup.sh`. [See example setup.sh here >>][3]
+
+To execute all the commands in `setup.sh` file:
+* If you're using Mac OS or Linux system, you can run `sh setup.sh` in your terminal directly.
+* If you're using Windows, PyCharm's termial allows you to choose `Git Bash` terminal, where you can run `sh setup.sh` too.
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm_bash_terminal.png" width="444" height="146" />
+</p>
+
+
+
+### How to Use Created Virtual Environments on Jupyter
 
 You might also want to use the created virtual environment in your Jupyter Lab or Jupyter Notebook. Here's how:
 
@@ -127,6 +142,8 @@ If you want to change the kernel of an existing notebook, click the top right ke
 
  
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/rainbow_moss.md#data-science-environments
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/requirements.txt
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/setup.sh
 
 
 
