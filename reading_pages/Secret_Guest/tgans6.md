@@ -1,3 +1,12 @@
+#### Setup Environment
+
+* Suggest creating a virtual environment to simplify python packages' installation and their version control. [Here's a simple guidance to follow >>][15].
+* The required python version is <b>python 3.9</b>.
+* [Follow this guidance][18] to set up required python packages.
+  * [required requirements.txt][16]
+  * [required setup.sh][17] 
+
+
 #### Install & Execute TGANs
 
 * <b>Install & Execute CTGAN</b>
@@ -9,6 +18,7 @@
 
 
 * <b>Install & Execute CTABGAN+</b>
+  * CTABGAN+ wasn't included in `requirements.txt` because it needs manually installation, and it doesn't have a version.
   * Download CTABGAN+ repo by typing `git clone https://github.com/Team-TUD/CTAB-GAN-Plus.git` through your terminal.
   * Make sure your input real data is in "CSV" format.
   * To generate synthetic data, you can adjust [these parameters][4], output has to save as a "CSV" file, and the code 
@@ -19,6 +29,7 @@
 
 
 * <b>Install & Execute CasTGAN</b>
+  * CasTGAN wasn't included in `requirements.txt` because it needs manually installation, and it doesn't have a version. 
   * Download CasTGAN repo by typing `git clone https://github.com/abedshantti/CasTGAN.git` in your terminal.
   * Edit the code in CasTGAN repo by adding your dataset name in [this list][8]. Lady H. added "campaign" in this list.
   * [Edit this code file to update seeds for your dataset][9]. Lady H. updated seeds for dataset "campaign".
@@ -64,3 +75,7 @@
 [12]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans5.md
 [13]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/syn_data_exps/syn_castgan.ipynb
 [14]:https://github.com/sdv-dev/CTGAN/blob/main/ctgan/synthesizers/ctgan.py#L107-L144
+[15]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/virtual_env/virtual_env1.md#how-to-create-python-virtual-environments
+[16]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/requirements.txt
+[17]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/setup.sh
+[18]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/virtual_env/virtual_env1.md#how-to-install-requirements
