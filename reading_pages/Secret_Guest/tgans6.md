@@ -5,12 +5,13 @@
 * [Follow this guidance][18] to set up required python packages.
   * [required requirements.txt][16]
   * [required setup.sh][17] 
+* If there will be any package version problem, you can check the full list of python packages [here][19].
 
 
 #### Install & Execute TGANs
 
 * <b>Install & Execute CTGAN</b>
-  * `pip install ctgan` or `conda install -c pytorch -c conda-forge ctgan` to install CTGAN.
+  * CTGAN was included in `requirements.txt` and will be installed during environment setup step.
   * To generate the synthetic data only takes a few lines of code, and you can adjust [these parameters][14]. See example code below:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctgan_syn_gen_code.png" width="903" height="444" />
   
@@ -21,8 +22,7 @@
   * CTABGAN+ wasn't included in `requirements.txt` because it needs manually installation, and it doesn't have a version.
   * Download CTABGAN+ repo by typing `git clone https://github.com/Team-TUD/CTAB-GAN-Plus.git` through your terminal.
   * Make sure your input real data is in "CSV" format.
-  * To generate synthetic data, you can adjust [these parameters][4], output has to save as a "CSV" file, and the code 
-    looks as below:
+  * To generate synthetic data, you can adjust [these parameters][4], output has to save as a "CSV" file, and the code looks as below:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+_syn_gen_code.png" width="903" height="385" />
 
 🌻 [Check detailed code here >>][3] 
@@ -79,3 +79,4 @@
 [16]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/requirements.txt
 [17]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/setup.sh
 [18]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/virtual_env/virtual_env1.md#how-to-install-requirements
+[19]:https://github.com/lady-h-world/My_Garden/blob/main/code/secret_guest/full_requirements_bk.txt
