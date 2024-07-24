@@ -1,6 +1,6 @@
 #### Setup Environment
 
-* Suggest creating a virtual environment to simplify python packages' installation and their version control. [Here's a simple guidance to follow >>][15].
+* [Follow this guidance][15] to create a virtual environment, it can simplify python packages' installation and their version control.
 * The required python version is <b>python 3.9</b>.
 * [Follow this guidance][18] to set up required python packages.
   * [required requirements.txt][16]
