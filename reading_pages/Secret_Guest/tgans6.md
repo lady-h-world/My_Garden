@@ -11,7 +11,7 @@
 #### Install & Execute TGANs
 
 * <b>Install & Execute CTGAN</b>
-  * CTGAN was included in `requirements.txt` and will be installed during environment setup step.
+  * CTGAN was included in `requirements.txt` and has been installed during environment setup step.
   * To generate the synthetic data only takes a few lines of code, and you can adjust [these parameters][14]. See example code below:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctgan_syn_gen_code.png" width="903" height="444" />
   
