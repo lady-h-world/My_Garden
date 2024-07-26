@@ -99,6 +99,6 @@ In the example below, the threshold is set as 5. Sometimes, it takes a long time
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_campaign.ipynb
-[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/correlation/correlations.ipynb
-[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr2.md
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/var_relationships/corr_asso.ipynb
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/rel2.md
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md

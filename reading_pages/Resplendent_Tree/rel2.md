@@ -34,6 +34,6 @@ By contrast, Cramer's V is more straightforward. It outputs a value that represe
 
 
 [1]:https://en.wikipedia.org/wiki/Contingency_table
-[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/correlation/correlations.ipynb
-[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr3.md
-[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr1.md
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/var_relationships/corr_asso.ipynb
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/rel3.md
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/rel1.md
