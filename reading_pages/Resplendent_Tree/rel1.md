@@ -1,8 +1,11 @@
 ## Association
 
-When building machine learning models, understanding the relationship between variables is crucial. It enhances our understanding of the data, helps meet model assumptions (e.g., linear regression assumes variables are independent), and aids in removing unnecessary variables to improve model efficiency.
+When building machine learning models, exploring the relationships between variables is crucial. It enhances our 
+understanding of the data, helps meet model assumptions (e.g. linear regression assumes variables are independent), 
+and aids in removing unnecessary variables in order to improve model efficiency.
 
-Association is a popular method for exploring data relationships. It appears between numerical variables, categorical variables, and between numerical and categorical variables, revealing how these variables move together.
+Association is a popular method for exploring data relationships. It appears between numerical variables, 
+categorical variables, and mixed type of variables, revealing how these variables move together.
 
 
 ### About the Data
