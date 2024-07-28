@@ -10,9 +10,14 @@ Association is a popular method for exploring data relationships. It appears bet
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/garden_bank.png" width="253" height="240" />
 
-We have a bank in the garden! For us, garden residents, we make lots of money but don't spend a lot, saving it in the bank is a good choice. The bank often teaches us how to spend money and live a happy life. For example, we get monthly newsletter of tourism spots in the universe, where we can take a great vacation; sometimes we get donation opportunities to help people in need from the outside world, each time there're only 2 ~ 5 randomly selected people can donate, we all actively participate and feeling lucky if we got selected to donate 💝!
+We have a garden bank known for its excellent management of customers' money. Many customers from the outside world 
+chose to save their money here, drawn by the bank's reputation for security and its attractive investment opportunities.
   
-People from the outside world also save their money in our bank due to its security and attractive investment opportunities. Every month, our bank will launch a campaign to recommend some bank products to most promising customers. For example, this month the bank just launched a saving product campaign. It predicted each customer's likelihood to acquire this product, and sent product offers to those got higher prediction score.
+Every month, the bank creates interesting investment opportunities and sends news about them to potential customers 
+likely to be interested. Each news-spreading event is called as a <b>campaign</b>.
+
+The data used here came from one of these campaigns, aimed at selling a term deposit product. This product requires 
+customers to keep their money in the bank for several years, during which they earn interest.
   
 </p>
 
