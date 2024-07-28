@@ -16,8 +16,8 @@ categorical variables, and mixed type of variables, revealing how these variable
 We have a garden bank known for its excellent management of customers' money. Many customers from the outside world 
 chose to save their money here, drawn by the bank's reputation for security and its attractive investment opportunities.
   
-Every month, the bank creates interesting investment opportunities and sends news about them to potential customers 
-likely to be interested. Each news-spreading event is called as a <b>campaign</b>.
+Every month, the bank creates interesting investment opportunities and sends advertisements to potential customers 
+who are likely to be interested. Such ads-sending event is called as a <b>campaign</b>.
 
 The data used here came from one of these campaigns, aimed at selling a term deposit product. This product requires 
 customers to keep their money in the bank for several years, during which they earn interest.
