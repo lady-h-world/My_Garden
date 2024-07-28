@@ -1,8 +1,12 @@
-## Correlation & Association
+## Association
 
-You must have been reminded many times that "correlation is not causation". This is true, at the same time, it's often helpful to check the correlation of your data. Sometimes it's because a certain algorithm assumes that there should be no or little correlation in the data, such as linear regression; sometimes it helps remove unnecessary features in those algorithms robust to correlation, such as tree models; sometimes we want to get better understanding of the relationship between variables.
+When building machine learning models, understanding the relationship between variables is crucial. It enhances our understanding of the data, helps meet model assumptions (e.g., linear regression assumes variables are independent), and aids in streamlining the model by removing unnecessary variables to improve model efficiency.
 
-Correlation is not limited to numerical variables, it can happen between categorical variables as well, what's more, it can even happen between numerical and categorical variables. Now let's see how to check correlation for different data types.
+Correlation and association are popular relationships we often look into. They both measure how would the 2 variables move together.
+* Correlation is a statistical measure that describes the degree to which two variables move in relation to each other. It quantifies the strength and direction of a relationship between the variables.
+  * Strength: How closely the variables are related. Strong correlation means the variables move together closely.
+  * Direction: Whether the relationship is positive (both variables increase together) or negative (one variable increases as the other decreases).
+* 
 
 
 ### About the Data
@@ -99,6 +103,6 @@ In the example below, the threshold is set as 5. Sometimes, it takes a long time
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_campaign.ipynb
-[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/var_relationships/corr_asso.ipynb
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/var_relationships/association.ipynb
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/rel2.md
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/about_resplendent_tree.md
