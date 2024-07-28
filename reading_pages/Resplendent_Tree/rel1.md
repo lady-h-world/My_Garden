@@ -29,7 +29,7 @@ term deposit product.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/campaign_data.png" width="972" height="170" />
 
-🌻 [To get campaign data >>][1] 
+🌻 [The code to get campaign data >>][1] 
 
 
 ### Association between Numerical Variables
@@ -42,12 +42,9 @@ Correlation is a type of association often applied between two numerical variabl
 
 We have 3 common methods to check the correlation between each pair of variables:
 * `Pearson` is a measure of the strength and the direction of a <b>linear relationship</b> between two variables.
-* `Spearman` equals to Pearson correlation using rank values of those two variables, it assesses a <b>monotonic relationship</b>.
+* `Spearman` equals to, Pearson correlation using rank values of those two variables, it assesses a <b>monotonic 
+  relationship</b>.
 * `Kendall` is similar to Spearman which measures monotonic relationship using rank values of the 2 variables, but it's more robust (smaller gross error sensitivity) and more efficient (smaller asymptotic variance) than Spearman.
-
-<p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/ges_av.png" width="766" height="79" />
-</p>
 
 Both Spearman and Kendall uses rank values, therefore they can be applied to both continuous and ordinal variables. They are both non-parametric method and therefore the input data is not required to be in a bell curve as what Pearson assumes.
 
