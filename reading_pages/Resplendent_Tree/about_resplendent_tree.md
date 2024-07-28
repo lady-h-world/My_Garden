@@ -29,7 +29,7 @@ Lady H. told us that in the outside world, human beings have various skin colors
 
 So what's the sprout power you can collect here?
 
-🌱 The connections between flowers on Resplendent Tree shows the power of [correlation and association >>][1].
+🌱 The connections between flowers on Resplendent Tree shows the power of [association >>][1].
 
 🌱 The behaviour of same breed gathering closer is the power of clustering. [How do you often find the optimal number of clusters? >>][4]
 

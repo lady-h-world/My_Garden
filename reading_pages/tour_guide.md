@@ -14,7 +14,7 @@ Collect the sprouts 🌱 along the way!
 * [Garden Market][4]
   * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MLJar, Luigi, Airflow and ZenML.
 * [Replendent Tree][9]
-  * <b>Correlation & Association</b>, <b>Unsupervised Learning</b> and <b>Semi Supervised Learning</b>.
+  * <b>Association</b>, <b>Unsupervised Learning</b> and <b>Semi Supervised Learning</b>.
 * [Secret Guest][12]
   * Have fun with <b>Math & Statistics</b>, <b>Tabular GANs</b> (Generative Adversarial Networks) and <b>Deploy an AI Powered App</b>. 
 * [Garden Totem - Yin Yang][5]
