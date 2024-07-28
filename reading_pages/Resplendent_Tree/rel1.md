@@ -31,7 +31,7 @@ term deposit product.
 
 ### Association between Numerical Variables
 
-#### Correlation between 2 Variables
+#### Correlation between 2 Numerical Variables
 
 Correlation is a type of association often applied between two numerical variables. It measures the strength and direction of the relationship between the two variables.
 * Strength: How closely the variables are related. Strong correlation means the variables move together closely.
