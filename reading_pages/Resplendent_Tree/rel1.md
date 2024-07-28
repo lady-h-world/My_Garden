@@ -1,12 +1,8 @@
 ## Association
 
-When building machine learning models, understanding the relationship between variables is crucial. It enhances our understanding of the data, helps meet model assumptions (e.g., linear regression assumes variables are independent), and aids in streamlining the model by removing unnecessary variables to improve model efficiency.
+When building machine learning models, understanding the relationship between variables is crucial. It enhances our understanding of the data, helps meet model assumptions (e.g., linear regression assumes variables are independent), and aids in removing unnecessary variables to improve model efficiency.
 
-Correlation and association are popular relationships we often look into. They both measure how would the 2 variables move together.
-* Correlation is a statistical measure that describes the degree to which two variables move in relation to each other. It quantifies the strength and direction of a relationship between the variables.
-  * Strength: How closely the variables are related. Strong correlation means the variables move together closely.
-  * Direction: Whether the relationship is positive (both variables increase together) or negative (one variable increases as the other decreases).
-* 
+Association is a popular method for exploring data relationships. It appears between numerical variables, categorical variables, and between numerical and categorical variables, revealing how these variables move together.
 
 
 ### About the Data
@@ -27,8 +23,14 @@ The campaign data example looks as below, `deposit` is the label, indicating whe
 🌻 [To get campaign data >>][1] 
 
 
-### Correlation between Numerical Variables
+### Association between Numerical Variables
+
 #### Correlation between 2 Variables
+
+Correlation is a type of association often applied between two numerical variables. It measures the strength and direction of the relationship between the two variables.
+* Strength: How closely the variables are related. Strong correlation means the variables move together closely.
+* Direction: Whether the relationship is positive (both variables increase together) or negative (one variable increases as the other decreases).
+
 We have 3 common methods to check the correlation between each pair of variables:
 * `Pearson` is a measure of the strength and the direction of a <b>linear relationship</b> between two variables.
 * `Spearman` equals to Pearson correlation using rank values of those two variables, it assesses a <b>monotonic relationship</b>.
@@ -38,7 +40,7 @@ We have 3 common methods to check the correlation between each pair of variables
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/ges_av.png" width="766" height="79" />
 </p>
 
-Both Speaman and Kendall uses rank values, therefore they can be applied to both continuous and ordinal variables. They are both non-parametric method and therefore the input data is not required to be in a bell curve as what Pearson assumes.
+Both Spearman and Kendall uses rank values, therefore they can be applied to both continuous and ordinal variables. They are both non-parametric method and therefore the input data is not required to be in a bell curve as what Pearson assumes.
 
 Using all the numerical variables in our campaign data, let's look at the correlation triangle first. In the code below, you can choose one of the correlation methods, also decide whether you want to show absolute correlation values or not.
 
