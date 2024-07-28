@@ -21,7 +21,8 @@ customers to keep their money in the bank for several years, during which they e
   
 </p>
 
-The campaign data example looks as below, `deposit` is the label, indicating whether a customer had acquired this saving product.
+The campaign data example looks as below, `deposit` is the label, indicating whether a customer had acquired this 
+term deposit product.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/campaign_data.png" width="972" height="170" />
 
