@@ -69,7 +69,8 @@ The code below uses this correlation triangle to list out all the correlated pai
 And the output does align with the above visualization. Using the output drop list, we can remove unnecessary features from the data directly.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/corr_drop_out.png" width="843" height="178" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/corr_drop_out_v2.png" 
+width="767" height="182" />
 </p>
 
 🌻 [Look into code details here >>][2] 
