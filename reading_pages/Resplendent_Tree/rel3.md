@@ -11,12 +11,12 @@ numerical variable.
 The code below shows how to apply ANOVA to assess the association between a categorical variable and a numerical 
 variable.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/anova_code.png" width="739" height="288" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/anova_code_v2.png" width="741" height="291" />
 
 
 Using our campaign data, the output looks like:
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/anova_out.png" width="728" height="397" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/anova_out_v2.png" width="741" height="416" />
 
 🌻 [Look into code details here >>][2] 
 
