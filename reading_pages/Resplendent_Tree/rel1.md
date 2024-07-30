@@ -5,7 +5,7 @@ understanding of the data, helps meet model assumptions (e.g. linear regression 
 and aids in removing unnecessary variables in order to improve model efficiency.
 
 Association is a popular method for exploring data relationships. It appears between numerical variables, 
-categorical variables, and mixed type of variables, revealing how these variables move together.
+categorical variables, and mixed types of variables, revealing how these variables move together.
 
 
 ### About the Data
@@ -45,6 +45,10 @@ We have 3 common methods to check the correlation between each pair of variables
 * `Spearman` equals to, Pearson correlation using rank values of those two variables, it assesses a <b>monotonic 
   relationship</b>.
 * `Kendall` is similar to Spearman which measures monotonic relationship using rank values of the 2 variables, but it's more robust (smaller gross error sensitivity) and more efficient (smaller asymptotic variance) than Spearman.
+
+<p align="left">
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/ges_av.png" width="766" height="79" />
+</p>
 
 Both Spearman and Kendall uses rank values, therefore they can be applied to both continuous and ordinal variables. They are both non-parametric method and therefore the input data is not required to be in a bell curve as what Pearson assumes.
 
