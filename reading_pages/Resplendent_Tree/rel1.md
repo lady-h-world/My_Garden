@@ -92,7 +92,7 @@ The code below generates a dataframe of VIF score for each numerical variable in
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/multi_corr_code.png" width="948" height="244" />
 </p>
 
-In the example below, the threshold is set as 5. Sometimes, it takes a long time to generate VIF of each variable, so save the output `vif_df` as a file will save you lots of time if you want to try different thresholds.
+In the example below, the threshold is set as 5. Sometimes, it takes a long time to generate VIF of each variable, so save the output `vif_df` as a file will save you lots of time if you want to try different VIF thresholds.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/multi_corr_out.png" width="625" height="393" />

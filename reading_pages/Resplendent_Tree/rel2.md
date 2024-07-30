@@ -9,15 +9,15 @@ You can consider they are the same method 😊.
 But in python implementation, there're some differences. The code below allows to choose either Chi2 or Cramer's V. 
 The output of Chi2 is mainly using p value to decide the association. It needs a threshold (namely, significant level, 
 often 
-choose 0.05) and when p value is lower than this thereshold, we can consider there's association. 
+choose 0.05) and when p value is lower than this thereshold, we can consider there's an association. 
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/chi2_cramer_code.png" width="827" height="410" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/chi2_cramer_code_v2.png" width="829" height="409" />
 
 By contrast, Cramer's V is more straightforward. It outputs a value that represents the association degree. Higher 
 value 
 indicates higher association. So its output is easier to interpret. Look at this output:
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/chi2_cramer_out.png" width="309" height="406" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/chi2_cramer_out_v2.png" width="321" height="204" />
 
 🌻 [Look into code details here >>][2] 
 
