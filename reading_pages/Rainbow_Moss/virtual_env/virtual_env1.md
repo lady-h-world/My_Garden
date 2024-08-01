@@ -1,3 +1,4 @@
+
 ## Python Virtual Environment
 
 As python is the most popular data science language, most data science projects are written in python nowadays. It is a better practice to create a virtual environment for each new python project. 
@@ -88,8 +89,7 @@ To execute all the commands in `setup.sh` file:
 
 You might also want to use the created virtual environment in your Jupyter Lab or Jupyter Notebook. Here's how:
 
-1. Make sure you have jupyter lab or jupyter notebook, as well as ipywidgets installed. You can run `pip install 
-   jupyterlab`, `pip install ipywidgets --user`.
+1. Make sure you have jupyter lab or jupyter notebook, as well as ipywidgets installed. You can run `pip install jupyterlab`, `pip install ipywidgets --user`.
 2. In the PyCharm terminal, under your virtual environment, type `pip install ipykernel`. This step is only needed once for each virtual environment.
 3. Type `python -m ipykernel install --user --name [your virtual env name] --display-name "[your virtual env name]"` 
    to add the virtual environment's kernel into Jupyter, (update `[your virtual env name]` with the kernel name you want) like this:
@@ -129,8 +129,10 @@ If you want to change the kernel of an existing notebook, click the top right ke
 </p>
 
 2. Select the virtual environment you want to remove and click `-` button. This will remove the interpreter shown in PyCharm.
-3. Type `conda env list` to find path of all the virtual environments, then type `rm -r {env_path}` (change `env_path` for your use case). This will remove the virtual environment installed.
-4. If you had added ipython kernel for this virtual environment, in order to remove it, you can type `jupyter kernelspec uninstall [kernel_name]` (change `[kernel_name]` with the kernel name you want to remove).
+3. Type `conda env list` to find paths of all the virtual environments, then type `rm -r {env_path}` (change 
+   `env_path` for your use case). This will remove the virtual environment installed.
+4. Type `jupyter kernelspec list` to find the paths of all the kernels for jupyter, then then type `rm -r 
+   {kernel_path}` (change `kernel_path` for your use case). This will remove the kernel from jupyter.
 
 
 #
