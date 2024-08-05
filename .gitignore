@@ -1,7 +1,6 @@
 **/.ipynb_checkpoints
 /code/crystal_ball/data_collector/100 leaves plant species
 /code/crystal_ball/data_collector/leaf
-/code/crystal_ball/data_collector/structured_data
 /code/crystal_ball/data_collector/plants.data
 /code/crystal_ball/data_collector/plants.names
 /code/crystal_ball/data_collector/stateabbr.txt
@@ -9,7 +8,7 @@
 /code/crystal_ball/data_collector/store_sales.csv
 /code/crystal_ball/lotus.png
 /code/crystal_ball/lotus.svg
-/code/crystal_ball/data_collector/bank.csv
+/code/crystal_ball/data_collector/raw_data/*
 **/backup/
 **/catboost_info/
 **/logs/
