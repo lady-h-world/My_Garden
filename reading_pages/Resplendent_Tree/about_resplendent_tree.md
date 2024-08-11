@@ -27,7 +27,7 @@ Lady H. told us that in the outside world, human beings have various skin colors
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-So what's the sprout power you can collect here? [Please gear up with the equipment first!][5] 💝 And let's go!
+So what's the sprout power you can collect here? [Please gear up first!][5] 💝 And let's go!
 
 🌱 The connections between flowers on Resplendent Tree shows the power of [association >>][1].
 
