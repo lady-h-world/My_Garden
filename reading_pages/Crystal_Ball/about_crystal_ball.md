@@ -26,9 +26,9 @@ A pretty good deal right, Lady H. got it for free, and it's still powerful. Alth
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-[Gear up first!][3]
+[Gear up first!][3] 💝 
 
-[Let's see Crystal Ball's magic! >>][1]
+🌱 [Let's see Crystal Ball's magic! >>][1]
 
 <p align="right">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
