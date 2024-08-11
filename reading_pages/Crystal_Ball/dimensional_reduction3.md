@@ -59,7 +59,7 @@ As we can see, Isomap, MDS, t-SNE and LLE are all focusing on maintaining the lo
 
 
 
-[1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/magic_dimensional_reduction.ipynb
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/magic_dimensional_reduction.ipynb
 [2]:https://towardsdatascience.com/lle-locally-linear-embedding-a-nifty-way-to-reduce-dimensionality-in-python-ab5c38336107
 [3]:https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/dimensional_reduction4.md
