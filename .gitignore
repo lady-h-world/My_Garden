@@ -22,3 +22,4 @@
 /code/secret_guest/syn_data_exps/*.csv
 /code/secret_guest/syn_data_exps/CTAB-GAN-Plus/
 /code/secret_guest/syn_data_exps/CasTGAN/
+/code/garden_market/mini_pipelines/tpot_exported_pipeline/*
