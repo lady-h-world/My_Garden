@@ -3,15 +3,9 @@
 </p>
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/earth_chaos.png" width="1113" height="777" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/why_here.gif" width="1279" height="960" />
 </p>
 
-To find the peace of mind, how about sit and read <i>"Applied Data Science in My Garden"</i> ! 😉
-
-
-<p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/just_read.png" width="954"  height="455" />
-</p>
 
 #
 
