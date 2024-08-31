@@ -26,6 +26,9 @@ Collect the sprouts 🌱 along the way!
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 
 ## Your Garden Companions
