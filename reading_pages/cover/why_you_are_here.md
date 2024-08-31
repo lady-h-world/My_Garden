@@ -13,7 +13,8 @@
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="180" height="75" />
 </p>
 
-[Open the gate! >>][1]
+
+[Tour Guide >>][1]
 
 
-[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/cover/at_the_gate.md
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md
