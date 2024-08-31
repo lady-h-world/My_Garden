@@ -9,6 +9,9 @@ Collect the sprouts 🌱 along the way!
 
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/garden_map.png" width="510" height="509" />
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 * [The Queen][1]
 * [Rainbow Moss][8]
