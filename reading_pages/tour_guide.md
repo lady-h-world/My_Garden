@@ -11,21 +11,13 @@ Collect the sprouts 🌱 along the way!
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/garden_map.png" width="510" height="509" />
 
 * [The Queen][1]
-  * <b>Hyperparameter Optimization</b> methods applied in classical classification, regression, and deep learning.
 * [Rainbow Moss][8]
-  * Flexible <b>virtual environment setup</b>, <b>docker environment setup</b>.
 * [Garden Market][4]
-  * How to build <b>AutoML Pipelines</b> using TPO, AutoKeras, MLJar, Luigi, Airflow and ZenML.
 * [Replendent Tree][9]
-  * <b>Association</b>, <b>Unsupervised Learning</b> and <b>Semi Supervised Learning</b>.
 * [Secret Guest][12]
-  * Have fun with <b>Math & Statistics</b>, <b>Tabular GANs</b> (Generative Adversarial Networks) and <b>Deploy an AI Powered App</b>. 
 * [Garden Totem - Yin Yang][5]
-  * <b>Time Series</b> operations using Statistics (e.g. ARIMA), Kats, Greykite, Prophet and Lady H.'s homemade methods.
 * [Crystal Ball][10]
-  * <b>Data Collection</b>, <b>Data Simulation</b>, <b>Dimensional Reduction</b>.
 * [Garden Museum][6]
-  * Collected <b>memories</b> from this garden.
 
 </p>
 <p>&nbsp;</p>
