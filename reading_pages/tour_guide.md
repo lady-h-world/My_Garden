@@ -7,6 +7,9 @@
 
 Collect the sprouts 🌱 along the way!
 
+<p>
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/garden_map.png" width="510" height="509" />
+
 * [The Queen][1]
   * <b>Hyperparameter Optimization</b> methods applied in classical classification, regression, and deep learning.
 * [Rainbow Moss][8]
@@ -24,6 +27,7 @@ Collect the sprouts 🌱 along the way!
 * [Garden Museum][6]
   * Collected <b>memories</b> from this garden.
 
+</p>
 <p>&nbsp;</p>
 
 
