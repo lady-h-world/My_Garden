@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/why_yr_here_v4.gif" width="779" height="560" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/why_yr_here_v4.gif" width="679" height="460" />
 </p>
 
 
