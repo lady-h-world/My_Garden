@@ -51,7 +51,7 @@ And <b>Lady H.'s shikigami</b> will share fun stories along the way!
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
+
 
 
 ## Keep in Touch
