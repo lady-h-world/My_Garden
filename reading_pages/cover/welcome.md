@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/welcome_v2.png" width="420" height="566" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/welcome_v3.png" width="420" height="566" />
 </p>
 
 #
