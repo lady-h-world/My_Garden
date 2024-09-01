@@ -9,7 +9,6 @@
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/garden_map_v3.png" width="610" height="509" />
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 
 * [Lotus Queen][1]
 * [Rainbow Moss][8]
