@@ -1,12 +1,12 @@
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/cover_title.png" width="417" height="136" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/cover_title.png" width="517" height="236" />
 </p>
 
 #
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/my_garden.png" width="600" height="550" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/my_garden.png" width="570" height="520" />
 </p>
 
 #
