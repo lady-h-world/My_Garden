@@ -1,6 +1,6 @@
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/cover_title.png" width="617" height="231" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/cover_title.png" width="517" height="198" />
 </p>
 
 #
