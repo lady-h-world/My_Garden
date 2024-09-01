@@ -13,7 +13,7 @@ Collect the sprouts 🌱 along the way!
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-* [The Queen][1]
+* [Lotus Queen][1]
 * [Rainbow Moss][8]
 * [Garden Market][4]
 * [Replendent Tree][9]
