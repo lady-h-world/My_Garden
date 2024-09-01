@@ -17,9 +17,5 @@
 
 [Enter the garden >>][1]
 
-<p align="right">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
-</p>
-
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/cover/welcome.md
