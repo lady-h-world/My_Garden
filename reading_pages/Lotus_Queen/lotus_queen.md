@@ -32,7 +32,6 @@ Correct! The Queen is a typical outlier.
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/lotus_plot.png" width="484" height="381" />
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 
 Normal lotus blooms in summer and opens petals every morning. One the opposite, the queen opens her buds at every winter night.
 
@@ -63,6 +62,6 @@ Meanwhile, do you know Python allows you to plot whatever icon in a visualizatio
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_1.md
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/lotus_queen.ipynb
-[3]https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md#garden-map
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md#garden-map
 
 
