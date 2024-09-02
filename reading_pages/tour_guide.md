@@ -64,7 +64,7 @@ Let's keep in touch after your visit!
 ## References
 * [Image resources][14]
 
-[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/the_queen.md
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/lotus_queen.md
 [2]:https://github.com/lady-h-world/My_Garden/discussions
 [3]:https://github.com/lady-h-world/My_Garden/discussions/categories/stolen-copy-right
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/garden_market.md
