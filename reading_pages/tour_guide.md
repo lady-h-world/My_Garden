@@ -61,9 +61,6 @@ Let's keep in touch after your visit!
 * To find volunteering or collaboration opportunities, feel free to check [opportunities][13]!
 
 
-## References
-* [Image resources][14]
-
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/lotus_queen.md
 [2]:https://github.com/lady-h-world/My_Garden/discussions
 [3]:https://github.com/lady-h-world/My_Garden/discussions/categories/stolen-copy-right
@@ -76,4 +73,3 @@ Let's keep in touch after your visit!
 [11]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/garden_museum.md#weaponry
 [12]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/secret_guest.md
 [13]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/cover/opportunities.md
-[14]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/cover/references.md
