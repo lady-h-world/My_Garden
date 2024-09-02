@@ -38,8 +38,6 @@ Normal lotus blooms in summer and opens petals every morning. One the opposite, 
 
 Figure 1.1 shows the difference.
 
-<p>&nbsp;</p>
-
 Meanwhile, do you know Python allows you to plot whatever icon in a visualization, such as this lotus icon?
 
 🌻 [Click to learn how to plot figure 1.1 in python >>][2]
