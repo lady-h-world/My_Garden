@@ -6,7 +6,7 @@
 #
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/my_garden.png" width="570" height="520" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/cover/my_garden_v2.png" width="754" height="587" />
 </p>
 
 #
