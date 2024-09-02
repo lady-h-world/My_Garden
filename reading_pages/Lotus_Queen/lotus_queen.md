@@ -1,11 +1,11 @@
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/title_queen.png" width="320" height="70" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/lotus_queen.png" width="320" height="80" />
 </p>
 
 #
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/the_queen.png" width="320" height="450" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/lotus_queen.png" width="320" height="450" />
 
 Lady H. travels extensively throughout the universe in her own spaceship, exploring numerous galaxies. Wherever she ventures, she discovers unique aspects of each locality. While her journeys pose challenges, they also yield unexpected gifts.
 
@@ -30,7 +30,7 @@ Correct! The Queen is a typical outlier.
 </p>
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/lotus_plot.png" width="484" height="381" />
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/lotus_plot.png" width="484" height="381" />
 <p>&nbsp;</p>
 
 Normal lotus live between June and August, with their petals open every morning. One the opposite, the queen opens her buds at every winter night.
