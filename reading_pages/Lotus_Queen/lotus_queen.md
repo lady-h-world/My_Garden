@@ -9,11 +9,11 @@
 
 Lady H. travels extensively throughout the universe in her own spaceship, exploring numerous galaxies. Wherever she ventures, she discovers unique aspects of each locality. While her journeys pose challenges, they also yield unexpected gifts.
 
-Ten years ago, her spaceship landed on Planet Sapphire, a world where 95% of the surface is perpetually covered in snow. Her visit was motivated by a desire to explore local fruits. The harvested fruits on this planet possess a crystalline appearance, including crystal grapes, crystal mangos, crystal cherries, and more. Even the coffee and chocolate share this crystal hue, crafted from crystallized coffee beans and cocoa beans. Remarkably, all these offerings boast exquisite flavors!
+Ten years ago, her spaceship landed on Planet Sapphire, a world where 95% of the surface is perpetually covered in snow. Her visit was motivated by a desire to explore local fruits. The harvested fruits on this planet possess a crystalline appearance, including crystal grapes, crystal mangos, crystal cherries, and more. Even the coffee and chocolate share this crystal hue, as they were crafted from crystallized coffee beans and cocoa beans. Remarkably, all these offerings boast exquisite flavors!
 
-However, upon Lady H.'s arrival, many of her friends in the spaceship fell ill with prolonged fevers, and the medicine they brought proved ineffective. Determined to find a solution, Lady H. sought local assistance. The residents guided her to Lake Crystal, a frozen lake (of course 😊) adorned with blooming lotus. Collecting the water around these flowers and having her friends drink it resulted in their swift recovery.
+However, upon Lady H.'s arrival, many of her friends in the spaceship fell sick with prolonged fevers, and the medicine they brought proved ineffective. Determined to find a solution, Lady H. sought local assistance. The residents guided her to Lake Crystal, a frozen lake adorned with blooming lotus. Collecting the water around these flowers and having her friends drink it resulted in their swift recovery.
   
-Given that Lady H.'s Chinese name translates to "waterlily in winter," reflecting a deep connection with the flower, she decided to bring some home. This marked the inception of the garden's first collection, now known as the "Queen Lotus".
+Given that Lady H.'s Chinese name translates to "lotus in winter," reflecting a deep connection with the flower, she decided to bring some home. This marked the inception of the garden's first collection, now known as the "Lotus Queen".
 
 </p>
 <p>&nbsp;</p>
@@ -32,16 +32,18 @@ Correct! The Queen is a typical outlier.
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/lotus_plot.png" width="484" height="381" />
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 
-Normal lotus live between June and August, with their petals open every morning. One the opposite, the queen opens her buds at every winter night.
+Normal lotus blooms in summer and opens petals every morning. One the opposite, the queen opens her buds at every winter night.
 
-From figure 1.1, the differences are obvious to see.
+Figure 1.1 shows the difference.
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 
-🌻 [Click to learn how to plot figure 1.1 >>][2]
+Meanwhile, do you know Python allows you to plot whatever icon in a visualization, such as this lotus icon?
+
+🌻 [Click to learn how to plot figure 1.1 in python >>][2]
 
 </p>
 <p>&nbsp;</p>
