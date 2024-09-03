@@ -39,6 +39,6 @@ You're very welcome to share your experiments and learnings with us [here][7]! W
 [2]:https://docs.ray.io/en/master/tune/api_docs/suggestion.html#tune-search-alg
 [3]:https://github.com/ray-project/ray/blob/master/python/ray/tune/tune_config.py#L23-L24
 [4]:https://docs.ray.io/en/master/tune/examples/lightgbm_example.html
-[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md#main-station-
-[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_7.md
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md#garden-map
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_7.md
 [7]:https://github.com/lady-h-world/My_Garden/discussions/categories/show-and-tell
