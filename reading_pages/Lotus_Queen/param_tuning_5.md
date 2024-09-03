@@ -29,7 +29,7 @@ In this experiment, lady H. wanted to test with not only customized learner but 
 She did some basic data exploration, such as checking the distributions of the forecast target (Sales) in both training and testing data. 
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/sales_distribution.png" width="911" height="324" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/sales_distribution.png" width="911" height="324" />
 </p>
 
 The 2 datasets have almost the same distributions, and the shape looks like the combination of 2 [poisson distributions][3]. In LGBM's built-in objective funtions, there is a "poisson loss" which assumes the forecast target follows poisson distribution, when the likelihood of the assumption is larger, the forecast performance can be better.
@@ -37,7 +37,7 @@ The 2 datasets have almost the same distributions, and the shape looks like the 
 Therefore, Lady H. started with LGBM's built-in poisson loss. Because the customized learner inherited from `LGBMEstimator`, users can simply specify the `objective` as "poisson":
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_flaml_customized_poisson_loss.png" width="1064" height="809" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_flaml_customized_poisson_loss.png" width="1064" height="809" />
 </p>
 
 Lady H. got 0.982 R2 testing score in 300 seconds with these settings, so there is an improvement in comparison with the baseline result.
@@ -50,7 +50,7 @@ After that, she wanted to try out her self-written objective function. But the c
 If you have any tips on how to calculate grad and hess well, welcome to [show and tell us][4], Lady H. will be more than happy to know that. But anyway, she found the formulas for some loss functions, such as "fair loss" as the code shown below. LGBM does have its built-in fair loss too, but here Lady H. changed the constant value used in the formula.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flaml_custimized_fair_loss.png" width="900" height="700" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/flaml_custimized_fair_loss.png" width="900" height="700" />
 </p>
 
 Not to her surprise, the final performance in testing data wasn't better than using poisson loss. 0.964 R2 testing score in 300 seconds, even worse than the baseline output.
@@ -62,7 +62,7 @@ Not to her surprise, the final performance in testing data wasn't better than us
 Same as FLAML, here we use LGBM as the learner, therefore the way to customize the objective function will be the same, Lady H. didn't plan to add customized objective function in this experiment. Instead, she wanted to address the question left from the previous Optuna experiment, about whether Optuna pruner works better without using cross validation. As the code shown below, users need to call `LightGBMPruningCallback()` to create the pruning callback used in LGBM:
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_customized_code.png" width="765" height="634" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/optuna_customized_code.png" width="765" height="634" />
 </p>
 
 🌻 [Look into Optuna experiment details >>][6]
@@ -72,7 +72,7 @@ Without applying cross validation, the overall time cost is definitely reduced, 
 Table 1.6 summarized the performance in this experiment:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/Table1.6.png" width="654" height="303" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/Table1.6.png" width="654" height="303" />
 </p>
 
 Looking at all these experiments, FLAML appears to be better overall. However, it doesn't mean Optuna is worse in every aspect.
@@ -82,25 +82,25 @@ In the code, you may have noticed that Lady H. generated some visualization, whi
 * Parameter importance plot shows an overall view of the parameters' impact on model's validation performance.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/param_importance_optuna.png" width="1651" height="379" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/param_importance_optuna.png" width="1651" height="379" />
 </p>
 
 * Slice plot shows the relationship between each hyperparameter, objective value and the number of trials.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/slice_plot_optuna.png" width="1702" height="377" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/slice_plot_optuna.png" width="1702" height="377" />
 </p>
 
 * Contour plot looks into each hyperparameter pairs.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/contour_optuna.png" width="1727" height="369" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/contour_optuna.png" width="1727" height="369" />
 </p>
 
 * Intermediate plot can interactively show you the intermediate value of each trial.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/intermediate_optuna.png" width="1664" height="368" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/intermediate_optuna.png" width="1664" height="368" />
 </p>
 
 Comparing with FLAML, Optuna has a better user experience in deep learning, and in the next experiment, we will bring you to the experiment of deep learning HPO!
@@ -126,5 +126,5 @@ Comparing with FLAML, Optuna has a better user experience in deep learning, and 
 [4]:https://github.com/lady-h-world/My_Garden/discussions/categories/show-and-tell
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/flaml_experiments/flaml_customized_learner.ipynb
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/optuna_experiments/optuna_customized.ipynb
-[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_6.md
-[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_4.md
+[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_6.md
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_4.md
