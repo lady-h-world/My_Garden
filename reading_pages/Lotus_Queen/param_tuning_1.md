@@ -18,7 +18,7 @@ The sprouts in this stop has the power of appliying the latest HPO technology in
 While working on some garden business, Lady H. has experimented with these powerful sprouts. Let's look at a comparison between FLAML and Optuna through her experiments:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/Table1.1.png" width="917" height="406" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/Table1.1.png" width="917" height="406" />
 </p>
 
 * Leaves30 has 14 features and 340 records in total, with 30 different specimens to classify, it is a typical multi-class classification dataset. 
@@ -51,7 +51,7 @@ The baseline performance is the average balanced accuracy of cross validation (C
 Leaves30 has small amount of data, so using 5-fold CV here:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/baesline_classification.png" width="1000" height="800" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/baesline_classification.png" width="1000" height="800" />
 </p>
 
 🌻 [Look into Leaves30 Baseline details >>][9]
@@ -59,7 +59,7 @@ Leaves30 has small amount of data, so using 5-fold CV here:
 Sales data is large enough to use 10-fold CV:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/reg_sales_baseline_code.png" width="1077" height="782" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/reg_sales_baseline_code.png" width="1077" height="782" />
 </p>
 
 🌻 [Look into Sales Baseline details >>][10]
@@ -84,9 +84,9 @@ Sales data is large enough to use 10-fold CV:
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_sales.ipynb
 [3]:https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html
 [4]:https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html#sklearn.metrics.r2_score
-[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_2.md
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_2.md
 [6]:https://github.com/microsoft/FLAML
 [7]:https://optuna.org/
-[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/the_queen.md
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/the_queen.md
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/lgbm_baseline.ipynb
 [10]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/lgbm_regression_baseline.ipynb
