@@ -5,7 +5,7 @@ The performance of FLAML and Optuna in Table 1.1 came from their best experiment
 The overall design of FLAML is shown in Figure 1.2:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/FLAML_design.png" width="732" height="414" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/FLAML_design.png" width="732" height="414" />
 </p>
 
 It has 2 major components:
@@ -38,7 +38,7 @@ Step 1 ~ 3 are repeated by iterations until running out of the time budget.
 The overall design of Optuna is shown as Figure 1.3:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_design.png" width="678" height="424" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/optuna_design.png" width="678" height="424" />
 </p>
 
 Optuna introduced define-by-run framework into HPO in 2019. The main idea behind define-by-run is, a user can rely on optuna to decide the hyperparamster values in each trial dynamically (when the program is running), without explicitly define everything in advance. There are different ways to dynamically construct the parameter search space, Optuna's is based on historical evaluated trials' results. Meanwhile, optuna provides highly modularized programming that a user-defined objective function receives a living trial as input and evaluates the trial result, which also enables the parallel computation of multiple trials.
@@ -64,7 +64,7 @@ Table 1.2 has compared and summarized the design of FLAML and Optuna:
 While sharing several common strengths, FLAML is designed to be more automated in optimization. The main differences in their core algorithms are, FLAML makes decisions based on the estimated evaluation while Optuna is based on the historical evaluation, and FLAML's time complexity seems more efficient.
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flaml_vs_optuna_design_diff.png" width="901" height="663" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/flaml_vs_optuna_design_diff.png" width="901" height="663" />
 </p>
 
 Now time to show you Lady H.'s experiments with the power from both FLAML and Optuna!
@@ -86,6 +86,6 @@ Now time to show you Lady H.'s experiments with the power from both FLAML and Op
 
 
 [1]:https://www.microsoft.com/en-us/research/publication/flaml-a-fast-and-lightweight-automl-library/
-[2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_3.md
-[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_1.md
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_3.md
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_1.md
 [4]:https://arxiv.org/abs/1907.10902
