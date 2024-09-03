@@ -7,7 +7,7 @@ After experimenting on defualt settings, now it's time to make the improvement, 
 To specify the search space in FLAML, no matter whether the model is in FLAML's default estimator list, users need to create a new class with specified hyperparameters. For example, Lady H. wanted to adjust the hyperparameters of LGBM, and she had to create a new learner class like this:
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_flaml_search_space.png" width="1068" height="477" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_flaml_search_space.png" width="1068" height="477" />
 </p>
 
 To specify a good search space, different models have different tips. Hyperparameters can be adjusted for better accuracy, or for faster speed, or for reducing overfitting, etc. 
@@ -17,7 +17,7 @@ To specify a good search space, different models have different tips. Hyperparam
 After creating the new learner class, users just need to add it to the `estimator_list` and to the AutoML instance:
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_flaml_add_learner.png" width="700" height="286" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_flaml_add_learner.png" width="700" height="286" />
 </p>
 
 <p align="left">
@@ -34,13 +34,13 @@ In the code, you will also see, Lady H. had tried CFO and Blend Search again wit
 Same as Experiment 1, in Optuna, to specify a search space, users also need to create an objective function. Meanwhile, in order to apply cross validation as the above FLAML experiment, `LightGBMTunerCV()` was used here:
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_optuna_search_space_no_pruner.png" width="824" height="685" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_optuna_search_space_no_pruner.png" width="824" height="685" />
 </p>
 
 The Optuna experiment took much longer running time than FLAML, therefore, Lady H. was wondering whether she should add pruning to skip those unpromising trials in order to save time, it might also reduce the overfitting. TPE was still used as the search strategy in Optuna experiments. In order to achieve a better performance result, [hyperband is a suggested pruner to be used together with TPE][3]. What's more, because the testing performance from above Optuna experiment didn't look well, Lady H. added more trials to see whether there can be some performance improvement.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_optuna_search_sapce_has_prunder.png" width="824" height="685" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_optuna_search_sapce_has_prunder.png" width="824" height="685" />
 </p>
 
 🌻 [Look into Optuna experiments details >>][4]
@@ -48,7 +48,7 @@ The Optuna experiment took much longer running time than FLAML, therefore, Lady 
 In these experiments, FLAML and Optuna share the same specified search space. However, comparing with their default settings, FLAML made 11.87% improvement in testing performance without increasing the time cost, while Optuna had 8% decrease in the testing performance and increased its time cost by 3 times.
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flaml_optuna_search_space.png" width="655" height="306" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/flaml_optuna_search_space.png" width="655" height="306" />
 </p>
 
 <i>NOTE: the time cost of Optuna experiments were using 10 trials' time in Table1.5.</i>
@@ -82,5 +82,5 @@ The output of Optuna experiments didn't show prunning had happened at all. This 
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/flaml_experiments/flaml_specified_search_space.ipynb
 [3]:https://optuna.readthedocs.io/en/stable/tutorial/10_key_features/003_efficient_optimization_algorithms.html#which-sampler-and-pruner-should-be-used
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/optuna_experiments/optuna_specified_search_space_integratedCV.ipynb
-[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_5.md
-[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_3.md
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_5.md
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_3.md
