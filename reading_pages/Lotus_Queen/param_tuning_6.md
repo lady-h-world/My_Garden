@@ -14,7 +14,7 @@ is making the garden a real wonderland throughout 4 seasons. As a flower expert,
 Wanna take a peek at some of our flowers?
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/flowers_sample.png" width="515" height="523" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/flowers_sample.png" width="515" height="523" />
 </p>
 
 There are 102 flower species, 7169 flower observations in the training data and 1020 observations in the testing data. Each observation had been shapped into the same 300x300 resolution.
@@ -28,7 +28,7 @@ FLAML doesn't outperform Optuna all the time. When it comes to deep learning whe
 By comparison, Optuna is easier to learn and use. The way to tune deep learning models is almost the same as its classical machine learning HPO where users build the model and calculate evaluation metric in an objective function and a study will be created to execute the optimization. At the same time, as we can see from the code below, it's flexible to tune hyperparameters in different places.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_optuna_cnn.png" width="1067" height="723" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_optuna_cnn.png" width="1067" height="723" />
 </p>
 
 A quick look is a quick look, Lady H. wanted to see the functionalities more than the performance. Therefore, she only used a basic CNN ([Convolutional Neural Network][4]) with 100 epochs, 128 batches and 30 trials for the optimization. In real world practice, such high resolution image dataset often requires a more complex neural network with larger epochs and batch size.
@@ -48,13 +48,13 @@ But without setting off against Optuna, how can we realize Keras Tuner is a nice
 Similar to Optuna, Keras Tuner allows users to define the model and tune hyperparameters in different places. The interesting difference is, while Optuna needs users to do model building and the evaluation within 1 function, Keras Tuner requires an independent function to define the model only:
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_keras_tuner_build_model.png" width="1000" height="406" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_keras_tuner_build_model.png" width="1000" height="406" />
 </p>
 
 The defined model will be the input of a tuner, such as the bayesian tuner (`BayesianOptimization`) shown below:
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_keras_tuner_bayesian_tuner.png" width="1068" height="408" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_keras_tuner_bayesian_tuner.png" width="1068" height="408" />
 </p>
 
 The tuners are working as the hyperparameters search strategy, to find an optimal set of parameters that lead to a better model performance. In Keras Tuner, there are 4 major tuners:
@@ -67,7 +67,7 @@ The tuners are working as the hyperparameters search strategy, to find an optima
 As you might have noticed in the code above, function `get_optimized_model()` reads the tuner instance as the input and generates the optimized model as well as the tuner summary. Now let's look into this function. With the design of Keras Tuner, it encourages users to find the optimal hyperparameters first, then use this best parameter set to find the best epoch number, and finally retrain the model with the best parameters and the best epoch found. This process is a better practice in deep learning HPO.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/code_keras_tuner_optimize_model.png" width="1063" height="563" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_keras_tuner_optimize_model.png" width="1063" height="563" />
 </p>
 
 🌻 [Look into Keras Tuner experiment details >>][9]
@@ -75,7 +75,7 @@ As you might have noticed in the code above, function `get_optimized_model()` re
 With the same simple CNN settings, in this quick experiment, Keras Tuner's bayesian tuner works in a more efficient way, comparing with Optuna and other tuners. And it seems that hyperband tuner didn't speed up as it's designed to be:
 
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/The_Queen_images/optuna_vs_keras_tuner.png" width="874" height="389" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/optuna_vs_keras_tuner.png" width="874" height="389" />
 </p>
 
 Can't say the performance is ideal, but it's just a quick check to know how to use Keras Tuner. After this experiment, Lady H. decided to end her HPO experiments and move on to other work. Before visiting other stops, we have a gifts for you!
@@ -104,5 +104,5 @@ Can't say the performance is ideal, but it's just a quick check to know how to u
 [7]:https://keras.io/api/keras_tuner/tuners/bayesian/
 [8]:https://keras.io/api/keras_tuner/tuners/sklearn/
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/keras_tuner_experiments/keras_tuner_cnn.ipynb
-[10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_5.md
-[11]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_7.md
+[10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_5.md
+[11]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_7.md
