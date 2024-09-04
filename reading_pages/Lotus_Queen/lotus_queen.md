@@ -23,7 +23,7 @@ Given that Lady H.'s Chinese name translates to "lotus in winter," reflecting a 
 
 Wait!? A blooming lotus in winter? 
 
-Correct! The Queen is a typical outlier.
+Correct! Lotus Queen is a typical outlier.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/outlier.png" width="766" height="79" />
@@ -33,7 +33,7 @@ Correct! The Queen is a typical outlier.
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/lotus_plot.png" width="484" height="381" />
 <p>&nbsp;</p>
 
-Normal lotus blooms in summer and opens petals every morning. One the opposite, the queen opens her buds at every winter night.
+Normal lotus blooms in summer and opens petals every morning. One the opposite, Lotus Queen opens her buds at every winter night.
 
 Figure 1.1 shows the difference.
 
