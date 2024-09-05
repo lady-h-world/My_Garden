@@ -18,15 +18,11 @@ While working on some garden businesses, Lady H. has experimented with these too
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/Table1.1.png" width="917" height="406" />
 </p>
 
-* Leaves30 has 14 features and 340 records in total, with 30 different specimens to classify, it is a typical multi-class classification dataset. 
+* [Leaves30][11] has 14 features and 340 records in total, with 30 different specimens to classify, it is a typical multi-class classification dataset. 
   * 🌻 [To get Leaves30 data >>][1]
-* Sales data has 18 features and 693861 records in total, it is used to forecast sales, a regression problem. 
+* [Sales data][12] has 18 features and 693861 records in total, it is used to forecast sales, a regression problem. 
   * 🌻 [To get Sales data >>][2]
-
-<p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/market_crystal.png" width="766" height="79" />
-</p>
-
+  
 In the classification problem, Lady H. was using [balanced accuracy][3] to measure the percentage of correctly predicted specimens in the testing data, with its value closer to 1, the better model performance we get. In the regression problem, [R2 (r-square)][4] was used to measure how close the forecasted sales to the real sales, with its value closer to 1, the better model performance we get. Meanwhile, the computational efficiency is an important metrics too.
 
 We have summarized Lady H.'s notes in Table 1.1, by comparing the baseline model vs FLAML vs Optuna, we can see FLAML has an overall better performance in both classification and regression. Now let’s look into details.
@@ -87,3 +83,5 @@ Sales data is large enough to use 10-fold CV:
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/the_queen.md
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/lgbm_baseline.ipynb
 [10]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/lgbm_regression_baseline.ipynb
+[11]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/structured_data/binary_leaf.csv
+[12]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/structured_data/sales.pkl
