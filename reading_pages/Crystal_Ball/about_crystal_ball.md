@@ -6,7 +6,7 @@
 
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/crystal_ball.png" width="330" height="470" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/crystal_ball_v2.png" width="374" height="432" />
 <p>&nbsp;</p>
 
 Now let's enter the cave to see Lady H.'s crystal ball. Could you imagine a cave could have such tranquil scenery inside? I mean, witnessing flowers, a lake, and a gazebo bathed in moonlight, all within a cave?! Lady H. made this arrangement because the crystal ball is constantly too bright, and yes, the crystal ball is that "moon". 
