@@ -32,6 +32,8 @@ Let's see, what kind of power you can gain here!
 
 🌱 Hanashiro travels extensively and sees a lot. You can experience as much scenery as he does by [building an AI-powered app][4].
 
+🌱 We have [a photo of Hanashiro][5], although not sure whether that's his real appearance 😄.
+
 Let's go and collect the sprouts now!
 
 #
@@ -47,3 +49,4 @@ Let's go and collect the sprouts now!
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/math_stats1.md
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/tgans1.md
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/deploy_ai_app1.md
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/hanashiro.png
