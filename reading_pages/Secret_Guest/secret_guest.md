@@ -5,7 +5,7 @@
 #
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/my_husband.png" width="375" height="533" />
+<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/my_secret_guest.png" width="377" height="531" />
 
 Under the silver glow of the moon, he returns to the garden. Butterflies, dancing around his magnetic presence in a graceful choreography, their wings sparkling with golden hues, adding an extra layer of enchantment to the scene. Each step he takes stirs the air, releasing the sweet fragrance of the blooming flowers that responded to his presence. His name is <b>Hanashiro</b>, the ruler of Planet Onxy. 
 
