@@ -19,13 +19,13 @@ While working on some garden businesses, Lady H. has experimented with these too
 </p>
 
 * [Leaves30][11] has 14 features and 340 records in total, with 30 different specimens to classify, it is a typical multi-class classification dataset. 
-  * 🌻 [To get Leaves30 data >>][1]
+  * 🌻 [The code to generate Leaves30 data >>][1]
 * [Sales data][12] has 18 features and 693861 records in total, it is used to forecast sales, a regression problem. 
-  * 🌻 [To get Sales data >>][2]
+  * 🌻 [The code to generate Sales data >>][2]
   
 In the classification problem, Lady H. was using [balanced accuracy][3] to measure the percentage of correctly predicted specimens in the testing data, with its value closer to 1, the better model performance we get. In the regression problem, [R2 (r-square)][4] was used to measure how close the forecasted sales to the real sales, with its value closer to 1, the better model performance we get. Meanwhile, the computational efficiency is an important metrics too.
 
-We have summarized Lady H.'s notes in Table 1.1, by comparing the baseline model vs FLAML vs Optuna, we can see FLAML has an overall better performance in both classification and regression. Now let’s look into details.
+Table 1.1 shows Lady H.'s experiments results, by comparing the baseline model vs FLAML vs Optuna, we can see FLAML has an overall better performance in both classification and regression. Now let’s look into details.
 
 
 ### The Baseline Model
@@ -36,7 +36,7 @@ LGBM is an ensembling model that is widely used in the industry and data science
 Another benefit of choosing LGBM is the saved efforts in data preprocessing:
 * Numerical features in different scales are not required to be scaled. Because, as a type of tree model, LGBM is not sensitive to the variance in features.
 * LGBM handles missing values automatically by allocating them to wherever reduces the loss most. 
-* LGBM offers good accuracy with integer-coded categorical features. It is safe to label encoding categorical features without worrying about the order in the data as numerical features. Users only need to convert the integer-coded categorical features as “category” data type in python pandas.
+* LGBM offers good accuracy with integer-coded categorical features. Users only need to convert the integer-coded categorical features as “category” data type in python pandas.
 * LGBM is a non-parametric method which doesn’t make assumptions on the data, so preprocessing methods such as data normalization or reducing data correlation are not required either.
 
 The baseline performance is the average balanced accuracy of cross validation (CV) results. By using cross validation, we can observe the performance of each fold as well as the performance variance among folds. Because of the variance, we average all folds' results as the final performance, in order to show a less biased view.
@@ -80,7 +80,7 @@ Sales data is large enough to use 10-fold CV:
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_2.md
 [6]:https://github.com/microsoft/FLAML
 [7]:https://optuna.org/
-[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/the_queen.md
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/lotus_queen.md
 [9]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/lgbm_baseline.ipynb
 [10]:https://github.com/lady-h-world/My_Garden/blob/main/code/queen_lotus/lgbm_regression_baseline.ipynb
 [11]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/structured_data/binary_leaf.csv
