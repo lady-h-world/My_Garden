@@ -13,7 +13,7 @@ Ten years ago, her spaceship landed on Planet Sapphire, a world where 95% of the
 
 However, upon Lady H.'s arrival, many of her friends in the spaceship fell sick with prolonged fevers, and the medicine they brought proved ineffective. Determined to find a solution, Lady H. sought local assistance. The residents guided her to Lake Crystal, a frozen lake adorned with blooming lotus. Collecting the water around these flowers and having her friends drink it resulted in their swift recovery.
   
-Given that Lady H.'s Chinese name translates to "lotus in winter," reflecting a deep connection with the flower, she decided to bring some home. This marked the inception of the garden's first collection, now known as the "Lotus Queen".
+Amazed by the lotus' magical effects, Lady H. decided to bring some home. This marked the inception of the garden's first collection, now known as the "Lotus Queen".
 
 </p>
 <p>&nbsp;</p>
