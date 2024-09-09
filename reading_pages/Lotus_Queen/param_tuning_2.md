@@ -1,5 +1,3 @@
-The performance of FLAML and Optuna in Table 1.1 came from their best experiment results. In order to give you a better view of the power of our sprouts, we'd like to take you around to see the internal mechanism, as well as each experiment's details.
-
 ### Design Overview - FLAML
 
 The overall design of FLAML is shown in Figure 1.2:
@@ -9,8 +7,8 @@ The overall design of FLAML is shown in Figure 1.2:
 </p>
 
 It has 2 major components:
-* ML Layer contains the candidate learners.
-* AutoML Layer includes a Resampling Strategy Proposer, a Learner Proposer, a Hyperparam & Sample Size Proposer and a Controller. This component controls the core logic of the search strategy, with the goal of minimizing the total cost before finding a model with the optimal test error.
+* <b>ML Layer</b> contains the candidate learners, such as XGBoost, LightGBM, etc.
+* <b>AutoML Layer</b> includes a Resampling Strategy Proposer, a Learner Proposer, a Hyperparam & Sample Size Proposer and a Controller. This layer controls the core logic of the search strategy, with the goal of minimizing the total cost before finding a model with the optimal test error.
   * "Total Cost" means the total CPU time of training and validation using cross validation or holdout. This cost is also expected to increase as the test error decreases.
 
 <p align="left">
@@ -19,16 +17,16 @@ It has 2 major components:
 
 Now let's look into each step:
 
-<b>Step 0 - Resampling Strategy</b>: It's a simple thresholding rule to choose between cross validation or holdout. According to FLAML researchers, cross validation is preferred over holdout for small sample size or large time budget.
+<b>Step 1 - Resampling Strategy</b>: It's a simple thresholding rule to choose between cross validation or holdout. According to FLAML researchers, cross validation is preferred over holdout for small sample size or large time budget.
 * "Time Budget" means the total amount of time the user allows FLAML to run HPO.
 
-<b>Step 1 - Learner Proposer</b>: A learner gets a higher priority if it makes improvement with less estimated cost. Meanwhile, every learner has a chance to be searched again since the estimation can be impresise.
+<b>Step 2 - Learner Proposer</b>: A learner gets a higher priority if it makes improvement with less estimated cost. Meanwhile, every learner has a chance to be searched again since the estimation can be impresise.
 
-<b>Step 2 - Hyperparam & Sample Size Proposer</b>: In this step, each learner chooses between increasing the sample size or trying out a new parameter set in order to make the improvement. By default, each new parameter set is searched by a randomized direct search strategy, CFO. We will show you more about it soon.
+<b>Step 3 - Hyperparam & Sample Size Proposer</b>: In this step, each learner chooses between increasing the sample size or trying out a new parameter set in order to make the improvement. By default, each new parameter set is searched by a randomized direct search strategy, CFO. You will see details soon.
 
-<b>Step 3 - Controller</b>: The controller will invoke the trial using the selected learner and observe both validation error as well as CPU time cost of the trial.
+<b>Step 4 - Controller</b>: The controller will invoke the parameter tuning trials using the selected learner and observe both validation error as well as CPU time cost of each trial.
 
-Step 1 ~ 3 are repeated by iterations until running out of the time budget.
+Step 2 ~ 4 are repeated by iterations until running out of the time budget.
 
 🌻 [Learn more from FLAML paper >>][1]
 
@@ -41,23 +39,26 @@ The overall design of Optuna is shown as Figure 1.3:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/optuna_design.png" width="678" height="424" />
 </p>
 
-Optuna introduced define-by-run framework into HPO in 2019. The main idea behind define-by-run is, a user can rely on optuna to decide the hyperparamster values in each trial dynamically (when the program is running), without explicitly define everything in advance. There are different ways to dynamically construct the parameter search space, Optuna's is based on historical evaluated trials' results. Meanwhile, optuna provides highly modularized programming that a user-defined objective function receives a living trial as input and evaluates the trial result, which also enables the parallel computation of multiple trials.
+Optuna introduced define-by-run framework into HPO in 2019. The main idea behind define-by-run is, a user can rely on Optuna to decide the hyperparamster values in each trial dynamically (when the program is running), without explicitly define everything in advance. There are different ways to dynamically construct the parameter search space, Optuna's is based on historical evaluated trials' results. Meanwhile, Optuna provides highly modularized programming that a user-defined objective function receives a living trial as input and evaluates the trial result, which also enables the parallel computation of multiple trials.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/trial_and_study.png" width="766" height="79" />
 </p>
 
-Optuna's sampling algorithm works as its search strategy, supporting both independent sampling (such as TPE) and relational sampling (such as CMA-ES). Independent sampling samples hyperparameters independently while relational sampling exploits the correlations between hyperparaemters. To achieve cost-effectiveness, optuna also provides pruning algorithm to terminate unpromising trials based on periodically monitored intermediate objective values.
+Optuna's sampling algorithm works as its search strategy, supporting both independent sampling (such as TPE) and relational sampling (such as CMA-ES). Independent sampling samples hyperparameters independently while relational sampling exploits the correlations between hyperparaemters. To achieve cost-effectiveness, Optuna also provides pruning algorithm to terminate unpromising trials based on periodically monitored intermediate objective values.
 
 As we can see in Figure 1.3, each Optuna worker executes an instance of the objective function as well as sampling algorithm and pruning algorithm of a study. This type of design is suitable for distributed environment where workers are running in parallel. Furthermore, workers are sharing the progress of current study via the storage. An objective function can access the storage to get the information of past studies.
 
 🌻 [Learn more from Optuna paper >>][4]
 
-### Design Overview - Summary
+Hyperopt is another popular tool for hyperparameter tuning, but Lady H. prefers to use Optuna and didn't include it in the experiments.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/why_not_hyperopt.png" width="766" height="79" />
 </p>
+
+
+### Design Overview - Summary
 
 Table 1.2 has compared and summarized the design of FLAML and Optuna:
 
