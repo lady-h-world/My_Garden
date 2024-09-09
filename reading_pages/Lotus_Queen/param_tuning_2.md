@@ -68,7 +68,7 @@ While sharing several common strengths, FLAML is designed to be more automated i
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/flaml_vs_optuna_design_diff.png" width="901" height="663" />
 </p>
 
-Now time to show you Lady H.'s experiments with the power from both FLAML and Optuna!
+Now time to show you Lady H.'s experiments with FLAML and Optuna!
 
 #
 <p align="left">
