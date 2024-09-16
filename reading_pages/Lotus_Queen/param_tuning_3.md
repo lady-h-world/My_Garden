@@ -46,7 +46,7 @@ It is a good practice to train the optimized model on the entire training datase
 
 #### Multi-Learners for Leaves100
 
-Before making further improvement on Leaves30 classification, Lady H. decided to experiment on a larger dataset and try out different search strategies first. Her motivation was mainly to gain a more complete observation. The dataset, Leaves100 has 100 classes of leaves, each class has 16 records and each record has 192 features. So this is a high dimensional multi-class dataset.
+Next, Lady H. plans to experiment with a larger dataset and explore different search strategies, aiming to gain a more comprehensive understanding. The dataset, Leaves100, consists of 100 classes and 192 features, each class contains 16 records. This makes it a high-dimensional, multi-class dataset.
 
 🌻 [To get Leaves100 data >>][8]
 
@@ -56,7 +56,7 @@ FLAML has 2 main suggested search strategies, CFO and Blend Search.
 
 * [Blend Search][4] is a better option for a large search space. Combining the benefits of local and global search, it has an economical way to decide the exploration path. Same as CFO, Blend Search starts with a low-cost initial point, but different from CFO, it will try new starting points without waiting for the local search to be fully converged.
 
-To use CFO or Blend Search in FLAML, users only need to specify the `hpo_method` in their settings like what you are seeing in Figure 1.4. What's more, in the settings below, it doesn't specify `estimator_list` as the experiment for Leaves30 above, so FLAML will use its default learner list which contains LGBM, XGBoost, Rnadom Foreast, Catboost, etc. This is also why the experiment here is called as "multi-learners".
+To use CFO or Blend Search in FLAML, users only need to specify the `hpo_method` in their settings like what you are seeing in Figure 1.4. What's more, in the settings below, it doesn't specify `estimator_list` as the experiment for Leaves30 above, so FLAML will use its default learner list which contains LGBM, XGBoost, Random Forest, Catboost, etc.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_cfo_vs_bs.png" width="900" height="700" />
@@ -69,8 +69,7 @@ FLAML uses CFO by default. Optuna uses TPE (Tree-structured Parzen Estimator) as
 TPE applies bayesian theorem `P(y|x) = P(x|y) * P(y) / P(x)`.
 
 * `P(x|y)` means, given the objective function's score y, what's the probability of this set of hyperparameters x. When there are multiple hyperparameters in a set, bayesian formula assumes they are independent from each other, and this is also why TPE is an independent method in Optuna.
-* `P(x|y) = l(x)` if there is an improvement in the objective function, otherwise `P(x|y) = g(x)`
-  * On each trial, for each parameter, TPE fits one Gaussian Mixture Model (GMM) `l(x)` to the set of parameter values associated with the best objective values, and another GMM `g(x)` to the remaining parameter values. It chooses the parameter value `x` that maximizes the ratio `l(x)/g(x)`.
+* In each trial, for every parameter, TPE fits two Gaussian Mixture Models (GMMs): one, `l(x)`, to the set of parameter values corresponding to the best objective values, and another, `g(x)`, to the remaining parameter values. It then selects the parameter value `x` that maximizes the ratio `l(x)/g(x)`.
 * 🌻 [Learn more about TPE >>][5]
 
 Random search is a common search algorithm implemented in many HPO tools, it selects hyperparameter sets randomly in order to find the optimal solution, and has been proved to be efficient. Since TPE and random search are the most recommended methods in Optuna, Lady H. experimented with these 2 methods. In Optuna, the search strategy is called as "sampler".
@@ -81,7 +80,7 @@ To use Optuna, even with default model settings, we need to create the objective
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_optuna_default_objective.png" width="1066" height="732" />
 </p>
 
-Then to select TPE or Random Search, we can specify the the sampler as shown in Figure 1.5. TPE is the default sampler, so we don't have to specify for it.
+Then to select TPE or Random Search, we can specify the sampler as shown in Figure 1.5. TPE is the default sampler, so we don't have to specify it.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_tpe_vs_rs.png" width="800" height="800" />
@@ -89,7 +88,7 @@ Then to select TPE or Random Search, we can specify the the sampler as shown in 
 
 🌻 [Look into Optuna experiment details >>][2]
 
-The performance difference in Leaves100 dataset is more obvious. While achieving similar balanced accuracy in the testing data, the FLAML methods only took 10 minutes while Optuna methods took more than 1 hour, even though FLAML had more learners to try. At the same time, we can see FLAML CFO gets better testing performance than Blend Search, and this is expected since we are using default settings in this experiment, the search space is not very large. According to FLAML researchers, CFO is selected as the default search strategy is also because it works better than Blend Search in many practical cases.
+The performance difference on the Leaves100 dataset is more pronounced. While both methods achieved similar balanced accuracy on the testing data, FLAML took only 10 minutes, whereas Optuna took over an hour, despite FLAML tested on more learners. Additionally, FLAML's CFO outperformed Blend Search in terms of the testing performance, which is expected since the search space in this experiment was not very large due to the use of default settings. According to FLAML researchers, CFO is chosen as the default search strategy because it often performs better than Blend Search in many practical scenarios.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/default_leaves100.png" width="790" height="349" />
