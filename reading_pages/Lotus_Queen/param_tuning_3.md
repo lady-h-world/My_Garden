@@ -1,20 +1,21 @@
 ### Experiment 1 - Optimization with Default Settings
 
-In Lady H.'s past journey, a real world project often starts from building the prototype, and the prototype often starts with a baseline result which will be compared with the future enhanced solutions. To quickly generate the baseline result, an efficient way is to choose 1 or more models and experiment with their default settings.
+In Lady H.'s experience, real-world projects often begin with building a prototype, which typically starts with a baseline result that will later be compared to improved solutions. To quickly generate this baseline, an efficient approach is to select one or more models and experiment with their default settings.
 
-Therefore, Lady H. wanted to test the power of FLAML and Optuna under default settings.
+With this in mind, Lady H. set out to test the capabilities of FLAML and Optuna using their default configurations.
 
-#### LGBM for Leaves30
 
-She started with a simple case, using LGBM with default settings to classify the 30-class leaves. 
+#### LGBM for Dataset Leaves30
 
-In FLAML, to use defulat settings only need to create an `AutoML` instance with a few mandatory settings such as time budget, validation metric, estimator(s) and log location. By settings `n_splits` and `split_type`, in this case it's telling FLAML to run 5-fold cross validation with stratified split. As mentioned before, FLAML provides automated decision making between cross validation and holdout, but once the user has made the decision in the AutoML instance, FLAML will obey user's settings. In this example, FLAML has to run 5-fold stratified cross validation.
+She started with a simple case, using LGBM (LightGBM) with default settings to classify the 30-class leaves. 
+
+In FLAML, using the default settings requires only the creation of an `AutoML` instance with a few key parameters, such as the time budget, validation metric, estimator(s), and log location. By specifying `n_splits` and `split_type`, FLAML is instructed to perform 5-fold cross-validation with stratified splitting in this case. Although FLAML can automatically choose between cross-validation and holdout, once the user specifies the preference in the AutoML instance, FLAML will follow the user's choice. In this example, FLAML is set to run 5-fold stratified cross-validation.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_flaml_default_df30.png" width="1067" height="290" />
 </p>
 
-The log file records information in each trial, therefore at the end of the optimization, we can plot its learning curve as below. As we can see, it takes less time to make an improvement in the early stage but in the later stage, it takes longer time to further enhance the performance.
+The log file captures information from each trial, allowing us to plot the learning curve at the end of the optimization process, as shown below. As we can observe, improvements occur more quickly in the early stages, but as the process progresses, it takes longer to achieve further performance gains.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/learning_curve_default_leaves30.png" width="390" height="273" />
@@ -30,13 +31,13 @@ To use Optuna's default settings with cross validation, users need to use its in
 
 🌻 [Look into Optuna experiment details >>][2]
 
-Given the same 300 seconds time budget, Optuna got a little bit better testing performance, but none of their results is ideal.
+Given the same 300 seconds time budget, Optuna got a bit better testing performance, but none of their results is ideal.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/default_leaves30.png" width="658" height="223" />
 </p>
 
-It is a good practice to train the optimized model on the whole training dataset before evaluating on the testing data, in case the optimized model wasn't trained on all the cases in the training data and might show bias on testing data evaluation. Comparing the code, you may notice this step appeared in Optuna but not in FLAML, this is because FLAML will automate this step at the end of its optimization.
+It is a good practice to train the optimized model on the entire training dataset before evaluating it on the test data. This ensures the model has been trained on all available cases, reducing the risk of bias in the evaluation. When comparing the code, you may notice that this step is included in Optuna but not in FLAML, as FLAML automates this process at the end of its optimization.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/flaml_train_all.png" width="766" height="79" />
