@@ -1,6 +1,7 @@
 ### Experiment 2 - Optimization with Specified Search Space
 
-After experimenting on defualt settings, now it's time to make the improvement, and a straightforward way is to specify a better search space, meaning, to suggest a better value range for hyperparameters. In this experiment, Lady H. was focusing on classifying 30-class leaves.
+After experimenting on defualt HPO settings, now it's time to make the improvement, and a straightforward way is to specify a better search space, meaning, to suggest a better value ranges for hyperparameters. In this experiment, Lady H. uses the 30-class leaves dataset as an example.
+
 
 #### FLAML Specified Search Space
 
