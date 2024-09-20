@@ -5,13 +5,13 @@ After experimenting on defualt HPO settings, now it's time to make the improveme
 
 #### FLAML Specified Search Space
 
-To specify the search space in FLAML, no matter whether the model is in FLAML's default estimator list, users need to create a new class with specified hyperparameters. For example, Lady H. wanted to adjust the hyperparameters of LGBM, and she had to create a new learner class like this:
+To specify the search space in FLAML, users must create a new class with specified hyperparameters for each learner. For example, Lady H. wanted to adjust the hyperparameters of LGBM, and she had to create a new learner class like this:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_flaml_search_space.png" width="1068" height="477" />
 </p>
 
-To specify a good search space, different models have different tips. Hyperparameters can be adjusted for better accuracy, or for faster speed, or for reducing overfitting, etc. 
+Each model has specific guidelines for defining an effective search space. Hyperparameters can be tuned to improve accuracy, increase speed, reduce overfitting, and more. 
 
 🌻 [Check LGBM tips for search space specification >>][1]
 
@@ -27,18 +27,18 @@ After creating the new learner class, users just need to add it to the `estimato
 
 🌻 [Look into FLAML experiment details >>][2]
 
-In the code, you will also see, Lady H. had tried CFO and Blend Search again with larger search space, but neither worked well. Lessons learned, `larger search space != better search space`
+In the code, you'll also notice that Lady H. tried CFO and Blend Search with a larger search space, but neither performed well. The key takeaway: a larger search space doesn't always mean a better search space.
 
 
 #### Optuna Specified Search Space
 
-Same as Experiment 1, in Optuna, to specify a search space, users also need to create an objective function. Meanwhile, in order to apply cross validation as the above FLAML experiment, `LightGBMTunerCV()` was used here:
+Same as Experiment 1, in Optuna, to specify a search space, users need to create an objective function. Meanwhile, in order to apply cross validation as the above FLAML experiment, `LightGBMTunerCV()` was used here:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_optuna_search_space_no_pruner.png" width="824" height="685" />
 </p>
 
-The Optuna experiment took much longer running time than FLAML, therefore, Lady H. was wondering whether she should add pruning to skip those unpromising trials in order to save time, it might also reduce the overfitting. TPE was still used as the search strategy in Optuna experiments. In order to achieve a better performance result, [hyperband is a suggested pruner to be used together with TPE][3]. What's more, because the testing performance from above Optuna experiment didn't look well, Lady H. added more trials to see whether there can be some performance improvement.
+The Optuna experiment took much longer running time than FLAML, therefore, Lady H. was wondering whether she should add pruning to skip those unpromising trials in order to save time, it might also reduce the overfitting. TPE was still used as the search strategy in Optuna experiments. In order to achieve a better performance result, [hyperband is a suggested pruner to be used alongside TPE][3]. What's more, because the testing performance from above Optuna experiment was unsatisfactory, Lady H. increased the number of trials to explore potential performance improvements.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/code_optuna_search_sapce_has_prunder.png" width="824" height="685" />
@@ -52,7 +52,7 @@ In these experiments, FLAML and Optuna share the same specified search space. Ho
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/flaml_optuna_search_space.png" width="655" height="306" />
 </p>
 
-<i>NOTE: the time cost of Optuna experiments were using 10 trials' time in Table1.5.</i>
+<i>NOTE: The time cost shown in Table 1.5 for the Optuna experiments is based on the time for 10 trials.</i>
 
 Looking into Optuna's experiment code, you may have noticed that the time cost increased 9 times when the number of trials increased 9 times. However, this won't happen in FLAML, because FLAML's time complexity is affected by the number of hyperparameters rather than the number of trials.
 
@@ -60,7 +60,7 @@ Looking into Optuna's experiment code, you may have noticed that the time cost i
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/flaml_time_complexity.png" width="766" height="79" />
 </p>
 
-The output of Optuna experiments didn't show prunning had happened at all. This made Lady H. wonder, was it because Optuna's pruner doesn't work well with cross validation? And how to make optuna's pruner work? She decided to test more in the next experiment.
+The output of Optuna experiments didn't show prunning had happened at all. This made Lady H. wonder, was it because Optuna's pruner doesn't work well with cross validation? And how to make optuna's pruner work? So, she decided to test more in the next experiment.
 
 #
 <p align="left">
