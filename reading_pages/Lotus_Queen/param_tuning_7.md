@@ -1,6 +1,7 @@
-# 💝 Gifts for You 💝
+# 💝 A Gift for You 💝
 
-We think a summarized note will upgrade your visiting experience :)
+The experiments here represent just the tip of the iceberg, as different hyperparameter optimization (HPO) tools can perform differently across various datasets. Let's summarize the pros & cons of these tools.
+
 
 ### Optuna
 
@@ -60,7 +61,7 @@ Lady H. was very happy to get a notice when FLAML published their latest release
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-[One more thing >>][4]
+[Back to Main Station >>][5]
 
 <p align="right">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
@@ -73,4 +74,4 @@ Lady H. was very happy to get a notice when FLAML published their latest release
 [1]:https://optuna.readthedocs.io/en/v2.7.0/tutorial/20_recipes/002_multi_objective.html
 [2]:https://github.com/microsoft/FLAML/discussions
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_6.md
-[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_8.md
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md#garden-map
