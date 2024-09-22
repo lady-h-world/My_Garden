@@ -46,12 +46,14 @@ The experiments here represent just the tip of the iceberg, as different hyperpa
 <p>&nbsp</p>
 
 
-### A Surprise!
+### Stories Behind the Scenes!
 
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/surprise.png" width="265" height="248" /></p>
 
-Lady H. was very happy to get a notice when FLAML published their latest release, they listed her as one of the contributors just because she was asking questions which pushed the team to make further improvements :)
+Sometimes, when we're working hard on something, unexpected surprises can arise!
+
+Lady H. was thrilled to receive a notification that FLAML had published their latest release, recognizing her as one of the contributors. This was due to her insightful questions that encouraged the team to make further improvements! 💖
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Lotus_Queen_images/flaml_my_name.png" width="578" height="848" />
