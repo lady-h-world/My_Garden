@@ -63,7 +63,7 @@ Lady H. was very happy to get a notice when FLAML published their latest release
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-[Back to Main Station >>][5]
+[Back to Garden Map >>][4]
 
 <p align="right">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
