@@ -6,43 +6,45 @@ The experiments here represent just the tip of the iceberg, as different hyperpa
 ### Optuna
 
 #### Pros
-* Flexible modularized design
-* Support both classicial machine learning and deep learning, easy to learn
-* Support [multi-objective optimization][1]
-* Visualization of optimization insights
+* Has flexible modularized design
+* Supports both classicial machine learning and deep learning, easy to learn
+* Supports [multi-objective optimization][1]
+* Provides optimization insights in visuals
 
 #### Cons
 * Comparing with FLAML, Keras Tuner, it appears to be less efficient
 * Incomplete integration, such as XGBoost integration, pruning in cross validation, etc.
 * Confusing errors, such as setting `log=True` in use `trial.suggest_int()` for parameters like `num_leaves`, `max_depth`, `max_bin` may get confusing errors
   
+
 ### FLAML
 
 #### Pros
-* Automation intelligence, nice choice for fast prototyping
-* Simple but intelligent search strategy
-* Efficient time complexity, not affected by the number of trials
-* [FLAML research team responses to users' questions fast][2]
-
+* Has automation intelligence, nice choice for fast prototyping
+* Has simple but intelligent search strategy
+* Has efficient time complexity, not affected by the number of trials
+* [FLAML research team responses to users' questions fast][2] 💯
 
 #### Cons
 * Hard to use for deep learning HPO
 * Incomplete documentation, such as available parameter values, deep learning HPO, etc.
-* Challenging to customize the ojective function
+* Challenging to customize the Objective function
+
 
 ### Keras Tuner
 
 #### Pros
-* Great documentation, also supports keywords search
-* Efficient search strategy
-* Flexible modularized design
+* Has great documentation, also supports keywords search
+* Has efficient search strategy
+* Has flexible modularized design
 * Easy to learn and use
 
 #### Cons
 
-<i>Haven't found yet, if you know any weakness, feel free to share with us!</i>
+<i>Haven't found yet, if you know any weakness, feel free to [share it here][5]!</i>
 
 <p>&nbsp</p>
+
 
 ### A Surprise!
 
@@ -75,3 +77,4 @@ Lady H. was very happy to get a notice when FLAML published their latest release
 [2]:https://github.com/microsoft/FLAML/discussions
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_6.md
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md#garden-map
+[5]:https://github.com/lady-h-world/My_Garden/discussions/categories/open-end-discussions
