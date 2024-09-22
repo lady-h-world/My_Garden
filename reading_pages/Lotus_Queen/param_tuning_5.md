@@ -3,24 +3,25 @@
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/perfume.png" width="355" height="307" /></p>
 
-It was a Sunday in early autumn, the air was infused with a blend of fragrant scents. Lady H. was having afternoon tea on her balcony. Her assistants arrived one after another to discuss garden business, each carried a delightful aroma. Lady H. didn't notice anything unusual until Diana walked in.
+It was a Sunday in early autumn, and the air was filled with a delightful mix of fragrant scents. Lady H. was enjoying afternoon tea on her balcony as her assistants arrived one by one to discuss garden matters, each bringing a fresh aroma. Everything seemed ordinary until Diana walked in.
 
-"Diana! You're wearing perfume today!? I thought you would never do that!" Diana, known for her sensitive nose and rare use of perfume, replied with a big smile and shining eyes, "The Garden Market offered us a 99% discount on the latest summer design. I've never seen such a low price, so I decided to give it a try, and it brings me so much joy!"
+"Diana! You’re wearing perfume today!? I thought you’d never do that!" Lady H. exclaimed, surprised, as Diana was known for her sensitive nose and rarely wore perfume. With a broad smile and eyes sparkling, Diana replied, "The Garden Market gave us a 99% discount on the latest summer fragrance. I’ve never seen prices that low, so I decided to try it—and it brings me so much joy!"
 
-"Oh, I'm glad to hear that! ... Wait a minute, Garden Market is giving away perfume? Why?" Diana explained, "Remember, we harvested three times more summer flowers this year? Garden Market produced much more perfume than they could sell and had to have a clearance sale." Lady H. pondered, "I see. Hmm... we should conduct some sales forecasting before manufacturing."
+"Oh, I’m glad to hear that! ... Wait a minute, why is the Garden Market giving away perfume?" Lady H. asked, puzzled. Diana explained, "Remember how we harvested three times more summer flowers this year? The Garden Market produced far more perfume than they could sell, so they had to have a clearance sale." Lady H. thought for a moment, then said, "I see. Hmm... we should do some sales forecasting before manufacturing next time."
 
-To forecast Garden Market's sales is a regression problem.
+To forecast Garden Market's sales is a regression problem 😉.
 
 
 #### Baseline Forecast
 
-Before using the HPO power, Lady H. used default LGBM to do a baseline forecast and got 0.884 R2 score in 34.3 seconds. That's a decent result, as mentioned before, the closer R2 gets towards 1 in testing data, the better.
+To start, Lady H. used the default LGBM to perform a baseline forecast, achieving an R² score of 0.884 in 34.3 seconds. This is a solid result, as previously noted—the closer the R² score is to 1 on the test data, the better.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/r2_note.png" width="766" height="79" />
 </p>
 
 🌻 [Look into Sales Baseline details >>][2]
+
 
 #### FLAML Customized
 

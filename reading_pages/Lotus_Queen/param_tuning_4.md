@@ -60,7 +60,7 @@ Looking into Optuna's experiment code, you may have noticed that the time cost i
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/notes/flaml_time_complexity.png" width="766" height="79" />
 </p>
 
-The output of Optuna experiments didn't show prunning had happened at all. This made Lady H. wonder, was it because Optuna's pruner doesn't work well with cross validation? And how to make optuna's pruner work? So, she decided to test more in the next experiment.
+The output of Optuna experiments didn't show prunning had happened at all. This made Lady H. wonder, was it because Optuna's pruner doesn't work well with cross validation? And how to make Optuna's pruner work? So, she decided to test more in the next experiment.
 
 #
 <p align="left">
