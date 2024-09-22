@@ -79,7 +79,7 @@ This is the end of this stop, and we have a gift for you!
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-[Get your gifts >>][11]
+[Get your gift >>][11]
 
 <p align="right">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
