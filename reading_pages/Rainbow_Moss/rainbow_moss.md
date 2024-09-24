@@ -18,6 +18,8 @@ These tiny blooms release glowing bubbles that float 7 to 10 centimeters into th
 </p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 
 ## Sprouts Collection Time!
