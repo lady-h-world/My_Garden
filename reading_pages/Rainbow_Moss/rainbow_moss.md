@@ -7,14 +7,13 @@
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/rainbow_moss.png" width="300" height="410" />
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 
-A Chinese poem once wrote, "Moss flowers are small as grains, but they open out as peonies."
+A Chinese poem once said, "Moss flowers are small as grains, yet they bloom like peonies."
 
-As you cast your gaze upon the grass, do you notice the vibrant stones scattered among it, accompanied by the radiant rainbow above? These stones are adorned with rainbow moss, a magical plant thriving in enchanting energy. As Lady H. continuing bring in more creatures to the garden, these delicate flowers were drawn to the extraordinary power emanated from this garden.
+As you gaze across the grass, do you see the vibrant stones scattered amidst it, with a radiant rainbow arching above? These stones are covered in rainbow moss, a magical plant that thrives on the garden's enchanting energy.
 
-These petite moss flowers emit luminous bubbles that often ascend 7 to 10 centimeters higher, creating a rainbow effect. A more vibrant rainbow signifies the flowers are nourished by stronger magical energy.
-
-While these flowers may be too minuscule to be observed with the naked eye, they still produce sprouts for your collection!
+These tiny blooms release glowing bubbles that float 7 to 10 centimeters into the air, creating a mesmerizing rainbow effect. The brighter the rainbow, the more potent the magical energy nourishing the flowers.
 
 </p>
 <p>&nbsp;</p>
