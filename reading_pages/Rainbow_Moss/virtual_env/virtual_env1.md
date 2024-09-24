@@ -1,30 +1,28 @@
-
 ## Python Virtual Environment
 
-As python is the most popular data science language, most data science projects are written in python nowadays. It is a better practice to create a virtual environment for each new python project. 
+Python is the most popular language for data science, most projects today are written in it. It's considered best practice to create a virtual environment for each new Python project.
 
 
 ### The Pain of Python Open Sources
 
-One of python's strengths is the popularity of open sources. They are free, easy to use, and most are implemented with efficient computing complexity, which is also why we often look for existing python packages before building by ourselves.
+One of Python's key strengths is the widespread availability of open-source libraries. These libraries are free, easy to use, and often designed with efficient computational complexity. This is why we typically search for existing Python packages before deciding to build our own.
 
-However, such flexibility and freedom brings in headaches too. Every new package might depend on some existing packages. Meanwhile, having so many open source developers, every package might get updated quickly. Then when you are installing a new python package, its dependencies might have conflicting versions with the packages you have already installed.
+However, this flexibility comes with challenges. Every new package may have dependencies on other existing packages, and with so many open-source contributors, updates can happen frequently. As a result, when you install a new Python package, its dependencies might conflict with the versions of packages you’ve already installed.
 
-For example, Lady H. had Tensorflow 2.4 installed, but when she was installing the latest Keras Tuner, it required Tensorflow 2.6. She could not simply upgrade to Tensorflow 2.6 because there are other packages depending on version 2.4 at the time.
+For example, Lady H. had TensorFlow 2.4 installed, but when she tried to install the latest Keras Tuner, it required TensorFlow 2.6. She couldn’t simply upgrade to TensorFlow 2.6 because other packages relied on version 2.4 at the time.
 
-It is painful to break the dependencies of packages whenever you need to install something new for a new project. Creating a separate virtual environment will solve the problem!
+Managing these conflicts when starting new projects can be frustrating. The solution? Create a separate virtual environment for each project!
 
 
 ### How to Create Python Virtual Environments
 
-This method helps create python virtual environments regardless of your operating systems (OS). First of all, make 
-sure you have:
+This method helps create python virtual environments regardless of your operating systems (OS). First of all, make sure you have:
 
 * Downloaded and installed Anaconda for your OS: https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html
 * Downloaded and installed PyCharm for your OS: https://www.jetbrains.com/pycharm/download/
   * Choose the "Community" version if you want to use it for free 😉
 
-Now the steps below can be repeatable each time when you create a virtual environment: 
+Follow the steps below each time when you want to create a virtual environment: 
 
 1. Open PyCharm, go to `Preferences` or `Settings` --> `Project` --> `Python Interpreter`, find the little downward 
    triangle on the right, and click `Show All...`
@@ -67,7 +65,7 @@ To list all the virtual environments you have created, type `conda env list` thr
 
 The created virtual environment might have some python libraries installed by default. Sometimes you want to remove all these existing libraries, to do this run `pip list --format=freeze >> requirements.txt` to dump these library names in "requirements.txt" file, then run `pip uninstall -r requirements.txt -y` to remove them all.
 
-<b>Note:</b> The benefit of using `pip list --format=freeze` is that it records each package's version. In contrast, simply using `pip freeze` may show some packages' file paths on your own machine, which cannot be reinstalled on another machine.
+<b>Note:</b> The benefit of using `pip list --format=freeze` is that it records each package's version. By contrast, simply using `pip freeze` may show some packages' file paths on your own machine, which cannot be reinstalled on another machine.
 
 
 ### How to Install Requirements
