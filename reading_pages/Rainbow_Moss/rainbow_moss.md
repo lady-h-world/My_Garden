@@ -22,19 +22,20 @@ These tiny blooms release glowing bubbles that float 7 to 10 centimeters into th
 <p>&nbsp;</p>
 
 
-## Sprouts Collection Time!
+## Discovery Time!
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-When engaging in various data science projects, maintaining a separate data science environment for each is often essential to prevent conflicts between Python libraries. Each data science environment is akin to a rainbow moss flower, compact in size yet independent and fully functional.
+When working on various data science projects, it's often essential to maintain a separate environment for each one to avoid conflicts between Python libraries. Each environment is like a rainbow moss flower - small, yet fully independent and functional.
 
 🌱 [Python Virtual Environment Setup >>][2]
 
 🌱 [Docker Environment Setup >>][3]
 
-Similar to the intensity of rainbow light, the more effort you invest in a project, the better the outcome you'll achieve. By practicing on numerous projects, your accomplishments will shine as brilliantly as a rainbow! 😉
+Just like the intensity of a rainbow's light 🌈, the more effort you invest in a project, the better your results will be. With practice across many projects, your achievements will shine as brightly as a rainbow! 😉
+
 
 #
 <p align="right">
