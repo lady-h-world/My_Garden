@@ -70,7 +70,7 @@ The created virtual environment might have some python libraries installed by de
 
 ### How to Install Requirements
 
-`requirements.txt` is a file that lists all the necessary Python packages for your environment. Often, each package has a specified version to ensure you can recreate the same environment in the future, even if some packages' latest versions have changed. [See example requirements.txt here >>][2]
+`requirements.txt` is a file that lists all the Python packages needed for your environment. Each package often includes a specific version to ensure you can recreate the same setup later, even if newer versions of the packages have been released. [See example requirements.txt here >>][2]
 
 To install all the libraries in requirements file, we can run command `pip install -r requirements.txt`. Besides, often times, there might be other commands to run in order to set up the environment, and we can put all the commands in the same bash file. The bash file is often named as `setup.sh`. [See example setup.sh here >>][3]
 
@@ -82,8 +82,7 @@ To execute all the commands in `setup.sh` file:
 </p>
 
 
-
-### How to Use Created Virtual Environments on Jupyter
+### How to Produce Jupyter Kernel for Created Virtual Environment
 
 You might also want to use the created virtual environment in your Jupyter Lab or Jupyter Notebook. Here's how:
 
@@ -129,8 +128,7 @@ If you want to change the kernel of an existing notebook, click the top right ke
 2. Select the virtual environment you want to remove and click `-` button. This will remove the interpreter shown in PyCharm.
 3. Type `conda env list` to find paths of all the virtual environments, then type `rm -r {env_path}` (change 
    `env_path` for your use case). This will remove the virtual environment installed.
-4. Type `jupyter kernelspec list` to find the paths of all the kernels for jupyter, then then type `rm -r 
-   {kernel_path}` (change `kernel_path` for your use case). This will remove the kernel from jupyter.
+4. Type `jupyter kernelspec list` to find the paths of all the kernels for jupyter, then type `rm -r {kernel_path}` (change `kernel_path` for your use case). This will remove the kernel from jupyter.
 
 
 #
