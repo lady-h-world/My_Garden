@@ -23,7 +23,7 @@ The key element is the dockerfile! The dockerfile contains all the instructions 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/notes/docker_image.png" width="766" height="79" />
 </p>
 
-In this dockerfile:
+In the dockerfile below:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/docker/docker-file.png" width="474" height="427" />
@@ -38,8 +38,8 @@ In this dockerfile:
 
 3. All the code in folder "core" will be copied to docker, under path "/usr/src/moss_example/core/". Suggest to have the source and destination folders share the same name in this copy command, so that your code can run both locally and run in docker.
 
+🌻 [Check Moss Example code repo >>][1]
 
-🌻 [Check the whole example project >>][1]
 
 ### How to Setup Docker
 
@@ -48,7 +48,7 @@ In this dockerfile:
 * To install docker on Mac: https://hub.docker.com/editions/community/docker-ce-desktop-mac
 2. Open a terminal, `cd` to your project folder where dockerfile locates
 3. Build the docker image by running `docker build -t [image_name] .`, in this example, let's call our docker image as "moss_image"
-4. To run the docker image, type `docker run -d -p 8000:8000 [moss_image]`
+4. To run the docker image, type `docker run -d -p 8000:8000 [image_name]`
 
 The execution process looks as below, but you can't tell whether the core logic had been successfully executed.
 
@@ -56,14 +56,15 @@ The execution process looks as below, but you can't tell whether the core logic 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/docker/docker_commands.png" width="1000" height="400" />
 </p>
 
-To check the output, you can open the Docker Desktop, click on the container that contains your image and check its log. If the execution failed, you can also find errors in this log.
+To check Moss Example's output, you can open the Docker Desktop, click on the container that contains your image and check its log. If the execution failed, you can also find errors in this log.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/docker/docker1.png" width="1000" height="300" />
 </p>
 
-Let's see some other commonly used commands:
+As shown above, Moss Example had been executed successfully. From here, you can develop more complex application running in the docker environment!
 
+What's more, let's see some other commonly used commands:
 * The container names are randomly generated each time, you can type `docker ps -a` to list all the contianers.
 * `docker stop [container_name]` can stop a running container.
 * `docker system prune` can remove all the stopped containers and dangling images. Sometimes your docker environment will show weird errors, such as a certain dependency is not available even though everything is correct. Then this command can be useful to give your docker environment a fresh start by cleaning up those misleading items.
@@ -77,4 +78,3 @@ Let's see some other commonly used commands:
 
 [1]:https://github.com/lady-h-world/My_Garden/tree/main/code/rainbow_moss/docker_example/moss_example
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Rainbow_Moss/rainbow_moss.md#data-science-environments
-[3]:https://github.com/lady-h-world/My_Garden/blob/main/code/rainbow_moss/docker_example/moss_example/dockerfile
