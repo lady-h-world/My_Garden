@@ -62,7 +62,7 @@ To check Moss Example's output, you can open the Docker Desktop, click on the co
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/docker/docker1.png" width="1000" height="300" />
 </p>
 
-As shown above, Moss Example had been executed successfully. From here, you can develop more complex application running in the docker environment!
+As shown above, Moss Example had been executed successfully. From here, you can develop more complex application running in the docker environment! 🎉
 
 What's more, let's see some other commonly used commands:
 * The container names are randomly generated each time, you can type `docker ps -a` to list all the contianers.
