@@ -1,10 +1,8 @@
 # Machine Learning Pipeline
 
-In recent years, industries and research groups are developing machine learning pipelines that can automatically handle most of the work, from data collection to model evaluation. This end-to-end pipeline is often called as "AutoML".
+In recent years, industries and research groups are developing machine learning pipelines that can automatically handle most of the work, from data collection to model evaluation. This end-to-end pipeline is commonly referred to as "AutoML".
 
-<p align="center">🌱 <b>Sprouts Collection Time!</b> 🌱</p>
-
-Similar to the 2 types of perfume pipelines in the garden market, the sprouts' super power is to create machine learning pipelines.
+Machine learning pipelines can be categorized in two ways, much like perfume lines:
 * Mini Pipeline - It takes a specific data input each time, and mainly hadles model selection, which is to select the best model for the data. Some of these pipelines also inlcude data preprocessing, feature engineering and hyperparameter optimization.
   * The sprouts provide the power of <b>TPOT, AutoKeras and MLJar</b>.
 * Customized Pipeline - This type of pipeline can be constructed to handle more clients' data and add more complex functionalities.
