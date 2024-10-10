@@ -2,11 +2,12 @@
 
 In recent years, industries and research groups are developing machine learning pipelines that can automatically handle most of the work, from data collection to model evaluation. This end-to-end pipeline is commonly referred to as "AutoML".
 
-Machine learning pipelines can be categorized in two ways, much like perfume lines:
-* Mini Pipeline - It takes a specific data input each time, and mainly hadles model selection, which is to select the best model for the data. Some of these pipelines also inlcude data preprocessing, feature engineering and hyperparameter optimization.
-  * The sprouts provide the power of <b>TPOT, AutoKeras and MLJar</b>.
-* Customized Pipeline - This type of pipeline can be constructed to handle more clients' data and add more complex functionalities.
-  * The sprouts have the power from Luigi that can build a pipeline including data collection, data preprocessing, feature engineering, model selection, model evaluation and data drifting monitoing. You will also see a super mini pipeline built with the power from <b>Airflow</b> and <b>ZenML</b>.
+Machine learning pipelines can be categorized in two ways, much like our perfume lines:
+* <b>Mini Pipeline</b> - It requires specific data inputs for each run and primarily focuses on model selection, aiming to choose the best model for the given data. Some of these pipelines also incorporate data preprocessing, feature engineering, and hyperparameter optimization. You will find experiments involving <b>TPOT, AutoKeras and MLJar</b>.
+* <b>Customized Pipeline</b> - This type of pipeline can be constructed to handle more clients' data and add more complex functionalities.
+  * <b>Luigi</b> enables the construction of pipelines that can include data collection, preprocessing, feature engineering, model selection, evaluation, and data drift monitoring, or any other step in your machine learning development process.
+  * You will also see simple pipelines built using <b>Airflow</b> and <b>ZenML</b>.
+
 
 ## Mini Pipelines
 
