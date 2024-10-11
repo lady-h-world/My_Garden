@@ -14,7 +14,7 @@ Machine learning pipelines can be categorized in two ways, much like our perfume
 Let's look at mini pipelines first!
 
 * [TPOT][1] is an AutoML pipeline that uses genetic algorithm to select the best pipeline for the data.
-* [AutoKeras][2] builds the optimal neural network model for the data input, it does parameter tuning and model selection using Keras Tuner.
+* [AutoKeras][2] builds the optimal neural network model for the data, it does parameter tuning and model selection using Keras Tuner.
 * [MLJar][3] selects the best model from classical machine learning models and neural network models. Besides, it also generates detailed reports and visualization for each model.
 
 Lady H. tested the power of these sprouts with the same data sets used in [hyperparameter optimization (HPO) experiments][6]. The evaluation results are summarized in Table 4.1, as we can see, there is a comparison between TPOT, AutoKeras and MLJar, and also their comparison with the best HPO performance.
@@ -52,6 +52,6 @@ When using these mini pipelines, it is expected to take longer execution time th
 [3]:https://github.com/mljar/mljar-supervised
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/mini_pipeline2.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/garden_market.md
-[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/The%20Queen/param_tuning_1.md#flaml-vs-optuna---hpo-for-classical-machine-learning
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_1.md#flaml-vs-optuna---hpo-for-classical-machine-learning
 [7]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_leaf.ipynb
 [8]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_sales.ipynb
