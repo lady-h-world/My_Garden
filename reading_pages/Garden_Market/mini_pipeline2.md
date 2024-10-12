@@ -8,6 +8,7 @@ It is built upon sklearn, therefore, lots of these operators are using sklearn b
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/top_architecture.png" width="820" height="406" />
 </p>
 
+
 #### Regression with TPOT
 
 Let's see how to use TPOT in a regression problem.
@@ -38,6 +39,7 @@ One of the benefits of using TPOT is the saved `.py` file which contains the cod
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/tpot_reg_out.png" width="769" height="642" />
 </p>
+
 
 #### Classification with TPOT
 
