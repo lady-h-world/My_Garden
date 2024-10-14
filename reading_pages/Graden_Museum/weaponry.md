@@ -1,24 +1,36 @@
 ## Weaponry
 
-### Explore More Data Insights
+The tools displayed here are either <b>new promising tools</b> that you got no chance to see during your visit, or <b>popular tools with weaknesses</b> that Lady H. chose not to use in daily work.
+
+
+### More on Data Exploration
 * [Predictive Power Score][5] 
   * Besides the [Granger Causality you have seen here][6], later Lady H. learned [PPS (Predictive Power Score)][7], a method detects asymmetric correlation might also be helpful in telling "assumed causality". It helps finding which variable helps predict another dependent/independent variable better.
+ 
 
-### Time Series
+### More on AuotML
+* [MLflow][10]
+  * It's a famous AutoML tool, but Lady H. didn't use it in the work is because it can't compare model performance viusally when she had done multiple experiments. 
+
+
+### More on Time Series
 * [AutoTS][1]
   * AutoML for Time Series 
 * [Darts][2]
   * Time Series Forecasting and Anomaly Detection
 
-### Hyperparameter Tuning (HPO)
+
+### More on Hyperparameter Tuning (HPO)
 * [Ray Tune][4]
   * An HPO tool built upon Ray project to speed up HPO work, and has integrated many popular libraries, such as Optuna, FLAML, Keras, Scikit-learn, XgBoost, etc.
   * Ray is famous for its ability of scaling up AI applications, however when using Ray-Tune, it takes long time to load its final output, and if you run it on Windows, might get [this type of error][8].
 
-### Model Monitoring
+
+### More on Model Monitoring
 * [Predict MAE or MSE of Regression Model][3]
 
-### Synthetic Data Generation
+
+### More on Synthetic Data Generation
 * [Tabula][9] leverages language model structures to generate tabular synthetic data. Are you able to run its code?
 
 
@@ -31,3 +43,4 @@
 [7]:https://github.com/8080labs/ppscore
 [8]:https://stackoverflow.com/questions/77101618/ray-tune-fit-function-file-not-found-on-windows
 [9]:https://github.com/zhao-zilong/Tabula/tree/main
+[10]:https://github.com/mlflow/mlflow
