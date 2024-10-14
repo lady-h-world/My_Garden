@@ -6,7 +6,8 @@ Comparing the overall performance and user experience, MLJar is a better choice 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/tb4.2.png" width="730" height="422" />
 </p>
 
-Although we have different AutoML mini pipelines to choose, they are still working like a blackbox that users can't fully control all the settings and the process. In the industry environment, companies often have more complex requirements on their machine learning pipelines, being able to customize the pipeline is crucial.
+While there are several AutoML mini-pipelines available, they still function like black boxes, limiting user control over settings and processes. In industrial settings, companies often have more complex requirements for their machine learning pipelines, making customization essential.
+
 
 ## Customized Pipelines
 
@@ -16,7 +17,7 @@ Now it's time to show how can we build customized pipelines in python.
 * [Airflow][2] is a platform to programmatically author, schedule, and monitor workflows.
 * [ZenML][3] saves your efforts when building Airflow based machine learning pipelines.
 
-To manage the business in this garden, Lady H. only needs to build a small scale pipeline, Luigi is enough to use. Airflow supports larger scale pipelines but comparing with Luigi, it's a bit more difficult to learn. To make your tour more fun, Lady H. built 2 super mini pipelines using Airflow and ZenML, but covered the key components, might be a good starting point for your learning!
+To manage the garden business, Lady H. only needs to build a small-scale pipeline, which is sufficient with Luigi. Although Airflow supports larger-scale pipelines, it is slightly more challenging to learn compared to Luigi. To enhance your learning experience, Lady H. created two simple pipelines using Airflow and ZenML, covering key components that could serve as a great starting point!
 
 Time to dive into details!
 
