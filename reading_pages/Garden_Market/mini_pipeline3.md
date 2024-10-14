@@ -1,6 +1,7 @@
 ### AutoKeras
 
-AutoKeras is used for deep learning model selection specifically. No matter your data is a classification or a regression problem, it will try to build an optimal neural network for you, which is cool! It is built upon Keras Tuner, [the HPO tool used at Queen Lotus' site][1], therefore it accepts parameters used in Keras Tuner.
+AutoKeras specializes in deep learning model selection. Whether your data involves classification or regression, it automatically builds an optimal neural network, which is pretty cool! It is built upon Keras Tuner, [the HPO tool used at Lotus Queen][1].
+
 
 #### Regression with AutoKeras
 
@@ -10,13 +11,14 @@ Lessons learned from TPOT's 4 hours execution, when applying AutoKeras on the Sa
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/ak_reg_data.png" width="991" height="461" />
 </p>
 
-Using "bayesian" tuning method and only apply 3 epochs was also trying to reduce the overall execution time. Finally the model selection took around 45 minutes but only got a negative R2 score, an unsurprisingly bad result. But without such a terrible performance, how can we realize the benefits of using MLJar later 😉. Below, you can also see the selected neural network structure:
+Using the "Bayesian" tuning method and limiting it to just 3 epochs aimed to reduce the overall execution time. In the end, model selection took around 45 minutes but resulted in a negative R² score - an unsurprisingly poor outcome. Below is the neural network structure that was selected:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/ak_reg.png" width="1014" height="860" />
 </p>
 
 🌻 [Look into AutoKeras regression experiment details >>][2]
+
 
 #### Classification with AutoKeras
 
@@ -34,7 +36,8 @@ And the optimal neural network structure is as shown below:
 
 🌻 [Look into AutoKeras classification experiment details >>][2]
 
-The classification performance is fine, but it is still no better than what FLAML achieved during HPO. Time to show MLJar, it gets more satisfying output.
+The classification performance is fine, but it is still no better than what FLAML achieved during HPO.
+
 
 #
 <p align="left">
@@ -51,7 +54,7 @@ The classification performance is fine, but it is still no better than what FLAM
  
 
 
-[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/param_tuning_6.md#keras-tuner-hpo-in-deep-learning
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/param_tuning_6.md#keras-tuner-hpo-in-deep-learning
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/mini_pipelines/autokeras.ipynb
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/mini_pipeline4.md
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/mini_pipeline2.md
