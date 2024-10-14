@@ -82,7 +82,7 @@ Loading the selected model for forecasting on the testing data can take over 5 m
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_reg_load_model.png" width="454" height="118" />
 </p>
 
-A testing R2 score of 0.938 with just 3 input features is impressive. As shown in [Table 4.1][4], it significantly outperforms AutoKeras, which had a negative R2 score, and even surpasses TPOT, which used all features and required 4 hours to run. Although the best hyperparameter optimization (HPO) result was 0.982, it utilized all 18 features, whereas MLJar achieved strong performance with only 3 features.
+A testing R2 score of 0.938 with just 3 input features is impressive. As shown in [Table 4.1][4], it significantly outperforms AutoKeras, which had a negative R2 score, and even surpasses TPOT, which used all features and required 4 hours to run. Although the best hyperparameter optimization (HPO) result was 0.982, it utilized all 18 features, whereas <b>MLJar achieved strong performance with only 3 features</b>.
 
 One of the success factors of such promising model selection ability is, Ensemble Stacked model, which combines the power of stacking and weighted ensembling together, and this model often appears to be the best model in MLJar model selection results.
 
