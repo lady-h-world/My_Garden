@@ -1,13 +1,13 @@
 ### MLJar
 
-Similar to other AutoML pipelines, MLJar also includes data preprocessing, hypterparameter tuning and model selection, as well as model evaluation. What makes MLJar special is its detailed visualization output and the way it selects algorithms.
+Like other AutoML pipelines, MLJar offers data preprocessing, hyperparameter tuning, model selection, and model evaluation. What sets MLJar apart is its detailed visualization output and its unique approach of algorithms selection.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_process.png" width="823" height="424" />
 </p>
 
-#### MLJar Visualization Output
 
+#### MLJar Visualization Output
 Let's look at some visualized examples first!
 
 <b>Leaderboard</b> summarizes the training time and performance of each model.
@@ -16,17 +16,17 @@ Let's look at some visualized examples first!
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/mljar_leaderboard.png" width="700" height="400" />
 </p>
 
-* The number prefix of each model indicates the model index in a model selection step. For example, "3_DecisionTree" indicates it's the 3rd model in the simple algorithm model selection step. There can be multiple steps of model selection in MLJar.
+* The prefix in the "name" field represents the model's index during model selection. For example, '3_DecisionTree' indicates that it is the third model in the selection process.
 * MLJar "Ensemble" uses greedy approach to create weighted ensemble from already trained ML models.
-* MLJar "Stacked" uses stacking. In stacking, there are multiple stages of base models' forecasting. In each stage, there is k-fold cross validation, the predicted values from each fold will be appended together as a new feature for the next stage.So when there are `x` base models in a stage, there will be `x` new features generated for the next stage.
+* MLJar "_Stacked" applies stacking, a technique where multiple stages of base models make predictions. In each stage, k-fold cross-validation is performed, and the predicted values from each fold are combined into a new feature for the next stage. Thus, if a stage has x base models, x new features will be generated for the following stage.
   * In this example, the base model is default LightGBM.
-* MLJar "Ensemble_Stacked" will ensemble all the previous stacked and unstacked models.
+* MLJar "Ensemble_Stacked" will ensemble all the previous stacked and non-stacked models.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/stack_ensemble.png" width="766" height="79" />
 </p>
 
-MLJar generates <b>SHAP summary plot</b>, which plots the importance of all the features together. The way [SHAP value][1] works is,
+MLJar generates <b>SHAP summary plot</b>, which plots the importance of all the features together. The way [SHAP][1] works is,
 
 * Higher positive SHAP value indicates a feature tends to drag the forecast value higher (positive impact)
 * Lower negative SHAP value indicates a feature tends to drag the forecast value lower (negative impact)
