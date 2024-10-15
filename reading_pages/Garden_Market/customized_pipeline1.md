@@ -1,42 +1,41 @@
 ### Customized Luigi Pipeline
 
-In order to make a better decision on the garden market's business, Lady H. often needs a periodical estimation of the perfumes' sales. No matter the decision is about the amount of harvested flowers, or marketing campaign, or innovations in perfume design, or many other things, having a good sales estimation is the key. This is how did this luigi pipeline was born.
+To make better business decisions in the garden market, Lady H. needs periodic estimates of perfume sales. Whether it's about determining the quantity of flowers to harvest, planning marketing campaigns, introducing innovations in perfume design, or other matters, having reliable sales estimates is essential. To meet these needs, she developed the Luigi pipeline.
 
-* To forecast future sales, the process often go through `Data Collection -> Feature Engineering -> Data Preprocessing -> Model Selection -> Model Evaluation`, each step is called as a luigi "task".
-* Data Drift Monitoring is to keep an eye on abnormal behaviors in the data. The cause of the data drifting varies, but all tend to downgrade the forecasting power. Whenever the data drifitng is detected, it is worthy to investigate further to find out reasons.
+* To forecast future sales, the process often go through `Data Collection -> Feature Engineering -> Data Preprocessing -> Model Selection -> Model Evaluation`, each step is called as a Luigi "task".
+* Data drift monitoring involves detecting abnormal changes in the data. The causes of data drift can vary, but they generally reduce forecasting accuracy. When data drift is detected, it's important to investigate further to identify the underlying reasons.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/luigi_pipeline.png" width="520" height="430" />
 </p>
 
-In this luigi pipeline, 
+In this Luigi pipeline, 
 
-* The configurable parameters used in each task is specified in the `config` file. Users can change the values of these parameters to adjust the pipeline.
-* Each `helpers` function can be called by multiple luigi tasks.
-* It is a better practice to have `unit tests` and `integration tests` for the pipeline. Unit tests are testing single functions while integration tests are testing a set of functions together. Whenever there is a code change in the pipeline, these tests can examine whether the change will break other parts of the code.
+* The configurable parameters for each task are defined in the `config` file. Users can modify these parameters to adjust the pipeline as needed.
+* Functions in `helpers` file can be shared across multiple Luigi tasks.
+* It is a good practice to include both `unit tests` and `integration tests` for the pipeline. Unit tests evaluate individual functions, while integration tests assess how multiple functions work together. Whenever the pipeline code is modified, these tests help ensure that the changes do not disrupt other parts of the code.
 
-The command center is `run.py`, once Lady H. decides to run either forecasting or data drift monitoring, she just needs to hit the button here and the whole pipeline will be executed automatically.
+The command center is `run.py`, once Lady H. decides to run either forecasting or data drift monitoring, she just needs to hit the button and the pipeline will be executed automatically.
+
 
 #### Run Luigi Pipeline
-
-Let's look at the code of `run.py` first. Here, users define which task or pipeline to run. In order to make the config parameters accessible to all the luigi tasks, you need to load the config file and pass it as task's parameter, such as `config` in the code. At the same time, the task here just needs to be the last task of the pipeline, such as `ModelEvaluationTask` in this case. Because luigi defines the dependencies between tasks, it can trace back to previous tasks from the later ones.
-
-🌻 [Check run.py config >>][7]
-
-🌻 [Check run.py code >>][1]
+Let's start by reviewing the code in `run.py`. Here, users specify which task or pipeline to execute. To make the configuration parameters accessible to all Luigi tasks, you need to load the config file and pass it as a task parameter, like the `config` shown in the code. Additionally, the task specified here only needs to be the final task of the pipeline, like `ModelEvaluationTask` in this example, this is because Luigi manages task dependencies, it can automatically trace back to previous tasks from the final one.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/code_luigi_run.png" width="452" height="439" />
 </p>
 
+🌻 [Check run.py config >>][7]
+
+🌻 [Check run.py code >>][1]
+
 
 #### Task - Data Collection
-
 This is the first task of the forecasting pipeline, the purpose is to merge all the stores' data and the sales data into 1 file and save it for later tasks.
 
-1. In luigi, every task is defined as a class that inherits from `luigi.Task`.
-2. Config file is accessible to luigi tasks, since it's been passed as a task parameter in `run.py`.
-3. Each luigi task has an `output()` function to define the location of the output. This is helpful when there is an interruption of the execution, then luigi can re-run from where it stopped.
+1. In Luigi, every task is defined as a class that inherits from `luigi.Task`.
+2. Config file is accessible to Luigi tasks, since it's been passed as a task parameter in `run.py`.
+3. Each Luigi task has an `output()` function to define the location of the output. This is helpful when there is an interruption of the execution, then luigi can re-run from where it stopped.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/luigi_skip_output.png" width="766" height="79" />
@@ -52,6 +51,7 @@ This is the first task of the forecasting pipeline, the purpose is to merge all 
 🌻 [Check data_collection config >>][5]
 
 🌻 [Check data_collection.py code >>][2]
+
 
 #
 <p align="left">
