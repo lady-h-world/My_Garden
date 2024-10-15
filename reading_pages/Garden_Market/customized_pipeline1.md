@@ -1,5 +1,4 @@
 ### Customized Luigi Pipeline
-
 To make better business decisions in the garden market, Lady H. needs periodic estimates of perfume sales. Whether it's about determining the quantity of flowers to harvest, planning marketing campaigns, introducing innovations in perfume design, or other matters, having reliable sales estimates is essential. To meet these needs, she developed the Luigi pipeline.
 
 * To forecast future sales, the process often go through `Data Collection -> Feature Engineering -> Data Preprocessing -> Model Selection -> Model Evaluation`, each step is called as a Luigi "task".

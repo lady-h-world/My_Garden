@@ -1,11 +1,10 @@
 #### Task - Feature Engineering
+Feature engineering is a creative process. In addition to using existing data columns as features, users can generate new features to enhance forecasting performance. This process of creating new features is known as "feature engineering".
 
-Feature Engineering is a creative step. Besides using the existing data columns as features, users can add new features that might improve the forecasting performance. The process of creating new features is called "feature engineering".
+To create new features effectively, it's often worthwhile to first explore the data for deeper insights. Here are some basic methods that Lady H. frequently uses during her data exploration.
 
-In order to create new features effectively, it's often worthy to explore the data for more insights first. Let's look at some basic methods that Lady H. often uses in her data exploration.
 
 ##### Data Exploration - Univariate Analysis
-
 Univariate analysis is to look at the statistics of each single data column, such as checking feature distribution and target distribution. This type of analysis provides an overall view of the data. For example:
 
 We can check the distribution of the forecasting target. From the sales plot we can see, there's some perfume sales appear to be 0, there is also a larger percentage of sales ranging between [100, 10000], and the distribution has a long tail of high value perfume sales. Starting from here, we can explore further to understand the reasons behind, which may help feature engineering.
@@ -34,7 +33,6 @@ It's common to see the distributions of numerical features look like skewed norm
 
 
 ##### Data Exploration - Bivariate Analysis
-
 Bivariate analysis often looks into the relationship between 2 variables, such as the relationship between 2 features or the relationship between a feature and the target. During the feature enginerring stage, Lady H. often checks feature vs target distribution first. Because if a feature's values can better differentiate different values of the target, then this feature tend to improve the forecast.
 
 For example, from the univariate analysis above, we are seeing the distribution of "Customers" is showing a large bump before 3000 and a long tail after 3000, then what does the sales distributions look like for "Customers < 3000" and "Customers >= 3000"? The answer is shown below, and there is an obvious sales difference between these 2 groups. When the number of customers are larger than 3000, there is higher sales. Therefore, we can create a new feature that simply divides feature "Customers" into 2 bins, "Customers < 3000" and "Customers >= 3000".
@@ -53,7 +51,6 @@ We can also look at sales distributions for categorical features, such as the sa
 
 
 ##### Feature Engineering Pipeline Code
-
 In the pipeline, we decide which new features to add through `feature_adding_dct` in the config file. Then feature engineering task will call respective functions from the helpers file.
 
 In this example, Lady H. was adding 2 functions:
@@ -70,7 +67,6 @@ In this example, Lady H. was adding 2 functions:
 🌻 [Check feature engineering task >>][3]
 
 🌻 [Check feature engineering helpers >>][4]
-
 
 You might have noticed function `requires()` in feature engineering task. It builds the dependency between tasks. Because feature engineering can only be executed after finishing data collection task, by indicating this relationship through `requires()`, luigi will know the order of the tasks' execution.
 
