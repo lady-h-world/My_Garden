@@ -7,7 +7,7 @@ To create new features effectively, it's often worthwhile to first explore the d
 ##### Data Exploration - Univariate Analysis
 Univariate analysis is to look at the statistics of each single data column, such as checking feature distribution and target distribution. This type of analysis provides an overall view of the data. For example:
 
-We can check the distribution of the forecasting target. From the sales plot we can see, there's some perfume sales appear to be 0, there is also a larger percentage of sales ranging between [100, 10000], and the distribution has a long tail of high value perfume sales. Starting from here, we can explore further to understand the reasons behind, which may help feature engineering.
+We can examine the distribution of the forecast target. From the sales plot, we observe that some perfume sales are zero. Additionally, a large portion of sales falls within the range of [100, 10,000], with the distribution exhibiting a long tail of high-value sales. This provides a starting point for further exploration to uncover potential underlying factors, which could help feature engineering.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/uni_ana_target.png" width="500" height="226" />
@@ -33,7 +33,7 @@ It's common to see the distributions of numerical features look like skewed norm
 
 
 ##### Data Exploration - Bivariate Analysis
-Bivariate analysis often looks into the relationship between 2 variables, such as the relationship between 2 features or the relationship between a feature and the target. During the feature enginerring stage, Lady H. often checks feature vs target distribution first. Because if a feature's values can better differentiate different values of the target, then this feature tend to improve the forecast.
+Bivariate analysis explores the relationship between two variables, such as the relationship between two features or between a feature and the target. During feature engineering, Lady H. typically starts by examining the distribution of each feature against the target. If a feature's values can effectively distinguish between different target values, it is more likely to enhance the forecast.
 
 For example, from the univariate analysis above, we are seeing the distribution of "Customers" is showing a large bump before 3000 and a long tail after 3000, then what does the sales distributions look like for "Customers < 3000" and "Customers >= 3000"? The answer is shown below, and there is an obvious sales difference between these 2 groups. When the number of customers are larger than 3000, there is higher sales. Therefore, we can create a new feature that simply divides feature "Customers" into 2 bins, "Customers < 3000" and "Customers >= 3000".
 
@@ -68,7 +68,7 @@ In this example, Lady H. was adding 2 functions:
 
 🌻 [Check feature engineering helpers >>][4]
 
-You might have noticed function `requires()` in feature engineering task. It builds the dependency between tasks. Because feature engineering can only be executed after finishing data collection task, by indicating this relationship through `requires()`, luigi will know the order of the tasks' execution.
+You might have noticed function `requires()` in feature engineering task. It builds the dependency between tasks. Because feature engineering can only be executed after finishing data collection task, by indicating this relationship through `requires()`, Luigi will know the order of the tasks' execution.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/feature_engineering_dependent.png" width="301" height="62" />
