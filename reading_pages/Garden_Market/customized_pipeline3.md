@@ -32,7 +32,6 @@ It’s time to fit the model using our preprocessed data. In an automated machin
 
 
 #### Task Model Evaluation
-
 After fitting the selected model with the training data, time to evaluate the model performance on the testing data.
 
 In this model evaluation task, R2 score is expected to be used for this regression problem. At the same time, Lady H. has generated the lower bound and the upper bound of the model confidence interval. But what is "model confidence interval"?
@@ -41,7 +40,7 @@ In this model evaluation task, R2 score is expected to be used for this regressi
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/model_evaluation_code.png" width="764" height="255" />
 </p>
 
-The confidence interval (CI) of a model indicates our confidence on the testing performance score, about whether it is the true model performance.
+The confidence interval (CI) of a model reflects how confident we are that the testing performance score represents the model's true performance.
 
 For example, Lady H. applied model CI on this regression problem and got the value range between `[0.9365995068246098, 0.9388730216990719]`, the sepcified confidence level is 95%, indicating that, if the testing performance (R2 score in this case) is within this value range, then there is 95% likelihood that the model performance is true.
 
