@@ -1,11 +1,10 @@
 #### Task Data Preprocessing
+This step allows you to perform any data operations needed to ensure the dataset is ready for model training.
 
-This is the step where you can do whatever data operation, in order to make sure the data set can be directly used for later model training. 
+In Lady H.'s case, she simply needed to convert certain features to the "category" type. This is because models like LightGBM (LGBM) can automatically handle categorical features when they are specified as such.
 
-In Lady H.'s use case, she just wanted to convert some features into "category" type. Because for models like LGBM (LightGBM), categorical features can be handled automatically if they are specified as "category" type. 
-
-* `le_col` represents a feature that originally has a combo of numerical and string values, models won't be able to undrstand the data type and will report errors. So Lady H. converted them into integer format with label encoding first, then convert to "category" type.
-* `int_cat_col` represents a categorical feature that originally appears to be integer format, they can be converted to "category" directly.
+* `le_col`  refers to a feature containing a mix of numerical and string values. Since models cannot interpret this data type correctly, it would cause errors. Therefore, Lady H. first applied label encoding to convert the values into integers. She later converted the feature to "category" type so that the values won't bring order to the model.
+* `int_cat_col` refers to a categorical feature initially represented as integers. These can be directly converted to the "category" type without additional processing.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/data_preprocessing_code.png" width="812" height="291" />
@@ -17,8 +16,7 @@ In Lady H.'s use case, she just wanted to convert some features into "category" 
 
 
 #### Task Model Selection
-
-Time to fit the model with our preprocessed data. In an automated machine learning pipeline, it will be great to enable model selection so that the pipeline can choose an optimal model when the dataset changes. As we have seen in [mini pipelines][3] that MLJar is a better model selection tool, so in model selection task here, you can simply create a configurable MLJar automl instance to fit the data.
+It’s time to fit the model using our preprocessed data. In an automated machine learning pipeline, it’s beneficial to enable model selection so the pipeline can adapt and choose the optimal model as the dataset evolves. As demonstrated in [mini pipelines][3], MLJar is an effective tool for model selection. Therefore, for the model selection task here, you can create a configurable MLJar AutoML instance to fit the data.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/model_selection_code.png" width="758" height="264" />
@@ -29,8 +27,9 @@ Time to fit the model with our preprocessed data. In an automated machine learni
 🌻 [Check model selection task >>][5]
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/lazy_feature_set.png" width="766" height="79" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/lazy_feature_set.png" width="766" height="89" />
 </p>
+
 
 #### Task Model Evaluation
 
