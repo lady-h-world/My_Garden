@@ -45,13 +45,13 @@ The confidence interval (CI) of a model reflects how confident we are that the t
 For example, Lady H. applied model CI on this regression problem and got the value range between `[0.936, 0.939]`, the sepcified confidence level is 95%, indicating that, if the testing performance (R2 score in this case) is within this value range, then there is 95% likelihood that the model performance is true.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/regression_ci_v2.png" width="994" height="107" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/regression_ci_v2.png" width="994" height="197" />
 </p>
 
 Similarly, in a classification example below, if the testing model performance (balanced accuracy in this case) is within `[0.790, 0.907]`, then there is 95% likelihood that the performance is true.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/classification_ci_v2.png" width="993" height="119" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/classification_ci_v2.png" width="993" height="199" />
 </p>
 
 🌻 [Check model confidence details >>][9]
