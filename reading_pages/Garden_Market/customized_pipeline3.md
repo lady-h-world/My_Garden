@@ -42,13 +42,13 @@ In this model evaluation task, R2 score is expected to be used for this regressi
 
 The confidence interval (CI) of a model reflects how confident we are that the testing performance score represents the model's true performance.
 
-For example, Lady H. applied model CI on this regression problem and got the value range between `[0.9365995068246098, 0.9388730216990719]`, the sepcified confidence level is 95%, indicating that, if the testing performance (R2 score in this case) is within this value range, then there is 95% likelihood that the model performance is true.
+For example, Lady H. applied model CI on this regression problem and got the value range between `[0.936, 0.939]`, the sepcified confidence level is 95%, indicating that, if the testing performance (R2 score in this case) is within this value range, then there is 95% likelihood that the model performance is true.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/regression_CI.png" width="994" height="107" />
 </p>
 
-Similarly, in a classification example below, if the testing model performance (balanced accuracy in this case) is within `[0.768882850241546, 0.8991]`, then there is 95% likelihood that the performance is true.
+Similarly, in a classification example below, if the testing model performance (balanced accuracy in this case) is within `[0.790, 0.907]`, then there is 95% likelihood that the performance is true.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/classification_CI.png" width="993" height="119" />
