@@ -1,7 +1,7 @@
 #### Task Data Drift Monitoring
 
 <p>
-<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/work_late.png" width="273" height="276" /></p>
+<img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/work_late.png" width="373" height="376" /></p>
 
 Lady H.'s first full-time role as a data scientist was with a financial fraud detection company, where one of her main clients was a giant bank. Every two months, the client sent her new data for fraud analysis.
 
