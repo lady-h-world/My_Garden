@@ -12,29 +12,29 @@ But as she processed the new data, the fraud detection rate came out much lower 
 This is just one of many stories about data drift.
 
 
-##### About Data Drifting
+##### About Data Drift
+Data drift isn’t always the result of mistakes—there can be other reasons as well. Regardless of the cause, changes in the data can reduce the predictive power of a trained model. When this happens, data scientists must investigate the underlying causes and may even need to retrain the model.
 
-Data drifting is not always caused by mistakes, there can be other reasons too. But regardless of the causes, the changes in the data can lower the forecasting power of the trained model. When this happened, data scientists need to investigate the causes and sometimes even need to retrain the model.
-
-There are 2 main types of data drifting:
+There are 2 main types of data drift:
 
 * `Concept Drift` means, the statistical properties of the <b>forecasting target</b> have changed.
 * `Covariate Drift` means, the statistical properties of the <b>input features</b> have changed.
 
-##### Suggested Data Drifting Detection Methods
 
-There are many statistical methods to detect data drifting, some need to satisfy certain assumptions, some aren't as effective as expected, some python built-in libraries set constraints on the data input. After trying out different methods, Lady H. suggested 2 methods she often uses:
+##### Suggested Data Drift Detection Methods
+There are many statistical methods to detect data drift, some need to satisfy certain assumptions, some aren't as effective as expected, some python built-in libraries set constraints on the data input. After trying out different methods, Lady H. suggested 2 methods she often uses:
 
 * To detect concept drift: use PSI (Population Stability Index).
 * To detect covariate drift: use a machine learning model and feature importance.
 
 Let's look into the details.
 
+
 ##### PSI to Detect Concept Drift
 
-`PSI = sum((actual_percentage_i - expected_percentage_i) * ln(actual_percentage_i / expected_percentage_i))`
+`PSI=∑((actual_percentagei​−expected_percentagei​)×ln(expected_percentagei​actual_percentagei​​))`
 
-When applying PSI to detect concept drift, you need 2 sets of target data, "actual" can be the latest target data, "expected" can be the older target data that didn't have data drifting. PSI will binning the numerical target values and "_i" means the ith bin, the "percentage" in the formula indicates how many percent each bin occupies in the population. The general purpose of PSI is to get the overall percentage change, when comparing 2 sets of data.
+When applying PSI to detect concept drift, you need 2 sets of target data, "actual" can be the latest target data, "expected" can be the older target data that didn't have data drift. PSI will binning the numerical target values and "_i" means the ith bin, the "percentage" in the formula indicates how many percent each bin occupies in the population. The general purpose of PSI is to get the overall percentage change, when comparing 2 sets of data.
 
 🌻 [Check PSI python implementation >>][2] ([Reference][3])
 
