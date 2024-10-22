@@ -70,7 +70,7 @@ The core logic of calculating the model confidence interval can be summarized in
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/model_ci_code.png" width="1019" height="530" />
 </p>
 
-Then, in the luigi pipeline, Lady H. just needs to put this confidence interval core logic into a helper function that can be called by model evaluation task.
+In the Luigi pipeline, Lady H. only needs to move the core logic for calculating the confidence interval into a helper function, which can then be called by the model evaluation task.
 
 
 🌻 [Check model evaluation config >>][6]
