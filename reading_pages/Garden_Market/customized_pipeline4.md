@@ -3,11 +3,14 @@
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/work_late.png" width="243" height="246" /></p>
 
-Lady H.'s first full-time job as a data scientist was with a financial fraud detection company where one of her major clients was a giant bank. Every two months, this client would provide her with new data for fraud analysis. One December afternoon, the office was nearly empty by 5 pm as most of her colleagues were either on vacation or had left earlier. Lady H. intended to swiftly complete the client's fraud report using her trained model and then head home.
+Lady H.'s first full-time role as a data scientist was with a financial fraud detection company, where one of her main clients was a giant bank. Every two months, the client sent her new data for fraud analysis.
 
-However, the new data presented a significantly different fraud detection rate, much lower than usual. "Why did this happen? It looks unusual, I have to investigate," Lady H. thought. Eventually, she discovered that the client had sent her the wrong data, leading to the issue.
+One December afternoon, the office was nearly empty by 5 p.m., with most of her colleagues either on vacation or having left early. Determined to wrap up the client's fraud report using her trained model, Lady H. planned to finish quickly and head home.
 
-This is just one of the data drifting stories.
+But as she processed the new data, the fraud detection rate came out much lower than usual. "Why is this happening? This looks strange—I need to dig deeper," she thought. After some investigation, she realized the problem: the client had accidentally sent the wrong dataset, causing the unexpected result.
+
+This is just one of many stories about data drift.
+
 
 ##### About Data Drifting
 
