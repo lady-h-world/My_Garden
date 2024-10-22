@@ -32,11 +32,13 @@ Let's look into the details.
 
 ##### PSI to Detect Concept Drift
 
-`PSI=∑((actual_percentagei​−expected_percentagei​)×ln(expected_percentagei​actual_percentagei​​))`
+`PSI = sum((actual_percentage_i - expected_percentage_i) * ln(actual_percentage_i / expected_percentage_i))`
 
-When applying PSI to detect concept drift, you need 2 sets of target data, "actual" can be the latest target data, "expected" can be the older target data that didn't have data drift. PSI will binning the numerical target values and "_i" means the ith bin, the "percentage" in the formula indicates how many percent each bin occupies in the population. The general purpose of PSI is to get the overall percentage change, when comparing 2 sets of data.
+When using PSI to detect concept drift, you need two sets of target data: the "actual" data, which represents the latest target values, and the "expected" data, which corresponds to an older set without any drift. PSI works by binning the numerical target values, where "_i" refers to the i-th bin. The "percentage" in the formula reflects the proportion each bin occupies within the total population.
 
 🌻 [Check PSI python implementation >>][2] ([Reference][3])
+
+The main goal of PSI is to measure the overall percentage change between two data sets, helping to identify potential drift.
 
 * `PSI < 0.1`: no significant population change
 * `0.1 <= PSI < 0.2`: moderate population change
