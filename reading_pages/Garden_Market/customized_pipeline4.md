@@ -31,26 +31,25 @@ Let's look into the details.
 
 
 ##### PSI to Detect Concept Drift
-
 `PSI = sum((actual_percentage_i - expected_percentage_i) * ln(actual_percentage_i / expected_percentage_i))`
 
 When using PSI to detect concept drift, you need two sets of target data: the "actual" data, which represents the latest target values, and the "expected" data, which corresponds to an older set without any drift. PSI works by binning the numerical target values, where "_i" refers to the i-th bin. The "percentage" in the formula reflects the proportion each bin occupies within the total population.
 
-🌻 [Check PSI python implementation >>][2] ([Reference][3])
+🌻 [Check PSI python implementation >>][2]
 
-The main goal of PSI is to measure the overall percentage change between two data sets, helping to identify potential drift.
+The main goal of PSI is to measure the overall percentage change between two datasets, helping to identify potential drift.
 
 * `PSI < 0.1`: no significant population change
 * `0.1 <= PSI < 0.2`: moderate population change
 * `PSI >= 0.2`: significant population change
 
-With PSI, Lady H. applied it to 2 sets of taregts that didn't have concept drift, we can see PSI is lower than 0.1 and the distributions of the 2 target sets are similar to each other.
+Using PSI, Lady H. applied it to two target sets without concept drift. The PSI value is below 0.1, indicating that the distributions of the two target sets are similar."
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/psi_normal.png" width="911" height="333" />
 </p>
 
-Then she applied it to another pair of targets, that one of the data set drifted from the other, and we can see the difference in the distributions and the PSI value all indicate a significant change.
+She then applied it to another pair of target sets, where one dataset had drifted from the other. The difference in their distributions and the PSI value both indicate a significant change.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/psi_drift.png" width="912" height="336" />
@@ -62,13 +61,13 @@ Then she applied it to another pair of targets, that one of the data set drifted
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/classification_target_drift.png" width="766" height="79" />
 </p>
 
-In Lady H.'s experiments, she only did the concept drift detection for regression problems. For classification targets, she often compares the distributions first, since many problems are binary classification and the distribution comparison is straightforward. For multi-class classification, PSI also works because it's built upon binning idea, [so you can apply PSI formula without binning the data][5].
+In Lady H.'s experiments, she focused on detecting concept drift for regression problems. For classification targets, she typically compares the distributions first, as many are binary classification tasks, making distribution comparisons straightforward. For multi-class classification, PSI is also effective since it relies on the concept of binning, allowing the PSI formula to be applied directly without additional binning.
+
 
 ##### Machine Learning to Detect Covariate Drift
+Feature drift can lead to more complex mathematical discussions, and many statistical methods have limited applicability. Lady H. discovered a simple yet effective approach for detecting covariate drift: combining the old and new datasets and labeling them as "old" or "new". A machine learning model is then used to predict these labels. If the model achieves high accuracy, it indicates covariate drift, as the dataset reveals clear differences between the two datasets. To identify the features caused the drift, we can analyze the feature importance.
 
-Drifting in features can bring up more complex math discussions, and many statistical methods can only be used in a limited scope. Lady H. has found a simple and effective method to detect covariate drift, that is to mix the old and the new data sets together, labeling them as the "old" or the "new" data, then use a machine learning model to do the forecast. If the forecasting result is showing high accuracy, then it means there is covariate drift since the dataset can tell obvious differences between the old and the new data. To figure out which features might caused the drift, we can check the feature importance.
-
-The code is as simple as using a LGBM model to train the data with cross validation, and check the average forecasting performance:
+The code is as simple as training the data with an LGBM model using cross-validation and evaluating the average forecasting performance:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/covariate_drift_detection_code.png" width="919" height="323" />
@@ -80,7 +79,7 @@ When applying this method on the dataset without covariate drift, the forecastin
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/covariate_drift_normal.png" width="882" height="417" />
 </p>
 
-And if we look at the forecasting results in a dataset with feature "Store" changed significantly, the high forecasting accuracy sends a warning sign of the feature differences between the new and the old data.
+Examining the feature importance from the trained model highlights "Store" as a key feature, suggesting it plays a significant role in distinguishing between the old and new data. This implies that "Store" contributes to the covariate drift.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/covariate_drift_drift.png" width="888" height="418" />
@@ -95,8 +94,7 @@ And if we look at the feature importance from this trained model, it points to f
 🌻 [Check covariate drift detection experiments >>][4]
 
 ##### Data Drift Monitoring Pipeline Code
-
-As we saw in `run.py`, Task Data Drift Moniroting is independent from the model pipeline, it can be executed at any time. In the industry, you can also schdule a periodical data monitoring job and display the output on a dashboard, or send alerts whenever something unexpected happened.
+As we saw in `run.py`, the Task Data Drift Monitoring operates independently of the model pipeline and can be executed at any time. In practice, you can schedule periodic data monitoring jobs, display the results on a dashboard, or trigger alerts whenever unexpected changes occur.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/run_monitoring.png" width="453" height="440" />
@@ -116,8 +114,7 @@ The pipeline code has helpers functions to calculate PSI for concept drifting an
 
 
 #### Tests
-
-It is a better practice to have unit tests and integration tests in the pipeline, so that after each code change, you can test whether any where has been broken by the changes. In some companies, the input data for the tests can be mockup data, but Lady H. strongly recommends to use client's real data for the pipeline's tests, if possible. Because this helps debugging for the real clients' use cases earlier, and it's more flexible for scalability tests. If you want to cover all the edge cases in the data, then simulating a larger set of mockup data to be used throughout the pipeline is also a good practice.
+It's good practice to include both unit and integration tests in the pipeline to ensure that code changes don't break any functionality. Some companies use mockup data for testing, but Lady H. strongly recommends using real client data whenever possible. This makes it easier to debug real-world use cases early and provides more flexibility for scalability testing. Mockup data is useful for covering all edge cases, and creating a dataset that captures all potential scenarios throughout the pipeline is also a good approach.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/scalability_test.png" width="766" height="79" />
@@ -127,7 +124,8 @@ It is a better practice to have unit tests and integration tests in the pipeline
 
 🌻 [Check integration tests >>][11]
 
-Unit tests are used to test single functions, while each integration test can be used to test each luigi task in this pipeline.
+Unit tests are used to test single functions, while each integration test can be used to test each Luigi task in this pipeline.
+
 
 #
 <p align="left">
