@@ -25,8 +25,8 @@ Setting up the Airflow ecosystem requires more effort compared to Luigi. Let’s
 </p>
 
   * If your DAG isn't shown in the list
-    * Check whether all the imported packages were installed in the site packages of the python used by your Airflow 
-    * Check whether there is any error shown at the top of http://localhost:8080/home, if so, fix it
+    * Check whether all the imported packages were installed in the site packages of the Python used by your Airflow.
+    * Check whether there is any error shown at the top of http://localhost:8080/home, if so, fix it.
 
 Once your DAG appeared in the list, you can run it through the localhost interface:
 
@@ -34,7 +34,7 @@ Once your DAG appeared in the list, you can run it through the localhost interfa
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/trigger_airflow_dag.png" width="1000" height="155" />
 </p>
 
-If you know how to setup Airflow in other ways, such as using docker or on Windows system, feel free to [show and tell us  details][2]! 💝
+If you know how to set up Airflow in other ways, such as using Docker or on Windows system, welcome to [share ideas here][2]! 💝
 
 
 #### Super Mini Airflow Pipeline
@@ -104,7 +104,7 @@ After trials and errors, finally you will get green lights on every task of the 
  
 
 [1]:https://airflow.apache.org/docs/apache-airflow/stable/start/local.html
-[2]:https://github.com/lady-h-world/My_Garden/discussions/categories/show-and-tell
+[2]:https://github.com/lady-h-world/My_Garden/discussions/categories/open-end-discussions
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/airflow_pipeline/super_mini_pipeline.py
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/customized_pipeline6.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/customized_pipeline4.md
