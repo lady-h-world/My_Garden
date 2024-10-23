@@ -1,6 +1,5 @@
 ### Customized Airflow Pipeline
-
-Airflow came out 2 years later than Luigi, but it is more popular now because of its scalability, visualization and flexibility in building the workflows.
+Airflow was released two years after Luigi but gained more popularity due to its scalability, visualization capabilities, and flexibility in building workflows.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/notes/airflow_dag.png" width="766" height="79" />
@@ -8,23 +7,20 @@ Airflow came out 2 years later than Luigi, but it is more popular now because of
 
 
 #### Airflow Setup (Local Mac)
+Setting up the Airflow ecosystem requires more effort compared to Luigi. Let’s go over Lady H.'s notes. She experimented with both Docker and local setups on Windows and Mac but found that the easiest approach was a local setup on Mac or Linux. Here’s how she got Airflow running on Mac:
 
-In order to use the Airflow ecosystem, it takes more effort than Luigi setup. Let's share Lady H.'s notes. She has tried both docker setup and local setup on Windows and Mac, but found the easiest way was to setup on Mac or Linux locally. Here's how did she get Airflow run on Mac:
-
-* To install Airflow, just need to follow the steps [here][1]
-  * Better to take a note of which python version used by your Airflow, so that you can find its site packages later 
-* After the installation succeeded, each time
-  * Just type `airflow standalone` through your terminal, to start Airflow
-  * Then you can get access to http://localhost:8080/home, which is the interface of all the DAGs (workflows)
+* To install Airflow, follow the steps [here][1]
+  * It’s a good idea to note the Python version used by your Airflow installation, as this will help you locate its site packages later.
+* After the installation succeeded, each time follow steps below:
+  * Type `airflow standalone` through your terminal to start Airflow.
+  * Then you can get access to http://localhost:8080/home, which is the interface of all the DAGs (workflows).
   * To create your own DAG
-    * Make sure you have defined AIRFLOW_HOME during the installation stage, like this `export AIRFLOW_HOME=~/airflow`
-    * Find file `airflow.cfg` in your AIRFLOW_HOME folder, in this file, make sure to specify DAGs folder like this `dags_folder = ~/airflow/dags`, this is where you will add new DAGs as .py files
-    * When creating your DAG in the .py file, make sure to define the `dag_id`, this will be the file name shown in the DAG list
-    * To check whether your DAG has been added to the DAG list, type `airflow dags list` through a terminal and you will see all the DAGs. If you want to find DAGs through keywords, you can type `airflow dags list | grep [key_word]`
+    * Make sure you have defined AIRFLOW_HOME during the installation stage, like this `export AIRFLOW_HOME=~/airflow`.
+    * Find file `airflow.cfg` in your AIRFLOW_HOME folder, in this file, make sure to specify DAGs folder like this `dags_folder = ~/airflow/dags`, this is where you will add new DAGs as .py files.
+    * When creating your DAG in the .py file, make sure to define the `dag_id`, this will be the file name shown in the DAG list.
+    * To check whether your DAG has been added to the DAG list, type `airflow dags list` through a terminal and you will see all the DAGs. If you want to find DAGs through keywords, you can type `airflow dags list | grep [key_word]`. For example, Lady H. was trying to search for DAGs with "super" in their names:
 
-For example, Lady H. was trying to search for DAGs with "super" in their names:
-
-<p align="left">
+<p align="right">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/dag_list.png" width="1149" height="48" />
 </p>
 
@@ -40,8 +36,8 @@ Once your DAG appeared in the list, you can run it through the localhost interfa
 
 If you know how to setup Airflow in other ways, such as using docker or on Windows system, feel free to [show and tell us  details][2]! 💝
 
-#### Super Mini Airflow Pipeline
 
+#### Super Mini Airflow Pipeline
 The learning curve of Airflow is steeper than Luigi, to help your learning, Lady H. decided to exhibit a super mini Airflow pipeline that covers the key learning points.
 
 This super mini pipeline only has 2 tasks, data spliting task followed by model training task. This whole workflow is a DAG and can be defined within a .py file.
