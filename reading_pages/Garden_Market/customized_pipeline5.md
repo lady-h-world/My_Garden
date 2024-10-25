@@ -37,18 +37,18 @@ Once your DAG appeared in the list, you can run it through the localhost interfa
 If you know how to set up Airflow in other ways, such as using Docker or on Windows system, welcome to [share ideas here][2]! 💝
 
 
-#### Super Mini Airflow Pipeline
-The learning curve of Airflow is steeper than Luigi, to help your learning, Lady H. decided to exhibit a super mini Airflow pipeline that covers the key learning points.
+#### Simple Airflow Pipeline
+The learning curve of Airflow is steeper than Luigi, to help your learning, Lady H. decided to exhibit a simple Airflow pipeline that covers the key learning points.
 
-This super mini pipeline only has 2 tasks, data spliting task followed by model training task. This whole workflow is a DAG and can be defined within a .py file.
+This simple pipeline only has 2 tasks, data splitting task followed by model training task. This whole workflow is a DAG and can be defined within a .py file.
 
-🌻 [Check Airflow super_mini_pipeline.py DAG >>][3]
+🌻 [Check Airflow Simple DAG >>][3]
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/correct_airflow_flow.png" width="326" height="82" />
 </p>
 
-At the very beginning of this DAG, you will import different python packages, besides built-in python and airflow packages, other packages (such as `lightgbm`, `sklearn`) need to be installed in the site packages of the python used by airflow, otherwise your DAG won't appear in the DAG list. Then you need to specifiy the parameters of this DAG. Make sure `dag_id` and `tags` are unique for each DAG.
+At the start of this DAG, you'll import various Python packages. In addition to built-in Python and Airflow packages, external libraries like `lightgbm` and `sklearn` must be installed in the site-packages directory of the Python environment used by Airflow. Otherwise, the DAG won't show up in the DAG list. Next, you'll need to define the parameters for the DAG. Make sure `dag_id` and `tags` are unique for each DAG.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_code2.png" width="566" height="49" />
