@@ -54,13 +54,13 @@ At the start of this DAG, you'll import various Python packages. In addition to 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/airflow_code2.png" width="566" height="49" />
 </p>
 
-Now it's the core part where you need to define each task. As we can see, the logic of data spliting and model training is defined in functions, and each task is defined as a `PythonOperator`, whose id is specified in its `task_id` and its `python_callable` matches to the function name of this task, `op_kwargs` stores the (key, value) pairs of the function parameters. 
+Now comes the core part, where each task needs to be defined. The logic for data splitting and model training is implemented within functions, and each task is represented by a `PythonOperator`. The `task_id` parameter specifies the unique ID for the task, and the `python_callable` parameter links to the corresponding function for that task. Additionally, `op_kwargs` stores the function's parameters as key-value pairs.
 
-For example, `split_data_task` has its logic defined in function `split_data()`, therefore, its `python_callable` is "split_data". Meanwhile, function `split_data()` has user configurable parameter `label`, in this case the value of `label` is "species", so `'label':'species'` appears in the `op_kwargs` of this task.
+For example, the logic for `split_data_task` is defined in the `split_data()` function, so its `python_callable` is set to "split_data". The `split_data()` function also has a configurable parameter called `label`. In this case, the value of `label` is set to "species", so `'label': 'species'` is included in the task's `op_kwargs`.
 
 You must also have noticed the `xcom_push()` and `xcom_pull()` used in the code. In this DAG, they are used to transfer the data between tasks:
 
-1. In `split_data()` function, `xcom.push()` is used to push the absolute path of the data output. <b>Remember, airflow only accepts the absolute path</b>.
+1. In `split_data()` function, `xcom.push()` is used to push the absolute path of the data output. <b>Remember, Airflow only accepts the absolute path</b>.
 2. In order to load the split data, `train_model()` function uses `xcom_pull()` to locate the pushed data through `task_ids` and the `key` specified in `xcom_push()`. In this example, `task_ids` points to the `task_id` of `split_data_task`.
 
 <p align="left">
