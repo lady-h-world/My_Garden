@@ -42,7 +42,7 @@ The learning curve of Airflow is steeper than Luigi, to help your learning, Lady
 
 This simple pipeline only has 2 tasks, data splitting task followed by model training task. This whole workflow is a DAG and can be defined within a .py file.
 
-🌻 [Check Airflow Simple DAG >>][3]
+🌻 [Check Simple Airflow DAG >>][3]
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/correct_airflow_flow.png" width="326" height="82" />

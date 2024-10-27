@@ -1,9 +1,8 @@
 ### Customized ZenML Pipeline
+Airflow is designed for workflow management rather than data flow, so it doesn't support transferring data between tasks. ZenML, introduced in 2020, enhances the Airflow experience with easier setup and more flexible data transfer capabilities.
 
-Airflow was designed for workflow instead of data flow, therefore it doesn't support transfering data of different formats across tasks. ZenML is a new tool published in 2020, it can smooth out your airflow user experience with easier setup and flexible data transfering.
 
 #### ZenML Setup
-
 Open your terminal, and follow these steps for the first time setup:
 
 1. `pip install zenml`
@@ -13,27 +12,17 @@ Open your terminal, and follow these steps for the first time setup:
 * `pip install zenml tensorflow`
 * `git init`
 * `zenml init`
-5. [Follow all the steps here to setup the environment for your airflow DAG][2]
-
-Later to reuse the same environment, only need to run:
-
-* `zenml orchestrator up` to start Airflow
-  * If there is an error showing PID file already exists, remove that file and run this command again
-* `python [my_DAG.py]` to execute your DAG file
-  * After executing this command, it might take a few minutes to find the DAG on http://0.0.0.0:8080 
-  * Without http://0.0.0.0:8080, you can still see the pipeline execution results in your local terminal
-* `zenml orchestrator down` to shut down Airflow
+5. [Follow all the steps here to set up the environment for your Airflow DAG][2]
 
 
-#### Super Mini ZenML Pipeline
-
-Lady H. built this pipeline with the identical 2 tasks used in the super mini airflow pipeline, data spliting task followed by model training task.
+#### Simple ZenML Airflow Pipeline
+Lady H. built this pipeline with the identical 2 tasks used in the simple Airflow pipeline, data spliting task followed by model training task.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/correct_zenml_flow.png" width="268" height="79" />
 </p>
 
-🌻 [Check ZenML super_mini_pipeline.py DAG >>][3]
+🌻 [Check Simple ZenML Airflow DAG >>][3]
 
 Comparing with the airflow pipeline, there are 3 major differences in ZenML:
 
@@ -55,9 +44,9 @@ ZenML also allows you to inspect each step of the pipeline. For instance, the co
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/zenml_inspection.png" width="900" height="200" />
 </p>
 
-🌻 [Check ZenML pipeline inspection code >>][3]
+🌻 [Check ZenML pipeline inspection code >>][6]
 
-The airflow UI of ZenML pipeline looks the same as the airflow pipeline:
+The user interface looks the same as the Airflow pipeline:
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/zenml_flow.png" width="418" height="156" />
@@ -78,9 +67,8 @@ The airflow UI of ZenML pipeline looks the same as the airflow pipeline:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<< Looking back][5]
  
 
-
 [1]:https://docs.zenml.io/quickstart-guide#install-and-initialize
-[2]:https://docs.zenml.io/guides/low-level-api/chapter-7
+[2]:https://docs.zenml.io/stack-components/orchestrators/airflow
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/code/garden_market/zenml_pipeline/super_mini_pipeline_zenml.py
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/customized_pipeline7.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Garden_Market/customized_pipeline5.md
