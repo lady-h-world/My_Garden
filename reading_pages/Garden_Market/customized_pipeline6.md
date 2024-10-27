@@ -58,7 +58,7 @@ The user interface looks the same as the Airflow pipeline:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-[Get your gifts >>][4]
+[Get your gift >>][4]
 
 <p align="right">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/going_back.png" width="60" height="44" />
