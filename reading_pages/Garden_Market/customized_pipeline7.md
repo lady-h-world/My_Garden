@@ -11,22 +11,20 @@ Lady H. summarized the pros & cons of mini pipelines as well as customized pipel
 </p>
 
 
-### Great Discussion!
+### Stories Behind the Scenes!
 
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/discuss.png" width="301" height="346" /></p>
 
-During Lady H.'s exploration stage, she had some great discussions on StackOverflow! Let's hear the story!
+Sometimes, while working hard on something, unexpected surprises can pop up!
 
-She started with asking for help about airflow data transfer issue, not only she got the solution from user Talgat but also got a suggestion from user Hamza for trying out ZenML. Although, as ZenML's Co-Founder, it's natural for Hamza to recommend their products, since Lady H. was looking for better tools than Luigi and Airflow at that time, Hamza's suggestion still provided her a hope.
+Lady H. sought help for an Airflow data transfer issue and received both a solution from Talgat and a suggestion from Hamza to try ZenML. As ZenML's co-founder, Hamza's recommendation was expected, but since Lady H. was exploring alternatives to Luigi and Airflow, his suggestion gave her hope.
 
-Later it turned out this extra exploration was a good one! ZenML was showing a smooth airflow setup experience, and it not only solved airflow data transfer issue but also provides a more flexible solution. Having gained so much excitment, the only challenge left for Lady H. was to show the DAG on the airflow UI. She asked Hamza again and got fast response, it was thrilling to hear that he was about to create a ticket for the problem solving. Finally, the problem was solved and it posed such a great learning experience to Lady H.
+Later, it turned out that this extra exploration paid off! ZenML offered a seamless Airflow setup experience, resolving the data transfer issue while providing a more flexible solution. Excited by the progress, Lady H.'s only remaining challenge was to display the DAG on the Airflow UI. She reached out to Hamza again and quickly received a response—it was exciting to hear that he was about to open a ticket to address the issue. In the end, the problem was resolved, making it a valuable learning experience for Lady H! 🎉 💖
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/great_discussion.png" width="1000" height="700" />
 </p>
-
-This is not the only great discussion Lady H. had with strangers who are also passionate about what they are doing. When time passed by, Lady H. is gaining more and more such inspiring stories, being enpowered to keep exploring and keep learning 💖
 
 🌻 Check the discussions [here][3] and [here][4]
 
