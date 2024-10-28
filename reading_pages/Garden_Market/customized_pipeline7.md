@@ -1,15 +1,13 @@
-# 💝 Gifts for You 💝
+# 💝 A Gift for You 💝
 
-In our Garden Market, you have seen the sprouts' power for building AutoML mini pipelines. They are mainly used in model selection with optimized parameters, some have data preprocessing power too. MLJar is a better choice for both model performance and time efficiency.
+Lady H. summarized the pros & cons of mini pipelines as well as customized pipelines.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/tb4.2.png" width="730" height="422" />
 </p>
 
-You also have seen the customized pipeline Lady H. built with the power from Luigi, Airflow and ZenML. While Luigi can be applied to smaller scale pipeline, Airflow and ZenML can be used for larger pipeline scale.
-
 <p align="center">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/tb4.3.png" width="892" height="432" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/customized_pipeline/tb4.3_v2.png" width="892" height="425" />
 </p>
 
 
