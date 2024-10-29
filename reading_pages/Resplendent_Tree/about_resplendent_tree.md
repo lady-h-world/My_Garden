@@ -7,15 +7,13 @@
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/res_tree_v2.png" width="330" height="470" />
 
-Have you ever seen a tree with various colored flowers blooming simultaneously? 
+Look over there, by the waterfall! Do you see that vibrant tree? The butterflies fluttering around it make it shine even brighter. That, my friend, is the Resplendent Tree!
 
-Right there, near the waterfall! Do you see that vibrant tree? The surrounding butterflies enhanced its radiance. That's our Resplendent Tree!
+Its flowers bloom in five striking colors: orange, yellow, pink, purple, and blue. Each color comes in various shades—like rose pink and soft pink, or deep blue and sky blue. Flowers of the same kind tend to cluster together, but they are all interconnected. If one group falls ill, the rest will soon wither as well. They thrive or fade together, sharing the same fate.
 
-Each flower on this tree has precisely five petals. Lady H. used to joke, saying that if you ever find a 6-petal flower on this tree, that day must be your lucky day! The flowers come in five color variations: orange, yellow, pink, purple, and blue. Each color breed exhibits various shades, such as rose pink and light pink, dark blue and light blue, etc. Flowers from the same breed often cluster together. However, if one breed got sick, soon all the other breeds will wither too, they prosper and fade in unison.
-
-Each breed has a unique strength. Pink flowers offer a stunning fragrance that is exclusive to our garden and serves as one of the secret ingredients in our perfumes 😉! Blue flowers have medicinal properties and can be used to treat a diverse range of diseases, such as cancer, HIV, dementia, the lust of conquest, etc. Yellow flowers naturally contain sweetness, making them a healthy alternative to sugar in one's diet. Orange flowers have the special ability to glow at night. During summer, one of our popular activities is strolling through the garden at night, holding a glowing orange flower, surrounded by other luminous creatures, creating an extraordinary spectacle. Dried purple flowers brings peace to mind, Lady H. often places plenty of them in her bedroom to ensure a sound sleep.
+Every flower has a unique gift. The pink blooms release a fragrance found nowhere else in the world, a vital secret in our garden’s perfumes 😉. The blue flowers possess remarkable healing properties, effective against ailments ranging from cancer and HIV to dementia—and even the lust for conquest. Yellow flowers are naturally sweet and make a perfect, healthy alternative to sugar. Orange flowers glow in the dark, and during summer, one of our most beloved activities is a nighttime walk through the garden, carrying a glowing orange bloom. With other bioluminescent creatures around, it becomes a magical experience like no other. As for the purple flowers, they bring tranquility to the mind. Lady H. always keeps plenty of dried purple petals in her bedroom to ensure a peaceful, restful sleep.
   
-Lady H. told us that in the outside world, human beings have various skin colors, much like the flowers on this tree. Same colored people often find it easier to connect. Each skin color group has its unique beauty and culture, but all the groups thrive together and face challenges together.
+Lady H. once told us that, in the outside world, people come in many different skin tones, just like the flowers on this tree. Those with similar colors often find it easier to bond. Each group has its own unique beauty and culture, but just like the flowers, they flourish together and face life’s challenges as one.
 
 </p>
 <p>&nbsp;</p>
