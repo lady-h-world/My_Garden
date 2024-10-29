@@ -19,13 +19,13 @@ Lady H. once told us that, in the outside world, people come in many different s
 <p>&nbsp;</p>
 
 
-## Sprouts Collection Time!
+## Discovery Time!
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-So what's the sprout power you can collect here? [Please gear up first!][5] 💝 And let's go!
+From this point onward, [please gear up][5] to ensure the best possible experience during your visit! 💝 Now, let's go!
 
 🌱 The connections between flowers on Resplendent Tree shows the power of [association >>][1].
 
