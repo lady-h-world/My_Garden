@@ -1,31 +1,23 @@
 ## Association
+Exploring relationships between variables is crucial when building machine learning models. It deepens our understanding of the data, helps validate model assumptions (e.g., the independence assumption in linear regression), and supports the removal of unnecessary variables to improve model efficiency.
 
-When building machine learning models, exploring the relationships between variables is crucial. It enhances our 
-understanding of the data, helps meet model assumptions (e.g. linear regression assumes variables are independent), 
-and aids in removing unnecessary variables in order to improve model efficiency.
-
-Association is a popular method for exploring data relationships. It appears between numerical variables, 
-categorical variables, and mixed types of variables, revealing how these variables move together.
+Association is a common technique for examining data relationships. It applies to numerical, categorical, and mixed variable types, revealing how these variables interact or vary together.
 
 
 ### About the Data
-
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/garden_bank.png" width="253" height="240" />
 
-We have a garden bank known for its excellent management of customers' money. Many customers from the outside world 
-chose to save their money here, drawn by the bank's reputation for security and its attractive investment opportunities.
+Our garden bank is renowned for its exceptional management of customers' funds. Many customers from the outside world 
+chose to save their money here, attracted by the bank's reputation for security and appealing investment opportunities.
   
-Every month, the bank creates interesting investment opportunities and sends advertisements to potential customers 
-who are likely to be interested. Such ads-sending event is called as a <b>campaign</b>.
+Each month, the bank develops engaging investment offers and sends advertisements to potential customers likely to be interested. This process of sending advertisements is referred to as a <b>campaign</b>.
 
-The data used here came from one of these campaigns, aimed at selling a term deposit product. This product requires 
-customers to keep their money in the bank for several years, during which they earn interest.
+The data presented here comes from one such campaign, which aimed to promote a term deposit product. This product requires customers to maintain their funds in the bank for several years, during which they earn interest.
+
+In the campaign data below, the label `deposit` indicates whether a customer has acquired this term deposit product.
   
 </p>
-
-The campaign data example looks as below, `deposit` is the label, indicating whether a customer had acquired this 
-term deposit product.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/campaign_data.png" width="972" height="170" />
 
