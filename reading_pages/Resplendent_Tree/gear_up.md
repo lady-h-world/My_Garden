@@ -1,8 +1,8 @@
 ## Gear Up
 
 * [Follow this guidance][1] to create a virtual environment, it can simplify python packages' installation and their version control.
-* The required python version is <b>python 3.9</b>.
-* [Follow this guidance][2] to set up required python packages.
+* The required Python version is <b>Python 3.9</b>.
+* [Follow this guidance][2] to set up required Python packages.
   * [required requirements.txt][3]
   * [required setup.sh][4] 
 * If there will be any package version problem, you can check the full list of python packages [here][5].
