@@ -11,7 +11,7 @@ Association is a common technique for examining data relationships. It applies t
 Our garden bank is renowned for its exceptional management of customers' funds. Many customers from the outside world 
 chose to save their money here, attracted by the bank's reputation for security and appealing investment opportunities.
   
-Each month, the bank develops engaging investment offers and sends advertisements to potential customers likely to be interested. This process of sending advertisements is referred to as a <b>campaign</b>.
+Each month, our bank develops engaging investment offers and sends advertisements to potential customers likely to be interested. This process of sending advertisements is referred to as a <b>campaign</b>.
 
 The data presented here comes from one such campaign, which aimed to promote a term deposit product. This product requires customers to maintain their funds in the bank for several years, during which they earn interest.
 
@@ -44,25 +44,25 @@ We have 3 common methods to check the correlation between each pair of variables
 
 Both Spearman and Kendall uses rank values, therefore they can be applied to both continuous and ordinal variables. They are both non-parametric method and therefore the input data is not required to be in a bell curve as what Pearson assumes.
 
-Using all the numerical variables in our campaign data, let's look at the correlation triangle first. In the code below, you can choose one of the correlation methods, also decide whether you want to show absolute correlation values or not.
+Using all the numerical variables in our campaign data, let's look at the correlation triangle first. In the code below, you can choose one of the correlation methods through `corr_method`, also decide whether you want to show absolute correlation values through `abs_corr`.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/corr_visual.png" width="823" height="260" />
 </p>
 
-The correlation triangle is in a heatmap format, so that you can find highly correlated pairs quickly based on the color. In this example, we can see, `previous` (number of contacts performed for this client before this campaign) and `pdays` (number of days that passed after the client was contacted last time) have a high spearman correlation.
+The correlation triangle is displayed as a heatmap, allowing you to quickly identify highly correlated pairs by color. In this example, we observe a strong Spearman correlation between `previous` (the number of contacts made with each client before this campaign) and `pdays` (the number of days since the client was last contacted).
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/corr_visual_out.png" width="806" height="485" />
 </p>
 
-The code below uses this correlation triangle to list out all the correlated pairs with their correlation higher than the specified threshold.
+The code below utilizes this correlation triangle to list all pairs with correlations exceeding the specified threshold.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/corr_drop.png" width="1012" height="372" />
 </p>
 
-And the output does align with the above visualization. Using the output drop list, we can remove unnecessary features from the data directly.
+The output aligns with the visualization above. By using the output drop list, we can directly remove unnecessary features from the data.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/corr_drop_out_v3.png" 
@@ -76,15 +76,15 @@ width="859" height="188" />
 
 Sometimes, we can't find correlation between every 2 variable pairs, but it exists in a combo of more than 2 variables. This type of "correlation" is multicollineary. 
 
-VIF (Variance Inflation Factor) is often used to measure multicollineary. It provides an index that measures how much the variance (the square of the estimate's standard deviation) of an estimated regression coefficient is increased because of collinearity.
+VIF (Variance Inflation Factor) is often used to measure multicollineary. It provides an index that measures how much the variance of an estimated regression coefficient is increased because of collinearity.
 
-The code below generates a dataframe of VIF score for each numerical variable in the data. Normally when VIF score is higher than 10, there's high multicollineary, and you can drop the variables with VIF above the threshold.
+Typically, a VIF score above 10 indicates high multicollinearity, suggesting that variables with VIFs exceeding this threshold can be removed. The code below creates a dataframe of VIF scores for each numerical variable in the dataset.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/multi_corr_code.png" width="948" height="244" />
 </p>
 
-In the example below, the threshold is set as 5. Sometimes, it takes a long time to generate VIF of each variable, so save the output `vif_df` as a file will save you lots of time if you want to try different VIF thresholds.
+In the example below, the threshold is set to 5. Calculating the VIF for each variable can sometimes take a while, so saving the output vif_df as a file can save significant time if you plan to test different VIF thresholds.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/multi_corr_out.png" width="625" height="393" />
