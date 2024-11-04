@@ -31,7 +31,7 @@ From this point onward, [please gear up][5] to ensure the best possible experien
 
 🌱 Similar flowers cluster together, reflecting the concept of Clustering. [How to find the optimal number of clusters? >>][4]
 
-🌱 Besides clustering, want to see some [Semi-Supervised Learning >>][2]?
+🌱 Besides clustering, want to see some [Semi-Supervised Learning? >>][2]
 
 
 #
