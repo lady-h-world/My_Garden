@@ -1,21 +1,16 @@
 ### Association between Categorical Variables
-
 To measure the association between categorical variables, there're 2 popular choices:
-* `Pearson's Chi2 Test` is used to determine whether there is a statistically significant difference between the expected frequencies and the observed frequencies in one or more categories of a contingency table. A contigency table is a table in a matrix format that displays the frequency distribution of variables, [for example][1].
+* `Pearson's Chi2 Test` is used to determine if there is a statistically significant difference between observed and expected frequencies across one or more categories in a contingency table. A contingency table is a matrix that shows the frequency distribution of variables, [for example][1].
 * `Cramer's V` measures the associations between 2 categorical variables, based on Pearson's Chi2 Test.
 
 You can consider they are the same method 😊. 
 
 But in python implementation, there're some differences. The code below allows to choose either Chi2 or Cramer's V. 
-The output of Chi2 is mainly using p value to decide the association. It needs a threshold (namely, significant level, 
-often 
-choose 0.05) and when p value is lower than this thereshold, we can consider there's an association. 
+For Chi2, the output mainly relies on the p-value to determine association. A significance level, often set at 0.05, is used as a threshold. If the p-value is lower than this threshold, we can conclude that an association exists.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/chi2_cramer_code_v2.png" width="829" height="409" />
 
-By contrast, Cramer's V is more straightforward. It outputs a value that represents the association degree. Higher 
-value 
-indicates higher association. So its output is easier to interpret. Look at this output:
+In contrast, Cramer's V is more straightforward, as it produces a value representing the strength of the association. A higher value indicates a stronger association, making its output easier to interpret. Look at this output:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/chi2_cramer_out_v2.png" width="321" height="204" />
 
