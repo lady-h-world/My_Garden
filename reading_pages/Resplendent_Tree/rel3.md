@@ -1,15 +1,10 @@
 ### Association between Categorical & Numerical Variables
 
-ANOVA (Analysis of Variance) analyzes the difference among means. Its null hypothesis is, there is no difference among means.
+ANOVA (Analysis of Variance) examines the differences among averages. Its null hypothesis assumes there is no difference among the averages.
 
-When checking the association between a numerical variable and a categorical variable, ANOVA calculates the numerical 
-variable's average for each categorical value, then apply `f_oneway` test on the equality of these averages. If the 
-output p value is lower than the threshold (namely, significant level, often choose 0.05), then null hypothesis got 
-rejected, so there's a difference among the averages, which means the categorical variable has association with the 
-numerical variable.
+When assessing the association between a numerical variable and a categorical variable, ANOVA calculates the average of the numerical variable for each category, then applies the `f_oneway` test to check if these averages are equal. If the resulting p-value is below the significance threshold (often set at 0.05), the null hypothesis is rejected, indicating there is a difference among the averages. This suggests an association between the categorical and numerical variables.
 
-The code below shows how to apply ANOVA to assess the association between a categorical variable and a numerical 
-variable.
+The code below demonstrates how to use ANOVA to assess the association between a categorical and a numerical variable.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/anova_code_v3.png" width="738" height="300" />
 
@@ -18,6 +13,7 @@ Using our campaign data, the output looks like:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/anova_out_v2.png" width="741" height="416" />
 
 🌻 [Look into code details here >>][2] 
+
 
 #
 <p align="left">
