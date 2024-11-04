@@ -15,7 +15,7 @@ See the code below, we can create clusters in the shape of circles, moons and bl
 
 Now let's see different clusters Lady H. simulated. In the 3rd, 4th, 6th plots, clusters share similar standard deviation (`cluster_std`), so they are more separated from each other, therefore these are easier clustering problems. To add more challenges, clusters in 5th plot are more mixed together. The most tricky clusters are in 1st and 2nd plots, the circles and the moons, even though from the plot, we can see clear separation between clusters, they are more complex for clustering algorithms to handle.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_clusters.png" width="1260" height="853" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_clusters.png" width="1260" height="833" />
 
 🌻 [Check purposeful clusters simulation code here >>][3]
 
