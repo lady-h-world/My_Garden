@@ -1,28 +1,25 @@
 ### Finding Optimal K
+There are countless data science tutorials available online, but how do you typically use them? While these tutorials often spark inspiration, Lady H. is cautious about taking them at face value. When she finds something intriguing, she delves deeper into the theory and validates it through additional experiments.
 
-There are many online data science tutorials in your world, how do you often use them? These tutorials do create lots of inspirations but Lady H. never fully trust them, so when she found something interesting, she will dive deeper into the theories and validate with more experiments. 
+The inspiration for this experiment came from an article titled ["Are You Still Using the Elbow Method?"][1]. In the article, the author compares several k-estimation algorithms using five datasets with clusters ranging from 2 to 25. The visualizations are quite compelling, and the author concludes that the elbow method, a popular k-estimation approach, performed the worst. Since the datasets in the article consist of well-separated blobs, Lady H. wondered how these algorithms would perform on more complex datasets.
 
-The idea of this experiment started from an article called ["Are You Still Using the Elbow Method?"][1]. In this article, the author compared several k-estimation algorithms with 5 datasets containing clusters ranging from 2 to 25. The visualization is very persuasive, and he concluded that elbow method, a popular k-estimation algorithm performed the worst. The datasets in this article are all well separated blobs, therefore Lady H. thought, what if the datasets are more complicated, how would these algorithms perform?
-
-Before looking at Lady H.'s experiments, let's understand how does each k-estimation algorithm work. To find the optimal k, the ideal result is, the generated clusters have larger between-cluster variance and smaller within-cluster variance.
+Before diving into Lady H.'s experiments, let’s first understand how each k-estimation algorithm works. To identify the optimal `k`, the goal is to achieve clusters with high between-cluster variance and low within-cluster variance.
 
 
 #### Elbow Method
-
-Elbow method checks WCSS (Within-Cluster Sum of Square), the sum of the squared distance between data points in a cluster and the cluster centroid. So smaller WCSS indicates the data points in clusters are closer together. We often choose the k at the elbow of its plot, meaning WCSS dropped most significantly at that point. We don't choose larger k with even smaller WCSS value is because that will create more clusters, which may not be necessary. 
+The elbow method examines WCSS (Within-Cluster Sum of Squares), which is the sum of the squared distances between data points within a cluster and the cluster’s centroid. A lower WCSS indicates that data points within a cluster are closer together. The optimal `k` is typically chosen at the 'elbow' of the plot, where WCSS decreases most sharply. Choosing a larger `k` with an even smaller WCSS isn’t ideal, as it would create more clusters than necessary.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/plot_has_elbow.png" width="683" height="458" />
 
-As we can see, elbow method doesn't measure between-cluster performance. Meanwhile, sometimes it can be challenging to find the right k on the plot, like the example below.
+As we can see, the elbow method doesn’t evaluate between-cluster variance. Additionally, it can sometimes be difficult to identify the optimal `k` on the plot, as shown in the example below.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/plot_no_elbow.png" width="682" height="460" />
 
 
 #### Calinski Harabasz Index
+The Calinski-Harabasz Index, also known as the Variance Ratio Criterion, is calculated as `Calinski-Harabasz Index = sum(between-cluster dispersion) / sum(within-cluster dispersion)`, where dispersion represents the sum of squared distances. A higher Calinski-Harabasz Index indicates better clustering, as it reflects greater between-cluster variance and smaller within-cluster variance.
 
-Calinski Harabasz Index is also known as Variance Ratio Criterion. `Calinski Harabasz Index = sum(between_cluster dispersion) / sum(within_cluster dispersion)`, dispersion is the sum of squared distances. Higher Calinski Harabasz Index indicates better clustering, since that requires larger between-cluster variance and smaller within-cluster variance.
-
-This index is fast to compute. It tends to have better k estimation on convexed, dense and well separated clusters. 
+This index is quick to compute and tends to provide more accurate k estimations on clusters that are convex, dense, and well-separated.
 
 Do you know what does "convex" mean to clusters?
 <p align="left">
@@ -33,26 +30,22 @@ Do you know what does "convex" mean to clusters?
 
 
 #### Davies-Bouldin Index
-
 DBI (Davies-Bouldin Index) measures the average similarity between each cluster and its most similar cluster. Calculating the similarity uses the ratio of the within-cluster distance and the between-cluster distance. When there's smaller within-cluster distance and larger between-cluster distance, DBI is lower, indicating a better clustering result.
 
 DBI is easy to calculate and interpret. However, it only considers the pairwise distances between cluster centroids and cluster members, the score can be sensitive to outliers, and ignored the data distribution or structure (such as clusters within a cluster, or non-linear relationship, etc.). It also makes false assumption that clusters share the same density and size, which is not true in many real world scenarios.
 
 
 #### Silhouette Coefficient
-
 Silhouette Coefficient is a measure of how similar an object is to its own cluster comparing to other clusters. `Silhouette Coefficient = (b-a)/max(a,b)`, `a` is the average distance between each point within a cluster, `b` is the average distance between clusters. Its value is between 1 and -1, higher the better, 0 means overlapping clusters.
 
 [Some online tutorial][2] shared about the drawbacks of DBI, then said Silhouette Coefficient can be an alternative solution. However, if we just look at the definition of DBI, Silhouette Coefficient and Calinski Harabasz Index, they share the same drawbacks for being better in convex clusters, being sensitive to outliers and ignoring the data distribution or data structure.
 
 
 #### BIC
-
 BIC (Bayesian Information Criterion) is often used in model selection, based on the maximum likelihood of model against parameters. In the case of clustering, BIC is trying to balance the maximum likelihood of model against `k`. At the same time, BIC adds penality to reduce overfitting. Lower BIC score is better. 
 
 
 #### Estimated K Comparison
-
 Now let's apply these k-estimation algorithms to our clusters.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/6_clusters.png" width="904" height="502" />
