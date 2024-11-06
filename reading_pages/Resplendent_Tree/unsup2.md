@@ -65,12 +65,13 @@ Let's take a look at the k-estimation results. Is elbow method really the worst?
 In reviewing the tutorial ["Are You Still Using the Elbow Method?"][1], all the datasets it uses contain well-separated blobs, with each blob forming a convex cluster. However, such ideal datasets are rare in real-world applications.
 
 So what should you consider when estimating `k` for clustering problems in the future? Lady H. suggests:
-    * The elbow method remains a simple and effective starting point.
-    * The elbow method remains a simple and effective starting point.
-    * If you’re familiar with coding in R, Lady H. has experimented with four methods—one of which applies 30 k-estimation algorithms and returns the most frequently selected `k`.
-        * 🌻 [See R code here >>][4]
-    * Similarly, in Python, you can apply multiple k-estimation algorithms and select the most frequently recommended `k`.
-    * Additionally, consider exploring clustering algorithms beyond k-means.
+
+* The elbow method remains a simple and effective starting point.
+* The elbow method remains a simple and effective starting point.
+* If you’re familiar with coding in R, Lady H. has experimented with four methods—one of which applies 30 k-estimation algorithms and returns the most frequently selected `k`.
+  * 🌻 [See R code here >>][4]
+* Similarly, in Python, you can apply multiple k-estimation algorithms and select the most frequently recommended `k`.
+* Additionally, consider exploring clustering algorithms beyond k-means.
 
 
 #
