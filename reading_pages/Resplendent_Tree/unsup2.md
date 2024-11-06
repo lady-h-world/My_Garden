@@ -30,19 +30,19 @@ Do you know what does "convex" mean to clusters?
 
 
 #### Davies-Bouldin Index
-DBI (Davies-Bouldin Index) measures the average similarity between each cluster and its most similar cluster. Calculating the similarity uses the ratio of the within-cluster distance and the between-cluster distance. When there's smaller within-cluster distance and larger between-cluster distance, DBI is lower, indicating a better clustering result.
+The Davies-Bouldin Index (DBI) measures the average similarity between each cluster and the cluster that is most similar to it. Similarity is calculated using the ratio of within-cluster distance to between-cluster distance. A lower DBI indicates better clustering, as it reflects smaller within-cluster distances and larger between-cluster distances.
 
-DBI is easy to calculate and interpret. However, it only considers the pairwise distances between cluster centroids and cluster members, the score can be sensitive to outliers, and ignored the data distribution or structure (such as clusters within a cluster, or non-linear relationship, etc.). It also makes false assumption that clusters share the same density and size, which is not true in many real world scenarios.
+DBI is straightforward to calculate and interpret. However, it only considers pairwise distances between cluster centroids and their members, making it sensitive to outliers and neglectful of data distribution or structure (e.g., nested clusters or non-linear relationships). Additionally, it assumes clusters have similar density and size, which is often not the case in real-world scenarios.
 
 
 #### Silhouette Coefficient
-Silhouette Coefficient is a measure of how similar an object is to its own cluster comparing to other clusters. `Silhouette Coefficient = (b-a)/max(a,b)`, `a` is the average distance between each point within a cluster, `b` is the average distance between clusters. Its value is between 1 and -1, higher the better, 0 means overlapping clusters.
+Silhouette Coefficient is a measure of how similar an object is to its own cluster comparing to other clusters. `Silhouette Coefficient = (b-a)/max(a,b)`, `a` is the average distance between each point within a cluster, `b` is the average distance between clusters. The coefficient ranges from -1 to 1, with higher values indicating better clustering and 0 suggesting overlapping clusters.
 
 [Some online tutorial][2] shared about the drawbacks of DBI, then said Silhouette Coefficient can be an alternative solution. However, if we just look at the definition of DBI, Silhouette Coefficient and Calinski Harabasz Index, they share the same drawbacks for being better in convex clusters, being sensitive to outliers and ignoring the data distribution or data structure.
 
 
 #### BIC
-BIC (Bayesian Information Criterion) is often used in model selection, based on the maximum likelihood of model against parameters. In the case of clustering, BIC is trying to balance the maximum likelihood of model against `k`. At the same time, BIC adds penality to reduce overfitting. Lower BIC score is better. 
+The Bayesian Information Criterion (BIC) is commonly used for model selection and is based on the maximum likelihood of a model given its parameters. In clustering, BIC seeks to balance the model’s maximum likelihood with the number of clusters, `k`, while applying a penalty to prevent overfitting. A lower BIC score indicates a better model fit.
 
 
 #### Estimated K Comparison
@@ -62,14 +62,15 @@ Let's take a look at the k-estimation results. Is elbow method really the worst?
 
 🌻 [Check all the code here >>][3]
 
-If we review this tutorial ["Are You Still Using the Elbow Method?"][1], all of its data have well separated blobs and each blob is a convex cluster, but such pleasant datasets are hard to find in the real world.
+In reviewing the tutorial ["Are You Still Using the Elbow Method?"][1], all the datasets it uses contain well-separated blobs, with each blob forming a convex cluster. However, such ideal datasets are rare in real-world applications.
 
-So what should you do in the future when estimating k for clustering problem? Lady H. suggests:
-  * Elbow method is still a simple choice to start with. 
-  * If you can code with Language R, Lady H. has experimented with 4 methods, one of them applies 30 k-estimation algorithms and returns the most voted k.  
-    * 🌻 [See R code here >>][4]
-    * Similarly, in python, you can apply multiple k-estimation algorithms and use the most voted k.
-  * You can also consider other clustering algorithms rather than k-means.
+So what should you consider when estimating `k` for clustering problems in the future? Lady H. suggests:
+
+    * The elbow method remains a simple and effective starting point.
+    * If you’re familiar with coding in R, Lady H. has experimented with four methods—one of which applies 30 k-estimation algorithms and returns the most frequently selected `k`.
+        * 🌻 [See R code here >>][4]
+    * Similarly, in Python, you can apply multiple k-estimation algorithms and select the most frequently recommended `k`.
+    * Additionally, consider exploring clustering algorithms beyond k-means.
 
 
 #
