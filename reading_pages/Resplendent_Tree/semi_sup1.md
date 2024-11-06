@@ -1,28 +1,25 @@
 ## Semi-Supervised Learning
+So far, you’ve seen both supervised and unsupervised learning. But have you ever wondered if there’s something in between?
 
-So far you have seen the power of supervised and unsupervised learning. Have you ever wonder whether there's anything in between? 
-
-Semi-supervised learning is! It's trying to solve problems with a combination of labeled data and unlabeled data.
+That’s where semi-supervised learning comes in! It tackles problems by combining both labeled and unlabeled data.
 
 
 ### About the Data
-
-The raw data is the same as the [source data we used in correlation][1]. It has 2 classes and all the records are labeled.
+The raw data is the same as the [campaign data used in association][1]. It has 2 classes and all the records are labeled.
 
 In real world, 2 types of scenario could happen:
 1. Each class has labeled and unlabeled data.
 2. Only 1 class is partially labeled and all the other data is unlabeled.
 
-To mimic these 2 scenarios in real world, we can mask the data.
+To simulate these two real-world scenarios, we can mask the data.
 
 
-#### Type 1 Data Mask
-
-In the first type of masking, we mask some data in both classes as unlabeled, and allow flexible setting on `mask_rate`.
+#### Scenario 1 Data Mask
+In this scenario, we mask a portion of the data from both classes as unlabeled and allow for flexible adjustment of the mask_rate. The goal is, <b>for the original labeled data to retain their 0 or 1 labels, while the unlabeled data is marked as -1</b>.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_type1_mask.png" width="765" height="111" />
 
-The original labeled data still keep their 0 or 1 labels, and the unlabeled data will be marked as -1. We apply stratified split to get train & test data, so that the percentage of each data label in training data stays the same in testing data. In the example below, we have masked 95% data:
+When splitting the data into training and testing sets, we use stratified splitting to ensure that the proportion of each label in the training data matches that in the testing data. In the example below, 95% of the data has been masked:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_splittraintest_mask1.png" width="820" height="512" />
 
@@ -40,9 +37,8 @@ Ha, can't find any pattern to differentiate classes well, right? 😅 Cool! With
 * 🌻 [Learn more about UMAP dimensional reduction here >>][3]
 
 
-#### Type 2 Data Mask
-
-In the second type of masking, we will mask most of the data and only keep a portion of positive data labeled. This type of problem is called "PU Learning" (Positive-Unlabeled Learning).
+#### Scenario 2 Data Mask
+In this scenario, we mask most of the data and only keep a portion of positive data labeled. This type of problem is called "PU Learning" (Positive-Unlabeled Learning).
 
 The code to mask the data with configurable masking rate is here:
 
@@ -74,7 +70,7 @@ Now let's see how to forecast these unlabeled data!
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<< Looking back][5]
 
 
-[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/corr1.md#about-the-data
+[1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/rel1.md#about-the-data
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/code/resplendent_tree/semi_supervised/mask_labels.ipynb
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/dimensional_reduction4.md
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Resplendent_Tree/semi_sup2.md
