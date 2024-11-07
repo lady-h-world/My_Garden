@@ -1,4 +1,4 @@
-### Forecast on Type 1 Data Mask
+### Classification on Scenario 1 Data Mask
 
 We will start with classifying the data when unlabeled data appears in each class. 
 
