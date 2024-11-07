@@ -23,7 +23,7 @@ When splitting the data into training and testing sets, we use stratified splitt
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_splittraintest_mask1.png" width="820" height="512" />
 
-Before any forecasting work, we can plot the data into 2D or 3D space to see how does the data distribute, in order to get a sense of how challenging the problem is. To do this, we can apply UMAP dimensional reduction to project the dataset into a 2-dimensional space, coloring the data point based on their masks and real labels ("0False" means masked negative class, "0True" means original negative class, "1False" means masked positive class, "1True" means original positive class), let's look at the plot of training data:
+Before beginning any forecasting work, we can visualize the data in 2D or 3D space to understand its distribution and assess the complexity of the problem. To do this, we can use UMAP for dimensionality reduction, projecting the dataset into a 2D space. Each data point will be color-coded based on its mask and true label: "0False" indicates a masked negative class, "0True" represents the original negative class, "1False" is the masked positive class, and "1True" is the original positive class. Let's examine the plot of the training data:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/train_umap.png" width="1377" height="313" />
 
@@ -31,9 +31,9 @@ and the plot of testing data:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/test_umap.png" width="1380" height="309" />
 
-Ha, can't find any pattern to differentiate classes well, right? 😅 Cool! With this data, we will try to classify all the masked data!
+Not seeing any clear patterns to distinguish between the classes, right? 😅 No problem! With this data, we'll work on classifying all the masked instances!
 
-* 🌻 [Check type 1 data mask code here >>][2]
+* 🌻 [Check scenario 1 data mask code here >>][2]
 * 🌻 [Learn more about UMAP dimensional reduction here >>][3]
 
 
@@ -44,7 +44,7 @@ The code to mask the data with configurable masking rate is here:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_mask_pu.png" width="891" height="268" />
 
-When setting `mask_rate=0.95`, it means we will mask 95% data and the rest 5% data will be positive class. Therefore, in the output below, you can see there's 95% "-1" and 5% "1". Among all the masked data, there are 55.4% negative class and 44.6% positive class.
+When setting `mask_rate=0.95`, it means we will mask 95% data and the rest 5% data will be positive class. Therefore, in the output below, you can see there's 95% labeled as "-1" and 5% labeled as "1". Among all the masked data, there are 55.4% negative class and 44.6% positive class.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_high_rate_pu.png" width="901" height="216" />
 
@@ -52,9 +52,10 @@ When setting `mask_rate=0.3`, it meant to have 70% positive class remain labeled
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_low_rate_pu.png" width="896" height="217" />
 
-🌻 [Check type 2 mask code here >>][2]
+🌻 [Check scenario 2 mask code here >>][2]
 
-Now let's see how to forecast these unlabeled data!
+Now let's see how to classify these unlabeled data!
+
 
 #
 <p align="left">
