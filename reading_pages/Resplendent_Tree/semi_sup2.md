@@ -1,16 +1,15 @@
 ### Classification on Scenario 1 Data Mask
 
-We will start with classifying the data when unlabeled data appears in each class. 
+We will begin by classifying the data when unlabeled instances appear within each class.
 
-We will experiment with 3 approaches on a 90% masked data. In this data, only 10% records kept the original labels, 5.37% negative and 4.63% positive. Among all the masked data, there're 52.50% negative and 47.50% positive records.
+To do this, we will experiment with three approaches using a dataset where 90% of the labels are masked. In this dataset, only 10% of the records retain their original labels, with 5.37% being negative and 4.63% positive. Among the masked data, 52.50% are negative records, while 47.50% are positive.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_90mask.png" width="899" height="251" />
 
-After the comparison of 3 approaches, we will choose the best approach to experiment on datasets with different mask rates.
+After comparing the following 3 approaches, we will select the best one to experiment on datasets with varying mask rates.
 
 
 #### Approach 1: Label Propagation
-
 Label Propagation will propagate labels to unlabeled data by assuming similar data points have same labels. The way it assigns labels to unlabeled data follows these steps:
 1. It creates a connected graph by drawing edges between data nodes. `n_neighbors` can limit the number of nodes you want to connect and therefore reduce the demanding resources from your machine, on the contrary, to build a fully connected graph, it will cost lots of computer resources.
 2. On the graph, the edge between more similar nodes gets higher weight while the edge between less similar nodes gets lower weights. A larger weight allows the label to travel through easier so that the probability of propagating the label is higher.
