@@ -10,12 +10,12 @@ After comparing the following 3 approaches, we will select the best one to exper
 
 
 #### Approach 1: Label Propagation
-Label Propagation will propagate labels to unlabeled data by assuming similar data points have same labels. The way it assigns labels to unlabeled data follows these steps:
-1. It creates a connected graph by drawing edges between data nodes. `n_neighbors` can limit the number of nodes you want to connect and therefore reduce the demanding resources from your machine, on the contrary, to build a fully connected graph, it will cost lots of computer resources.
-2. On the graph, the edge between more similar nodes gets higher weight while the edge between less similar nodes gets lower weights. A larger weight allows the label to travel through easier so that the probability of propagating the label is higher.
-3. From each unlabeled node, performing random walk to find the probability distribution of reaching labeled nodes in order to decide which label has the highest probability. The random walk won't stop until reaching the convergence, such as all paths had been explored, or the probabilities of each possible label no longer change.
+Label Propagation assigns labels to unlabeled data by assuming that similar data points share the same label. The process of labeling the unlabeled data involves the following steps:
+1. <b>Graph Construction</b>: It creates a connected graph by drawing edges between data nodes. You can limit the number of nodes each point connects to using the `n_neighbors` parameter, which reduces the computational resources required. Conversely, building a fully connected graph demands significantly more resources.
+2. <b>Edge Weighting</b>: On this graph, edges between more similar nodes receive higher weights, while edges between less similar nodes receive lower weights. A higher weight makes it easier for a label to propagate, increasing the likelihood that it will spread to neighboring nodes.
+3. <b>Random Walk</b>: For each unlabeled node, a random walk is performed to determine the probability distribution of reaching labeled nodes. This helps identify which label has the highest probability of being correct. The random walk continues until convergence is achieved, meaning either all paths have been explored or the probabilities of each possible label no longer change.
 
-Let's apply label propagation on our 90% masked data! Sklearn's label propagation supports 2 kernels, `knn` and `rbf`. The kernel is to measure the similarity between data points. KNN measures the similarity based on the number of neighbours while RBF measures the similarity based on distances.
+Let's apply Label Propagation to our dataset with 90% masked labels! Scikit-learn's Label Propagation algorithm supports two kernel options: `knn` and `rbf`. The kernel determines how similarity between data points is measured. The KNN kernel uses the number of neighbors to assess similarity, while the RBF kernel measures similarity based on distances.
 
 Here's how to apply label propagation with KNN kernel:
 
@@ -31,14 +31,13 @@ The performance above is quite similar, if we consider AUC as the main metric, R
 
 
 #### Approach 2: Label Spreading
+Label Spreading is similar to Label Propagation, but with a key difference: Label Propagation uses hard clamping, meaning labeled data points never change their labels. In contrast, Label Spreading adopts soft clamping, controlled by the parameter alpha. This parameter determines the balance between the influence of neighboring data and the original label. When `alpha=0`, the model fully preserves the original labels, while `alpha=1` means the initial labels are entirely replaced by information from neighboring points. To learn more details, [check this article][2].
 
-Label spreading is similar to label propagation. The main difference is, label propagation uses hard clamping, meaning, a labeled data point never changes its label. However, label spreading adopts soft clamping, it has a parameter `alpha` to control the proportion of information received from neighbors vs. from the initial label. When `alpha=0`, it keeps all the original information, but when `alpha=1`, it replaces all the initial information. To learn more details, [check this article][2].
-
-The supported kernels in label spreading are "knn" and "rbf" too. Let's apply label spreading with KNN on our 90% masked data first:
+The supported kernels in label spreading are `knn` and `rbf` too. Let's apply label spreading with KNN on our 90% masked data first:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_lspeading_knn.png" width="646" height="704" />
 
-The parameter values used in RBF's label spreading is a bit different, not just adding `gamma` required by RBF, but also adjusted `alpha=0.5` to default value `alpha=0.2` and increased `n_neighbors=7` to `n_neighbors=20`, so that the performance won't look too bad.
+The parameter settings for RBF's Label Spreading differ slightly. In addition to adding the `gamma` parameter required by RBF, we adjusted `alpha` from 0.5 to its default value of 0.2 and increased `n_neighbors` from 7 to 20. These changes were made to improve performance.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_spreading_rbf.png" width="608" height="638" />
 
