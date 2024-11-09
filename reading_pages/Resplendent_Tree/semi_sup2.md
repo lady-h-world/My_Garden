@@ -47,8 +47,7 @@ Still got similar performance, and RBF kernel has slightly better AUC.
 
 
 #### Approach 3: Self Training
-
-Self training allows you to select an estimator supported by sklearn, such as XGBoost, LightGBM to train on the labeled data and predict on unlabeled data. Then use predictions as pseudo labels, adding them to existing labels and do another round of train & predict. Repeat till all the data got the label or reached to the max iteration.
+Self-training allows you to choose any estimator supported by Scikit-learn, such as XGBoost or LightGBM, to train on the labeled data and make predictions on the unlabeled data. These predictions are then used as pseudo-labels, which are added to the existing labeled data for another round of training and prediction. This process is repeated until all the data is labeled or the maximum number of iterations is reached.
 
 Sklearn provides built-in `SelfTrainingClassifier`, and it can be used in this way:
 
@@ -60,18 +59,17 @@ Comparing with label spreading and label propagation, self training took much lo
  
 
 #### Performance with Different Mask Rates
+Overall, Label Spreading with the RBF kernel achieved slightly better performance on our dataset with 90% masked labels. Next, let's apply this method to datasets with varying mask rates.
 
-Overall, label spreading with RBF kernel got a bit better performance on our 90% masked data. Now, let's apply it on data with different mask rates.
-
-As we can see below, when there is more data got labeled (lower mask rate), the performance will get better. When labeled data occupies more than 50%, the performance difference becomes smaller when labeling percentage increases, for example, 50% labeled data and 80% labeled data have much less performance difference.
+As shown below, performance improves as more data is labeled (i.e., with lower mask rates). However, when the mask rate drops below 0.5, the performance gains become less significant. For instance, the difference in performance between a mask rate of 0.5 and 0.2 is much smaller.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/ls_diff_mask.png" width="1187" height="922" />
 
 🌻 [Check detailed code here >>][5]
 
-The best performance we have above is 0.74 AUC and 0.65 Recall. If all the data is labeled, we can get 0.84 AUC and 0.85 Recall. In order to get closer to all-labeled-data performance, we can optimize model parameters or try more advanced algorithms. Would you like to share your ideas and experiments [here][7]? 😉
-
 🌻 [Check all-labeled-data forecast >>][6]
+
+The best performance we've achieved so far is 0.74 AUC and 0.65 Recall. With fully labeled data, we can reach 0.84 AUC and 0.85 Recall. To get closer to the performance of fully labeled data, we could optimize model parameters or explore more advanced algorithms. What are your ideas for making such improvements? Share them [here][7]! 😉
 
 
 #
