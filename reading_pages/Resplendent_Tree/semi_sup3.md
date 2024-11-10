@@ -1,40 +1,37 @@
 ### Forecast on Type 2 Data Mask
+Next, let's tackle the PU Learning (Positive-Unlabeled Learning) problem, where only a portion of the positive labels are known, and the rest of the data is unlabeled. We'll demonstrate a DIY PU learning solution and compare it with Scikit-learn's built-in PU learning approach. Which one do you think will perform better? 😁
 
-Now let's solve PU Learning (Positive-Unlabeled Learning) problem, it only has a portion of positive labels and the rest of data is unlabeled. We will show you a DIY PU learning solution and compare it with sklearn built-in PU learning solution. Guess which solution is better!? 😁
-
-The data used in this experiment has 90% records masked, so only 10% records kept the original positive labels. Among all the masked data, there are 58.50% negative and 41.50% positive records.
+For this experiment, we're using a dataset where 90% of the records are masked, leaving only 10% with their original positive labels. Among the masked data, 58.50% are negative, and 41.50% are positive.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/code_90mask_pu.png" width="902" height="232" />
 
 
 #### How to Solve PU Learning Problem
+The main idea is, given all the data, calculate the probability of each record being positive, denoted as `P(positive_label=1 | data)`.
 
-The main idea is, given all the data, get the probability of being positive for each record `P(positive_label=1 | data)`.
+1. Using conditional probability, we can derive the equation: `P(positive_label=1 | data) * P(data) = P(has_label=1 | data) * P(data) / P(has_label=1 | positive_label=1)`, which simplifies to: `P(positive_label=1 | data) = P(has_label=1 | data) / P(has_label=1 | positive_label=1)`. Therefore, to obtain the final output `P(positive_label=1 | data)` we only need `P(has_label=1 | data)` and `P(has_label=1 | positive_label=1)`.
+2. In the dataset, we replace the original label column with `has_label`, indicating whether each record has a label. We then split the dataset into training and testing sets using a stratified split based on `has_label`. To calculate `P(has_label=1 | data)`, we train an estimator on the training set, and the predictions on the test set provide us with `P(has_label=1 | data)`.
+3. To find `P(has_label=1 | positive_label=1)`, we calculate the probability of "having a label" among the positive samples in the training set. By averaging these probabilities, we obtain `P(has_label=1 | positive_label=1)`.
+4. Finally, we use the formula: `P(positive_label=1 | data) = P(has_label=1 | data) / P(has_label=1 | positive_label=1)` to compute the probability of each record being positive.
 
-1. Based on conditional probability, we can have `P(positive_label=1 | data) * P(data) = P(has_label=1 | data) * P(data) / P(has_label=1 | positive_label=1)`, and this equation can be converted to `P(positive_label=1 | data) = P(has_label=1 | data) / P(has_label=1 | positive_label=1)`. Therefore, in order to get the final output `P(positive_label=1 | data)` we just need `P(has_label=1 | data)` and `P(has_label=1 | positive_label=1)`.
-2. In the data, we replace the original label column with `has_label`, indicating whether each record has a label. Then, split the dataset into train, test datasets, and it's stratified split based on `has_label`. To get `P(has_label=1 | data)`, we just need to use an estimator to train on the training data, the prediction on the testing data is `P(has_label=1 | data)`.
-3. `P(has_label=1 | positive_label=1 | sample)` is the probability of "has label", given each positive label in the training data. Averaging these probabilities, we can get `P(has_label=1 | positive_label=1)`.
-4. `P(positive_label=1 | data) = P(has_label=1 | data) / P(has_label=1 | positive_label=1)` gets the final output, the probability of being positive for each record.
-
-This method is called as E&N ([Elkan & Noto][2]) method, and seems that, it can be applied to both binary-class and multi-class problems.
+This approach is known as the [E&N (Elkan & Noto) method][2], and it can be applied to both binary and multi-class classification problems.
 
 
 #### DIY PU Learning Solution
-
-The DIY solution follows exactly the same steps mentioned above. It outputs the probability of positive class for each data record.
+The DIY solution follows the exact steps outlined above, producing the probability of each data record belonging to the positive class.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/pu_diy_output.png" width="562" height="124" />
 
 🌻 [Check DIY PU Learning solution here >>][1]
 
-The interesting part is, how are we going to evaluate the results? 🤔
+The challenge now is, how do we evaluate the results? 🤔
 
-In the perfect situation, you know the labels of all the data, and can apply normal machine learning evaluation metrics, such as AUC, Average Precision, etc. In our example, if we compare predicted probability of positive class with the real labels, we can get 0.71 AUC, as shown in the notebook.
+In an ideal scenario, where you have labels for all the data, you can use standard machine learning evaluation metrics such as AUC, Average Precision, etc. For example, in our case, comparing the predicted probabilities of the positive class against the actual labels yields an AUC of 0.71, as demonstrated in the notebook.
 
-However, in reality, most of the time, you really don't know all the data labels except a small portion of positive labels 🥲. To evaluate the performance, let's calculate following metrics:
-* `real_pos_perct`: real positive class percentage in the data. If you don't know the ground truth, this can be business estimated percentage.
-* `pred_pos_perct`: predicted positive class percentage. It's the percentage of records with `predicted probability >= threshold`.
-* `known_recall`: the recall among known positive labels. If `predicted probability >= threshold` gets predicted positive class and `predicted probability < threshold` gets predicted negative class, comparing them with the known positive labels, we can get this recall.
+However, in reality, you often don't have labels for the entire dataset—only a small fraction of positive labels are known 🥲. To assess performance in such cases, let's calculate the following metrics:
+* `real_pos_perct`: the actual percentage of positive class in the dataset. If the ground truth is unknown, this can be estimated by business or domain experts.
+* `pred_pos_perct`: the predicted percentage of the positive class. This is calculated as the proportion of records with `predicted probability >= threshold`.
+* `known_recall`: the recall among the known positive labels. By classifying records as positive if `predicted probability >= threshold` and as negative otherwise, we can compare these predictions against the known positive labels to calculate this recall.
 
 Here's the code of `pred_pos_perct` and `known_recall`:
 
@@ -49,7 +46,7 @@ We can plot the performance with different thresholds to decide the optimal thre
 
 #### Sklearn Built-in PU Learning Solution
 
-PULEARN is sklean built-in PU Learning library, it supports 3 classifiers:
+PULEARN is a sklearn built-in PU Learning library, it supports 3 classifiers:
 * `ElkanotoPuClassifier`: is E&N method, same as above DIY solution.
 * `WeightedElkanotoPuClassifier`: also came from E&N paper, it adds weights to unlabeled data.
 * `BaggingPuClassifier`: applies a bagging SVM on positive and unlabeled data.
@@ -64,11 +61,12 @@ Let's check performance by applying them on our 90% masked data!
 
 🌻 [Check Built-in PU Learning code >>][3]
 
-Obviously, `ElkanotoPuClassifier` gets the best performance. But the DIY solution has slightly better performance, because at the best threshold where`pred_pos_perct` intersects with `real_pos_perct`, DIY solution has higher `known_recall`.
+Clearly, the `ElkanotoPuClassifier` delivers the best overall performance. However, the DIY solution performs slightly better because, at the optimal threshold, where `pred_pos_perct` intersect with `real_pos_perct`, the DIY solution achieves a higher `known_recall`.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/diy_pu_eval_0.9.png" width="906" height="459" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/diypu_pulearn.png" width="908" height="611" />
 
 All the experiments above were using 90% masked data. What does the performance look like with different mask rates?
+
 
 #
 <p align="left">
