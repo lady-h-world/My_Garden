@@ -1,6 +1,6 @@
-#### Performance with Different Mask Rate
+#### Performance with Various Mask Rates
 
-Lady H. applied both DIY solution and built-in `ElkanotoPuClassifier` solution on datasets with 95%, 80%, 50%, 30% mask rates. It turned out, the DIY solution is still a better option. Let's look into details.
+Lady H. applied both the DIY solution and PULearn's built-in `ElkanotoPuClassifier` on datasets with mask rates of 95%, 80%, 50%, and 30%. The results showed that the DIY solution consistently outperformed. Let's dive into the details.
 
 This is the performance comparison on 95% masked data. At the best threshold, both solution have `pred_pos_perct` intersects with `real_pos_perct`, but DIY solution has higher `known_recall`.
 
@@ -17,7 +17,7 @@ For 80%, 50% and 30% masked data, the performance difference at the best thresho
 * 🌻 [Check DIY PU Learning code >>][1]
 * 🌻 [Check Built-in PU Learning code >>][2]
 
-😁 So the DIY solution won!
+😁 So, the DIY solution won!
 
 
 #
