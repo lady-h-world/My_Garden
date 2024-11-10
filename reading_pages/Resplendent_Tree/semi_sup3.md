@@ -63,9 +63,9 @@ Let's check performance by applying them on our 90% masked data!
 
 Clearly, the `ElkanotoPuClassifier` delivers the best overall performance. However, the DIY solution performs slightly better because, at the optimal threshold, where `pred_pos_perct` intersect with `real_pos_perct`, the DIY solution achieves a higher `known_recall`.
 
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/diypu_pulearn.png" width="908" height="611" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Resplendent_Tree_images/diypu_pulearn.png" width="1008" height="911" />
 
-All the experiments above were using 90% masked data. What does the performance look like with different mask rates?
+All the experiments above were conducted on data with 90% masking. How does the performance change with different mask rates? 😉
 
 
 #
