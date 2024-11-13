@@ -16,7 +16,7 @@ We never glimpsed his true appearance as he constantly alters his looks. Some sp
 </p>
 <p>&nbsp;</p>
 
-## Sprouts Collection Time!
+## Discovery Time!
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
