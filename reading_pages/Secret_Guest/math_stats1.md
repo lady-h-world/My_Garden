@@ -46,7 +46,7 @@ In Python code, polar coordinate is considered as a type of projection called `p
 
 ### Butterfly Dances
 
-Now, watch we use the magic of distributions to make butterflies gracefully dance before your eyes!
+Now, let's use the magic of distributions to make butterflies gracefully dance before your eyes!
 
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/butterfly_dance.png" width="1026" height="714" />
 
