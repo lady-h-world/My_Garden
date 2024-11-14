@@ -34,7 +34,7 @@ Cartesian coordinate uses (x, y) coordinate system to specify points in a plane,
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-In python code, polar coordinate is considered as a type of projection called `polar` projection. We can also change to `lambert` projection to view butterfly curve from another perspective. Isn't it beautiful?
+In Python code, polar coordinate is considered as a type of projection called `polar` projection. We can also change to `lambert` projection to view butterfly curve from another perspective. Look at the plot on the right, isn't it beautiful?
 
 🌻 [Check all the code here >>][1] 
 
