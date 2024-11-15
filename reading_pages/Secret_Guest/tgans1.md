@@ -2,7 +2,7 @@
 
 ### About GANs
 
-Generative Adversarial Network, commonly known as "GAN", is gaining increasing popularity on the Earth. They have been applied across a wide range of fields, including music generation, style transfer in paintings, the creation of realistic gaming environments, virtual try-ons in the fashion industry, deepfakes, poem writing, and more.
+Generative Adversarial Network, commonly known as "GAN", is gaining increasing popularity worldwide. They have been applied across a wide range of fields, including music generation, style transfer in paintings, the creation of realistic gaming environments, virtual try-ons in the fashion industry, deepfakes, poem writing, and more.
 
 While GANs have found extensive use in manipulating image and text data, a question arises: can they be effectively applied to tabular data? In this stop, we will explore the generation of synthetic tabular data through TGANs (Tabular GANs). Before delving into this, let's gain a brief understanding of how GANs work.
 
@@ -26,7 +26,7 @@ To understand GANs, we can start from DCGAN (Deep Convolutional GAN), as it's li
 
 <b>Step 1: train the discriminator</b>.
 
-In this step, the generator gets noise data as input and output a set of fake data labeled as "0". Meanwhile, there is a set of real data labeled as "1". Both real data and fake data are the input of discriminator. The discriminator will update its parameters after the training and output predicted probabilities (probabilities of being real class) that later sent to loss function to evaluate.
+In this step, the generator gets the noise data as input and output a set of fake data labeled as "0". Meanwhile, there is a set of real data labeled as "1". Both real data and fake data are the input of discriminator. The discriminator will update its parameters after the training and output predicted probabilities (probabilities of being the real class) that later sent to loss function to evaluate.
 
 </p>
 <p>&nbsp;</p>
@@ -37,7 +37,7 @@ In this step, the generator gets noise data as input and output a set of fake da
 
 <b>Step 2: adversarial training, train the generator</b>.
 
-Unlike standard backpropagation, where gradients should update the discriminator's parameters, in this case, the discriminator's parameters stay frozen. The gradients are directed to the generator to enhance its learning process. The trained generator produces a new set of fake data, labeling it as "1," and send to the discriminator for real class prediction.
+Unlike standard backpropagation, where gradients are used to update the discriminator's parameters, here the discriminator's parameters remain frozen. Instead, the gradients are directed toward the generator to improve its learning process. The trained generator then produces a new set of fake data, labels it as "1" and sends it to the discriminator for a real vs. fake classification.
 
 </p>
 <p>&nbsp;</p>
