@@ -1,5 +1,4 @@
 #### Setup Environment
-
 * [Follow this guidance][15] to create a virtual environment, it can simplify python packages' installation and their version control.
 * The required python version is <b>Python 3.9</b>.
 * [Follow this guidance][18] to set up required python packages.
@@ -9,7 +8,6 @@
 
 
 #### Install & Execute TGANs
-
 * <b>Install & Execute CTGAN</b>
   * CTGAN was included in `requirements.txt` and has been installed during environment setup step.
   * To generate the synthetic data only takes a few lines of code, and you can adjust [these parameters][14]. See example code below:
