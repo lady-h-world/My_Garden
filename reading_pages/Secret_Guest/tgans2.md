@@ -24,9 +24,10 @@ Disentangled Representation GANs like InforGAN, StackedGAN allow you to <b>chang
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/exp_properties.png" width="560" height="150" />
 
-Cross-Domain GANs like CycleGAN, CyCADA (Cycle-Consistent Adversarial Domain Adaptation) <b>enable the style transfer</b> of the input. Have you ever played with this popular game on the Earth? By providing a photo, you can change it to a selected painting style:
+Cross-Domain GANs like CycleGAN, CyCADA (Cycle-Consistent Adversarial Domain Adaptation) <b>enable the style transfer</b> of the input. Have you ever played with a popular game shown below? By providing a photo, you can change it to a selected painting style:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/exp_style_transfer.png" width="671" height="421" />
+
 
 #
 <p align="left">
