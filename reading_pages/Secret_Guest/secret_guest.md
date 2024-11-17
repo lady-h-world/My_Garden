@@ -22,8 +22,6 @@ We never glimpsed his true appearance as he constantly alters his looks. Some sp
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
 </p>
 
-Want to discover more about Hanashiro? [Gear up first!][6]
-
 🌱 You can draw butterfly and butterfly storms with the power of [mathematics and statistic >>][2].
 
 🌱 Hanashiro has deceptive appearances, data science also has the ability to [generate counterfeits using GANs >>][3].

@@ -5,43 +5,42 @@
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/safe_bank.png" width="216" height="202" />
   
-If you have already visited [Resplendent Tree][2], you must be familiar with our Garden Bank and its [deposit campaign data][1].
+If you have already visited [Resplendent Tree][2], you must have heard of our Garden Bank.
 
-Our Garden Bank is famous for its safety, attracting significant investments and deposits from the outside world. To safeguard customers' data, we employed a strategy to confuse hackers by interspersing real and fake data locations. Each genuine data piece has multiple look-alike fake data pieces stored in various locations, making it challenging for hackers to pinpoint the actual location of each set of real data.
+Our Garden Bank is renowned for its robust security, which has attracted substantial investments and deposits from clients cosmos-wide. To protect our customers' sensitive data, we employ an innovative strategy that confounds hackers by blending real and decoy data locations. For every genuine piece of data, we create multiple look-alike decoys stored in different locations, making it exceedingly difficult for hackers to identify the true data sources.
 
-Synthetic data generation is one of the solutions to make this strategy come true!
+One of the key technologies driving this strategy is synthetic data generation, which allows us to seamlessly create these decoys and enhance our security measures!
 </p>
 
-This dataset has:
+The deposit campaign data has:
 * 11,162 records
 * 7 numerical variables
 * 9 categorical variables
 * The target is a binary value, indicating has deposit or not
 * The target has 52.6% negative records and 47.4% positive records
 
-The experiments you're going to see are using deposit campaign data again. Let's take look at the snapshot of the real data and the generated synthetic data:
+🌻 [To get campaign data >>][3] 
+
+Let's take look at the snapshot of the real data and the generated synthetic data:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/real_vs_syn.png" width="931" height="441" />
 
-🌻 [To get campaign data >>][3] 
-
 
 #### Evaluation Metrics
+Lady H. used two methods to assess the effectiveness of the generated synthetic data.
 
-To evaluate the effectiveness of generated synthetic data, Lady H. employed 2 methods.
-
-<b>The first</b> evaluation method was to compare variables' distributions between real data and synthetic data. PSI score was used to compare continuous variable's distributions and JS Distance was used to compare discrete variable's distributions.
+<b>The first method</b> involved comparing the distributions of variables between the real data and the synthetic data. For continuous variables, the PSI (Population Stability Index) score was used, while JS (Jensen-Shannon) Distance was employed for comparing the distributions of discrete variables.
 
 PSI often employees these thresholds:
 * `PSI < 0.1`: no significant distribution change
 * `0.1 <= PSI < 0.2`: moderate distribution change
 * `PSI >= 0.2`: significant distribution change
 
-So, if we can find more variables have PSI score lower than 0.2 or even lower than 0.1, then the generated synthetic data is closer to the real data.
+Therefore, if more variables have a PSI score below 0.2, or even below 0.1, it indicates that the generated synthetic data closely resembles the real data.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/continuous_dist_comp.png" width="996" height="525" />
 
-JS Distance (or JS Divergence) can be used to compare discrete variable's distributions, it's a score between `[0, 1]`, "0" corresponds to identical distributions and "1" to absolutely different. Lady H. was using "0.1" as the threshold, if more variables got JS Distance lower than 0.1, then the generated synthetic data is closer to the real data.
+JS Distance can be used to compare the distributions of discrete variables, yielding a score between 0 and 1, where 0 indicates identical distributions and 1 indicates completely different ones. Lady H. set a threshold of 0.1, if more variables have a JS Distance below 0.1, it suggests that the generated synthetic data closely matches the real data.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/discrete_dist_comp.png" width="908" height="503" />
 
@@ -49,7 +48,7 @@ JS Distance (or JS Divergence) can be used to compare discrete variable's distri
 
 🌻 [See example code >>][4] 
 
-Lady H. used the second evaluation method in most experiments after she found it is more effective in comparing the real data and the synthetic data.
+Lady H. used the second evaluation method in most experiments after she found it is more effective in making the comparison.
 
 #
 <p align="left">
