@@ -12,12 +12,10 @@ Have you ever used synthetic tabular data? Welcome to share your experience or i
 
 
 ### Tabular GANs
-
 Numerous GANs (Generative Adversarial Networks) have been applied to image and text data. However, given the significance role that tabular data plays in data science, can GANs be employed to generate synthetic tabular data? Indeed, there are, and these GANs are called as TGANs (Tabular GANs). 
 
 
 #### CTGAN
-
 CTGAN (Conditional Tabular GAN) was [published in 2019][2], and later multiple promising Tabular GANs were built upon it, so we can consider it as the vanilla version of Tabular GANs!
 
 The architecture of CTGAN can be summarized as below:
@@ -52,7 +50,6 @@ Traditionally, the generator may not be trained well if there are imbalanced dis
 
 
 #### CTABGAN+
-
 CTABGAN+ was [published in 2022][3]. See its architecture below, looks quite like CTGAN's architectures, right? Comparing with CTGAN, it has made 2 major changes. Let's look into details!
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Secret_Guest_images/ctabgan+.png" width="961" height="330" />
