@@ -19,7 +19,7 @@ The crystal ball has the ability to generate data seemingly out of thin air too!
 
 
 ## Crystal Magic
-Besides getting the data, Lady H. has found a few more power this crystal ball carries. Check each story below to see more details!
+Besides getting the data, Lady H. has found a few more power this crystal ball carries!
 
 * [Dimension Reduction][8]
 
