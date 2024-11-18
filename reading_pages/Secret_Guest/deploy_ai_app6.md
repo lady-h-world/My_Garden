@@ -32,6 +32,6 @@ That's it! We've completed all the steps to deploy an AI-powered app. Now it's y
 
 [1]:https://github.com/lady-h-world/My_Garden_LocalStream_App
 [2]:https://share.streamlit.io/signup
-[3]:https://github.com/lady-h-world/My_Garden/discussions/categories/show-and-tell
+[3]:https://github.com/lady-h-world/My_Garden/discussions/categories/open-end-discussions
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/deploy_ai_app7.md
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/deploy_ai_app5.md

@@ -38,4 +38,4 @@ Also, keep in mind, friends, that sometimes you need to take a good rest first. 
 [1]:https://github.com/langchain-ai/langchain
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/secret_guest.md#sprouts-collection-time
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Secret_Guest/deploy_ai_app6.md
-[4]:https://github.com/lady-h-world/My_Garden/discussions/categories/comments
+[4]:https://github.com/lady-h-world/My_Garden/discussions/categories/open-end-discussions
