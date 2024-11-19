@@ -21,7 +21,7 @@ The data input used here is our Garden Bank's [campaign data][2]. Before dimensi
 
 PCA (Principal Component Analysis) is a popular dimensional reduction method. It outputs several principle components, PC1, PC2, ..., PCn. 
 
-Consider each principal component as a line in the cartesian coordinate system. The objective is to minimize the distances from the data points to their projections on this line, so that the spread of data projections on this line is maximized, leading to the maximization of data variance in this dimension. PC1 captures the highest proportion of data variance, followed by PC2, which captures the highest proportion of the remaining variance. This pattern continues with all subsequent principal components (PCx). This allows PCA to capture the maximum amount of variance in each dimension, sequentially reducing overall information loss.
+Each principal component can be thought of as a line in the Cartesian coordinate system. The objective is to minimize the distances between the data points and their projections onto this line, while maximizing the spread (variance) of the projected data along the line. By doing so, the principal component captures the maximum possible variance in this new dimension. PC1 captures the largest proportion of the data's variance, followed by PC2, which captures the highest proportion of the remaining variance. This pattern continues with each subsequent principal component (PCx). This approach allows PCA to sequentially capture the maximum possible variance in each dimension, thereby minimizing overall information loss.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/about_pca.png" width="1000" height="500" />
 
@@ -37,7 +37,7 @@ The generated principle components and their explained variance look as below:
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/pca16.png" width="914" height="460" />
 
-Then if you choose `x` for `n_components` within its limit (16 in this case), PCA will keep the same variance for all the 16 principle components but output the top x ones. For example, if we set `n_components = 3`, the output 3 principle components have the save variance as the top 3 ones plotted above.
+Additionally, if you choose a value `x` for `n_components` within its limit (16 in this case), PCA will retain the same variance for all 16 principal components but only output the top x components. For instance, if we set `n_components = 3`, the resulting 3 principal components will have the same variance as the top 3 components shown in the plot above.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/pca3_code.png" width="391" height="84" />
 
@@ -49,7 +49,8 @@ If we plot the top 3 principle components in 3D space, and color the 2 classes i
 
 🌻 [Check PCA code here >>][1]
 
-Can we find a dimensional reduction method that can differentiate the 2 classes better in 3D space? Or the data can't be differentiate well in a 3D space? Let's explore more!
+Is there a dimensional reduction method that can better separate the two classes in 3D space, or is it simply not possible to differentiate them effectively in three dimensions? Let’s explore further to find out!
+
 
 #
 <p align="left">
@@ -63,7 +64,6 @@ Can we find a dimensional reduction method that can differentiate the 2 classes 
 </p>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<< Back to Crystal Power][5]
- 
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/magic_dimensional_reduction.ipynb
