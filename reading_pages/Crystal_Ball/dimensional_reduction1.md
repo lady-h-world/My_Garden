@@ -1,21 +1,18 @@
 ## Dimensional Reduction
+When visualizing data, each column represents a dimension. For instance, data plotted on the x-axis and y-axis is considered 2-dimensional, while data plotted on the x, y, and z axes is 3-dimensional.
 
-When we try to visualize the data, each column is considered as a dimension. For example, data ploted on x-axis and y-axis is 2 dimensional data, and data ploted on x-axis, y-axis and z-axis is 3 dimensional data.
-
-To plot the data into cartesian coordinate (x, y coordinate system) is a straightforward way to understand the data. However, for data with more than 3 dimensions, such plot is challenging. With crystal ball's power, Lady H. can project higher dimensional data into lower dimensions while keeping the original information as much as possible. This power is called as "Dimensional Reduction".
+Plotting data on a Cartesian coordinate system (x, y) is a simple and intuitive way to understand it. However, visualizing data with more than 3 dimensions becomes challenging. Thanks to the power of the Crystal Ball, Lady H. can project higher-dimensional data into lower dimensions while preserving as much of the original information as possible. This ability is known as "Dimensional Reduction".
 
 
 ### About the Data
-
-The data input used here is our Garden Bank's campaign data, [described here][2].
-Before dimensional reduction, we need to do some data preprocessing first:
-1. Categorical features need to be coverted into numerical values, so that dimensional reduction algorithms can consume them. A common practice is through "encoding", such as one-hot encoding. Lady H. often uses [Target Encoding][3], this method sometimes helps improve model performance, because when converting the categorical values into numerical, it considers both prior knowledge of the target over all the training data and the posterior knowledge of the target given each categorical value. See this encoding results below:
+The data input used here is our Garden Bank's [campaign data][2]. Before dimensional reduction, we need to do some data preprocessing first:
+1. Categorical features need to be coverted into numerical values, so that dimensional reduction algorithms can consume them. A common practice is through "encoding", such as one-hot encoding. Lady H. often uses [Target Encoding][3], a technique that can sometimes enhance model performance. This method converts categorical values into numerical ones by incorporating both the prior knowledge of the target across all training data and the posterior knowledge of the target given each specific categorical value. See the results of this encoding below:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/cat2num.png" width="859" height="440" />
 </p>
 
-2. Next is to standardize all the numerical features into the same scale, so that features with wider ranges won't dominate the distance metric. This step is necessary before using most of the dimensional reduction algorithms, because they measure euclidean distances.
+2. The next step is to standardize all numerical features to the same scale, ensuring that features with larger ranges do not dominate the distance metrics. This step is crucial before applying most dimensional reduction algorithms, as they rely on Euclidean distances.
 
 🌻 [Check data preprocessing code here >>][1]
 
