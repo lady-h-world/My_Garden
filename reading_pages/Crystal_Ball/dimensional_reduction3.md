@@ -1,9 +1,10 @@
 ### t-SNE
 
-Similar to Isomap, t-SNE (t-Distributed Stochastic Neighbor Embedding) also has the goal to project the data into a lower dimensional space while preserving the local neighborhoods' information. But the way it achieves this goal is different, let's look deeper into t-SNE's approach:
-1. It measures the similarity of data points by placing all the points on a <b>Normal distribution</b> curve, and calculates the distances between the point of interest and other points. This is done for every data point, and output a <b>matrix</b> to record the similarity score of each data pair.
-2. Then t-SNE randomly maps the data into a lower dimensional space, and calculates the similarity using <b>t-distribution</b>. The reason it uses t-distribution in this step rather than Normal distribution, is because t-distribution has flatter shape with higher tails, which can help spread the data out. This step will output a similarity matrix too.
-3. Finally t-SNE will apply gradient descent to minimize KL divergence (Kullback–Leibler divergence) to make the 2nd similarity matrix close to the 1st one through an iterative approach until reaching to the max number of iterations. In each iteration, data points will move toward their closest neighbors and away from the distant ones recorded in step 1.
+Similar to Isomap, t-SNE (t-Distributed Stochastic Neighbor Embedding) aims to project data into a lower-dimensional space while preserving the local neighborhood information. However, t-SNE takes a different approach to achieve this goal. Let's explore how t-SNE works:
+
+1. <b>Similarity Calculation with Normal Distribution</b>: For each data point, t-SNE measures the similarity to all other points by placing them on a <b>normal distribution curve</b> and calculating the distances. This process is repeated for every data point, resulting in a matrix that records the similarity scores between all data pairs.
+2. <b>Mapping to Lower Dimensions with t-Distribution</b>: t-SNE then randomly maps the data into a lower-dimensional space and recalculates the similarities using a <b>t-distribution</b> instead of a normal distribution. The t-distribution, with its flatter shape and higher tails, helps spread the data points further apart. This step produces another similarity matrix in the lower-dimensional space.
+3. <b>Minimizing KL Divergence</b>: Finally, t-SNE uses gradient descent to minimize the Kullback-Leibler (KL) divergence between the two similarity matrices (the one from step 1 and the one from step 2). Through an iterative process, t-SNE adjusts the positions of the data points, moving them closer to their nearest neighbors while pushing them away from distant ones, as recorded in the first matrix. This optimization continues until it reaches the maximum number of iterations, resulting in a lower-dimensional representation that preserves the original local neighborhood structure.
 
 To understand more details of t-SNE, check [here][6].
 
@@ -25,8 +26,8 @@ The data plot looks like:
 LLE (Locally Linear Embedding) also projects the data into a lower dimensional space while preserving the local neighborhoods' information. 
 
 1. Similar to Isomap, it applies KNN to find the k nearest neighbors for every data point.
-2. Then it builds a cost function to minimize the total absolute differences between each data point and their weighted neighbors. The sum of neighbors' weights is 1 for each data point, and a weight matrix will be constructed where each data point's weights are determined by minimizing the cost function.
-3. When looking for a lower dimensional space, it will try to build a similar cost functions where the data points are replaced by their lower dimensional representations. The weights kept the same as step 2, and LLE will find a lower dimension that can minimize the new cost function.
+2. It then constructs a cost function to minimize the total absolute differences between each data point and its weighted neighbors. The sum of the neighbors' weights is set to 1 for each data point, and a weight matrix is created where each data point's weights are determined by minimizing the cost function.
+3. When seeking a lower-dimensional representation, LLE tries to build a similar cost function where the data points are replaced by their lower-dimensional representations. The weights from step 2 are preserved, and LLE finds the lower-dimensional space that minimizes this new cost function.
 
 To understand more details of LLE, check [here][2].
 

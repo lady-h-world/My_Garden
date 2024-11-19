@@ -1,5 +1,4 @@
 ### UMAP
-
 UMAP (Uniform Manifold Approximation and Projection) is a dimensional reduction method that considers <b>both local and global structures</b>. To give a brief summary on how does UMAP work:
 1. <b>Construct a Neighborhood Graph</b>: For each data point, identify its nearest neighbors based on a distance metric (such as Euclidean distance). UMAP uses a local neighborhood approach, meaning it considers only a fixed number of nearest neighbors for each point.
 2. <b>Fuzzy-Simplicial Set Approximation</b>: Convert the nearest neighbors graph into a fuzzy representation of a simplicial set. This involves determining the likelihood of each pair of data points being connected by an edge in the low-dimensional representation.

@@ -1,13 +1,13 @@
 ### LDA
 
-LDA (Linear Discriminant Analysis) has a clear goal, that is to maximize the separatability of the classes in the label, while reducing the dimensions.
+LDA (Linear Discriminant Analysis) has a clear goal, that is to maximize the separatability of the labeled classes, while reducing the dimensions.
 
 To better understand how does LDA work, we can compare with PCA:
 * PCA is unsupervised learning while LDA is supervised, you need to provide data labels to LDA.
 * PCA looks for a new dimension that can maximize the data spread on this new dimension. LDA looks for a new dimension that can maximize the distances between classes and to minimize the variance within each class.
   * For 2 classes, the distance means the differences between the average of the 2 classes.
   * For 3 or more classes, LDA find a central point of all the data, then measures the distance between each class' average and the central point.
-  * LDA can lose more data variance than PCA.
+  * LDA can lose more data variance than PCA, as its primary focus is class separation rather than preserving overall data variance.
 
 The dimensions of LDA's output is `min(the number of features of data input, the number of classes - 1)`. Therefore, our bank campaign data will be reduced to 1 dimension after applying LDA. Let's look at how did LDA separate the 2 classes:
 
@@ -17,13 +17,13 @@ The dimensions of LDA's output is `min(the number of features of data input, the
 
 
 ### Isomap
+Both PCA and LDA are linear methods, meaning they look for a hyperplane (line or plane) to separate the data. In contrast, Isomap is a non-linear method that does not rely on such a hyperplane. Instead, it uses non-linear techniques like KNN (K-Nearest Neighbors).
 
-Both PCA and LDA are linear methods, meaning they look for a hyperplane (line or curve) to separate the data. Isomap is non-linear as such hyperplane doesn't exist in its algorithm, instead, it applies non-linear method such as KNN (K-Nearest Neighbors). 
+Let's dive deeper into how Isomap works:
 
-Let's dive deeper to understand how does Isomap work:
-1. It applies KNN to find k nearest neighbors for every data point.
-2. Then it builds a neighborhood graph to maintain the connections between neighbours. Non neighbours are not connected.
-3. Apply MDS (multidimensional scaling) to compute each data pair's shortest geodesic distance on the graph, and project to a lower dimension while maintaining the between-point distances.
+1. It uses KNN to find the K nearest neighbors for each data point.
+2. It then constructs a neighborhood graph, connecting only neighboring points while leaving non-neighbors unconnected.
+3. Finally, it applies MDS (Multidimensional Scaling) to compute the shortest geodesic distances between all data pairs on the graph and projects the data into a lower-dimensional space while preserving these between-point distances.
 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Crystal_Ball_images/camapign_dim_redu_images/about_isomap.png" width="1000" height="379" />
 
