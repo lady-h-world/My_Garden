@@ -1,6 +1,7 @@
 ### UMAP
-UMAP (Uniform Manifold Approximation and Projection) is a dimensional reduction method that considers <b>both local and global structures</b>. To give a brief summary on how does UMAP work:
-1. <b>Construct a Neighborhood Graph</b>: For each data point, identify its nearest neighbors based on a distance metric (such as Euclidean distance). UMAP uses a local neighborhood approach, meaning it considers only a fixed number of nearest neighbors for each point.
+UMAP (Uniform Manifold Approximation and Projection) is a dimensional reduction method that considers <b>both local and global structures</b>. Here's a brief summary of how UMAP works:
+
+1. <b>Construct a Neighborhood Graph</b>: For each data point, identify its nearest neighbors using a distance metric (e.g., Euclidean distance). UMAP focuses on a local neighborhood approach, considering only a fixed number of nearest neighbors for each point.
 2. <b>Fuzzy-Simplicial Set Approximation</b>: Convert the nearest neighbors graph into a fuzzy representation of a simplicial set. This involves determining the likelihood of each pair of data points being connected by an edge in the low-dimensional representation.
 3. <b>Optimize Low-Dimensional Embedding</b>: Optimize the low-dimensional representation of the data by minimizing the mismatch between the fuzzy-simplicial set in the original data space and the low-dimensional space. This optimization is achieved through stochastic gradient descent.
 4. <b>Preserve Global and Local Structure</b>: Local structure is preserved by ensuring that nearby points in the original space remain close in the low-dimensional space. Global structure is preserved by maintaining the broader connectivity patterns in the data.
@@ -39,7 +40,7 @@ After seeing all these methods, how do you plan to do dimensional reduction in t
 
 
 [1]:https://umap-learn.readthedocs.io/en/latest/how_umap_works.html
-[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/magic_dimensional_reduction.ipynb
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/magic_dimensional_reduction.ipynb
 [3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/dimensional_reduction3.md
 [4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Crystal_Ball/crystal_power.md
-[5]:https://github.com/lady-h-world/My_Garden/discussions
+[5]:https://github.com/lady-h-world/My_Garden/discussions/categories/open-end-discussions
