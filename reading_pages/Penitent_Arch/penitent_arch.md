@@ -7,16 +7,12 @@
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/penitent_arch.png" width="361" height="489" />
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 
-What is evolution?
+This is the final stop on your journey, the Penitent Arch. It's the gateway that bridges our garden and Purgatory. Beyond this door lies the place of our most challenging lessons. To return home, you must pass through Purgatory and complete your learnings there. This journey will be more grueling than any of the other stops you’ve visited in the garden, but enduring it will elevate your skills to a whole new level.
 
-No matter how magical a garden plant may be, it follows a life cycle of birth, growth, bloom, decline, and death. In each cycle, when life reaches the blooming point, it also marks the onset of decline. However, when it reaches the lowest point (death), it also signifies the beginning of rebirth.
+Look closely at the lotus-skeleton bathed in the halo. That’s our garden’s totem. It symbolizes the cycles of life’s struggles and triumphs, reminding us that beauty and growth often emerge from hardship.
 
-Antient Chinese introduced the concept of <b>Yin (陰) Yang (陽)</b> to illustrate this cycle. "Yin" represents the low point of the cycle, while "Yang" represents the high point. It has been regarded as a universal law governing everything. Our garden totem, the lotus-skeleton, also symbolizes this cycle!
-
-Life is full of ups and downs. The low moments propel us to self-reflect and glean lessons from the setbacks, while the high moments reward our diligent efforts. Through experiencing this cycle of ups and downs repeatedly, human beings continually improve. This is the process of evolution.
-
-Similarly, our garden plants owe their uniqueness and magical powers to the process of evolution, and they continue to undergo further developments and advancements.
 
 </p>
 <p>&nbsp;</p>
