@@ -8,6 +8,7 @@
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/penitent_arch.png" width="361" height="489" />
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 
 This is the final stop on your journey, the Penitent Arch. It's the gateway that bridges our garden and Purgatory. Beyond this door lies the place of our most challenging lessons. To return home, you must pass through Purgatory and complete your learnings there. This journey will be more grueling than any of the other stops you’ve visited in the garden, but enduring it will elevate your skills to a whole new level.
 
@@ -15,6 +16,9 @@ Look closely at the lotus-skeleton bathed in the halo. That’s our garden’s t
 
 
 </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
