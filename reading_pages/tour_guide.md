@@ -15,8 +15,8 @@
 * [Garden Market][4]
 * [Replendent Tree][9]
 * [Secret Guest][12]
-* [Penitent Arch][5]
 * [Crystal Ball][10]
+* [Penitent Arch][5]
 * [Garden Museum][6]
 
 </p>
