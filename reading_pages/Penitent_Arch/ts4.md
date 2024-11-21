@@ -73,6 +73,6 @@ Comparing with univariate time series, there is more fun we can explore in multi
 
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/code/crystal_ball/data_collector/generate_multivariate_ts.ipynb
-[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/yinyang/past_ts_exploration.ipynb
-[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts5.md
-[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts3.md
+[2]:https://github.com/lady-h-world/My_Garden/blob/main/code/penitent_arch/past_ts_exploration.ipynb
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Penitent_Arch/ts5.md
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Penitent_Arch/ts3.md

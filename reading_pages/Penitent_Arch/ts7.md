@@ -87,5 +87,5 @@ Does this mean Greykite is better than Kats on everything? Let's see! 😉
 [2]:https://github.com/linkedin/greykite
 [3]:https://github.com/facebookresearch/Kats/blob/fix_plots/requirements.txt#L9
 [4]:https://github.com/facebookresearch/Kats/issues/194
-[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts8.md
-[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts6.md
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Penitent_Arch/ts8.md
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Penitent_Arch/ts6.md

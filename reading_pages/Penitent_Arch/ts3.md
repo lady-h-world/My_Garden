@@ -51,6 +51,6 @@ Does this mean, when a time series and its residuals are both stationary, the or
 [3]:https://en.wikipedia.org/wiki/Approximate_entropy
 [4]:https://en.wikipedia.org/wiki/Sample_entropy
 [5]:https://github.com/lady-h-world/My_Garden/discussions/categories/ideas
-[6]:https://github.com/lady-h-world/My_Garden/blob/main/code/yinyang/past_ts_exploration.ipynb
-[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts4.md
-[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/YinYang/ts2.md
+[6]:https://github.com/lady-h-world/My_Garden/blob/main/code/penitent_arch/past_ts_exploration.ipynb
+[7]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Penitent_Arch/ts4.md
+[8]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Penitent_Arch/ts2.md
