@@ -23,19 +23,17 @@ Look closely at the lotus-skeleton bathed in the halo. That’s our garden’s t
 <p>&nbsp;</p>
 
 
-## Data Science in Time Series
+## Time to Cross the Penitent Arch
+In data science, we often study cycles by identifying recurring patterns over time. This helps us gain deeper insights into the data and achieve better forecasting outcomes. The analysis of a sequence of data indexed by time is known as <b>Time Series</b> analysis.
 
-In data science, we also study a type of "cycle" by identifying recurring patterns over time. This exploration aids in gaining deeper insights into the data and achieving improved forecasting results. The analysis of a sequence of data indexed by time is referred to as 'Time Series'.
-
-<p align="center">🌱 <b>Sprouts Collection Time!</b> 🌱</p>
-
-The sprout's superpower at this stop includes:
+During your time in Purgatory, you will explore:
 
 * Data Exploration in Time Series
-* Time Series Detection of Trend, Changepoints, Outliers and Seasonality
+* Detection of Trends, Changepoints, Outliers, and Seasonality
 * Time Series Forecasting
 
-Now are you excited to collect the magical sprouts? Let's go!
+Excited? Nervous? Either way, it’s time for you to go home!
+
 
 #
 <p align="left">
