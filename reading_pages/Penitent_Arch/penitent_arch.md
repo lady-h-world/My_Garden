@@ -10,7 +10,7 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-This is the final stop on your journey, the Penitent Arch. It's the gateway that bridges our garden and Purgatory. Beyond this door lies the place of our most challenging lessons. To return home, you must pass through Purgatory and complete your learnings there. This journey will be more grueling than any of the other stops you’ve visited in the garden, but enduring it will elevate your skills to a whole new level.
+This is the final stop of your journey, the Penitent Arch. It's the gateway that bridges our garden and Purgatory. Beyond this door lies the place of our most challenging lessons. To return home, you must pass through Purgatory and complete your learnings there. This journey will be more grueling than any of the other stops you’ve visited in the garden, but enduring it will elevate your skills to a whole new level.
 
 Look closely at the lotus-skeleton bathed in the halo. That’s our garden’s totem. It symbolizes the cycles of life’s struggles and triumphs, reminding us that beauty and growth often emerge from hardship.
 
