@@ -36,7 +36,7 @@ To analyze a time series sequence, we often begin with <b>decomposition</b>, a p
   * Assumes the time series value at time `t` is the sum of the trend (`T`), seasonality (`S`), and residuals (`E`) at time `t`. Typically used when the trend component is time-dependent but seasonality remains constant in amplitude and frequency over time.
 
 * <b>Multiplicative Method</b>:
-  * Formula: Y[t] = T[t] * S[t] * E[t
+  * Formula: `Y[t] = T[t] * S[t] * E[t]`
   * Generally applied when the seasonality varies in amplitude over time.
 
 <p align="left">
@@ -59,8 +59,9 @@ This is the result of the <b>multiplicative decomposition</b>. At first glance, 
 
 <b>Observations</b>:
 * The seasonality repeats almost every 7.5 days, that's around 1 week.
-* Since the seasonality is not constant along the time, this time series might be more suitable to use multiplication decomposition.
-* The residuals tend to have larger fluctuations between April and July, or at the beginning of a new year or at the beginning of October, this insight might be useful in later feature enggineering for model forecasting.
+* The seasonality is constant.
+* The residuals tend to have larger fluctuations between April and July, or at the beginning of a new year or at the beginning of October, this insight might be useful in later feature engineering for model forecasting.
+
 
 #
 <p align="left">
