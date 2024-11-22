@@ -1,23 +1,22 @@
 # Time Series Data Exploration
+Unlike traditional datasets, time series data contains hidden temporal patterns, offering a unique and engaging experience during data exploration. Let’s explore some popular and practical methods!
 
-Comparing with traditional datasets, time series data has hidden time patterns, which creates a different fun experience in data exploration! Let's looks at some popular and practical methods.
 
 ## Explore Univariate Time Series
 
 ### About the Data
 
-Our perfume sales data is a typical time series data. It's also a univariate time series data, meaning there is only 1 time dependent variable ("Daily_Sales" in this example). See the example below:
+Our perfume sales data is a classic example of time series data. Specifically, it is a univariate time series, meaning there is only one time-dependent variable (in this case, `Daily_Sales`). Take a look at the example below:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/ts_sales_exp.png" width="170" height="184" />
 </p>
 
-Here's the sales plot. As we can see, there is an obvious repeated up and down pattern in the data:
+Here’s the sales plot. As you can see, the data shows a clear, recurring pattern of ups and downs:
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/daily_sales_plot.png" width="1092" height="293" />
 </p>
-
 
 🌻 [To get sales time series data >>][1]
 
