@@ -10,7 +10,7 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-This is the final stop of your journey, the Penitent Arch. It's the gateway that bridges our garden and Purgatory. Beyond this door lies the place of our most challenging lessons. To return home, you must pass through Purgatory and complete your learnings there. This journey will be more grueling than any of the other stops you’ve visited in the garden, but enduring it will elevate your skills to a whole new level.
+This is the final stop of your journey, the Penitent Arch. It's the gateway that bridges our garden and Purgatory. Beyond this door lies the place of our most challenging lessons. To return home, you must pass through Purgatory and complete your learnings there. This journey will be more grueling than any of the other spots you’ve visited in the garden, but enduring it will elevate your skills to a whole new level.
 
 Look closely at the lotus-skeleton bathed in the halo. That’s our garden’s totem. It symbolizes the cycles of life’s struggles and triumphs, reminding us that beauty and growth often emerge from hardship.
 
@@ -26,13 +26,13 @@ Look closely at the lotus-skeleton bathed in the halo. That’s our garden’s t
 ## Time to Cross the Penitent Arch
 In data science, we often study cycles by identifying recurring patterns over time. This helps us gain deeper insights into the data and achieve better forecasting outcomes. The analysis of a sequence of data indexed by time is known as <b>Time Series</b> analysis.
 
-During your time in Purgatory, you will explore:
+During your time in Purgatory, you will learn:
 
 * Data Exploration in Time Series
 * Detection of Trends, Changepoints, Outliers, and Seasonality
 * Time Series Forecasting
 
-Excited? Nervous? Either way, it’s time for you to go home!
+Excited? Nervous? Either way, it’s time to enter the gate!
 
 
 #
