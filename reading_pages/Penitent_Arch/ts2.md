@@ -1,12 +1,15 @@
 ### Stationary Analysis on Univariate Time Series
+In the field of time series analysis, certain statistical methods, such as ARIMA, assume that the data is stationary. Therefore, it is often necessary to transform the data into a stationary form before applying these methods. A time series is considered "stationary" if it has a constant mean and variance over time. In other words, a stationary time series is not influenced by time but exhibits consistent statistical properties throughout."
 
-When we say a time series is "stationary", it means the time series has constant mean, variation throughout the time. This also means stationary time series is time independent. There are many statistical methods (such as ARIMA) assume the data is stationary, therefore we often need to convert the data to stationary before applying these statistical methods on the data.
+To determine whether a time series is stationary, Lady H. typically uses three methods together:
 
-To check whether a time series sequence is stationary, Lady H. often applies 3 methods together:
-* <b>Plot the rolling mean and rolling standard deviation of the time series</b>. Ideally, if the rolling mean and rolling standard deviation appear to be constant, it means the data has constant mean and variation along the time, and highly likely to be stationary. But our judgement on being "constant" through visualization can be biased, we need to look into more details.
-  * To get a "rolling" value, we often calculate the value within a smaller time window, then move this window along the time series so that we will get a list of values. This smaller window is known as the "rolling window". 
-* <b>Augmented Dickey-Fuller (ADF) Test</b> checks differencing stationary. 
-* <b>KPSS Test</b> checks trending stationary. 
+1. <b>Plotting the rolling mean and rolling standard deviation</b>: This involves visualizing the rolling mean and standard deviation over time. If they appear constant, it suggests that the time series has a stable mean and variance, making it likely stationary. 
+  * A "rolling" value is calculated using a smaller time window, which is moved along the time series to produce a series of values. This smaller window is referred to as the "rolling window."
+  * However, visual judgment of constancy can be subjective. To confirm, more rigorous tests like the ADF and KPSS tests should also be applied.
+2. <b>Augmented Dickey-Fuller (ADF) Test</b>: This statistical test checks for differencing stationary by focusing on whether the data is stationary after differencing. 
+3. <b>KPSS Test</b>: This test examines whether the time series is stationary around a deterministic trend (trend stationary).
+
+By combining these methods, a more reliable assessment of stationarity can be made.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/notes/stationary_2.png" width="1000" height="110" />
