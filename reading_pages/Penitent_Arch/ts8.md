@@ -33,7 +33,7 @@ Similarly, here's the plot of decreasing trend detection:
 Do you feel the above plots are too intense? If you want to get less points detected, there're a few ways to try:
 * Reduce `threshold` value to reduce the detection intensity.
 * Increase the `window_size`.
-* Keep `freq=None` as shown below, so that there is no rolling average smoothing and the detected trend points might become lower, since small fluctuations had been smoothed out.
+* Keep `freq=None` as shown below, so that there is no rolling average smoothing and the detected trend points might become lower, since some fluctuations had been kept.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/mk_no_freq.png" width="1084" height="522" />
