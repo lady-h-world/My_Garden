@@ -8,9 +8,12 @@
 <p>&nbsp;</p>
 
 You've made it halfway through Purgatory, and that's an incredible achievement! The most valuable learnings never have short cut, but they are the ones that shape us the most. Keep your patience, stay positive, and keep pushing forward!
-
-
 </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 
 #
