@@ -3,23 +3,20 @@
 <p>
 <img align="right" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/kats_vs_greykite.png" width="234" height="263" /></p>
 
-After data exploration, often times we want to dive deeper into the hidden patterns in time series, such as trend, seasonality, changepoints, outliers, etc. Some of these insights not only helps understand the time series better, but can help later model forecasting too.
+After exploring the data, we often dive deeper into time series patterns like trend, seasonality, changepoints, and outliers. These insights not only improve understanding but also enhance forecasting models.
 
 To do these detections, Lady H. has experimented with 2 latest popular time series toolkits, Kats and Greykite. 
 
-* [Kats][1] is an open source time series toolkit developped by Facebook Research.
-* [Greykite][2] provides a framework for time series forecasting with its flagship algorithm Silverkite, it also provides exploratory analysis on time series.
+* [Kats][1] is an open-source time series toolkit from Facebook Research.
+* [Greykite][2] is a framework for forecasting with its flagship Silverkite algorithm, also supporting exploratory analysis.
 
-Which is a better choice? Or when to use what? <b>Kats vs Greykite!</b> The competition begins!
+Which is the better choice? Let the <b>Kats vs. Greykite</b> competition begin!
 
 
 ## Installation
 
 ### Install Kats
-
-Kats doesn't update as frequent as many other popular open source libraries. 
-
-According to Lady H.'s observations, Kats stayed at version 0.1.0 for months without any update. Such a low updating frequency is rare among active open source libraries, especially it's a library from a giant company.
+Kats doesn't update as frequent as many other popular open source libraries. [Check its release history][7] 😉.
 
 The installation of Kats was tricky, and the problems often happened in Prophet related features.
 
@@ -37,7 +34,7 @@ Wondering why better to manually install this library? Lady H. has multiple reas
 
 First of all, conflicting library versions can cause problems. For example, as we can see [Kats requires the installed Prophet to be a specific version][3], but in order to use Prophet, you need to successfully build it first. What happened to Lady H. was, the Prophet version she could built had to be higher than the version required by Kats. So, in order to install Kats, she had to change Kats' `requirements.txt` to make Prophet's version align with her built version. However, the risk of doing this is, you might face problems when calling certain Kats' functions later...
 
-Another benefit of installing Kats manually is, you might need to fix some bugs in Kats yourself in order to keep using a function... [See what happened to Lady H.][4]
+Another benefit of installing Kats manually is, you might need to fix some bugs in Kats yourself in order to keep using a function... [See what happened to Lady H.][4], she finally implemented the function herself.
 
 Moreover, here're a few more installation you might need in order to use Kats:
 * `pip install attr`, adding "attr" in Kats' requirememts.txt may not work...
@@ -65,9 +62,7 @@ By comparison, Greykite is more flexible. You can keep the data input as pandas 
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/greykite_input.png" width="806" height="364" />
 </p>
 
-Greykite has obviously better user experience, the problem in Kats is caused by product design or software design? Lady H. thinks it's both. Lots of giant companies don't have a good lead in product or software design, but because these companies still make lots of money, user experience problems stay there for a longer time. Sign... 😔
-
-Does this mean Greykite is better than Kats on everything? Let's see! 😉
+Greykite has obviously better user experience, the problem in Kats is caused by product design or software design? Lady H. thinks it's both. Does this mean Greykite is better than Kats on everything? Let's see! 😉
 
 #
 <p align="left">
@@ -89,3 +84,4 @@ Does this mean Greykite is better than Kats on everything? Let's see! 😉
 [4]:https://github.com/facebookresearch/Kats/issues/194
 [5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Penitent_Arch/ts8.md
 [6]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Penitent_Arch/ts6.md
+[7]:https://github.com/facebookresearch/Kats/releases
