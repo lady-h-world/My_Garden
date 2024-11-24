@@ -1,7 +1,7 @@
 ## Trend Detection
 Trend detection aims to identify the data points where an increasing or decreasing trend begins. This functionality is available in Kats but is not offered in Greykite.
 
-Kats mainly uses the Mann-Kendall (M-K) Test for trend detection. The M-K test evaluates trends in a time series by calculating the differences between each pair of time points `y_t` and `y_i` (t>i) within the time window. It sums up the signs of these differences to compute the S-statistic. A large positive S indicates an increasing trend, while a large negative S indicates a decreasing trend. The Mann-Kendall test identifies whether a monotonic trend exists in the time series but does not determine the specific time points where trends increase or decrease.
+Kats mainly uses the Mann-Kendall (M-K) Test for trend detection. The M-K test evaluates trends in a time series by calculating the differences between each pair of time points `y_t` and `y_i` (t>i) within the time window. It sums up the signs of these differences to compute the S-statistic. A large positive S indicates an increasing trend, while a large negative S indicates a decreasing trend. When such difference reaches to a local lowest or highest point, that's where Kats locates the trend point.
 
 Additionally, Kats offers a Seasonal Mann-Kendall (M-K) Test for detecting seasonal trends. This test applies the M-K method separately within each season. For instance, in the case of monthly seasonality, the signs of differences for January observations are compared only with other January observations, with no comparisons made across different months.
 
