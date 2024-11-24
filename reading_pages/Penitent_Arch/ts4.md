@@ -17,7 +17,7 @@ Here's the data sample of a greenhouse's data:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/multi_ts_sample.png" width="590" height="163" />
 </p>
 
-The 5 variables are recorded almost every 1 minute. If we take a look at each variable throughout the time, different variables present different trend and seasonality patterns, except humidity and humidity ratio are having almost the same curve shapes.
+The 5 variables are recorded nearly every minute. When we examine each variable over time, they display distinct trends and seasonal patterns, except for humidity and humidity ratio, which exhibit almost identical curve shapes.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/multi_ts_plot1.png" width="1062" height="921" />
