@@ -3,7 +3,6 @@
 As we saw in trend detection, the detected output are time points where the trend changes. Changepoint detection is also a method to detect time points, but the point indicates where the probability distribution of a time series changes. In some libraries such as Greykite, trend detection is included in its changepoint detection. In Kats, they are seperated. Let's take a look at Kats changepoint detection first.
 
 ### Kats Changepoint Detection
-
 The experiments for Kats changepoint detection are shown with humidity and temperature time series data.
 
 <p align="left">
@@ -14,16 +13,13 @@ The experiments for Kats changepoint detection are shown with humidity and tempe
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/detection/temperature_input.png" width="1074" height="158" />
 </p>
 
-Wondering why sales data is not shown here? Because Kats changepoint detection didn't work well on our sales data, the output was too bad to be used in the demo... 😅
 
-#### CUSUM Detector
-
-CUSUM Detector detects the up or down shift of means in the time series. Starting from an initial point, it calculates the CUSUM of means iteratively, and locate a changepoint where its previous CUSUM is maximized or minimized. 
+#### Kats' CUSUM Detector
+CUSUM Detector detects the up or down shift of means in the time series. Starting from an initial point, it calculates the CUSUM of means iteratively, and locates a changepoint where its previous CUSUM is maximized or minimized. 
 
 The null hypothesis is `H0: There is no change in the mean`. We can decide to detect a single changepoint or multiple changepoints. Let's start from single changepoint detection!
 
 ##### Single Changepoint Detection
-
 To use CUSUM Detector in Kats, we need to initialize the detector with a time series input as shown in Step 1, then we can write a function in Step 2 to load detector's parameters and plot the changepoint, finally Step 3 shows the output of increasing changepoint detection for both humidity and temperature data. The parameter `threshold` is the significance level for null hypothesis. As we can see, in temperature data, there is no significant increasing changepoint detected, given 0.05 significance level.
 
 <p align="left">
@@ -67,7 +63,7 @@ Similarly, here're the detected decreasing changepoints:
 🌻 [Check detailed code in Kats Changepoint Detection >>][3]
 
 
-### RobustStat Detector
+#### Kats' RobustStat Detector
 
 If to detect multiple changepoints with CUSUM Detector needs self-implemented rolling window function, then RobustStat Detector can do this for you in one run. Similar to CUSUM Detector, it detects changepoints by checking mean shifts. It will start with smoothing out the time series using moving average, then compare the differences between a window of data points with its previous windows (window size is fixed, called as `comparison_window`). Finally it calculates the z-score, p-values of those differences, and mark those points with p-value smaller than the threshold as changepoints.
 
@@ -86,6 +82,7 @@ However, as we can see, we can't specify the changepoint to be the "increasing" 
 You might have noticed the small size of the visualization, in fact, Lady H. can't find a way to adjust the plot size... Either because Kats is an incomplete library or because of its embarassing software design...
 
 🌻 [Check detailed code in Kats Changepoint Detection >>][3]
+
 
 #
 <p align="left">

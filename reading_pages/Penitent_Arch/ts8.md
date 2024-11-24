@@ -55,6 +55,7 @@ Seasonal M-K test is often considered as a robust and powerful trend detection m
 
 Besides getting these detection output, we can also add this piece of info in feature engineering step, especially when we are using classical machine learning models. For example, we can create a new feature called "is_up_trend" and mark detected increasing trend time point as 1 while having other records as 0. The added feature provides more info to the model and might improve model forecasting accuracy.
 
+
 #
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/follow_us.png" width="120" height="50" />
