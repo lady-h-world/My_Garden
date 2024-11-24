@@ -1,18 +1,17 @@
 ### Granger Causality
-
-When exploring the relationship between variables in a multivariate time series, we also want to know whether one variable can forecast or influence another variable. Granger causality is used for this type of analysis.
+When exploring the relationship between variables in a multivariate time series, we also want to know <b>whether one variable can forecast or influence another variable</b>. Granger causality is used for this type of analysis.
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/notes/granger_causality_not_causality.png" width="766" height="79" />
 </p>
 
-Although granger causality is not causality, sometimes we still use it to generate "assumed causality", meaning, if variable A granger causes variable B and variable B does not granger cause variable A, then we assume variable A causes variable B.
+Although Granger Causality does not imply true causation, it is often used to infer "assumed causality". For example, if variable A Granger-causes variable B, but variable B does not Granger-cause variable A, we might assume that variable A causes variable B.
 
 Let's understand details through the code. 
 
 Before applying granger causality, Lady H. suggests to do some data preprocessing:
-* Remove highly correlated variables, to reduce unnecessary calculation. Because if a variable can forecast another variable or can be forecasted by another variable, then its highly correlated variable can have similar effect.
-* Make the multivariate time series stationary. <i>This was already done in previous stationary analysis step.</i>
+* <b>Remove highly correlated variables</b> to minimize unnecessary calculations. If one variable can forecast another or be forecasted by it, then any highly correlated variables are likely to have similar effects.
+* <b>Ensure the multivariate time series is stationary.</b> <i>This was already done in previous stationary analysis step.</i>
 
 Here's the code Lady H. often uses to remove higher correlated columns.
 <p align="left">
@@ -26,20 +25,21 @@ After data preprocessing, now let's look at the core logic of granger causality 
 </p>
 
 When we are using `grangercausalitytests(df[[col1, col2]])`, the null hypothesis and alternative hypothesis are:
-* H0: col2 does not granger cause col1
-* H1: col2 granger cause col1
+* H0 (null hypothesis): col2 does not granger cause col1
+* H1 (alternative hypothesis): col2 granger causes col1
 
 Therefore when we have found col2 granger causes col1 but col1 doesn't granger cause col2, then we assume col2 causes col1, and vice versa.
 
-The assumed causality of our green houses' data is shown below. It aligns with common sense, also discloses why the icreasing of CO2 creates a vicious circle of worsening the global environment. 😰
+The assumed causality of our greenhouses' data is shown below. It aligns with common sense, also discloses why the icreasing of CO2 creates a vicious circle of worsening the global environment. 😰
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/assumed_causality_output.png" width="810" height="351" />
 </p>
 
-Besides exploring assumed causality, we can also use the output to understand the interchangable influence between variables in a multivariate time series. If we found such influence exists, then models like VAR can be a good choice to be applied to the data for forecasting, outlier detection, etc.
+In addition to examining assumed causality, the output can also help us understand the mutual influence between variables in a multivariate time series. If such interactions are identified, models like VAR can be well-suited for tasks such as forecasting, outlier detection, and more.
 
 🌻 [Check detailed code for Granger Causality][3]
+
 
 #
 <p align="left">
