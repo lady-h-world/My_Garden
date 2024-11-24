@@ -18,10 +18,10 @@ Here's the code Lady H. often uses to remove higher correlated columns.
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/gc_rm_high_corr.png" width="989" height="349" />
 </p>
 
-After data preprocessing, now let's look at the core logic of granger causality and assumed causality analysis.
+After data preprocessing, now let's look at the core logic of granger causality and the influence analysis.
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/assumed_causality_code.png" width="738" height="327" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/granger_causality_code.png" width="738" height="327" />
 </p>
 
 When we are using `grangercausalitytests(df[[col1, col2]])`, the null hypothesis and alternative hypothesis are:
@@ -33,7 +33,7 @@ Therefore when we have found col2 granger causes col1 but col1 doesn't granger c
 The mutual influence of our greenhouses' data is shown below. It aligns with common sense, also discloses why the icreasing of CO2 creates a vicious circle of worsening the global environment. 😰
 
 <p align="left">
-<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/assumed_causality_output.png" width="810" height="351" />
+<img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/granger_causality_output.png" width="810" height="351" />
 </p>
 
 🌻 [Check detailed code for Granger Causality][3]
