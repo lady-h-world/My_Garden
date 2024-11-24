@@ -5,7 +5,7 @@ When exploring the relationship between variables in a multivariate time series,
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/notes/granger_causality_not_causality.png" width="766" height="79" />
 </p>
 
-Although Granger Causality does not imply true causation, it is often used to infer "assumed causality". For example, if variable A Granger-causes variable B, but variable B does not Granger-cause variable A, we might assume that variable A causes variable B.
+Although Granger Causality does not imply true causation, it is often used to infer "assumed causality". For example, if variable A granger causes variable B, but variable B does not granger cause variable A, we might assume that variable A causes variable B.
 
 Let's understand details through the code. 
 
