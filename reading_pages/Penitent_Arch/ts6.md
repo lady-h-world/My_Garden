@@ -5,7 +5,7 @@ When exploring the relationship between variables in a multivariate time series,
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/notes/granger_causality_not_causality.png" width="766" height="79" />
 </p>
 
-Although Granger Causality does not imply true causation, it is often used to infer "assumed causality". For example, if variable A granger causes variable B, but variable B does not granger cause variable A, we might assume that variable A causes variable B.
+Although <b>Granger Causality does NOT imply true causation</b>, it is often used to infer "the influence". For example, if variable A granger causes variable B, but variable B does not granger cause variable A, we can assume that variable A influences variable B.
 
 Let's understand details through the code. 
 
@@ -30,13 +30,11 @@ When we are using `grangercausalitytests(df[[col1, col2]])`, the null hypothesis
 
 Therefore when we have found col2 granger causes col1 but col1 doesn't granger cause col2, then we assume col2 causes col1, and vice versa.
 
-The assumed causality of our greenhouses' data is shown below. It aligns with common sense, also discloses why the icreasing of CO2 creates a vicious circle of worsening the global environment. 😰
+The mutual influence of our greenhouses' data is shown below. It aligns with common sense, also discloses why the icreasing of CO2 creates a vicious circle of worsening the global environment. 😰
 
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Totem_images/data_exploration/assumed_causality_output.png" width="810" height="351" />
 </p>
-
-In addition to examining assumed causality, the output can also help us understand the mutual influence between variables in a multivariate time series. If such interactions are identified, models like VAR can be well-suited for tasks such as forecasting, outlier detection, and more.
 
 🌻 [Check detailed code for Granger Causality][3]
 
