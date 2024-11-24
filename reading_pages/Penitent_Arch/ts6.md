@@ -28,7 +28,7 @@ When we are using `grangercausalitytests(df[[col1, col2]])`, the null hypothesis
 * H0 (null hypothesis): col2 does not granger cause col1
 * H1 (alternative hypothesis): col2 granger causes col1
 
-Therefore when we have found col2 granger causes col1 but col1 doesn't granger cause col2, then we assume col2 causes col1, and vice versa.
+Therefore when we have found col2 granger causes col1 but col1 doesn't granger cause col2, then we assume col2 can influence col1, and vice versa.
 
 The mutual influence of our greenhouses' data is shown below. It aligns with common sense, also discloses why the icreasing of CO2 creates a vicious circle of worsening the global environment. 😰
 
