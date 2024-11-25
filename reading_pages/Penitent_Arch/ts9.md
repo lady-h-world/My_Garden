@@ -1,6 +1,6 @@
 ## Changepoint Detection
-
 As we saw in trend detection, the detected output are time points where the trend changes. Changepoint detection is also a method to detect time points, but the point indicates where the probability distribution of a time series changes. In some libraries such as Greykite, trend detection is included in its changepoint detection. In Kats, they are seperated. Let's take a look at Kats changepoint detection first.
+
 
 ### Kats Changepoint Detection
 The experiments for Kats changepoint detection are shown with humidity and temperature time series data.
