@@ -34,7 +34,7 @@ During your time in Purgatory, you will learn:
 
 ❤️‍🔥 [Time Series Forecasting techniques][5]
 
-Excited? Nervous? Either way, it’s time to enter the gate!
+How are you feeling now? Anyway, time to enter the gate!
 
 
 #
