@@ -29,7 +29,9 @@ In data science, we often study cycles by identifying recurring patterns over ti
 During your time in Purgatory, you will learn:
 
 ❤️‍🔥 [Time Series Data Exploration techniques][3]
+
 ❤️‍🔥 [Time Series Detection techniques][4]
+
 ❤️‍🔥 [Time Series Forecasting techniques][5]
 
 Excited? Nervous? Either way, it’s time to enter the gate!
