@@ -28,9 +28,9 @@ In data science, we often study cycles by identifying recurring patterns over ti
 
 During your time in Purgatory, you will learn:
 
-* Data Exploration in Time Series
-* Detection of Trends, Changepoints, Outliers, and Seasonality
-* Time Series Forecasting
+* [Time Series Data Exploration techniques][3]
+* [Time Series Detection techniques][4]
+* [Time Series Forecasting techniques][5]
 
 Excited? Nervous? Either way, it’s time to enter the gate!
 
@@ -52,6 +52,9 @@ Excited? Nervous? Either way, it’s time to enter the gate!
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Penitent_Arch/ts1.md
 [2]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/tour_guide.md#garden-map
+[3]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Penitent_Arch/ts1.md
+[4]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Penitent_Arch/ts7.md
+[5]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Penitent_Arch/ts14.md
 
 
 
