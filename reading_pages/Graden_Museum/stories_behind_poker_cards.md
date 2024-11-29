@@ -16,3 +16,26 @@ Lady H. uses the Resplendent Tree to convey her anger toward discrimination in t
 <p>
 <img align="center" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/resplendent_tree_graph.png" width="945" height="389" />
 </p>
+
+
+### Penitent Arch
+Initially, Lady H. planned to focus solely on designing the garden's totem, but she realized that wouldn’t make for an engaging tourist attraction. At the same time, the lessons in this chapter felt overly tedious. To help visitors emotionally prepare, she decided that incorporating the concept of Purgatory would be a more compelling approach.
+
+<p>
+<img align="center" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/penitent_arch_graph.png" width="625" height="394" />
+</p>
+
+
+### Secret Guest
+While the AI did an excellent job, Lady H.'s own drawing aligns more closely with the story, which is why she decided to keep it.
+
+<p>
+<img align="center" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/secret_guest_graph.png" width="647" height="404" />
+</p>
+
+
+### The Cover
+
+<p>
+<img align="center" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/secret_guest_graph.png" width="1179" height="512" />
+</p>
