@@ -6,7 +6,7 @@
 <p>
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/gallery_logo.png" width="249" height="250" />
 </p>
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p>
 
 * [Stories Behind the Poker Cards][24]
 * [Suppression][12]
