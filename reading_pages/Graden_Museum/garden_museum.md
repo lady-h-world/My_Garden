@@ -8,6 +8,7 @@
 </p>
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
+* [Stories Behind the Poker Cards][24]
 * [Suppression][12]
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
@@ -68,3 +69,4 @@ Lady H. keeps gathering new promising tools in her arsenal. Would you like to ex
 [21]:https://www.aicamp.ai/event/eventdetails/W2024071714
 [22]:https://docs.google.com/presentation/d/1bpTk0n_HkyJVezuCBRnVTjPyYmKgGXfP0rSt6Za_Y2s/edit?usp=sharing
 [23]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#more-on-auotml
+[24]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/stories_behind_poker_cards.md

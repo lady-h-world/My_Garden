@@ -6,7 +6,7 @@ Every poker card featured in each chapter was designed by Lady H. Designing is o
 This was Lady H.'s very first poker card, in fact she loved it, but AI did a much better job.
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/lotus_queen_graph.png" width="626" height="393" />
+<img align="center" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/lotus_queen_graph.png" width="626" height="393" />
 </p>
 
 
@@ -14,5 +14,5 @@ This was Lady H.'s very first poker card, in fact she loved it, but AI did a muc
 Lady H. uses the Resplendent Tree to convey her anger toward discrimination in the real world and her hopes for equality and unity among humanity. With the help of AI, she has incorporated the Tower of Babel into the picture as a cautionary symbol.
 
 <p>
-<img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/resplendent_tree_graph.png" width="945" height="389" />
+<img align="center" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/resplendent_tree_graph.png" width="945" height="389" />
 </p>
