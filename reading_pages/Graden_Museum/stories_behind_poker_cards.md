@@ -37,5 +37,5 @@ While the AI did an excellent job, Lady H.'s own drawing aligns more closely wit
 ### The Cover
 
 <p>
-<img align="center" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/cover_graph.png" width="1179" height="512" />
+<img align="center" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/cover_graph.png" width="979" height="412" />
 </p>
