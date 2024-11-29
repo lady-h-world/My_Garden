@@ -52,14 +52,6 @@ And <b>Lady H.'s shikigami</b> will share fun stories along the way!
 
 
 
-## Keep in Touch
-
-Let's keep in touch after your visit!
-
-* [Our weaponry][11] shares new technologies you didn't see in the tour, feel free to check it out!
-* [Our discussion forum][2] allows you to share ideas, ask for help and share your own work!
-* To find volunteering or collaboration opportunities, feel free to check [opportunities][13]!
-
 
 [1]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Lotus_Queen/lotus_queen.md
 [2]:https://github.com/lady-h-world/My_Garden/discussions
