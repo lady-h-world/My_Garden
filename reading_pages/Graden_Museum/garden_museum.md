@@ -7,7 +7,6 @@
 <img align="left" src="https://github.com/lady-h-world/My_Garden/blob/main/images/lady_heart_manga/gallery_logo.png" width="249" height="250" />
 </p>
 
-* [The Poem][13]
 * [Suppression][12]
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
@@ -59,7 +58,6 @@ Lady H. keeps gathering new promising tools in her arsenal. Would you like to ex
 [10]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#more-on-data-exploration
 [11]:https://docs.google.com/presentation/d/1TIS7Lssy3nR-btYzSdKKuVhv9KgGIOy94S16obAbJQI/edit?usp=sharing
 [12]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/suppression.md
-[13]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/the_poem.md
 [15]:https://docs.google.com/presentation/d/1c8DyIW3z53EMpZBNPc7cuGkk97HICOgmDp6P5_RVRJw/edit?usp=sharing
 [16]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md#more-on-synthetic-data-generation
 [17]:https://docs.google.com/presentation/d/1tf5mHzCdRBkypdulaqxGjutpCt4w5k66mgCHIXdihnE/edit?usp=sharing
