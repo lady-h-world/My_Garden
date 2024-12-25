@@ -57,6 +57,8 @@ Follow the steps below each time when you want to create a virtual environment:
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/virtual_env/pycharm4.1.png" width="941" height="163" />
 </p>
 
+In some cases, if you still can't see the virtual environment appeared, type `conda activate {conda_virtual_env_name}` to activate the virtual environment.
+
 <p align="left">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Rainbow_Moss_images/notes/other_venv_install.png" width="866" height="99" />
 </p>
