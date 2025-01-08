@@ -1,12 +1,12 @@
-### Mini Pipeline Summary
+### Prebuilt Pipeline Summary
 
-Comparing the overall performance and user experience, MLJar is a better choice for AutoML mini pipelines.
+Comparing the overall performance and user experience, MLJar is a better choice for AutoML prebuilt pipelines.
 
 <p align="center">
 <img src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Market_images/mini_pipeline/tb4.2.png" width="730" height="422" />
 </p>
 
-While there are several AutoML mini-pipelines available, they still function like black boxes, limiting user control over settings and processes. In industrial settings, companies often have more complex requirements for their machine learning pipelines, making customization essential.
+While there are several AutoML prebuilt pipelines available, they still function like black boxes, limiting user control over settings and processes. In industrial settings, companies often have more complex requirements for their machine learning pipelines, making customization essential.
 
 
 ## Customized Pipelines
