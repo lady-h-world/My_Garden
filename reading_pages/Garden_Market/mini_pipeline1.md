@@ -3,15 +3,15 @@
 In recent years, industries and research groups are developing machine learning pipelines that can automatically handle most of the work, from data collection to model evaluation. This end-to-end pipeline is commonly referred to as "AutoML".
 
 Machine learning pipelines can be categorized in two ways, much like our perfume lines:
-* <b>Mini Pipeline</b> - It requires specific data inputs for each run and primarily focuses on model selection, aiming to choose the best model for the given data. Some of these pipelines also incorporate data preprocessing, feature engineering, and hyperparameter optimization. You will find experiments involving <b>TPOT, AutoKeras and MLJar</b>.
+* <b>Prebuilt Pipeline</b> - It requires specific data inputs for each run and primarily focuses on model selection, aiming to choose the best model for the given data. Some of these pipelines also incorporate data preprocessing, feature engineering, and hyperparameter optimization. You will find experiments involving <b>TPOT, AutoKeras and MLJar</b>.
 * <b>Customized Pipeline</b> - This type of pipeline can be constructed to handle more clients' data and add more complex functionalities.
   * <b>Luigi</b> enables the construction of pipelines that can include data collection, preprocessing, feature engineering, model selection, evaluation, and data drift monitoring, or any other step in your machine learning development process.
   * You will also see simple pipelines built using <b>Airflow</b> and <b>ZenML</b>.
 
 
-## Mini Pipelines
+## Prebuilt Pipelines
 
-Let's look at mini pipelines first!
+Let's look at prebuilt pipelines first!
 
 * [TPOT][1] is an AutoML pipeline that uses genetic algorithm to select the best pipeline for the data.
 * [AutoKeras][2] builds the optimal neural network model for the data, it does parameter tuning and model selection using Keras Tuner.
@@ -30,7 +30,7 @@ The experiments utilized the same datasets as those in the [hyperparameter optim
 * 🌻 [To get Leaves30 data >>][7]
 * 🌻 [To get Sales data >>][8]
 
-When using these mini pipelines, the execution time is expected to be longer than that of HPO, as more models and parameters need to be selected. For a deeper exploration, let's follow the Chansey Butterflies!
+When using these prebuilt pipelines, the execution time is expected to be longer than that of HPO, as more models and parameters need to be selected. For a deeper exploration, let's follow the Chansey Butterflies!
 
 #
 <p align="left">
