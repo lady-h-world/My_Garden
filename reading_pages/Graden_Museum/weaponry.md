@@ -6,7 +6,12 @@ The tools displayed here are either <b>new promising tools</b> that you got no c
 ### More on Data Exploration
 * [Predictive Power Score][5] 
   * Besides the [Granger Causality you have seen here][6], later Lady H. learned [PPS (Predictive Power Score)][7], a method detects asymmetric correlation might also be helpful in telling "assumed causality". It helps finding which variable helps predict another dependent/independent variable better.
- 
+
+
+### More on AIML Models
+* [TabM][11]: Advancing Tabular Deep Learning With Parameter-Efficient Ensembling
+  * [Comparison with MLP and traditional boosting models][12]
+
 
 ### More on AuotML
 * [MLflow][10]
@@ -44,3 +49,5 @@ The tools displayed here are either <b>new promising tools</b> that you got no c
 [8]:https://stackoverflow.com/questions/77101618/ray-tune-fit-function-file-not-found-on-windows
 [9]:https://github.com/zhao-zilong/Tabula/tree/main
 [10]:https://github.com/mlflow/mlflow
+[11]:https://github.com/yandex-research/tabm
+[12]:https://www.linkedin.com/posts/avi-chawla_we-now-have-a-new-candidate-for-ensembles-activity-7337403019795275776--yMt?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
