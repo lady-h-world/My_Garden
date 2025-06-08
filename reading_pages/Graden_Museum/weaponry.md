@@ -31,6 +31,11 @@ The tools displayed here are either <b>new promising tools</b> that you got no c
   * Ray is famous for its ability of scaling up AI applications, however when using Ray-Tune, it takes long time to load its final output, and if you run it on Windows, might get [this type of error][8].
 
 
+### More on Prompt Optimization
+* [AdalFlow][13]
+  * It might have better prompt performance and better control on prompt template than DsPy. Lady H. will wait a bit before using it because it's very new when Lady H. just finihsed DsPy pipeline 
+
+
 ### More on Model Monitoring
 * [Predict MAE or MSE of Regression Model][3]
 
@@ -51,3 +56,4 @@ The tools displayed here are either <b>new promising tools</b> that you got no c
 [10]:https://github.com/mlflow/mlflow
 [11]:https://github.com/yandex-research/tabm
 [12]:https://www.linkedin.com/posts/avi-chawla_we-now-have-a-new-candidate-for-ensembles-activity-7337403019795275776--yMt?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
+[13]:https://github.com/SylphAI-Inc/AdalFlow
