@@ -1,0 +1,798 @@
+Bootstrapping set 1/5
+Bootstrapping set 2/5
+Bootstrapping set 3/5
+SOURCE CODE: StringSignature(question, context -> reasoning, answer
+    instructions='Answer questions with short factoid answers.\nYou will receive context(contain relevant facts).\nThink step by step.'
+    question = Field(annotation=str required=True json_schema_extra={'desc': 'the question to answer', '__dspy_field_type': 'input', 'prefix': 'Question:'})
+    context = Field(annotation=str required=True json_schema_extra={'desc': 'retrieved context, may contain relevant facts', '__dspy_field_type': 'input', 'prefix': 'Context:'})
+    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': "Reasoning: Let's think step by step in order to", 'desc': '${reasoning}', '__dspy_field_type': 'output'})
+    answer = Field(annotation=str required=True json_schema_extra={'desc': "AI's answer", '__dspy_field_type': 'output', 'prefix': 'Answer:'})
+)
+
+class RAG_AnswerGeneration(dspy.Module):
+    def __init__(self):
+        super().__init__()
+        self.generate_answer = dspy.ChainOfThought(GenerateAnswer)
+
+    def forward(self, question, context):
+        prediction = self.generate_answer(question=question, context=context)
+        return dspy.Prediction(context=context,
+                               answer=prediction.answer,
+                               reasoning=prediction.reasoning)
+
+DATA SUMMARY: The dataset focuses on extracting specific factual details from formal, semi-structured documents related to financial, legal, and administrative contexts. It includes entries with detailed information about documents like invoices, checks, and reports, requiring precise entity recognition and attribute extraction. The primary aim is to train models for accurate information retrieval in business and legal document analysis.
+No demo candidates provided. Running without task demos.
+Using a randomly generated configuration for our grounded proposer.
+Selected tip: high_stakes
+PROGRAM DESCRIPTION: This program is designed to answer factoid questions based on provided context. It takes as input a question and a relevant context containing factual information, then generates a step-by-step reasoning process to arrive at a concise answer. The approach involves prompting the language model to think through the reasoning process in a structured manner before producing the final answer, ensuring clarity and correctness in fact-based question answering tasks.
+task_demos No task demos provided.
+
+
+
+
+[34m[2025-07-27T13:48:45.930781][0m
+
+[31mSystem message:[0m
+
+Your input fields are:
+1. `dataset_description` (str): A description of the dataset that we are using.
+2. `program_code` (str): Language model program designed to solve a particular task.
+3. `program_description` (str): Summary of the task the program is designed to solve, and how it goes about solving it.
+4. `module` (str): The module to create an instruction for.
+5. `module_description` (str): Description of the module to create an instruction for.
+6. `task_demos` (str): Example inputs/outputs of our module.
+7. `basic_instruction` (str): Basic instruction.
+8. `tip` (str): A suggestion for how to go about generating the new instruction.
+Your output fields are:
+1. `proposed_instruction` (str): Propose an instruction that will be used to prompt a Language Model to perform this task.
+All interactions will be structured in the following way, with the appropriate values filled in.
+
+[[ ## dataset_description ## ]]
+{dataset_description}
+
+[[ ## program_code ## ]]
+{program_code}
+
+[[ ## program_description ## ]]
+{program_description}
+
+[[ ## module ## ]]
+{module}
+
+[[ ## module_description ## ]]
+{module_description}
+
+[[ ## task_demos ## ]]
+{task_demos}
+
+[[ ## basic_instruction ## ]]
+{basic_instruction}
+
+[[ ## tip ## ]]
+{tip}
+
+[[ ## proposed_instruction ## ]]
+{proposed_instruction}
+
+[[ ## completed ## ]]
+In adhering to this structure, your objective is: 
+        Use the information below to learn about a task that we are trying to solve using calls to an LM, then generate a new instruction that will be used to prompt a Language Model to better solve the task.
+
+
+[31mUser message:[0m
+
+[[ ## dataset_description ## ]]
+The dataset focuses on extracting specific factual details from formal, semi-structured documents related to financial, legal, and administrative contexts. It includes entries with detailed information about documents like invoices, checks, and reports, requiring precise entity recognition and attribute extraction. The primary aim is to train models for accurate information retrieval in business and legal document analysis.
+
+[[ ## program_code ## ]]
+StringSignature(question, context -> reasoning, answer
+    instructions='Answer questions with short factoid answers.\nYou will receive context(contain relevant facts).\nThink step by step.'
+    question = Field(annotation=str required=True json_schema_extra={'desc': 'the question to answer', '__dspy_field_type': 'input', 'prefix': 'Question:'})
+    context = Field(annotation=str required=True json_schema_extra={'desc': 'retrieved context, may contain relevant facts', '__dspy_field_type': 'input', 'prefix': 'Context:'})
+    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': "Reasoning: Let's think step by step in order to", 'desc': '${reasoning}', '__dspy_field_type': 'output'})
+    answer = Field(annotation=str required=True json_schema_extra={'desc': "AI's answer", '__dspy_field_type': 'output', 'prefix': 'Answer:'})
+)
+
+class RAG_AnswerGeneration(dspy.Module):
+    def __init__(self):
+        super().__init__()
+        self.generate_answer = dspy.ChainOfThought(GenerateAnswer)
+
+    def forward(self, question, context):
+        prediction = self.generate_answer(question=question, context=context)
+        return dspy.Prediction(context=context,
+                               answer=prediction.answer,
+                               reasoning=prediction.reasoning)
+
+
+[[ ## program_description ## ]]
+This program is designed to answer factoid questions based on provided context. It takes as input a question and a relevant context containing factual information, then generates a step-by-step reasoning process to arrive at a concise answer. The approach involves prompting the language model to think through the reasoning process in a structured manner before producing the final answer, ensuring clarity and correctness in fact-based question answering tasks.
+
+[[ ## module ## ]]
+Predict(question, context) -> reasoning, answer
+
+[[ ## module_description ## ]]
+The `Predict` module serves as the core component responsible for generating a step-by-step reasoning process and a concise answer based on the provided question and context. It orchestrates the interaction with the language model to produce structured reasoning, ensuring that the final output is accurate and well-founded. This module encapsulates the inference process necessary for factoid question answering within the larger pipeline, facilitating clear and interpretable predictions.
+
+[[ ## task_demos ## ]]
+No task demos provided.
+
+[[ ## basic_instruction ## ]]
+Answer questions with short factoid answers.
+You will receive context(contain relevant facts).
+Think step by step.
+
+[[ ## tip ## ]]
+The instruction should include a high stakes scenario in which the LM must solve the task!
+
+Respond with the corresponding output fields, starting with the field `[[ ## proposed_instruction ## ]]`, and then ending with the marker for `[[ ## completed ## ]]`.
+
+
+[31mResponse:[0m
+
+[32m[[ ## proposed_instruction ## ]]
+You are an AI tasked with assisting a legal and financial analyst in extracting precise factual information from critical documents such as invoices, checks, and reports. In this high-stakes scenario, accuracy is paramount because any mistake could lead to significant financial or legal consequences. Given a relevant document and a specific question, thoroughly analyze the context by reasoning step-by-step to identify the correct facts before providing a concise, definitive answer. Your goal is to ensure absolute correctness and clarity in your responses, as they will be used for important decision-making processes involving legal and financial compliance.
+[[ ## completed ## ]][0m
+
+
+
+
+
+PROPOSED INSTRUCTION: You are an AI tasked with assisting a legal and financial analyst in extracting precise factual information from critical documents such as invoices, checks, and reports. In this high-stakes scenario, accuracy is paramount because any mistake could lead to significant financial or legal consequences. Given a relevant document and a specific question, thoroughly analyze the context by reasoning step-by-step to identify the correct facts before providing a concise, definitive answer. Your goal is to ensure absolute correctness and clarity in your responses, as they will be used for important decision-making processes involving legal and financial compliance.
+Using a randomly generated configuration for our grounded proposer.
+Selected tip: description
+PROGRAM DESCRIPTION: This program is designed to answer factual questions based on provided context. It takes a question and a relevant context containing facts, then generates a brief, step-by-step reasoning process to arrive at the answer, followed by the answer itself. The approach emphasizes clear reasoning ("think step by step") to ensure accurate and concise factoid responses, likely utilizing a language model to produce both the reasoning and the answer based on the input data.
+task_demos No task demos provided.
+
+
+
+
+[34m[2025-07-27T13:48:45.944979][0m
+
+[31mSystem message:[0m
+
+Your input fields are:
+1. `dataset_description` (str): A description of the dataset that we are using.
+2. `program_code` (str): Language model program designed to solve a particular task.
+3. `program_description` (str): Summary of the task the program is designed to solve, and how it goes about solving it.
+4. `module` (str): The module to create an instruction for.
+5. `module_description` (str): Description of the module to create an instruction for.
+6. `task_demos` (str): Example inputs/outputs of our module.
+7. `basic_instruction` (str): Basic instruction.
+8. `tip` (str): A suggestion for how to go about generating the new instruction.
+Your output fields are:
+1. `proposed_instruction` (str): Propose an instruction that will be used to prompt a Language Model to perform this task.
+All interactions will be structured in the following way, with the appropriate values filled in.
+
+[[ ## dataset_description ## ]]
+{dataset_description}
+
+[[ ## program_code ## ]]
+{program_code}
+
+[[ ## program_description ## ]]
+{program_description}
+
+[[ ## module ## ]]
+{module}
+
+[[ ## module_description ## ]]
+{module_description}
+
+[[ ## task_demos ## ]]
+{task_demos}
+
+[[ ## basic_instruction ## ]]
+{basic_instruction}
+
+[[ ## tip ## ]]
+{tip}
+
+[[ ## proposed_instruction ## ]]
+{proposed_instruction}
+
+[[ ## completed ## ]]
+In adhering to this structure, your objective is: 
+        Use the information below to learn about a task that we are trying to solve using calls to an LM, then generate a new instruction that will be used to prompt a Language Model to better solve the task.
+
+
+[31mUser message:[0m
+
+[[ ## dataset_description ## ]]
+The dataset focuses on extracting specific factual details from formal, semi-structured documents related to financial, legal, and administrative contexts. It includes entries with detailed information about documents like invoices, checks, and reports, requiring precise entity recognition and attribute extraction. The primary aim is to train models for accurate information retrieval in business and legal document analysis.
+
+[[ ## program_code ## ]]
+StringSignature(question, context -> reasoning, answer
+    instructions='Answer questions with short factoid answers.\nYou will receive context(contain relevant facts).\nThink step by step.'
+    question = Field(annotation=str required=True json_schema_extra={'desc': 'the question to answer', '__dspy_field_type': 'input', 'prefix': 'Question:'})
+    context = Field(annotation=str required=True json_schema_extra={'desc': 'retrieved context, may contain relevant facts', '__dspy_field_type': 'input', 'prefix': 'Context:'})
+    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': "Reasoning: Let's think step by step in order to", 'desc': '${reasoning}', '__dspy_field_type': 'output'})
+    answer = Field(annotation=str required=True json_schema_extra={'desc': "AI's answer", '__dspy_field_type': 'output', 'prefix': 'Answer:'})
+)
+
+class RAG_AnswerGeneration(dspy.Module):
+    def __init__(self):
+        super().__init__()
+        self.generate_answer = dspy.ChainOfThought(GenerateAnswer)
+
+    def forward(self, question, context):
+        prediction = self.generate_answer(question=question, context=context)
+        return dspy.Prediction(context=context,
+                               answer=prediction.answer,
+                               reasoning=prediction.reasoning)
+
+
+[[ ## program_description ## ]]
+This program is designed to answer factual questions based on provided context. It takes a question and a relevant context containing facts, then generates a brief, step-by-step reasoning process to arrive at the answer, followed by the answer itself. The approach emphasizes clear reasoning ("think step by step") to ensure accurate and concise factoid responses, likely utilizing a language model to produce both the reasoning and the answer based on the input data.
+
+[[ ## module ## ]]
+Predict(question, context) -> reasoning, answer
+
+[[ ## module_description ## ]]
+The Predict module serves as the core component responsible for generating a step-by-step reasoning process and a concise answer based on the provided question and context. It utilizes a language model to analyze the facts within the context, reason through the question logically, and produce an accurate, factoid response. This module ensures that the reasoning is explicit and follows a clear, sequential thought process, which helps improve the correctness and transparency of the answer generation.
+
+[[ ## task_demos ## ]]
+No task demos provided.
+
+[[ ## basic_instruction ## ]]
+Answer questions with short factoid answers.
+You will receive context(contain relevant facts).
+Think step by step.
+
+[[ ## tip ## ]]
+Make sure your instruction is very informative and descriptive.
+
+Respond with the corresponding output fields, starting with the field `[[ ## proposed_instruction ## ]]`, and then ending with the marker for `[[ ## completed ## ]]`.
+
+
+[31mResponse:[0m
+
+[32m[[ ## proposed_instruction ## ]]
+Given a question and a relevant context containing factual information, generate a clear, step-by-step reasoning process to arrive at the answer. Then, provide a concise, fact-based answer based on that reasoning. Ensure your responses are precise and directly address the question, leveraging the context effectively. Your output should include both the reasoning process and the final answer, formatted clearly to distinguish between the two.
+
+[[ ## completed ## ]][0m
+
+
+
+
+
+PROPOSED INSTRUCTION: Given a question and a relevant context containing factual information, generate a clear, step-by-step reasoning process to arrive at the answer. Then, provide a concise, fact-based answer based on that reasoning. Ensure your responses are precise and directly address the question, leveraging the context effectively. Your output should include both the reasoning process and the final answer, formatted clearly to distinguish between the two.
+Using a randomly generated configuration for our grounded proposer.
+Selected tip: creative
+PROGRAM DESCRIPTION: This program is designed to answer factoid questions based on provided context information. It takes a question and a relevant context containing facts, then uses a language model to generate a step-by-step reasoning process before providing a concise answer. The process emphasizes structured reasoning, ensuring that the answer is derived logically from the context, and facilitates clear, short responses suitable for fact-based queries.
+task_demos No task demos provided.
+
+
+
+
+[34m[2025-07-27T13:48:45.960624][0m
+
+[31mSystem message:[0m
+
+Your input fields are:
+1. `dataset_description` (str): A description of the dataset that we are using.
+2. `program_code` (str): Language model program designed to solve a particular task.
+3. `program_description` (str): Summary of the task the program is designed to solve, and how it goes about solving it.
+4. `module` (str): The module to create an instruction for.
+5. `module_description` (str): Description of the module to create an instruction for.
+6. `task_demos` (str): Example inputs/outputs of our module.
+7. `basic_instruction` (str): Basic instruction.
+8. `tip` (str): A suggestion for how to go about generating the new instruction.
+Your output fields are:
+1. `proposed_instruction` (str): Propose an instruction that will be used to prompt a Language Model to perform this task.
+All interactions will be structured in the following way, with the appropriate values filled in.
+
+[[ ## dataset_description ## ]]
+{dataset_description}
+
+[[ ## program_code ## ]]
+{program_code}
+
+[[ ## program_description ## ]]
+{program_description}
+
+[[ ## module ## ]]
+{module}
+
+[[ ## module_description ## ]]
+{module_description}
+
+[[ ## task_demos ## ]]
+{task_demos}
+
+[[ ## basic_instruction ## ]]
+{basic_instruction}
+
+[[ ## tip ## ]]
+{tip}
+
+[[ ## proposed_instruction ## ]]
+{proposed_instruction}
+
+[[ ## completed ## ]]
+In adhering to this structure, your objective is: 
+        Use the information below to learn about a task that we are trying to solve using calls to an LM, then generate a new instruction that will be used to prompt a Language Model to better solve the task.
+
+
+[31mUser message:[0m
+
+[[ ## dataset_description ## ]]
+The dataset focuses on extracting specific factual details from formal, semi-structured documents related to financial, legal, and administrative contexts. It includes entries with detailed information about documents like invoices, checks, and reports, requiring precise entity recognition and attribute extraction. The primary aim is to train models for accurate information retrieval in business and legal document analysis.
+
+[[ ## program_code ## ]]
+StringSignature(question, context -> reasoning, answer
+    instructions='Answer questions with short factoid answers.\nYou will receive context(contain relevant facts).\nThink step by step.'
+    question = Field(annotation=str required=True json_schema_extra={'desc': 'the question to answer', '__dspy_field_type': 'input', 'prefix': 'Question:'})
+    context = Field(annotation=str required=True json_schema_extra={'desc': 'retrieved context, may contain relevant facts', '__dspy_field_type': 'input', 'prefix': 'Context:'})
+    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': "Reasoning: Let's think step by step in order to", 'desc': '${reasoning}', '__dspy_field_type': 'output'})
+    answer = Field(annotation=str required=True json_schema_extra={'desc': "AI's answer", '__dspy_field_type': 'output', 'prefix': 'Answer:'})
+)
+
+class RAG_AnswerGeneration(dspy.Module):
+    def __init__(self):
+        super().__init__()
+        self.generate_answer = dspy.ChainOfThought(GenerateAnswer)
+
+    def forward(self, question, context):
+        prediction = self.generate_answer(question=question, context=context)
+        return dspy.Prediction(context=context,
+                               answer=prediction.answer,
+                               reasoning=prediction.reasoning)
+
+
+[[ ## program_description ## ]]
+This program is designed to answer factoid questions based on provided context information. It takes a question and a relevant context containing facts, then uses a language model to generate a step-by-step reasoning process before providing a concise answer. The process emphasizes structured reasoning, ensuring that the answer is derived logically from the context, and facilitates clear, short responses suitable for fact-based queries.
+
+[[ ## module ## ]]
+Predict(question, context) -> reasoning, answer
+
+[[ ## module_description ## ]]
+The Predict module serves as the core component responsible for generating a detailed, step-by-step reasoning process and a concise answer based on the provided question and context. It leverages a language model to interpret the input information, perform logical deduction, and produce structured outputs that facilitate accurate factoid responses. This module effectively encapsulates the inference process within the broader question-answering pipeline, ensuring that the generated answers are both logically grounded and succinct.
+
+[[ ## task_demos ## ]]
+No task demos provided.
+
+[[ ## basic_instruction ## ]]
+Answer questions with short factoid answers.
+You will receive context(contain relevant facts).
+Think step by step.
+
+[[ ## tip ## ]]
+Don't be afraid to be creative when creating the new instruction!
+
+Respond with the corresponding output fields, starting with the field `[[ ## proposed_instruction ## ]]`, and then ending with the marker for `[[ ## completed ## ]]`.
+
+
+[31mResponse:[0m
+
+[32m[[ ## proposed_instruction ## ]]
+Given a question and a relevant context containing factual information, generate a clear, step-by-step reasoning process that logically leads to the answer. Then, provide a concise, fact-based response based on the reasoning. Ensure your reasoning is explicit and your final answer is precise and directly addresses the question, suitable for extracting specific details from formal business, legal, or financial documents.
+
+[[ ## completed ## ]][0m
+
+
+
+
+
+PROPOSED INSTRUCTION: Given a question and a relevant context containing factual information, generate a clear, step-by-step reasoning process that logically leads to the answer. Then, provide a concise, fact-based response based on the reasoning. Ensure your reasoning is explicit and your final answer is precise and directly addresses the question, suitable for extracting specific details from formal business, legal, or financial documents.
+Using a randomly generated configuration for our grounded proposer.
+Selected tip: description
+PROGRAM DESCRIPTION: This program is designed to answer fact-based questions by utilizing relevant contextual information. It takes as input a question and a context containing relevant facts, then processes these inputs to generate a concise answer. The process involves reasoning through the context step-by-step to arrive at an accurate, short response. The program likely employs a language model to perform chain-of-thought reasoning, ensuring that it logically derives the answer from the provided facts before outputting it. This approach is useful for tasks such as factoid question answering, where precise and explainable responses are desired based on retrieved or provided information.
+task_demos No task demos provided.
+
+
+
+
+[34m[2025-07-27T13:48:45.973984][0m
+
+[31mSystem message:[0m
+
+Your input fields are:
+1. `dataset_description` (str): A description of the dataset that we are using.
+2. `program_code` (str): Language model program designed to solve a particular task.
+3. `program_description` (str): Summary of the task the program is designed to solve, and how it goes about solving it.
+4. `module` (str): The module to create an instruction for.
+5. `module_description` (str): Description of the module to create an instruction for.
+6. `task_demos` (str): Example inputs/outputs of our module.
+7. `basic_instruction` (str): Basic instruction.
+8. `tip` (str): A suggestion for how to go about generating the new instruction.
+Your output fields are:
+1. `proposed_instruction` (str): Propose an instruction that will be used to prompt a Language Model to perform this task.
+All interactions will be structured in the following way, with the appropriate values filled in.
+
+[[ ## dataset_description ## ]]
+{dataset_description}
+
+[[ ## program_code ## ]]
+{program_code}
+
+[[ ## program_description ## ]]
+{program_description}
+
+[[ ## module ## ]]
+{module}
+
+[[ ## module_description ## ]]
+{module_description}
+
+[[ ## task_demos ## ]]
+{task_demos}
+
+[[ ## basic_instruction ## ]]
+{basic_instruction}
+
+[[ ## tip ## ]]
+{tip}
+
+[[ ## proposed_instruction ## ]]
+{proposed_instruction}
+
+[[ ## completed ## ]]
+In adhering to this structure, your objective is: 
+        Use the information below to learn about a task that we are trying to solve using calls to an LM, then generate a new instruction that will be used to prompt a Language Model to better solve the task.
+
+
+[31mUser message:[0m
+
+[[ ## dataset_description ## ]]
+The dataset focuses on extracting specific factual details from formal, semi-structured documents related to financial, legal, and administrative contexts. It includes entries with detailed information about documents like invoices, checks, and reports, requiring precise entity recognition and attribute extraction. The primary aim is to train models for accurate information retrieval in business and legal document analysis.
+
+[[ ## program_code ## ]]
+StringSignature(question, context -> reasoning, answer
+    instructions='Answer questions with short factoid answers.\nYou will receive context(contain relevant facts).\nThink step by step.'
+    question = Field(annotation=str required=True json_schema_extra={'desc': 'the question to answer', '__dspy_field_type': 'input', 'prefix': 'Question:'})
+    context = Field(annotation=str required=True json_schema_extra={'desc': 'retrieved context, may contain relevant facts', '__dspy_field_type': 'input', 'prefix': 'Context:'})
+    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': "Reasoning: Let's think step by step in order to", 'desc': '${reasoning}', '__dspy_field_type': 'output'})
+    answer = Field(annotation=str required=True json_schema_extra={'desc': "AI's answer", '__dspy_field_type': 'output', 'prefix': 'Answer:'})
+)
+
+class RAG_AnswerGeneration(dspy.Module):
+    def __init__(self):
+        super().__init__()
+        self.generate_answer = dspy.ChainOfThought(GenerateAnswer)
+
+    def forward(self, question, context):
+        prediction = self.generate_answer(question=question, context=context)
+        return dspy.Prediction(context=context,
+                               answer=prediction.answer,
+                               reasoning=prediction.reasoning)
+
+
+[[ ## program_description ## ]]
+This program is designed to answer fact-based questions by utilizing relevant contextual information. It takes as input a question and a context containing relevant facts, then processes these inputs to generate a concise answer. The process involves reasoning through the context step-by-step to arrive at an accurate, short response. The program likely employs a language model to perform chain-of-thought reasoning, ensuring that it logically derives the answer from the provided facts before outputting it. This approach is useful for tasks such as factoid question answering, where precise and explainable responses are desired based on retrieved or provided information.
+
+[[ ## module ## ]]
+Predict(question, context) -> reasoning, answer
+
+[[ ## module_description ## ]]
+The Predict module serves as the core component responsible for generating a reasoning process and a concise answer based on the provided question and context. It interprets the contextual facts, performs chain-of-thought reasoning step-by-step, and outputs both the logical reasoning path and the final factoid answer. This module enables the system to produce explainable, accurate responses by leveraging language model capabilities to reason through the information before delivering the answer.
+
+[[ ## task_demos ## ]]
+No task demos provided.
+
+[[ ## basic_instruction ## ]]
+Answer questions with short factoid answers.
+You will receive context(contain relevant facts).
+Think step by step.
+
+[[ ## tip ## ]]
+Make sure your instruction is very informative and descriptive.
+
+Respond with the corresponding output fields, starting with the field `[[ ## proposed_instruction ## ]]`, and then ending with the marker for `[[ ## completed ## ]]`.
+
+
+[31mResponse:[0m
+
+[32m[[ ## proposed_instruction ## ]]
+Given a question and a related context containing relevant factual information, generate a concise, fact-based answer by reasoning through the context step-by-step. Your response should include a clear explanation of your reasoning process followed by the final answer. Ensure that the reasoning logically derives the answer from the provided facts, enabling explainability and accuracy in your response. Use the context to identify and extract the necessary details to answer the question precisely and succinctly.
+[[ ## completed ## ]][0m
+
+
+
+
+
+PROPOSED INSTRUCTION: Given a question and a related context containing relevant factual information, generate a concise, fact-based answer by reasoning through the context step-by-step. Your response should include a clear explanation of your reasoning process followed by the final answer. Ensure that the reasoning logically derives the answer from the provided facts, enabling explainability and accuracy in your response. Use the context to identify and extract the necessary details to answer the question precisely and succinctly.
+Using a randomly generated configuration for our grounded proposer.
+Selected tip: persona
+PROGRAM DESCRIPTION: This program is designed to answer fact-based questions by utilizing provided contextual information. It prompts the language model to think through the reasoning process step-by-step before arriving at a concise answer. The task involves extracting relevant facts from the context, reasoning logically about the question, and then generating a short, factual response. The pipeline likely involves passing the question and context to the language model, which then produces both a reasoning explanation and an answer, ensuring the responses are accurate and grounded in the given information.
+task_demos No task demos provided.
+
+
+
+
+[34m[2025-07-27T13:48:45.987235][0m
+
+[31mSystem message:[0m
+
+Your input fields are:
+1. `dataset_description` (str): A description of the dataset that we are using.
+2. `program_code` (str): Language model program designed to solve a particular task.
+3. `program_description` (str): Summary of the task the program is designed to solve, and how it goes about solving it.
+4. `module` (str): The module to create an instruction for.
+5. `module_description` (str): Description of the module to create an instruction for.
+6. `task_demos` (str): Example inputs/outputs of our module.
+7. `basic_instruction` (str): Basic instruction.
+8. `tip` (str): A suggestion for how to go about generating the new instruction.
+Your output fields are:
+1. `proposed_instruction` (str): Propose an instruction that will be used to prompt a Language Model to perform this task.
+All interactions will be structured in the following way, with the appropriate values filled in.
+
+[[ ## dataset_description ## ]]
+{dataset_description}
+
+[[ ## program_code ## ]]
+{program_code}
+
+[[ ## program_description ## ]]
+{program_description}
+
+[[ ## module ## ]]
+{module}
+
+[[ ## module_description ## ]]
+{module_description}
+
+[[ ## task_demos ## ]]
+{task_demos}
+
+[[ ## basic_instruction ## ]]
+{basic_instruction}
+
+[[ ## tip ## ]]
+{tip}
+
+[[ ## proposed_instruction ## ]]
+{proposed_instruction}
+
+[[ ## completed ## ]]
+In adhering to this structure, your objective is: 
+        Use the information below to learn about a task that we are trying to solve using calls to an LM, then generate a new instruction that will be used to prompt a Language Model to better solve the task.
+
+
+[31mUser message:[0m
+
+[[ ## dataset_description ## ]]
+The dataset focuses on extracting specific factual details from formal, semi-structured documents related to financial, legal, and administrative contexts. It includes entries with detailed information about documents like invoices, checks, and reports, requiring precise entity recognition and attribute extraction. The primary aim is to train models for accurate information retrieval in business and legal document analysis.
+
+[[ ## program_code ## ]]
+StringSignature(question, context -> reasoning, answer
+    instructions='Answer questions with short factoid answers.\nYou will receive context(contain relevant facts).\nThink step by step.'
+    question = Field(annotation=str required=True json_schema_extra={'desc': 'the question to answer', '__dspy_field_type': 'input', 'prefix': 'Question:'})
+    context = Field(annotation=str required=True json_schema_extra={'desc': 'retrieved context, may contain relevant facts', '__dspy_field_type': 'input', 'prefix': 'Context:'})
+    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': "Reasoning: Let's think step by step in order to", 'desc': '${reasoning}', '__dspy_field_type': 'output'})
+    answer = Field(annotation=str required=True json_schema_extra={'desc': "AI's answer", '__dspy_field_type': 'output', 'prefix': 'Answer:'})
+)
+
+class RAG_AnswerGeneration(dspy.Module):
+    def __init__(self):
+        super().__init__()
+        self.generate_answer = dspy.ChainOfThought(GenerateAnswer)
+
+    def forward(self, question, context):
+        prediction = self.generate_answer(question=question, context=context)
+        return dspy.Prediction(context=context,
+                               answer=prediction.answer,
+                               reasoning=prediction.reasoning)
+
+
+[[ ## program_description ## ]]
+This program is designed to answer fact-based questions by utilizing provided contextual information. It prompts the language model to think through the reasoning process step-by-step before arriving at a concise answer. The task involves extracting relevant facts from the context, reasoning logically about the question, and then generating a short, factual response. The pipeline likely involves passing the question and context to the language model, which then produces both a reasoning explanation and an answer, ensuring the responses are accurate and grounded in the given information.
+
+[[ ## module ## ]]
+Predict(question, context) -> reasoning, answer
+
+[[ ## module_description ## ]]
+The Predict module serves as the core component responsible for generating a step-by-step reasoning process and a concise answer based on the provided question and contextual information. It processes these inputs to produce an insightful explanation and a factual response, enabling the overall system to deliver accurate and grounded answers to fact-based questions. This module encapsulates the interaction with the language model, managing the input prompts and interpreting its outputs to support effective question answering within the pipeline.
+
+[[ ## task_demos ## ]]
+No task demos provided.
+
+[[ ## basic_instruction ## ]]
+Answer questions with short factoid answers.
+You will receive context(contain relevant facts).
+Think step by step.
+
+[[ ## tip ## ]]
+Include a persona that is relevant to the task in the instruction (ie. "You are a ...")
+
+Respond with the corresponding output fields, starting with the field `[[ ## proposed_instruction ## ]]`, and then ending with the marker for `[[ ## completed ## ]]`.
+
+
+[31mResponse:[0m
+
+[32m[[ ## proposed_instruction ## ]]
+You are an expert in analyzing formal financial, legal, and administrative documents. Given a question and a relevant context containing factual information from such documents, think carefully through the reasoning process step-by-step. Then, provide a concise, factual answer based solely on the information in the context. Ensure your response is clear, accurate, and grounded in the provided facts. Remember to first explain your reasoning before giving the final answer.
+[[ ## completed ## ]][0m
+
+
+
+
+
+PROPOSED INSTRUCTION: You are an expert in analyzing formal financial, legal, and administrative documents. Given a question and a relevant context containing factual information from such documents, think carefully through the reasoning process step-by-step. Then, provide a concise, factual answer based solely on the information in the context. Ensure your response is clear, accurate, and grounded in the provided facts. Remember to first explain your reasoning before giving the final answer.
+  0%|          | 0/80 [00:00<?, ?it/s][Trial] Q: What was the proposed budget for The Council for Tobacco Research–U.S.A., Inc. in 1980? | Score: 0.1926991046581285
+                      GT: the proposed budget for 1980 was $140,000 for the scientific advisory board and a total budget of approximately $7,445,000.
+                      Pred: the proposed budget for the council for tobacco research–u.s.a., inc. in 1980 was approximately $8,000,000.
+          
+[Trial] Q: Who is the issuer of the check? | Score: 0.8466460729365617
+                      GT: the tobacco institute
+                      Pred: the issuer of the check is the tobacco institute.
+          
+Average Metric: 0.85 / 1 (84.7%):   0%|          | 0/80 [00:17<?, ?it/s]Average Metric: 0.85 / 1 (84.7%):   1%|1         | 1/80 [00:17<22:38, 17.20s/it]Average Metric: 1.04 / 2 (52.0%):   1%|1         | 1/80 [00:17<22:38, 17.20s/it][Trial] Q: Who is the issuer of the check? | Score: 0.8426053536364746
+                      GT: the tobacco institute
+                      Pred: the issuer of the check is the tobacco institute.
+          
+[Trial] Q: What is the date of the invoice? | Score: 0.4704787551963233
+                      GT: the date of the invoice is march 27, 1986.
+                      Pred: 03/27/86
+          
+Average Metric: 1.88 / 3 (62.7%):   2%|2         | 2/80 [00:17<22:21, 17.20s/it]Average Metric: 2.35 / 4 (58.8%):   4%|3         | 3/80 [00:17<22:04, 17.20s/it]Average Metric: 2.67 / 5 (53.5%):   5%|5         | 4/80 [00:17<21:47, 17.20s/it]Average Metric: 2.67 / 5 (53.5%):   6%|6         | 5/80 [00:17<03:19,  2.66s/it][Trial] Q: What is the customer number mentioned in the invoice? | Score: 0.8528251562949686
+                      GT: the customer number is 1061420093.
+                      Pred: 1061420093
+          
+Average Metric: 3.53 / 6 (58.8%):   6%|6         | 5/80 [00:17<03:19,  2.66s/it][Trial] Q: What is the client's name and address mentioned in the production bill? | Score: 0.7857824564738003
+                      GT: the client's name is brown & williamson tobacco corp, and their address is 1600 w hill st, louisville, ky 40201.
+                      Pred: client's name: brown & williamson tobacco corp
+client's address: 1600 w hill st, louisville, ky 40201
+          
+Average Metric: 4.31 / 7 (61.6%):   8%|7         | 6/80 [00:17<03:16,  2.66s/it]Average Metric: 4.31 / 7 (61.6%):   9%|8         | 7/80 [00:17<02:02,  1.68s/it]Average Metric: 4.31 / 7 (61.6%):   9%|8         | 7/80 [00:29<02:02,  1.68s/it][Trial] Q: What is the name of the vendor issuing this invoice? | Score: 1.0
+                      GT: microbiological associates
+                      Pred: microbiological associates
+          
+Average Metric: 5.31 / 8 (66.4%):   9%|8         | 7/80 [00:44<02:02,  1.68s/it]Average Metric: 5.31 / 8 (66.4%):  10%|#         | 8/80 [00:44<08:19,  6.94s/it]Average Metric: 5.64 / 9 (62.6%):  10%|#         | 8/80 [00:58<08:19,  6.94s/it]Average Metric: 5.64 / 9 (62.6%):  11%|#1        | 9/80 [00:58<10:08,  8.57s/it]Average Metric: 6.64 / 10 (66.4%):  11%|#1        | 9/80 [00:58<10:08,  8.57s/it]Average Metric: 6.64 / 10 (66.4%):  12%|#2        | 10/80 [00:58<07:33,  6.47s/it][Trial] Q: What is the invoice number of the document? | Score: 0.8164532184802322
+                      GT: the invoice number is 3019.
+                      Pred: 3019
+          
+Average Metric: 7.45 / 11 (67.8%):  12%|#2        | 10/80 [00:58<07:33,  6.47s/it]Average Metric: 7.45 / 11 (67.8%):  14%|#3        | 11/80 [00:58<05:31,  4.80s/it][Trial] Q: What company issued this service invoice? | Score: 0.24204803428830007
+                      GT: big mo parking co., operating under 'big white co.'
+                      Pred: big white co.
+          
+Average Metric: 7.70 / 12 (64.1%):  14%|#3        | 11/80 [01:16<05:31,  4.80s/it]Average Metric: 7.70 / 12 (64.1%):  15%|#5        | 12/80 [01:16<09:41,  8.55s/it][Trial] Q: What is the company name mentioned in the document? | Score: 0.28387466014232315
+                      GT: lbo burnett usa, a division of leo burnett company, inc. advertising
+                      Pred: lbo burnett usa
+          
+Average Metric: 7.98 / 13 (61.4%):  15%|#5        | 12/80 [01:17<09:41,  8.55s/it][Trial] Q: What is the invoice number of the document? | Score: 0.5330778931090004
+                      GT: the invoice number is 702587.
+                      Pred: 702587
+          
+[Trial] Q: Who is the issuer of the invoice? | Score: 0.3161652706647408
+                      GT: the invoice issuer is charles river wiga gmbh.
+                      Pred: charles river wiga gmbh
+          
+Average Metric: 7.98 / 13 (61.4%):  16%|#6        | 13/80 [01:17<06:55,  6.20s/it]Average Metric: 8.30 / 14 (59.3%):  16%|#6        | 13/80 [01:17<06:55,  6.20s/it]Average Metric: 8.30 / 14 (59.3%):  18%|#7        | 14/80 [01:17<04:54,  4.46s/it]Average Metric: 8.83 / 15 (58.9%):  18%|#7        | 14/80 [01:17<04:54,  4.46s/it]Average Metric: 8.83 / 15 (58.9%):  19%|#8        | 15/80 [01:17<03:28,  3.20s/it][Trial] Q: What is the total expenditure reported for Virginia Slims in 1994? | Score: 0.1960692664313903
+                      GT: the total expenditure reported for virginia slims is not explicitly stated, but it appears to increase substantially throughout the year with peaks around december.
+                      Pred: $20 million
+          
+[Trial] Q: What is the name of the company issuing the payroll checks? | Score: 0.8255284034067488
+                      GT: lorillard tobacco company.
+                      Pred: lorillard tobacco company
+          
+Average Metric: 9.65 / 16 (60.3%):  19%|#8        | 15/80 [01:38<03:28,  3.20s/it]Average Metric: 9.65 / 16 (60.3%):  20%|##        | 16/80 [01:38<08:52,  8.33s/it]Average Metric: 9.85 / 17 (57.9%):  20%|##        | 16/80 [01:38<08:52,  8.33s/it][Trial] Q: What is the invoice number of the document? | Score: 0.6239330305263832
+                      GT: the invoice number is 5910.
+                      Pred: 5910
+          
+Average Metric: 10.47 / 18 (58.2%):  21%|##1       | 17/80 [01:38<08:44,  8.33s/it][Trial] Q: What is the total magazine cost estimate for Philip Morris Inc.? | Score: 0.9999999999999998
+                      GT: $16,656.63
+                      Pred: $16,656.63
+          
+Average Metric: 10.47 / 18 (58.2%):  22%|##2       | 18/80 [01:38<04:53,  4.74s/it]Average Metric: 11.47 / 19 (60.4%):  22%|##2       | 18/80 [01:38<04:53,  4.74s/it][Trial] Q: What is the issuer of the financial statement? | Score: 0.9999999999999998
+                      GT: covington & burling
+                      Pred: covington & burling
+          
+Average Metric: 12.47 / 20 (62.4%):  24%|##3       | 19/80 [01:39<04:48,  4.74s/it]Average Metric: 12.47 / 20 (62.4%):  25%|##5       | 20/80 [01:39<02:54,  2.90s/it]Average Metric: 12.47 / 20 (62.4%):  25%|##5       | 20/80 [01:44<02:54,  2.90s/it]Average Metric: 12.47 / 20 (62.4%):  26%|##6       | 21/80 [01:44<03:20,  3.39s/it]Average Metric: 12.47 / 20 (62.4%):  26%|##6       | 21/80 [02:27<03:20,  3.39s/it]Average Metric: 12.47 / 20 (62.4%):  28%|##7       | 22/80 [02:27<12:33, 12.99s/it]Average Metric: 13.31 / 21 (63.4%):  28%|##7       | 22/80 [02:29<12:33, 12.99s/it]Average Metric: 13.31 / 21 (63.4%):  29%|##8       | 23/80 [02:29<09:29,  9.99s/it]Average Metric: 14.05 / 22 (63.9%):  29%|##8       | 23/80 [02:42<09:29,  9.99s/it]Average Metric: 14.05 / 22 (63.9%):  30%|###       | 24/80 [02:42<10:10, 10.89s/it]Average Metric: 14.47 / 23 (62.9%):  30%|###       | 24/80 [02:42<10:10, 10.89s/it]Average Metric: 14.47 / 23 (62.9%):  31%|###1      | 25/80 [02:42<09:59, 10.89s/it]Average Metric: 15.26 / 24 (63.6%):  32%|###2      | 26/80 [02:42<09:48, 10.89s/it]Average Metric: 15.26 / 24 (63.6%):  34%|###3      | 27/80 [02:42<04:30,  5.10s/it]Average Metric: 16.01 / 25 (64.0%):  34%|###3      | 27/80 [02:42<04:30,  5.10s/it]Average Metric: 16.01 / 25 (64.0%):  35%|###5      | 28/80 [02:49<04:25,  5.10s/it]Average Metric: 16.01 / 25 (64.0%):  36%|###6      | 29/80 [02:49<03:48,  4.48s/it]Average Metric: 16.01 / 25 (64.0%):  36%|###6      | 29/80 [03:03<05:22,  6.32s/it]
+[Trial] Q: Who is the issuer of the check? | Score: 0.7939666693302149
+                      GT: the tobacco institute
+                      Pred: the issuer of the check is the tobacco institute.
+          
+[Trial] Q: What is the invoice number of the document? | Score: 0.7664665109217877
+                      GT: the invoice number is 5178.
+                      Pred: 5178
+          
+[Trial] Q: What is the total corporate dues for 1975 according to the document? | Score: 0.8663744254265534
+                      GT: the total corporate dues for 1975 is $427,655.
+                      Pred: $427,655
+          
+Predictor 0
+i: Answer questions with short factoid answers.
+You will receive context(contain relevant facts).
+Think step by step.
+p: Answer:
+
+
+  0%|          | 0/4 [00:00<?, ?it/s][Trial] Q: What is the customer number mentioned in the invoice? | Score: 0.8659130708571496
+                      GT: the customer number is 1061420093.
+                      Pred: 1061420093
+          
+Average Metric: 0.87 / 1 (86.6%):   0%|          | 0/4 [00:26<?, ?it/s]Average Metric: 0.87 / 1 (86.6%):  25%|##5       | 1/4 [00:26<01:18, 26.10s/it][Trial] Q: What is the vendor's address as stated in the commercial invoice? | Score: 0.8423947111894534
+                      GT: 4 e. 46th street, new york, ny 10017
+                      Pred: djm post, 4 e. 46th street, new york, ny 10017
+          
+Average Metric: 1.71 / 2 (85.4%):  25%|##5       | 1/4 [01:28<01:18, 26.10s/it]Average Metric: 1.71 / 2 (85.4%):  50%|#####     | 2/4 [01:28<01:34, 47.19s/it][Trial] Q: What departments are included in this report? | Score: 0.20535926151973932
+                      GT: the report includes 'tobacco & health, corporate' department with two sub-departments: 502 divisions - tobacco institute and 612 legal - general domestic.
+                      Pred: the departments included in this report are the tobacco institute and legal - general domestic.
+          
+Average Metric: 1.91 / 3 (63.8%):  50%|#####     | 2/4 [01:28<01:34, 47.19s/it]Average Metric: 1.91 / 3 (63.8%):  75%|#######5  | 3/4 [01:28<00:25, 25.73s/it][Trial] Q: What is the invoice number of the document? | Score: 0.7350614869198524
+                      GT: the invoice number is 02 01382.
+                      Pred: 02 01382
+          
+Average Metric: 2.65 / 4 (66.2%):  75%|#######5  | 3/4 [01:29<00:25, 25.73s/it]Average Metric: 2.65 / 4 (66.2%): 100%|##########| 4/4 [01:29<00:00, 15.91s/it]Average Metric: 2.65 / 4 (66.2%): 100%|##########| 4/4 [01:29<00:00, 22.28s/it]
+Predictor 0
+i: Given a question and a relevant context containing factual information, generate a clear, step-by-step reasoning process that logically leads to the answer. Then, provide a concise, fact-based response based on the reasoning. Ensure your reasoning is explicit and your final answer is precise and directly addresses the question, suitable for extracting specific details from formal business, legal, or financial documents.
+p: Answer:
+
+
+  0%|          | 0/4 [00:00<?, ?it/s]Average Metric: 0.00 / 0 (0%):   0%|          | 0/4 [00:13<?, ?it/s]Average Metric: 0.00 / 0 (0%):  25%|##5       | 1/4 [00:13<00:41, 13.76s/it][Trial] Q: Who is the payee organization mentioned in the check? | Score: 0.35569044851168174
+                      GT: the payee organization is datatimes.
+                      Pred: datatimes
+          
+Average Metric: 0.36 / 1 (35.6%):  25%|##5       | 1/4 [00:13<00:41, 13.76s/it]Average Metric: 0.36 / 1 (35.6%):  50%|#####     | 2/4 [00:13<00:11,  5.79s/it][Trial] Q: Who is the issuer of the financial voucher? | Score: 0.6705205759638557
+                      GT: philip morris usa
+                      Pred: the issuer of the financial voucher is philip morris usa.
+          
+Average Metric: 1.03 / 2 (51.3%):  50%|#####     | 2/4 [00:14<00:11,  5.79s/it]Average Metric: 1.03 / 2 (51.3%):  75%|#######5  | 3/4 [00:14<00:03,  3.24s/it][Trial] Q: What is the invoice number of the document? | Score: 0.7436850122807336
+                      GT: the invoice number is 022284.
+                      Pred: 022284
+          
+Average Metric: 1.77 / 3 (59.0%):  75%|#######5  | 3/4 [00:14<00:03,  3.24s/it]Average Metric: 1.77 / 3 (59.0%): 100%|##########| 4/4 [00:14<00:00,  2.20s/it]Average Metric: 1.77 / 3 (59.0%): 100%|##########| 4/4 [00:14<00:00,  3.70s/it]
+Predictor 0
+i: Given a question and a relevant context containing factual information, generate a clear, step-by-step reasoning process to arrive at the answer. Then, provide a concise, fact-based answer based on that reasoning. Ensure your responses are precise and directly address the question, leveraging the context effectively. Your output should include both the reasoning process and the final answer, formatted clearly to distinguish between the two.
+p: Answer:
+
+
+  0%|          | 0/4 [00:00<?, ?it/s][Trial] Q: What is the client name mentioned in the document? | Score: 0.9944772143499859
+                      GT: p.m. inc.
+                      Pred: p.m. inc.
+          
+Average Metric: 0.99 / 1 (99.4%):   0%|          | 0/4 [00:30<?, ?it/s]Average Metric: 0.99 / 1 (99.4%):  25%|##5       | 1/4 [00:30<01:31, 30.49s/it][Trial] Q: What is the invoice number of the document? | Score: 0.5853926805866989
+                      GT: the invoice number is 702587.
+                      Pred: 702587
+          
+Average Metric: 1.58 / 2 (79.0%):  25%|##5       | 1/4 [01:31<01:31, 30.49s/it]Average Metric: 1.58 / 2 (79.0%):  50%|#####     | 2/4 [01:31<01:36, 48.36s/it][Trial] Q: What is the total farm cash receipts from 1988 to 1997? | Score: 0.3478659073336812
+                      GT: the total farm cash receipts over the period 1988-1997 were $1,513,243 million.
+                      Pred: the total farm cash receipts from 1988 to 1997 amount to 1,690,990 million dollars.
+          
+Average Metric: 1.93 / 3 (64.3%):  50%|#####     | 2/4 [01:31<01:36, 48.36s/it][Trial] Q: What is the total budget for this year in the Tobacco & Health department? | Score: 0.459787230622913
+                      GT: $466,662
+                      Pred: the total budget for this year in the tobacco & health department is $466,662.
+          
+Average Metric: 1.93 / 3 (64.3%):  75%|#######5  | 3/4 [01:31<00:26, 26.38s/it]Average Metric: 2.39 / 4 (59.7%):  75%|#######5  | 3/4 [01:31<00:26, 26.38s/it]Average Metric: 2.39 / 4 (59.7%): 100%|##########| 4/4 [01:31<00:00, 22.89s/it]
+Predictor 0
+i: Given a question and a related context containing relevant factual information, generate a concise, fact-based answer by reasoning through the context step-by-step. Your response should include a clear explanation of your reasoning process followed by the final answer. Ensure that the reasoning logically derives the answer from the provided facts, enabling explainability and accuracy in your response. Use the context to identify and extract the necessary details to answer the question precisely and succinctly.
+p: Answer:
+
+
+  0%|          | 0/4 [00:00<?, ?it/s]Average Metric: 0.00 / 0 (0%):   0%|          | 0/4 [00:12<?, ?it/s]Average Metric: 0.00 / 0 (0%):  25%|##5       | 1/4 [00:12<00:36, 12.02s/it]Average Metric: 1.00 / 1 (100.0%):  25%|##5       | 1/4 [00:12<00:36, 12.02s/it]Average Metric: 1.00 / 1 (100.0%):  50%|#####     | 2/4 [00:12<00:10,  5.03s/it][Trial] Q: What is the total budget for this year in the Tobacco & Health department? | Score: 0.8025247968052099
+                      GT: $466,662
+                      Pred: the total budget for this year in the tobacco & health department is $466,662.
+          
+Average Metric: 1.00 / 1 (100.0%):  50%|#####     | 2/4 [00:13<00:10,  5.03s/it]Average Metric: 1.00 / 1 (100.0%):  75%|#######5  | 3/4 [00:13<00:03,  3.51s/it]Average Metric: 1.80 / 2 (90.1%):  75%|#######5  | 3/4 [00:13<00:03,  3.51s/it] Average Metric: 1.80 / 2 (90.1%): 100%|##########| 4/4 [00:13<00:00,  3.46s/it]
+Predictor 0
+i: Given a question and a related context containing relevant factual information, generate a concise, fact-based answer by reasoning through the context step-by-step. Your response should include a clear explanation of your reasoning process followed by the final answer. Ensure that the reasoning logically derives the answer from the provided facts, enabling explainability and accuracy in your response. Use the context to identify and extract the necessary details to answer the question precisely and succinctly.
+p: Answer:
+
+
+  0%|          | 0/4 [00:00<?, ?it/s][Trial] Q: What is the purchase order number mentioned in the document? | Score: 0.8459252402548829
+                      GT: the purchase order number is 29781.
+                      Pred: the purchase order number mentioned in the document is 29781.
+          
+[Trial] Q: What is the client's name mentioned in the Outdoor Estimate Recap document? | Score: 0.6582100571014635
+                      GT: the client's name is p. m.
+                      Pred: the client's name mentioned in the outdoor estimate recap document is p. m.
+          
+[Trial] Q: Who is the issuer of the financial voucher? | Score: 0.7025688268967677
+                      GT: philip morris usa
+                      Pred: the issuer of the financial voucher is philip morris usa.
+          
+Average Metric: 0.66 / 1 (65.8%):   0%|          | 0/4 [00:12<?, ?it/s]Average Metric: 0.66 / 1 (65.8%):  25%|##5       | 1/4 [00:12<00:37, 12.57s/it]Average Metric: 1.50 / 2 (75.2%):  25%|##5       | 1/4 [00:12<00:37, 12.57s/it]Average Metric: 2.21 / 3 (73.6%):  50%|#####     | 2/4 [00:12<00:25, 12.57s/it][Trial] Q: What is the total magazine cost estimate for Philip Morris Inc.? | Score: 0.8854038600274119
+                      GT: $16,656.63
+                      Pred: the total magazine cost estimate for philip morris inc. is $16,656.63.
+          
+Average Metric: 3.09 / 4 (77.3%):  75%|#######5  | 3/4 [00:12<00:12, 12.57s/it]Average Metric: 3.09 / 4 (77.3%): 100%|##########| 4/4 [00:12<00:00,  3.15s/it]
+  0%|          | 0/80 [00:00<?, ?it/s]Average Metric: 0.00 / 0 (0%):   0%|          | 0/80 [00:18<?, ?it/s]Average Metric: 0.00 / 0 (0%):   1%|1         | 1/80 [00:18<24:01, 18.25s/it]Average Metric: 0.75 / 1 (75.3%):   1%|1         | 1/80 [00:21<24:01, 18.25s/it]Average Metric: 0.75 / 1 (75.3%):   2%|2         | 2/80 [00:21<12:17,  9.46s/it]Average Metric: 0.75 / 1 (75.3%):   2%|2         | 2/80 [00:25<12:17,  9.46s/it]Average Metric: 0.75 / 1 (75.3%):   4%|3         | 3/80 [00:25<09:01,  7.04s/it]Average Metric: 0.75 / 1 (75.3%):   4%|3         | 3/80 [00:26<09:01,  7.04s/it]Average Metric: 0.75 / 1 (75.3%):   5%|5         | 4/80 [00:26<05:56,  4.69s/it]Average Metric: 0.75 / 1 (75.3%):   5%|5         | 4/80 [00:27<05:56,  4.69s/it]Average Metric: 0.75 / 1 (75.3%):   6%|6         | 5/80 [00:27<03:50,  3.07s/it]Average Metric: 0.75 / 1 (75.3%):   6%|6         | 5/80 [00:37<03:50,  3.07s/it]Average Metric: 0.75 / 1 (75.3%):   8%|7         | 6/80 [00:37<06:55,  5.61s/it]Average Metric: 1.75 / 2 (87.7%):   8%|7         | 6/80 [00:41<06:55,  5.61s/it]Average Metric: 1.75 / 2 (87.7%):   9%|8         | 7/80 [00:41<06:20,  5.21s/it]Average Metric: 1.75 / 2 (87.7%):   9%|8         | 7/80 [00:43<06:20,  5.21s/it]Average Metric: 1.75 / 2 (87.7%):  10%|#         | 8/80 [00:43<04:42,  3.93s/it]Average Metric: 2.75 / 3 (91.8%):  10%|#         | 8/80 [00:43<04:42,  3.93s/it]Average Metric: 2.75 / 3 (91.8%):  11%|#1        | 9/80 [00:43<03:30,  2.97s/it]Average Metric: 3.12 / 4 (78.0%):  11%|#1        | 9/80 [00:44<03:30,  2.97s/it]Average Metric: 3.12 / 4 (78.0%):  12%|#2        | 10/80 [00:44<02:31,  2.16s/it][Trial] Q: What is the issuer of the financial statement? | Score: 1.0
+                      GT: covington & burling
+                      Pred: covington & burling
+          
+Average Metric: 4.12 / 5 (82.4%):  12%|#2        | 10/80 [00:44<02:31,  2.16s/it]Average Metric: 4.12 / 5 (82.4%):  14%|#3        | 11/80 [00:44<01:55,  1.68s/it]Average Metric: 4.12 / 5 (82.4%):  14%|#3        | 11/80 [00:45<01:55,  1.68s/it]Average Metric: 4.12 / 5 (82.4%):  15%|#5        | 12/80 [00:45<01:26,  1.27s/it]Average Metric: 4.12 / 5 (82.4%):  15%|#5        | 12/80 [00:51<01:26,  1.27s/it]Average Metric: 4.12 / 5 (82.4%):  16%|#6        | 13/80 [00:51<03:06,  2.78s/it]Average Metric: 4.12 / 5 (82.4%):  16%|#6        | 13/80 [01:15<03:06,  2.78s/it]Average Metric: 4.12 / 5 (82.4%):  18%|#7        | 14/80 [01:15<10:03,  9.15s/it]Average Metric: 4.12 / 5 (82.4%):  18%|#7        | 14/80 [01:17<06:05,  5.53s/it]
+[Trial] Q: What is the total revenue reported in this document? | Score: 1.0
+                      GT: $156,105.61
+                      Pred: $156,105.61
+          

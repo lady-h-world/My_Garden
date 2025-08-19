@@ -1,0 +1,346 @@
+Bootstrapping set 1/2
+Bootstrapping set 2/2
+SOURCE CODE: StringSignature(question, context -> reasoning, answer
+    instructions='Answer questions based on retrieved context.'
+    question = Field(annotation=str required=True json_schema_extra={'desc': 'the question to answer', '__dspy_field_type': 'input', 'prefix': 'Question:'})
+    context = Field(annotation=str required=True json_schema_extra={'desc': 'retrieved context, may contain relevant facts', '__dspy_field_type': 'input', 'prefix': 'Context:'})
+    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': "Reasoning: Let's think step by step in order to", 'desc': '${reasoning}', '__dspy_field_type': 'output'})
+    answer = Field(annotation=str required=True json_schema_extra={'desc': "AI's answer", '__dspy_field_type': 'output', 'prefix': 'Answer:'})
+)
+
+class RAG(dspy.Module):
+    def __init__(self):
+        super().__init__()
+        self.generate_answer = dspy.ChainOfThought(GenerateAnswer)
+
+    def forward(self, question, context):
+        prediction = self.generate_answer(question=question, context=context)
+        return dspy.Prediction(context=context,
+                               answer=prediction.answer,
+                               reasoning=prediction.reasoning)
+
+DATA SUMMARY: The dataset features question-answer pairs centered on financial and banking procedures for businesses, emphasizing detailed, practical, and procedural advice with a focus on legal compliance, documentation, and bureaucratic requirements. The responses are lengthy and comprehensive, highlighting key issues like red flags and common procedural pitfalls. The primary goal appears to be extracting concise summaries or key insights from these detailed explanations for automated use or knowledge management.
+Using a randomly generated configuration for our grounded proposer.
+Selected tip: high_stakes
+PROGRAM DESCRIPTION: This program is designed to answer questions based on a given context by generating reasoning and a final answer. It likely functions as part of a retrieval-augmented generation (RAG) pipeline, where relevant information is retrieved and provided as context. The program then prompts a language model to process this context and question, producing a step-by-step reasoning explanation and a final answer. It structures the task into clear input fields for the question and context, and output fields for the reasoning process and answer, facilitating interpretability and transparency in the model's decision-making process.
+task_demos No task demos provided.
+
+
+
+
+[34m[2025-06-14T13:01:04.894660][0m
+
+[31mSystem message:[0m
+
+Your input fields are:
+1. `dataset_description` (str): A description of the dataset that we are using.
+2. `program_code` (str): Language model program designed to solve a particular task.
+3. `program_description` (str): Summary of the task the program is designed to solve, and how it goes about solving it.
+4. `module` (str): The module to create an instruction for.
+5. `module_description` (str): Description of the module to create an instruction for.
+6. `task_demos` (str): Example inputs/outputs of our module.
+7. `basic_instruction` (str): Basic instruction.
+8. `tip` (str): A suggestion for how to go about generating the new instruction.
+Your output fields are:
+1. `proposed_instruction` (str): Propose an instruction that will be used to prompt a Language Model to perform this task.
+All interactions will be structured in the following way, with the appropriate values filled in.
+
+[[ ## dataset_description ## ]]
+{dataset_description}
+
+[[ ## program_code ## ]]
+{program_code}
+
+[[ ## program_description ## ]]
+{program_description}
+
+[[ ## module ## ]]
+{module}
+
+[[ ## module_description ## ]]
+{module_description}
+
+[[ ## task_demos ## ]]
+{task_demos}
+
+[[ ## basic_instruction ## ]]
+{basic_instruction}
+
+[[ ## tip ## ]]
+{tip}
+
+[[ ## proposed_instruction ## ]]
+{proposed_instruction}
+
+[[ ## completed ## ]]
+In adhering to this structure, your objective is: 
+        Use the information below to learn about a task that we are trying to solve using calls to an LM, then generate a new instruction that will be used to prompt a Language Model to better solve the task.
+
+
+[31mUser message:[0m
+
+[[ ## dataset_description ## ]]
+The dataset features question-answer pairs centered on financial and banking procedures for businesses, emphasizing detailed, practical, and procedural advice with a focus on legal compliance, documentation, and bureaucratic requirements. The responses are lengthy and comprehensive, highlighting key issues like red flags and common procedural pitfalls. The primary goal appears to be extracting concise summaries or key insights from these detailed explanations for automated use or knowledge management.
+
+[[ ## program_code ## ]]
+StringSignature(question, context -> reasoning, answer
+    instructions='Answer questions based on retrieved context.'
+    question = Field(annotation=str required=True json_schema_extra={'desc': 'the question to answer', '__dspy_field_type': 'input', 'prefix': 'Question:'})
+    context = Field(annotation=str required=True json_schema_extra={'desc': 'retrieved context, may contain relevant facts', '__dspy_field_type': 'input', 'prefix': 'Context:'})
+    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': "Reasoning: Let's think step by step in order to", 'desc': '${reasoning}', '__dspy_field_type': 'output'})
+    answer = Field(annotation=str required=True json_schema_extra={'desc': "AI's answer", '__dspy_field_type': 'output', 'prefix': 'Answer:'})
+)
+
+class RAG(dspy.Module):
+    def __init__(self):
+        super().__init__()
+        self.generate_answer = dspy.ChainOfThought(GenerateAnswer)
+
+    def forward(self, question, context):
+        prediction = self.generate_answer(question=question, context=context)
+        return dspy.Prediction(context=context,
+                               answer=prediction.answer,
+                               reasoning=prediction.reasoning)
+
+
+[[ ## program_description ## ]]
+This program is designed to answer questions based on a given context by generating reasoning and a final answer. It likely functions as part of a retrieval-augmented generation (RAG) pipeline, where relevant information is retrieved and provided as context. The program then prompts a language model to process this context and question, producing a step-by-step reasoning explanation and a final answer. It structures the task into clear input fields for the question and context, and output fields for the reasoning process and answer, facilitating interpretability and transparency in the model's decision-making process.
+
+[[ ## module ## ]]
+Predict(question, context) -> reasoning, answer
+
+[[ ## module_description ## ]]
+The Predict module takes a question and a related context as inputs and generates two outputs: a detailed reasoning process and a final answer. Its role is to interpret the context and question, produce an explanation of the reasoning steps involved, and then derive the answer based on that reasoning. This module facilitates transparent and interpretable question-answering by breaking down the decision-making process into understandable components.
+
+[[ ## task_demos ## ]]
+No task demos provided.
+
+[[ ## basic_instruction ## ]]
+Answer questions based on retrieved context.
+
+[[ ## tip ## ]]
+The instruction should include a high stakes scenario in which the LM must solve the task!
+
+Respond with the corresponding output fields, starting with the field `[[ ## proposed_instruction ## ]]`, and then ending with the marker for `[[ ## completed ## ]]`.
+
+
+[31mResponse:[0m
+
+[32m[[ ## proposed_instruction ## ]]
+You are a highly responsible financial and legal advisor working in a high-stakes environment where accurate, detailed, and compliant guidance is critical. Your task is to analyze the provided context related to complex banking and business procedures, and answer the question with thorough reasoning, highlighting potential red flags, procedural pitfalls, and legal considerations. Ensure your explanation demonstrates step-by-step logical thinking, as this will be used to make important decisions in sensitive financial operations. Carefully synthesize the information to produce a concise and precise final answer that adheres to regulatory standards and best practices, as any oversight could lead to legal or financial penalties. Remember, your responses must prioritize accuracy, compliance, and comprehensive understanding to prevent costly errors in a high-stakes setting.
+
+[[ ## completed ## ]][0m
+
+
+
+
+
+PROPOSED INSTRUCTION: You are a highly responsible financial and legal advisor working in a high-stakes environment where accurate, detailed, and compliant guidance is critical. Your task is to analyze the provided context related to complex banking and business procedures, and answer the question with thorough reasoning, highlighting potential red flags, procedural pitfalls, and legal considerations. Ensure your explanation demonstrates step-by-step logical thinking, as this will be used to make important decisions in sensitive financial operations. Carefully synthesize the information to produce a concise and precise final answer that adheres to regulatory standards and best practices, as any oversight could lead to legal or financial penalties. Remember, your responses must prioritize accuracy, compliance, and comprehensive understanding to prevent costly errors in a high-stakes setting.
+Using a randomly generated configuration for our grounded proposer.
+Selected tip: description
+PROGRAM DESCRIPTION: This program is designed to answer questions based on a given context, utilizing a reasoning process to improve the quality and accuracy of the answers. It takes as input a question and a retrieved context that may contain relevant facts, then generates a detailed step-by-step reasoning process before producing a final answer. The program likely employs a chain-of-thought approach, prompting the language model to think through the problem systematically, which helps in handling complex questions that require multi-step reasoning or integration of multiple pieces of information. Overall, it aims to improve question-answering performance by explicitly modeling and leveraging reasoning steps grounded in the retrieved context.
+task_demos No task demos provided.
+
+
+
+
+[34m[2025-06-14T13:01:04.905856][0m
+
+[31mSystem message:[0m
+
+Your input fields are:
+1. `dataset_description` (str): A description of the dataset that we are using.
+2. `program_code` (str): Language model program designed to solve a particular task.
+3. `program_description` (str): Summary of the task the program is designed to solve, and how it goes about solving it.
+4. `module` (str): The module to create an instruction for.
+5. `module_description` (str): Description of the module to create an instruction for.
+6. `task_demos` (str): Example inputs/outputs of our module.
+7. `basic_instruction` (str): Basic instruction.
+8. `tip` (str): A suggestion for how to go about generating the new instruction.
+Your output fields are:
+1. `proposed_instruction` (str): Propose an instruction that will be used to prompt a Language Model to perform this task.
+All interactions will be structured in the following way, with the appropriate values filled in.
+
+[[ ## dataset_description ## ]]
+{dataset_description}
+
+[[ ## program_code ## ]]
+{program_code}
+
+[[ ## program_description ## ]]
+{program_description}
+
+[[ ## module ## ]]
+{module}
+
+[[ ## module_description ## ]]
+{module_description}
+
+[[ ## task_demos ## ]]
+{task_demos}
+
+[[ ## basic_instruction ## ]]
+{basic_instruction}
+
+[[ ## tip ## ]]
+{tip}
+
+[[ ## proposed_instruction ## ]]
+{proposed_instruction}
+
+[[ ## completed ## ]]
+In adhering to this structure, your objective is: 
+        Use the information below to learn about a task that we are trying to solve using calls to an LM, then generate a new instruction that will be used to prompt a Language Model to better solve the task.
+
+
+[31mUser message:[0m
+
+[[ ## dataset_description ## ]]
+The dataset features question-answer pairs centered on financial and banking procedures for businesses, emphasizing detailed, practical, and procedural advice with a focus on legal compliance, documentation, and bureaucratic requirements. The responses are lengthy and comprehensive, highlighting key issues like red flags and common procedural pitfalls. The primary goal appears to be extracting concise summaries or key insights from these detailed explanations for automated use or knowledge management.
+
+[[ ## program_code ## ]]
+StringSignature(question, context -> reasoning, answer
+    instructions='Answer questions based on retrieved context.'
+    question = Field(annotation=str required=True json_schema_extra={'desc': 'the question to answer', '__dspy_field_type': 'input', 'prefix': 'Question:'})
+    context = Field(annotation=str required=True json_schema_extra={'desc': 'retrieved context, may contain relevant facts', '__dspy_field_type': 'input', 'prefix': 'Context:'})
+    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': "Reasoning: Let's think step by step in order to", 'desc': '${reasoning}', '__dspy_field_type': 'output'})
+    answer = Field(annotation=str required=True json_schema_extra={'desc': "AI's answer", '__dspy_field_type': 'output', 'prefix': 'Answer:'})
+)
+
+class RAG(dspy.Module):
+    def __init__(self):
+        super().__init__()
+        self.generate_answer = dspy.ChainOfThought(GenerateAnswer)
+
+    def forward(self, question, context):
+        prediction = self.generate_answer(question=question, context=context)
+        return dspy.Prediction(context=context,
+                               answer=prediction.answer,
+                               reasoning=prediction.reasoning)
+
+
+[[ ## program_description ## ]]
+This program is designed to answer questions based on a given context, utilizing a reasoning process to improve the quality and accuracy of the answers. It takes as input a question and a retrieved context that may contain relevant facts, then generates a detailed step-by-step reasoning process before producing a final answer. The program likely employs a chain-of-thought approach, prompting the language model to think through the problem systematically, which helps in handling complex questions that require multi-step reasoning or integration of multiple pieces of information. Overall, it aims to improve question-answering performance by explicitly modeling and leveraging reasoning steps grounded in the retrieved context.
+
+[[ ## module ## ]]
+Predict(question, context) -> reasoning, answer
+
+[[ ## module_description ## ]]
+The Predict module is responsible for generating both a detailed reasoning process and a final answer based on the provided question and context. It leverages a language model to simulate a chain-of-thought reasoning approach, allowing it to break down complex questions into manageable steps before arriving at a definitive answer. This module plays a crucial role in transforming raw input data into interpretable reasoning and accurate responses, thereby enhancing the overall question-answering capability of the system.
+
+[[ ## task_demos ## ]]
+No task demos provided.
+
+[[ ## basic_instruction ## ]]
+Answer questions based on retrieved context.
+
+[[ ## tip ## ]]
+Make sure your instruction is very informative and descriptive.
+
+Respond with the corresponding output fields, starting with the field `[[ ## proposed_instruction ## ]]`, and then ending with the marker for `[[ ## completed ## ]]`.
+
+
+[31mResponse:[0m
+
+[32m[[ ## proposed_instruction ## ]]
+Create a comprehensive and detailed instruction to guide a language model in answering questions accurately by utilizing context, generating step-by-step reasoning, and producing concise final answers. The instruction should emphasize the importance of leveraging the provided context to inform responses, employing a chain-of-thought approach to ensure thorough reasoning, and clearly separating the reasoning process from the final answer. Additionally, it should highlight that the responses must be relevant to the question, grounded in the context, and formatted to facilitate understanding and potential automated processing. The instruction should be explicit, instructive, and encourage the model to think carefully before answering to improve accuracy and clarity, especially in complex or multi-faceted questions related to financial and bureaucratic procedures.
+
+[[ ## completed ## ]][0m
+
+
+
+
+
+PROPOSED INSTRUCTION: Create a comprehensive and detailed instruction to guide a language model in answering questions accurately by utilizing context, generating step-by-step reasoning, and producing concise final answers. The instruction should emphasize the importance of leveraging the provided context to inform responses, employing a chain-of-thought approach to ensure thorough reasoning, and clearly separating the reasoning process from the final answer. Additionally, it should highlight that the responses must be relevant to the question, grounded in the context, and formatted to facilitate understanding and potential automated processing. The instruction should be explicit, instructive, and encourage the model to think carefully before answering to improve accuracy and clarity, especially in complex or multi-faceted questions related to financial and bureaucratic procedures.
+  0%|          | 0/8 [00:00<?, ?it/s]Average Metric: 0.00 / 0 (0%):   0%|          | 0/8 [00:18<?, ?it/s]Average Metric: 0.00 / 0 (0%):  12%|#2        | 1/8 [00:18<02:09, 18.49s/it]Average Metric: 0.00 / 0 (0%):  12%|#2        | 1/8 [00:18<02:09, 18.49s/it]Average Metric: 0.00 / 0 (0%):  25%|##5       | 2/8 [00:18<00:46,  7.71s/it]Average Metric: 0.45 / 1 (44.8%):  25%|##5       | 2/8 [00:18<00:46,  7.71s/it]Average Metric: 0.91 / 2 (45.6%):  38%|###7      | 3/8 [00:18<00:38,  7.71s/it]Average Metric: 0.91 / 2 (45.6%):  50%|#####     | 4/8 [00:18<00:11,  2.93s/it]Average Metric: 0.91 / 2 (45.6%):  50%|#####     | 4/8 [00:20<00:11,  2.93s/it]Average Metric: 0.91 / 2 (45.6%):  62%|######2   | 5/8 [00:20<00:07,  2.39s/it]Average Metric: 0.91 / 2 (45.6%):  62%|######2   | 5/8 [00:21<00:07,  2.39s/it]Average Metric: 0.91 / 2 (45.6%):  75%|#######5  | 6/8 [00:21<00:04,  2.21s/it][Trial] Q: 1 EIN doing business under multiple business names | Score: 0.27967956361306434
+                      GT: you're confusing a lot of things here. company b llc will have it's sales run under company a llc, and cease operating as a separate entity these two are contradicting each other. if b llc ceases to exist - it is not going to have it's sales run under a llc, since there will be no sales to run for a non-existent company. what happens is that you merge b llc into a llc, and then convert a llc into s corp. so you're cancelling the ein for b llc, you're cancelling the ein for a llc - because both entities cease to exist. you then create a ein for a corp, which is the converted a llc, and you create a dba where a corp dba b shop. you then go to the bank and open the account for a corp dba b shop with the ein you just created for a corp. get a better accountant. before you convert to s-corp.
+                      Pred: yes, a business can operate under multiple business names by registering dbas (doing business as) for each name. this allows a single legal entity to conduct business under different trade names without creating separate legal entities. the process involves filing dba forms with local government authorities and can be used for branding, marketing, or operational purposes.
+          
+Average Metric: 1.19 / 3 (39.8%):  75%|#######5  | 6/8 [00:42<00:04,  2.21s/it]Average Metric: 1.19 / 3 (39.8%):  88%|########7 | 7/8 [00:42<00:07,  7.84s/it]Average Metric: 1.19 / 3 (39.8%):  88%|########7 | 7/8 [00:42<00:06,  6.08s/it]
+Predictor 0
+i: Answer questions based on retrieved context.
+p: Answer:
+
+
+  0%|          | 0/4 [00:00<?, ?it/s]Average Metric: 0.38 / 1 (38.2%):   0%|          | 0/4 [00:23<?, ?it/s]Average Metric: 0.38 / 1 (38.2%):  25%|##5       | 1/4 [00:23<01:09, 23.22s/it][Trial] Q: How can I deposit a check made out to my business into my personal account? | Score: 0.5608449532973819
+                      GT: you should have a separate business account. mixing business and personal funds is a bad practice. shop around, you should be able to find a bank that will let you open a free checking account, especially if you are going to have minimal activity (e.g. less than 20 of checks per month) and perhaps maintain a small balance (e.g. $100 or $500).when a business asks me to make out a cheque to a person rather than the business name, i take that as a red flag. frankly it usually means that the person doesn't want the money going through their business account for some reason - probably tax evasion. i'm not saying you are doing that, but it is a frequent issue. if the company makes the cheque out to a person they may run the risk of being party to fraud. worse still they only have your word for it that you actually own the company, and aren't ripping off your employer by pocketing their payment. even worse, when the company is audited and finds that cheque, the person who wrote it will have to justify and document why they made it out to you or risk being charged with embezzlement. it's very much in their interests to make the cheque out to the company they did business with. given that, you should really have an account in the name of your business. it's going to make your life much simpler in the long run."if you sign the check ""for deposit only"", the bank will put it in your account. you may need to set up a ""payable name"" on the account matching your dba alias. however, having counted offerings for a church on several occasions, i know that banks simply have no choice but to be lax about the ""pay to the order of"" line on checks. say the church's ""legal name"" for which the operating funds account was opened is ""saint barnabas episcopal church of red bluff"". you'll get offering checks made out to ""saint barnabas"", ""saint b's"", ""episcopal church of red bluff"", ""red bluff episcopal"", ""youth group fund"", ""pastor frank"", etc. the bank will take em all; just gotta stamp em with the endorsement for the church. sometimes the money will be ""earmarked"" based on the payable line; any attempt to pay the pastor directly will go into his ""discretionary fund"", and anything payable to a specific subgroup of the church will go into their asset account line, but really all the cash goes directly to the same bank account anyway. for-profit operations are similar; an apartment complex may get checks payable to the apartment name, the management company name, even the landlord. i expect that your freelance work will be no different.""depending on where you are, you may be able to get away with filing a ""doing business as"" document with your local government, and then having the bank call the county seat to verify this. there is generally a fee for processing/recording/filing the dba form, of course. but it's useful for more purposes than just this one. (i still need to file a dba for my hobby work-for-pay, for exactly this reason.)""i have checked with bank of america, and they say the only way to cash (or deposit, or otherwise get access to the funds represented by a check made out to my business) is to open a business account. they tell me this is a federal regulation, and every bank will say the same thing.  to do this, i need a state-issued ""dba"" certificate (from the county clerk's office) as well as an employer id number (ein) issued by the irs. and their cheapest business banking account costs $15 / month. i think i can go to the bank that the check is drawn upon, and they will cash it, assuming i have documentation showing that i am the sole proprietor. but i'm not sure.... what a racket!!"if you're a sole proprietor there's no reason to have a separate business account, as long as you keep adequate records, as you are one and the same for tax purposes. my husband and i already have 5 accounts and a mortgage with one bank. i don't see the need to open up yet another account.  as a contracted accountant, i don't need to write business checks, and my expenses are minimal. as long as i have an present my assumed business name certificate and id, there's no reason for a bank not to deposit into my personal account.
+                      Pred: you generally cannot deposit a check made out to your business directly into your personal account without proper endorsement. if you want to do so, you should endorse the check by signing the back of it and then deposit it into your personal account. keep in mind that banks may scrutinize such deposits, especially if the check is made out to a business, and may require additional documentation or place a hold on the funds. to avoid complications, it is best to deposit business checks into a business account. if you frequently need to deposit business checks into your personal account, consult your bank for their specific policies and consider opening a business account to handle such transactions properly.
+          
+Average Metric: 0.94 / 2 (47.1%):  25%|##5       | 1/4 [00:23<01:09, 23.22s/it]Average Metric: 1.12 / 3 (37.2%):  50%|#####     | 2/4 [00:23<00:46, 23.22s/it]Average Metric: 1.12 / 3 (37.2%):  75%|#######5  | 3/4 [00:23<00:06,  6.06s/it]Average Metric: 1.12 / 3 (37.2%):  75%|#######5  | 3/4 [00:23<00:07,  7.78s/it]
+Predictor 0
+i: Answer questions based on retrieved context.
+p: Answer:
+
+
+  0%|          | 0/4 [00:00<?, ?it/s][Trial] Q: What are the ins/outs of writing equipment purchases off as business expenses in a home based business? | Score: 0.7687096503183727
+                      GT: most items used in business have to be depreciated; you get to deduct a small fraction of the cost each year depending on the lifetime of the item as per irs rules. that is, you cannot assume a one-year life for an electronic item  even if it will be obsolete in three months.  some items can be expensed; you get to deduct the entire cost in the first year but then if you don't stay in business, e.g. you get a job paying wages and are no longer self-employed, you have to recapture this and pay taxes on the amount recaptured in the later year.  with respect to consumer-type electronics such as an ipad or laptop, it helps to have a separate  item for personal use that you can show in case of an audit.first of all, dilip's answer explains well how the business deductions generally work. for most (big) expenses you depreciate it. however, in some cases you need to capitalize it, which is another accounting method. when you capitalize your expense, it becomes part of the basis of the product you're creating. since you're an engineer, this might be relevant for you. talk to your tax adviser. how exactly you deduct/depreciate/capitalize things, and what expense goes which way depends greatly on the laws and jurisdictions. even in the us, different states have different laws, and the irs and state laws don't have to conform (unfortunately). for example, the limitations on sec. 179 deduction in 2010-2011 were 20 times higher on federal level than in the state of california. this could have lead to cases where you fully deducted your expense on your federal tax return, but need to continue and depreciate it on your state return (or vice versa). good tax adviser is crucial to avoid or manage these cases.keep this rather corny acronym in mind. business expenses must be corn: as other posters have already pointed out, certain expenses that are capital items (computers, furniture, etc.) must be depreciated over several years, but you have a certain amount of capital items that you can write off in the current tax year.
+                      Pred: writing off equipment purchases as business expenses in a home-based business involves several considerations. if the equipment costs less than $10,000, you can generally expense the full cost in the year of purchase, rather than depreciate it over time. however, the equipment must be used exclusively for business purposes to qualify for deductions. for items with a longer useful life, depreciation rules apply, meaning you deduct a portion of the cost each year based on irs guidelines. it's important to keep detailed records, especially if the equipment has personal use, and to consult with an accountant to ensure compliance and maximize deductions.
+          
+Average Metric: 0.77 / 1 (76.9%):   0%|          | 0/4 [00:11<?, ?it/s]Average Metric: 0.77 / 1 (76.9%):  25%|##5       | 1/4 [00:11<00:34, 11.65s/it][Trial] Q: 1 EIN doing business under multiple business names | Score: 0.2757035394233148
+                      GT: you're confusing a lot of things here. company b llc will have it's sales run under company a llc, and cease operating as a separate entity these two are contradicting each other. if b llc ceases to exist - it is not going to have it's sales run under a llc, since there will be no sales to run for a non-existent company. what happens is that you merge b llc into a llc, and then convert a llc into s corp. so you're cancelling the ein for b llc, you're cancelling the ein for a llc - because both entities cease to exist. you then create a ein for a corp, which is the converted a llc, and you create a dba where a corp dba b shop. you then go to the bank and open the account for a corp dba b shop with the ein you just created for a corp. get a better accountant. before you convert to s-corp.
+                      Pred: yes, a business can operate under multiple business names by registering dbas (doing business as) for each name. this allows a single legal entity to conduct business under different trade names without creating separate legal entities. the process involves filing dba forms with local government authorities and can be used for branding, marketing, or operational purposes.
+          
+Average Metric: 1.04 / 2 (52.2%):  25%|##5       | 1/4 [00:11<00:34, 11.65s/it][Trial] Q: 401k Transfer After Business Closure | Score: 0.19102212860049012
+                      GT: you should probably consult an attorney. however, if the owner was a corporation/llc and it has been officially dissolved, you can provide an evidence of that from your state's department of state/corporations to show that their request is unfeasible. if the owner was a sole-proprietor, then that may be harder as you'll need to track the person down and have him close the plan.
+                      Pred: after a business closure, you can transfer your 401(k) funds by initiating a rollover process. first, contact your current plan administrator to confirm they accept rollovers and obtain the necessary paperwork. ensure the check for the transferred funds is made payable to the new custodian or plan, not to you personally, and confirm where it should be sent. if moving to an ira, consider rolling over into a traditional ira for broader investment options and potentially lower fees. if transferring to a new employer’s 401(k), verify with their hr department that they accept rollovers and follow their procedures. remember, the funds are transferred as cash, not individual shares, and completing the rollover properly can help you avoid taxes and penalties while consolidating your retirement savings for easier management.
+          
+Average Metric: 1.24 / 3 (41.2%):  50%|#####     | 2/4 [00:11<00:23, 11.65s/it]Average Metric: 1.24 / 3 (41.2%):  75%|#######5  | 3/4 [00:12<00:03,  3.15s/it]Average Metric: 1.24 / 3 (41.2%):  75%|#######5  | 3/4 [00:12<00:04,  4.00s/it]
+Predictor 0
+i: Answer questions based on retrieved context.
+p: Answer:
+
+
+  0%|          | 0/4 [00:00<?, ?it/s]Average Metric: 0.19 / 1 (18.5%):   0%|          | 0/4 [00:17<?, ?it/s]Average Metric: 0.19 / 1 (18.5%):  25%|##5       | 1/4 [00:17<00:52, 17.56s/it]Average Metric: 0.90 / 2 (45.0%):  25%|##5       | 1/4 [00:17<00:52, 17.56s/it][Trial] Q: Intentions of Deductible Amount for Small Business | Score: 0.17223017028752932
+                      GT: "if your sole proprietorship losses exceed all other sources of taxable income, then you have what's called a net operating loss (nol). you will have the option to ""carry back"" and amend a return you filed in the last 2 years where you owed tax, or you can ""carry forward"" the losses and decrease your taxes in a future year, up to 20 years in the future. for more information see the irs links for nol. note: it's important to make sure you file the nol correctly so i'd advise speaking with an accountant. (especially if the loss is greater than the cost of the accountant...)"
+                      Pred: the intentions of deducting the deductible amount for small businesses are to reduce taxable income, thereby lowering overall tax liability, and to incentivize business expenses that support the operation and health of the business and its employees.
+          
+Average Metric: 1.07 / 3 (35.7%):  50%|#####     | 2/4 [00:19<00:35, 17.56s/it]Average Metric: 1.07 / 3 (35.7%):  75%|#######5  | 3/4 [00:19<00:05,  5.25s/it]Average Metric: 1.07 / 3 (35.7%):  75%|#######5  | 3/4 [00:19<00:06,  6.48s/it]
+Predictor 0
+i: Create a comprehensive and detailed instruction to guide a language model in answering questions accurately by utilizing context, generating step-by-step reasoning, and producing concise final answers. The instruction should emphasize the importance of leveraging the provided context to inform responses, employing a chain-of-thought approach to ensure thorough reasoning, and clearly separating the reasoning process from the final answer. Additionally, it should highlight that the responses must be relevant to the question, grounded in the context, and formatted to facilitate understanding and potential automated processing. The instruction should be explicit, instructive, and encourage the model to think carefully before answering to improve accuracy and clarity, especially in complex or multi-faceted questions related to financial and bureaucratic procedures.
+p: Answer:
+
+
+  0%|          | 0/4 [00:00<?, ?it/s][Trial] Q: Applying for and receiving business credit | Score: 0.7067917929328082
+                      GT: "i'm afraid the great myth of limited liability companies is that all such vehicles have instant access to credit.  limited liability on a company with few physical assets to underwrite the loan, or with insufficient revenue, will usually mean that the owners (or others) will be asked to stand surety on any credit. however, there is a particular form of ""credit"" available to businesses on terms with their clients.  it is called factoring. factoring is a financial transaction   whereby a business sells its accounts   receivable (i.e., invoices) to a third   party (called a factor) at a discount   in exchange for immediate money with   which to finance continued business.   factoring differs from a bank loan in   three main ways. first, the emphasis   is on the value of the receivables   (essentially a financial asset), not   the firm’s credit worthiness.   secondly, factoring is not a loan – it   is the purchase of a financial asset   (the receivable). finally, a bank loan   involves two parties whereas factoring   involves three. recognise that this can be quite expensive.  most banks catering to small businesses will offer some form of factoring service, or will know of services that offer it.  it isn't that different from cheque encashment services (pay-day services) where you offer a discount on future income for money now. an alternative is simply to ask his clients if they'll pay him faster if he offers a discount (since either of interest payments or factoring would reduce profitability anyway)."banks will usually look at 2 years worth of tax returns for issuing business credit.  if those aren't available (for instance, for recently formed businesses), they will look at the personal returns of the owners. unfortunately, it sounds like your friend is in the latter category. bringing in another partner isn't necessarily going to help, either; with only two partners / owners, the bank would probably look at both owners' personal tax returns and credit histories.  it may be necessary to offer collateral. i'm sorry i can't offer any better solutions, but alternative funding such as personal loans from family & friends could be necessary.  perhaps making them partners in exchange for capital.
+                      Pred: to apply for and receive business credit, start by setting up an in-person meeting with your bank that handles your business checking account. bring detailed financial statements such as profit and loss statements, balance sheets, and cash flow spreadsheets to help your banker understand your business and needs. clearly communicate your goal of establishing credit and request a specific credit limit, such as a credit card. building a good relationship with your banker can facilitate the approval process, even if your credit history is limited. be prepared to provide two years of tax returns; if unavailable, personal tax returns of the owners may be used. offering collateral might be necessary if creditworthiness is uncertain. if traditional credit is hard to obtain, consider alternative funding options like factoring, where you sell your accounts receivable at a discount for immediate cash, or personal loans from family and friends. continuously meet with your banker annually, updating financial statements to strengthen your relationship and improve your credit prospects. remember, establishing a relationship and understanding various funding options can make future credit applications smoother and more successful.
+          
+Average Metric: 0.71 / 1 (70.7%):   0%|          | 0/4 [00:11<?, ?it/s]Average Metric: 0.71 / 1 (70.7%):  25%|##5       | 1/4 [00:11<00:35, 11.94s/it][Trial] Q: What are the ins/outs of writing equipment purchases off as business expenses in a home based business? | Score: 0.5937096582891039
+                      GT: most items used in business have to be depreciated; you get to deduct a small fraction of the cost each year depending on the lifetime of the item as per irs rules. that is, you cannot assume a one-year life for an electronic item  even if it will be obsolete in three months.  some items can be expensed; you get to deduct the entire cost in the first year but then if you don't stay in business, e.g. you get a job paying wages and are no longer self-employed, you have to recapture this and pay taxes on the amount recaptured in the later year.  with respect to consumer-type electronics such as an ipad or laptop, it helps to have a separate  item for personal use that you can show in case of an audit.first of all, dilip's answer explains well how the business deductions generally work. for most (big) expenses you depreciate it. however, in some cases you need to capitalize it, which is another accounting method. when you capitalize your expense, it becomes part of the basis of the product you're creating. since you're an engineer, this might be relevant for you. talk to your tax adviser. how exactly you deduct/depreciate/capitalize things, and what expense goes which way depends greatly on the laws and jurisdictions. even in the us, different states have different laws, and the irs and state laws don't have to conform (unfortunately). for example, the limitations on sec. 179 deduction in 2010-2011 were 20 times higher on federal level than in the state of california. this could have lead to cases where you fully deducted your expense on your federal tax return, but need to continue and depreciate it on your state return (or vice versa). good tax adviser is crucial to avoid or manage these cases.keep this rather corny acronym in mind. business expenses must be corn: as other posters have already pointed out, certain expenses that are capital items (computers, furniture, etc.) must be depreciated over several years, but you have a certain amount of capital items that you can write off in the current tax year.
+                      Pred: writing off equipment purchases as business expenses in a home-based business involves understanding irs rules on depreciation and expensing. generally, small equipment items costing less than $10,000 can be fully expensed in the year of purchase, while larger or longer-lasting items must be depreciated over their useful life. to qualify for deductions, the equipment must be used exclusively for business purposes, which is especially important for electronics like laptops or tablets—it's advisable to keep separate personal and business devices or accounts. proper record-keeping of purchase costs is essential, and maintaining documentation can help in case of an audit. if you decide to expense an item, be aware that if your business ends, you may need to recapture some of the deduction as income. consulting an accountant is recommended to ensure compliance and optimize your deductions.
+          
+Average Metric: 1.30 / 2 (65.0%):  25%|##5       | 1/4 [00:12<00:35, 11.94s/it][Trial] Q: Can a entrepreneur hire a self-employed business owner? | Score: 0.5682831134298795
+                      GT: yes. i can by all means start my own company and name myself ceo. if bill gates wanted to hire me, i'll take the offer and still be ceo of my own company. now, whether or not my company makes money and survives is another question.  this is the basis of self-employed individuals who contract out their services.
+                      Pred: yes, an entrepreneur can hire a self-employed business owner to provide services. the self-employed individual would typically operate as an independent contractor, offering their services to the entrepreneur's company or other clients. the arrangement depends on the contractual terms and compliance with relevant employment and tax laws, but there is no general legal prohibition against such a relationship.
+          
+Average Metric: 1.87 / 3 (62.3%):  50%|#####     | 2/4 [00:12<00:23, 11.94s/it]Average Metric: 1.87 / 3 (62.3%):  75%|#######5  | 3/4 [00:12<00:03,  3.30s/it][Trial] Q: 1 EIN doing business under multiple business names | Score: 0.22063222075232666
+                      GT: you're confusing a lot of things here. company b llc will have it's sales run under company a llc, and cease operating as a separate entity these two are contradicting each other. if b llc ceases to exist - it is not going to have it's sales run under a llc, since there will be no sales to run for a non-existent company. what happens is that you merge b llc into a llc, and then convert a llc into s corp. so you're cancelling the ein for b llc, you're cancelling the ein for a llc - because both entities cease to exist. you then create a ein for a corp, which is the converted a llc, and you create a dba where a corp dba b shop. you then go to the bank and open the account for a corp dba b shop with the ein you just created for a corp. get a better accountant. before you convert to s-corp.
+                      Pred: yes, a business can operate under multiple business names (dbas) using a single ein, provided that the underlying legal entity remains the same. if you are changing your business structure—such as merging llcs or converting an llc into a corporation—you may need to obtain a new ein for the new entity. when operating under multiple dbas, you typically register each dba with your local government and can use the same ein for all these names, simplifying tax reporting and banking. however, if your business structure changes significantly, it’s important to consult with an accountant or legal professional to determine whether a new ein is required and to ensure proper compliance with irs regulations.
+          
+Average Metric: 2.09 / 4 (52.2%):  75%|#######5  | 3/4 [00:12<00:03,  3.30s/it]Average Metric: 2.09 / 4 (52.2%): 100%|##########| 4/4 [00:12<00:00,  2.24s/it]Average Metric: 2.09 / 4 (52.2%): 100%|##########| 4/4 [00:12<00:00,  3.18s/it]
+Predictor 0
+i: Answer questions based on retrieved context.
+p: Answer:
+
+
+  0%|          | 0/4 [00:00<?, ?it/s][Trial] Q: Intentions of Deductible Amount for Small Business | Score: 0.15621765008857982
+                      GT: "if your sole proprietorship losses exceed all other sources of taxable income, then you have what's called a net operating loss (nol). you will have the option to ""carry back"" and amend a return you filed in the last 2 years where you owed tax, or you can ""carry forward"" the losses and decrease your taxes in a future year, up to 20 years in the future. for more information see the irs links for nol. note: it's important to make sure you file the nol correctly so i'd advise speaking with an accountant. (especially if the loss is greater than the cost of the accountant...)"
+                      Pred: the intentions of deducting the deductible amount for small businesses are to reduce taxable income, thereby lowering overall tax liability, and to incentivize business expenses that support the operation and health of the business and its employees.
+          
+Average Metric: 0.16 / 1 (15.6%):   0%|          | 0/4 [00:12<?, ?it/s]Average Metric: 0.16 / 1 (15.6%):  25%|##5       | 1/4 [00:12<00:37, 12.44s/it][Trial] Q: What are the ins/outs of writing equipment purchases off as business expenses in a home based business? | Score: 0.6199149533548555
+                      GT: most items used in business have to be depreciated; you get to deduct a small fraction of the cost each year depending on the lifetime of the item as per irs rules. that is, you cannot assume a one-year life for an electronic item  even if it will be obsolete in three months.  some items can be expensed; you get to deduct the entire cost in the first year but then if you don't stay in business, e.g. you get a job paying wages and are no longer self-employed, you have to recapture this and pay taxes on the amount recaptured in the later year.  with respect to consumer-type electronics such as an ipad or laptop, it helps to have a separate  item for personal use that you can show in case of an audit.first of all, dilip's answer explains well how the business deductions generally work. for most (big) expenses you depreciate it. however, in some cases you need to capitalize it, which is another accounting method. when you capitalize your expense, it becomes part of the basis of the product you're creating. since you're an engineer, this might be relevant for you. talk to your tax adviser. how exactly you deduct/depreciate/capitalize things, and what expense goes which way depends greatly on the laws and jurisdictions. even in the us, different states have different laws, and the irs and state laws don't have to conform (unfortunately). for example, the limitations on sec. 179 deduction in 2010-2011 were 20 times higher on federal level than in the state of california. this could have lead to cases where you fully deducted your expense on your federal tax return, but need to continue and depreciate it on your state return (or vice versa). good tax adviser is crucial to avoid or manage these cases.keep this rather corny acronym in mind. business expenses must be corn: as other posters have already pointed out, certain expenses that are capital items (computers, furniture, etc.) must be depreciated over several years, but you have a certain amount of capital items that you can write off in the current tax year.
+                      Pred: writing off equipment purchases as business expenses in a home-based business involves several considerations. if the equipment costs less than $10,000, you can generally expense the full cost in the year of purchase, rather than depreciate it over time. however, the equipment must be used exclusively for business purposes to qualify for deductions. for items with a longer useful life, depreciation rules apply, meaning you deduct a portion of the cost each year based on irs guidelines. it's important to keep detailed records, especially if the equipment has personal use, and to consult with an accountant to ensure compliance and maximize deductions.
+          
+Average Metric: 0.78 / 2 (38.8%):  25%|##5       | 1/4 [00:12<00:37, 12.44s/it]Average Metric: 0.78 / 2 (38.8%):  50%|#####     | 2/4 [00:12<00:10,  5.29s/it][Trial] Q: How can I deposit a check made out to my business into my personal account? | Score: 0.4780546296367506
+                      GT: you should have a separate business account. mixing business and personal funds is a bad practice. shop around, you should be able to find a bank that will let you open a free checking account, especially if you are going to have minimal activity (e.g. less than 20 of checks per month) and perhaps maintain a small balance (e.g. $100 or $500).when a business asks me to make out a cheque to a person rather than the business name, i take that as a red flag. frankly it usually means that the person doesn't want the money going through their business account for some reason - probably tax evasion. i'm not saying you are doing that, but it is a frequent issue. if the company makes the cheque out to a person they may run the risk of being party to fraud. worse still they only have your word for it that you actually own the company, and aren't ripping off your employer by pocketing their payment. even worse, when the company is audited and finds that cheque, the person who wrote it will have to justify and document why they made it out to you or risk being charged with embezzlement. it's very much in their interests to make the cheque out to the company they did business with. given that, you should really have an account in the name of your business. it's going to make your life much simpler in the long run."if you sign the check ""for deposit only"", the bank will put it in your account. you may need to set up a ""payable name"" on the account matching your dba alias. however, having counted offerings for a church on several occasions, i know that banks simply have no choice but to be lax about the ""pay to the order of"" line on checks. say the church's ""legal name"" for which the operating funds account was opened is ""saint barnabas episcopal church of red bluff"". you'll get offering checks made out to ""saint barnabas"", ""saint b's"", ""episcopal church of red bluff"", ""red bluff episcopal"", ""youth group fund"", ""pastor frank"", etc. the bank will take em all; just gotta stamp em with the endorsement for the church. sometimes the money will be ""earmarked"" based on the payable line; any attempt to pay the pastor directly will go into his ""discretionary fund"", and anything payable to a specific subgroup of the church will go into their asset account line, but really all the cash goes directly to the same bank account anyway. for-profit operations are similar; an apartment complex may get checks payable to the apartment name, the management company name, even the landlord. i expect that your freelance work will be no different.""depending on where you are, you may be able to get away with filing a ""doing business as"" document with your local government, and then having the bank call the county seat to verify this. there is generally a fee for processing/recording/filing the dba form, of course. but it's useful for more purposes than just this one. (i still need to file a dba for my hobby work-for-pay, for exactly this reason.)""i have checked with bank of america, and they say the only way to cash (or deposit, or otherwise get access to the funds represented by a check made out to my business) is to open a business account. they tell me this is a federal regulation, and every bank will say the same thing.  to do this, i need a state-issued ""dba"" certificate (from the county clerk's office) as well as an employer id number (ein) issued by the irs. and their cheapest business banking account costs $15 / month. i think i can go to the bank that the check is drawn upon, and they will cash it, assuming i have documentation showing that i am the sole proprietor. but i'm not sure.... what a racket!!"if you're a sole proprietor there's no reason to have a separate business account, as long as you keep adequate records, as you are one and the same for tax purposes. my husband and i already have 5 accounts and a mortgage with one bank. i don't see the need to open up yet another account.  as a contracted accountant, i don't need to write business checks, and my expenses are minimal. as long as i have an present my assumed business name certificate and id, there's no reason for a bank not to deposit into my personal account.
+                      Pred: you generally cannot deposit a check made out to your business directly into your personal account without proper endorsement. if you want to do so, you should endorse the check by signing the back of it and then deposit it into your personal account. keep in mind that banks may scrutinize such deposits, especially if the check is made out to a business, and may require additional documentation or place a hold on the funds. to avoid complications, it is best to deposit business checks into a business account. if you frequently need to deposit business checks into your personal account, consult your bank for their specific policies and consider opening a business account to handle such transactions properly.
+          
+Average Metric: 1.25 / 3 (41.8%):  50%|#####     | 2/4 [00:14<00:10,  5.29s/it]Average Metric: 1.25 / 3 (41.8%):  75%|#######5  | 3/4 [00:14<00:03,  3.62s/it][Trial] Q: 401k Transfer After Business Closure | Score: 0.17407067407255447
+                      GT: you should probably consult an attorney. however, if the owner was a corporation/llc and it has been officially dissolved, you can provide an evidence of that from your state's department of state/corporations to show that their request is unfeasible. if the owner was a sole-proprietor, then that may be harder as you'll need to track the person down and have him close the plan.
+                      Pred: after a business closure, you can transfer your 401(k) funds by initiating a rollover process. first, contact your current plan administrator to confirm they accept rollovers and obtain the necessary paperwork. ensure the check for the transferred funds is made payable to the new custodian or plan, not to you personally, and confirm where it should be sent. if moving to an ira, consider rolling over into a traditional ira for broader investment options and potentially lower fees. if transferring to a new employer’s 401(k), verify with their hr department that they accept rollovers and follow their procedures. remember, the funds are transferred as cash, not individual shares, and completing the rollover properly can help you avoid taxes and penalties while consolidating your retirement savings for easier management.
+          
+Average Metric: 1.43 / 4 (35.7%):  75%|#######5  | 3/4 [00:14<00:03,  3.62s/it]Average Metric: 1.43 / 4 (35.7%): 100%|##########| 4/4 [00:14<00:00,  2.26s/it]Average Metric: 1.43 / 4 (35.7%): 100%|##########| 4/4 [00:14<00:00,  3.64s/it]
+  0%|          | 0/8 [00:00<?, ?it/s]Average Metric: 0.00 / 0 (0%):   0%|          | 0/8 [00:25<?, ?it/s]Average Metric: 0.00 / 0 (0%):  12%|#2        | 1/8 [00:25<03:01, 25.99s/it]Average Metric: 0.00 / 0 (0%):  12%|#2        | 1/8 [00:30<03:01, 25.99s/it]Average Metric: 0.00 / 0 (0%):  25%|##5       | 2/8 [00:30<01:18, 13.16s/it]Average Metric: 0.00 / 0 (0%):  25%|##5       | 2/8 [00:30<01:18, 13.16s/it]Average Metric: 0.24 / 1 (23.6%):  38%|###7      | 3/8 [00:30<01:05, 13.16s/it]Average Metric: 0.70 / 2 (35.2%):  50%|#####     | 4/8 [00:30<00:52, 13.16s/it]Average Metric: 0.70 / 2 (35.2%):  62%|######2   | 5/8 [00:30<00:11,  3.80s/it]Average Metric: 1.43 / 3 (47.6%):  62%|######2   | 5/8 [00:30<00:11,  3.80s/it]Average Metric: 1.43 / 3 (47.6%):  75%|#######5  | 6/8 [00:30<00:05,  2.86s/it][Trial] Q: Applying for and receiving business credit | Score: 0.7593428523872495
+                      GT: "i'm afraid the great myth of limited liability companies is that all such vehicles have instant access to credit.  limited liability on a company with few physical assets to underwrite the loan, or with insufficient revenue, will usually mean that the owners (or others) will be asked to stand surety on any credit. however, there is a particular form of ""credit"" available to businesses on terms with their clients.  it is called factoring. factoring is a financial transaction   whereby a business sells its accounts   receivable (i.e., invoices) to a third   party (called a factor) at a discount   in exchange for immediate money with   which to finance continued business.   factoring differs from a bank loan in   three main ways. first, the emphasis   is on the value of the receivables   (essentially a financial asset), not   the firm’s credit worthiness.   secondly, factoring is not a loan – it   is the purchase of a financial asset   (the receivable). finally, a bank loan   involves two parties whereas factoring   involves three. recognise that this can be quite expensive.  most banks catering to small businesses will offer some form of factoring service, or will know of services that offer it.  it isn't that different from cheque encashment services (pay-day services) where you offer a discount on future income for money now. an alternative is simply to ask his clients if they'll pay him faster if he offers a discount (since either of interest payments or factoring would reduce profitability anyway)."banks will usually look at 2 years worth of tax returns for issuing business credit.  if those aren't available (for instance, for recently formed businesses), they will look at the personal returns of the owners. unfortunately, it sounds like your friend is in the latter category. bringing in another partner isn't necessarily going to help, either; with only two partners / owners, the bank would probably look at both owners' personal tax returns and credit histories.  it may be necessary to offer collateral. i'm sorry i can't offer any better solutions, but alternative funding such as personal loans from family & friends could be necessary.  perhaps making them partners in exchange for capital.
+                      Pred: to apply for and receive business credit, start by setting up an in-person meeting with your bank that handles your business checking account. bring detailed financial statements such as profit and loss statements, balance sheets, and cash flow spreadsheets to help your banker understand your business and needs. clearly communicate your goal of establishing credit and request a specific credit limit, such as a credit card. building a good relationship with your banker can facilitate the approval process, even if your credit history is limited. be prepared to provide two years of tax returns; if unavailable, personal tax returns of the owners may be used. offering collateral might be necessary if creditworthiness is uncertain. if traditional credit is hard to obtain, consider alternative funding options like factoring, where you sell your accounts receivable at a discount for immediate cash, or personal loans from family and friends. continuously meet with your banker annually, updating financial statements to strengthen your relationship and improve your credit prospects. remember, establishing a relationship and understanding various funding options can make future credit applications smoother and more successful.
+          
+Average Metric: 2.19 / 4 (54.7%):  75%|#######5  | 6/8 [00:30<00:05,  2.86s/it]Average Metric: 2.19 / 4 (54.7%):  88%|########7 | 7/8 [00:30<00:02,  2.13s/it]Average Metric: 2.70 / 5 (54.0%):  88%|########7 | 7/8 [00:31<00:02,  2.13s/it]Average Metric: 2.70 / 5 (54.0%): 100%|##########| 8/8 [00:31<00:00,  1.65s/it]Average Metric: 2.70 / 5 (54.0%): 100%|##########| 8/8 [00:31<00:00,  3.88s/it]
