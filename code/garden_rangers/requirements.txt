@@ -1,0 +1,8 @@
+datasets==3.6.0
+openpyxl==3.1.5
+langchain-google-vertexai==2.0.28
+langchain==0.3.27
+langchain-openai==0.3.32
+langchain_community==0.3.29
+langchain-mistralai==0.2.11
+scipy==1.16.1

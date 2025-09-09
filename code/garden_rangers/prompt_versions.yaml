@@ -1,0 +1,102 @@
+# ------------------------------------------ RETRIEVAL RELEVANCY ------------------------------------------ #
+rr_prompt_template: |
+  You are an expert scoring RETRIEVED CONTENT's relevancy based on USER QUERY. 
+    Your task is to assign a relevancy score based on the requirements below:
+
+    ###INSTRUCTIONS###
+            - Read and understand the full meaning of USER QUERY
+            - RUBRICS:
+                - Only generate the score as 1 or 2 or 3
+                - Scoring as 1: if the RETRIEVED CONTENT has nothing to do with the USER QUERY
+                - Scoring as 2: if the RETRIEVED CONTENT seems relevant to USER QUERY but doesn't answer the USER QUERY
+                - Scoring as 3: if the RETRIEVED CONTENT is relevant to USER QUERY and can directly answer the USER QUERY
+            - Provide detailed scoring reasons
+
+    ###EXAMPLE OUTPUT FORMAT###
+            {{
+                "score": 1,
+                "reasoning": The RETRIEVED CONTENT is not relevant to the USER QUERY at all
+            }}
+            {{
+                "score": 2,
+                "reasoning": the RETRIEVED CONTENT seems relevant to USER QUERY but doesn't contain the answer of the USER QUERY
+            }}
+            {{
+                "score": 3,
+                "reasoning": the RETRIEVED CONTENT can directly address the USER QUERY
+            }}
+
+    Here is the USER QUERY:
+    {user_query}
+
+    Here is the RETRIEVED CONTENT:
+    {retrieved_content}
+
+    Your evaluation should follow this format:
+    {format_instructions}
+# ------------------------------------------ RETRIEVAL RELEVANCY ------------------------------------------ #
+
+
+# ------------------------------------------ ANSWER USEFULNESS ------------------------------------------ #
+au_prompt_template: |
+    You are an impartial judge tasked with evaluating the quality and usefulness of AI's ANSWER.
+    Your evaluation should consider the following key criteria:
+        - Helpfulness: How well does it solve the USER QUERY?
+        - Relevance: How well does it address the USER QUERY?
+        - Accuracy: Is the information correct and reliable comparing with the REFERENCED ANSWER?
+        - Depth: Does it provide sufficient detail and explanation?
+        - Creativity: Does it offer innovative or insightful perspectives when appropriate?
+        - Level of detail: Is the amount of detail appropriate for the USER QUERY?
+
+    ###EVALUATION PROCESS###
+    1. **ANALYZE** the USER QUERY and the AI's ANSWER carefully
+    2. **EVALUATE** how well the response meets each of the criteria above
+    3. **CONSIDER** the overall effectiveness and usefulness of AI's ANSWER
+    4. **PROVIDE** a clear, objective explanation for your evaluation
+    5. **SCORE** AI's ANSWER on a scale from 0.0 to 1.0:
+        - 1.0: Exceptional answer that excels in all criteria
+        - 0.8: Excellent answer with minor room for improvement
+        - 0.6: Good answer that adequately addresses the USER QUERY
+        - 0.4: Fair answer with significant room for improvement
+        - 0.2: Poor answer that barely addresses the USER QUERY
+        - 0.0: Completely inadequate or irrelevant answer
+    6. Provide details reasons for your score
+
+    ###EXAMPLE OUTPUT FORMAT###
+            {{
+                "score": 1.0,
+                "reasoning": "AI's ANSWER has exceled all the criteria, providing a comprehensive, accurate, and insightful response that fully addresses the USER QUERY"
+            }}
+            {{
+                "score": 0.8,
+                "reasoning": "AI's ANSWER overall meets the criteria well, but could benefit from minor improvements in depth or creativity"
+            }}
+            {{
+                "score": 0.6,
+                "reasoning": "AI's ANSWER is Good to the USER QUERY, but can be improved in a few criteria such as accuracy or level of detail"
+            }}
+            {{
+                "score": 0.4,
+                "reasoning": "AI's ANSWER is Fair, but multiple criteria need significant improvement to better address the USER QUERY"
+            }}
+            {{
+                "score": 0.2,
+                "reasoning": "AI's ANSWER can barely address the USER QUERY, with major shortcomings in several criteria"
+            }}
+            {{
+                "score": 0.0,
+                "reasoning": "AI's ANSWERis completely inrelevant to the USER QUERY"
+            }}
+
+    Here is the USER QUERY:
+    {user_query}
+
+    Here is the AI's ANSWER:
+    {ai_answer}
+
+    Here is the REFERENCED ANSWER:
+    {referenced_answer}
+
+    Your evaluation should follow this format:
+    {format_instructions}
+# ------------------------------------------ ANSWER USEFULNESS ------------------------------------------ #
