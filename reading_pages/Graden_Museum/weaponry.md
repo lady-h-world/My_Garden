@@ -25,6 +25,10 @@ The tools displayed here are either <b>new promising tools</b> that you got no c
   * Time Series Forecasting and Anomaly Detection
 
 
+### More on Causal Discovery
+* We have explored [granger-causality][16] for potential influence. There is [LiNGAM][15] for causal discovery, and [this explains how does it work][14].
+
+
 ### More on Hyperparameter Tuning (HPO)
 * [Ray Tune][4]
   * An HPO tool built upon Ray project to speed up HPO work, and has integrated many popular libraries, such as Optuna, FLAML, Keras, Scikit-learn, XgBoost, etc.
@@ -57,3 +61,6 @@ The tools displayed here are either <b>new promising tools</b> that you got no c
 [11]:https://github.com/yandex-research/tabm
 [12]:https://www.linkedin.com/posts/avi-chawla_we-now-have-a-new-candidate-for-ensembles-activity-7337403019795275776--yMt?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
 [13]:https://github.com/SylphAI-Inc/AdalFlow
+[14]:https://blog-en.fltech.dev/entry/2024/09/12/ecmlpkdd2024-layeredlingam-en
+[15]:https://github.com/cdt15/lingam
+[16]:https://lady-h-s-applied-data-science-wo.gitbook.io/applied-data-science-in-my-garden/penitent-arch/time-series-data-exploration#granger-causality
