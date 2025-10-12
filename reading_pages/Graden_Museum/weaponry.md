@@ -35,9 +35,9 @@ The tools displayed here are either <b>new promising tools</b> that you got no c
   * Ray is famous for its ability of scaling up AI applications, however when using Ray-Tune, it takes long time to load its final output, and if you run it on Windows, might get [this type of error][8].
 
 
-### More on Prompt Optimization
-* [AdalFlow][13]
-  * It might have better prompt performance and better control on prompt template than DsPy. Lady H. will wait a bit before using it because it's very new when Lady H. just finihsed DsPy pipeline 
+### More on Prompt Engineering & Context Engineering
+* We shared [prompt optimization here][18], besides writing effective prompts, now context engineering is trending.
+* [Context Engineering Template][17]
 
 
 ### More on Model Monitoring
@@ -64,3 +64,5 @@ The tools displayed here are either <b>new promising tools</b> that you got no c
 [14]:https://blog-en.fltech.dev/entry/2024/09/12/ecmlpkdd2024-layeredlingam-en
 [15]:https://github.com/cdt15/lingam
 [16]:https://lady-h-s-applied-data-science-wo.gitbook.io/applied-data-science-in-my-garden/penitent-arch/time-series-data-exploration#granger-causality
+[17]:https://github.com/coleam00/context-engineering-intro
+[18]:https://lady-h-s-applied-data-science-wo.gitbook.io/applied-data-science-in-my-garden/lotus-queen/prompt-optimization
