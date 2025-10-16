@@ -1,3 +1,9 @@
+# Licensed under the MIT License.
+# Copyright (c) 2025-2035. All rights reserved by Hanhan Wu.
+# Permission is hereby granted to view this code for evaluation purposes only.
+# You may not reuse, copy, modify, merge, publish, distribute, sublicense,
+# or exploit this code without Hanhan Wu's EXPLICIT written permission.
+
 import asyncio
 import pandas as pd
 import numpy as np
