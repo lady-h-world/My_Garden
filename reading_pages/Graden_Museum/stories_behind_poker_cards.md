@@ -35,6 +35,7 @@ Lady H. loves her own drawing. At first, she designed this character with a myst
 
 
 ### The Cover
+The poem was written by Lady H.💖
 
 <p>
 <img align="center" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/cover_graph.png" width="979" height="412" />
