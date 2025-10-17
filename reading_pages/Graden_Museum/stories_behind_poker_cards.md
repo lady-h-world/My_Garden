@@ -27,7 +27,7 @@ Initially, Lady H. planned to focus solely on designing the garden's totem, but 
 
 
 ### Secret Guest
-While the AI did an excellent job, Lady H.'s own drawing aligns more closely with the story, which is why she decided to keep it.
+Lady H. loves her own drawing. At first, she designed this character with a mysterious look, but the AI did an amazing job, it created an image that closely matched her imagination. Besides, the AI-generated version looked more visually striking, she decided to give up her initial version.
 
 <p>
 <img align="center" src="https://github.com/lady-h-world/My_Garden/blob/main/images/Garden_Museum_images/secret_guest_graph.png" width="647" height="404" />
