@@ -48,6 +48,11 @@ The tools displayed here are either <b>new promising tools</b> that you got no c
 * [Tabula][9] leverages language model structures to generate tabular synthetic data. Are you able to run its code?
 
 
+### More on Semi-Supervised Learning
+* We shared [PU Learning here][19], you can also explore
+* [Active Learning][20]
+
+
 [1]:https://github.com/winedarksea/AutoTS
 [2]:https://github.com/unit8co/darts
 [3]:https://towardsdatascience.com/you-cant-predict-the-errors-of-your-model-or-can-you-1a2e4a1f38a0
@@ -66,3 +71,5 @@ The tools displayed here are either <b>new promising tools</b> that you got no c
 [16]:https://lady-h-s-applied-data-science-wo.gitbook.io/applied-data-science-in-my-garden/penitent-arch/time-series-data-exploration#granger-causality
 [17]:https://github.com/coleam00/context-engineering-intro
 [18]:https://lady-h-s-applied-data-science-wo.gitbook.io/applied-data-science-in-my-garden/lotus-queen/prompt-optimization
+[19]:https://lady-h-s-applied-data-science-wo.gitbook.io/applied-data-science-in-my-garden/resplendent-tree/semi-supervised-learning
+[20]:https://www.linkedin.com/posts/avi-chawla_youreinanmlengineerinterviewatstripe-activity-7385617603005947904-jrpM?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
