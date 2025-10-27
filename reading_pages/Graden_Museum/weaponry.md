@@ -49,8 +49,12 @@ The tools displayed here are either <b>new promising tools</b> that you got no c
 
 
 ### More on Semi-Supervised Learning
-* We shared [PU Learning here][19], you can also explore
+* We shared [PU Learning here][19], you can also explore:
 * [Active Learning][20]
+
+
+### More on Context Engineering
+* We shared [prompt optimization][21]. Instead of rewrite the whole prompt, context engineering can optimize the prompt with envolving knowledge without changing LLM model's weights. [Explore more here!][22]
 
 
 [1]:https://github.com/winedarksea/AutoTS
@@ -73,3 +77,5 @@ The tools displayed here are either <b>new promising tools</b> that you got no c
 [18]:https://lady-h-s-applied-data-science-wo.gitbook.io/applied-data-science-in-my-garden/lotus-queen/prompt-optimization
 [19]:https://lady-h-s-applied-data-science-wo.gitbook.io/applied-data-science-in-my-garden/resplendent-tree/semi-supervised-learning
 [20]:https://www.linkedin.com/posts/avi-chawla_youreinanmlengineerinterviewatstripe-activity-7385617603005947904-jrpM?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
+[21]:https://lady-h-s-applied-data-science-wo.gitbook.io/applied-data-science-in-my-garden/lotus-queen/prompt-optimization
+[22]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/AI_Learning_Notes.md#context-engineering-solutions
